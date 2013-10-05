@@ -1,48 +1,48 @@
+<!-- how to contribute in 4 steps:
+1. Fork this repo
+2. Edit this file (README.md)
+3. on the command line type make and press enter, which creates the index.html file 
+4. Push back up and send a pull request to ropensci/webservices
+-->
 # CRAN Task View: Working with data on the web
 
-* Maintainer: Scott Chamberlain, Karthik Ram, Christopher Gandrud
+* Maintainer: Scott Chamberlain, Karthik Ram, Christopher Gandrud, Patrick Mair
 * Contact:	scott at ropensci.org
-* Version:	2013-09-17
+* Version:	2013-10-05
+
+**Changes and suggestions**: You can also edit [this page directly](https://github.com/ropensci/webservices/edit/master/README.md) to add suggestions or fix mistakes. *(Requires you to be logged into GitHub)*
+
 
 ## Introduction
 
-This Task View contains information about using R to obtain and parse data from the web.
-
-The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web.
-
-If you have any comments or suggestions for additions or improvements for this taskview, go to Github and [submit an issue](https://github.com/ropensci/webservices/issues) or make some changes and [submit a pull request](https://github.com/ropensci/webservices/pulls). If you have an issue with one of the packages, please contact the maintainer of the package.
-
-A list of available packages and functions is presented below, grouped by the type of activity.
+This Task View contains information about using R to obtain and parse data from the web. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. If you have any comments or suggestions for additions or improvements for this taskview, go to Github and [submit an issue](https://github.com/ropensci/webservices/issues) or make some changes and [submit a pull request](https://github.com/ropensci/webservices/pulls). If you can't do Github, [send Scott an email](mailto:scott@ropensci.org). If you have an issue with one of the packages, please contact the maintainer of the package. A list of available packages and functions is presented below, grouped by the type of activity.
 
 ## Tools for working with the web from R
 
 ### curl/http/ftp
 
 * [RCurl][RCurl]: a low level curl wrapper for R. 
-* [httr][httr]: is a light wrapper around RCurl that makes many things easier, but still allows you to access the lower level functionality of RCurl. 
+* [httr][httr]: a light wrapper around RCurl that makes many things easier, but still allows you to access the lower level functionality of RCurl. 
 
 httr has convenient http verbs: `GET()`, `POST()`, `PUT()`, `DELETE()`, `PATCH()`, `HEAD()`, `BROWSE()`. These wrap functions in RCurl, making them more convenient to use, though less configurable than counterparts in RCurl. Though note that you can pass in additional Curl options to the `config` parameter in http calls. The equivalent of httr's `GET()` in RCurl is `getForm()`. Likewise, the equivalent of httr's `POST()` in RCurl is `postForm()`. 
 
-[http status codes](http://en.wikipedia.org/wiki/Http_status_codes) are helpful for debugging http calls. httr package makes this easier using, for example, `stop_for_status()` gets the http status code from a response object, and stops the function if the call was not successful. 
+[http status codes](http://en.wikipedia.org/wiki/Http_status_codes) are helpful for debugging http calls. httr package makes this easier using, for example, `stop_for_status()` gets the http status code from a response object, and stops the function if the call was not successful. See also `warn_for_status()`.
 
 ### Authentication
 
-Using web resources can require authentication, either via API keys, OAuth, username:password combination, or via other means. Additionally, sometimes web resources require that authentication be in the header of an http call, which requires a little bit of extra work.  API keys and username:password combos can be combined within a url for a call to a web resource, or can be specified via commands in RCurl or httr. OAuth is the most complicated authentication process, and can be done using RCurl or httr. See the demos within httr, where there are 6 demos, three for OAuth 1.0 (linkedin, twitter, vimeo) and three for OAuth 2.0 (facebook, github, google). [ROAuth][ROAuth] provides an R interface to OAuth methods. 
-
-<!-- LOOK INTO OAUth with rcurl, easy hard to do? -->
+Using web resources can require authentication, either via API keys, OAuth, username:password combination, or via other means. Additionally, sometimes web resources that require authentication be in the header of an http call, which requires a little bit of extra work.  API keys and username:password combos can be combined within a url for a call to a web resource (api key: http://api.foo.org/?key=yourkey; user/pass: http://username:password@api.foo.org), or can be specified via commands in RCurl or httr. OAuth is the most complicated authentication process, and can be most easily done using httr. See the 6 demos within httr, three for OAuth 1.0 (linkedin, twitter, vimeo) and three for OAuth 2.0 (facebook, github, google). [ROAuth][ROAuth] is a package that provides a separate R interface to OAuth. OAuth is easier to to do in httr, so start there. 
 
 ### Web frameworks
 
-RStudio recently created [Shiny][shiny], which combines R, html, css, and javascript to make web applications. Related tools are available, including [openCPU][opencpu] ([on CRAN][opencpucran]) and [Rook][rook]. However, Shiny is the most promising of these.
+RStudio recently created [Shiny][shiny], which combines R, html, css, and javascript to make web applications. Related tools are available, including [openCPU][opencpu] ([on CRAN][opencpucran]) and [Rook][rook]. However, Shiny is the most promising of these. A package by Yihui Xie called [servr][servr] provides a simple HTTP server to serve files under a given directory based on the [httpuv][httpuv] package. The [httpuv][httpuv] package, made by Joe Cheng at RStudio, provides low-level socket and protocol support for handling HTTP and WebSocket requests directly within R.
 
 ### Parsing data from the web
 
-* txt, csv, etc.: you can use `read.csv()` after acquiring the csv file from the web via e.g., `getURL()` from RCurl. The [repmis][repmis] package contains a `source_data` command to simplify this process, while also assigning SHA-1 hashes to uniquely identify file versions. <!-- You can do read.csv("http://..."), but not read.csv("https://..."). -->
-* xml/html: the package [XML][XML] by Duncan Temple-Lang contains functions for parsing xml and html, and supports [xpath][xpath] for searching xml (think regex for strings). [scrapeR][scrapeR] provides additional tools for scraping data from html and xml documents.
+* txt, csv, etc.: you can use `read.csv()` after acquiring the csv file from the web via e.g., `getURL()` from RCurl. `read.csv()` works with http but not https, i.e.: read.csv("http://..."), but not read.csv("https://..."). The [repmis][repmis] package contains a `source_data()` command to simplify this process, while also assigning SHA-1 hashes to uniquely identify file versions.
+* xml/html: the package [XML][XML] by Duncan Temple-Lang contains functions for parsing xml and html, and supports [xpath][xpath] for searching xml (think regex for strings). [scrapeR][scrapeR] provides additional tools for scraping data from html and xml documents. The [XML2R][XML2R] package (to be on CRAN soon) is a collection of convenient functions for coercing XML into data frame(s). 
 * json/json-ld: [RJSONIO][RJSONIO] by Duncan Temple-Lang. Another package, [rjson][rjson], does many of the same tasks which RJSONIO does.
 * custom formats: Some web APIs provide custom data formats (e.g., X), which are usually modified xml or json, and handled by XML and RJSONIO, respectively.
-
-<!-- sjp.co.nz/projects/selec… + selectorgadget.com is a killer combo for extracting data from webpages http://sjp.co.nz/projects/selectr/ http://selectorgadget.com/ -->
+* An alternative to the XML package is [selectr][selectr], which parses CSS3 Selectors and translates them to XPath 1.0 expressions. XML package is often used for xml and html, but selectr translates CSS selectors to XPath, so can use the CSS selectors instead of XPath. The [selectorgadget browser extension](http://selectorgadget.com/) can be used to identify page elements. 
 
 ### Javascript
 
@@ -115,7 +115,7 @@ Javascript provides many libraries to make interactive visualizations for the br
 * [rentrez][rentrez]: Talk with NCBI entrez using R
 * [rorcid][rorcid]: A programmatic interface the Orcid.org API (not on CRAN)
 * [rpubmed][rpubmed]: Tools for extracting and processing Pubmed and Pubmed Central records (not on CRAN)
-* [rAltmetic][rAltmetic]: Query and visualize metrics from Altmetric.com (not on CRAN)
+* [rAltmetic][rAltmetic]: Query and visualize metrics from Altmetric.com
 * [rImpactStory][rImpactStory]: Programmatic interface to the ImpactStory API
 * [alm][alm]: R wrapper to the almetrics API platform developed by PLoS (not on CRAN)
 * [ngramr][ngramr]: Retrieve and plot word frequencies through time from the Google Ngram Viewer ([development vesion](https://github.com/seancarmody/ngramr))
@@ -131,16 +131,19 @@ Javascript provides many libraries to make interactive visualizations for the br
 * [dataone][dataone]: A package that provides read/write access to data and metadata from the DataONE network of Member Node data repositories. [more](http://releases.dataone.org/online/dataone_r/)
 * [yhatr][yhatr]: yhatr lets you deploy, maintain, and invoke models via the Yhat REST API.
 * [RSocrata][RSocrata]: Provided with a Socrata dataset resource URL, or a Socrata SoDA web API query, returns an R data frame. Converts dates to POSIX format. Supports CSV and JSON. Manages throttling by Socrata.
+* [OAIHarvester][OAIHarvester]: Harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH).
+* [dvn][dvn]: Provides access to The Dataverse Network APIs, to upload and search for data and metadata, especially in the social sciences. [more](http://thedata.org/)
 
 ### Machine learning as a service (MLaaS anyone?)
 
 * [bigml][bigml]: BigML, a machine learning web service [more](https://bigml.com/)
 * [MTurkR][MTurkR]: Access to Amazon Mechanical Turk Requester API via R. [more](http://thomasleeper.com/MTurkR/index.html)
 
-### Analytics
+### Web Analytics
 
 * [rgauges][rgauges]: Interface to Gaug.es API [more](https://secure.gaug.es) (not on CRAN)
 * [RSiteCatalyst][RSiteCatalyst]: Functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API
+* [RGoogleAnalytics][RGoogleAnalytics]: Provides access to Google Analytics. [tutorial](http://www.tatvic.com/blog/ga-data-extraction-in-r/)
 
 ### News
 
@@ -148,16 +151,18 @@ Javascript provides many libraries to make interactive visualizations for the br
 
 ### Images/videos/music
 
-* [imguR][imguR]: A package to share plots using the image hosting service imgur.com
+* [imguR][imguR]: A package to share plots using the image hosting service imgur.com (also see the function `imgur_upload()` in [knitr][knitr], which uses the newer Imgur API version 3)
 * [RLastFM][RLastFM]: A package to interface to the last.fm API.
 
 ### Sports
 
 * [nhlscraper][nhlscraper]: Compiling the NHL Real Time Scoring System Database for easy use in R
+* [pitchRx][pitchRx]: Tools for Collecting and Visualizing Major League Baseball PITCHfx Data
 
 ### Maps
 
 * [osmar][osmar]: This package provides infrastructure to access OpenStreetMap data from different sources, to work with the data in common R manner, and to convert data into available infrastructure provided by existing R packages (e.g., into sp and igraph objects).
+* [ggmap][ggmap]: ggmap allows for the easy visualization of spatial data and models on top of Google Maps, OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
 
 ### Social media
 
@@ -171,7 +176,6 @@ Javascript provides many libraries to make interactive visualizations for the br
 
 ### Other
 
-* [dvn][dvn]: Provides access to The Dataverse Network API. [more](http://thedata.org/)
 * [sos4R][sos4R]: R client for the OGC Sensor Observation Service. [more](http://www.nordholmen.net/sos4r)
 * [datamart][datamart]: Unified access to various data sources.
 * [rDrop][rDrop]: Dropbox interface.
@@ -203,8 +207,6 @@ Javascript provides many libraries to make interactive visualizations for the br
 * [ngramr][ngramr]
 
 ## Related links:
-
-XXXXXXX
 
 [RCurl]: http://cran.r-project.org/web/packages/RCurl/index.html
 [httr]: http://cran.r-project.org/web/packages/httr/index.html
@@ -295,3 +297,11 @@ XXXXXXX
 [streamR]: http://cran.r-project.org/web/packages/streamR/index.html
 [wethepeople]: http://cran.r-project.org/web/packages/wethepeople/index.html
 [zendeskR]: http://cran.r-project.org/web/packages/zendeskR/index.html
+[ggmap]: http://cran.r-project.org/web/packages/ggmap/index.html
+[RGoogleAnalytics]: https://code.google.com/p/r-google-analytics/
+[selectr]: http://sjp.co.nz/projects/selectr/
+[XML2R]: https://github.com/cpsievert/XML2R
+[knitr]: http://cran.r-project.org/packages/knitr/index.html
+[httpuv]: http://cran.r-project.org/web/packages/httpuv/index.html
+[servr]: http://cran.r-project.org/web/packages/servr/index.html
+[pitchRx]: http://cran.r-project.org/web/packages/pitchRx/index.html
