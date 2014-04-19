@@ -4,7 +4,7 @@ getdumber:
 	sed 's@<li class="removeme">.\+<\/li>@ @g' WebTechnologies.ctv > WebTechnologiesDumber.ctv
 
 dorstuff:	
-	Rscript -e 'library(ctv); ctv2html("WebTechnologies.ctv")'
+	Rscript --vanilla -e 'library(ctv); ctv2html("WebTechnologies.ctv")'
 
 sed:
 	mv WebTechnologies.html doc.html
