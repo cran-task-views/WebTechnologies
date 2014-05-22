@@ -96,6 +96,9 @@ Using web resources can require authentication, either via API keys, OAuth, user
 The <pkg>shiny</pkg> package makes it easy to build interactive web applications with R.
 </li>
 <li>
+Static reports to be published on the web can be created with the <pkg>knitr</pkg> package.
+</li>
+<li>
 The <pkg>Rook</pkg> web server interface contains the specification and convenience software for building and running Rook applications.
 </li>
 <li>
