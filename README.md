@@ -33,18 +33,26 @@ on GitHub](https://github.com/ropensci/webservices/wiki/ToDo).
 Tools for Working with the Web from R
 -------------------------------------
 
-### Core Tools For Working with the Web
+### Core Tools For HTTP Requests
 
--   [httr](http://cran.r-project.org/web/packages/httr/index.html)
-    provides a user-friendly interface for executing HTTP methods (GET,
-    POST, PUT, HEAD, DELETE, etc.) and provides support for modern web
-    authentication protocols (OAuth 1.0, OAuth 2.0).
-    [RCurl](http://cran.r-project.org/web/packages/RCurl/index.html) is
-    a lower-level package that provides a closer interface between R and
-    the [libcurl C library](http://curl.haxx.se/libcurl/), but is less
-    user-friendly. It may be useful for operations on web-based XML or
-    to perform FTP operations.
-    [curl](http://cran.r-project.org/web/packages/curl/index.html) is
+There are two packages that should cover most use cases of interacting
+with the web from R.
+[httr](http://cran.r-project.org/web/packages/httr/index.html) provides
+a user-friendly interface for executing HTTP methods (GET, POST, PUT,
+HEAD, DELETE, etc.) and provides support for modern web authentication
+protocols (OAuth 1.0, OAuth 2.0). HTTP status codes are helpful for
+debugging HTTP calls. httr makes this easier using, for example,
+`stop_for_status()`, which gets the http status code from a response
+object, and stops the function if the call was not successful. (See also
+`warn_for_status()`.) Note that you can pass in additional libcurl
+options to the `config` parameter in http calls.
+[RCurl](http://cran.r-project.org/web/packages/RCurl/index.html) is a
+lower-level package that provides a closer interface between R and the
+[libcurl C library](http://curl.haxx.se/libcurl/), but is less
+user-friendly. It may be useful for operations on web-based XML or to
+perform FTP operations. For more specific situations, the following
+resources may be useful:
+-   [curl](http://cran.r-project.org/web/packages/curl/index.html) is
     another libcurl client that provides the `curl()` function as an
     SSL-compatible replacement for base R's `url()` and support for http
     2.0, ssl (https, ftps), gzip, deflate and more. For websites serving
@@ -64,12 +72,6 @@ Tools for Working with the Web from R
     [JsonWireProtocol](http://code.google.com/p/selenium/wiki/JsonWireProtocol).
     It can also aid in automated application testing, load testing, and
     web scraping.
--   HTTP status codes are helpful for debugging HTTP calls. httr makes
-    this easier using, for example, `stop_for_status()`, which gets the
-    http status code from a response object, and stops the function if
-    the call was not successful. (See also `warn_for_status()`.) Note
-    that you can pass in additional libcurl options to the `config`
-    parameter in http calls.
 -   Another, higher-level alternative package useful for webscraping is
     [rvest](http://cran.r-project.org/web/packages/rvest/index.html) (
     [GitHub](https://github.com/hadley/rvest)), which is designed to
@@ -99,19 +101,38 @@ Tools for Working with the Web from R
     `source_Dropbox()` for downloading/caching plain-text data from
     non-public Dropbox folders and `source_XlsxData()` for
     downloading/caching Excel xlsx sheets.
--   *JSON* : JSON is *javascript object notation* . There are three
-    packages for reading and writing JSON:
-    [rjson](http://cran.r-project.org/web/packages/rjson/index.html),
-    [RJSONIO](http://cran.r-project.org/web/packages/RJSONIO/index.html),
-    and
-    [jsonlite](http://cran.r-project.org/web/packages/jsonlite/index.html).
-    [jsonlite](http://cran.r-project.org/web/packages/jsonlite/index.html)
-    includes a different parser from
-    [RJSONIO](http://cran.r-project.org/web/packages/RJSONIO/index.html)
-    called [yajl](https://lloyd.github.io/yajl/). We recommend using
-    [jsonlite](http://cran.r-project.org/web/packages/jsonlite/index.html).
-    Check out the paper describing jsonlite by Jeroen Ooms
-    <http://arxiv.org/abs/1403.2805>.
+-   *Authentication* : Using web resources can require authentication,
+    either via API keys, OAuth, username:password combination, or via
+    other means. Additionally, sometimes web resources that require
+    authentication be in the header of an http call, which requires a
+    little bit of extra work. API keys and username:password combos can
+    be combined within a url for a call to a web resource (api key:
+    http://api.foo.org/?key=yourkey; user/pass:
+    http://username:password@api.foo.org), or can be specified via
+    commands in
+    [RCurl](http://cran.r-project.org/web/packages/RCurl/index.html) or
+    [httr](http://cran.r-project.org/web/packages/httr/index.html).
+    OAuth is the most complicated authentication process, and can be
+    most easily done using
+    [httr](http://cran.r-project.org/web/packages/httr/index.html). See
+    the 6 demos within
+    [httr](http://cran.r-project.org/web/packages/httr/index.html),
+    three for OAuth 1.0 (linkedin, twitter, vimeo) and three for OAuth
+    2.0 (facebook, GitHub, google).
+    [ROAuth](http://cran.r-project.org/web/packages/ROAuth/index.html)
+    is a package that provides a separate R interface to OAuth. OAuth is
+    easier to to do in
+    [httr](http://cran.r-project.org/web/packages/httr/index.html), so
+    start there.
+
+### Parsing Structured Web Data
+
+The vast majority of web-based data is structured as plain text, HTML,
+XML, or JSON (javascript object notation). Web service APIs increasingly
+rely on JSON, but XML is still prevalent in many applications. There are
+several packages for specifically working with these format. These
+functions can be used to interact directly with insecure webpages or can
+be used to parse locally stored or in-memory web files.
 -   *XML/HTML* : The package [xml2](https://github.com/hadley/xml2) in
     development will likely by the go to package for XML parsing soon,
     but [XML](http://cran.r-project.org/web/packages/XML/index.html) may
@@ -150,29 +171,83 @@ Tools for Working with the Web from R
     header and body cells, and users are given more control over the
     identification of header and body rows which will end up in the R
     table.
--   *Authentication* : Using web resources can require authentication,
-    either via API keys, OAuth, username:password combination, or via
-    other means. Additionally, sometimes web resources that require
-    authentication be in the header of an http call, which requires a
-    little bit of extra work. API keys and username:password combos can
-    be combined within a url for a call to a web resource (api key:
-    http://api.foo.org/?key=yourkey; user/pass:
-    http://username:password@api.foo.org), or can be specified via
-    commands in
-    [RCurl](http://cran.r-project.org/web/packages/RCurl/index.html) or
-    [httr](http://cran.r-project.org/web/packages/httr/index.html).
-    OAuth is the most complicated authentication process, and can be
-    most easily done using
-    [httr](http://cran.r-project.org/web/packages/httr/index.html). See
-    the 6 demos within
-    [httr](http://cran.r-project.org/web/packages/httr/index.html),
-    three for OAuth 1.0 (linkedin, twitter, vimeo) and three for OAuth
-    2.0 (facebook, GitHub, google).
-    [ROAuth](http://cran.r-project.org/web/packages/ROAuth/index.html)
-    is a package that provides a separate R interface to OAuth. OAuth is
-    easier to to do in
-    [httr](http://cran.r-project.org/web/packages/httr/index.html), so
-    start there.
+-   *JSON* : There are three packages for reading and writing JSON:
+    [rjson](http://cran.r-project.org/web/packages/rjson/index.html),
+    [RJSONIO](http://cran.r-project.org/web/packages/RJSONIO/index.html),
+    and
+    [jsonlite](http://cran.r-project.org/web/packages/jsonlite/index.html).
+    [jsonlite](http://cran.r-project.org/web/packages/jsonlite/index.html)
+    includes a different parser from
+    [RJSONIO](http://cran.r-project.org/web/packages/RJSONIO/index.html)
+    called [yajl](https://lloyd.github.io/yajl/). We recommend using
+    [jsonlite](http://cran.r-project.org/web/packages/jsonlite/index.html).
+    Check out the paper describing jsonlite by Jeroen Ooms
+    <http://arxiv.org/abs/1403.2805>.
+
+### Tools for Working with URLs
+
+-   The `httr::parse_url()` function can be used to extract portions of
+    a URL. The `RCurl::URLencode()` and `utils::URLencode()` functions
+    can be used to encode character strings for use in URLs.
+    `utils::URLdecode()` decodes back to the original strings.
+    [urltools](http://cran.r-project.org/web/packages/urltools/index.html)
+    ( [GitHub](https://github.com/Ironholds/urltools)) can also handle
+    URL encoding, decoding, parsing, and parameter extraction.
+-   The [tldextract](https://github.com/jayjacobs/tldextract) package
+    extract top level domains and subdomains from a host name. It's a
+    port of [a Python library of the same
+    name](https://github.com/john-kurkowski/tldextract).
+-   [iptools](https://github.com/hrbrmstr/iptools) can facilitate
+    working with IPv4 addresses, including for use in geolocation.
+
+### Tools for Working with Scraped Webpage Contents
+
+-   Several packages can be used for parsing HTML documents.
+    [boilerpipeR](http://cran.r-project.org/web/packages/boilerpipeR/index.html)
+    provides generic extraction of main text content from HTML files;
+    removal of ads, sidebars and headers using the boilerpipe Java
+    library. [<span
+    class="Ohat">RTidyHTML</span>](http://www.Omegahat.org/RTidyHTML/)
+    interfaces to the libtidy library for correcting HTML documents that
+    are not well-formed. This library corrects common errors in HTML
+    documents.
+    [W3CMarkupValidator](http://cran.r-project.org/web/packages/W3CMarkupValidator/index.html)
+    provides an R Interface to W3C Markup Validation Services for
+    validating HTML documents.
+-   For XML documents, the [<span
+    class="Ohat">XMLSchema</span>](http://www.Omegahat.org/XMLSchema/)
+    package provides facilities in R for reading XML schema documents
+    and processing them to create definitions for R classes and
+    functions for converting XML nodes to instances of those classes. It
+    provides the framework for meta-computing with XML schema in R. The
+    [<span class="Ohat">Sxslt</span>](http://www.Omegahat.org/Sxslt/)
+    package is an interface to Dan Veillard's libxslt translator. It
+    allows R programmers to use XSLT, and also allows XSL code to make
+    use of R functions. [<span
+    class="Ohat">SSOAP</span>](http://www.Omegahat.org/SSOAP/) provides
+    a client-side SOAP (Simple Object Access Protocol) mechanism. It
+    aims to provide a high-level interface to invoke SOAP methods
+    provided by a SOAP server. [<span
+    class="Ohat">XMLRPC</span>](http://www.Omegahat.org/XMLRPC/)
+    provides an implementation of XML-RPC, a relatively simple remote
+    procedure call mechanism that uses HTTP and XML. This can be used
+    for communicating between processes on a single machine or for
+    accessing Web services from within R.
+-   [<span
+    class="Ohat">Rcompression</span>](http://www.Omegahat.org/Rcompression/)
+    (not on CRAN): Interface to zlib and bzip2 libraries for performing
+    in-memory compression and decompression in R. This is useful when
+    receiving or sending contents to remote servers, e.g. Web services,
+    HTTP requests via RCurl.
+-   [tm.plugin.webmining](http://cran.r-project.org/web/packages/tm.plugin.webmining/index.html):
+    Extensible text retrieval framework for news feeds in XML (RSS,
+    ATOM) and JSON formats. Currently, the following feeds are
+    implemented: Google Blog Search, Google Finance, Google News,
+    NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo
+    Inplay.
+
+### Other Useful Packages and Functions
+
 -   *Javascript* :
     [V8](http://cran.r-project.org/web/packages/V8/index.html) (
     [Github](https://github.com/jeroenooms/v8)) is an R interface to
@@ -204,76 +279,6 @@ Tools for Working with the Web from R
     read data and metadata documents exchanged through the Statistical
     Data and Metadata Exchange (SDMX) framework. The package currently
     focuses on the SDMX XML standard format (SDMX-ML).
-
-### Tools for Working with URLs
-
--   The `httr::parse_url()` function can be used to extract portions of
-    a URL. The `RCurl::URLencode()` and `utils::URLencode()` functions
-    can be used to encode character strings for use in URLs.
-    `utils::URLdecode()` decodes back to the original strings.
-    [urltools](http://cran.r-project.org/web/packages/urltools/index.html)
-    ( [GitHub](https://github.com/Ironholds/urltools)) can also handle
-    URL encoding, decoding, parsing, and parameter extraction.
--   The [tldextract](https://github.com/jayjacobs/tldextract) package
-    extract top level domains and subdomains from a host name. It's a
-    port of [a Python library of the same
-    name](https://github.com/john-kurkowski/tldextract).
--   [iptools](https://github.com/hrbrmstr/iptools) can facilitate
-    working with IPv4 addresses, including for use in geolocation.
-
-### Tools for Working with Scraped Webpage Contents
-
--   [boilerpipeR](http://cran.r-project.org/web/packages/boilerpipeR/index.html):
-    Generic Extraction of main text content from HTML files; removal of
-    ads, sidebars and headers using the boilerpipe Java library.
--   The [<span
-    class="Ohat">XMLRPC</span>](http://www.Omegahat.org/XMLRPC/) package
-    provides an implementation of XML-RPC, a relatively simple remote
-    procedure call mechanism that uses HTTP and XML. This can be used
-    for communicating between processes on a single machine or for
-    accessing Web services from within R.
--   The [<span
-    class="Ohat">XMLSchema</span>](http://www.Omegahat.org/XMLSchema/)
-    package provides facilities in R for reading XML schema documents
-    and processing them to create definitions for R classes and
-    functions for converting XML nodes to instances of those classes. It
-    provides the framework for meta-computing with XML schema in R
--   [<span
-    class="Ohat">RTidyHTML</span>](http://www.Omegahat.org/RTidyHTML/)
-    interfaces to the libtidy library for correcting HTML documents that
-    are not well-formed. This library corrects common errors in HTML
-    documents.
--   [W3CMarkupValidator](http://cran.r-project.org/web/packages/W3CMarkupValidator/index.html)
-    provides an R Interface to W3C Markup Validation Services for
-    validating HTML documents.
--   [<span class="Ohat">SSOAP</span>](http://www.Omegahat.org/SSOAP/)
-    provides a client-side SOAP (Simple Object Access Protocol)
-    mechanism. It aims to provide a high-level interface to invoke SOAP
-    methods provided by a SOAP server.
--   [<span
-    class="Ohat">Rcompression</span>](http://www.Omegahat.org/Rcompression/)
-    (not on CRAN): Interface to zlib and bzip2 libraries for performing
-    in-memory compression and decompression in R. This is useful when
-    receiving or sending contents to remote servers, e.g. Web services,
-    HTTP requests via RCurl.
--   [<span
-    class="Ohat">CGIwithR</span>](http://www.Omegahat.org/CGIwithR/)
-    (not on CRAN) allows one to use R scripts as CGI programs for
-    generating dynamic Web content. HTML forms and other mechanisms to
-    submit dynamic requests can be used to provide input to R scripts
-    via the Web to create content that is determined within that R
-    script.
--   The [<span
-    class="Ohat">Sxslt</span>](http://www.Omegahat.org/Sxslt/) package
-    is an interface to Dan Veillard's libxslt translator. It allows R
-    programmers to use XSLT, and also allows XSL code to make use of R
-    functions.
--   [tm.plugin.webmining](http://cran.r-project.org/web/packages/tm.plugin.webmining/index.html):
-    Extensible text retrieval framework for news feeds in XML (RSS,
-    ATOM) and JSON formats. Currently, the following feeds are
-    implemented: Google Blog Search, Google Finance, Google News,
-    NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo
-    Inplay.
 
 Web and Server Frameworks
 -------------------------
@@ -350,11 +355,18 @@ Web and Server Frameworks
     Implementation of logicless templating based on
     [Mustache](http://mustache.github.io/) in R. Mustache syntax is
     described in <http://mustache.github.io/mustache.5.html>
+-   [<span
+    class="Ohat">CGIwithR</span>](http://www.Omegahat.org/CGIwithR/)
+    (not on CRAN) allows one to use R scripts as CGI programs for
+    generating dynamic Web content. HTML forms and other mechanisms to
+    submit dynamic requests can be used to provide input to R scripts
+    via the Web to create content that is determined within that R
+    script.
 
 Web Services
 ------------
 
-### Common Tasks Using Web Services
+### Cloud Computing and Storage
 
 -   Amazon Web Services is a popular, proprietary cloud service offering
     a suite of computing, storage, and infrastructure tools. *Simple
@@ -378,12 +390,8 @@ Web Services
     another package for managing EC2 instances and S3 storage, which
     includes a parallel version of `lapply()` for the Elastic Map Reduce
     (EMR) engine called `emrlapply()`. It uses Hadoop Streaming on
-    Amazon's EMR in order to get simple parallel computation. *Amazon
-    Mechanical Turk* is a paid crowdsourcing platform that can be used
-    to semi-automate tasks that are not easily automated.
-    [MTurkR](http://cran.r-project.org/web/packages/MTurkR/index.html) (
-    [GitHub](https://www.github.com/leeper/MTurkR))) provides access to
-    the Amazon Mechanical Turk Requester API. *DBREST* : [<span
+    Amazon's EMR in order to get simple parallel computation. *DBREST* :
+    [<span
     class="Ohat">RAmazonDBREST</span>](http://www.Omegahat.org/RAmazonDBREST/)
     provides an interface to Amazon's Simple DB API. [The cloudyr
     project](https://github.com/cloudyr/), which is currently under
@@ -400,6 +408,14 @@ Web Services
     operations, including dir/copy/move/delete operations, account
     information (including quotas) and the ability to upload and
     download files from any Dropbox account.
+-   *Docker* : [analogsea](https://github.com/sckott/analogsea) is a
+    general purpose client for the Digital Ocean v2 API. In addition,
+    the package includes functions to install various R tools including
+    base R, RStudio server, and more. There's an improving interface to
+    interact with docker on your remote droplets via this package.
+
+### Document and Code Sharing
+
 -   *Code Sharing* :
     [gistr](http://cran.r-project.org/web/packages/gistr/index.html) (
     [GitHub](https://github.com/ropensci/gistr)) works with GitHub gists
@@ -424,22 +440,6 @@ Web Services
     [dataone](http://cran.rstudio.com/src/contrib/Archive/dataone/)
     provides read/write access to data and metadata from the [DataONE
     network](https://www.dataone.org/) of Member Node data repositories.
--   *Docker* : [analogsea](https://github.com/sckott/analogsea) is a
-    general purpose client for the Digital Ocean v2 API. In addition,
-    the package includes functions to install various R tools including
-    base R, RStudio server, and more. There's an improving interface to
-    interact with docker on your remote droplets via this package.
--   *Geolocation/Geocoding* : Several packages connect to
-    geolocation/geocoding services.
-    [rydn](https://github.com/trestletech/rydn) (not on CRAN) is an
-    interface to the Yahoo Developers network geolocation APIs,
-    [geocodeHERE](http://cran.r-project.org/web/packages/geocodeHERE/index.html)
-    ( [GitHub](https://github.com/corynissen/geocodeHERE)): Wrapper for
-    Nokia's [HERE](http://here.com/) geocoding API, and
-    [ipapi](https://github.com/hrbrmstr/ipapi) (
-    [GitHub](https://github.com/hrbrmstr/ipapi)) can be used to
-    geolocate IPv4/6 addresses and/or domain names using the
-    [ip-api.com](http://ip-api.com/) API.
 -   *Google Drive/Google Documents* : The [<span
     class="Ohat">RGoogleDocs</span>](http://www.Omegahat.org/RGoogleDocs/)
     package is an example of using the RCurl and XML packages to quickly
@@ -459,6 +459,40 @@ Web Services
     [GitHub](https://github.com/maxconway/gsheet)) can download Google
     Sheets using just the sharing link. Spreadsheets can be downloaded
     as a data frame, or as plain text to parse manually.
+-   [imguR](http://cran.r-project.org/web/packages/imguR/index.html) (
+    [GitHub](https://github.com/leeper/imguR)) is a package to share
+    plots using the image hosting service
+    [Imgur.com](http://www.imgur.com). knitr also has a function
+    `imgur_upload()` to load images from literate programming documents.
+-   [rscribd](https://github.com/leeper/rscribd) (not on CRAN): API
+    client for publishing documents to [Scribd](http://www.scribd.com).
+
+### Data Analysis and Processing Services
+
+-   *Crowdsourcing* : Amazon Mechanical Turk is a paid crowdsourcing
+    platform that can be used to semi-automate tasks that are not easily
+    automated.
+    [MTurkR](http://cran.r-project.org/web/packages/MTurkR/index.html) (
+    [GitHub](https://www.github.com/leeper/MTurkR))) provides access to
+    the Amazon Mechanical Turk Requester API.
+    [microworkers](https://github.com/leeper/microworkers) (not on CRAN)
+    can distribute tasks and retrieve results for the Microworkers.com
+    platform.
+-   [genderizeR](http://cran.r-project.org/web/packages/genderizeR/index.html)
+    ( [GitHub](https://github.com/kalimu/genderizeR)) uses the
+    [genderize.io](http://genderize.io) API to predict gender from first
+    names extracted from a text vector.
+-   *Geolocation/Geocoding* : Several packages connect to
+    geolocation/geocoding services.
+    [rydn](https://github.com/trestletech/rydn) (not on CRAN) is an
+    interface to the Yahoo Developers network geolocation APIs,
+    [geocodeHERE](http://cran.r-project.org/web/packages/geocodeHERE/index.html)
+    ( [GitHub](https://github.com/corynissen/geocodeHERE)): Wrapper for
+    Nokia's [HERE](http://here.com/) geocoding API, and
+    [ipapi](https://github.com/hrbrmstr/ipapi) (
+    [GitHub](https://github.com/hrbrmstr/ipapi)) can be used to
+    geolocate IPv4/6 addresses and/or domain names using the
+    [ip-api.com](http://ip-api.com/) API.
 -   *Machine Learning as a Service* : Several packages provide access to
     cloud-based machine learning services.
     [bigml](http://cran.rstudio.com/src/contrib/Archive/bigml/)
@@ -541,15 +575,6 @@ Web Services
     to data stored in a REDCap (Research Electronic Data CAPture)
     database, which is a web application for building and managing
     online surveys and databases developed at Vanderbilt University.
--   *Push Notifications* :
-    [RPushbullet](http://cran.r-project.org/web/packages/RPushbullet/index.html)
-    provides an easy-to-use interface for the Pushbullet service which
-    provides fast and efficient notifications between computers, phones
-    and tablets.
-    [pushoverr](http://cran.r-project.org/web/packages/pushoverr/index.html)
-    ( [GitHub](https://github.com/briandconnelly/pushoverr)) can sending
-    push notifications to mobile devices (iOS and Android) and desktop
-    using [Pushover](https://pushover.net/).
 -   *Visualization* : Plot.ly is a company that allows you to create
     visualizations in the web using R (and Python). They have an R
     package in development [here](https://github.com/ropensci/plotly)
@@ -581,19 +606,6 @@ Web Services
     CSV/JSON/D3/JavaScript for viewing in a web browser.
     [rVega](https://github.com/metagraf/rVega) (not on CRAN) is an R
     wrapper for Vega.
--   *Wikipedia* :
-    [WikipediR](http://cran.r-project.org/web/packages/WikipediR/index.html)
-    ( [GitHub](https://github.com/Ironholds/WikipediR)) is a wrapper for
-    the MediaWiki API, aimed particularly at the Wikimedia 'production'
-    wikis, such as Wikipedia.
-    [rwikidata](https://github.com/chgrl/rwikidata) and
-    [WikidataR](https://github.com/Ironholds/WikidataR) (Not on CRAN)
-    can request data from
-    [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page),
-    the free knowledgebase.
-    [wikipediatrend](http://cran.r-project.org/web/packages/wikipediatrend/index.html)
-    ( [GitHub](https://github.com/petermeissner/wikipediatrend))
-    provides access to Wikipedia page access statistics.
 
 ### Social Media Clients
 
@@ -666,6 +678,68 @@ Web Services
 
 ### Other Web Services
 
+-   *Push Notifications* :
+    [RPushbullet](http://cran.r-project.org/web/packages/RPushbullet/index.html)
+    provides an easy-to-use interface for the Pushbullet service which
+    provides fast and efficient notifications between computers, phones
+    and tablets.
+    [pushoverr](http://cran.r-project.org/web/packages/pushoverr/index.html)
+    ( [GitHub](https://github.com/briandconnelly/pushoverr)) can sending
+    push notifications to mobile devices (iOS and Android) and desktop
+    using [Pushover](https://pushover.net/).
+-   *Reference/bibliography/citation management* :
+    [RefManageR](http://cran.r-project.org/web/packages/RefManageR/index.html)
+    imports and manage BibTeX and BibLaTeX references with RefManager.
+    [RMendeley](http://cran.rstudio.com/src/contrib/Archive/RMendeley/):
+    Implementation of the Mendeley API in R. Archived on CRAN. It's been
+    archived on CRAN temporarily until it is updated for the new
+    Mendeley API. [rmetadata](https://github.com/ropensci/rmetadata)
+    (not on CRAN) can get scholarly metadata from around the web.
+    [rorcid](https://github.com/ropensci/rorcid) (not on CRAN): is a
+    programmatic interface the Orcid.org API.
+    [rplos](http://cran.r-project.org/web/packages/rplos/index.html) is
+    a programmatic interface to the Web Service methods provided by the
+    Public Library of Science journals for search.
+    [rpubmed](https://github.com/rOpenHealth/rpubmed) (not on CRAN)
+    provides tools for extracting and processing Pubmed and Pubmed
+    Central records.
+    [scholar](http://cran.r-project.org/web/packages/scholar/index.html)
+    provides functions to extract citation data from Google Scholar.
+    Convenience functions are also provided for comparing multiple
+    scholars and predicting future h-index values.
+    [pubmed.mineR](http://cran.r-project.org/web/packages/pubmed.mineR/index.html)
+    is a package for text mining of [PubMed
+    Abstracts](http://www.ncbi.nlm.nih.gov/pubmed) that supports
+    fetching text and XML from PubMed.
+    [OAIHarvester](http://cran.r-project.org/web/packages/OAIHarvester/index.html)
+    harvests metadata using the Open Archives Initiative Protocol for
+    Metadata Harvesting (OAI-PMH).
+    [JSTORr](https://github.com/benmarwick/JSTORr) (Not on CRAN)
+    provides simple text mining of journal articles from JSTOR's Data
+    for Research service.
+    [aRxiv](http://cran.r-project.org/web/packages/aRxiv/index.html) (
+    [GitHub](https://github.com/ropensci/aRxiv)) is a client for the
+    arXiv API, a repository of electronic preprints for computer
+    science, mathematics, physics, quantitative biology, quantitative
+    finance, and statistics.
+    [alm](http://cran.r-project.org/web/packages/alm/index.html) is a
+    wrapper to the almetrics API platform developed by PLoS.
+-   *Wikipedia* :
+    [WikipediR](http://cran.r-project.org/web/packages/WikipediR/index.html)
+    ( [GitHub](https://github.com/Ironholds/WikipediR)) is a wrapper for
+    the MediaWiki API, aimed particularly at the Wikimedia 'production'
+    wikis, such as Wikipedia.
+    [rwikidata](https://github.com/chgrl/rwikidata) and
+    [WikidataR](https://github.com/Ironholds/WikidataR) (Not on CRAN)
+    can request data from
+    [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page),
+    the free knowledgebase.
+    [wikipediatrend](http://cran.r-project.org/web/packages/wikipediatrend/index.html)
+    ( [GitHub](https://github.com/petermeissner/wikipediatrend))
+    provides access to Wikipedia page access statistics.
+-   [bigrquery](http://cran.r-project.org/web/packages/bigrquery/index.html)
+    ( [GitHub](https://github.com/hadley/bigrquery)): An interface to
+    Google's bigquery.
 -   [colourlovers](http://cran.r-project.org/web/packages/colourlovers/index.html)
     ( [GitHub](https://github.com/leeper/colourlovers)) extracts colors
     and multi-color patterns from
@@ -680,18 +754,28 @@ Web Services
     [Discourse](http://www.discourse.org/) web forum platform. The API
     is for an installed instance of Discourse, not for the Discourse
     site itself.
+-   [factualR](http://cran.r-project.org/web/packages/factualR/index.html):
+    Thin wrapper for the [Factual.com](http://factual.com/) server API.
 -   [fitbitScraper](http://cran.r-project.org/web/packages/fitbitScraper/index.html)
     ( [GitHub](https://github.com/corynissen/fitbitScraper)) retrieves
     Fitbit data.
--   [genderizeR](http://cran.r-project.org/web/packages/genderizeR/index.html)
-    ( [GitHub](https://github.com/kalimu/genderizeR)) uses the
-    [genderize.io](http://genderize.io) API to predict gender from first
-    names extracted from a text vector.
--   [imguR](http://cran.r-project.org/web/packages/imguR/index.html) (
-    [GitHub](https://github.com/leeper/imguR)) is a package to share
-    plots using the image hosting service
-    [Imgur.com](http://www.imgur.com). knitr also has a function
-    `imgur_upload()` to load images from literate programming documents.
+-   [GFusionTables](http://gfusiontables.lopatenko.com/) (not on CRAN):
+    An interface to Google Fusion Tables. Google Fusion Tables is a data
+    management system in the cloud. This package provides functions to
+    browse Fusion Tables catalog, retrieve data from Gusion Tables dtd
+    storage to R and to upload data from R to Fusion Tables
+-   [infochimps](http://cran.rstudio.com/src/contrib/Archive/infochimps/)
+    ( [GitHub](https://github.com/drewconway/infochimps); archived) is
+    an R wrapper for the infochimps.com API services.
+-   [internetarchive](https://github.com/lmullen/internetarchive) (
+    [GitHub](https://github.com/ropensci/internetarchive); not on CRAN):
+    API client for internet archive metadata.
+-   [jSonarR](http://cran.r-project.org/web/packages/jSonarR/index.html):
+    Enables users to access MongoDB by running queries and returning
+    their results in data.frames. jSonarR uses data processing and
+    conversion capabilities in the jSonar Analytics Platform and the
+    [JSON Studio Gateway](http://www.jsonstudio.com), to convert JSON to
+    a tabular format.
 -   [meme](https://github.com/leeper/meme) (not on CRAN): Provides the
     ability to create internet memes from template images using several
     online meme-generation services.
@@ -709,10 +793,14 @@ Web Services
 -   [Rblpapi](https://github.com/armstrtw/Rblpapi) (
     [GitHub](https://github.com/armstrtw/Rblpapi)) is a client for
     Bloomberg Finance L.P.
+-   [rerddap](https://github.com/ropensci/rerddap) (
+    [GitHub](https://github.com/ropensci/rerddap); not on CRAN): A
+    generic R client to interact with any ERDDAP instance, which is a
+    special case of OPeNDAP ( <https://en.wikipedia.org/wiki/OPeNDAP>),
+    or *Open-source Project for a Network Data Access Protocol* . Allows
+    user to swap out the base URL to use any ERDDAP instance.
 -   [RLastFM](http://cran.rstudio.com/src/contrib/Archive/RLastFM/): A
     package to interface to the last.fm API. Archived on CRAN.
--   [rscribd](https://github.com/leeper/rscribd) (not on CRAN): API
-    client for publishing documents to [Scribd](http://www.scribd.com).
 -   [RForcecom](http://cran.r-project.org/web/packages/RForcecom/index.html):
     RForcecom provides a connection to Force.com and Salesforce.com.
 -   [shopifyr](http://cran.r-project.org/web/packages/shopifyr/index.html):
@@ -721,85 +809,11 @@ Web Services
 -   [slackr](http://cran.r-project.org/web/packages/slackr/index.html) (
     [GitHub](https://github.com/hrbrmstr/slackr)) is a client for
     Slack.com messaging platform.
--   [sos4R](http://cran.r-project.org/web/packages/sos4R/index.html) is
-    a client for the OGC Sensor Observation Service.
 -   [stackr](https://github.com/dgrtwo/stackr) (not on CRAN): An
     unofficial wrapper for the read-only features of the [Stack Exchange
     API](https://api.stackexchange.com/).
 -   [zendeskR](http://cran.r-project.org/web/packages/zendeskR/index.html):
     This package provides a wrapper for the Zendesk API.
--   [bigrquery](http://cran.r-project.org/web/packages/bigrquery/index.html)
-    ( [GitHub](https://github.com/hadley/bigrquery)): An interface to
-    Google's bigquery.
--   [GFusionTables](http://gfusiontables.lopatenko.com/) (not on CRAN):
-    An interface to Google Fusion Tables. Google Fusion Tables is a data
-    mangement system in the cloud. This package provides functions to
-    browse Fusion Tables catalog, retrieve data from Gusion Tables dtd
-    storage to R and to upload data from R to Fusion Tables
--   [factualR](http://cran.r-project.org/web/packages/factualR/index.html):
-    Thin wrapper for the [Factual.com](http://factual.com/) server API.
--   [infochimps](http://cran.rstudio.com/src/contrib/Archive/infochimps/)
-    ( [GitHub](https://github.com/drewconway/infochimps); archived) is
-    an R wrapper for the infochimps.com API services.
--   [internetarchive](https://github.com/lmullen/internetarchive) (
-    [GitHub](https://github.com/ropensci/internetarchive); not on CRAN):
-    API client for internet archive metadata.
--   [jSonarR](http://cran.r-project.org/web/packages/jSonarR/index.html):
-    Enables users to access MongoDB by running queries and returning
-    their results in data.frames. jSonarR uses data processing and
-    conversion capabilities in the jSonar Analytics Platform and the
-    [JSON Studio Gateway](http://www.jsonstudio.com), to convert JSON to
-    a tabular format.
--   [rerddap](https://github.com/ropensci/rerddap) (
-    [GitHub](https://github.com/ropensci/rerddap); not on CRAN): A
-    generic R client to interact with any ERDDAP instance, which is a
-    special case of OPeNDAP ( <https://en.wikipedia.org/wiki/OPeNDAP>),
-    or *Open-source Project for a Network Data Access Protocol* . Allows
-    user to swap out the base URL to use any ERDDAP instance.
--   [alm](http://cran.r-project.org/web/packages/alm/index.html) is a
-    wrapper to the almetrics API platform developed by PLoS.
--   [aRxiv](http://cran.r-project.org/web/packages/aRxiv/index.html) (
-    [GitHub](https://github.com/ropensci/aRxiv)) is a client for the
-    arXiv API, a repository of electronic preprints for computer
-    science, mathematics, physics, quantitative biology, quantitative
-    finance, and statistics.
--   [JSTORr](https://github.com/benmarwick/JSTORr) (Not on CRAN): Simple
-    text mining of journal articles from JSTOR's Data for Research
-    service
--   [ngramr](http://cran.r-project.org/web/packages/ngramr/index.html):
-    Retrieve and plot word frequencies through time from the Google
-    Ngram Viewer.
--   [OAIHarvester](http://cran.r-project.org/web/packages/OAIHarvester/index.html):
-    Harvest metadata using the Open Archives Initiative Protocol for
-    Metadata Harvesting (OAI-PMH).
--   [pubmed.mineR](http://cran.r-project.org/web/packages/pubmed.mineR/index.html):
-    A package for text mining of [PubMed
-    Abstracts](http://www.ncbi.nlm.nih.gov/pubmed). Supports fetching
-    text and XML from PubMed.
--   [rAltmetric](http://cran.r-project.org/web/packages/rAltmetric/index.html):
-    Query and visualize metrics from Altmetric.com.
--   [RefManageR](http://cran.r-project.org/web/packages/RefManageR/index.html):
-    Import and Manage BibTeX and BibLaTeX references with RefManager.
--   [rentrez](http://cran.r-project.org/web/packages/rentrez/index.html):
-    Talk with NCBI entrez.
--   [RMendeley](http://cran.rstudio.com/src/contrib/Archive/RMendeley/):
-    Implementation of the Mendeley API in R. Archived on CRAN. It's been
-    archived on CRAN temporarily until pacakge is updated for the new
-    Mendeley API.
--   [rmetadata](https://github.com/ropensci/rmetadata) (not on CRAN):
-    Get scholarly metadata from around the web.
--   [rorcid](https://github.com/ropensci/rorcid) (not on CRAN): A
-    programmatic interface the Orcid.org API.
--   [rplos](http://cran.r-project.org/web/packages/rplos/index.html): A
-    programmatic interface to the Web Service methods provided by the
-    Public Library of Science journals for search.
--   [rpubmed](https://github.com/rOpenHealth/rpubmed) (not on CRAN):
-    Tools for extracting and processing Pubmed and Pubmed Central
-    records.
--   [scholar](http://cran.r-project.org/web/packages/scholar/index.html)
-    provides functions to extract citation data from Google Scholar.
-    Convenience functions are also provided for comparing multiple
-    scholars and predicting future h-index values.
 
 
 
@@ -843,7 +857,6 @@ Web Services
 -   [mailR](http://cran.r-project.org/web/packages/mailR/index.html)
 -   [mime](http://cran.r-project.org/web/packages/mime/index.html)
 -   [MTurkR](http://cran.r-project.org/web/packages/MTurkR/index.html)
--   [ngramr](http://cran.r-project.org/web/packages/ngramr/index.html)
 -   [OAIHarvester](http://cran.r-project.org/web/packages/OAIHarvester/index.html)
 -   [opencpu](http://cran.r-project.org/web/packages/opencpu/index.html)
 -   [osmar](http://cran.r-project.org/web/packages/osmar/index.html)
@@ -854,7 +867,6 @@ Web Services
 -   [pushoverr](http://cran.r-project.org/web/packages/pushoverr/index.html)
 -   [radiant](http://cran.r-project.org/web/packages/radiant/index.html)
 -   [RAdwords](http://cran.r-project.org/web/packages/RAdwords/index.html)
--   [rAltmetric](http://cran.r-project.org/web/packages/rAltmetric/index.html)
 -   [rapport](http://cran.r-project.org/web/packages/rapport/index.html)
 -   [Rbitcoin](http://cran.r-project.org/web/packages/Rbitcoin/index.html)
 -   [rbitcoinchartsapi](http://cran.r-project.org/web/packages/rbitcoinchartsapi/index.html)
@@ -864,7 +876,6 @@ Web Services
 -   [RDataCanvas](http://cran.r-project.org/web/packages/RDataCanvas/index.html)
 -   [redcapAPI](http://cran.r-project.org/web/packages/redcapAPI/index.html)
 -   [RefManageR](http://cran.r-project.org/web/packages/RefManageR/index.html)
--   [rentrez](http://cran.r-project.org/web/packages/rentrez/index.html)
 -   [repmis](http://cran.r-project.org/web/packages/repmis/index.html)
 -   [Rfacebook](http://cran.r-project.org/web/packages/Rfacebook/index.html)
 -   [rfigshare](http://cran.r-project.org/web/packages/rfigshare/index.html)
@@ -894,7 +905,6 @@ Web Services
 -   [shopifyr](http://cran.r-project.org/web/packages/shopifyr/index.html)
 -   [slackr](http://cran.r-project.org/web/packages/slackr/index.html)
 -   [SocialMediaMineR](http://cran.r-project.org/web/packages/SocialMediaMineR/index.html)
--   [sos4R](http://cran.r-project.org/web/packages/sos4R/index.html)
 -   [streamR](http://cran.r-project.org/web/packages/streamR/index.html)
 -   [tm.plugin.webmining](http://cran.r-project.org/web/packages/tm.plugin.webmining/index.html)
 -   [translate](http://cran.r-project.org/web/packages/translate/index.html)
