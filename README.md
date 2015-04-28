@@ -575,6 +575,9 @@ Web Services
     to data stored in a REDCap (Research Electronic Data CAPture)
     database, which is a web application for building and managing
     online surveys and databases developed at Vanderbilt University.
+    [formr](https://github.com/rubenarslan/formr) facilitates use of the
+    [formr](https://formr.org/) survey framework, which is built on
+    openCPU.
 -   *Visualization* : Plot.ly is a company that allows you to create
     visualizations in the web using R (and Python). They have an R
     package in development [here](https://github.com/ropensci/plotly)
