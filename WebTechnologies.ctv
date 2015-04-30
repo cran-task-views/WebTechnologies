@@ -93,7 +93,7 @@ For XML documents, the <ohat>XMLSchema</ohat> package provides facilities in R f
 <em>Javascript</em>: <pkg>V8</pkg> (<a href="https://github.com/jeroenooms/v8">Github</a>) is an R interface to Google's open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The <ohat>SpiderMonkey</ohat> package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R.
 </li>
 <li>
-<em>Email:</em>: <pkg>mailR</pkg> is an interface to Apache Commons Email to send emails from within R. <pkg>gmailr</pkg> provides access the Google's gmail.com RESTful API.
+<em>Email:</em>: <pkg>mailR</pkg> is an interface to Apache Commons Email to send emails from within R. <pkg>sendmailR</pkg> provides a simple SMTP client. <pkg>gmailr</pkg> provides access the Google's gmail.com RESTful API.
 </li>
 <li>
 <em>Miscellaneous</em>: <pkg>webutils</pkg> (<a href="https://github.com/jeroenooms/webutils">GitHub</a>) contains various functions for developing web applications, including parsers for <code>application/x-www-form-urlencoded</code> as well as <code>multipart/form-data</code>. <pkg>mime</pkg> (<a href="https://github.com/yihui/mime">GitHub</a>) guesses the MIME type for a file from its extension. <pkg>rsdmx</pkg> (<a href="https://github.com/opensdmx/rsdmx/wiki">Github</a>) provides tools to read data and metadata documents exchanged through the Statistical Data and Metadata Exchange (SDMX) framework. The package currently focuses on the SDMX XML standard format (SDMX-ML).
@@ -443,6 +443,7 @@ The <ohat>Rflickr</ohat> package provides an interface to the Flickr photo manag
   <pkg>rvest</pkg>
   <pkg>scholar</pkg>
   <pkg>scrapeR</pkg>
+  <pkg>sendmailR</pkg>
   <pkg>servr</pkg>
   <pkg>shopifyr</pkg>
   <pkg>slackr</pkg>

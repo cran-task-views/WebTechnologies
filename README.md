@@ -263,6 +263,8 @@ be used to parse locally stored or in-memory web files.
 -   *Email:* :
     [mailR](http://cran.r-project.org/web/packages/mailR/index.html) is
     an interface to Apache Commons Email to send emails from within R.
+    [sendmailR](http://cran.r-project.org/web/packages/sendmailR/index.html)
+    provides a simple SMTP client.
     [gmailr](http://cran.r-project.org/web/packages/gmailr/index.html)
     provides access the Google's gmail.com RESTful API.
 -   *Miscellaneous* :
@@ -902,6 +904,7 @@ Web Services
 -   [rvest](http://cran.r-project.org/web/packages/rvest/index.html)
 -   [scholar](http://cran.r-project.org/web/packages/scholar/index.html)
 -   [scrapeR](http://cran.r-project.org/web/packages/scrapeR/index.html)
+-   [sendmailR](http://cran.r-project.org/web/packages/sendmailR/index.html)
 -   [servr](http://cran.r-project.org/web/packages/servr/index.html)
 -   [shiny](http://cran.r-project.org/web/packages/shiny/index.html)
     (core)
