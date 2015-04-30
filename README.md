@@ -784,6 +784,10 @@ Web Services
 -   [meme](https://github.com/leeper/meme) (not on CRAN): Provides the
     ability to create internet memes from template images using several
     online meme-generation services.
+-   [randNames](http://cran.r-project.org/web/packages/randNames/index.html)
+    ( [Github](https://github.com/karthik/randNames)) generates random
+    names and personal identifying information using the
+    <https://randomapi.com> API.
 -   [Rbitcoin](http://cran.r-project.org/web/packages/Rbitcoin/index.html)
     allows both public and private API calls to interact with Bitcoin.
     [rbitcoinchartsapi](http://cran.r-project.org/web/packages/rbitcoinchartsapi/index.html)
@@ -872,6 +876,7 @@ Web Services
 -   [pushoverr](http://cran.r-project.org/web/packages/pushoverr/index.html)
 -   [radiant](http://cran.r-project.org/web/packages/radiant/index.html)
 -   [RAdwords](http://cran.r-project.org/web/packages/RAdwords/index.html)
+-   [randNames](http://cran.r-project.org/web/packages/randNames/index.html)
 -   [rapport](http://cran.r-project.org/web/packages/rapport/index.html)
 -   [Rbitcoin](http://cran.r-project.org/web/packages/Rbitcoin/index.html)
 -   [rbitcoinchartsapi](http://cran.r-project.org/web/packages/rbitcoinchartsapi/index.html)
