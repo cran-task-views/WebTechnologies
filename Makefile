@@ -1,4 +1,4 @@
-all: whisker ctv2html sed pandoc1 sedtoc fixctv cleanup
+all: whisker checkctv ctv2html sed pandoc1 sedtoc fixctv cleanup
 
 getdumber:
 	sed 's@<li class="removeme">.\+<\/li>@ @g' WebTechnologies.ctv > WebTechnologiesDumber.ctv
@@ -6,8 +6,11 @@ getdumber:
 whisker:
 	Rscript --vanilla -e 'source("whiskerit.R")'
 
+checkctv:
+	Rscript --vanilla -e 'options(repos=structure(c(CRAN="http://cran.rstudio.com/"))); if(!require("ctv")) install.packages("ctv"); print(ctv::check_ctv_packages("WebTechnologies.ctv"))'
+
 ctv2html:
-	Rscript --vanilla -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); library("ctv"); options(repos=structure(c(CRAN="http://cran.rstudio.com/"))); ctv2html("WebTechnologies.ctv", file = "WebTechnologies.html")'
+	Rscript --vanilla -e 'options(repos=structure(c(CRAN="http://cran.rstudio.com/"))); if(!require("ctv")) install.packages("ctv");  ctv::ctv2html("WebTechnologies.ctv", file = "WebTechnologies.html")'
 
 sed:
 	mv WebTechnologies.html doc.html
