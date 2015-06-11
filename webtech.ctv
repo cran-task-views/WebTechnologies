@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-<version>2015-04-27</version>
+<version>2015-06-11</version>
 
 <info> This task view contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data task view</a> provides further discussion of online data sources that can be accessed from R. 
 
