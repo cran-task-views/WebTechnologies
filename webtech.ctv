@@ -335,6 +335,9 @@ The <ohat>Rflickr</ohat> package provides an interface to the Flickr photo manag
 <pkg>Rbitcoin</pkg> allows both public and private API calls to interact with Bitcoin. <pkg>rbitcoinchartsapi</pkg> is a package for the <a href="http://bitcoincharts.com/">BitCoinCharts.com</a> API. From their website: "Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API)." <pkg>RCryptsy</pkg> (<a href="https://github.com/ropensci/RCryptsy">GitHub</a>) wraps the API for the <a href="http://www.cryptsy.com">Cryptsy</a> crypto-currency trading platform.
 </li>
 <li>
+<a href="https://github.com/dmpe/rbitly">rbitly</a> (not on CRAN): An interface to the <a href="http://bit.ly">bit.ly</a> API.
+</li>
+<li>
 <a href="https://github.com/armstrtw/Rblpapi">Rblpapi</a> (<a href="https://github.com/armstrtw/Rblpapi">GitHub</a>) is a client for Bloomberg Finance L.P.
 </li>
 <li>
