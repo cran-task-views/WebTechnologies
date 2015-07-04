@@ -400,7 +400,7 @@ Web Services
     active development on Github, aims to provide a unified interface to
     the full Amazon Web Services suite without the need for external
     system dependencies. None of these packages are on CRAN.
--   *Cloud Storage* : [boxr](https://github.com/brendan-R/boxr) (
+-   *Cloud Storage* : [boxr](http://cran.r-project.org/web/packages/boxr/) (
     [GitHub](https://github.com/brendan-R/boxr)) is a lightweight,
     high-level interface for the [box.com
     API](https://developers.box.com/docs/).
