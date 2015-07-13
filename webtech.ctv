@@ -362,6 +362,9 @@ The <ohat>Rflickr</ohat> package provides an interface to the Flickr photo manag
 <a href="https://github.com/dgrtwo/stackr">stackr</a> (not on CRAN): An unofficial wrapper for the read-only features of the <a href="https://api.stackexchange.com/">Stack Exchange API</a>.
 </li>
 <li>
+<a href="https://github.com/soodoku/tuber">tuber</a> (not on CRAN): A YouTube API client.
+</li>
+<li>
 <pkg>zendeskR</pkg>: This package provides a wrapper for the Zendesk API.
 </li>
 </ul>
