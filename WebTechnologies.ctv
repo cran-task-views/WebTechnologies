@@ -3,7 +3,7 @@
 <name>WebTechnologies</name>
 <topic>Web Technologies and Services</topic>
 <maintainer email="scott@ropensci.org">Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-<version>2015-04-27</version>
+<version>2015-07-13</version>
 
 <info> This task view contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data task view</a> provides further discussion of online data sources that can be accessed from R. 
 
@@ -75,7 +75,7 @@ The <a href="https://github.com/jayjacobs/tldextract">tldextract</a> package ext
 Several packages can be used for parsing HTML documents. <pkg>boilerpipeR</pkg> provides generic extraction of main text content from HTML files; removal of ads, sidebars and headers using the boilerpipe Java library. <ohat>RTidyHTML</ohat> interfaces to the libtidy library for correcting HTML documents that are not well-formed. This library corrects common errors in HTML documents. <pkg>W3CMarkupValidator</pkg> provides an R Interface to W3C Markup Validation Services for validating HTML documents.
 </li>
 <li>
-For XML documents, the <ohat>XMLSchema</ohat> package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R. The <ohat>Sxslt</ohat> package is an interface to Dan Veillard's libxslt translator. It allows R programmers to use XSLT, and also allows XSL code to make use of R functions. <ohat>SSOAP</ohat> provides a client-side SOAP (Simple Object Access Protocol) mechanism. It aims to provide a high-level interface to invoke SOAP methods provided by a SOAP server. <ohat>XMLRPC</ohat> provides an implementation of XML-RPC, a relatively simple remote procedure call mechanism that uses HTTP and XML. This can be used for communicating between processes on a single machine or for accessing Web services from within R.
+For XML documents, the <ohat>XMLSchema</ohat> package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R. <a href="https://github.com/hrbrmstr/xslt">xslt</a> is a package providing an interface to the <a href="http://vslavik.github.io/xmlwrapp/">xmlwrapp<a> an XML processing library that provides an XSLT engine for transforming XML data using a transform stylesheet. (It can be seen as a modern replacement for <ohat>Sxslt</ohat>, which is an interface to Dan Veillard's libxslt translator, and the <ohat>SXalan</ohat> package.) This may be useful for webscraping, as well as transforming XML markup into another human- or machine-readable format (e.g., HTML, JSON, plain text, etc.). <ohat>SSOAP</ohat> provides a client-side SOAP (Simple Object Access Protocol) mechanism. It aims to provide a high-level interface to invoke SOAP methods provided by a SOAP server. <ohat>XMLRPC</ohat> provides an implementation of XML-RPC, a relatively simple remote procedure call mechanism that uses HTTP and XML. This can be used for communicating between processes on a single machine or for accessing Web services from within R.
 </li>
 <li>
 <ohat>Rcompression</ohat> (not on CRAN): Interface to zlib and bzip2 libraries for performing in-memory compression and decompression in R. This is useful when receiving or sending contents to remote servers, e.g. Web services, HTTP requests via RCurl.
@@ -173,7 +173,7 @@ Web Services
 Amazon Web Services is a popular, proprietary cloud service offering a suite of computing, storage, and infrastructure tools. <em>Simple Storage Service (S3)</em> is a commercial server that allows one to store content and retrieve it from any machine connected to the Internet. <ohat>RAmazonS3</ohat> and <a href="https://github.com/robertzk/s3mpi">s3mpi</a> (not on CRAN) provides basic infrastructure for communicating with S3. <a href="http://cran.rstudio.com/src/contrib/Archive/AWS.tools/">AWS.tools</a> (<a href="https://github.com/armstrtw/AWS.tools">GitHub</a>) interacts with S3 and EC2 using the AWS command line interface (an external system dependency). The CRAN version is archived. <a href="https://github.com/lalas/awsConnect">awsConnect</a> (not on CRAN) is another package using the AWS Command Line Interface to control EC2 and S3, which is only available for Linux and Mac OS. <em>Elastic Cloud Compute (EC2)</em> is a cloud computing service. AWS.tools and <a href="https://github.com/lalas/awsConnect">awsConnect</a> (not on CRAN) both use the AWS command line interface to control EC2. <gcode>segue</gcode> is another package for managing EC2 instances and S3 storage, which includes a parallel version of <code>lapply()</code> for the Elastic Map Reduce (EMR) engine called <code>emrlapply()</code>. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation. <em>DBREST</em>: <ohat>RAmazonDBREST</ohat> provides an interface to Amazon's Simple DB API. <a href="https://github.com/cloudyr/">The cloudyr project</a>, which is currently under active development on Github, aims to provide a unified interface to the full Amazon Web Services suite without the need for external system dependencies. None of these packages are on CRAN.
 </li>
 <li>
-<em>Cloud Storage</em>: <a href="https://github.com/brendan-R/boxr">boxr</a> (<a href="https://github.com/brendan-R/boxr">GitHub</a>) is a lightweight, high-level interface for the <a href="https://developers.box.com/docs/">box.com API</a>. <a href="https://github.com/karthik/rdrop2">rDrop2</a> (<a href="https://github.com/karthik/rdrop2">GitHub</a>; not on CRAN) is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account.
+<em>Cloud Storage</em>: <a href="http://cran.r-project.org/web/packages/boxr">boxr</a> (<a href="https://github.com/brendan-R/boxr">GitHub</a>) is a lightweight, high-level interface for the <a href="https://developers.box.com/docs/">box.com API</a>. <a href="https://github.com/karthik/rdrop2">rDrop2</a> (<a href="https://github.com/karthik/rdrop2">GitHub</a>; not on CRAN) is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account.
 </li>
 <li>
 <em>Docker</em>: <a href="https://github.com/sckott/analogsea">analogsea</a> is a general purpose client for the Digital Ocean v2 API. In addition, the package includes functions to install various R tools including base R, RStudio server, and more. There's an improving interface to interact with docker on your remote droplets via this package.
@@ -335,7 +335,7 @@ The <ohat>Rflickr</ohat> package provides an interface to the Flickr photo manag
 <pkg>Rbitcoin</pkg> allows both public and private API calls to interact with Bitcoin. <pkg>rbitcoinchartsapi</pkg> is a package for the <a href="http://bitcoincharts.com/">BitCoinCharts.com</a> API. From their website: "Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API)." <pkg>RCryptsy</pkg> (<a href="https://github.com/ropensci/RCryptsy">GitHub</a>) wraps the API for the <a href="http://www.cryptsy.com">Cryptsy</a> crypto-currency trading platform.
 </li>
 <li>
-<a href="https://github.com/dmpe/rbitly">rbitly</a> (not on CRAN): An interface to the <a href="http://bit.ly">bit.ly</a> API.
+<pkg>RBitly</pkg> (<a href="https://github.com/dmpe/rbitly">Github</a>): An interface to the <a href="http://bit.ly">bit.ly</a> link-shortening API.
 </li>
 <li>
 <a href="https://github.com/armstrtw/Rblpapi">Rblpapi</a> (<a href="https://github.com/armstrtw/Rblpapi">GitHub</a>) is a client for Bloomberg Finance L.P.
@@ -360,6 +360,9 @@ The <ohat>Rflickr</ohat> package provides an interface to the Flickr photo manag
 </li>
 <li>
 <a href="https://github.com/dgrtwo/stackr">stackr</a> (not on CRAN): An unofficial wrapper for the read-only features of the <a href="https://api.stackexchange.com/">Stack Exchange API</a>.
+</li>
+<li>
+<a href="https://github.com/soodoku/tuber">tuber</a> (not on CRAN): A YouTube API client.
 </li>
 <li>
 <pkg>zendeskR</pkg>: This package provides a wrapper for the Zendesk API.
@@ -428,6 +431,7 @@ The <ohat>Rflickr</ohat> package provides an interface to the Flickr photo manag
   <pkg>rapport</pkg>
   <pkg>Rbitcoin</pkg>
   <pkg>rbitcoinchartsapi</pkg>
+  <pkg>RBitly</pkg>
   <pkg>RCryptsy</pkg>
   <pkg>RDataCanvas</pkg>
   <pkg>redcapAPI</pkg>
