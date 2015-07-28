@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2015-07-13" />
+  <meta name="citation_publication_date" content="2015-07-28" />
   <meta name="citation_public_url" content="http://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2015-07-13" />
+  <meta name="DC.issued" content="2015-07-28" />
   <meta name="DC.identifier" content="http://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,7 +19,7 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x73;&#x63;&#x6f;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x72;&#x6f;&#x70;&#x65;&#x6e;&#x73;&#x63;&#x69;&#x2e;&#x6f;&#x72;&#x67;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2015-07-13</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2015-07-28</td></tr>
   </table>
 
     <div>
@@ -213,7 +213,9 @@
           <a href="http://selectorgadget.com/">
             selectorgadget browser extension
           </a>
-          can be used to identify page elements. RHTMLForms reads HTML documents and obtains a description of each of the forms it contains, along with the different elements and hidden fields.
+          can be used to identify page elements.
+<a href="http://www.Omegahat.org/RHTMLForms/"><span class="Ohat">RHTMLForms</span></a>
+          reads HTML documents and obtains a description of each of the forms it contains, along with the different elements and hidden fields.
 <a href="../packages/scrapeR/index.html">scrapeR</a>
           provides additional tools for scraping data from HTML and XML documents.
           <a href="http://cran.rstudio.com/src/contrib/Archive/htmltab/">
@@ -298,12 +300,16 @@
         <li>
           Several packages can be used for parsing HTML documents.
 <a href="../packages/boilerpipeR/index.html">boilerpipeR</a>
-          provides generic extraction of main text content from HTML files; removal of ads, sidebars and headers using the boilerpipe Java library. RTidyHTML interfaces to the libtidy library for correcting HTML documents that are not well-formed. This library corrects common errors in HTML documents.
+          provides generic extraction of main text content from HTML files; removal of ads, sidebars and headers using the boilerpipe Java library.
+<a href="http://www.Omegahat.org/RTidyHTML/"><span class="Ohat">RTidyHTML</span></a>
+          interfaces to the libtidy library for correcting HTML documents that are not well-formed. This library corrects common errors in HTML documents.
 <a href="../packages/W3CMarkupValidator/index.html">W3CMarkupValidator</a>
           provides an R Interface to W3C Markup Validation Services for validating HTML documents.
         </li>
         <li>
-          For XML documents, the XMLSchema package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R.
+          For XML documents, the
+<a href="http://www.Omegahat.org/XMLSchema/"><span class="Ohat">XMLSchema</span></a>
+          package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R.
           <a href="https://github.com/hrbrmstr/xslt">
             xslt
           </a>
@@ -311,10 +317,18 @@
           <a href="http://vslavik.github.io/xmlwrapp/">
             xmlwrapp
           </a>
-          an XML processing library that provides an XSLT engine for transforming XML data using a transform stylesheet. (It can be seen as a modern replacement for Sxslt, which is an interface to Dan Veillard's libxslt translator, and the SXalan package.) This may be useful for webscraping, as well as transforming XML markup into another human- or machine-readable format (e.g., HTML, JSON, plain text, etc.). SSOAP provides a client-side SOAP (Simple Object Access Protocol) mechanism. It aims to provide a high-level interface to invoke SOAP methods provided by a SOAP server. XMLRPC provides an implementation of XML-RPC, a relatively simple remote procedure call mechanism that uses HTTP and XML. This can be used for communicating between processes on a single machine or for accessing Web services from within R.
+          an XML processing library that provides an XSLT engine for transforming XML data using a transform stylesheet. (It can be seen as a modern replacement for
+<a href="http://www.Omegahat.org/Sxslt/"><span class="Ohat">Sxslt</span></a>, which is an interface to Dan Veillard's libxslt translator, and the
+<a href="http://www.Omegahat.org/SXalan/"><span class="Ohat">SXalan</span></a>
+          package.) This may be useful for webscraping, as well as transforming XML markup into another human- or machine-readable format (e.g., HTML, JSON, plain text, etc.).
+<a href="http://www.Omegahat.org/SSOAP/"><span class="Ohat">SSOAP</span></a>
+          provides a client-side SOAP (Simple Object Access Protocol) mechanism. It aims to provide a high-level interface to invoke SOAP methods provided by a SOAP server.
+<a href="http://www.Omegahat.org/XMLRPC/"><span class="Ohat">XMLRPC</span></a>
+          provides an implementation of XML-RPC, a relatively simple remote procedure call mechanism that uses HTTP and XML. This can be used for communicating between processes on a single machine or for accessing Web services from within R.
         </li>
         <li>
-          Rcompression (not on CRAN): Interface to zlib and bzip2 libraries for performing in-memory compression and decompression in R. This is useful when receiving or sending contents to remote servers, e.g. Web services, HTTP requests via RCurl.
+<a href="http://www.Omegahat.org/Rcompression/"><span class="Ohat">Rcompression</span></a>
+          (not on CRAN): Interface to zlib and bzip2 libraries for performing in-memory compression and decompression in R. This is useful when receiving or sending contents to remote servers, e.g. Web services, HTTP requests via RCurl.
         </li>
         <li>
 <a href="../packages/tm.plugin.webmining/index.html">tm.plugin.webmining</a>: Extensible text retrieval framework for news feeds in XML (RSS, ATOM) and JSON formats. Currently, the following feeds are implemented: Google Blog Search, Google Finance, Google News, NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo Inplay.
@@ -334,7 +348,9 @@
           (
           <a href="https://github.com/jeroenooms/v8">
             Github
-          </a>) is an R interface to Google's open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The SpiderMonkey package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R.
+          </a>) is an R interface to Google's open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The
+<a href="http://www.Omegahat.org/SpiderMonkey/"><span class="Ohat">SpiderMonkey</span></a>
+          package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R.
         </li>
         <li>
           <em>
@@ -428,10 +444,16 @@
           </a>.
         </li>
         <li>
-          The WADL package provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
+          The
+<a href="http://www.Omegahat.org/WADL/"><span class="Ohat">WADL</span></a>
+          package provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
         </li>
         <li>
-          The RDCOMServer provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the RDCOMClient package which provides user-level access from R to other COM servers. (not on CRAN)
+          The
+<a href="http://www.Omegahat.org/RDCOMServer/"><span class="Ohat">RDCOMServer</span></a>
+          provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the
+<a href="http://www.Omegahat.org/RDCOMClient/"><span class="Ohat">RDCOMClient</span></a>
+          package which provides user-level access from R to other COM servers. (not on CRAN)
         </li>
         <li>
           <a href="http://rapporter.net">
@@ -502,7 +524,8 @@
           </a>
         </li>
         <li>
-          CGIwithR (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.
+<a href="http://www.Omegahat.org/CGIwithR/"><span class="Ohat">CGIwithR</span></a>
+          (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.
         </li>
       </ul>
       <h2 id="web-services">
@@ -519,7 +542,9 @@
           <em>
             Simple Storage Service (S3)
           </em>
-          is a commercial server that allows one to store content and retrieve it from any machine connected to the Internet. RAmazonS3 and
+          is a commercial server that allows one to store content and retrieve it from any machine connected to the Internet.
+<a href="http://www.Omegahat.org/RAmazonS3/"><span class="Ohat">RAmazonS3</span></a>
+          and
           <a href="https://github.com/robertzk/s3mpi">
             s3mpi
           </a>
@@ -542,13 +567,17 @@
           <a href="https://github.com/lalas/awsConnect">
             awsConnect
           </a>
-          (not on CRAN) both use the AWS command line interface to control EC2. segue is another package for managing EC2 instances and S3 storage, which includes a parallel version of
+          (not on CRAN) both use the AWS command line interface to control EC2.
+<a href="http://code.google.com/p/segue/"><span class="Gcode">segue</span></a>
+          (not on CRAN) is another package for managing EC2 instances and S3 storage, which includes a parallel version of
 <tt>lapply()</tt>
           for the Elastic Map Reduce (EMR) engine called
 <tt>emrlapply()</tt>. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
           <em>
             DBREST
-          </em>: RAmazonDBREST provides an interface to Amazon's Simple DB API.
+          </em>:
+<a href="http://www.Omegahat.org/RAmazonDBREST/"><span class="Ohat">RAmazonDBREST</span></a>
+          provides an interface to Amazon's Simple DB API.
           <a href="https://github.com/cloudyr/">
             The cloudyr project
           </a>, which is currently under active development on Github, aims to provide a unified interface to the full Amazon Web Services suite without the need for external system dependencies. None of these packages are on CRAN.
@@ -639,19 +668,21 @@
         <li>
           <em>
             Google Drive/Google Documents
-          </em>: The RGoogleDocs package is an example of using the RCurl and XML packages to quickly develop an interface to the Google Documents API. RGoogleStorage provides programmatic access to the Google Storage API. This allows R users to access and store data on Google's storage. We can upload and download content, create, list and delete folders/buckets, and set access control permissions on objects and buckets.
+          </em>: The
+<a href="http://www.Omegahat.org/RGoogleDocs/"><span class="Ohat">RGoogleDocs</span></a>
+          package is an example of using the RCurl and XML packages to quickly develop an interface to the Google Documents API.
+<a href="http://www.Omegahat.org/RGoogleStorage/"><span class="Ohat">RGoogleStorage</span></a>
+          provides programmatic access to the Google Storage API. This allows R users to access and store data on Google's storage. We can upload and download content, create, list and delete folders/buckets, and set access control permissions on objects and buckets.
         </li>
         <li>
           <em>
             Google Sheets
           </em>:
-          <a href="https://github.com/jennybc/googlesheets">
-            googlesheets
-          </a>
+<a href="../packages/googlesheets/index.html">googlesheets</a>
           (
           <a href="https://github.com/jennybc/googlesheets">
             GitHub
-          </a>; not on CRAN) can access private or public Google Sheets by title, key, or URL. Extract data or edit data. Create, delete, rename, copy, upload, or download spreadsheets and worksheets.
+          </a>) can access private or public Google Sheets by title, key, or URL. Extract data or edit data. Create, delete, rename, copy, upload, or download spreadsheets and worksheets.
 <a href="../packages/gsheet/index.html">gsheet</a>
           (
           <a href="https://github.com/maxconway/gsheet">
@@ -818,7 +849,13 @@
 <a href="../packages/osmar/index.html">osmar</a>
           provides infrastructure to access OpenStreetMap data from different sources to work with the data in common R manner and to convert data into available infrastructure provided by existing R packages (e.g., into sp and igraph objects).
 <a href="../packages/RgoogleMaps/index.html">RgoogleMaps</a>
-          serves two purposes: it provides a comfortable R interface to query the Google server for static maps, and use the map as a background image to overlay plots within R. R2GoogleMaps provides a mechanism to generate JavaScript code from R that displays data using Google Maps. RKMLDevice allows to create R graphics in Keyhole Markup Language (KML) format in a manner that allows them to be displayed on Google Earth (or Google Maps), and RKML provides users with high-level facilities to generate KML.
+          serves two purposes: it provides a comfortable R interface to query the Google server for static maps, and use the map as a background image to overlay plots within R.
+<a href="http://www.Omegahat.org/R2GoogleMaps/"><span class="Ohat">R2GoogleMaps</span></a>
+          provides a mechanism to generate JavaScript code from R that displays data using Google Maps.
+<a href="http://www.Omegahat.org/RKMLDevice/"><span class="Ohat">RKMLDevice</span></a>
+          allows to create R graphics in Keyhole Markup Language (KML) format in a manner that allows them to be displayed on Google Earth (or Google Maps), and
+<a href="http://www.Omegahat.org/RKML/"><span class="Ohat">RKML</span></a>
+          provides users with high-level facilities to generate KML.
 <a href="../packages/plotKML/index.html">plotKML</a>
           can visualization spatial and spatio-temporal objects in Google Earth.
 <a href="../packages/plotGoogleMaps/index.html">plotGoogleMaps</a>
@@ -875,7 +912,9 @@
             a REST API
           </a>.
 <a href="../packages/googleVis/index.html">googleVis</a>
-          provides an interface between R and the Google chart tools. The RUbigraph package provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs. You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics such as shape, color, size. Interactive, Javascript-enabled graphics are an increasingly useful output format for data analysis.
+          provides an interface between R and the Google chart tools. The
+<a href="http://www.Omegahat.org/RUbigraph/"><span class="Ohat">RUbigraph</span></a>
+          package provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs. You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics such as shape, color, size. Interactive, Javascript-enabled graphics are an increasingly useful output format for data analysis.
 <a href="../packages/ggvis/index.html">ggvis</a>
           makes it easy to describe interactive web graphics in R. It fuses the ideas of ggplot2 and
 <a href="../packages/shiny/index.html">shiny</a>, rendering graphics on the web with Vega.
@@ -914,7 +953,9 @@
           provides an interface to the Facebook API.
         </li>
         <li>
-          The Rflickr package provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
+          The
+<a href="http://www.Omegahat.org/Rflickr/"><span class="Ohat">Rflickr</span></a>
+          package provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
         </li>
         <li>
           <a href="https://github.com/mpiccirilli/Rlinkedin">
@@ -970,7 +1011,9 @@
           (Not on CRAN) offers functions to perform and display Google Trends queries. Another Github package (
           <a href="https://github.com/emhart/rGtrends">
             rGtrends
-          </a>) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers. RGoogleTrends provides another alternative.
+          </a>) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers.
+<a href="http://www.Omegahat.org/RGoogleTrends/"><span class="Ohat">RGoogleTrends</span></a>
+          provides another alternative.
         </li>
         <li>
           <em>
@@ -1333,6 +1376,7 @@
     <li><a href="../packages/gistr/index.html">gistr</a></li>
     <li><a href="../packages/git2r/index.html">git2r</a></li>
     <li><a href="../packages/gmailr/index.html">gmailr</a></li>
+    <li><a href="../packages/googlesheets/index.html">googlesheets</a></li>
     <li><a href="../packages/googleVis/index.html">googleVis</a></li>
     <li><a href="../packages/gooJSON/index.html">gooJSON</a></li>
     <li><a href="../packages/gsheet/index.html">gsheet</a></li>
