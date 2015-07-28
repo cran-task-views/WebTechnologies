@@ -123,6 +123,7 @@ Web Services
 -   [RAdwords](http://cran.rstudio.com/web/packages/RAdwords/index.html) ( [GitHub](https://github.com/jburkhardt/RAdwords)) is a package for loading Google Adwords data.
 -   [anametrix](http://cran.rstudio.com/web/packages/anametrix/index.html) is a bidirectional connector to the Anametrix API.
 -   [webreadr](http://cran.rstudio.com/web/packages/webreadr/index.html) ( [GitHub](https://github.com/Ironholds/webreadr)) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.
+-   [ApacheLogProcessor](http://cran.rstudio.com/web/packages/ApacheLogProcessor/index.html) ( [GitHub](https://github.com/diogosmendonca/ApacheLogProcessor)) can process Apache Web Server log files.
 
 **Other Web Services**
 
@@ -158,6 +159,7 @@ Web Services
 
 -   [alm](http://cran.rstudio.com/web/packages/alm/index.html)
 -   [anametrix](http://cran.rstudio.com/web/packages/anametrix/index.html)
+-   [ApacheLogProcessor](http://cran.rstudio.com/web/packages/ApacheLogProcessor/index.html)
 -   [aRxiv](http://cran.rstudio.com/web/packages/aRxiv/index.html)
 -   [bigml](http://cran.rstudio.com/web/packages/bigml/index.html)
 -   [bigrquery](http://cran.rstudio.com/web/packages/bigrquery/index.html)

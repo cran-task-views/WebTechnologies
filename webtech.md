@@ -111,6 +111,7 @@ Web Services
 -   <pkg>RAdwords</pkg> ([GitHub](https://github.com/jburkhardt/RAdwords)) is a package for loading Google Adwords data.
 -   <pkg>anametrix</pkg> is a bidirectional connector to the Anametrix API.
 -   <pkg>webreadr</pkg> ([GitHub](https://github.com/Ironholds/webreadr)) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.
+-   <pkg>ApacheLogProcessor</pkg> ([GitHub](https://github.com/diogosmendonca/ApacheLogProcessor)) can process Apache Web Server log files.
 
 **Other Web Services**
 

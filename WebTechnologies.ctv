@@ -113,6 +113,7 @@
     <li><pkg>RAdwords</pkg> (<a href="https://github.com/jburkhardt/RAdwords">GitHub</a>) is a package for loading Google Adwords data.</li>
     <li><pkg>anametrix</pkg> is a bidirectional connector to the Anametrix API.</li>
     <li><pkg>webreadr</pkg> (<a href="https://github.com/Ironholds/webreadr">GitHub</a>) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.</li>
+    <li><pkg>ApacheLogProcessor</pkg> (<a href="https://github.com/diogosmendonca/ApacheLogProcessor">GitHub</a>) can process Apache Web Server log files.</li>
     </ul>
     <p><strong>Other Web Services</strong></p>
     <ul>
@@ -153,6 +154,7 @@
     <pkg priority="core">XML</pkg>
     <pkg>alm</pkg>
     <pkg>anametrix</pkg>
+    <pkg>ApacheLogProcessor</pkg>
     <pkg>aRxiv</pkg>
     <pkg>bigml</pkg>
     <pkg>bigrquery</pkg>
