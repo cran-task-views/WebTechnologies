@@ -110,6 +110,7 @@ Web Services
 -   *Other services*: <pkg>rgauges</pkg> provides functions to interact with the Gaug.es API. Gaug.es is a web analytics service, like Google analytics. You have to have a Gaug.es account to use this package. <pkg>RSiteCatalyst</pkg> has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.
 -   <pkg>RAdwords</pkg> ([GitHub](https://github.com/jburkhardt/RAdwords)) is a package for loading Google Adwords data.
 -   <pkg>anametrix</pkg> is a bidirectional connector to the Anametrix API.
+-   <pkg>webreadr</pkg> ([GitHub](https://github.com/Ironholds/webreadr)) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.
 
 **Other Web Services**
 

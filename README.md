@@ -122,6 +122,7 @@ Web Services
 -   *Other services* : [rgauges](http://cran.rstudio.com/web/packages/rgauges/index.html) provides functions to interact with the Gaug.es API. Gaug.es is a web analytics service, like Google analytics. You have to have a Gaug.es account to use this package. [RSiteCatalyst](http://cran.rstudio.com/web/packages/RSiteCatalyst/index.html) has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.
 -   [RAdwords](http://cran.rstudio.com/web/packages/RAdwords/index.html) ( [GitHub](https://github.com/jburkhardt/RAdwords)) is a package for loading Google Adwords data.
 -   [anametrix](http://cran.rstudio.com/web/packages/anametrix/index.html) is a bidirectional connector to the Anametrix API.
+-   [webreadr](http://cran.rstudio.com/web/packages/webreadr/index.html) ( [GitHub](https://github.com/Ironholds/webreadr)) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.
 
 **Other Web Services**
 
@@ -254,6 +255,7 @@ Web Services
 -   [urltools](http://cran.rstudio.com/web/packages/urltools/index.html)
 -   [V8](http://cran.rstudio.com/web/packages/V8/index.html)
 -   [W3CMarkupValidator](http://cran.rstudio.com/web/packages/W3CMarkupValidator/index.html)
+-   [webreadr](http://cran.rstudio.com/web/packages/webreadr/index.html)
 -   [webutils](http://cran.rstudio.com/web/packages/webutils/index.html)
 -   [whisker](http://cran.rstudio.com/web/packages/whisker/index.html)
 -   [wikipediatrend](http://cran.rstudio.com/web/packages/wikipediatrend/index.html)
