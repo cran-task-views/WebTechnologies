@@ -136,6 +136,7 @@
     <li><pkg>RBitly</pkg> (<a href="https://github.com/dmpe/rbitly">Github</a>): An interface to the <a href="http://bit.ly">bit.ly</a> link-shortening API.</li>
     <li><a href="https://github.com/armstrtw/Rblpapi">Rblpapi</a> (<a href="https://github.com/armstrtw/Rblpapi">GitHub</a>) is a client for Bloomberg Finance L.P.</li>
     <li><a href="https://github.com/ropensci/rerddap">rerddap</a> (<a href="https://github.com/ropensci/rerddap">GitHub</a>; not on CRAN): A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP (<a href="https://en.wikipedia.org/wiki/OPeNDAP" class="uri">https://en.wikipedia.org/wiki/OPeNDAP</a>), or <em>Open-source Project for a Network Data Access Protocol</em>. Allows user to swap out the base URL to use any ERDDAP instance.</li>
+    <li><a href="https://github.com/hmalmedal/ripplerestr">ripplerestr</a> provides an interface to the <a href="https://ripple.com/">Ripple</a> protocol for making financial transactions.</li>
     <li><pkg>restimizeapi</pkg> provides an interface to trading website <a href="http://www.estimize.com">estimize.com</a>.</li>
     <li><a href="http://cran.rstudio.com/src/contrib/Archive/RLastFM/">RLastFM</a>: A package to interface to the last.fm API. Archived on CRAN.</li>
     <li><pkg>RForcecom</pkg>: RForcecom provides a connection to Force.com and Salesforce.com.</li>

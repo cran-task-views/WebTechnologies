@@ -146,6 +146,7 @@ Web Services
 -   [RBitly](http://cran.rstudio.com/web/packages/RBitly/index.html) ( [Github](https://github.com/dmpe/rbitly)): An interface to the [bit.ly](http://bit.ly) link-shortening API.
 -   [Rblpapi](https://github.com/armstrtw/Rblpapi) ( [GitHub](https://github.com/armstrtw/Rblpapi)) is a client for Bloomberg Finance L.P.
 -   [rerddap](https://github.com/ropensci/rerddap) ( [GitHub](https://github.com/ropensci/rerddap); not on CRAN): A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP ( <https://en.wikipedia.org/wiki/OPeNDAP>), or *Open-source Project for a Network Data Access Protocol* . Allows user to swap out the base URL to use any ERDDAP instance.
+-   [ripplerestr](https://github.com/hmalmedal/ripplerestr) provides an interface to the [Ripple](https://ripple.com/) protocol for making financial transactions.
 -   [restimizeapi](http://cran.rstudio.com/web/packages/restimizeapi/index.html) provides an interface to trading website [estimize.com](http://www.estimize.com).
 -   [RLastFM](http://cran.rstudio.com/src/contrib/Archive/RLastFM/): A package to interface to the last.fm API. Archived on CRAN.
 -   [RForcecom](http://cran.rstudio.com/web/packages/RForcecom/index.html): RForcecom provides a connection to Force.com and Salesforce.com.
