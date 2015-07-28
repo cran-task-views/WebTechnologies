@@ -4,15 +4,16 @@ Thanks for your contribution!
 
 ### Requirements:
 
-* R (to create the `.html` from the `.ctv` file) [Installation](http://cran.r-project.org/)
-* `pandoc`: [Installation](http://johnmacfarlane.net/pandoc/installing.html)
+* R
+* `make`
+* [`pandoc`](http://johnmacfarlane.net/pandoc/installing.html)
 
 If you don't want to or can't install these things, then just edit the `webtech.md` file, and submit a pull request.
 
 ### Steps
 
 1. Fork this repo
-2. Edit the [webtech.md](https://github.com/ropensci/webservices/blob/master/webtech.md) file. If the package you are adding is on CRAN, add a the package name within `<pkg></pkg>` tags (use `<ohat></ohat>` for OmegaHat packages, `<rforge></rforge>` for [RForge](https://r-forge.r-project.org/), and `<bioc></bioc>` for [Bioconductor](http://www.bioconductor.org/) packages). If it's not on CRAN, put it within `<a></a>` tags (e.g., `<a href="https://github.com/ropensci/rgbif">rgbif</a> (not on CRAN)`).
+2. Edit the [webtech.md](https://github.com/ropensci/webservices/blob/master/webtech.md) file. If the package you are adding is on CRAN, add a the package name within `<pkg></pkg>` tags (use `<ohat></ohat>` for OmegaHat packages, `<rforge></rforge>` for [RForge](https://r-forge.r-project.org/), and `<bioc></bioc>` for [Bioconductor](http://www.bioconductor.org/) packages). If it's not on CRAN, put it markdown link syntax: `[display-text](url)` (e.g., `[rgbif](https://github.com/ropensci/rgbif) (not on CRAN)`). If there is a non-CRAN source repository available, add it as a link in parentheses after the package name (e.g., `<pkg>rgbif</pkg> ([GitHub](https://github.com/ropensci/rgbif))`). Note that GitHub is written in camel case.
 3. On the command line type `make` and press enter, which creates the `WebTechnologies.ctv`, `WebTechnologies.html`, and `README.md` files.
 4. Check to make sure the `.ctv` file is correct. In the console output from `make checkctv`, you should get:
 
