@@ -12,6 +12,7 @@ ctv2html:
 
 readme:
 	pandoc -w markdown_github -o README.md WebTechnologies.html
+	sed -i -e 's|( \[|(\[|g' README.md
 	sed -i -e 's|../packages/|http://cran.rstudio.com/web/packages/|g' README.md
 	sed -i -e 's/^[|]-/*Do not edit this README by hand. See \[CONTRIBUTING.md\]\(CONTRIBUTING.md\).*\n\n|||\n|-/g' README.md
 
