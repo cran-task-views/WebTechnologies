@@ -51,6 +51,7 @@
     <ul>
     <li><a href="http://deployr.revolutionanalytics.com/">DeployR Open</a> is a server-based framework for integrating R into other applications via Web Services.</li>
     <li>The <pkg>shiny</pkg> package makes it easy to build interactive web applications with R.</li>
+    <li><a href="https://github.com/nteetor/dull">dull</a> (not on CRAN) is new, light weight web framework that uses magrittr-style syntax and is modeled after <a href="http://expressjs.com/">expressjs</a>.</li>
     <li><a href="https://github.com/att/rcloud">rcloud</a> (not on CRAN) provides an iPython notebook-style web-based R interface.</li>
     <li>The <pkg>Rook</pkg> web server interface contains the specification and convenience software for building and running Rook applications.</li>
     <li>The <pkg>opencpu</pkg> framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.</li>

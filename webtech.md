@@ -47,6 +47,7 @@ Web and Server Frameworks
 
 -   [DeployR Open](http://deployr.revolutionanalytics.com/) is a server-based framework for integrating R into other applications via Web Services.
 -   The <pkg>shiny</pkg> package makes it easy to build interactive web applications with R.
+-   [dull](https://github.com/nteetor/dull) (not on CRAN) is new, light weight web framework that uses magrittr-style syntax and is modeled after [expressjs](http://expressjs.com/).
 -   [rcloud](https://github.com/att/rcloud) (not on CRAN) provides an iPython notebook-style web-based R interface.
 -   The <pkg>Rook</pkg> web server interface contains the specification and convenience software for building and running Rook applications.
 -   The <pkg>opencpu</pkg> framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.
