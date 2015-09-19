@@ -202,7 +202,7 @@
     <pkg>plotGoogleMaps</pkg>
     <pkg>plotKML</pkg>
     <pkg>plusser</pkg>
-    <pkg>pubmed</pkg>
+    <pkg>pubmed.mineR</pkg>
     <pkg>pushoverr</pkg>
     <pkg>radiant</pkg>
     <pkg>RAdwords</pkg>
@@ -248,7 +248,7 @@
     <pkg>streamR</pkg>
     <pkg>threewords</pkg>
     <pkg>tidyjson</pkg>
-    <pkg>tm</pkg>
+    <pkg>tm.plugin.webmining</pkg>
     <pkg>transcribeR</pkg>
     <pkg>translate</pkg>
     <pkg>translateR</pkg>
