@@ -5,15 +5,14 @@ CRAN Task View: Web Technologies and Services
 
 |||
 |-----------------|----------------------------------------------------------------------------------|
-| **Maintainer:** | Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud |
-| **Contact:**    | scott at ropensci.org                                                            |
-| **Version:**    | 2015-07-31                                                                       |
+| **Maintainer:** | Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud |
+| **Contact:**    | thosjleeper at gmail.com                                                         |
+| **Version:**    | 2015-09-19                                                                       |
 
 This task view contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The [Open Data task view](https://github.com/ropensci/opendata) provides further discussion of online data sources that can be accessed from R.
 
 If you have any comments or suggestions for additions or improvements for this taskview, go to GitHub and [submit an issue](https://github.com/ropensci/webservices/issues), or make some changes and [submit a pull request](https://github.com/ropensci/webservices/pulls). If you can't contribute on GitHub,
-send Scott an email (scott at ropensci dot org)
-. If you have an issue with one of the packages discussed below, please contact the maintainer of that package. If you know of a web service, API, data source, or other online resource that is not yet supported by an R package, consider adding it to [the package development to do list on GitHub](https://github.com/ropensci/webservices/wiki/ToDo).
+send Thomas an email (thosjleeper at gmail dot com) . If you have an issue with one of the packages discussed below, please contact the maintainer of that package. If you know of a web service, API, data source, or other online resource that is not yet supported by an R package, consider adding it to [the package development to do list on GitHub](https://github.com/ropensci/webservices/wiki/ToDo).
 Tools for Working with the Web from R
 -------------------------------------
 
