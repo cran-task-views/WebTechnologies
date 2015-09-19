@@ -120,6 +120,7 @@ Web Services
 -   *Wikipedia*: <pkg>WikipediR</pkg> ([GitHub](https://github.com/Ironholds/WikipediR)) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia 'production' wikis, such as Wikipedia. [rwikidata](https://github.com/chgrl/rwikidata) and [WikidataR](https://github.com/Ironholds/WikidataR) (Not on CRAN) can request data from[Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase. <pkg>wikipediatrend</pkg> ([GitHub](https://github.com/petermeissner/wikipediatrend)) provides access to Wikipedia page access statistics.
 -   <pkg>bigrquery</pkg> ([GitHub](https://github.com/hadley/bigrquery)): An interface to Google's bigquery.
 -   <pkg>colourlovers</pkg> ([GitHub](https://github.com/leeper/colourlovers)) extracts colors and multi-color patterns from [COLOURlovers](http://www.colourlovers.com/), for use in creating R graphics color palettes.
+-   <pkg>cymruservices</pkg> queries [Team Cymru](http://team-cymru.org) web security services.
 -   <pkg>datamart</pkg>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
 -   [discgolf](https://github.com/sckott/discgolf) (not on CRAN): Provides a client to interact with the API for the [Discourse](http://www.discourse.org/) web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
 -   <pkg>factualR</pkg>: Thin wrapper for the [Factual.com](http://factual.com/) server API.

@@ -131,6 +131,7 @@ Web Services
 -   *Wikipedia* : [WikipediR](http://cran.rstudio.com/web/packages/WikipediR/index.html) ([GitHub](https://github.com/Ironholds/WikipediR)) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia 'production' wikis, such as Wikipedia. [rwikidata](https://github.com/chgrl/rwikidata) and [WikidataR](https://github.com/Ironholds/WikidataR) (Not on CRAN) can request data from [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase. [wikipediatrend](http://cran.rstudio.com/web/packages/wikipediatrend/index.html) ([GitHub](https://github.com/petermeissner/wikipediatrend)) provides access to Wikipedia page access statistics.
 -   [bigrquery](http://cran.rstudio.com/web/packages/bigrquery/index.html) ([GitHub](https://github.com/hadley/bigrquery)): An interface to Google's bigquery.
 -   [colourlovers](http://cran.rstudio.com/web/packages/colourlovers/index.html) ([GitHub](https://github.com/leeper/colourlovers)) extracts colors and multi-color patterns from [COLOURlovers](http://www.colourlovers.com/), for use in creating R graphics color palettes.
+-   [cymruservices](http://cran.rstudio.com/web/packages/cymruservices/index.html) queries [Team Cymru](http://team-cymru.org) web security services.
 -   [datamart](http://cran.rstudio.com/web/packages/datamart/index.html): Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
 -   [discgolf](https://github.com/sckott/discgolf) (not on CRAN): Provides a client to interact with the API for the [Discourse](http://www.discourse.org/) web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
 -   [factualR](http://cran.rstudio.com/web/packages/factualR/index.html): Thin wrapper for the [Factual.com](http://factual.com/) server API.
@@ -166,6 +167,7 @@ Web Services
 -   [boilerpipeR](http://cran.rstudio.com/web/packages/boilerpipeR/index.html)
 -   [colourlovers](http://cran.rstudio.com/web/packages/colourlovers/index.html)
 -   [curl](http://cran.rstudio.com/web/packages/curl/index.html)
+-   [cymruservices](http://cran.rstudio.com/web/packages/cymruservices/index.html)
 -   [d3Network](http://cran.rstudio.com/web/packages/d3Network/index.html)
 -   [datamart](http://cran.rstudio.com/web/packages/datamart/index.html)
 -   [ddeploy](http://cran.rstudio.com/web/packages/ddeploy/index.html)

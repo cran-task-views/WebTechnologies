@@ -122,6 +122,7 @@
     <li><em>Wikipedia</em>: <pkg>WikipediR</pkg> (<a href="https://github.com/Ironholds/WikipediR">GitHub</a>) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia 'production' wikis, such as Wikipedia. <a href="https://github.com/chgrl/rwikidata">rwikidata</a> and <a href="https://github.com/Ironholds/WikidataR">WikidataR</a> (Not on CRAN) can request data from<a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata.org</a>, the free knowledgebase. <pkg>wikipediatrend</pkg> (<a href="https://github.com/petermeissner/wikipediatrend">GitHub</a>) provides access to Wikipedia page access statistics.</li>
     <li><pkg>bigrquery</pkg> (<a href="https://github.com/hadley/bigrquery">GitHub</a>): An interface to Google's bigquery.</li>
     <li><pkg>colourlovers</pkg> (<a href="https://github.com/leeper/colourlovers">GitHub</a>) extracts colors and multi-color patterns from <a href="http://www.colourlovers.com/">COLOURlovers</a>, for use in creating R graphics color palettes.</li>
+    <li><pkg>cymruservices</pkg> queries <a href="http://team-cymru.org">Team Cymru</a> web security services.</li>
     <li><pkg>datamart</pkg>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.</li>
     <li><a href="https://github.com/sckott/discgolf">discgolf</a> (not on CRAN): Provides a client to interact with the API for the <a href="http://www.discourse.org/">Discourse</a> web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.</li>
     <li><pkg>factualR</pkg>: Thin wrapper for the <a href="http://factual.com/">Factual.com</a> server API.</li>
@@ -162,6 +163,7 @@
     <pkg>boilerpipeR</pkg>
     <pkg>colourlovers</pkg>
     <pkg>curl</pkg>
+    <pkg>cymruservices</pkg>
     <pkg>d3Network</pkg>
     <pkg>datamart</pkg>
     <pkg>ddeploy</pkg>
