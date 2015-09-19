@@ -102,7 +102,7 @@ Web Services
 -   <pkg>SocialMediaMineR</pkg> is an analytic tool that returns information about the popularity of a URL on social media sites.
 -   <pkg>streamR</pkg>: This package provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported.
 -   <pkg>tumblR</pkg> ([GitHub](https://github.com/klapaukh/tumblR)) is a client for the Tumblr API (<https://www.tumblr.com/docs/en/api/v2>). Tumblr is a microblogging platform and social networking website <https://www.tumblr.com>.
--   *Twitter*: <pkg>twitteR</pkg> provides an interface to the Twitter web API. [RTwitterAPI](https://github.com/joyofdata/RTwitterAPI) (not on CRAN) is yet another Twitter client.
+-   *Twitter*: <pkg>twitteR</pkg> provides an interface to the Twitter web API. [RTwitterAPI](https://github.com/joyofdata/RTwitterAPI) (not on CRAN) is yet another Twitter client. [twitterreport](https://github.com/gvegayon/twitterreport) (not on CRAN) focuses on report generation based on Twitter data. [tweetscores](https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores) (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
 
 **Web Analytics Services**
 
