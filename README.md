@@ -7,7 +7,7 @@ CRAN Task View: Web Technologies and Services
 |-----------------|----------------------------------------------------------------------------------|
 | **Maintainer:** | Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | thosjleeper at gmail.com                                                         |
-| **Version:**    | 2015-09-19                                                                       |
+| **Version:**    | 2015-10-02                                                                       |
 
 This task view contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The [Open Data task view](https://github.com/ropensci/opendata) provides further discussion of online data sources that can be accessed from R.
 
@@ -109,6 +109,7 @@ Web Services
 -   [plusser](http://cran.rstudio.com/web/packages/plusser/index.html) has been designed to to facilitate the retrieval of Google+ profiles, pages and posts. It also provides search facilities. Currently a Google+ API key is required for accessing Google+ data.
 -   [Rfacebook](http://cran.rstudio.com/web/packages/Rfacebook/index.html) provides an interface to the Facebook API.
 -   The [<span class="Ohat">Rflickr</span>](http://www.Omegahat.org/Rflickr/) package provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
+-   [instaR](https://github.com/pablobarbera/instaR) (not on CRAN) is a client for the Instagram API.
 -   [Rlinkedin](https://github.com/mpiccirilli/Rlinkedin) (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.
 -   [SocialMediaMineR](http://cran.rstudio.com/web/packages/SocialMediaMineR/index.html) is an analytic tool that returns information about the popularity of a URL on social media sites.
 -   [streamR](http://cran.rstudio.com/web/packages/streamR/index.html): This package provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported.

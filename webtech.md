@@ -98,6 +98,7 @@ Web Services
 -   <pkg>plusser</pkg> has been designed to to facilitate the retrieval of Google+ profiles, pages and posts. It also provides search facilities. Currently a Google+ API key is required for accessing Google+ data.
 -   <pkg>Rfacebook</pkg> provides an interface to the Facebook API.
 -   The <ohat>Rflickr</ohat> package provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
+-   [instaR](https://github.com/pablobarbera/instaR) (not on CRAN) is a client for the Instagram API.
 -   [Rlinkedin](https://github.com/mpiccirilli/Rlinkedin) (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.
 -   <pkg>SocialMediaMineR</pkg> is an analytic tool that returns information about the popularity of a URL on social media sites.
 -   <pkg>streamR</pkg>: This package provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported.
