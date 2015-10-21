@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2015-10-02" />
+  <meta name="citation_publication_date" content="2015-10-20" />
   <meta name="citation_public_url" content="http://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2015-10-02" />
+  <meta name="DC.issued" content="2015-10-20" />
   <meta name="DC.identifier" content="http://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,7 +19,7 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x74;&#x68;&#x6f;&#x73;&#x6a;&#x6c;&#x65;&#x65;&#x70;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2015-10-02</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2015-10-20</td></tr>
   </table>
 
     <div>
@@ -179,25 +179,22 @@
         <li>
           <em>
             XML/HTML
-          </em>: The package
-          <a href="https://github.com/hadley/xml2">
-            xml2
-          </a>
-          in development will likely by the go to package for XML parsing soon, but
+          </em>: There are two packages for working with XML:
 <a href="../packages/XML/index.html">XML</a>
-          may be the place to go for lower level manipulation of XML. The package
-<a href="../packages/XML/index.html">XML</a>
-          contains functions for parsing XML and HTML, and supports xpath for searching XML (think regex for strings). A helpful function to read data from one or more HTML tables is
-<tt>XML::readHTMLTable()</tt>.
-<a href="../packages/XML/index.html">XML</a>
-          also includes
-          <a href="http://www.w3schools.com/xpath/">
-            XPATH
-          </a>
-          parsing ability, see
-<tt>xpathApply()</tt>
           and
-<tt>xpathSApply()</tt>. The
+<a href="../packages/xml2/index.html">xml2</a>
+          (
+          <a href="https://github.com/hadley/xml2">
+            GitHub
+          </a>). Both support general XML (and HTML) parsing, including XPath queries. The package
+<a href="../packages/xml2/index.html">xml2</a>
+          is less fully featured, but more user friendly with respect to memory management, classes (e.g., XML node vs. node set vs. document), and namespaces. Of the two, only the
+<a href="../packages/XML/index.html">XML</a>
+          supports
+          <em>
+            de novo
+          </em>
+          creation of XML nodes and documents. The
 <a href="../packages/XML2R/index.html">XML2R</a>
           (
           <a href="https://github.com/cpsievert/XML2R">
@@ -1575,6 +1572,7 @@
     <li><a href="../packages/WikipediR/index.html">WikipediR</a></li>
     <li><a href="../packages/WufooR/index.html">WufooR</a></li>
     <li><a href="../packages/XML/index.html">XML</a> (core)</li>
+    <li><a href="../packages/xml2/index.html">xml2</a></li>
     <li><a href="../packages/XML2R/index.html">XML2R</a></li>
     <li><a href="../packages/yhatr/index.html">yhatr</a></li>
     <li><a href="../packages/zendeskR/index.html">zendeskR</a></li>
