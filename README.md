@@ -1,13 +1,14 @@
 CRAN Task View: Web Technologies and Services
 ---------------------------------------------
 
+|                 |                                                                                  |
 *Do not edit this README by hand. See [CONTRIBUTING.md](CONTRIBUTING.md).*
 
 |||
 |-----------------|----------------------------------------------------------------------------------|
 | **Maintainer:** | Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | thosjleeper at gmail.com                                                         |
-| **Version:**    | 2015-10-20                                                                       |
+| **Version:**    | 2015-11-26                                                                       |
 
 This task view contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The [Open Data task view](https://github.com/ropensci/opendata) provides further discussion of online data sources that can be accessed from R.
 

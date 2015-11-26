@@ -5,10 +5,10 @@ buildxml:
 	Rscript --vanilla -e 'source("buildxml.R")'
 
 checkctv:
-	Rscript --vanilla -e 'options(repos=structure(c(CRAN="http://cran.rstudio.com/"))); if(!require("ctv")) install.packages("ctv"); print(ctv::check_ctv_packages("WebTechnologies.ctv"))'
+	Rscript --vanilla -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); print(ctv::check_ctv_packages("WebTechnologies.ctv"))'
 
 ctv2html:
-	Rscript --vanilla -e 'options(repos=structure(c(CRAN="http://cran.rstudio.com/"))); if(!require("ctv")) install.packages("ctv");  ctv::ctv2html("WebTechnologies.ctv", file = "WebTechnologies.html")'
+	Rscript --vanilla -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); ctv::ctv2html("WebTechnologies.ctv")'
 
 readme:
 	pandoc -w markdown_github -o README.md WebTechnologies.html
