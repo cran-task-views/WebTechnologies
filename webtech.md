@@ -79,6 +79,7 @@ Web Services
       -   [The cloudyr project](https://cloudyr.github.io), which is currently under active development on GitHub, aims to provide a unified interface to the full Amazon Web Services suite without the need for external system dependencies.
 -   *Cloud Storage*: [boxr](http://cran.r-project.org/web/packages/boxr) ([GitHub](https://github.com/brendan-R/boxr)) is a lightweight, high-level interface for the [box.com API](https://developers.box.com/docs/). [rDrop2](https://github.com/karthik/rdrop2) ([GitHub](https://github.com/karthik/rdrop2); not on CRAN) is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account.
 -   *Docker*: [analogsea](https://github.com/sckott/analogsea) is a general purpose client for the Digital Ocean v2 API. In addition, the package includes functions to install various R tools including base R, RStudio server, and more. There's an improving interface to interact with docker on your remote droplets via this package.
+-   [rcrunch](https://github.com/Crunch-io/rcrunch) (not on CRAN) provides an interface to [crunch.io](http://crunch.io/) storage and analytics.
 
 **Document and Code Sharing**
 

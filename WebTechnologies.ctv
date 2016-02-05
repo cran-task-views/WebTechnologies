@@ -83,6 +83,7 @@
     </ul></li>
     <li><em>Cloud Storage</em>: <a href="http://cran.r-project.org/web/packages/boxr">boxr</a> (<a href="https://github.com/brendan-R/boxr">GitHub</a>) is a lightweight, high-level interface for the <a href="https://developers.box.com/docs/">box.com API</a>. <a href="https://github.com/karthik/rdrop2">rDrop2</a> (<a href="https://github.com/karthik/rdrop2">GitHub</a>; not on CRAN) is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account.</li>
     <li><em>Docker</em>: <a href="https://github.com/sckott/analogsea">analogsea</a> is a general purpose client for the Digital Ocean v2 API. In addition, the package includes functions to install various R tools including base R, RStudio server, and more. There's an improving interface to interact with docker on your remote droplets via this package.</li>
+    <li><a href="https://github.com/Crunch-io/rcrunch">rcrunch</a> (not on CRAN) provides an interface to <a href="http://crunch.io/">crunch.io</a> storage and analytics.</li>
     </ul>
     <p><strong>Document and Code Sharing</strong></p>
     <ul>
