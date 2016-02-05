@@ -115,9 +115,8 @@ Web Services
 -   [instaR](https://github.com/pablobarbera/instaR) (not on CRAN) is a client for the Instagram API.
 -   [Rlinkedin](https://github.com/mpiccirilli/Rlinkedin) (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.
 -   [SocialMediaMineR](http://cran.rstudio.com/web/packages/SocialMediaMineR/index.html) is an analytic tool that returns information about the popularity of a URL on social media sites.
--   [streamR](http://cran.rstudio.com/web/packages/streamR/index.html): This package provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported.
 -   [tumblR](http://cran.rstudio.com/web/packages/tumblR/index.html) ([GitHub](https://github.com/klapaukh/tumblR)) is a client for the Tumblr API ([https://www.tumblr.com/docs/en/api/v2](https://www.tumblr.com/docs/en/api/v2)). Tumblr is a microblogging platform and social networking website [https://www.tumblr.com](https://www.tumblr.com).
--   *Twitter*: [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html) provides an interface to the Twitter web API. [RTwitterAPI](https://github.com/joyofdata/RTwitterAPI) (not on CRAN) is yet another Twitter client. [twitterreport](https://github.com/gvegayon/twitterreport) (not on CRAN) focuses on report generation based on Twitter data. [tweetscores](https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores) (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
+-   *Twitter*: [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html) provides an interface to the Twitter web API. [RTwitterAPI](https://github.com/joyofdata/RTwitterAPI) (not on CRAN) is yet another Twitter client. [twitterreport](https://github.com/gvegayon/twitterreport) (not on CRAN) focuses on report generation based on Twitter data. [streamR](http://cran.rstudio.com/web/packages/streamR/index.html) provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html) is an alternative iplementation geared toward SQLite and postGIS databases. [tweetscores](https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores) (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
 
 **Web Analytics Services**
 
@@ -266,6 +265,7 @@ Web Services
 -   [translate](http://cran.rstudio.com/web/packages/translate/index.html)
 -   [translateR](http://cran.rstudio.com/web/packages/translateR/index.html)
 -   [tumblR](http://cran.rstudio.com/web/packages/tumblR/index.html)
+-   [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html)
 -   [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html)
 -   [urltools](http://cran.rstudio.com/web/packages/urltools/index.html)
 -   [V8](http://cran.rstudio.com/web/packages/V8/index.html)
