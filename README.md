@@ -160,6 +160,7 @@ Web Services
 -   [slackr](http://cran.rstudio.com/web/packages/slackr/index.html) ([GitHub](https://github.com/hrbrmstr/slackr)) is a client for Slack.com messaging platform.
 -   [stackr](https://github.com/dgrtwo/stackr) (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).
 -   [tuber](https://github.com/soodoku/tuber) (not on CRAN): A YouTube API client.
+-   [yummlyr](http://cran.rstudio.com/web/packages/yummlyr/index.html) ([GitHub](https://github.com/RomanTsegelskyi/yummlyr)) provides an interface to the [Yummly](https://developer.yummly.com/) recipe database.
 -   [zendeskR](http://cran.rstudio.com/web/packages/zendeskR/index.html): This package provides a wrapper for the Zendesk API.
 
 ### CRAN packages:
@@ -285,6 +286,7 @@ Web Services
 -   [xml2](http://cran.rstudio.com/web/packages/xml2/index.html)
 -   [XML2R](http://cran.rstudio.com/web/packages/XML2R/index.html)
 -   [yhatr](http://cran.rstudio.com/web/packages/yhatr/index.html)
+-   [yummlyr](http://cran.rstudio.com/web/packages/yummlyr/index.html)
 -   [zendeskR](http://cran.rstudio.com/web/packages/zendeskR/index.html)
 
 ### Related links:
