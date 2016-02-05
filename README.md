@@ -42,6 +42,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 -   The `httr::parse_url()` function can be used to extract portions of a URL. The `RCurl::URLencode()` and `utils::URLencode()` functions can be used to encode character strings for use in URLs. `utils::URLdecode()` decodes back to the original strings. [urltools](http://cran.rstudio.com/web/packages/urltools/index.html) ([GitHub](https://github.com/Ironholds/urltools)) can also handle URL encoding, decoding, parsing, and parameter extraction.
 -   The [tldextract](https://github.com/jayjacobs/tldextract) package extract top level domains and subdomains from a host name. It's a port of [a Python library of the same name](https://github.com/john-kurkowski/tldextract).
 -   [iptools](https://github.com/hrbrmstr/iptools) can facilitate working with IPv4 addresses, including for use in geolocation.
+-   [urlshorteneR](http://cran.rstudio.com/web/packages/urlshorteneR/index.html) ([GitHub](https://github.com/dmpe/urlshorteneR)) offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd. [longurl](http://cran.rstudio.com/web/packages/longurl/index.html) uses the [longurl.org](http://longurl.org/) API to provide similar functionality.
 
 **Tools for Working with Scraped Webpage Contents**
 
@@ -206,6 +207,7 @@ Web Services
 -   [jsonlite](http://cran.rstudio.com/web/packages/jsonlite/index.html) (core)
 -   [jug](http://cran.rstudio.com/web/packages/jug/index.html)
 -   [leafletR](http://cran.rstudio.com/web/packages/leafletR/index.html)
+-   [longurl](http://cran.rstudio.com/web/packages/longurl/index.html)
 -   [lucr](http://cran.rstudio.com/web/packages/lucr/index.html)
 -   [magrittr](http://cran.rstudio.com/web/packages/magrittr/index.html)
 -   [mailR](http://cran.rstudio.com/web/packages/mailR/index.html)
@@ -273,6 +275,7 @@ Web Services
 -   [tumblR](http://cran.rstudio.com/web/packages/tumblR/index.html)
 -   [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html)
 -   [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html)
+-   [urlshorteneR](http://cran.rstudio.com/web/packages/urlshorteneR/index.html)
 -   [urltools](http://cran.rstudio.com/web/packages/urltools/index.html)
 -   [V8](http://cran.rstudio.com/web/packages/V8/index.html)
 -   [W3CMarkupValidator](http://cran.rstudio.com/web/packages/W3CMarkupValidator/index.html)

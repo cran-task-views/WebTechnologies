@@ -28,6 +28,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 -   The `httr::parse_url()` function can be used to extract portions of a URL. The `RCurl::URLencode()` and `utils::URLencode()` functions can be used to encode character strings for use in URLs. `utils::URLdecode()` decodes back to the original strings. <pkg>urltools</pkg> ([GitHub](https://github.com/Ironholds/urltools)) can also handle URL encoding, decoding, parsing, and parameter extraction.
 -   The [tldextract](https://github.com/jayjacobs/tldextract) package extract top level domains and subdomains from a host name. It's a port of [a Python library of the same name](https://github.com/john-kurkowski/tldextract).
 -   [iptools](https://github.com/hrbrmstr/iptools) can facilitate working with IPv4 addresses, including for use in geolocation.
+-   <pkg>urlshorteneR</pkg> ([GitHub](https://github.com/dmpe/urlshorteneR)) offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd. <pkg>longurl</pkg> uses the [longurl.org](http://longurl.org/) API to provide similar functionality.
 
 **Tools for Working with Scraped Webpage Contents**
 
