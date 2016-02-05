@@ -91,7 +91,7 @@ Web Services
     -   *Elastic Cloud Compute (EC2)* is a cloud computing service. AWS.tools and [awsConnect](https://github.com/lalas/awsConnect) (not on CRAN) both use the AWS command line interface to control EC2. [segue](http://code.google.com/p/segue/) (not on CRAN) is another package for managing EC2 instances and S3 storage, which includes a parallel version of `lapply()` for the Elastic Map Reduce (EMR) engine called `emrlapply()`. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
     -   *DBREST*: [RAmazonDBREST](http://www.Omegahat.org/RAmazonDBREST/) provides an interface to Amazon's Simple DB API.
     -   [The cloudyr project](https://cloudyr.github.io), which is currently under active development on GitHub, aims to provide a unified interface to the full Amazon Web Services suite without the need for external system dependencies.
--   *Cloud Storage*: [boxr](http://cran.r-project.org/whttp://cran.rstudio.com/web/packages/boxr) ([GitHub](https://github.com/brendan-R/boxr)) is a lightweight, high-level interface for the [box.com API](https://developers.box.com/docs/). [rDrop2](https://github.com/karthik/rdrop2) ([GitHub](https://github.com/karthik/rdrop2); not on CRAN) is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account.
+-   *Cloud Storage*: [boxr](http://cran.r-project.org/whttp://cran.rstudio.com/web/packages/boxr) ([GitHub](https://github.com/brendan-R/boxr)) is a lightweight, high-level interface for the [box.com API](https://developers.box.com/docs/). [rDrop2](https://github.com/karthik/rdrop2) ([GitHub](https://github.com/karthik/rdrop2); not on CRAN) is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account. [backblazer](http://cran.rstudio.com/web/packages/backblazer/index.html) ([GitHub](https://github.com/phillc73/backblazer)) provides access to the [Backblaze B2 storage API](https://www.backblaze.com/b2/docs/).
 -   *Docker*: [analogsea](https://github.com/sckott/analogsea) is a general purpose client for the Digital Ocean v2 API. In addition, the package includes functions to install various R tools including base R, RStudio server, and more. There's an improving interface to interact with docker on your remote droplets via this package.
 -   [rcrunch](https://github.com/Crunch-io/rcrunch) (not on CRAN) provides an interface to [crunch.io](http://crunch.io/) storage and analytics.
 
@@ -179,6 +179,7 @@ Web Services
 -   [aRxiv](http://cran.rstudio.com/web/packages/aRxiv/index.html)
 -   [aws.signature](http://cran.rstudio.com/web/packages/aws.signature/index.html)
 -   [AzureML](http://cran.rstudio.com/web/packages/AzureML/index.html)
+-   [backblazer](http://cran.rstudio.com/web/packages/backblazer/index.html)
 -   [bigml](http://cran.rstudio.com/web/packages/bigml/index.html)
 -   [bigrquery](http://cran.rstudio.com/web/packages/bigrquery/index.html)
 -   [boilerpipeR](http://cran.rstudio.com/web/packages/boilerpipeR/index.html)
