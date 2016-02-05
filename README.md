@@ -145,6 +145,7 @@ Web Services
 -   [infochimps](http://cran.rstudio.com/src/contrib/Archive/infochimps/) ([GitHub](https://github.com/drewconway/infochimps); archived) is an R wrapper for the infochimps.com API services.
 -   [internetarchive](https://github.com/lmullen/internetarchive) ([GitHub](https://github.com/ropensci/internetarchive); not on CRAN): API client for internet archive metadata.
 -   [jSonarR](http://cran.rstudio.com/web/packages/jSonarR/index.html): Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the [JSON Studio Gateway](http://www.jsonstudio.com), to convert JSON to a tabular format.
+-   [lucr](http://cran.rstudio.com/web/packages/lucr/index.html) performs currency conversions using [Open Exchange Rates](https://openexchangerates.org/).
 -   [randNames](http://cran.rstudio.com/web/packages/randNames/index.html) ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the [https://randomapi.com](https://randomapi.com) API.
 -   [Rbitcoin](http://cran.rstudio.com/web/packages/Rbitcoin/index.html) allows both public and private API calls to interact with Bitcoin. [rbitcoinchartsapi](http://cran.rstudio.com/web/packages/rbitcoinchartsapi/index.html) is a package for the [BitCoinCharts.com](http://bitcoincharts.com/) API. From their website: "Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API)." [RCryptsy](http://cran.rstudio.com/web/packages/RCryptsy/index.html) ([GitHub](https://github.com/ropensci/RCryptsy)) wraps the API for the [Cryptsy](http://www.cryptsy.com) crypto-currency trading platform.
 -   [RBitly](http://cran.rstudio.com/web/packages/RBitly/index.html) ([GitHub](https://github.com/dmpe/rbitly)): An interface to the [bit.ly](http://bit.ly) link-shortening API.
@@ -203,6 +204,7 @@ Web Services
 -   [jsonlite](http://cran.rstudio.com/web/packages/jsonlite/index.html) (core)
 -   [jug](http://cran.rstudio.com/web/packages/jug/index.html)
 -   [leafletR](http://cran.rstudio.com/web/packages/leafletR/index.html)
+-   [lucr](http://cran.rstudio.com/web/packages/lucr/index.html)
 -   [magrittr](http://cran.rstudio.com/web/packages/magrittr/index.html)
 -   [mailR](http://cran.rstudio.com/web/packages/mailR/index.html)
 -   [mime](http://cran.rstudio.com/web/packages/mime/index.html)

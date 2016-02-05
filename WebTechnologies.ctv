@@ -133,6 +133,7 @@
     <li><a href="http://cran.rstudio.com/src/contrib/Archive/infochimps/">infochimps</a> (<a href="https://github.com/drewconway/infochimps">GitHub</a>; archived) is an R wrapper for the infochimps.com API services.</li>
     <li><a href="https://github.com/lmullen/internetarchive">internetarchive</a> (<a href="https://github.com/ropensci/internetarchive">GitHub</a>; not on CRAN): API client for internet archive metadata.</li>
     <li><pkg>jSonarR</pkg>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the <a href="http://www.jsonstudio.com">JSON Studio Gateway</a>, to convert JSON to a tabular format.</li>
+    <li><pkg>lucr</pkg> performs currency conversions using <a href="https://openexchangerates.org/">Open Exchange Rates</a>.</li>
     <li><pkg>randNames</pkg> (<a href="https://github.com/karthik/randNames">GitHub</a>) generates random names and personal identifying information using the <a href="https://randomapi.com">https://randomapi.com</a> API.</li>
     <li><pkg>Rbitcoin</pkg> allows both public and private API calls to interact with Bitcoin. <pkg>rbitcoinchartsapi</pkg> is a package for the <a href="http://bitcoincharts.com/">BitCoinCharts.com</a> API. From their website: &quot;Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API).&quot; <pkg>RCryptsy</pkg> (<a href="https://github.com/ropensci/RCryptsy">GitHub</a>) wraps the API for the <a href="http://www.cryptsy.com">Cryptsy</a> crypto-currency trading platform.</li>
     <li><pkg>RBitly</pkg> (<a href="https://github.com/dmpe/rbitly">GitHub</a>): An interface to the <a href="http://bit.ly">bit.ly</a> link-shortening API.</li>
@@ -194,6 +195,7 @@
     <pkg>jSonarR</pkg>
     <pkg>jug</pkg>
     <pkg>leafletR</pkg>
+    <pkg>lucr</pkg>
     <pkg>magrittr</pkg>
     <pkg>mailR</pkg>
     <pkg>mime</pkg>
