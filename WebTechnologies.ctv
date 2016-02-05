@@ -102,7 +102,7 @@
     <li><pkg>plusser</pkg> has been designed to to facilitate the retrieval of Google+ profiles, pages and posts. It also provides search facilities. Currently a Google+ API key is required for accessing Google+ data.</li>
     <li><pkg>Rfacebook</pkg> provides an interface to the Facebook API.</li>
     <li>The <ohat>Rflickr</ohat> package provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)</li>
-    <li><a href="https://github.com/pablobarbera/instaR">instaR</a> (not on CRAN) is a client for the Instagram API.</li>
+    <li><pkg>instaR</pkg> (<a href="https://github.com/pablobarbera/instaR">GitHub</a>) is a client for the <a href="https://instagram.com/developer/">Instagram API</a>.</li>
     <li><a href="https://github.com/mpiccirilli/Rlinkedin">Rlinkedin</a> (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.</li>
     <li><pkg>SocialMediaMineR</pkg> is an analytic tool that returns information about the popularity of a URL on social media sites.</li>
     <li><pkg>tumblR</pkg> (<a href="https://github.com/klapaukh/tumblR">GitHub</a>) is a client for the Tumblr API (<a href="https://www.tumblr.com/docs/en/api/v2">https://www.tumblr.com/docs/en/api/v2</a>). Tumblr is a microblogging platform and social networking website <a href="https://www.tumblr.com">https://www.tumblr.com</a>.</li>
@@ -195,6 +195,7 @@
     <pkg>httpuv</pkg>
     <pkg>imguR</pkg>
     <pkg>indicoio</pkg>
+    <pkg>instaR</pkg>
     <pkg>jSonarR</pkg>
     <pkg>jug</pkg>
     <pkg>leafletR</pkg>
