@@ -73,7 +73,7 @@ Web and Server Frameworks
 -   The [WADL](http://www.Omegahat.org/WADL/) package provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
 -   The [RDCOMServer](http://www.Omegahat.org/RDCOMServer/) provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the [RDCOMClient](http://www.Omegahat.org/RDCOMClient/) package which provides user-level access from R to other COM servers. (not on CRAN)
 -   [rapporter.net](http://rapporter.net) provides an online environment (SaaS) to host and run [rapport](http://cran.rstudio.com/web/packages/rapport/index.html) statistical report templates in the cloud.
--   [radiant](http://cran.rstudio.com/web/packages/radiant/index.html) is Shiny-based GUI for R that runs in a browser from a server or local machine. Development version on [GitHub](https://github.com/vnijs/radiant).
+-   [radiant](https://github.com/vnijs/radiant) ([Archived on CRAN](https://cran.r-project.org/src/contrib/Archive/radiant/)) is Shiny-based GUI for R that runs in a browser from a server or local machine.
 -   [neocities](https://github.com/seankross/neocities) wraps the API for the [Neocities](https://neocities.org/) web hosting service. (not on CRAN)
 -   The [Tiki](http://info.tiki.org/tiki-index.php) Wiki CMS/Groupware framework has an R plugin ([PluginR](https://doc.tiki.org/PluginR)) to run R code from wiki pages, and use data from their own collected web databases (trackers). A demo: [http://r.tiki.org](http://r.tiki.org/tiki-index.php). More info in a [useR!2013 presentation](http://ueb.vhir.org/2011+UseR).
 -   The [MediaWiki](http://www.mediawiki.org) has an extension ([Extension:R](http://www.mediawiki.org/wiki/Extension:R)) to run R code from wiki pages, and use uploaded data. Links to demo pages (in German) can be found at the [category page for R scripts](http://mars.wiwi.hu-berlin.de/mediawiki/mmstat_de/index.php/Kategorie:R) at MM-Stat. A mailing list is available: [R-sig-mediawiki](https://stat.ethz.ch/mailman/listinfo/r-sig-mediawiki).
@@ -232,7 +232,6 @@ Web Services
 -   [plusser](http://cran.rstudio.com/web/packages/plusser/index.html)
 -   [pubmed.mineR](http://cran.rstudio.com/web/packages/pubmed.mineR/index.html)
 -   [pushoverr](http://cran.rstudio.com/web/packages/pushoverr/index.html)
--   [radiant](http://cran.rstudio.com/web/packages/radiant/index.html)
 -   [RAdwords](http://cran.rstudio.com/web/packages/RAdwords/index.html)
 -   [randNames](http://cran.rstudio.com/web/packages/randNames/index.html)
 -   [rapport](http://cran.rstudio.com/web/packages/rapport/index.html)
