@@ -155,7 +155,6 @@ Web Services
 -   [lucr](http://cran.rstudio.com/web/packages/lucr/index.html) performs currency conversions using [Open Exchange Rates](https://openexchangerates.org/).
 -   [randNames](http://cran.rstudio.com/web/packages/randNames/index.html) ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the [https://randomapi.com](https://randomapi.com) API.
 -   [Rbitcoin](http://cran.rstudio.com/web/packages/Rbitcoin/index.html) allows both public and private API calls to interact with Bitcoin. [rbitcoinchartsapi](http://cran.rstudio.com/web/packages/rbitcoinchartsapi/index.html) is a package for the [BitCoinCharts.com](http://bitcoincharts.com/) API. From their website: "Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API)." [RCryptsy](http://cran.rstudio.com/web/packages/RCryptsy/index.html) ([GitHub](https://github.com/ropensci/RCryptsy)) wraps the API for the [Cryptsy](http://www.cryptsy.com) crypto-currency trading platform.
--   [RBitly](http://cran.rstudio.com/web/packages/RBitly/index.html) ([GitHub](https://github.com/dmpe/rbitly)): An interface to the [bit.ly](http://bit.ly) link-shortening API.
 -   [Rblpapi](https://github.com/armstrtw/Rblpapi) ([GitHub](https://github.com/armstrtw/Rblpapi)) is a client for Bloomberg Finance L.P.
 -   [rerddap](https://github.com/ropensci/rerddap) ([GitHub](https://github.com/ropensci/rerddap); not on CRAN): A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP ([https://en.wikipedia.org/wiki/OPeNDAP](https://en.wikipedia.org/wiki/OPeNDAP)), or *Open-source Project for a Network Data Access Protocol*. Allows user to swap out the base URL to use any ERDDAP instance.
 -   [ripplerestr](https://github.com/hmalmedal/ripplerestr) provides an interface to the [Ripple](https://ripple.com/) protocol for making financial transactions.
@@ -239,7 +238,6 @@ Web Services
 -   [rapport](http://cran.rstudio.com/web/packages/rapport/index.html)
 -   [Rbitcoin](http://cran.rstudio.com/web/packages/Rbitcoin/index.html)
 -   [rbitcoinchartsapi](http://cran.rstudio.com/web/packages/rbitcoinchartsapi/index.html)
--   [RBitly](http://cran.rstudio.com/web/packages/RBitly/index.html)
 -   [RCryptsy](http://cran.rstudio.com/web/packages/RCryptsy/index.html)
 -   [RCurl](http://cran.rstudio.com/web/packages/RCurl/index.html) (core)
 -   [RDataCanvas](http://cran.rstudio.com/web/packages/RDataCanvas/index.html)
