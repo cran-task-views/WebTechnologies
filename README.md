@@ -160,6 +160,7 @@ Web Services
 -   [shopifyr](http://cran.rstudio.com/web/packages/shopifyr/index.html): An interface to the API of the E-commerce service Shopify [http://docs.shopify.com/api](http://docs.shopify.com/api).
 -   [slackr](http://cran.rstudio.com/web/packages/slackr/index.html) ([GitHub](https://github.com/hrbrmstr/slackr)) is a client for Slack.com messaging platform.
 -   [stackr](https://github.com/dgrtwo/stackr) (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).
+-   [telegram](http://cran.rstudio.com/web/packages/telegram/index.html) ([GitHub](http://github.com/lbraglia/telegram)) connects with the [Telegram Bot API](http://core.telegram.org/bots/api).
 -   [tuber](https://github.com/soodoku/tuber) (not on CRAN): A YouTube API client.
 -   [yummlyr](http://cran.rstudio.com/web/packages/yummlyr/index.html) ([GitHub](https://github.com/RomanTsegelskyi/yummlyr)) provides an interface to the [Yummly](https://developer.yummly.com/) recipe database.
 -   [zendeskR](http://cran.rstudio.com/web/packages/zendeskR/index.html): This package provides a wrapper for the Zendesk API.
@@ -268,6 +269,7 @@ Web Services
 -   [slackr](http://cran.rstudio.com/web/packages/slackr/index.html)
 -   [SocialMediaMineR](http://cran.rstudio.com/web/packages/SocialMediaMineR/index.html)
 -   [streamR](http://cran.rstudio.com/web/packages/streamR/index.html)
+-   [telegram](http://cran.rstudio.com/web/packages/telegram/index.html)
 -   [threewords](http://cran.rstudio.com/web/packages/threewords/index.html)
 -   [tidyjson](http://cran.rstudio.com/web/packages/tidyjson/index.html)
 -   [tm.plugin.webmining](http://cran.rstudio.com/web/packages/tm.plugin.webmining/index.html)

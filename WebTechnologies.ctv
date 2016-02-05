@@ -148,6 +148,7 @@
     <li><pkg>shopifyr</pkg>: An interface to the API of the E-commerce service Shopify <a href="http://docs.shopify.com/api">http://docs.shopify.com/api</a>.</li>
     <li><pkg>slackr</pkg> (<a href="https://github.com/hrbrmstr/slackr">GitHub</a>) is a client for Slack.com messaging platform.</li>
     <li><a href="https://github.com/dgrtwo/stackr">stackr</a> (not on CRAN): An unofficial wrapper for the read-only features of the <a href="https://api.stackexchange.com/">Stack Exchange API</a>.</li>
+    <li><pkg>telegram</pkg> (<a href="http://github.com/lbraglia/telegram">GitHub</a>) connects with the <a href="http://core.telegram.org/bots/api">Telegram Bot API</a>.</li>
     <li><a href="https://github.com/soodoku/tuber">tuber</a> (not on CRAN): A YouTube API client.</li>
     <li><pkg>yummlyr</pkg> (<a href="https://github.com/RomanTsegelskyi/yummlyr">GitHub</a>) provides an interface to the <a href="https://developer.yummly.com/">Yummly</a> recipe database.</li>
     <li><pkg>zendeskR</pkg>: This package provides a wrapper for the Zendesk API.</li>
@@ -257,6 +258,7 @@
     <pkg>slackr</pkg>
     <pkg>SocialMediaMineR</pkg>
     <pkg>streamR</pkg>
+    <pkg>telegram</pkg>
     <pkg>threewords</pkg>
     <pkg>tidyjson</pkg>
     <pkg>tm.plugin.webmining</pkg>
