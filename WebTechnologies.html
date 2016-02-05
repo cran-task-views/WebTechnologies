@@ -583,48 +583,60 @@
       <ul>
         <li>
           Amazon Web Services is a popular, proprietary cloud service offering a suite of computing, storage, and infrastructure tools.
-          <em>
-            Simple Storage Service (S3)
-          </em>
-          is a commercial server that allows one to store content and retrieve it from any machine connected to the Internet.
+<a href="../packages/aws.signature/index.html">aws.signature</a>
+          provides functionality for generating AWS API request signatures.
+          <ul>
+            <li>
+              <em>
+                Simple Storage Service (S3)
+              </em>
+              is a commercial server that allows one to store content and retrieve it from any machine connected to the Internet.
 <a href="http://www.Omegahat.org/RAmazonS3/"><span class="Ohat">RAmazonS3</span></a>
-          and
-          <a href="https://github.com/robertzk/s3mpi">
-            s3mpi
-          </a>
-          (not on CRAN) provides basic infrastructure for communicating with S3.
-          <a href="http://cran.rstudio.com/src/contrib/Archive/AWS.tools/">
-            AWS.tools
-          </a>
-          (
-          <a href="https://github.com/armstrtw/AWS.tools">
-            GitHub
-          </a>) interacts with S3 and EC2 using the AWS command line interface (an external system dependency). The CRAN version is archived.
-          <a href="https://github.com/lalas/awsConnect">
-            awsConnect
-          </a>
-          (not on CRAN) is another package using the AWS Command Line Interface to control EC2 and S3, which is only available for Linux and Mac OS.
-          <em>
-            Elastic Cloud Compute (EC2)
-          </em>
-          is a cloud computing service. AWS.tools and
-          <a href="https://github.com/lalas/awsConnect">
-            awsConnect
-          </a>
-          (not on CRAN) both use the AWS command line interface to control EC2.
+              and
+              <a href="https://github.com/robertzk/s3mpi">
+                s3mpi
+              </a>
+              (not on CRAN) provides basic infrastructure for communicating with S3.
+              <a href="http://cran.rstudio.com/src/contrib/Archive/AWS.tools/">
+                AWS.tools
+              </a>
+              (
+              <a href="https://github.com/armstrtw/AWS.tools">
+                GitHub
+              </a>) interacts with S3 and EC2 using the AWS command line interface (an external system dependency). The CRAN version is archived.
+              <a href="https://github.com/lalas/awsConnect">
+                awsConnect
+              </a>
+              (not on CRAN) is another package using the AWS Command Line Interface to control EC2 and S3, which is only available for Linux and Mac OS.
+            </li>
+            <li>
+              <em>
+                Elastic Cloud Compute (EC2)
+              </em>
+              is a cloud computing service. AWS.tools and
+              <a href="https://github.com/lalas/awsConnect">
+                awsConnect
+              </a>
+              (not on CRAN) both use the AWS command line interface to control EC2.
 <a href="http://code.google.com/p/segue/"><span class="Gcode">segue</span></a>
-          (not on CRAN) is another package for managing EC2 instances and S3 storage, which includes a parallel version of
+              (not on CRAN) is another package for managing EC2 instances and S3 storage, which includes a parallel version of
 <tt>lapply()</tt>
-          for the Elastic Map Reduce (EMR) engine called
+              for the Elastic Map Reduce (EMR) engine called
 <tt>emrlapply()</tt>. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
-          <em>
-            DBREST
-          </em>:
+            </li>
+            <li>
+              <em>
+                DBREST
+              </em>:
 <a href="http://www.Omegahat.org/RAmazonDBREST/"><span class="Ohat">RAmazonDBREST</span></a>
-          provides an interface to Amazon's Simple DB API.
-          <a href="https://github.com/cloudyr/">
-            The cloudyr project
-          </a>, which is currently under active development on GitHub, aims to provide a unified interface to the full Amazon Web Services suite without the need for external system dependencies. None of these packages are on CRAN.
+              provides an interface to Amazon's Simple DB API.
+            </li>
+            <li>
+              <a href="https://cloudyr.github.io">
+                The cloudyr project
+              </a>, which is currently under active development on GitHub, aims to provide a unified interface to the full Amazon Web Services suite without the need for external system dependencies.
+            </li>
+          </ul>
         </li>
         <li>
           <em>
@@ -1561,6 +1573,7 @@
     <li><a href="../packages/anametrix/index.html">anametrix</a></li>
     <li><a href="../packages/ApacheLogProcessor/index.html">ApacheLogProcessor</a></li>
     <li><a href="../packages/aRxiv/index.html">aRxiv</a></li>
+    <li><a href="../packages/aws.signature/index.html">aws.signature</a></li>
     <li><a href="../packages/AzureML/index.html">AzureML</a></li>
     <li><a href="../packages/bigml/index.html">bigml</a></li>
     <li><a href="../packages/bigrquery/index.html">bigrquery</a></li>
