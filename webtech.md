@@ -63,6 +63,7 @@ Web and Server Frameworks
 -   The [MediaWiki](http://www.mediawiki.org) has an extension ([Extension:R](http://www.mediawiki.org/wiki/Extension:R)) to run R code from wiki pages, and use uploaded data. Links to demo pages (in German) can be found at the [category page for R scripts](http://mars.wiwi.hu-berlin.de/mediawiki/mmstat_de/index.php/Kategorie:R) at MM-Stat. A mailing list is available: [R-sig-mediawiki](https://stat.ethz.ch/mailman/listinfo/r-sig-mediawiki).
 -   <pkg>whisker</pkg>: Implementation of logicless templating based on [Mustache](http://mustache.github.io/) in R. Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
 -   <ohat>CGIwithR</ohat> (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.
+-   <pkg>jug</pkg> is a simple API-builder web framework, built around <pkg>httpuv</pkg>.
 
 Web Services
 ------------

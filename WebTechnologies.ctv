@@ -67,6 +67,7 @@
     <li>The <a href="http://www.mediawiki.org">MediaWiki</a> has an extension (<a href="http://www.mediawiki.org/wiki/Extension:R">Extension:R</a>) to run R code from wiki pages, and use uploaded data. Links to demo pages (in German) can be found at the <a href="http://mars.wiwi.hu-berlin.de/mediawiki/mmstat_de/index.php/Kategorie:R">category page for R scripts</a> at MM-Stat. A mailing list is available: <a href="https://stat.ethz.ch/mailman/listinfo/r-sig-mediawiki">R-sig-mediawiki</a>.</li>
     <li><pkg>whisker</pkg>: Implementation of logicless templating based on <a href="http://mustache.github.io/">Mustache</a> in R. Mustache syntax is described in <a href="http://mustache.github.io/mustache.5.html">http://mustache.github.io/mustache.5.html</a></li>
     <li><ohat>CGIwithR</ohat> (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.</li>
+    <li><pkg>jug</pkg> is a simple API-builder web framework, built around <pkg>httpuv</pkg>.</li>
     </ul>
     <h2 id="web-services">Web Services</h2>
     <p><strong>Cloud Computing and Storage</strong></p>
@@ -191,6 +192,7 @@
     <pkg>imguR</pkg>
     <pkg>indicoio</pkg>
     <pkg>jSonarR</pkg>
+    <pkg>jug</pkg>
     <pkg>leafletR</pkg>
     <pkg>magrittr</pkg>
     <pkg>mailR</pkg>
