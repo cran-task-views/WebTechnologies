@@ -130,7 +130,7 @@ Web Services
 
 -   *Google Trends*: [GTrendsR](https://github.com/dvanclev/GTrendsR) (not on CRAN) offers functions to perform and display Google Trends queries. Another GitHub package ([rGtrends](https://github.com/emhart/rGtrends)) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers. [RGoogleTrends](http://www.Omegahat.org/RGoogleTrends/) provides another alternative.
 -   *Google Analytics*: [RGoogleAnalytics](http://cran.rstudio.com/web/packages/RGoogleAnalytics/index.html) ([GitHub](https://github.com/Tatvic/RGoogleAnalytics/issues)), [ganalytics](https://github.com/jdeboer/ganalytics) ([GitHub](https://github.com/jdeboer/ganalytics); not on CRAN), [GAR](http://cran.rstudio.com/web/packages/GAR/index.html) ([GitHub](https://github.com/andrewgeisler/GAR)), and [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provide functions for accessing and retrieving data from the [Google Analytics APIs](https://developers.google.com/analytics/). The latter supports OAuth 2.0 authorization. [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provides a shiny app to explore data. [searchConsoleR](https://github.com/MarkEdmondson1234/searchConsoleR) (not on CRAN) links to the [Google Search Console](https://developers.google.com/webmaster-tools/) (formerly Webmaster Tools).
--   *Other services*: [rgauges](http://cran.rstudio.com/web/packages/rgauges/index.html) provides functions to interact with the Gaug.es API. Gaug.es is a web analytics service, like Google analytics. You have to have a Gaug.es account to use this package. [RSiteCatalyst](http://cran.rstudio.com/web/packages/RSiteCatalyst/index.html) has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.
+-   *Other services*: [RSiteCatalyst](http://cran.rstudio.com/web/packages/RSiteCatalyst/index.html) has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.
 -   [RAdwords](http://cran.rstudio.com/web/packages/RAdwords/index.html) ([GitHub](https://github.com/jburkhardt/RAdwords)) is a package for loading Google Adwords data.
 -   [anametrix](http://cran.rstudio.com/web/packages/anametrix/index.html) is a bidirectional connector to the Anametrix API.
 -   [webreadr](http://cran.rstudio.com/web/packages/webreadr/index.html) ([GitHub](https://github.com/Ironholds/webreadr)) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.
@@ -249,7 +249,6 @@ Web Services
 -   [rfigshare](http://cran.rstudio.com/web/packages/rfigshare/index.html)
 -   [RForcecom](http://cran.rstudio.com/web/packages/RForcecom/index.html)
 -   [RGA](http://cran.rstudio.com/web/packages/RGA/index.html)
--   [rgauges](http://cran.rstudio.com/web/packages/rgauges/index.html)
 -   [rgeolocate](http://cran.rstudio.com/web/packages/rgeolocate/index.html)
 -   [RGoogleAnalytics](http://cran.rstudio.com/web/packages/RGoogleAnalytics/index.html)
 -   [RgoogleMaps](http://cran.rstudio.com/web/packages/RgoogleMaps/index.html)
