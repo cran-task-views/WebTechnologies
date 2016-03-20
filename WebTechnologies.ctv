@@ -42,6 +42,7 @@
     <li>For XML documents, the <ohat>XMLSchema</ohat> package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R. <a href="https://github.com/hrbrmstr/xslt">xslt</a> is a package providing an interface to the <a href="http://vslavik.github.io/xmlwrapp/">xmlwrapp</a> an XML processing library that provides an XSLT engine for transforming XML data using a transform stylesheet. (It can be seen as a modern replacement for <ohat>Sxslt</ohat>, which is an interface to Dan Veillard's libxslt translator, and the <ohat>SXalan</ohat> package.) This may be useful for webscraping, as well as transforming XML markup into another human- or machine-readable format (e.g., HTML, JSON, plain text, etc.). <ohat>SSOAP</ohat> provides a client-side SOAP (Simple Object Access Protocol) mechanism. It aims to provide a high-level interface to invoke SOAP methods provided by a SOAP server. <ohat>XMLRPC</ohat> provides an implementation of XML-RPC, a relatively simple remote procedure call mechanism that uses HTTP and XML. This can be used for communicating between processes on a single machine or for accessing Web services from within R.</li>
     <li><ohat>Rcompression</ohat> (not on CRAN): Interface to zlib and bzip2 libraries for performing in-memory compression and decompression in R. This is useful when receiving or sending contents to remote servers, e.g. Web services, HTTP requests via RCurl.</li>
     <li><pkg>tm.plugin.webmining</pkg>: Extensible text retrieval framework for news feeds in XML (RSS, ATOM) and JSON formats. Currently, the following feeds are implemented: Google Blog Search, Google Finance, Google News, NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo Inplay.</li>
+    <li><pkg>webshot</pkg> uses <a href="http://phantomjs.org">PhantomJS</a> to provide screenshots of web pages without a browser. It can be useful for testing websites (such as Shiny applications).</li>
     </ul>
     <p><strong>Other Useful Packages and Functions</strong></p>
     <ul>
@@ -287,6 +288,7 @@
     <pkg>V8</pkg>
     <pkg>W3CMarkupValidator</pkg>
     <pkg>webreadr</pkg>
+    <pkg>webshot</pkg>
     <pkg>webutils</pkg>
     <pkg>whisker</pkg>
     <pkg>wikipediatrend</pkg>

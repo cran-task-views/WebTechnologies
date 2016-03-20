@@ -48,6 +48,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 -   For XML documents, the [<span class="Ohat">XMLSchema</span>](http://www.Omegahat.org/XMLSchema/) package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R. [xslt](https://github.com/hrbrmstr/xslt) is a package providing an interface to the [xmlwrapp](http://vslavik.github.io/xmlwrapp/) an XML processing library that provides an XSLT engine for transforming XML data using a transform stylesheet. (It can be seen as a modern replacement for [<span class="Ohat">Sxslt</span>](http://www.Omegahat.org/Sxslt/), which is an interface to Dan Veillard's libxslt translator, and the [<span class="Ohat">SXalan</span>](http://www.Omegahat.org/SXalan/) package.) This may be useful for webscraping, as well as transforming XML markup into another human- or machine-readable format (e.g., HTML, JSON, plain text, etc.). [<span class="Ohat">SSOAP</span>](http://www.Omegahat.org/SSOAP/) provides a client-side SOAP (Simple Object Access Protocol) mechanism. It aims to provide a high-level interface to invoke SOAP methods provided by a SOAP server. [<span class="Ohat">XMLRPC</span>](http://www.Omegahat.org/XMLRPC/) provides an implementation of XML-RPC, a relatively simple remote procedure call mechanism that uses HTTP and XML. This can be used for communicating between processes on a single machine or for accessing Web services from within R.
 -   [<span class="Ohat">Rcompression</span>](http://www.Omegahat.org/Rcompression/) (not on CRAN): Interface to zlib and bzip2 libraries for performing in-memory compression and decompression in R. This is useful when receiving or sending contents to remote servers, e.g. Web services, HTTP requests via RCurl.
 -   [tm.plugin.webmining](http://cran.rstudio.com/web/packages/tm.plugin.webmining/index.html): Extensible text retrieval framework for news feeds in XML (RSS, ATOM) and JSON formats. Currently, the following feeds are implemented: Google Blog Search, Google Finance, Google News, NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo Inplay.
+-   [webshot](http://cran.rstudio.com/web/packages/webshot/index.html) uses [PhantomJS](http://phantomjs.org) to provide screenshots of web pages without a browser. It can be useful for testing websites (such as Shiny applications).
 
 **Other Useful Packages and Functions**
 
@@ -293,6 +294,7 @@ Web Services
 -   [V8](http://cran.rstudio.com/web/packages/V8/index.html)
 -   [W3CMarkupValidator](http://cran.rstudio.com/web/packages/W3CMarkupValidator/index.html)
 -   [webreadr](http://cran.rstudio.com/web/packages/webreadr/index.html)
+-   [webshot](http://cran.rstudio.com/web/packages/webshot/index.html)
 -   [webutils](http://cran.rstudio.com/web/packages/webutils/index.html)
 -   [whisker](http://cran.rstudio.com/web/packages/whisker/index.html)
 -   [wikipediatrend](http://cran.rstudio.com/web/packages/wikipediatrend/index.html)
