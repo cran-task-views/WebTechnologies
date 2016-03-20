@@ -135,6 +135,7 @@ Web Services
 -   <pkg>factualR</pkg>: Thin wrapper for the [Factual.com](http://factual.com/) server API.
 -   <pkg>fitbitScraper</pkg> ([GitHub](https://github.com/corynissen/fitbitScraper)) retrieves Fitbit data.
 -   [GFusionTables](http://gfusiontables.lopatenko.com/) (not on CRAN): An interface to Google Fusion Tables. Google Fusion Tables is a data management system in the cloud. This package provides functions to browse Fusion Tables catalog, retrieve data from Gusion Tables dtd storage to R and to upload data from R to Fusion Tables
+-   [HIBPwned](https://github.com/stephlocke/HIBPwned) (not on CRAN) is a client for [Have I Been Pwned](http://www.HaveIBeenPwned.com).
 -   [infochimps](http://cran.rstudio.com/src/contrib/Archive/infochimps/) ([GitHub](https://github.com/drewconway/infochimps); archived) is an R wrapper for the infochimps.com API services.
 -   [internetarchive](https://github.com/lmullen/internetarchive) ([GitHub](https://github.com/ropensci/internetarchive); not on CRAN): API client for internet archive metadata.
 -   <pkg>jSonarR</pkg>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the [JSON Studio Gateway](http://www.jsonstudio.com), to convert JSON to a tabular format.
