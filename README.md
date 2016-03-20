@@ -76,7 +76,7 @@ Web and Server Frameworks
 -   The [MediaWiki](http://www.mediawiki.org) has an extension ([Extension:R](http://www.mediawiki.org/wiki/Extension:R)) to run R code from wiki pages, and use uploaded data. Links to demo pages (in German) can be found at the [category page for R scripts](http://mars.wiwi.hu-berlin.de/mediawiki/mmstat_de/index.php/Kategorie:R) at MM-Stat. A mailing list is available: [R-sig-mediawiki](https://stat.ethz.ch/mailman/listinfo/r-sig-mediawiki).
 -   [whisker](http://cran.rstudio.com/web/packages/whisker/index.html): Implementation of logicless templating based on [Mustache](http://mustache.github.io/) in R. Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
 -   [<span class="Ohat">CGIwithR</span>](http://www.Omegahat.org/CGIwithR/) (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.
--   [jug](http://cran.rstudio.com/web/packages/jug/index.html) is a simple API-builder web framework, built around [httpuv](http://cran.rstudio.com/web/packages/httpuv/index.html).
+-   Several packages offer functionality for turning R code into a web API. [jug](http://cran.rstudio.com/web/packages/jug/index.html) is a simple API-builder web framework, built around [httpuv](http://cran.rstudio.com/web/packages/httpuv/index.html). [FastRWeb](http://cran.rstudio.com/web/packages/FastRWeb/index.html) provides some basic infrastructure for this. [plumber](https://github.com/trestletech/plumber) is a similar package not yet on CRAN (see <http://plumber.trestletech.com/> for details).
 
 Web Services
 ------------
@@ -192,6 +192,7 @@ Web Services
 -   [downloader](http://cran.rstudio.com/web/packages/downloader/index.html)
 -   [dvn](http://cran.rstudio.com/web/packages/dvn/index.html)
 -   [factualR](http://cran.rstudio.com/web/packages/factualR/index.html)
+-   [FastRWeb](http://cran.rstudio.com/web/packages/FastRWeb/index.html)
 -   [fitbitScraper](http://cran.rstudio.com/web/packages/fitbitScraper/index.html)
 -   [GAR](http://cran.rstudio.com/web/packages/GAR/index.html)
 -   [genderizeR](http://cran.rstudio.com/web/packages/genderizeR/index.html)
