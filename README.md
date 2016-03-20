@@ -151,6 +151,7 @@ Web Services
 -   [infochimps](http://cran.rstudio.com/src/contrib/Archive/infochimps/) ([GitHub](https://github.com/drewconway/infochimps); archived) is an R wrapper for the infochimps.com API services.
 -   [internetarchive](https://github.com/lmullen/internetarchive) ([GitHub](https://github.com/ropensci/internetarchive); not on CRAN): API client for internet archive metadata.
 -   [jSonarR](http://cran.rstudio.com/web/packages/jSonarR/index.html): Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the [JSON Studio Gateway](http://www.jsonstudio.com), to convert JSON to a tabular format.
+-   [livechatR](http://cran.rstudio.com/web/packages/livechatR/index.html) is a client for the [LiveChat API](https://developers.livechatinc.com/rest-api/).
 -   [lucr](http://cran.rstudio.com/web/packages/lucr/index.html) performs currency conversions using [Open Exchange Rates](https://openexchangerates.org/).
 -   [randNames](http://cran.rstudio.com/web/packages/randNames/index.html) ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the <https://randomapi.com> API.
 -   [Rbitcoin](http://cran.rstudio.com/web/packages/Rbitcoin/index.html) allows both public and private API calls to interact with Bitcoin. [rbitcoinchartsapi](http://cran.rstudio.com/web/packages/rbitcoinchartsapi/index.html) is a package for the [BitCoinCharts.com](http://bitcoincharts.com/) API. From their website: "Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API)." [RCryptsy](http://cran.rstudio.com/web/packages/RCryptsy/index.html) ([GitHub](https://github.com/ropensci/RCryptsy)) wraps the API for the [Cryptsy](http://www.cryptsy.com) crypto-currency trading platform.
@@ -158,9 +159,9 @@ Web Services
 -   [rerddap](https://github.com/ropensci/rerddap) ([GitHub](https://github.com/ropensci/rerddap); not on CRAN): A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP ( <https://en.wikipedia.org/wiki/OPeNDAP>), or *Open-source Project for a Network Data Access Protocol* . Allows user to swap out the base URL to use any ERDDAP instance.
 -   [ripplerestr](https://github.com/hmalmedal/ripplerestr) provides an interface to the [Ripple](https://ripple.com/) protocol for making financial transactions.
 -   [restimizeapi](http://cran.rstudio.com/web/packages/restimizeapi/index.html) provides an interface to trading website [estimize.com](http://www.estimize.com).
+-   [RForcecom](http://cran.rstudio.com/web/packages/RForcecom/index.html): RForcecom provides a connection to Force.com and Salesforce.com.
 -   [Rgoodreads](https://github.com/dsidavis/Rgoodreads) (not on CRAN) interacts with [Goodreads](https://www.goodreads.com/).
 -   [RLastFM](http://cran.rstudio.com/src/contrib/Archive/RLastFM/): A package to interface to the last.fm API. Archived on CRAN.
--   [RForcecom](http://cran.rstudio.com/web/packages/RForcecom/index.html): RForcecom provides a connection to Force.com and Salesforce.com.
 -   [ROpenWeatherMap](http://cran.rstudio.com/web/packages/ROpenWeatherMap/index.html) is a client for location-based weather data and forecasting from [Open Weather Map](http://openweathermap.org/api).
 -   [RSocrata](http://cran.rstudio.com/web/packages/RSocrata/index.html) access data for Socrata open data portals. [soql](http://cran.rstudio.com/web/packages/soql/index.html) is a pipe-oriented set of tools for constructing Socrata queries.
 -   [shopifyr](http://cran.rstudio.com/web/packages/shopifyr/index.html): An interface to the API of the E-commerce service Shopify <http://docs.shopify.com/api>.
@@ -218,6 +219,7 @@ Web Services
 -   [jsonlite](http://cran.rstudio.com/web/packages/jsonlite/index.html) (core)
 -   [jug](http://cran.rstudio.com/web/packages/jug/index.html)
 -   [leafletR](http://cran.rstudio.com/web/packages/leafletR/index.html)
+-   [livechatR](http://cran.rstudio.com/web/packages/livechatR/index.html)
 -   [longurl](http://cran.rstudio.com/web/packages/longurl/index.html)
 -   [lucr](http://cran.rstudio.com/web/packages/lucr/index.html)
 -   [magrittr](http://cran.rstudio.com/web/packages/magrittr/index.html)
