@@ -160,6 +160,7 @@ Web Services
 -   [Rgoodreads](https://github.com/dsidavis/Rgoodreads) (not on CRAN) interacts with [Goodreads](https://www.goodreads.com/).
 -   [RLastFM](http://cran.rstudio.com/src/contrib/Archive/RLastFM/): A package to interface to the last.fm API. Archived on CRAN.
 -   [RForcecom](http://cran.rstudio.com/web/packages/RForcecom/index.html): RForcecom provides a connection to Force.com and Salesforce.com.
+-   [ROpenWeatherMap](http://cran.rstudio.com/web/packages/ROpenWeatherMap/index.html) is a client for location-based weather data and forecasting from [Open Weather Map](http://openweathermap.org/api).
 -   [shopifyr](http://cran.rstudio.com/web/packages/shopifyr/index.html): An interface to the API of the E-commerce service Shopify <http://docs.shopify.com/api>.
 -   [slackr](http://cran.rstudio.com/web/packages/slackr/index.html) ([GitHub](https://github.com/hrbrmstr/slackr)) is a client for Slack.com messaging platform.
 -   [stackr](https://github.com/dgrtwo/stackr) (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).
@@ -256,6 +257,7 @@ Web Services
 -   [Rmonkey](http://cran.rstudio.com/web/packages/Rmonkey/index.html)
 -   [ROAuth](http://cran.rstudio.com/web/packages/ROAuth/index.html)
 -   [Rook](http://cran.rstudio.com/web/packages/Rook/index.html)
+-   [ROpenWeatherMap](http://cran.rstudio.com/web/packages/ROpenWeatherMap/index.html)
 -   [rorcid](http://cran.rstudio.com/web/packages/rorcid/index.html)
 -   [rplos](http://cran.rstudio.com/web/packages/rplos/index.html)
 -   [RPushbullet](http://cran.rstudio.com/web/packages/RPushbullet/index.html)

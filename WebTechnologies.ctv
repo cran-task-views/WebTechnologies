@@ -153,6 +153,7 @@
     <li><a href="https://github.com/dsidavis/Rgoodreads">Rgoodreads</a> (not on CRAN) interacts with <a href="https://www.goodreads.com/">Goodreads</a>.</li>
     <li><a href="http://cran.rstudio.com/src/contrib/Archive/RLastFM/">RLastFM</a>: A package to interface to the last.fm API. Archived on CRAN.</li>
     <li><pkg>RForcecom</pkg>: RForcecom provides a connection to Force.com and Salesforce.com.</li>
+    <li><pkg>ROpenWeatherMap</pkg> is a client for location-based weather data and forecasting from <a href="http://openweathermap.org/api">Open Weather Map</a>.</li>
     <li><pkg>shopifyr</pkg>: An interface to the API of the E-commerce service Shopify <a href="http://docs.shopify.com/api" class="uri">http://docs.shopify.com/api</a>.</li>
     <li><pkg>slackr</pkg> (<a href="https://github.com/hrbrmstr/slackr">GitHub</a>) is a client for Slack.com messaging platform.</li>
     <li><a href="https://github.com/dgrtwo/stackr">stackr</a> (not on CRAN): An unofficial wrapper for the read-only features of the <a href="https://api.stackexchange.com/">Stack Exchange API</a>.</li>
@@ -251,6 +252,7 @@
     <pkg>Rmonkey</pkg>
     <pkg>ROAuth</pkg>
     <pkg>Rook</pkg>
+    <pkg>ROpenWeatherMap</pkg>
     <pkg>rorcid</pkg>
     <pkg>rplos</pkg>
     <pkg>RPushbullet</pkg>
