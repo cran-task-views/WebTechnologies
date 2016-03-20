@@ -161,6 +161,7 @@ Web Services
 -   [RLastFM](http://cran.rstudio.com/src/contrib/Archive/RLastFM/): A package to interface to the last.fm API. Archived on CRAN.
 -   [RForcecom](http://cran.rstudio.com/web/packages/RForcecom/index.html): RForcecom provides a connection to Force.com and Salesforce.com.
 -   [ROpenWeatherMap](http://cran.rstudio.com/web/packages/ROpenWeatherMap/index.html) is a client for location-based weather data and forecasting from [Open Weather Map](http://openweathermap.org/api).
+-   [RSocrata](http://cran.rstudio.com/web/packages/RSocrata/index.html) access data for Socrata open data portals. [soql](http://cran.rstudio.com/web/packages/soql/index.html) is a pipe-oriented set of tools for constructing Socrata queries.
 -   [shopifyr](http://cran.rstudio.com/web/packages/shopifyr/index.html): An interface to the API of the E-commerce service Shopify <http://docs.shopify.com/api>.
 -   [slackr](http://cran.rstudio.com/web/packages/slackr/index.html) ([GitHub](https://github.com/hrbrmstr/slackr)) is a client for Slack.com messaging platform.
 -   [stackr](https://github.com/dgrtwo/stackr) (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).
@@ -265,6 +266,7 @@ Web Services
 -   [rsdmx](http://cran.rstudio.com/web/packages/rsdmx/index.html)
 -   [RSelenium](http://cran.rstudio.com/web/packages/RSelenium/index.html)
 -   [RSiteCatalyst](http://cran.rstudio.com/web/packages/RSiteCatalyst/index.html)
+-   [RSocrata](http://cran.rstudio.com/web/packages/RSocrata/index.html)
 -   [rvest](http://cran.rstudio.com/web/packages/rvest/index.html)
 -   [scholar](http://cran.rstudio.com/web/packages/scholar/index.html)
 -   [scrapeR](http://cran.rstudio.com/web/packages/scrapeR/index.html)
@@ -274,6 +276,7 @@ Web Services
 -   [shopifyr](http://cran.rstudio.com/web/packages/shopifyr/index.html)
 -   [slackr](http://cran.rstudio.com/web/packages/slackr/index.html)
 -   [SocialMediaMineR](http://cran.rstudio.com/web/packages/SocialMediaMineR/index.html)
+-   [soql](http://cran.rstudio.com/web/packages/soql/index.html)
 -   [streamR](http://cran.rstudio.com/web/packages/streamR/index.html)
 -   [telegram](http://cran.rstudio.com/web/packages/telegram/index.html)
 -   [threewords](http://cran.rstudio.com/web/packages/threewords/index.html)

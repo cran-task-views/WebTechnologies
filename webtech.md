@@ -150,6 +150,7 @@ Web Services
 -   [RLastFM](http://cran.rstudio.com/src/contrib/Archive/RLastFM/): A package to interface to the last.fm API. Archived on CRAN.
 -   <pkg>RForcecom</pkg>: RForcecom provides a connection to Force.com and Salesforce.com.
 -   <pkg>ROpenWeatherMap</pkg> is a client for location-based weather data and forecasting from [Open Weather Map](http://openweathermap.org/api).
+-   <pkg>RSocrata</pkg> access data for Socrata open data portals. <pkg>soql</pkg> is a pipe-oriented set of tools for constructing Socrata queries.
 -   <pkg>shopifyr</pkg>: An interface to the API of the E-commerce service Shopify <http://docs.shopify.com/api>.
 -   <pkg>slackr</pkg> ([GitHub](https://github.com/hrbrmstr/slackr)) is a client for Slack.com messaging platform.
 -   [stackr](https://github.com/dgrtwo/stackr) (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).

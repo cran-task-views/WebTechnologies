@@ -154,6 +154,7 @@
     <li><a href="http://cran.rstudio.com/src/contrib/Archive/RLastFM/">RLastFM</a>: A package to interface to the last.fm API. Archived on CRAN.</li>
     <li><pkg>RForcecom</pkg>: RForcecom provides a connection to Force.com and Salesforce.com.</li>
     <li><pkg>ROpenWeatherMap</pkg> is a client for location-based weather data and forecasting from <a href="http://openweathermap.org/api">Open Weather Map</a>.</li>
+    <li><pkg>RSocrata</pkg> access data for Socrata open data portals. <pkg>soql</pkg> is a pipe-oriented set of tools for constructing Socrata queries.</li>
     <li><pkg>shopifyr</pkg>: An interface to the API of the E-commerce service Shopify <a href="http://docs.shopify.com/api" class="uri">http://docs.shopify.com/api</a>.</li>
     <li><pkg>slackr</pkg> (<a href="https://github.com/hrbrmstr/slackr">GitHub</a>) is a client for Slack.com messaging platform.</li>
     <li><a href="https://github.com/dgrtwo/stackr">stackr</a> (not on CRAN): An unofficial wrapper for the read-only features of the <a href="https://api.stackexchange.com/">Stack Exchange API</a>.</li>
@@ -260,6 +261,7 @@
     <pkg>rsdmx</pkg>
     <pkg>RSelenium</pkg>
     <pkg>RSiteCatalyst</pkg>
+    <pkg>RSocrata</pkg>
     <pkg>rvest</pkg>
     <pkg>scholar</pkg>
     <pkg>scrapeR</pkg>
@@ -268,6 +270,7 @@
     <pkg>shopifyr</pkg>
     <pkg>slackr</pkg>
     <pkg>SocialMediaMineR</pkg>
+    <pkg>soql</pkg>
     <pkg>streamR</pkg>
     <pkg>telegram</pkg>
     <pkg>threewords</pkg>
