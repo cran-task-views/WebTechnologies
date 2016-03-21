@@ -155,6 +155,7 @@ Web Services
 -   <pkg>RSocrata</pkg> access data for Socrata open data portals. <pkg>soql</pkg> is a pipe-oriented set of tools for constructing Socrata queries.
 -   <pkg>shopifyr</pkg>: An interface to the API of the E-commerce service Shopify <http://docs.shopify.com/api>.
 -   <pkg>slackr</pkg> ([GitHub](https://github.com/hrbrmstr/slackr)) is a client for Slack.com messaging platform.
+-   [SlideShaRe](https://github.com/dmpe/SlideShaRe) (not on CRAN) is a client for Slideshare.
 -   [stackr](https://github.com/dgrtwo/stackr) (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).
 -   <pkg>telegram</pkg> ([GitHub](http://github.com/lbraglia/telegram)) connects with the [Telegram Bot API](http://core.telegram.org/bots/api).
 -   [tuber](https://github.com/soodoku/tuber) (not on CRAN): A YouTube API client.
