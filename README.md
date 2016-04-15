@@ -4,7 +4,7 @@ CRAN Task View: Web Technologies and Services
 *Do not edit this README by hand. See [CONTRIBUTING.md](CONTRIBUTING.md).*
 
 | | |
-| -- | -- |
+|---|---|
 |**Maintainer:**|Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud|
 |**Contact:**|thosjleeper at gmail.com|
 |**Version:**|2016-03-21|
