@@ -172,6 +172,7 @@ Web Services
 -   [RLastFM](http://cran.rstudio.com/src/contrib/Archive/RLastFM/): A package to interface to the last.fm API. Archived on CRAN.
 -   [ROpenWeatherMap](http://cran.rstudio.com/web/packages/ROpenWeatherMap/index.html) is a client for location-based weather data and forecasting from [Open Weather Map](http://openweathermap.org/api).
 -   [RSocrata](http://cran.rstudio.com/web/packages/RSocrata/index.html) access data for Socrata open data portals. [soql](http://cran.rstudio.com/web/packages/soql/index.html) is a pipe-oriented set of tools for constructing Socrata queries.
+-   [RZabbix](http://cran.rstudio.com/web/packages/RZabbix/index.html) links with the [Zabbix network monitoring service API](https://www.zabbix.com/documentation/3.0/manual/api/reference).
 -   [shopifyr](http://cran.rstudio.com/web/packages/shopifyr/index.html): An interface to the API of the E-commerce service Shopify <http://docs.shopify.com/api>.
 -   [slackr](http://cran.rstudio.com/web/packages/slackr/index.html) ([GitHub](https://github.com/hrbrmstr/slackr)) is a client for Slack.com messaging platform.
 -   [SlideShaRe](https://github.com/dmpe/SlideShaRe) (not on CRAN) is a client for Slideshare.
@@ -298,6 +299,7 @@ Web Services
 -   [RSocrata](http://cran.rstudio.com/web/packages/RSocrata/index.html)
 -   [rvest](http://cran.rstudio.com/web/packages/rvest/index.html)
 -   [RYandexTranslate](http://cran.rstudio.com/web/packages/RYandexTranslate/index.html)
+-   [RZabbix](http://cran.rstudio.com/web/packages/RZabbix/index.html)
 -   [scholar](http://cran.rstudio.com/web/packages/scholar/index.html)
 -   [scrapeR](http://cran.rstudio.com/web/packages/scrapeR/index.html)
 -   [searchConsoleR](http://cran.rstudio.com/web/packages/searchConsoleR/index.html)
