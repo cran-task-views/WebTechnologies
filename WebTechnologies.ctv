@@ -135,6 +135,7 @@
     </ul>
     <p><strong>Other Web Services</strong></p>
     <ul>
+    <li><p><em>Fitness Apps</em>: <pkg>fitbitScraper</pkg> (<a href="https://github.com/corynissen/fitbitScraper">GitHub</a>) and <pkg>fitcoach</pkg> retrieve Fitbit data. <pkg>RGoogleFit</pkg> provides similar functionality for <a href="https://developers.google.com/fit/rest/v1/reference/">Google Fit</a>.</p></li>
     <li><em>Push Notifications</em>: <pkg>RPushbullet</pkg> provides an easy-to-use interface for the Pushbullet service which provides fast and efficient notifications between computers, phones and tablets. <pkg>pushoverr</pkg> (<a href="https://github.com/briandconnelly/pushoverr">GitHub</a>) can sending push notifications to mobile devices (iOS and Android) and desktop using <a href="https://pushover.net/">Pushover</a>.</li>
     <li><em>Reference/bibliography/citation management</em>: <pkg>RefManageR</pkg> imports and manage BibTeX and BibLaTeX references with RefManager. <a href="http://cran.rstudio.com/src/contrib/Archive/RMendeley/">RMendeley</a>: Implementation of the Mendeley API in R. Archived on CRAN. It's been archived on CRAN temporarily until it is updated for the new Mendeley API. <a href="https://github.com/ropensci/rmetadata">rmetadata</a> (not on CRAN) can get scholarly metadata from around the web. <pkg>rorcid</pkg> (<a href="https://github.com/ropensci/rorcid">GitHub</a>) is a programmatic interface the <a href="http://orcid.org/">Orcid.org</a> API, which can be used for identifying scientific authors and their publications (e.g., by DOI). <pkg>rplos</pkg> is a programmatic interface to the Web Service methods provided by the Public Library of Science journals for search. <a href="https://github.com/rOpenHealth/rpubmed">rpubmed</a> (not on CRAN) provides tools for extracting and processing Pubmed and Pubmed Central records. <pkg>scholar</pkg> provides functions to extract citation data from Google Scholar. Convenience functions are also provided for comparing multiple scholars and predicting future h-index values. <pkg>pubmed.mineR</pkg> is a package for text mining of <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed Abstracts</a> that supports fetching text and XML from PubMed. <pkg>rdatacite</pkg> (<a href="https://github.com/ropensci/rdatacite">GitHub</a>) connects to <a href="https://www.datacite.org/">DataCite</a>. <pkg>oai</pkg> (<a href="https://github.com/sckott/oai">GitHub</a>) and <pkg>OAIHarvester</pkg> harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard. <a href="https://github.com/benmarwick/JSTORr">JSTORr</a> (Not on CRAN) provides simple text mining of journal articles from JSTOR's Data for Research service. <pkg>aRxiv</pkg> (<a href="https://github.com/ropensci/aRxiv">GitHub</a>) is a client for the arXiv API, a repository of electronic preprints for computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics. <pkg>alm</pkg> is a wrapper to the almetrics API platform developed by PLoS.</li>
     <li><em>Wikipedia</em>: <pkg>WikipediR</pkg> (<a href="https://github.com/Ironholds/WikipediR">GitHub</a>) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia 'production' wikis, such as Wikipedia. <a href="https://github.com/chgrl/rwikidata">rwikidata</a> and <pkg>WikidataR</pkg> (<a href="https://github.com/Ironholds/WikidataR">GitHub</a>) can request data from <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata.org</a>, the free knowledgebase. <pkg>wikipediatrend</pkg> (<a href="https://github.com/petermeissner/wikipediatrend">GitHub</a>) provides access to Wikipedia page access statistics. <pkg>WikiSocio</pkg> can retrieve contributor lists and revision data.</li>
@@ -144,7 +145,6 @@
     <li><pkg>datamart</pkg>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.</li>
     <li><a href="https://github.com/sckott/discgolf">discgolf</a> (not on CRAN): Provides a client to interact with the API for the <a href="http://www.discourse.org/">Discourse</a> web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.</li>
     <li><pkg>factualR</pkg>: Thin wrapper for the <a href="http://factual.com/">Factual.com</a> server API.</li>
-    <li><pkg>fitbitScraper</pkg> (<a href="https://github.com/corynissen/fitbitScraper">GitHub</a>) retrieves Fitbit data.</li>
     <li><a href="http://gfusiontables.lopatenko.com/">GFusionTables</a> (not on CRAN): An interface to Google Fusion Tables. Google Fusion Tables is a data management system in the cloud. This package provides functions to browse Fusion Tables catalog, retrieve data from Gusion Tables dtd storage to R and to upload data from R to Fusion Tables</li>
     <li><a href="https://github.com/stephlocke/HIBPwned">HIBPwned</a> (not on CRAN) is a client for <a href="http://www.HaveIBeenPwned.com">Have I Been Pwned</a>.</li>
     <li><a href="http://cran.rstudio.com/src/contrib/Archive/infochimps/">infochimps</a> (<a href="https://github.com/drewconway/infochimps">GitHub</a>; archived) is an R wrapper for the infochimps.com API services.</li>
@@ -172,7 +172,7 @@
     <li><a href="https://github.com/soodoku/tuber">tuber</a> (not on CRAN): A YouTube API client.</li>
     <li><pkg>yummlyr</pkg> (<a href="https://github.com/RomanTsegelskyi/yummlyr">GitHub</a>) provides an interface to the <a href="https://developer.yummly.com/">Yummly</a> recipe database.</li>
     <li><pkg>zendeskR</pkg>: This package provides a wrapper for the Zendesk API.</li>
-    <li><a href="https://github.com/fascinatingfingers/ZillowR">ZillowR</a> is a client for the Zillow real estate service.</li>
+    <li><p><a href="https://github.com/fascinatingfingers/ZillowR">ZillowR</a> is a client for the Zillow real estate service.</p></li>
     </ul>
   </info>
   <packagelist>
@@ -207,6 +207,7 @@
     <pkg>FastRWeb</pkg>
     <pkg>fbRads</pkg>
     <pkg>fitbitScraper</pkg>
+    <pkg>fitcoach</pkg>
     <pkg>GAR</pkg>
     <pkg>genderizeR</pkg>
     <pkg>geocodeHERE</pkg>
@@ -268,6 +269,7 @@
     <pkg>RGA</pkg>
     <pkg>rgeolocate</pkg>
     <pkg>RGoogleAnalytics</pkg>
+    <pkg>RGoogleFit</pkg>
     <pkg>RgoogleMaps</pkg>
     <pkg>rio</pkg>
     <pkg>rjson</pkg>
