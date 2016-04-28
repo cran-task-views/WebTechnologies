@@ -138,7 +138,7 @@ Web Services
 -   <pkg>colourlovers</pkg> ([GitHub](https://github.com/leeper/colourlovers)) extracts colors and multi-color patterns from [COLOURlovers](http://www.colourlovers.com/), for use in creating R graphics color palettes.
 -   <pkg>cymruservices</pkg> queries [Team Cymru](http://team-cymru.org) web security services.
 -   <pkg>datamart</pkg>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
--   [discgolf](https://github.com/sckott/discgolf) (not on CRAN): Provides a client to interact with the API for the [Discourse](http://www.discourse.org/) web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
+-   <pkg>discgolf</pkg> ([GitHub](https://github.com/sckott/discgolf)) provides a client to interact with the API for the [Discourse](http://www.discourse.org/) web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
 -   <pkg>factualR</pkg>: Thin wrapper for the [Factual.com](http://factual.com/) server API.
 -   [GFusionTables](http://gfusiontables.lopatenko.com/) (not on CRAN): An interface to Google Fusion Tables. Google Fusion Tables is a data management system in the cloud. This package provides functions to browse Fusion Tables catalog, retrieve data from Gusion Tables dtd storage to R and to upload data from R to Fusion Tables
 -   [HIBPwned](https://github.com/stephlocke/HIBPwned) (not on CRAN) is a client for [Have I Been Pwned](http://www.HaveIBeenPwned.com).
