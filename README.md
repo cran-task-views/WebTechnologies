@@ -69,9 +69,8 @@ Web and Server Frameworks
 -   [rcloud](https://github.com/att/rcloud) (not on CRAN) provides an iPython notebook-style web-based R interface.
 -   The [Rook](http://cran.rstudio.com/web/packages/Rook/index.html) web server interface contains the specification and convenience software for building and running Rook applications.
 -   The [opencpu](http://cran.rstudio.com/web/packages/opencpu/index.html) framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.
--   A package by [Yihui Xie](http://yihui.name/) called [servr](http://cran.rstudio.com/web/packages/servr/index.html) provides a simple HTTP server to serve files under a given directory based on the [httpuv](http://cran.rstudio.com/web/packages/httpuv/index.html) package.
--   [httpuv](http://cran.rstudio.com/web/packages/httpuv/index.html) provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R. Another related package, perhaps which [httpuv](http://cran.rstudio.com/web/packages/httpuv/index.html) replaces, is websockets, also made by Joe Cheng.
--   [websockets](https://github.com/rstudio/R-Websockets): A simple HTML5 websocket interface for R, by Joe Cheng. Available in [CRAN archives](http://cran.rstudio.com/src/contrib/Archive/websockets/).
+-   [Rserve](http://cran.rstudio.com/web/packages/Rserve/index.html) and [RSclient](http://cran.rstudio.com/web/packages/RSclient/index.html) provide server and client functionality for TCP/IP or local socket interfaces.
+-   [httpuv](http://cran.rstudio.com/web/packages/httpuv/index.html) provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R. Another related package, perhaps which [httpuv](http://cran.rstudio.com/web/packages/httpuv/index.html) replaces, is [websockets](http://cran.rstudio.com/src/contrib/Archive/websockets/). [servr](http://cran.rstudio.com/web/packages/servr/index.html) provides a simple HTTP server to serve files under a given directory based on httpuv.
 -   The [<span class="Ohat">WADL</span>](http://www.Omegahat.org/WADL/) package provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
 -   The [<span class="Ohat">RDCOMServer</span>](http://www.Omegahat.org/RDCOMServer/) provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the [<span class="Ohat">RDCOMClient</span>](http://www.Omegahat.org/RDCOMClient/) package which provides user-level access from R to other COM servers. (not on CRAN)
 -   [rapporter.net](http://rapporter.net) provides an online environment (SaaS) to host and run [rapport](http://cran.rstudio.com/web/packages/rapport/index.html) statistical report templates in the cloud.
@@ -284,8 +283,10 @@ Web Services
 -   [rorcid](http://cran.rstudio.com/web/packages/rorcid/index.html)
 -   [rplos](http://cran.rstudio.com/web/packages/rplos/index.html)
 -   [RPushbullet](http://cran.rstudio.com/web/packages/RPushbullet/index.html)
+-   [RSclient](http://cran.rstudio.com/web/packages/RSclient/index.html)
 -   [rsdmx](http://cran.rstudio.com/web/packages/rsdmx/index.html)
 -   [RSelenium](http://cran.rstudio.com/web/packages/RSelenium/index.html)
+-   [Rserve](http://cran.rstudio.com/web/packages/Rserve/index.html)
 -   [RSiteCatalyst](http://cran.rstudio.com/web/packages/RSiteCatalyst/index.html)
 -   [RSocrata](http://cran.rstudio.com/web/packages/RSocrata/index.html)
 -   [rvest](http://cran.rstudio.com/web/packages/rvest/index.html)

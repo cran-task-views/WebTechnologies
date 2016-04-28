@@ -56,9 +56,8 @@ Web and Server Frameworks
 -   [rcloud](https://github.com/att/rcloud) (not on CRAN) provides an iPython notebook-style web-based R interface.
 -   The <pkg>Rook</pkg> web server interface contains the specification and convenience software for building and running Rook applications.
 -   The <pkg>opencpu</pkg> framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.
--   A package by [Yihui Xie](http://yihui.name/) called <pkg>servr</pkg> provides a simple HTTP server to serve files under a given directory based on the <pkg>httpuv</pkg> package.
--   <pkg>httpuv</pkg> provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R. Another related package, perhaps which <pkg>httpuv</pkg> replaces, is websockets, also made by Joe Cheng.
--   [websockets](https://github.com/rstudio/R-Websockets): A simple HTML5 websocket interface for R, by Joe Cheng. Available in [CRAN archives](http://cran.rstudio.com/src/contrib/Archive/websockets/).
+-   <pkg>Rserve</pkg> and <pkg>RSclient</pkg> provide server and client functionality for TCP/IP or local socket interfaces.
+-   <pkg>httpuv</pkg> provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R. Another related package, perhaps which <pkg>httpuv</pkg> replaces, is [websockets](http://cran.rstudio.com/src/contrib/Archive/websockets/). <pkg>servr</pkg> provides a simple HTTP server to serve files under a given directory based on httpuv.
 -   The <ohat>WADL</ohat> package provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
 -   The <ohat>RDCOMServer</ohat> provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the <ohat>RDCOMClient</ohat> package which provides user-level access from R to other COM servers. (not on CRAN)
 -   [rapporter.net](http://rapporter.net) provides an online environment (SaaS) to host and run <pkg>rapport</pkg> statistical report templates in the cloud.
