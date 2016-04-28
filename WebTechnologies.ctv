@@ -166,6 +166,7 @@
     <li><a href="https://github.com/soodoku/tuber">tuber</a> (not on CRAN): A YouTube API client.</li>
     <li><pkg>yummlyr</pkg> (<a href="https://github.com/RomanTsegelskyi/yummlyr">GitHub</a>) provides an interface to the <a href="https://developer.yummly.com/">Yummly</a> recipe database.</li>
     <li><pkg>zendeskR</pkg>: This package provides a wrapper for the Zendesk API.</li>
+    <li><a href="https://github.com/fascinatingfingers/ZillowR">ZillowR</a> is a client for the Zillow real estate service.</li>
     </ul>
   </info>
   <packagelist>
