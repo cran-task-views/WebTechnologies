@@ -44,6 +44,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 -   The [tldextract](https://github.com/jayjacobs/tldextract) package extract top level domains and subdomains from a host name. It's a port of [a Python library of the same name](https://github.com/john-kurkowski/tldextract).
 -   [iptools](https://github.com/hrbrmstr/iptools) can facilitate working with IPv4 addresses, including for use in geolocation.
 -   [urlshorteneR](http://cran.rstudio.com/web/packages/urlshorteneR/index.html) ([GitHub](https://github.com/dmpe/urlshorteneR)) offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd. [longurl](http://cran.rstudio.com/web/packages/longurl/index.html) uses the [longurl.org](http://longurl.org/) API to provide similar functionality.
+-   [gdns](https://github.com/hrbrmstr/gdns) (not on CRAN) provides access to Google's secure HTTP-based DNS resolution service.
 
 **Tools for Working with Scraped Webpage Contents**
 
