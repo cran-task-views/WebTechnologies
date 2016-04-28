@@ -142,6 +142,7 @@ Web Services
 -   <pkg>jSonarR</pkg>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the [JSON Studio Gateway](http://www.jsonstudio.com), to convert JSON to a tabular format.
 -   <pkg>livechatR</pkg> is a client for the [LiveChat API](https://developers.livechatinc.com/rest-api/).
 -   <pkg>lucr</pkg> performs currency conversions using [Open Exchange Rates](https://openexchangerates.org/).
+-   [mockaRoo](https://github.com/stephlocke/mockaRoo) (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
 -   <pkg>randNames</pkg> ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the <https://randomapi.com> API.
 -   <pkg>Rbitcoin</pkg> allows both public and private API calls to interact with Bitcoin. <pkg>rbitcoinchartsapi</pkg> is a package for the [BitCoinCharts.com](http://bitcoincharts.com/) API. From their website: "Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API)." <pkg>RCryptsy</pkg> ([GitHub](https://github.com/ropensci/RCryptsy)) wraps the API for the [Cryptsy](http://www.cryptsy.com) crypto-currency trading platform.
 -   [Rblpapi](https://github.com/armstrtw/Rblpapi) ([GitHub](https://github.com/armstrtw/Rblpapi)) is a client for Bloomberg Finance L.P.
