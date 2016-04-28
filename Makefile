@@ -19,6 +19,9 @@ README.md: WebTechnologies.html
 check:
 	Rscript --vanilla -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); print(ctv::check_ctv_packages("WebTechnologies.ctv", repos = "http://cran.rstudio.com/"))'
 
+checkurls:
+	Rscript --vanilla -e 'source("checkurls.R")'
+
 README.html: README.md
 	pandoc --from=markdown_github -o README.html README.md
 
