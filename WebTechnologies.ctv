@@ -126,7 +126,7 @@
     <p><strong>Web Analytics Services</strong></p>
     <ul>
     <li><em>Google Trends</em>: <a href="https://github.com/dvanclev/GTrendsR">GTrendsR</a> (not on CRAN) offers functions to perform and display Google Trends queries. Another GitHub package (<a href="https://github.com/emhart/rGtrends">rGtrends</a>) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers. <ohat>RGoogleTrends</ohat> provides another alternative.</li>
-    <li><em>Google Analytics</em>: <pkg>RGoogleAnalytics</pkg> (<a href="https://github.com/Tatvic/RGoogleAnalytics/issues">GitHub</a>), <a href="https://github.com/jdeboer/ganalytics">ganalytics</a> (<a href="https://github.com/jdeboer/ganalytics">GitHub</a>; not on CRAN), <pkg>GAR</pkg> (<a href="https://github.com/andrewgeisler/GAR">GitHub</a>), and <pkg>RGA</pkg> provide functions for accessing and retrieving data from the <a href="https://developers.google.com/analytics/">Google Analytics APIs</a>. The latter supports OAuth 2.0 authorization. <pkg>RGA</pkg> provides a shiny app to explore data. <pkg>searchConsoleR</pkg> (<a href="https://github.com/MarkEdmondson1234/searchConsoleR">GitHub</a>) links to the <a href="https://developers.google.com/webmaster-tools/">Google Search Console</a> (formerly Webmaster Tools).</li>
+    <li><em>Google Analytics</em>: <pkg>GoogleAnalyticsR</pkg> (<a href="http://code.markedmondson.me/googleAnalyticsR/">GitHub</a>), <pkg>RGoogleAnalytics</pkg> (<a href="https://github.com/Tatvic/RGoogleAnalytics/issues">GitHub</a>), <a href="https://github.com/jdeboer/ganalytics">ganalytics</a> (<a href="https://github.com/jdeboer/ganalytics">GitHub</a>; not on CRAN), <pkg>GAR</pkg> (<a href="https://github.com/andrewgeisler/GAR">GitHub</a>), and <pkg>RGA</pkg> provide functions for accessing and retrieving data from the <a href="https://developers.google.com/analytics/">Google Analytics APIs</a>. The latter supports OAuth 2.0 authorization. <pkg>RGA</pkg> provides a shiny app to explore data. <pkg>searchConsoleR</pkg> (<a href="https://github.com/MarkEdmondson1234/searchConsoleR">GitHub</a>) links to the <a href="https://developers.google.com/webmaster-tools/">Google Search Console</a> (formerly Webmaster Tools).</li>
     <li><em>Other services</em>: <pkg>RSiteCatalyst</pkg> has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.</li>
     <li><pkg>RAdwords</pkg> (<a href="https://github.com/jburkhardt/RAdwords">GitHub</a>) is a package for loading Google Adwords data.</li>
     <li><pkg>anametrix</pkg> is a bidirectional connector to the Anametrix API.</li>
@@ -223,6 +223,7 @@
     <pkg>git2r</pkg>
     <pkg>gitlabr</pkg>
     <pkg>gmailr</pkg>
+    <pkg>GoogleAnalyticsR</pkg>
     <pkg>googlesheets</pkg>
     <pkg>googleVis</pkg>
     <pkg>graphTweets</pkg>
