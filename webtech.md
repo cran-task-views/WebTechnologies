@@ -67,7 +67,7 @@ Web and Server Frameworks
 -   The [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) has an extension ([Extension:R](https://www.mediawiki.org/wiki/Extension:R)) to run R code from wiki pages, and use uploaded data. Links to demo pages (in German) can be found at the [category page for R scripts](http://mars.wiwi.hu-berlin.de/mediawiki/mmstat_de/index.php/Kategorie:R) at MM-Stat. A mailing list is available: [R-sig-mediawiki](https://stat.ethz.ch/mailman/listinfo/r-sig-mediawiki).
 -   <pkg>whisker</pkg>: Implementation of logicless templating based on [Mustache](http://mustache.github.io/) in R. Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
 -   <ohat>CGIwithR</ohat> (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.
--   Several packages offer functionality for turning R code into a web API. <pkg>jug</pkg> is a simple API-builder web framework, built around <pkg>httpuv</pkg>. <pkg>FastRWeb</pkg> provides some basic infrastructure for this. [plumber](https://github.com/trestletech/plumber) is a similar package not yet on CRAN (see [http://plumber.trestletech.com/](http://plumber.trestletech.com/) for details).
+-   Several packages offer functionality for turning R code into a web API. <pkg>jug</pkg> is a simple API-builder web framework, built around <pkg>httpuv</pkg>. <pkg>FastRWeb</pkg> provides some basic infrastructure for this. <pkg>plumber</pkg> allows you to create a REST API by decorating existing R source code.
 
 Web Services
 ------------
