@@ -8,7 +8,7 @@ CRAN Task View: Web Technologies and Services
 |-----------------|----------------------------------------------------------------------------------|
 | **Maintainer:** | Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | thosjleeper at gmail.com                                                         |
-| **Version:**    | 2016-07-14                                                                       |
+| **Version:**    | 2016-07-16                                                                       |
 
 This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The [Open Data Task View](https://github.com/ropensci/opendata) provides further discussion of online data sources that can be accessed from R.
 
@@ -80,7 +80,7 @@ Web and Server Frameworks
 -   The [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) has an extension ([Extension:R](https://www.mediawiki.org/wiki/Extension:R)) to run R code from wiki pages, and use uploaded data. Links to demo pages (in German) can be found at the [category page for R scripts](http://mars.wiwi.hu-berlin.de/mediawiki/mmstat_de/index.php/Kategorie:R) at MM-Stat. A mailing list is available: [R-sig-mediawiki](https://stat.ethz.ch/mailman/listinfo/r-sig-mediawiki).
 -   [whisker](http://cran.rstudio.com/web/packages/whisker/index.html): Implementation of logicless templating based on [Mustache](http://mustache.github.io/) in R. Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
 -   [<span class="Ohat">CGIwithR</span>](http://www.Omegahat.org/CGIwithR/) (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.
--   Several packages offer functionality for turning R code into a web API. [jug](http://cran.rstudio.com/web/packages/jug/index.html) is a simple API-builder web framework, built around [httpuv](http://cran.rstudio.com/web/packages/httpuv/index.html). [FastRWeb](http://cran.rstudio.com/web/packages/FastRWeb/index.html) provides some basic infrastructure for this. [plumber](https://github.com/trestletech/plumber) is a similar package not yet on CRAN (see <http://plumber.trestletech.com/> for details).
+-   Several packages offer functionality for turning R code into a web API. [jug](http://cran.rstudio.com/web/packages/jug/index.html) is a simple API-builder web framework, built around [httpuv](http://cran.rstudio.com/web/packages/httpuv/index.html). [FastRWeb](http://cran.rstudio.com/web/packages/FastRWeb/index.html) provides some basic infrastructure for this. [plumber](http://cran.rstudio.com/web/packages/plumber/index.html) allows you to create a REST API by decorating existing R source code.
 
 Web Services
 ------------
@@ -134,10 +134,10 @@ Web Services
 **Web Analytics Services**
 
 -   *Google Trends*: [GTrendsR](https://github.com/dvanclev/GTrendsR) (not on CRAN) offers functions to perform and display Google Trends queries. Another GitHub package ([rGtrends](https://github.com/emhart/rGtrends)) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers. [<span class="Ohat">RGoogleTrends</span>](http://www.Omegahat.org/RGoogleTrends/) provides another alternative.
--   *Google Analytics*: [GoogleAnalyticsR](http://cran.rstudio.com/web/packages/GoogleAnalyticsR/index.html) ([GitHub](http://code.markedmondson.me/googleAnalyticsR/)), [RGoogleAnalytics](http://cran.rstudio.com/web/packages/RGoogleAnalytics/index.html) ([GitHub](https://github.com/Tatvic/RGoogleAnalytics/issues)), [ganalytics](https://github.com/jdeboer/ganalytics) ([GitHub](https://github.com/jdeboer/ganalytics); not on CRAN), [GAR](http://cran.rstudio.com/web/packages/GAR/index.html) ([GitHub](https://github.com/andrewgeisler/GAR)), and [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provide functions for accessing and retrieving data from the [Google Analytics APIs](https://developers.google.com/analytics/). The latter supports OAuth 2.0 authorization. [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provides a shiny app to explore data. [searchConsoleR](http://cran.rstudio.com/web/packages/searchConsoleR/index.html) ([GitHub](https://github.com/MarkEdmondson1234/searchConsoleR)) links to the [Google Search Console](https://developers.google.com/webmaster-tools/) (formerly Webmaster Tools).
+-   *Google Analytics*: [googleAnalyticsR](http://cran.rstudio.com/web/packages/googleAnalyticsR/index.html) ([GitHub](http://code.markedmondson.me/googleAnalyticsR/)), [RGoogleAnalytics](http://cran.rstudio.com/web/packages/RGoogleAnalytics/index.html) ([GitHub](https://github.com/Tatvic/RGoogleAnalytics/issues)), [ganalytics](https://github.com/jdeboer/ganalytics) ([GitHub](https://github.com/jdeboer/ganalytics); not on CRAN), [GAR](http://cran.rstudio.com/web/packages/GAR/index.html) ([GitHub](https://github.com/andrewgeisler/GAR)), and [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provide functions for accessing and retrieving data from the [Google Analytics APIs](https://developers.google.com/analytics/). The latter supports OAuth 2.0 authorization. [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provides a shiny app to explore data. [searchConsoleR](http://cran.rstudio.com/web/packages/searchConsoleR/index.html) ([GitHub](https://github.com/MarkEdmondson1234/searchConsoleR)) links to the [Google Search Console](https://developers.google.com/webmaster-tools/) (formerly Webmaster Tools).
 -   *Other services*: [RSiteCatalyst](http://cran.rstudio.com/web/packages/RSiteCatalyst/index.html) has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.
 -   [RAdwords](http://cran.rstudio.com/web/packages/RAdwords/index.html) ([GitHub](https://github.com/jburkhardt/RAdwords)) is a package for loading Google Adwords data.
--   [anametrix](http://cran.rstudio.com/web/packages/anametrix/index.html) is a bidirectional connector to the Anametrix API.
+-   [anametrix](https://cran.r-project.org/src/contrib/Archive/anametrix/) (archived on CRAN) is a bidirectional connector to the Anametrix API.
 -   [webreadr](http://cran.rstudio.com/web/packages/webreadr/index.html) ([GitHub](https://github.com/Ironholds/webreadr)) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.
 -   [ApacheLogProcessor](http://cran.rstudio.com/web/packages/ApacheLogProcessor/index.html) ([GitHub](https://github.com/diogosmendonca/ApacheLogProcessor)) can process Apache Web Server log files.
 
@@ -189,7 +189,6 @@ Web Services
 
 -   [abbyyR](http://cran.rstudio.com/web/packages/abbyyR/index.html)
 -   [alm](http://cran.rstudio.com/web/packages/alm/index.html)
--   [anametrix](http://cran.rstudio.com/web/packages/anametrix/index.html)
 -   [ApacheLogProcessor](http://cran.rstudio.com/web/packages/ApacheLogProcessor/index.html)
 -   [aRxiv](http://cran.rstudio.com/web/packages/aRxiv/index.html)
 -   [aws.signature](http://cran.rstudio.com/web/packages/aws.signature/index.html)
@@ -227,7 +226,7 @@ Web Services
 -   [git2r](http://cran.rstudio.com/web/packages/git2r/index.html)
 -   [gitlabr](http://cran.rstudio.com/web/packages/gitlabr/index.html)
 -   [gmailr](http://cran.rstudio.com/web/packages/gmailr/index.html)
--   [GoogleAnalyticsR](http://cran.rstudio.com/web/packages/GoogleAnalyticsR/index.html)
+-   [googleAnalyticsR](http://cran.rstudio.com/web/packages/googleAnalyticsR/index.html)
 -   [googlesheets](http://cran.rstudio.com/web/packages/googlesheets/index.html)
 -   [googleVis](http://cran.rstudio.com/web/packages/googleVis/index.html)
 -   [graphTweets](http://cran.rstudio.com/web/packages/graphTweets/index.html)
@@ -262,6 +261,7 @@ Web Services
 -   [pdftables](http://cran.rstudio.com/web/packages/pdftables/index.html)
 -   [plotGoogleMaps](http://cran.rstudio.com/web/packages/plotGoogleMaps/index.html)
 -   [plotKML](http://cran.rstudio.com/web/packages/plotKML/index.html)
+-   [plumber](http://cran.rstudio.com/web/packages/plumber/index.html)
 -   [plusser](http://cran.rstudio.com/web/packages/plusser/index.html)
 -   [pubmed.mineR](http://cran.rstudio.com/web/packages/pubmed.mineR/index.html)
 -   [pushoverr](http://cran.rstudio.com/web/packages/pushoverr/index.html)

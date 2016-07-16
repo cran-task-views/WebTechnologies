@@ -2,7 +2,7 @@
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
   <maintainer email="thosjleeper@gmail.com">Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>2016-07-14</version>
+  <version>2016-07-16</version>
   <info>
     <p>This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data Task View</a> provides further discussion of online data sources that can be accessed from R.</p>
     <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <script type="text/javascript">
@@ -71,7 +71,7 @@
     <li>The <a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> has an extension (<a href="https://www.mediawiki.org/wiki/Extension:R">Extension:R</a>) to run R code from wiki pages, and use uploaded data. Links to demo pages (in German) can be found at the <a href="http://mars.wiwi.hu-berlin.de/mediawiki/mmstat_de/index.php/Kategorie:R">category page for R scripts</a> at MM-Stat. A mailing list is available: <a href="https://stat.ethz.ch/mailman/listinfo/r-sig-mediawiki">R-sig-mediawiki</a>.</li>
     <li><pkg>whisker</pkg>: Implementation of logicless templating based on <a href="http://mustache.github.io/">Mustache</a> in R. Mustache syntax is described in <a href="http://mustache.github.io/mustache.5.html" class="uri">http://mustache.github.io/mustache.5.html</a></li>
     <li><ohat>CGIwithR</ohat> (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.</li>
-    <li>Several packages offer functionality for turning R code into a web API. <pkg>jug</pkg> is a simple API-builder web framework, built around <pkg>httpuv</pkg>. <pkg>FastRWeb</pkg> provides some basic infrastructure for this. <a href="https://github.com/trestletech/plumber">plumber</a> is a similar package not yet on CRAN (see <a href="http://plumber.trestletech.com/" class="uri">http://plumber.trestletech.com/</a> for details).</li>
+    <li>Several packages offer functionality for turning R code into a web API. <pkg>jug</pkg> is a simple API-builder web framework, built around <pkg>httpuv</pkg>. <pkg>FastRWeb</pkg> provides some basic infrastructure for this. <pkg>plumber</pkg> allows you to create a REST API by decorating existing R source code.</li>
     </ul>
     <h2 id="web-services">Web Services</h2>
     <p><strong>Cloud Computing and Storage</strong></p>
@@ -127,10 +127,10 @@
     <p><strong>Web Analytics Services</strong></p>
     <ul>
     <li><em>Google Trends</em>: <a href="https://github.com/dvanclev/GTrendsR">GTrendsR</a> (not on CRAN) offers functions to perform and display Google Trends queries. Another GitHub package (<a href="https://github.com/emhart/rGtrends">rGtrends</a>) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers. <ohat>RGoogleTrends</ohat> provides another alternative.</li>
-    <li><em>Google Analytics</em>: <pkg>GoogleAnalyticsR</pkg> (<a href="http://code.markedmondson.me/googleAnalyticsR/">GitHub</a>), <pkg>RGoogleAnalytics</pkg> (<a href="https://github.com/Tatvic/RGoogleAnalytics/issues">GitHub</a>), <a href="https://github.com/jdeboer/ganalytics">ganalytics</a> (<a href="https://github.com/jdeboer/ganalytics">GitHub</a>; not on CRAN), <pkg>GAR</pkg> (<a href="https://github.com/andrewgeisler/GAR">GitHub</a>), and <pkg>RGA</pkg> provide functions for accessing and retrieving data from the <a href="https://developers.google.com/analytics/">Google Analytics APIs</a>. The latter supports OAuth 2.0 authorization. <pkg>RGA</pkg> provides a shiny app to explore data. <pkg>searchConsoleR</pkg> (<a href="https://github.com/MarkEdmondson1234/searchConsoleR">GitHub</a>) links to the <a href="https://developers.google.com/webmaster-tools/">Google Search Console</a> (formerly Webmaster Tools).</li>
+    <li><em>Google Analytics</em>: <pkg>googleAnalyticsR</pkg> (<a href="http://code.markedmondson.me/googleAnalyticsR/">GitHub</a>), <pkg>RGoogleAnalytics</pkg> (<a href="https://github.com/Tatvic/RGoogleAnalytics/issues">GitHub</a>), <a href="https://github.com/jdeboer/ganalytics">ganalytics</a> (<a href="https://github.com/jdeboer/ganalytics">GitHub</a>; not on CRAN), <pkg>GAR</pkg> (<a href="https://github.com/andrewgeisler/GAR">GitHub</a>), and <pkg>RGA</pkg> provide functions for accessing and retrieving data from the <a href="https://developers.google.com/analytics/">Google Analytics APIs</a>. The latter supports OAuth 2.0 authorization. <pkg>RGA</pkg> provides a shiny app to explore data. <pkg>searchConsoleR</pkg> (<a href="https://github.com/MarkEdmondson1234/searchConsoleR">GitHub</a>) links to the <a href="https://developers.google.com/webmaster-tools/">Google Search Console</a> (formerly Webmaster Tools).</li>
     <li><em>Other services</em>: <pkg>RSiteCatalyst</pkg> has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.</li>
     <li><pkg>RAdwords</pkg> (<a href="https://github.com/jburkhardt/RAdwords">GitHub</a>) is a package for loading Google Adwords data.</li>
-    <li><pkg>anametrix</pkg> is a bidirectional connector to the Anametrix API.</li>
+    <li><a href="https://cran.r-project.org/src/contrib/Archive/anametrix/">anametrix</a> (archived on CRAN) is a bidirectional connector to the Anametrix API.</li>
     <li><pkg>webreadr</pkg> (<a href="https://github.com/Ironholds/webreadr">GitHub</a>) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.</li>
     <li><pkg>ApacheLogProcessor</pkg> (<a href="https://github.com/diogosmendonca/ApacheLogProcessor">GitHub</a>) can process Apache Web Server log files.</li>
     </ul>
@@ -186,7 +186,6 @@
     <pkg priority="core">XML</pkg>
     <pkg>abbyyR</pkg>
     <pkg>alm</pkg>
-    <pkg>anametrix</pkg>
     <pkg>ApacheLogProcessor</pkg>
     <pkg>aRxiv</pkg>
     <pkg>aws.signature</pkg>
@@ -224,7 +223,7 @@
     <pkg>git2r</pkg>
     <pkg>gitlabr</pkg>
     <pkg>gmailr</pkg>
-    <pkg>GoogleAnalyticsR</pkg>
+    <pkg>googleAnalyticsR</pkg>
     <pkg>googlesheets</pkg>
     <pkg>googleVis</pkg>
     <pkg>graphTweets</pkg>
@@ -257,6 +256,7 @@
     <pkg>pdftables</pkg>
     <pkg>plotGoogleMaps</pkg>
     <pkg>plotKML</pkg>
+    <pkg>plumber</pkg>
     <pkg>plusser</pkg>
     <pkg>pubmed.mineR</pkg>
     <pkg>pushoverr</pkg>
