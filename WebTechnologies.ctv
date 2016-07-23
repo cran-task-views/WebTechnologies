@@ -156,7 +156,7 @@
     <li><a href="https://github.com/stephlocke/mockaRoo">mockaRoo</a> (not on CRAN) uses the <a href="https://www.mockaroo.com/api/docs">MockaRoo API</a> to generate mock or fake data based on an input schema.</li>
     <li><pkg>randNames</pkg> (<a href="https://github.com/karthik/randNames">GitHub</a>) generates random names and personal identifying information using the <a href="https://randomapi.com/" class="uri">https://randomapi.com/</a> API.</li>
     <li><pkg>Rbitcoin</pkg> allows both public and private API calls to interact with Bitcoin. <pkg>rbitcoinchartsapi</pkg> is a package for the <a href="http://bitcoincharts.com/">BitCoinCharts.com</a> API. From their website: &quot;Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API).&quot; <pkg>RCryptsy</pkg> (<a href="https://github.com/ropensci/RCryptsy">GitHub</a>) wraps the API for the <a href="http://www.cryptsy.com">Cryptsy</a> crypto-currency trading platform.</li>
-    <li><pkg>Rblpapi</pkg> (<a href="https://github.com/Rblp/Rblpapi">GitHub</a>) is a client for Bloomberg Finance L.P.</li>
+    <li><pkg>Rblpapi</pkg> (<a href="https://github.com/Rblp/Rblpapi">GitHub</a>) is a client for Bloomberg Finance L.P. <pkg>ROpenFIGI</pkg> (<a href="https://github.com/HuangRicky/ROpenFIGI">GitHub</a>) provides an interface to Bloomberg's <a href="https://openfigi.com/">OpenFIGI</a> API.</li>
     <li><a href="https://github.com/WillemPaling/RDoubleClick">RDoubleClick</a> (not on CRAN) can retrieve data from Google's DoubleClick Campaign Manager Reporting API.</li>
     <li><a href="https://github.com/ropensci/rerddap">rerddap</a> (<a href="https://github.com/ropensci/rerddap">GitHub</a>; not on CRAN): A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP (<a href="https://en.wikipedia.org/wiki/OPeNDAP" class="uri">https://en.wikipedia.org/wiki/OPeNDAP</a>), or <em>Open-source Project for a Network Data Access Protocol</em>. Allows user to swap out the base URL to use any ERDDAP instance.</li>
     <li><a href="https://github.com/hmalmedal/ripplerestr">ripplerestr</a> provides an interface to the <a href="https://ripple.com/">Ripple</a> protocol for making financial transactions.</li>
@@ -291,6 +291,7 @@
     <pkg>Rmonkey</pkg>
     <pkg>ROAuth</pkg>
     <pkg>Rook</pkg>
+    <pkg>ROpenFIGI</pkg>
     <pkg>ROpenWeatherMap</pkg>
     <pkg>rorcid</pkg>
     <pkg>rosetteApi</pkg>
