@@ -122,7 +122,7 @@ Web Services
 **Social Media Clients**
 
 -   [plusser](http://cran.rstudio.com/web/packages/plusser/index.html) has been designed to to facilitate the retrieval of Google+ profiles, pages and posts. It also provides search facilities. Currently a Google+ API key is required for accessing Google+ data.
--   [Rfacebook](http://cran.rstudio.com/web/packages/Rfacebook/index.html) provides an interface to the Facebook API. [fbRads](http://cran.rstudio.com/web/packages/fbRads/index.html) can manage Facebook ads via the Facebook Marketing API.
+-   [Rfacebook](http://cran.rstudio.com/web/packages/Rfacebook/index.html) provides an interface to the Facebook API.
 -   The [<span class="Ohat">Rflickr</span>](http://www.Omegahat.org/Rflickr/) package provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
 -   [instaR](http://cran.rstudio.com/web/packages/instaR/index.html) ([GitHub](https://github.com/pablobarbera/instaR)) is a client for the [Instagram API](https://www.instagram.com/developer/).
 -   [Rlinkedin](https://github.com/mpiccirilli/Rlinkedin) (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.
@@ -134,6 +134,7 @@ Web Services
 
 -   *Google Trends*: [GTrendsR](https://github.com/dvanclev/GTrendsR) (not on CRAN) offers functions to perform and display Google Trends queries. Another GitHub package ([rGtrends](https://github.com/emhart/rGtrends)) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers. [<span class="Ohat">RGoogleTrends</span>](http://www.Omegahat.org/RGoogleTrends/) provides another alternative.
 -   *Google Analytics*: [googleAnalyticsR](http://cran.rstudio.com/web/packages/googleAnalyticsR/index.html) ([GitHub](http://code.markedmondson.me/googleAnalyticsR/)), [RGoogleAnalytics](http://cran.rstudio.com/web/packages/RGoogleAnalytics/index.html) ([GitHub](https://github.com/Tatvic/RGoogleAnalytics/issues)), [ganalytics](https://github.com/jdeboer/ganalytics) ([GitHub](https://github.com/jdeboer/ganalytics); not on CRAN), [GAR](http://cran.rstudio.com/web/packages/GAR/index.html) ([GitHub](https://github.com/andrewgeisler/GAR)), and [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provide functions for accessing and retrieving data from the [Google Analytics APIs](https://developers.google.com/analytics/). The latter supports OAuth 2.0 authorization. [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provides a shiny app to explore data. [searchConsoleR](http://cran.rstudio.com/web/packages/searchConsoleR/index.html) ([GitHub](https://github.com/MarkEdmondson1234/searchConsoleR)) links to the [Google Search Console](https://developers.google.com/webmaster-tools/) (formerly Webmaster Tools).
+-   *Online Advertising*: [fbRads](http://cran.rstudio.com/web/packages/fbRads/index.html) can manage Facebook ads via the Facebook Marketing API. [RDoubleClick](https://github.com/WillemPaling/RDoubleClick) (not on CRAN) can retrieve data from Google's DoubleClick Campaign Manager Reporting API. [RSmartlyIO](http://cran.rstudio.com/web/packages/RSmartlyIO/index.html) ([GitHub](https://github.com/rstats-lab/RSmartlyIO)) loads Facebook and Instagram advertising data provided by [Smartly.io](https://app.smartly.io/).
 -   *Other services*: [RSiteCatalyst](http://cran.rstudio.com/web/packages/RSiteCatalyst/index.html) has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.
 -   [RAdwords](http://cran.rstudio.com/web/packages/RAdwords/index.html) ([GitHub](https://github.com/jburkhardt/RAdwords)) is a package for loading Google Adwords data.
 -   [anametrix](https://cran.r-project.org/src/contrib/Archive/anametrix/) (archived on CRAN) is a bidirectional connector to the Anametrix API.
@@ -165,7 +166,6 @@ Web Services
 -   [randNames](http://cran.rstudio.com/web/packages/randNames/index.html) ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the <https://randomapi.com/> API.
 -   [Rbitcoin](http://cran.rstudio.com/web/packages/Rbitcoin/index.html) allows both public and private API calls to interact with Bitcoin. [rbitcoinchartsapi](http://cran.rstudio.com/web/packages/rbitcoinchartsapi/index.html) is a package for the [BitCoinCharts.com](http://bitcoincharts.com/) API. From their website: "Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API)." [RCryptsy](http://cran.rstudio.com/web/packages/RCryptsy/index.html) ([GitHub](https://github.com/ropensci/RCryptsy)) wraps the API for the [Cryptsy](http://www.cryptsy.com) crypto-currency trading platform.
 -   [Rblpapi](http://cran.rstudio.com/web/packages/Rblpapi/index.html) ([GitHub](https://github.com/Rblp/Rblpapi)) is a client for Bloomberg Finance L.P. [ROpenFIGI](http://cran.rstudio.com/web/packages/ROpenFIGI/index.html) ([GitHub](https://github.com/HuangRicky/ROpenFIGI)) provides an interface to Bloomberg's [OpenFIGI](https://openfigi.com/) API.
--   [RDoubleClick](https://github.com/WillemPaling/RDoubleClick) (not on CRAN) can retrieve data from Google's DoubleClick Campaign Manager Reporting API.
 -   [rerddap](https://github.com/ropensci/rerddap) ([GitHub](https://github.com/ropensci/rerddap); not on CRAN): A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP ( <https://en.wikipedia.org/wiki/OPeNDAP>), or *Open-source Project for a Network Data Access Protocol* . Allows user to swap out the base URL to use any ERDDAP instance.
 -   [ripplerestr](https://github.com/hmalmedal/ripplerestr) provides an interface to the [Ripple](https://ripple.com/) protocol for making financial transactions.
 -   [restimizeapi](http://cran.rstudio.com/web/packages/restimizeapi/index.html) provides an interface to trading website [estimize.com](https://www.estimize.com/).
@@ -315,6 +315,7 @@ Web Services
 -   [RSelenium](http://cran.rstudio.com/web/packages/RSelenium/index.html)
 -   [Rserve](http://cran.rstudio.com/web/packages/Rserve/index.html)
 -   [RSiteCatalyst](http://cran.rstudio.com/web/packages/RSiteCatalyst/index.html)
+-   [RSmartlyIO](http://cran.rstudio.com/web/packages/RSmartlyIO/index.html)
 -   [RSocrata](http://cran.rstudio.com/web/packages/RSocrata/index.html)
 -   [rvest](http://cran.rstudio.com/web/packages/rvest/index.html)
 -   [RYandexTranslate](http://cran.rstudio.com/web/packages/RYandexTranslate/index.html)

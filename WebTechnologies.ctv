@@ -115,7 +115,7 @@
     <p><strong>Social Media Clients</strong></p>
     <ul>
     <li><pkg>plusser</pkg> has been designed to to facilitate the retrieval of Google+ profiles, pages and posts. It also provides search facilities. Currently a Google+ API key is required for accessing Google+ data.</li>
-    <li><pkg>Rfacebook</pkg> provides an interface to the Facebook API. <pkg>fbRads</pkg> can manage Facebook ads via the Facebook Marketing API.</li>
+    <li><pkg>Rfacebook</pkg> provides an interface to the Facebook API.</li>
     <li>The <ohat>Rflickr</ohat> package provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)</li>
     <li><pkg>instaR</pkg> (<a href="https://github.com/pablobarbera/instaR">GitHub</a>) is a client for the <a href="https://www.instagram.com/developer/">Instagram API</a>.</li>
     <li><a href="https://github.com/mpiccirilli/Rlinkedin">Rlinkedin</a> (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.</li>
@@ -127,6 +127,7 @@
     <ul>
     <li><em>Google Trends</em>: <a href="https://github.com/dvanclev/GTrendsR">GTrendsR</a> (not on CRAN) offers functions to perform and display Google Trends queries. Another GitHub package (<a href="https://github.com/emhart/rGtrends">rGtrends</a>) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers. <ohat>RGoogleTrends</ohat> provides another alternative.</li>
     <li><em>Google Analytics</em>: <pkg>googleAnalyticsR</pkg> (<a href="http://code.markedmondson.me/googleAnalyticsR/">GitHub</a>), <pkg>RGoogleAnalytics</pkg> (<a href="https://github.com/Tatvic/RGoogleAnalytics/issues">GitHub</a>), <a href="https://github.com/jdeboer/ganalytics">ganalytics</a> (<a href="https://github.com/jdeboer/ganalytics">GitHub</a>; not on CRAN), <pkg>GAR</pkg> (<a href="https://github.com/andrewgeisler/GAR">GitHub</a>), and <pkg>RGA</pkg> provide functions for accessing and retrieving data from the <a href="https://developers.google.com/analytics/">Google Analytics APIs</a>. The latter supports OAuth 2.0 authorization. <pkg>RGA</pkg> provides a shiny app to explore data. <pkg>searchConsoleR</pkg> (<a href="https://github.com/MarkEdmondson1234/searchConsoleR">GitHub</a>) links to the <a href="https://developers.google.com/webmaster-tools/">Google Search Console</a> (formerly Webmaster Tools).</li>
+    <li><em>Online Advertising</em>: <pkg>fbRads</pkg> can manage Facebook ads via the Facebook Marketing API. <a href="https://github.com/WillemPaling/RDoubleClick">RDoubleClick</a> (not on CRAN) can retrieve data from Google's DoubleClick Campaign Manager Reporting API. <pkg>RSmartlyIO</pkg> (<a href="https://github.com/rstats-lab/RSmartlyIO">GitHub</a>) loads Facebook and Instagram advertising data provided by <a href="https://app.smartly.io/">Smartly.io</a>.</li>
     <li><em>Other services</em>: <pkg>RSiteCatalyst</pkg> has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.</li>
     <li><pkg>RAdwords</pkg> (<a href="https://github.com/jburkhardt/RAdwords">GitHub</a>) is a package for loading Google Adwords data.</li>
     <li><a href="https://cran.r-project.org/src/contrib/Archive/anametrix/">anametrix</a> (archived on CRAN) is a bidirectional connector to the Anametrix API.</li>
@@ -157,7 +158,6 @@
     <li><pkg>randNames</pkg> (<a href="https://github.com/karthik/randNames">GitHub</a>) generates random names and personal identifying information using the <a href="https://randomapi.com/" class="uri">https://randomapi.com/</a> API.</li>
     <li><pkg>Rbitcoin</pkg> allows both public and private API calls to interact with Bitcoin. <pkg>rbitcoinchartsapi</pkg> is a package for the <a href="http://bitcoincharts.com/">BitCoinCharts.com</a> API. From their website: &quot;Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API).&quot; <pkg>RCryptsy</pkg> (<a href="https://github.com/ropensci/RCryptsy">GitHub</a>) wraps the API for the <a href="http://www.cryptsy.com">Cryptsy</a> crypto-currency trading platform.</li>
     <li><pkg>Rblpapi</pkg> (<a href="https://github.com/Rblp/Rblpapi">GitHub</a>) is a client for Bloomberg Finance L.P. <pkg>ROpenFIGI</pkg> (<a href="https://github.com/HuangRicky/ROpenFIGI">GitHub</a>) provides an interface to Bloomberg's <a href="https://openfigi.com/">OpenFIGI</a> API.</li>
-    <li><a href="https://github.com/WillemPaling/RDoubleClick">RDoubleClick</a> (not on CRAN) can retrieve data from Google's DoubleClick Campaign Manager Reporting API.</li>
     <li><a href="https://github.com/ropensci/rerddap">rerddap</a> (<a href="https://github.com/ropensci/rerddap">GitHub</a>; not on CRAN): A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP (<a href="https://en.wikipedia.org/wiki/OPeNDAP" class="uri">https://en.wikipedia.org/wiki/OPeNDAP</a>), or <em>Open-source Project for a Network Data Access Protocol</em>. Allows user to swap out the base URL to use any ERDDAP instance.</li>
     <li><a href="https://github.com/hmalmedal/ripplerestr">ripplerestr</a> provides an interface to the <a href="https://ripple.com/">Ripple</a> protocol for making financial transactions.</li>
     <li><pkg>restimizeapi</pkg> provides an interface to trading website <a href="https://www.estimize.com/">estimize.com</a>.</li>
@@ -309,6 +309,7 @@
     <pkg>RSelenium</pkg>
     <pkg>Rserve</pkg>
     <pkg>RSiteCatalyst</pkg>
+    <pkg>RSmartlyIO</pkg>
     <pkg>RSocrata</pkg>
     <pkg>rvest</pkg>
     <pkg>RYandexTranslate</pkg>
