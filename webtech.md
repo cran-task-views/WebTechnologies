@@ -80,6 +80,7 @@ Web Services
 -   *Cloud Storage*: <pkg>boxr</pkg> ([GitHub](https://github.com/brendan-R/boxr)) is a lightweight, high-level interface for the [box.com API](https://docs.box.com/docs/). [rDrop2](https://github.com/karthik/rdrop2) ([GitHub](https://github.com/karthik/rdrop2); not on CRAN) is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account. <pkg>backblazer</pkg> ([GitHub](https://github.com/phillc73/backblazer)) provides access to the Backblaze B2 storage API.
 -   *Docker*: [analogsea](https://github.com/sckott/analogsea) is a general purpose client for the Digital Ocean v2 API. In addition, the package includes functions to install various R tools including base R, RStudio server, and more. There's an improving interface to interact with docker on your remote droplets via this package.
 -   [rcrunch](https://github.com/Crunch-io/rcrunch) (not on CRAN) provides an interface to [crunch.io](http://crunch.io/) storage and analytics.
+-   [rrefine](https://github.com/vpnagraj/rrefine) (not on CRAN) provides a client for the [OpenRefine](http://openrefine.org/) (formerly Google Refine) data cleaning service.
 
 **Document and Code Sharing**
 
