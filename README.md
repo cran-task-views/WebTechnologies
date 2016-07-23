@@ -163,6 +163,7 @@ Web Services
 -   [livechatR](http://cran.rstudio.com/web/packages/livechatR/index.html) is a client for the [LiveChat API](https://developers.livechatinc.com/rest-api/).
 -   [lucr](http://cran.rstudio.com/web/packages/lucr/index.html) performs currency conversions using [Open Exchange Rates](https://openexchangerates.org/).
 -   [mockaRoo](https://github.com/stephlocke/mockaRoo) (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
+-   [osi](http://cran.rstudio.com/web/packages/osi/index.html) ([GitHub](https://github.com/Ironholds/osi/)) retrieves open source license data and metadata from <https://api.opensource.org/licenses/>.
 -   [randNames](http://cran.rstudio.com/web/packages/randNames/index.html) ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the <https://randomapi.com/> API.
 -   [Rbitcoin](http://cran.rstudio.com/web/packages/Rbitcoin/index.html) allows both public and private API calls to interact with Bitcoin. [rbitcoinchartsapi](http://cran.rstudio.com/web/packages/rbitcoinchartsapi/index.html) is a package for the [BitCoinCharts.com](http://bitcoincharts.com/) API. From their website: "Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API)." [RCryptsy](http://cran.rstudio.com/web/packages/RCryptsy/index.html) ([GitHub](https://github.com/ropensci/RCryptsy)) wraps the API for the [Cryptsy](http://www.cryptsy.com) crypto-currency trading platform.
 -   [Rblpapi](http://cran.rstudio.com/web/packages/Rblpapi/index.html) ([GitHub](https://github.com/Rblp/Rblpapi)) is a client for Bloomberg Finance L.P. [ROpenFIGI](http://cran.rstudio.com/web/packages/ROpenFIGI/index.html) ([GitHub](https://github.com/HuangRicky/ROpenFIGI)) provides an interface to Bloomberg's [OpenFIGI](https://openfigi.com/) API.
@@ -260,6 +261,7 @@ Web Services
 -   [OAIHarvester](http://cran.rstudio.com/web/packages/OAIHarvester/index.html)
 -   [opencage](http://cran.rstudio.com/web/packages/opencage/index.html)
 -   [opencpu](http://cran.rstudio.com/web/packages/opencpu/index.html)
+-   [osi](http://cran.rstudio.com/web/packages/osi/index.html)
 -   [osmar](http://cran.rstudio.com/web/packages/osmar/index.html)
 -   [osmplotr](http://cran.rstudio.com/web/packages/osmplotr/index.html)
 -   [osrm](http://cran.rstudio.com/web/packages/osrm/index.html)
