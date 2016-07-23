@@ -57,12 +57,10 @@
     <ul>
     <li><a href="https://deployr.revolutionanalytics.com/">DeployR Open</a> is a server-based framework for integrating R into other applications via Web Services.</li>
     <li>The <pkg>shiny</pkg> package makes it easy to build interactive web applications with R.</li>
-    <li><a href="https://github.com/nteetor/prairie">prairie</a> (not on CRAN) is new, light weight web framework that uses magrittr-style syntax and is modeled after <a href="http://expressjs.com/">expressjs</a>.</li>
-    <li><a href="https://github.com/att/rcloud">rcloud</a> (not on CRAN) provides an iPython notebook-style web-based R interface.</li>
-    <li>The <pkg>Rook</pkg> web server interface contains the specification and convenience software for building and running Rook applications.</li>
+    <li>Other web frameworks include: <pkg>fiery</pkg> (<a href="https://github.com/thomasp85/fiery">GitHub</a>) that is meant to be more flexible but less easy to use than shiny; <a href="https://github.com/nteetor/prairie">prairie</a> (not on CRAN) which is a lightweight web framework that uses magrittr-style syntax and is modeled after <a href="http://expressjs.com/">expressjs</a>; <a href="https://github.com/att/rcloud">rcloud</a> (not on CRAN) which provides an iPython notebook-style web-based R interface; and <pkg>Rook</pkg>, which contains the specification and convenience software for building and running Rook applications.</li>
     <li>The <pkg>opencpu</pkg> framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.</li>
-    <li><pkg>Rserve</pkg> and <pkg>RSclient</pkg> provide server and client functionality for TCP/IP or local socket interfaces.</li>
-    <li><pkg>httpuv</pkg> provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R. Another related package, perhaps which <pkg>httpuv</pkg> replaces, is <a href="https://cran.rstudio.com/src/contrib/Archive/websockets/">websockets</a>. <pkg>servr</pkg> provides a simple HTTP server to serve files under a given directory based on httpuv.</li>
+    <li>Several general purpose server/client frameworks for R exist. <pkg>Rserve</pkg> and <pkg>RSclient</pkg> provide server and client functionality for TCP/IP or local socket interfaces. <pkg>httpuv</pkg> provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R. Another related package, perhaps which <pkg>httpuv</pkg> replaces, is <a href="https://cran.rstudio.com/src/contrib/Archive/websockets/">websockets</a>. <pkg>servr</pkg> provides a simple HTTP server to serve files under a given directory based on httpuv.</li>
+    <li>Several packages offer functionality for turning R code into a web API. <pkg>jug</pkg> is a simple API-builder web framework, built around <pkg>httpuv</pkg>. <pkg>FastRWeb</pkg> provides some basic infrastructure for this. <pkg>plumber</pkg> allows you to create a REST API by decorating existing R source code.</li>
     <li>The <ohat>WADL</ohat> package provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)</li>
     <li>The <ohat>RDCOMServer</ohat> provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the <ohat>RDCOMClient</ohat> package which provides user-level access from R to other COM servers. (not on CRAN)</li>
     <li><a href="http://rapporter.net/welcome/en">rapporter.net</a> provides an online environment (SaaS) to host and run <pkg>rapport</pkg> statistical report templates in the cloud.</li>
@@ -72,7 +70,6 @@
     <li>The <a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> has an extension (<a href="https://www.mediawiki.org/wiki/Extension:R">Extension:R</a>) to run R code from wiki pages, and use uploaded data. Links to demo pages (in German) can be found at the <a href="http://mars.wiwi.hu-berlin.de/mediawiki/mmstat_de/index.php/Kategorie:R">category page for R scripts</a> at MM-Stat. A mailing list is available: <a href="https://stat.ethz.ch/mailman/listinfo/r-sig-mediawiki">R-sig-mediawiki</a>.</li>
     <li><pkg>whisker</pkg>: Implementation of logicless templating based on <a href="http://mustache.github.io/">Mustache</a> in R. Mustache syntax is described in <a href="http://mustache.github.io/mustache.5.html" class="uri">http://mustache.github.io/mustache.5.html</a></li>
     <li><ohat>CGIwithR</ohat> (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.</li>
-    <li>Several packages offer functionality for turning R code into a web API. <pkg>jug</pkg> is a simple API-builder web framework, built around <pkg>httpuv</pkg>. <pkg>FastRWeb</pkg> provides some basic infrastructure for this. <pkg>plumber</pkg> allows you to create a REST API by decorating existing R source code.</li>
     </ul>
     <h2 id="web-services">Web Services</h2>
     <p><strong>Cloud Computing and Storage</strong></p>
@@ -215,6 +212,7 @@
     <pkg>factualR</pkg>
     <pkg>FastRWeb</pkg>
     <pkg>fbRads</pkg>
+    <pkg>fiery</pkg>
     <pkg>fitbitScraper</pkg>
     <pkg>fitcoach</pkg>
     <pkg>GAR</pkg>
