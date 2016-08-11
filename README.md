@@ -163,6 +163,7 @@ Web Services
 -   [livechatR](http://cran.rstudio.com/web/packages/livechatR/index.html) is a client for the [LiveChat API](https://developers.livechatinc.com/rest-api/).
 -   [lucr](http://cran.rstudio.com/web/packages/lucr/index.html) performs currency conversions using [Open Exchange Rates](https://openexchangerates.org/).
 -   [mockaRoo](https://github.com/stephlocke/mockaRoo) (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
+-   [nomadlist](http://cran.rstudio.com/web/packages/nomadlist/index.html) information of relevance to "digital nomads," use technology in order to work remotely and live an independent and nomadic lifestyle.
 -   [osi](http://cran.rstudio.com/web/packages/osi/index.html) ([GitHub](https://github.com/Ironholds/osi/)) retrieves open source license data and metadata from <https://api.opensource.org/licenses/>.
 -   [randNames](http://cran.rstudio.com/web/packages/randNames/index.html) ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the <https://randomapi.com/> API.
 -   [Rbitcoin](http://cran.rstudio.com/web/packages/Rbitcoin/index.html) allows both public and private API calls to interact with Bitcoin. [rbitcoinchartsapi](http://cran.rstudio.com/web/packages/rbitcoinchartsapi/index.html) is a package for the [BitCoinCharts.com](http://bitcoincharts.com/) API. From their website: "Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API)." [RCryptsy](http://cran.rstudio.com/web/packages/RCryptsy/index.html) ([GitHub](https://github.com/ropensci/RCryptsy)) wraps the API for the [Cryptsy](http://www.cryptsy.com) crypto-currency trading platform.
@@ -259,6 +260,7 @@ Web Services
 -   [mscstexta4r](http://cran.rstudio.com/web/packages/mscstexta4r/index.html)
 -   [mscsweblm4r](http://cran.rstudio.com/web/packages/mscsweblm4r/index.html)
 -   [MTurkR](http://cran.rstudio.com/web/packages/MTurkR/index.html)
+-   [nomadlist](http://cran.rstudio.com/web/packages/nomadlist/index.html)
 -   [oai](http://cran.rstudio.com/web/packages/oai/index.html)
 -   [OAIHarvester](http://cran.rstudio.com/web/packages/OAIHarvester/index.html)
 -   [opencage](http://cran.rstudio.com/web/packages/opencage/index.html)
