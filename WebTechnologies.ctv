@@ -167,6 +167,7 @@
     <li><a href="https://cran.rstudio.com/src/contrib/Archive/RLastFM/">RLastFM</a> (archived on CRAN) is a package to interface to the last.fm API. Archived on CRAN.</li>
     <li><pkg>ROpenWeatherMap</pkg> is a client for location-based weather data and forecasting from <a href="http://openweathermap.org/api">Open Weather Map</a>.</li>
     <li><pkg>RSocrata</pkg> access data for Socrata open data portals. <pkg>soql</pkg> is a pipe-oriented set of tools for constructing Socrata queries.</li>
+    <li><pkg>RStripe</pkg> provides an interface to <a href="https://stripe.com">Stripe</a>, an online payment processor.</li>
     <li><pkg>RZabbix</pkg> links with the <a href="https://www.zabbix.com/documentation/3.0/manual/api/reference">Zabbix network monitoring service API</a>.</li>
     <li><pkg>shopifyr</pkg>: An interface to the API of the E-commerce service Shopify <a href="https://help.shopify.com/api" class="uri">https://help.shopify.com/api</a>.</li>
     <li><pkg>slackr</pkg> (<a href="https://github.com/hrbrmstr/slackr">GitHub</a>) is a client for Slack.com messaging platform.</li>
@@ -313,6 +314,7 @@
     <pkg>RSiteCatalyst</pkg>
     <pkg>RSmartlyIO</pkg>
     <pkg>RSocrata</pkg>
+    <pkg>RStripe</pkg>
     <pkg>rvest</pkg>
     <pkg>RYandexTranslate</pkg>
     <pkg>RZabbix</pkg>
