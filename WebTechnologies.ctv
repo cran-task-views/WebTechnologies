@@ -2,7 +2,7 @@
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
   <maintainer email="thosjleeper@gmail.com">Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>2016-08-11</version>
+  <version>2016-08-19</version>
   <info>
     <p>This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data Task View</a> provides further discussion of online data sources that can be accessed from R.</p>
     <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <script type="text/javascript">
@@ -27,7 +27,8 @@
     <p><strong>Parsing Structured Web Data</strong></p>
     <p>The vast majority of web-based data is structured as plain text, HTML, XML, or JSON (javascript object notation). Web service APIs increasingly rely on JSON, but XML is still prevalent in many applications. There are several packages for specifically working with these format. These functions can be used to interact directly with insecure webpages or can be used to parse locally stored or in-memory web files.</p>
     <ul>
-    <li><em>XML/HTML</em>: There are two packages for working with XML: <pkg>XML</pkg> and <pkg>xml2</pkg> (<a href="https://github.com/hadley/xml2">GitHub</a>). Both support general XML (and HTML) parsing, including XPath queries. The package <pkg>xml2</pkg> is less fully featured, but more user friendly with respect to memory management, classes (e.g., XML node vs. node set vs. document), and namespaces. Of the two, only the <pkg>XML</pkg> supports <em>de novo</em> creation of XML nodes and documents. The <pkg>XML2R</pkg> (<a href="https://github.com/cpsievert/XML2R">GitHub</a>) package is a collection of convenient functions for coercing XML into data frames. An alternative to <pkg>XML</pkg> is <a href="https://sjp.co.nz/projects/selectr/">selectr</a>, which parses CSS3 Selectors and translates them to XPath 1.0 expressions. <pkg>XML</pkg> package is often used for parsing xml and html, but selectr translates CSS selectors to XPath, so can use the CSS selectors instead of XPath. The <a href="http://selectorgadget.com/">selectorgadget browser extension</a> can be used to identify page elements. <ohat>RHTMLForms</ohat> reads HTML documents and obtains a description of each of the forms it contains, along with the different elements and hidden fields. <pkg>scrapeR</pkg> provides additional tools for scraping data from HTML and XML documents. <a href="https://cran.rstudio.com/src/contrib/Archive/htmltab/">htmltab</a> extracts structured information from HTML tables, similar to <code>XML::readHTMLTable</code> of the <pkg>XML</pkg> package, but automatically expands row and column spans in the header and body cells, and users are given more control over the identification of header and body rows which will end up in the R table.</li>
+    <li><em>XML</em>: There are two packages for working with XML: <pkg>XML</pkg> and <pkg>xml2</pkg> (<a href="https://github.com/hadley/xml2">GitHub</a>). Both support general XML (and HTML) parsing, including XPath queries. The package <pkg>xml2</pkg> is less fully featured, but more user friendly with respect to memory management, classes (e.g., XML node vs. node set vs. document), and namespaces. Of the two, only the <pkg>XML</pkg> supports <em>de novo</em> creation of XML nodes and documents. The <pkg>XML2R</pkg> (<a href="https://github.com/cpsievert/XML2R">GitHub</a>) package is a collection of convenient functions for coercing XML into data frames. An alternative to <pkg>XML</pkg> is <a href="https://sjp.co.nz/projects/selectr/">selectr</a>, which parses CSS3 Selectors and translates them to XPath 1.0 expressions. <pkg>XML</pkg> package is often used for parsing xml and html, but selectr translates CSS selectors to XPath, so can use the CSS selectors instead of XPath.</li>
+    <li><em>HTML</em>: All of the tools that work with XML also work for HTML, though HTML is - in practice - more prone to be malformed. Some tools are designed specifically to work with HTML. <code>xml2::read_html()</code> is a good first function to use for importing HTML. <pkg>htmltab</pkg> (<a href="https://github.com/crubba/htmltab">GitHub</a>) extracts structured information from HTML tables, similar to <code>XML::readHTMLTable</code> of the <pkg>XML</pkg> package, but automatically expands row and column spans in the header and body cells, and users are given more control over the identification of header and body rows which will end up in the R table. The <a href="http://selectorgadget.com/">selectorgadget browser extension</a> can be used to identify page elements. <ohat>RHTMLForms</ohat> reads HTML documents and obtains a description of each of the forms it contains, along with the different elements and hidden fields. <pkg>scrapeR</pkg> provides additional tools for scraping data from HTML documents.</li>
     <li><em>JSON</em>: There are several packages for reading and writing JSON: <pkg>rjson</pkg>, <pkg>RJSONIO</pkg>, and <pkg>jsonlite</pkg>. <pkg>jsonlite</pkg> includes a different parser from <pkg>RJSONIO</pkg> called <a href="https://lloyd.github.io/yajl/">yajl</a>. We recommend using <pkg>jsonlite</pkg>. Check out the paper describing jsonlite by Jeroen Ooms <a href="http://arxiv.org/abs/1403.2805" class="uri">http://arxiv.org/abs/1403.2805</a>. <pkg>tidyjson</pkg> (<a href="https://github.com/sailthru/tidyjson">GitHub</a>) converts JSON into a data.frame. <pkg>jqr</pkg> provides bindings for the fast JSON library, <a href="http://stedolan.github.io/jq/">jq</a>. <pkg>jsonvalidate</pkg> (<a href="https://github.com/ropenscilabs/jsonvalidate">GitHub</a>) validates JSON against a schema using the &quot;is-my-json-valid&quot; Node.js library.</li>
     <li><em>RSS/Atom</em>: <a href="https://github.com/DataWookie/feedeR">feedeR</a> (not on CRAN) can be used to parse RSS or Atom feeds.</li>
     <li><a href="https://github.com/hrbrmstr/swagger">swagger</a> (not on CRAN) can be used to automatically generate functions for working with an web service API that provides documentation in <a href="http://swagger.io/">Swagger.io</a> format.</li>
@@ -131,7 +132,7 @@
     <li><em>Online Advertising</em>: <pkg>fbRads</pkg> can manage Facebook ads via the Facebook Marketing API. <a href="https://github.com/WillemPaling/RDoubleClick">RDoubleClick</a> (not on CRAN) can retrieve data from Google's DoubleClick Campaign Manager Reporting API. <pkg>RSmartlyIO</pkg> (<a href="https://github.com/rstats-lab/RSmartlyIO">GitHub</a>) loads Facebook and Instagram advertising data provided by <a href="https://app.smartly.io/">Smartly.io</a>.</li>
     <li><em>Other services</em>: <pkg>RSiteCatalyst</pkg> has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.</li>
     <li><pkg>RAdwords</pkg> (<a href="https://github.com/jburkhardt/RAdwords">GitHub</a>) is a package for loading Google Adwords data.</li>
-    <li><a href="https://cran.r-project.org/src/contrib/Archive/anametrix/">anametrix</a> (archived on CRAN) is a bidirectional connector to the Anametrix API.</li>
+    <li><pkg>anametrix</pkg> is a bidirectional connector to the Anametrix API.</li>
     <li><pkg>webreadr</pkg> (<a href="https://github.com/Ironholds/webreadr">GitHub</a>) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.</li>
     <li><pkg>ApacheLogProcessor</pkg> (<a href="https://github.com/diogosmendonca/ApacheLogProcessor">GitHub</a>) can process Apache Web Server log files.</li>
     </ul>
@@ -190,6 +191,7 @@
     <pkg priority="core">XML</pkg>
     <pkg>abbyyR</pkg>
     <pkg>alm</pkg>
+    <pkg>anametrix</pkg>
     <pkg>ApacheLogProcessor</pkg>
     <pkg>aRxiv</pkg>
     <pkg>aws.signature</pkg>
@@ -236,6 +238,7 @@
     <pkg>googleVis</pkg>
     <pkg>graphTweets</pkg>
     <pkg>gsheet</pkg>
+    <pkg>htmltab</pkg>
     <pkg>httpcache</pkg>
     <pkg>httping</pkg>
     <pkg>httpRequest</pkg>

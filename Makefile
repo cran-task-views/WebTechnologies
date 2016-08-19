@@ -25,6 +25,14 @@ checkurls:
 README.html: README.md
 	pandoc --from=markdown_github -o README.html README.md
 
+diff:
+	git pull
+	svn checkout svn://svn.r-forge.r-project.org/svnroot/ctv/pkg/inst/ctv
+	cp ./ctv/WebTechnologies.ctv WebTechnologies.ctv
+	git diff WebTechnologies.ctv > cran.diff
+	git checkout -- WebTechnologies.ctv
+	rm -r ./ctv
+
 svn:
 	svn checkout svn+ssh://thomasleeper@svn.r-forge.r-project.org/svnroot/ctv/
 	cp WebTechnologies.ctv ./ctv/pkg/inst/ctv/
@@ -35,3 +43,4 @@ release:
 	cd ./ctv
 	svn commit --message "update WebTechnologies"
 	cd ../
+	rm -r ./ctv
