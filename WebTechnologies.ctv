@@ -170,6 +170,7 @@
     <li><a href="https://github.com/dsidavis/Rgoodreads">Rgoodreads</a> (not on CRAN) interacts with <a href="https://www.goodreads.com/">Goodreads</a>.</li>
     <li><a href="https://cran.rstudio.com/src/contrib/Archive/RLastFM/">RLastFM</a> (archived on CRAN) is a package to interface to the last.fm API. Archived on CRAN.</li>
     <li><pkg>ROpenWeatherMap</pkg> is a client for location-based weather data and forecasting from <a href="http://openweathermap.org/api">Open Weather Map</a>.</li>
+    <li><pkg>RSauceLabs</pkg> (<a href="http://johndharrison.github.io/RSauceLabs/">GitHub</a>) connects to <a href="https://saucelabs.com/">SauceLabs</a>.</li>
     <li><pkg>RSocrata</pkg> access data for Socrata open data portals. <pkg>soql</pkg> is a pipe-oriented set of tools for constructing Socrata queries.</li>
     <li><pkg>RStripe</pkg> provides an interface to <a href="https://stripe.com">Stripe</a>, an online payment processor.</li>
     <li><pkg>RZabbix</pkg> links with the <a href="https://www.zabbix.com/documentation/3.0/manual/api/reference">Zabbix network monitoring service API</a>.</li>
@@ -321,6 +322,7 @@
     <pkg>rplos</pkg>
     <pkg>RPushbullet</pkg>
     <pkg>rrefine</pkg>
+    <pkg>RSauceLabs</pkg>
     <pkg>RSclient</pkg>
     <pkg>rsdmx</pkg>
     <pkg>RSelenium</pkg>

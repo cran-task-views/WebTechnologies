@@ -165,6 +165,7 @@ Web Services
 -   [Rgoodreads](https://github.com/dsidavis/Rgoodreads) (not on CRAN) interacts with [Goodreads](https://www.goodreads.com/).
 -   [RLastFM](https://cran.rstudio.com/src/contrib/Archive/RLastFM/) (archived on CRAN) is a package to interface to the last.fm API. Archived on CRAN.
 -   <pkg>ROpenWeatherMap</pkg> is a client for location-based weather data and forecasting from [Open Weather Map](http://openweathermap.org/api).
+-   <pkg>RSauceLabs</pkg> ([GitHub](http://johndharrison.github.io/RSauceLabs/)) connects to [SauceLabs](https://saucelabs.com/).
 -   <pkg>RSocrata</pkg> access data for Socrata open data portals. <pkg>soql</pkg> is a pipe-oriented set of tools for constructing Socrata queries.
 -   <pkg>RStripe</pkg> provides an interface to [Stripe](https://stripe.com), an online payment processor.
 -   <pkg>RZabbix</pkg> links with the [Zabbix network monitoring service API](https://www.zabbix.com/documentation/3.0/manual/api/reference).

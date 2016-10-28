@@ -179,6 +179,7 @@ Web Services
 -   [Rgoodreads](https://github.com/dsidavis/Rgoodreads) (not on CRAN) interacts with [Goodreads](https://www.goodreads.com/).
 -   [RLastFM](https://cran.rstudio.com/src/contrib/Archive/RLastFM/) (archived on CRAN) is a package to interface to the last.fm API. Archived on CRAN.
 -   [ROpenWeatherMap](http://cran.rstudio.com/web/packages/ROpenWeatherMap/index.html) is a client for location-based weather data and forecasting from [Open Weather Map](http://openweathermap.org/api).
+-   [RSauceLabs](http://cran.rstudio.com/web/packages/RSauceLabs/index.html) ([GitHub](http://johndharrison.github.io/RSauceLabs/)) connects to [SauceLabs](https://saucelabs.com/).
 -   [RSocrata](http://cran.rstudio.com/web/packages/RSocrata/index.html) access data for Socrata open data portals. [soql](http://cran.rstudio.com/web/packages/soql/index.html) is a pipe-oriented set of tools for constructing Socrata queries.
 -   [RStripe](http://cran.rstudio.com/web/packages/RStripe/index.html) provides an interface to [Stripe](https://stripe.com), an online payment processor.
 -   [RZabbix](http://cran.rstudio.com/web/packages/RZabbix/index.html) links with the [Zabbix network monitoring service API](https://www.zabbix.com/documentation/3.0/manual/api/reference).
@@ -328,6 +329,7 @@ Web Services
 -   [rplos](http://cran.rstudio.com/web/packages/rplos/index.html)
 -   [RPushbullet](http://cran.rstudio.com/web/packages/RPushbullet/index.html)
 -   [rrefine](http://cran.rstudio.com/web/packages/rrefine/index.html)
+-   [RSauceLabs](http://cran.rstudio.com/web/packages/RSauceLabs/index.html)
 -   [RSclient](http://cran.rstudio.com/web/packages/RSclient/index.html)
 -   [rsdmx](http://cran.rstudio.com/web/packages/rsdmx/index.html)
 -   [RSelenium](http://cran.rstudio.com/web/packages/RSelenium/index.html)
