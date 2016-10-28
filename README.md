@@ -157,6 +157,7 @@ Web Services
 -   [cymruservices](http://cran.rstudio.com/web/packages/cymruservices/index.html) queries [Team Cymru](http://www.team-cymru.org/) web security services.
 -   [datamart](http://cran.rstudio.com/web/packages/datamart/index.html): Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
 -   [discgolf](http://cran.rstudio.com/web/packages/discgolf/index.html) ([GitHub](https://github.com/sckott/discgolf)) provides a client to interact with the API for the [Discourse](http://www.discourse.org/) web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
+-   [rdpla](http://cran.rstudio.com/web/packages/rdpla/index.html) ((GitHub)\[https://github.com/ropensci/rdpla\]) works with the [Digital Public Library of America](https://dp.la) API.
 -   [factualR](http://cran.rstudio.com/web/packages/factualR/index.html): Thin wrapper for the [Factual.com](https://factual.com/) server API.
 -   [GFusionTables](http://gfusiontables.lopatenko.com/) (not on CRAN): An interface to Google Fusion Tables. Google Fusion Tables is a data management system in the cloud. This package provides functions to browse Fusion Tables catalog, retrieve data from Gusion Tables dtd storage to R and to upload data from R to Fusion Tables
 -   [HIBPwned](https://github.com/stephlocke/HIBPwned) (not on CRAN) is a client for [Have I Been Pwned](https://haveibeenpwned.com/).
@@ -297,6 +298,7 @@ Web Services
 -   [RCurl](http://cran.rstudio.com/web/packages/RCurl/index.html) (core)
 -   [RDataCanvas](http://cran.rstudio.com/web/packages/RDataCanvas/index.html)
 -   [rdatacite](http://cran.rstudio.com/web/packages/rdatacite/index.html)
+-   [rdpla](http://cran.rstudio.com/web/packages/rdpla/index.html)
 -   [redcapAPI](http://cran.rstudio.com/web/packages/redcapAPI/index.html)
 -   [RefManageR](http://cran.rstudio.com/web/packages/RefManageR/index.html)
 -   [repmis](http://cran.rstudio.com/web/packages/repmis/index.html)

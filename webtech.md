@@ -143,6 +143,7 @@ Web Services
 -   <pkg>cymruservices</pkg> queries [Team Cymru](http://www.team-cymru.org/) web security services.
 -   <pkg>datamart</pkg>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
 -   <pkg>discgolf</pkg> ([GitHub](https://github.com/sckott/discgolf)) provides a client to interact with the API for the [Discourse](http://www.discourse.org/) web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
+-   <pkg>rdpla</pkg> ((GitHub)[https://github.com/ropensci/rdpla]) works with the [Digital Public Library of America](https://dp.la) API.
 -   <pkg>factualR</pkg>: Thin wrapper for the [Factual.com](https://factual.com/) server API.
 -   [GFusionTables](http://gfusiontables.lopatenko.com/) (not on CRAN): An interface to Google Fusion Tables. Google Fusion Tables is a data management system in the cloud. This package provides functions to browse Fusion Tables catalog, retrieve data from Gusion Tables dtd storage to R and to upload data from R to Fusion Tables
 -   [HIBPwned](https://github.com/stephlocke/HIBPwned) (not on CRAN) is a client for [Have I Been Pwned](https://haveibeenpwned.com/).

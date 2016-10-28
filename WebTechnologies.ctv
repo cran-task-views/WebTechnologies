@@ -148,6 +148,7 @@
     <li><pkg>cymruservices</pkg> queries <a href="http://www.team-cymru.org/">Team Cymru</a> web security services.</li>
     <li><pkg>datamart</pkg>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.</li>
     <li><pkg>discgolf</pkg> (<a href="https://github.com/sckott/discgolf">GitHub</a>) provides a client to interact with the API for the <a href="http://www.discourse.org/">Discourse</a> web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.</li>
+    <li><pkg>rdpla</pkg> ((GitHub)[https://github.com/ropensci/rdpla]) works with the <a href="https://dp.la">Digital Public Library of America</a> API.</li>
     <li><pkg>factualR</pkg>: Thin wrapper for the <a href="https://factual.com/">Factual.com</a> server API.</li>
     <li><a href="http://gfusiontables.lopatenko.com/">GFusionTables</a> (not on CRAN): An interface to Google Fusion Tables. Google Fusion Tables is a data management system in the cloud. This package provides functions to browse Fusion Tables catalog, retrieve data from Gusion Tables dtd storage to R and to upload data from R to Fusion Tables</li>
     <li><a href="https://github.com/stephlocke/HIBPwned">HIBPwned</a> (not on CRAN) is a client for <a href="https://haveibeenpwned.com/">Have I Been Pwned</a>.</li>
@@ -290,6 +291,7 @@
     <pkg>RCryptsy</pkg>
     <pkg>RDataCanvas</pkg>
     <pkg>rdatacite</pkg>
+    <pkg>rdpla</pkg>
     <pkg>redcapAPI</pkg>
     <pkg>RefManageR</pkg>
     <pkg>repmis</pkg>
