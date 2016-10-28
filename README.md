@@ -188,7 +188,7 @@ Web Services
 -   [stackr](https://github.com/dgrtwo/stackr) (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).
 -   [telegram](http://cran.rstudio.com/web/packages/telegram/index.html) ([GitHub](https://github.com/lbraglia/telegram)) connects with the [Telegram Bot API](https://core.telegram.org/bots/api).
 -   [tuber](https://github.com/soodoku/tuber) (not on CRAN): A YouTube API client.
--   [udapi](https://github.com/Ironholds/udapi) (not on CRAN) connects to Urban Dictionary.
+-   [udapi](http://cran.rstudio.com/web/packages/udapi/index.html) ([GitHub](https://github.com/Ironholds/udapi)) connects to Urban Dictionary.
 -   [yummlyr](http://cran.rstudio.com/web/packages/yummlyr/index.html) ([GitHub](https://github.com/RomanTsegelskyi/yummlyr)) provides an interface to the [Yummly](https://developer.yummly.com/) recipe database.
 -   [zendeskR](http://cran.rstudio.com/web/packages/zendeskR/index.html): This package provides a wrapper for the Zendesk API.
 -   [ZillowR](https://github.com/fascinatingfingers/ZillowR) is a client for the Zillow real estate service.
@@ -360,6 +360,7 @@ Web Services
 -   [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html)
 -   [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html)
 -   [uaparserjs](http://cran.rstudio.com/web/packages/uaparserjs/index.html)
+-   [udapi](http://cran.rstudio.com/web/packages/udapi/index.html)
 -   [urlshorteneR](http://cran.rstudio.com/web/packages/urlshorteneR/index.html)
 -   [urltools](http://cran.rstudio.com/web/packages/urltools/index.html)
 -   [V8](http://cran.rstudio.com/web/packages/V8/index.html)
