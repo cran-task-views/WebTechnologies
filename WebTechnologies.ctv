@@ -2,7 +2,7 @@
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
   <maintainer email="thosjleeper@gmail.com">Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>2016-08-19</version>
+  <version>2016-10-28</version>
   <info>
     <p>This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data Task View</a> provides further discussion of online data sources that can be accessed from R.</p>
     <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <script type="text/javascript">
@@ -57,7 +57,7 @@
     </ul>
     <h2 id="web-and-server-frameworks">Web and Server Frameworks</h2>
     <ul>
-    <li><a href="https://deployr.revolutionanalytics.com/">DeployR Open</a> is a server-based framework for integrating R into other applications via Web Services.</li>
+    <li><a href="https://msdn.microsoft.com/en-us/microsoft-r/deployr-welcome">DeployR</a> is part of Microsoft R Server that provides support for integrating R as an application and website backend.</li>
     <li>The <pkg>shiny</pkg> package makes it easy to build interactive web applications with R.</li>
     <li>Other web frameworks include: <pkg>fiery</pkg> (<a href="https://github.com/thomasp85/fiery">GitHub</a>) that is meant to be more flexible but less easy to use than shiny; <a href="https://github.com/nteetor/prairie">prairie</a> (not on CRAN) which is a lightweight web framework that uses magrittr-style syntax and is modeled after <a href="http://expressjs.com/">expressjs</a>; <a href="https://github.com/att/rcloud">rcloud</a> (not on CRAN) which provides an iPython notebook-style web-based R interface; and <pkg>Rook</pkg>, which contains the specification and convenience software for building and running Rook applications.</li>
     <li>The <pkg>opencpu</pkg> framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.</li>

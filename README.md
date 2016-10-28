@@ -8,7 +8,8 @@ CRAN Task View: Web Technologies and Services
 |-----------------|----------------------------------------------------------------------------------|
 | **Maintainer:** | Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | thosjleeper at gmail.com                                                         |
-| **Version:**    | 2016-08-19                                                                       |
+| **Version:**    | 2016-10-28                                                                       |
+| **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The [Open Data Task View](https://github.com/ropensci/opendata) provides further discussion of online data sources that can be accessed from R.
 
@@ -66,7 +67,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 Web and Server Frameworks
 -------------------------
 
--   [DeployR Open](https://deployr.revolutionanalytics.com/) is a server-based framework for integrating R into other applications via Web Services.
+-   [DeployR](https://msdn.microsoft.com/en-us/microsoft-r/deployr-welcome) is part of Microsoft R Server that provides support for integrating R as an application and website backend.
 -   The [shiny](http://cran.rstudio.com/web/packages/shiny/index.html) package makes it easy to build interactive web applications with R.
 -   Other web frameworks include: [fiery](http://cran.rstudio.com/web/packages/fiery/index.html) ([GitHub](https://github.com/thomasp85/fiery)) that is meant to be more flexible but less easy to use than shiny; [prairie](https://github.com/nteetor/prairie) (not on CRAN) which is a lightweight web framework that uses magrittr-style syntax and is modeled after [expressjs](http://expressjs.com/); [rcloud](https://github.com/att/rcloud) (not on CRAN) which provides an iPython notebook-style web-based R interface; and [Rook](http://cran.rstudio.com/web/packages/Rook/index.html), which contains the specification and convenience software for building and running Rook applications.
 -   The [opencpu](http://cran.rstudio.com/web/packages/opencpu/index.html) framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.
