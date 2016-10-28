@@ -188,7 +188,7 @@ Web Services
 -   [stackr](https://github.com/dgrtwo/stackr) (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).
 -   [telegram](http://cran.rstudio.com/web/packages/telegram/index.html) ([GitHub](https://github.com/lbraglia/telegram)) connects with the [Telegram Bot API](https://core.telegram.org/bots/api).
 -   [trelloR](http://cran.rstudio.com/web/packages/trelloR/index.html) ([GitHub](https://github.com/jchrom/trelloR)) connects to the [Trello API](https://developers.trello.com/).
--   [tuber](https://github.com/soodoku/tuber) (not on CRAN): A YouTube API client.
+-   [tuber](http://cran.rstudio.com/web/packages/tuber/index.html) ([GitHub](https://github.com/soodoku/tuber)): A YouTube API client.
 -   [udapi](http://cran.rstudio.com/web/packages/udapi/index.html) ([GitHub](https://github.com/Ironholds/udapi)) connects to Urban Dictionary.
 -   [yummlyr](http://cran.rstudio.com/web/packages/yummlyr/index.html) ([GitHub](https://github.com/RomanTsegelskyi/yummlyr)) provides an interface to the [Yummly](https://developer.yummly.com/) recipe database.
 -   [zendeskR](http://cran.rstudio.com/web/packages/zendeskR/index.html): This package provides a wrapper for the Zendesk API.
@@ -358,6 +358,7 @@ Web Services
 -   [translate](http://cran.rstudio.com/web/packages/translate/index.html)
 -   [translateR](http://cran.rstudio.com/web/packages/translateR/index.html)
 -   [trelloR](http://cran.rstudio.com/web/packages/trelloR/index.html)
+-   [tuber](http://cran.rstudio.com/web/packages/tuber/index.html)
 -   [tumblR](http://cran.rstudio.com/web/packages/tumblR/index.html)
 -   [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html)
 -   [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html)

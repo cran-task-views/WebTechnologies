@@ -179,7 +179,7 @@
     <li><a href="https://github.com/dgrtwo/stackr">stackr</a> (not on CRAN): An unofficial wrapper for the read-only features of the <a href="https://api.stackexchange.com/">Stack Exchange API</a>.</li>
     <li><pkg>telegram</pkg> (<a href="https://github.com/lbraglia/telegram">GitHub</a>) connects with the <a href="https://core.telegram.org/bots/api">Telegram Bot API</a>.</li>
     <li><pkg>trelloR</pkg> (<a href="https://github.com/jchrom/trelloR">GitHub</a>) connects to the <a href="https://developers.trello.com/">Trello API</a>.</li>
-    <li><a href="https://github.com/soodoku/tuber">tuber</a> (not on CRAN): A YouTube API client.</li>
+    <li><pkg>tuber</pkg> (<a href="https://github.com/soodoku/tuber">GitHub</a>): A YouTube API client.</li>
     <li><pkg>udapi</pkg> (<a href="https://github.com/Ironholds/udapi">GitHub</a>) connects to Urban Dictionary.</li>
     <li><pkg>yummlyr</pkg> (<a href="https://github.com/RomanTsegelskyi/yummlyr">GitHub</a>) provides an interface to the <a href="https://developer.yummly.com/">Yummly</a> recipe database.</li>
     <li><pkg>zendeskR</pkg>: This package provides a wrapper for the Zendesk API.</li>
@@ -350,6 +350,7 @@
     <pkg>translate</pkg>
     <pkg>translateR</pkg>
     <pkg>trelloR</pkg>
+    <pkg>tuber</pkg>
     <pkg>tumblR</pkg>
     <pkg>tweet2r</pkg>
     <pkg>twitteR</pkg>
