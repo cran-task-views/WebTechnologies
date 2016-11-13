@@ -150,6 +150,7 @@ Web Services
 -   [HIBPwned](https://github.com/stephlocke/HIBPwned) (not on CRAN) is a client for [Have I Been Pwned](https://haveibeenpwned.com/).
 -   [infochimps](https://cran.rstudio.com/src/contrib/Archive/infochimps/) ([GitHub](https://github.com/drewconway/infochimps); archived) is an R wrapper for the infochimps.com API services.
 -   [internetarchive](https://github.com/ropensci/internetarchive) (not on CRAN): API client for internet archive metadata.
+-   [irced](https://github.com/hrbrmstr/irced) (not on CRAN) is an IRC chat client.
 -   <pkg>jSonarR</pkg>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the [JSON Studio Gateway](http://jsonstudio.com/), to convert JSON to a tabular format.
 -   <pkg>LendingClub</pkg> connects with the [LendingClub API](http://www.lendingclub.com/developers/lc-api.action).
 -   <pkg>livechatR</pkg> is a client for the [LiveChat API](https://developers.livechatinc.com/rest-api/).
