@@ -2,7 +2,7 @@
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
   <maintainer email="thosjleeper@gmail.com">Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>2016-10-28</version>
+  <version>2016-11-13</version>
   <info>
     <p>This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data Task View</a> provides further discussion of online data sources that can be accessed from R.</p>
     <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <script type="text/javascript">
@@ -66,7 +66,7 @@
     <li>The <ohat>WADL</ohat> package provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)</li>
     <li>The <ohat>RDCOMServer</ohat> provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the <ohat>RDCOMClient</ohat> package which provides user-level access from R to other COM servers. (not on CRAN)</li>
     <li><a href="http://rapporter.net/welcome/en">rapporter.net</a> provides an online environment (SaaS) to host and run <pkg>rapport</pkg> statistical report templates in the cloud.</li>
-    <li><a href="https://github.com/radiant-rstats/radiant">radiant</a> (<a href="https://cran.r-project.org/src/contrib/Archive/radiant/">Archived on CRAN</a>) is Shiny-based GUI for R that runs in a browser from a server or local machine.</li>
+    <li><pkg>radiant</pkg> (<a href="https://github.com/radiant-rstats/radiant">GitHub</a>) is Shiny-based GUI for R that runs in a browser from a server or local machine.</li>
     <li><a href="https://github.com/seankross/neocities">neocities</a> wraps the API for the <a href="https://neocities.org/">Neocities</a> web hosting service. (not on CRAN)</li>
     <li>The <a href="https://tiki.org/tiki-index.php">Tiki</a> Wiki CMS/Groupware framework has an R plugin (<a href="https://doc.tiki.org/PluginR">PluginR</a>) to run R code from wiki pages, and use data from their own collected web databases (trackers). A demo: <a href="https://r.tiki.org/tiki-index.php">http://r.tiki.org/</a>. More info in a <a href="http://ueb.vhir.org/2011+UseR">useR!2013 presentation</a>.</li>
     <li>The <a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> has an extension (<a href="https://www.mediawiki.org/wiki/Extension:R">Extension:R</a>) to run R code from wiki pages, and use uploaded data. Links to demo pages (in German) can be found at the <a href="http://mars.wiwi.hu-berlin.de/mediawiki/mmstat_de/index.php/Kategorie:R">category page for R scripts</a> at MM-Stat. A mailing list is available: <a href="https://stat.ethz.ch/mailman/listinfo/r-sig-mediawiki">R-sig-mediawiki</a>.</li>
@@ -123,7 +123,7 @@
     <li><a href="https://github.com/mpiccirilli/Rlinkedin">Rlinkedin</a> (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.</li>
     <li><pkg>SocialMediaMineR</pkg> is an analytic tool that returns information about the popularity of a URL on social media sites.</li>
     <li><pkg>tumblR</pkg> (<a href="https://github.com/klapaukh/tumblR">GitHub</a>) is a client for the Tumblr API (<a href="https://www.tumblr.com/docs/en/api/v2" class="uri">https://www.tumblr.com/docs/en/api/v2</a>). Tumblr is a microblogging platform and social networking website <a href="https://www.tumblr.com/" class="uri">https://www.tumblr.com/</a>.</li>
-    <li><em>Twitter</em>: <pkg>twitteR</pkg> provides an interface to the Twitter web API. <a href="https://github.com/joyofdata/RTwitterAPI">RTwitterAPI</a> (not on CRAN) and <a href="https://github.com/mkearney/rtweet">rtweet</a> (not on CRAN) are other Twitter clients. <a href="https://github.com/gvegayon/twitterreport">twitterreport</a> (not on CRAN) focuses on report generation based on Twitter data. <pkg>streamR</pkg> provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. <pkg>tweet2r</pkg> is an alternative iplementation geared toward SQLite and postGIS databases. <pkg>graphTweets</pkg> produces a network graph from a data.frame of tweets. <a href="https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores">tweetscores</a> (not on CRAN) implements a political ideology scaling measure for specified Twitter users.</li>
+    <li><em>Twitter</em>: <pkg>twitteR</pkg> provides an interface to the Twitter web API. <a href="https://github.com/joyofdata/RTwitterAPI">RTwitterAPI</a> (not on CRAN) and <pkg>rtweet</pkg> (<a href="https://github.com/mkearney/rtweet">GitHub</a>) are other Twitter clients. <a href="https://github.com/gvegayon/twitterreport">twitterreport</a> (not on CRAN) focuses on report generation based on Twitter data. <pkg>streamR</pkg> provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. <pkg>tweet2r</pkg> is an alternative iplementation geared toward SQLite and postGIS databases. <pkg>graphTweets</pkg> produces a network graph from a data.frame of tweets. <a href="https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores">tweetscores</a> (not on CRAN) implements a political ideology scaling measure for specified Twitter users.</li>
     </ul>
     <p><strong>Web Analytics Services</strong></p>
     <ul>
@@ -285,6 +285,7 @@
     <pkg>pubmed.mineR</pkg>
     <pkg>pushoverr</pkg>
     <pkg>qualtRics</pkg>
+    <pkg>radiant</pkg>
     <pkg>RAdwords</pkg>
     <pkg>randNames</pkg>
     <pkg>rapport</pkg>
@@ -332,6 +333,7 @@
     <pkg>RSmartlyIO</pkg>
     <pkg>RSocrata</pkg>
     <pkg>RStripe</pkg>
+    <pkg>rtweet</pkg>
     <pkg>rvest</pkg>
     <pkg>RYandexTranslate</pkg>
     <pkg>RZabbix</pkg>

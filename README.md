@@ -8,7 +8,7 @@ CRAN Task View: Web Technologies and Services
 |-----------------|----------------------------------------------------------------------------------|
 | **Maintainer:** | Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | thosjleeper at gmail.com                                                         |
-| **Version:**    | 2016-10-28                                                                       |
+| **Version:**    | 2016-11-13                                                                       |
 | **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The [Open Data Task View](https://github.com/ropensci/opendata) provides further discussion of online data sources that can be accessed from R.
@@ -76,7 +76,7 @@ Web and Server Frameworks
 -   The [<span class="Ohat">WADL</span>](http://www.Omegahat.org/WADL/) package provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
 -   The [<span class="Ohat">RDCOMServer</span>](http://www.Omegahat.org/RDCOMServer/) provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the [<span class="Ohat">RDCOMClient</span>](http://www.Omegahat.org/RDCOMClient/) package which provides user-level access from R to other COM servers. (not on CRAN)
 -   [rapporter.net](http://rapporter.net/welcome/en) provides an online environment (SaaS) to host and run [rapport](http://cran.rstudio.com/web/packages/rapport/index.html) statistical report templates in the cloud.
--   [radiant](https://github.com/radiant-rstats/radiant) ([Archived on CRAN](https://cran.r-project.org/src/contrib/Archive/radiant/)) is Shiny-based GUI for R that runs in a browser from a server or local machine.
+-   [radiant](http://cran.rstudio.com/web/packages/radiant/index.html) ([GitHub](https://github.com/radiant-rstats/radiant)) is Shiny-based GUI for R that runs in a browser from a server or local machine.
 -   [neocities](https://github.com/seankross/neocities) wraps the API for the [Neocities](https://neocities.org/) web hosting service. (not on CRAN)
 -   The [Tiki](https://tiki.org/tiki-index.php) Wiki CMS/Groupware framework has an R plugin ([PluginR](https://doc.tiki.org/PluginR)) to run R code from wiki pages, and use data from their own collected web databases (trackers). A demo: [http://r.tiki.org/](https://r.tiki.org/tiki-index.php). More info in a [useR!2013 presentation](http://ueb.vhir.org/2011+UseR).
 -   The [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) has an extension ([Extension:R](https://www.mediawiki.org/wiki/Extension:R)) to run R code from wiki pages, and use uploaded data. Links to demo pages (in German) can be found at the [category page for R scripts](http://mars.wiwi.hu-berlin.de/mediawiki/mmstat_de/index.php/Kategorie:R) at MM-Stat. A mailing list is available: [R-sig-mediawiki](https://stat.ethz.ch/mailman/listinfo/r-sig-mediawiki).
@@ -131,7 +131,7 @@ Web Services
 -   [Rlinkedin](https://github.com/mpiccirilli/Rlinkedin) (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.
 -   [SocialMediaMineR](http://cran.rstudio.com/web/packages/SocialMediaMineR/index.html) is an analytic tool that returns information about the popularity of a URL on social media sites.
 -   [tumblR](http://cran.rstudio.com/web/packages/tumblR/index.html) ([GitHub](https://github.com/klapaukh/tumblR)) is a client for the Tumblr API ( <https://www.tumblr.com/docs/en/api/v2>). Tumblr is a microblogging platform and social networking website <https://www.tumblr.com/>.
--   *Twitter*: [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html) provides an interface to the Twitter web API. [RTwitterAPI](https://github.com/joyofdata/RTwitterAPI) (not on CRAN) and [rtweet](https://github.com/mkearney/rtweet) (not on CRAN) are other Twitter clients. [twitterreport](https://github.com/gvegayon/twitterreport) (not on CRAN) focuses on report generation based on Twitter data. [streamR](http://cran.rstudio.com/web/packages/streamR/index.html) provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html) is an alternative iplementation geared toward SQLite and postGIS databases. [graphTweets](http://cran.rstudio.com/web/packages/graphTweets/index.html) produces a network graph from a data.frame of tweets. [tweetscores](https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores) (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
+-   *Twitter*: [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html) provides an interface to the Twitter web API. [RTwitterAPI](https://github.com/joyofdata/RTwitterAPI) (not on CRAN) and [rtweet](http://cran.rstudio.com/web/packages/rtweet/index.html) ([GitHub](https://github.com/mkearney/rtweet)) are other Twitter clients. [twitterreport](https://github.com/gvegayon/twitterreport) (not on CRAN) focuses on report generation based on Twitter data. [streamR](http://cran.rstudio.com/web/packages/streamR/index.html) provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html) is an alternative iplementation geared toward SQLite and postGIS databases. [graphTweets](http://cran.rstudio.com/web/packages/graphTweets/index.html) produces a network graph from a data.frame of tweets. [tweetscores](https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores) (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
 
 **Web Analytics Services**
 
@@ -291,6 +291,7 @@ Web Services
 -   [pubmed.mineR](http://cran.rstudio.com/web/packages/pubmed.mineR/index.html)
 -   [pushoverr](http://cran.rstudio.com/web/packages/pushoverr/index.html)
 -   [qualtRics](http://cran.rstudio.com/web/packages/qualtRics/index.html)
+-   [radiant](http://cran.rstudio.com/web/packages/radiant/index.html)
 -   [RAdwords](http://cran.rstudio.com/web/packages/RAdwords/index.html)
 -   [randNames](http://cran.rstudio.com/web/packages/randNames/index.html)
 -   [rapport](http://cran.rstudio.com/web/packages/rapport/index.html)
@@ -339,6 +340,7 @@ Web Services
 -   [RSmartlyIO](http://cran.rstudio.com/web/packages/RSmartlyIO/index.html)
 -   [RSocrata](http://cran.rstudio.com/web/packages/RSocrata/index.html)
 -   [RStripe](http://cran.rstudio.com/web/packages/RStripe/index.html)
+-   [rtweet](http://cran.rstudio.com/web/packages/rtweet/index.html)
 -   [rvest](http://cran.rstudio.com/web/packages/rvest/index.html)
 -   [RYandexTranslate](http://cran.rstudio.com/web/packages/RYandexTranslate/index.html)
 -   [RZabbix](http://cran.rstudio.com/web/packages/RZabbix/index.html)
