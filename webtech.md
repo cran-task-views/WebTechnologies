@@ -177,6 +177,7 @@ Web Services
 -   <pkg>telegram</pkg> ([GitHub](https://github.com/lbraglia/telegram)) connects with the [Telegram Bot API](https://core.telegram.org/bots/api).
 -   <pkg>trelloR</pkg> ([GitHub](https://github.com/jchrom/trelloR)) connects to the [Trello API](https://developers.trello.com/).
 -   <pkg>tuber</pkg> ([GitHub](https://github.com/soodoku/tuber)): A YouTube API client.
+-   [ubeR](https://github.com/DataWookie/ubeR) (not on CRAN) is an interface to the Uber API.
 -   <pkg>udapi</pkg> ([GitHub](https://github.com/Ironholds/udapi)) connects to Urban Dictionary.
 -   <pkg>yummlyr</pkg> ([GitHub](https://github.com/RomanTsegelskyi/yummlyr)) provides an interface to the [Yummly](https://developer.yummly.com/) recipe database.
 -   <pkg>zendeskR</pkg>: This package provides a wrapper for the Zendesk API.
