@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2016-11-13" />
+  <meta name="citation_publication_date" content="2017-06-16" />
   <meta name="citation_public_url" content="https://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2016-11-13" />
+  <meta name="DC.issued" content="2017-06-16" />
   <meta name="DC.identifier" content="https://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,7 +19,7 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x74;&#x68;&#x6f;&#x73;&#x6a;&#x6c;&#x65;&#x65;&#x70;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2016-11-13</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2017-06-16</td></tr>
     <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=WebTechnologies">https://CRAN.R-project.org/view=WebTechnologies</a></td></tr>
   </table>
 
@@ -39,11 +39,9 @@
         <a href="https://github.com/ropensci/webservices/pulls">
           submit a pull request
         </a>. If you can't contribute on GitHub,
-        <script type="text/javascript">
-        </script>
-        <noscript>
-          send Thomas an email (thosjleeper at gmail dot com)
-        </noscript>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package. If you know of a web service, API, data source, or other online resource that is not yet supported by an R package, consider adding it to
+        <a href="mailto:thosjleeper@gmail.com">
+          send Thomas an email
+        </a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package. If you know of a web service, API, data source, or other online resource that is not yet supported by an R package, consider adding it to
         <a href="https://github.com/ropensci/webservices/wiki/ToDo">
           the package development to do list on GitHub
         </a>.
@@ -93,8 +91,10 @@
           </a>) is an R6-based curl interface.
         </li>
         <li>
-<a href="../packages/curlconverter/index.html">curlconverter</a>
-          is a useful package for converting curl command-line code, for example from a browser developer's console, into R code.
+          <a href="https://github.com/hrbrmstr/curlconverter">
+            curlconverter
+          </a>
+          (not on CRAN) is a useful package for converting curl command-line code, for example from a browser developer's console, into R code.
         </li>
         <li>
 <a href="../packages/request/index.html">request</a>
@@ -926,15 +926,14 @@
             rydn
           </a>
           (not on CRAN) is an interface to the Yahoo Developers network geolocation APIs,
-<a href="../packages/geocodeHERE/index.html">geocodeHERE</a>
-          (
           <a href="https://github.com/corynissen/geocodeHERE">
-            GitHub
-          </a>): Wrapper for Nokia's
+            geocodeHERE
+          </a>
+          (not on CRAN, a wrapper for Nokia's
           <a href="https://maps.here.com/">
             HERE
           </a>
-          geocoding API, and
+          geocoding API), and
           <a href="https://github.com/hrbrmstr/ipapi">
             ipapi
           </a>
@@ -977,11 +976,10 @@
             OpenStreetMap Nominatim API
           </a>
           for reverse geocoding.
-<a href="../packages/rgeospatialquality/index.html">rgeospatialquality</a>
-          (
           <a href="https://github.com/ropenscilabs/rgeospatialquality">
-            GitHub
-          </a>) provides bindings for the geospatial quality API.
+            rgeospatialquality
+          </a>
+          (not on CRAN) provides bindings for the geospatial quality API.
           <a href="https://github.com/erzk/PostcodesioR">
             PostcodesioR
           </a>
@@ -1294,8 +1292,6 @@
                 genderize.io
               </a>
               API to predict gender from first names extracted from a text vector.
-<a href="../packages/genderNames/index.html">genderNames</a>
-              is another genderizer client.
             </li>
             <li>
 <a href="../packages/rrefine/index.html">rrefine</a>
@@ -1496,10 +1492,6 @@
           </a>) is a package for loading Google Adwords data.
         </li>
         <li>
-<a href="../packages/anametrix/index.html">anametrix</a>
-          is a bidirectional connector to the Anametrix API.
-        </li>
-        <li>
 <a href="../packages/webreadr/index.html">webreadr</a>
           (
           <a href="https://github.com/Ironholds/webreadr">
@@ -1529,9 +1521,7 @@
             (
             <a href="https://github.com/corynissen/fitbitScraper">
               GitHub
-            </a>) and
-<a href="../packages/fitcoach/index.html">fitcoach</a>
-            retrieve Fitbit data.
+            </a>) retrieves Fitbit data.
 <a href="../packages/RGoogleFit/index.html">RGoogleFit</a>
             provides similar functionality for
             <a href="https://developers.google.com/fit/rest/v1/reference/">
@@ -1624,8 +1614,6 @@
           <a href="https://github.com/ropensci/aRxiv">
             GitHub
           </a>) is a client for the arXiv API, a repository of electronic preprints for computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics.
-<a href="../packages/alm/index.html">alm</a>
-          is a wrapper to the almetrics API platform developed by PLoS.
         </li>
         <li>
           <em>
@@ -1794,10 +1782,6 @@
           to generate mock or fake data based on an input schema.
         </li>
         <li>
-<a href="../packages/nomadlist/index.html">nomadlist</a>
-          information of relevance to &quot;digital nomads,&quot; use technology in order to work remotely and live an independent and nomadic lifestyle.
-        </li>
-        <li>
 <a href="../packages/osi/index.html">osi</a>
           (
           <a href="https://github.com/Ironholds/osi/">
@@ -1827,11 +1811,10 @@
             BitCoinCharts.com
           </a>
           API. From their website: &quot;Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API).&quot;
-<a href="../packages/RCryptsy/index.html">RCryptsy</a>
-          (
           <a href="https://github.com/ropensci/RCryptsy">
-            GitHub
-          </a>) wraps the API for the
+            RCryptsy
+          </a>
+          (not on CRAN) wraps the API for the
           <a href="http://www.cryptsy.com">
             Cryptsy
           </a>
@@ -2043,8 +2026,6 @@
   <h3>CRAN packages:</h3>
   <ul>
     <li><a href="../packages/abbyyR/index.html">abbyyR</a></li>
-    <li><a href="../packages/alm/index.html">alm</a></li>
-    <li><a href="../packages/anametrix/index.html">anametrix</a></li>
     <li><a href="../packages/ApacheLogProcessor/index.html">ApacheLogProcessor</a></li>
     <li><a href="../packages/aRxiv/index.html">aRxiv</a></li>
     <li><a href="../packages/aws.signature/index.html">aws.signature</a></li>
@@ -2060,8 +2041,7 @@
     <li><a href="../packages/clarifai/index.html">clarifai</a></li>
     <li><a href="../packages/colourlovers/index.html">colourlovers</a></li>
     <li><a href="../packages/crul/index.html">crul</a></li>
-    <li><a href="../packages/curl/index.html">curl</a></li>
-    <li><a href="../packages/curlconverter/index.html">curlconverter</a></li>
+    <li><a href="../packages/curl/index.html">curl</a> (core)</li>
     <li><a href="../packages/cymruservices/index.html">cymruservices</a></li>
     <li><a href="../packages/d3Network/index.html">d3Network</a></li>
     <li><a href="../packages/datamart/index.html">datamart</a></li>
@@ -2078,12 +2058,9 @@
     <li><a href="../packages/feedeR/index.html">feedeR</a></li>
     <li><a href="../packages/fiery/index.html">fiery</a></li>
     <li><a href="../packages/fitbitScraper/index.html">fitbitScraper</a></li>
-    <li><a href="../packages/fitcoach/index.html">fitcoach</a></li>
     <li><a href="../packages/GAR/index.html">GAR</a></li>
     <li><a href="../packages/gdns/index.html">gdns</a></li>
     <li><a href="../packages/genderizeR/index.html">genderizeR</a></li>
-    <li><a href="../packages/genderNames/index.html">genderNames</a></li>
-    <li><a href="../packages/geocodeHERE/index.html">geocodeHERE</a></li>
     <li><a href="../packages/geoparser/index.html">geoparser</a></li>
     <li><a href="../packages/ggmap/index.html">ggmap</a></li>
     <li><a href="../packages/ggvis/index.html">ggvis</a></li>
@@ -2123,7 +2100,6 @@
     <li><a href="../packages/mscsweblm4r/index.html">mscsweblm4r</a></li>
     <li><a href="../packages/MTurkR/index.html">MTurkR</a></li>
     <li><a href="../packages/ndjson/index.html">ndjson</a></li>
-    <li><a href="../packages/nomadlist/index.html">nomadlist</a></li>
     <li><a href="../packages/notifyme/index.html">notifyme</a></li>
     <li><a href="../packages/oai/index.html">oai</a></li>
     <li><a href="../packages/OAIHarvester/index.html">OAIHarvester</a></li>
@@ -2151,8 +2127,7 @@
     <li><a href="../packages/Rbitcoin/index.html">Rbitcoin</a></li>
     <li><a href="../packages/rbitcoinchartsapi/index.html">rbitcoinchartsapi</a></li>
     <li><a href="../packages/Rblpapi/index.html">Rblpapi</a></li>
-    <li><a href="../packages/RCryptsy/index.html">RCryptsy</a></li>
-    <li><a href="../packages/RCurl/index.html">RCurl</a> (core)</li>
+    <li><a href="../packages/RCurl/index.html">RCurl</a></li>
     <li><a href="../packages/RDataCanvas/index.html">RDataCanvas</a></li>
     <li><a href="../packages/rdatacite/index.html">rdatacite</a></li>
     <li><a href="../packages/rdpla/index.html">rdpla</a></li>
@@ -2168,7 +2143,6 @@
     <li><a href="../packages/RForcecom/index.html">RForcecom</a></li>
     <li><a href="../packages/RGA/index.html">RGA</a></li>
     <li><a href="../packages/rgeolocate/index.html">rgeolocate</a></li>
-    <li><a href="../packages/rgeospatialquality/index.html">rgeospatialquality</a></li>
     <li><a href="../packages/RGoogleAnalytics/index.html">RGoogleAnalytics</a></li>
     <li><a href="../packages/RGoogleFit/index.html">RGoogleFit</a></li>
     <li><a href="../packages/RgoogleMaps/index.html">RgoogleMaps</a></li>
@@ -2189,7 +2163,7 @@
     <li><a href="../packages/RSauceLabs/index.html">RSauceLabs</a></li>
     <li><a href="../packages/RSclient/index.html">RSclient</a></li>
     <li><a href="../packages/rsdmx/index.html">rsdmx</a></li>
-    <li><a href="../packages/RSelenium/index.html">RSelenium</a></li>
+    <li><a href="../packages/RSelenium/index.html">RSelenium</a> (core)</li>
     <li><a href="../packages/Rserve/index.html">Rserve</a></li>
     <li><a href="../packages/RSiteCatalyst/index.html">RSiteCatalyst</a></li>
     <li><a href="../packages/RSmartlyIO/index.html">RSmartlyIO</a></li>
@@ -2239,8 +2213,8 @@
     <li><a href="../packages/WikipediR/index.html">WikipediR</a></li>
     <li><a href="../packages/WikiSocio/index.html">WikiSocio</a></li>
     <li><a href="../packages/WufooR/index.html">WufooR</a></li>
-    <li><a href="../packages/XML/index.html">XML</a> (core)</li>
-    <li><a href="../packages/xml2/index.html">xml2</a></li>
+    <li><a href="../packages/XML/index.html">XML</a></li>
+    <li><a href="../packages/xml2/index.html">xml2</a> (core)</li>
     <li><a href="../packages/XML2R/index.html">XML2R</a></li>
     <li><a href="../packages/yhatr/index.html">yhatr</a></li>
     <li><a href="../packages/yummlyr/index.html">yummlyr</a></li>

@@ -2,21 +2,16 @@
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
   <maintainer email="thosjleeper@gmail.com">Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>2016-11-13</version>
+  <version>2017-06-16</version>
   <info>
     <p>This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data Task View</a> provides further discussion of online data sources that can be accessed from R.</p>
-    <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <script type="text/javascript">
-    <!--
-    h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#116;&#104;&#x6f;&#x73;&#106;&#108;&#x65;&#x65;&#112;&#x65;&#114;';e=n+a+h;
-    document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x73;&#x65;&#110;&#100;&#32;&#84;&#104;&#x6f;&#x6d;&#x61;&#x73;&#32;&#x61;&#110;&#32;&#x65;&#x6d;&#x61;&#x69;&#108;'+'<\/'+'a'+'>');
-    // -->
-    </script><noscript>&#x73;&#x65;&#110;&#100;&#32;&#84;&#104;&#x6f;&#x6d;&#x61;&#x73;&#32;&#x61;&#110;&#32;&#x65;&#x6d;&#x61;&#x69;&#108;&#32;&#40;&#116;&#104;&#x6f;&#x73;&#106;&#108;&#x65;&#x65;&#112;&#x65;&#114;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;&#x29;</noscript>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package. If you know of a web service, API, data source, or other online resource that is not yet supported by an R package, consider adding it to <a href="https://github.com/ropensci/webservices/wiki/ToDo">the package development to do list on GitHub</a>.</p>
+    <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <a href="mailto:thosjleeper@gmail.com">send Thomas an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package. If you know of a web service, API, data source, or other online resource that is not yet supported by an R package, consider adding it to <a href="https://github.com/ropensci/webservices/wiki/ToDo">the package development to do list on GitHub</a>.</p>
     <h2 id="tools-for-working-with-the-web-from-r">Tools for Working with the Web from R</h2>
     <p><strong>Core Tools For HTTP Requests</strong></p>
     <p>There are two packages that should cover most use cases of interacting with the web from R. <pkg>httr</pkg> provides a user-friendly interface for executing HTTP methods (GET, POST, PUT, HEAD, DELETE, etc.) and provides support for modern web authentication protocols (OAuth 1.0, OAuth 2.0). HTTP status codes are helpful for debugging HTTP calls. httr makes this easier using, for example, <code>stop_for_status()</code>, which gets the http status code from a response object, and stops the function if the call was not successful. (See also <code>warn_for_status()</code>.) Note that you can pass in additional libcurl options to the <code>config</code> parameter in http calls. <pkg>RCurl</pkg> is a lower-level package that provides a closer interface between R and the <a href="https://curl.haxx.se/libcurl/">libcurl C library</a>, but is less user-friendly. It may be useful for operations on web-based XML or to perform FTP operations. For more specific situations, the following resources may be useful:</p>
     <ul>
     <li><pkg>curl</pkg> is another libcurl client that provides the <code>curl()</code> function as an SSL-compatible replacement for base R's <code>url()</code> and support for http 2.0, ssl (https, ftps), gzip, deflate and more. For websites serving insecure HTTP (i.e. using the &quot;http&quot; not &quot;https&quot; prefix), most R functions can extract data directly, including <code>read.table</code> and <code>read.csv</code>; this also applies to functions in add-on packages such as <code>jsonlite::fromJSON()</code> and <code>XML::parseXML</code>. <pkg>httpRequest</pkg> is another low-level package for HTTP requests that implements the GET, POST and multipart POST verbs. <pkg>crul</pkg> (<a href="https://github.com/ropenscilabs/crul">GitHub</a>) is an R6-based curl interface.</li>
-    <li><pkg>curlconverter</pkg> is a useful package for converting curl command-line code, for example from a browser developer's console, into R code.</li>
+    <li><a href="https://github.com/hrbrmstr/curlconverter">curlconverter</a> (not on CRAN) is a useful package for converting curl command-line code, for example from a browser developer's console, into R code.</li>
     <li><pkg>request</pkg> (<a href="https://github.com/sckott/request">GitHub</a>) provides a high-level package that is useful for developing other API client packages. <pkg>httping</pkg> (<a href="https://github.com/sckott/httping">GitHub</a>) provides simplified tools to ping and time HTTP requests, around httr calls. <pkg>httpcache</pkg> (<a href="https://github.com/nealrichardson/httpcache">GitHub</a>) provides a mechanism for caching HTTP requests.</li>
     <li>For dynamically generated webpages (i.e., those requiring user interaction to display results), <pkg>RSelenium</pkg> (<a href="https://github.com/ropensci/RSelenium/">GitHub</a>) can be used to automate those interactions and extract page contents. It provides a set of bindings for the Selenium 2.0 webdriver using the <a href="https://github.com/seleniumhq/selenium-google-code-issue-archive">JsonWireProtocol</a>. It can also aid in automated application testing, load testing, and web scraping. <pkg>seleniumPipes</pkg> (<a href="https://github.com/johndharrison/seleniumPipes">GitHub</a>) provides a &quot;pipe&quot;-oriented interface to the same. <a href="https://github.com/cpsievert/rdom">rdom</a> (not on CRAN) uses <a href="http://phantomjs.org/">phantomjs</a> to access a webpage's Document Object Model (DOM).</li>
     <li>Another, higher-level alternative package useful for webscraping is <pkg>rvest</pkg> (<a href="https://github.com/hadley/rvest">GitHub</a>), which is designed to work with <pkg>magrittr</pkg> to make it easy to express common web scraping tasks.</li>
@@ -100,7 +95,7 @@
     <p><strong>Data Analysis and Processing Services</strong></p>
     <ul>
     <li><em>Crowdsourcing</em>: Amazon Mechanical Turk is a paid crowdsourcing platform that can be used to semi-automate tasks that are not easily automated. <pkg>MTurkR</pkg> (<a href="https://github.com/cloudyr/MTurkR">GitHub</a>)) provides access to the Amazon Mechanical Turk Requester API. <a href="https://github.com/cloudyr/microworkers">microworkers</a> (not on CRAN) can distribute tasks and retrieve results for the Microworkers.com platform.</li>
-    <li><em>Geolocation/Geocoding</em>: Several packages connect to geolocation/geocoding services. <pkg>rgeolocate</pkg> (<a href="https://github.com/ironholds/rgeolocate">GitHub</a>) offers several online and offline tools. <a href="https://github.com/trestletech/rydn">rydn</a> (not on CRAN) is an interface to the Yahoo Developers network geolocation APIs, <pkg>geocodeHERE</pkg> (<a href="https://github.com/corynissen/geocodeHERE">GitHub</a>): Wrapper for Nokia's <a href="https://maps.here.com/">HERE</a> geocoding API, and <a href="https://github.com/hrbrmstr/ipapi">ipapi</a> (<a href="https://github.com/hrbrmstr/ipapi">GitHub</a>) can be used to geolocate IPv4/6 addresses and/or domain names using the <a href="http://ip-api.com/">ip-api.com</a> API. <pkg>threewords</pkg> connects to the <a href="http://what3words.com/">What3Words API</a>, which represents every 3-meter by 3-meter square on earth as a three-word phrase. <pkg>opencage</pkg> (<a href="https://github.com/ropenscilabs/opencage">GitHub</a>) provides access to to the <a href="https://geocoder.opencagedata.com/">OpenCage</a> geocoding service. <pkg>geoparser</pkg> (<a href="https://github.com/ropenscilabs/geoparser">GitHub</a>) interfaces with the <a href="https://geoparser.io/">Geoparser.io</a> web service to identify place names from plain text. <a href="https://github.com/hrbrmstr/nominatim">nominatim</a> (not on CRAN) connects to the <a href="https://github.com/hrbrmstr/nominatim">OpenStreetMap Nominatim API</a> for reverse geocoding. <pkg>rgeospatialquality</pkg> (<a href="https://github.com/ropenscilabs/rgeospatialquality">GitHub</a>) provides bindings for the geospatial quality API. <a href="https://github.com/erzk/PostcodesioR">PostcodesioR</a> (not on CRAN) provides post code lookup and geocoding for the United Kingdom.</li>
+    <li><em>Geolocation/Geocoding</em>: Several packages connect to geolocation/geocoding services. <pkg>rgeolocate</pkg> (<a href="https://github.com/ironholds/rgeolocate">GitHub</a>) offers several online and offline tools. <a href="https://github.com/trestletech/rydn">rydn</a> (not on CRAN) is an interface to the Yahoo Developers network geolocation APIs, <a href="https://github.com/corynissen/geocodeHERE">geocodeHERE</a> (not on CRAN, a wrapper for Nokia's <a href="https://maps.here.com/">HERE</a> geocoding API), and <a href="https://github.com/hrbrmstr/ipapi">ipapi</a> (<a href="https://github.com/hrbrmstr/ipapi">GitHub</a>) can be used to geolocate IPv4/6 addresses and/or domain names using the <a href="http://ip-api.com/">ip-api.com</a> API. <pkg>threewords</pkg> connects to the <a href="http://what3words.com/">What3Words API</a>, which represents every 3-meter by 3-meter square on earth as a three-word phrase. <pkg>opencage</pkg> (<a href="https://github.com/ropenscilabs/opencage">GitHub</a>) provides access to to the <a href="https://geocoder.opencagedata.com/">OpenCage</a> geocoding service. <pkg>geoparser</pkg> (<a href="https://github.com/ropenscilabs/geoparser">GitHub</a>) interfaces with the <a href="https://geoparser.io/">Geoparser.io</a> web service to identify place names from plain text. <a href="https://github.com/hrbrmstr/nominatim">nominatim</a> (not on CRAN) connects to the <a href="https://github.com/hrbrmstr/nominatim">OpenStreetMap Nominatim API</a> for reverse geocoding. <a href="https://github.com/ropenscilabs/rgeospatialquality">rgeospatialquality</a> (not on CRAN) provides bindings for the geospatial quality API. <a href="https://github.com/erzk/PostcodesioR">PostcodesioR</a> (not on CRAN) provides post code lookup and geocoding for the United Kingdom.</li>
     <li><em>Image Processing</em>: <a href="https://github.com/cloudyr/RoogleVision">RoogleVision</a> (not on CRAN) links to the Google Cloud Vision image recognition service.</li>
     <li><em>Machine Learning as a Service</em>: Several packages provide access to cloud-based machine learning services. <pkg>AzureML</pkg> links with the Microsoft Azure machine learning service. <pkg>bigml</pkg> (<a href="https://github.com/bigmlcom/bigml-r">GitHub</a>) connects to BigML. <pkg>OpenML</pkg> (<a href="https://github.com/openml/openml-r">GitHub</a>) is the official client for <a href="http://www.openml.org/frontend/page/home">the OpenML API</a>. <pkg>ddeploy</pkg> wraps the <a href="http://www.dukeanalytics.com/products/dukedeployR.php">Duke Analytics model deployment API</a>. <a href="https://github.com/redmode/indicoio">indicoio</a> (<a href="https://cran.r-project.org/src/contrib/Archive/indicoio/">Archived on CRAN</a>) connects to APIs at <a href="https://indico.io/" class="uri">https://indico.io/</a>, with wrappers for Positive/Negative Sentiment Analysis, Political Sentiment Analysis, Image Feature Extraction, Facial Emotion Recognition, Facial Feature Extraction, and Language Detection. <pkg>clarifai</pkg> (<a href="https://github.com/soodoku/clarifai">GitHub</a>) is a <a href="http://clarifai.com/">Clarifai.com</a> client that enables automated image description. <pkg>rLTP</pkg> (<a href="https://github.com/hetong007/rLTP">GitHub</a>) accesses the <a href="http://www.ltp-cloud.com/">ltp-cloud service</a>. <a href="https://code.google.com/archive/p/google-prediction-api-r-client">googlepredictionapi</a> (not on CRAN): is an R client for the <a href="https://cloud.google.com/prediction/docs/">Google Prediction API</a>, a suite of cloud machine learning tools. Finally, <pkg>RDataCanvas</pkg> (<a href="https://github.com/DataCanvasIO/RDataCanvas">GitHub</a>) can write a module for <a href="http://datacanvas.io/">datacanvas.io</a>, a big data analytics platform. <pkg>yhatr</pkg> lets you deploy, maintain, and invoke models via the <a href="https://www.yhat.com/">Yhat</a> REST API. <pkg>datarobot</pkg> works with Data Robot's predictive modeling platform. <pkg>mscsweblm4r</pkg> (<a href="https://github.com/philferriere/mscsweblm4r">GitHub</a>) interfaces with the Microsoft Cognitive Services Web Language Model API and <pkg>mscstexta4r</pkg> (<a href="https://github.com/philferriere/mscstexta4r">GitHub</a>) uses the Microsoft Cognitive Services Text Analytics REST API. <pkg>rosetteApi</pkg> links to the <a href="https://developer.rosette.com/">Rosette</a> text analysis API. <pkg>birdnik</pkg> (<a href="https://github.com/Ironholds/birdnik">GitHub</a>) provides an interface to <a href="https://www.wordnik.com/">Wordnik</a>, an online dictionary.</li>
     <li><em>Machine Translation</em>: <pkg>translate</pkg> provides bindings for the Google Translate API v2 and <pkg>translateR</pkg> provides bindings for both Google and Microsoft translation APIs. <a href="https://github.com/chainsawriot/mstranslator">mstranslator</a> (<a href="https://github.com/chainsawriot/mstranslator">GitHub</a>) provides an R wrapper for the <a href="https://msdn.microsoft.com/en-us/library/hh454949.aspx">Microsoft Translator API</a>. <pkg>RYandexTranslate</pkg> (<a href="https://github.com/mukul13/RYandexTranslate">GitHub</a>) connects to <a href="https://translate.yandex.com/">Yandex Translate</a>. <pkg>transcribeR</pkg> provides automated audio transcription via the HP IDOL service.</li>
@@ -110,7 +105,7 @@
     <li><em>Visualization</em>: Plot.ly is a company that allows you to create visualizations in the web using R (and Python). They have an R package in development <a href="https://github.com/ropensci/plotly">here</a> (not on CRAN), as well as access to their services via <a href="https://plot.ly/API/">a REST API</a>. <pkg>googleVis</pkg> provides an interface between R and the Google chart tools. The <ohat>RUbigraph</ohat> package provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs. You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics such as shape, color, size. Interactive, Javascript-enabled graphics are an increasingly useful output format for data analysis. <pkg>ggvis</pkg> makes it easy to describe interactive web graphics in R. It fuses the ideas of ggplot2 and <pkg>shiny</pkg>, rendering graphics on the web with Vega. <pkg>d3Network</pkg> provides tools for creating D3 JavaScript network, tree, dendrogram, and Sankey graphs from R. <a href="https://github.com/ramnathv/rCharts">rCharts</a> (not on CRAN) and <a href="https://github.com/nachocab/clickme">clickme</a> (not on CRAN) allow for interactive Javascript charts from R. <a href="https://github.com/tdhock/animint">animint</a> (not on CRAN) allows an interactive animation to be defined using a list of ggplots with clickSelects and showSelected aesthetics, then exported to CSV/JSON/D3/JavaScript for viewing in a web browser. <a href="https://github.com/metagraf/rVega">rVega</a> (not on CRAN) is an R wrapper for Vega.</li>
     <li><em>Other</em>:
     <ul>
-    <li><pkg>genderizeR</pkg> (<a href="https://github.com/kalimu/genderizeR">GitHub</a>) uses the <a href="https://genderize.io/">genderize.io</a> API to predict gender from first names extracted from a text vector. <pkg>genderNames</pkg> is another genderizer client.</li>
+    <li><pkg>genderizeR</pkg> (<a href="https://github.com/kalimu/genderizeR">GitHub</a>) uses the <a href="https://genderize.io/">genderize.io</a> API to predict gender from first names extracted from a text vector.</li>
     <li><pkg>rrefine</pkg> can import to and export from the <a href="http://openrefine.org/">OpenRefine</a> data cleaning service.</li>
     </ul></li>
     </ul>
@@ -133,15 +128,14 @@
     <li><em>Online Advertising</em>: <pkg>fbRads</pkg> can manage Facebook ads via the Facebook Marketing API. <a href="https://github.com/WillemPaling/RDoubleClick">RDoubleClick</a> (not on CRAN) can retrieve data from Google's DoubleClick Campaign Manager Reporting API. <pkg>RSmartlyIO</pkg> (<a href="https://github.com/rstats-lab/RSmartlyIO">GitHub</a>) loads Facebook and Instagram advertising data provided by <a href="https://app.smartly.io/">Smartly.io</a>.</li>
     <li><em>Other services</em>: <pkg>RSiteCatalyst</pkg> has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.</li>
     <li><pkg>RAdwords</pkg> (<a href="https://github.com/jburkhardt/RAdwords">GitHub</a>) is a package for loading Google Adwords data.</li>
-    <li><pkg>anametrix</pkg> is a bidirectional connector to the Anametrix API.</li>
     <li><pkg>webreadr</pkg> (<a href="https://github.com/Ironholds/webreadr">GitHub</a>) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.</li>
     <li><pkg>ApacheLogProcessor</pkg> (<a href="https://github.com/diogosmendonca/ApacheLogProcessor">GitHub</a>) can process Apache Web Server log files.</li>
     </ul>
     <p><strong>Other Web Services</strong></p>
     <ul>
-    <li><p><em>Fitness Apps</em>: <pkg>fitbitScraper</pkg> (<a href="https://github.com/corynissen/fitbitScraper">GitHub</a>) and <pkg>fitcoach</pkg> retrieve Fitbit data. <pkg>RGoogleFit</pkg> provides similar functionality for <a href="https://developers.google.com/fit/rest/v1/reference/">Google Fit</a>.</p></li>
+    <li><p><em>Fitness Apps</em>: <pkg>fitbitScraper</pkg> (<a href="https://github.com/corynissen/fitbitScraper">GitHub</a>) retrieves Fitbit data. <pkg>RGoogleFit</pkg> provides similar functionality for <a href="https://developers.google.com/fit/rest/v1/reference/">Google Fit</a>.</p></li>
     <li><em>Push Notifications</em>: <pkg>RPushbullet</pkg> provides an easy-to-use interface for the Pushbullet service which provides fast and efficient notifications between computers, phones and tablets. <pkg>pushoverr</pkg> (<a href="https://github.com/briandconnelly/pushoverr">GitHub</a>) can sending push notifications to mobile devices (iOS and Android) and desktop using <a href="https://pushover.net/">Pushover</a>. <pkg>notifyme</pkg> (<a href="https://github.com/epijim/notifyme">GitHub</a>) can control Phillips Hue lighting.</li>
-    <li><em>Reference/bibliography/citation management</em>: <pkg>RefManageR</pkg> imports and manage BibTeX and BibLaTeX references with RefManager. <a href="https://cran.rstudio.com/src/contrib/Archive/RMendeley/">RMendeley</a>: Implementation of the Mendeley API in R. Archived on CRAN. It's been archived on CRAN temporarily until it is updated for the new Mendeley API. <a href="https://github.com/ropensci/rmetadata">rmetadata</a> (not on CRAN) can get scholarly metadata from around the web. <pkg>rorcid</pkg> (<a href="https://github.com/ropensci/rorcid">GitHub</a>) is a programmatic interface the <a href="http://orcid.org/">Orcid.org</a> API, which can be used for identifying scientific authors and their publications (e.g., by DOI). <pkg>rplos</pkg> is a programmatic interface to the Web Service methods provided by the Public Library of Science journals for search. <a href="https://github.com/rOpenHealth/rpubmed">rpubmed</a> (not on CRAN) provides tools for extracting and processing Pubmed and Pubmed Central records, and <pkg>europepmc</pkg> (<a href="http://github.com/ropensci/europepmc/">GitHub</a>) connects to the Europe PubMed Central service. <pkg>scholar</pkg> provides functions to extract citation data from Google Scholar. Convenience functions are also provided for comparing multiple scholars and predicting future h-index values. <pkg>pubmed.mineR</pkg> is a package for text mining of <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed Abstracts</a> that supports fetching text and XML from PubMed. <pkg>rdatacite</pkg> (<a href="https://github.com/ropensci/rdatacite">GitHub</a>) connects to <a href="https://www.datacite.org/">DataCite</a>. <pkg>oai</pkg> (<a href="https://github.com/ropensci/oai">GitHub</a>) and <pkg>OAIHarvester</pkg> harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard. <a href="https://github.com/benmarwick/JSTORr">JSTORr</a> (Not on CRAN) provides simple text mining of journal articles from JSTOR's Data for Research service. <pkg>aRxiv</pkg> (<a href="https://github.com/ropensci/aRxiv">GitHub</a>) is a client for the arXiv API, a repository of electronic preprints for computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics. <pkg>alm</pkg> is a wrapper to the almetrics API platform developed by PLoS.</li>
+    <li><em>Reference/bibliography/citation management</em>: <pkg>RefManageR</pkg> imports and manage BibTeX and BibLaTeX references with RefManager. <a href="https://cran.rstudio.com/src/contrib/Archive/RMendeley/">RMendeley</a>: Implementation of the Mendeley API in R. Archived on CRAN. It's been archived on CRAN temporarily until it is updated for the new Mendeley API. <a href="https://github.com/ropensci/rmetadata">rmetadata</a> (not on CRAN) can get scholarly metadata from around the web. <pkg>rorcid</pkg> (<a href="https://github.com/ropensci/rorcid">GitHub</a>) is a programmatic interface the <a href="http://orcid.org/">Orcid.org</a> API, which can be used for identifying scientific authors and their publications (e.g., by DOI). <pkg>rplos</pkg> is a programmatic interface to the Web Service methods provided by the Public Library of Science journals for search. <a href="https://github.com/rOpenHealth/rpubmed">rpubmed</a> (not on CRAN) provides tools for extracting and processing Pubmed and Pubmed Central records, and <pkg>europepmc</pkg> (<a href="http://github.com/ropensci/europepmc/">GitHub</a>) connects to the Europe PubMed Central service. <pkg>scholar</pkg> provides functions to extract citation data from Google Scholar. Convenience functions are also provided for comparing multiple scholars and predicting future h-index values. <pkg>pubmed.mineR</pkg> is a package for text mining of <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed Abstracts</a> that supports fetching text and XML from PubMed. <pkg>rdatacite</pkg> (<a href="https://github.com/ropensci/rdatacite">GitHub</a>) connects to <a href="https://www.datacite.org/">DataCite</a>. <pkg>oai</pkg> (<a href="https://github.com/ropensci/oai">GitHub</a>) and <pkg>OAIHarvester</pkg> harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard. <a href="https://github.com/benmarwick/JSTORr">JSTORr</a> (Not on CRAN) provides simple text mining of journal articles from JSTOR's Data for Research service. <pkg>aRxiv</pkg> (<a href="https://github.com/ropensci/aRxiv">GitHub</a>) is a client for the arXiv API, a repository of electronic preprints for computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics.</li>
     <li><em>Wikipedia</em>: <pkg>WikipediR</pkg> (<a href="https://github.com/Ironholds/WikipediR">GitHub</a>) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia 'production' wikis, such as Wikipedia. <a href="https://github.com/chgrl/rwikidata">rwikidata</a> and <pkg>WikidataR</pkg> (<a href="https://github.com/Ironholds/WikidataR">GitHub</a>) can request data from <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata.org</a>, the free knowledgebase. <pkg>wikipediatrend</pkg> (<a href="https://github.com/petermeissner/wikipediatrend">GitHub</a>) provides access to Wikipedia page access statistics. <pkg>WikiSocio</pkg> can retrieve contributor lists and revision data.</li>
     <li><pkg>bigrquery</pkg> (<a href="https://github.com/rstats-db/bigrquery">GitHub</a>): An interface to Google's bigquery.</li>
     <li><pkg>cablecuttr</pkg> (<a href="https://github.com/bearloga/cablecuttr">GitHub</a>) is a client for <a href="http://www.canistream.it/">the CanIStream.It API</a>.</li>
@@ -161,10 +155,9 @@
     <li><pkg>livechatR</pkg> is a client for the <a href="https://developers.livechatinc.com/rest-api/">LiveChat API</a>.</li>
     <li><pkg>lucr</pkg> performs currency conversions using <a href="https://openexchangerates.org/">Open Exchange Rates</a>.</li>
     <li><a href="https://github.com/stephlocke/mockaRoo">mockaRoo</a> (not on CRAN) uses the <a href="https://www.mockaroo.com/api/docs">MockaRoo API</a> to generate mock or fake data based on an input schema.</li>
-    <li><pkg>nomadlist</pkg> information of relevance to &quot;digital nomads,&quot; use technology in order to work remotely and live an independent and nomadic lifestyle.</li>
     <li><pkg>osi</pkg> (<a href="https://github.com/Ironholds/osi/">GitHub</a>) retrieves open source license data and metadata from <a href="https://api.opensource.org/licenses/" class="uri">https://api.opensource.org/licenses/</a>.</li>
     <li><pkg>randNames</pkg> (<a href="https://github.com/karthik/randNames">GitHub</a>) generates random names and personal identifying information using the <a href="https://randomapi.com/" class="uri">https://randomapi.com/</a> API.</li>
-    <li><pkg>Rbitcoin</pkg> allows both public and private API calls to interact with Bitcoin. <pkg>rbitcoinchartsapi</pkg> is a package for the <a href="http://bitcoincharts.com/">BitCoinCharts.com</a> API. From their website: &quot;Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API).&quot; <pkg>RCryptsy</pkg> (<a href="https://github.com/ropensci/RCryptsy">GitHub</a>) wraps the API for the <a href="http://www.cryptsy.com">Cryptsy</a> crypto-currency trading platform.</li>
+    <li><pkg>Rbitcoin</pkg> allows both public and private API calls to interact with Bitcoin. <pkg>rbitcoinchartsapi</pkg> is a package for the <a href="http://bitcoincharts.com/">BitCoinCharts.com</a> API. From their website: &quot;Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API).&quot; <a href="https://github.com/ropensci/RCryptsy">RCryptsy</a> (not on CRAN) wraps the API for the <a href="http://www.cryptsy.com">Cryptsy</a> crypto-currency trading platform.</li>
     <li><pkg>Rblpapi</pkg> (<a href="https://github.com/Rblp/Rblpapi">GitHub</a>) is a client for Bloomberg Finance L.P. <pkg>ROpenFIGI</pkg> (<a href="https://github.com/HuangRicky/ROpenFIGI">GitHub</a>) provides an interface to Bloomberg's <a href="https://openfigi.com/">OpenFIGI</a> API.</li>
     <li><a href="https://github.com/ropensci/rerddap">rerddap</a> (<a href="https://github.com/ropensci/rerddap">GitHub</a>; not on CRAN): A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP (<a href="https://en.wikipedia.org/wiki/OPeNDAP" class="uri">https://en.wikipedia.org/wiki/OPeNDAP</a>), or <em>Open-source Project for a Network Data Access Protocol</em>. Allows user to swap out the base URL to use any ERDDAP instance.</li>
     <li><a href="https://github.com/hmalmedal/ripplerestr">ripplerestr</a> provides an interface to the <a href="https://ripple.com/">Ripple</a> protocol for making financial transactions.</li>
@@ -193,14 +186,13 @@
     </ul>
   </info>
   <packagelist>
+    <pkg priority="core">curl</pkg>
     <pkg priority="core">httr</pkg>
-    <pkg priority="core">RCurl</pkg>
     <pkg priority="core">jsonlite</pkg>
+    <pkg priority="core">RSelenium</pkg>
     <pkg priority="core">shiny</pkg>
-    <pkg priority="core">XML</pkg>
+    <pkg priority="core">xml2</pkg>
     <pkg>abbyyR</pkg>
-    <pkg>alm</pkg>
-    <pkg>anametrix</pkg>
     <pkg>ApacheLogProcessor</pkg>
     <pkg>aRxiv</pkg>
     <pkg>aws.signature</pkg>
@@ -216,8 +208,6 @@
     <pkg>clarifai</pkg>
     <pkg>colourlovers</pkg>
     <pkg>crul</pkg>
-    <pkg>curl</pkg>
-    <pkg>curlconverter</pkg>
     <pkg>cymruservices</pkg>
     <pkg>d3Network</pkg>
     <pkg>datamart</pkg>
@@ -234,12 +224,9 @@
     <pkg>feedeR</pkg>
     <pkg>fiery</pkg>
     <pkg>fitbitScraper</pkg>
-    <pkg>fitcoach</pkg>
     <pkg>GAR</pkg>
     <pkg>gdns</pkg>
     <pkg>genderizeR</pkg>
-    <pkg>genderNames</pkg>
-    <pkg>geocodeHERE</pkg>
     <pkg>geoparser</pkg>
     <pkg>ggmap</pkg>
     <pkg>ggvis</pkg>
@@ -277,7 +264,6 @@
     <pkg>mscsweblm4r</pkg>
     <pkg>MTurkR</pkg>
     <pkg>ndjson</pkg>
-    <pkg>nomadlist</pkg>
     <pkg>notifyme</pkg>
     <pkg>oai</pkg>
     <pkg>OAIHarvester</pkg>
@@ -305,7 +291,7 @@
     <pkg>Rbitcoin</pkg>
     <pkg>rbitcoinchartsapi</pkg>
     <pkg>Rblpapi</pkg>
-    <pkg>RCryptsy</pkg>
+    <pkg>RCurl</pkg>
     <pkg>RDataCanvas</pkg>
     <pkg>rdatacite</pkg>
     <pkg>rdpla</pkg>
@@ -321,7 +307,6 @@
     <pkg>RForcecom</pkg>
     <pkg>RGA</pkg>
     <pkg>rgeolocate</pkg>
-    <pkg>rgeospatialquality</pkg>
     <pkg>RGoogleAnalytics</pkg>
     <pkg>RGoogleFit</pkg>
     <pkg>RgoogleMaps</pkg>
@@ -342,7 +327,6 @@
     <pkg>RSauceLabs</pkg>
     <pkg>RSclient</pkg>
     <pkg>rsdmx</pkg>
-    <pkg>RSelenium</pkg>
     <pkg>Rserve</pkg>
     <pkg>RSiteCatalyst</pkg>
     <pkg>RSmartlyIO</pkg>
@@ -391,7 +375,7 @@
     <pkg>WikipediR</pkg>
     <pkg>WikiSocio</pkg>
     <pkg>WufooR</pkg>
-    <pkg>xml2</pkg>
+    <pkg>XML</pkg>
     <pkg>XML2R</pkg>
     <pkg>yhatr</pkg>
     <pkg>yummlyr</pkg>
