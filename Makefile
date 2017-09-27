@@ -2,10 +2,10 @@ all: README.md
 
 WebTechnologies.ctv: webtech.md buildxml.R
 	pandoc -w html -o WebTechnologies.ctv webtech.md
-	Rscript --vanilla -e 'source("buildxml.R")'
+	R -e 'source("buildxml.R")'
 
 WebTechnologies.html: WebTechnologies.ctv
-	Rscript --vanilla -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); ctv::ctv2html("WebTechnologies.ctv")'
+	R -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); ctv::ctv2html("WebTechnologies.ctv")'
 
 README.md: WebTechnologies.html
 	pandoc -w markdown_github -o README.md WebTechnologies.html
@@ -17,10 +17,10 @@ README.md: WebTechnologies.html
 	rm *.tmp
 
 check:
-	Rscript --vanilla -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); print(ctv::check_ctv_packages("WebTechnologies.ctv", repos = "http://cran.rstudio.com/"))'
+	R -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); print(ctv::check_ctv_packages("WebTechnologies.ctv", repos = "http://cran.rstudio.com/"))'
 
 checkurls:
-	Rscript --vanilla -e 'source("checkurls.R")'
+	R -e 'source("checkurls.R")'
 
 README.html: README.md
 	pandoc --from=markdown_github -o README.html README.md
