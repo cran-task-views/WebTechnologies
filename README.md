@@ -1,7 +1,10 @@
 CRAN Task View: Web Technologies and Services
 ---------------------------------------------
 
-| | |n|---|---|
+*Do not edit this README by hand. See [CONTRIBUTING.md](CONTRIBUTING.md).*
+
+| | |
+|---|---|
 |-----------------|----------------------------------------------------------------------------------|
 | **Maintainer:** | Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | thosjleeper at gmail.com                                                         |
@@ -402,4 +405,3 @@ Web Services
 ### Related links:
 
 -   [Open Data TaskView](https://github.com/ropensci/opendata)
-
