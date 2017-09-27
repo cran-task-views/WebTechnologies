@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2017-06-16" />
+  <meta name="citation_publication_date" content="2017-09-26" />
   <meta name="citation_public_url" content="https://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2017-06-16" />
+  <meta name="DC.issued" content="2017-09-26" />
   <meta name="DC.identifier" content="https://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,7 +19,7 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x74;&#x68;&#x6f;&#x73;&#x6a;&#x6c;&#x65;&#x65;&#x70;&#x65;&#x72;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2017-06-16</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2017-09-26</td></tr>
     <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=WebTechnologies">https://CRAN.R-project.org/view=WebTechnologies</a></td></tr>
   </table>
 
@@ -472,6 +472,16 @@
         </li>
         <li>
           <em>
+            Testing:
+          </em>:
+<a href="../packages/httptest/index.html">httptest</a>
+          (
+          <a href="https://github.com/nealrichardson/httptest">
+            GitHub
+          </a>) provides a framework for testing packages that communicate with HTTP APIs, offering tools for mocking APIs, for recording real API responses for use as mocks, and for making assertions about HTTP requests, all without requiring a live connection to the API server at runtime.
+        </li>
+        <li>
+          <em>
             Miscellaneous
           </em>:
 <a href="../packages/webutils/index.html">webutils</a>
@@ -757,14 +767,27 @@
           is a general purpose client for the Digital Ocean v2 API. In addition, the package includes functions to install various R tools including base R, RStudio server, and more. There's an improving interface to interact with docker on your remote droplets via this package.
         </li>
         <li>
+<a href="../packages/crunch/index.html">crunch</a>
           <a href="https://github.com/Crunch-io/rcrunch">
-            rcrunch
+            GitHub
           </a>
-          (not on CRAN) provides an interface to
+          provides an interface to the
           <a href="http://crunch.io/">
             crunch.io
           </a>
-          storage and analytics.
+          storage and analytics platform.
+<a href="../packages/crplyr/index.html">crplyr</a>
+          <a href="https://github.com/Crunch-io/crplyr">
+            GitHub
+          </a>
+          implements
+<tt>dplyr</tt>
+          methods on top of Crunch, and
+<a href="../packages/crunchy/index.html">crunchy</a>
+          <a href="https://github.com/Crunch-io/crunchy">
+            GitHub
+          </a>
+          facilitates making Shiny apps on Crunch.
         </li>
         <li>
           <a href="https://github.com/vpnagraj/rrefine">
@@ -1367,16 +1390,19 @@
             Twitter
           </em>:
 <a href="../packages/twitteR/index.html">twitteR</a>
-          provides an interface to the Twitter web API.
-          <a href="https://github.com/joyofdata/RTwitterAPI">
-            RTwitterAPI
-          </a>
-          (not on CRAN) and
+          (
+          <a href="https://github.com/geoffjentry/twitteR">
+            GitHub
+          </a>) provides an interface to the Twitter web API. It claims to be deprecated in favor of
 <a href="../packages/rtweet/index.html">rtweet</a>
           (
           <a href="https://github.com/mkearney/rtweet">
             GitHub
-          </a>) are other Twitter clients.
+          </a>).
+          <a href="https://github.com/joyofdata/RTwitterAPI">
+            RTwitterAPI
+          </a>
+          (not on CRAN) is another Twitter client.
           <a href="https://github.com/gvegayon/twitterreport">
             twitterreport
           </a>
@@ -1384,7 +1410,7 @@
 <a href="../packages/streamR/index.html">streamR</a>
           provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported.
 <a href="../packages/tweet2r/index.html">tweet2r</a>
-          is an alternative iplementation geared toward SQLite and postGIS databases.
+          is an alternative implementation geared toward SQLite and postGIS databases.
 <a href="../packages/graphTweets/index.html">graphTweets</a>
           produces a network graph from a data.frame of tweets.
           <a href="https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores">
@@ -1790,6 +1816,15 @@
           </a>.
         </li>
         <li>
+          <a href="https://github.com/nealrichardson/pivotaltrackR">
+            pivotaltrackR
+          </a>
+          (not on CRAN) provides an interface to the API for
+          <a href="https://www.pivotaltracker.com/">
+            Pivotal Tracker
+          </a>, an agile project management tool.
+        </li>
+        <li>
 <a href="../packages/randNames/index.html">randNames</a>
           (
           <a href="https://github.com/karthik/randNames">
@@ -1997,6 +2032,15 @@
           </a>) connects to Urban Dictionary.
         </li>
         <li>
+          <a href="https://github.com/nealrichardson/useRsnap">
+            useRsnap
+          </a>
+          (not on CRAN) provides an interface to the API for
+          <a href="https://www.pivotaltracker.com/">
+            Usersnap
+          </a>, a tool for collecting feedback from web application users.
+        </li>
+        <li>
 <a href="../packages/yummlyr/index.html">yummlyr</a>
           (
           <a href="https://github.com/RomanTsegelskyi/yummlyr">
@@ -2038,7 +2082,10 @@
     <li><a href="../packages/captr/index.html">captr</a></li>
     <li><a href="../packages/clarifai/index.html">clarifai</a></li>
     <li><a href="../packages/colourlovers/index.html">colourlovers</a></li>
+    <li><a href="../packages/crplyr/index.html">crplyr</a></li>
     <li><a href="../packages/crul/index.html">crul</a></li>
+    <li><a href="../packages/crunch/index.html">crunch</a></li>
+    <li><a href="../packages/crunchy/index.html">crunchy</a></li>
     <li><a href="../packages/curl/index.html">curl</a> (core)</li>
     <li><a href="../packages/cymruservices/index.html">cymruservices</a></li>
     <li><a href="../packages/d3Network/index.html">d3Network</a></li>
@@ -2077,6 +2124,7 @@
     <li><a href="../packages/httpcache/index.html">httpcache</a></li>
     <li><a href="../packages/httping/index.html">httping</a></li>
     <li><a href="../packages/httpRequest/index.html">httpRequest</a></li>
+    <li><a href="../packages/httptest/index.html">httptest</a></li>
     <li><a href="../packages/httpuv/index.html">httpuv</a></li>
     <li><a href="../packages/httr/index.html">httr</a> (core)</li>
     <li><a href="../packages/imguR/index.html">imguR</a></li>

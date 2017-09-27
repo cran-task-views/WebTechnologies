@@ -2,7 +2,7 @@
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
   <maintainer email="thosjleeper@gmail.com">Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>2017-06-16</version>
+  <version>2017-09-26</version>
   <info>
     <p>This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The <a href="https://github.com/ropensci/opendata">Open Data Task View</a> provides further discussion of online data sources that can be accessed from R.</p>
     <p>If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and <a href="https://github.com/ropensci/webservices/issues">submit an issue</a>, or make some changes and <a href="https://github.com/ropensci/webservices/pulls">submit a pull request</a>. If you can't contribute on GitHub, <a href="mailto:thosjleeper@gmail.com">send Thomas an email</a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package. If you know of a web service, API, data source, or other online resource that is not yet supported by an R package, consider adding it to <a href="https://github.com/ropensci/webservices/wiki/ToDo">the package development to do list on GitHub</a>.</p>
@@ -48,6 +48,7 @@
     <ul>
     <li><em>Javascript</em>: <pkg>V8</pkg> (<a href="https://github.com/jeroenooms/v8">GitHub</a>) is an R interface to Google's open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The <ohat>SpiderMonkey</ohat> package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R.</li>
     <li><em>Email:</em>: <pkg>mailR</pkg> is an interface to Apache Commons Email to send emails from within R. <pkg>sendmailR</pkg> provides a simple SMTP client. <pkg>gmailr</pkg> provides access the Google's gmail.com RESTful API.</li>
+    <li><em>Testing:</em>: <pkg>httptest</pkg> (<a href="https://github.com/nealrichardson/httptest">GitHub</a>) provides a framework for testing packages that communicate with HTTP APIs, offering tools for mocking APIs, for recording real API responses for use as mocks, and for making assertions about HTTP requests, all without requiring a live connection to the API server at runtime.</li>
     <li><em>Miscellaneous</em>: <pkg>webutils</pkg> (<a href="https://github.com/jeroenooms/webutils">GitHub</a>) contains various functions for developing web applications, including parsers for <code>application/x-www-form-urlencoded</code> as well as <code>multipart/form-data</code>. <pkg>mime</pkg> (<a href="https://github.com/yihui/mime">GitHub</a>) guesses the MIME type for a file from its extension. <pkg>rsdmx</pkg> (<a href="https://github.com/opensdmx/rsdmx/wiki">GitHub</a>) provides tools to read data and metadata documents exchanged through the Statistical Data and Metadata Exchange (SDMX) framework. The package currently focuses on the SDMX XML standard format (SDMX-ML). <a href="https://github.com/ropenscilabs/robotstxt">robotstxt</a> (not on CRAN) provides R6 classes for parsing and checking robots.txt files. <pkg>uaparserjs</pkg> (<a href="http://github.com/hrbrmstr/uaparserjs">GitHub</a>) uses the javascript <a href="https://github.com/ua-parser">&quot;ua-parser&quot; library</a> to parse User-Agent HTTP headers.</li>
     </ul>
     <h2 id="web-and-server-frameworks">Web and Server Frameworks</h2>
@@ -80,7 +81,7 @@
     </ul></li>
     <li><em>Cloud Storage</em>: <pkg>googleCloudStorageR</pkg> interfaces with Google Cloud Storage. <pkg>boxr</pkg> (<a href="https://github.com/brendan-R/boxr">GitHub</a>) is a lightweight, high-level interface for the <a href="https://docs.box.com/docs/">box.com API</a>. <a href="https://github.com/karthik/rdrop2">rDrop2</a> (<a href="https://github.com/karthik/rdrop2">GitHub</a>; not on CRAN) is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account. <pkg>backblazer</pkg> (<a href="https://github.com/phillc73/backblazer">GitHub</a>) provides access to the Backblaze B2 storage API.</li>
     <li><em>Docker</em>: <a href="https://github.com/sckott/analogsea">analogsea</a> is a general purpose client for the Digital Ocean v2 API. In addition, the package includes functions to install various R tools including base R, RStudio server, and more. There's an improving interface to interact with docker on your remote droplets via this package.</li>
-    <li><a href="https://github.com/Crunch-io/rcrunch">rcrunch</a> (not on CRAN) provides an interface to <a href="http://crunch.io/">crunch.io</a> storage and analytics.</li>
+    <li><pkg>crunch</pkg> <a href="https://github.com/Crunch-io/rcrunch">GitHub</a> provides an interface to the <a href="http://crunch.io/">crunch.io</a> storage and analytics platform. <pkg>crplyr</pkg> <a href="https://github.com/Crunch-io/crplyr">GitHub</a> implements <code>dplyr</code> methods on top of Crunch, and <pkg>crunchy</pkg> <a href="https://github.com/Crunch-io/crunchy">GitHub</a> facilitates making Shiny apps on Crunch.</li>
     <li><a href="https://github.com/vpnagraj/rrefine">rrefine</a> (not on CRAN) provides a client for the <a href="http://openrefine.org/">OpenRefine</a> (formerly Google Refine) data cleaning service.</li>
     </ul>
     <p><strong>Document and Code Sharing</strong></p>
@@ -119,7 +120,7 @@
     <li><pkg>rpinterest</pkg> connects to the <a href="http://www.pinterest.com">Pintrest</a> API.</li>
     <li><pkg>SocialMediaMineR</pkg> is an analytic tool that returns information about the popularity of a URL on social media sites.</li>
     <li><pkg>tumblR</pkg> (<a href="https://github.com/klapaukh/tumblR">GitHub</a>) is a client for the Tumblr API (<a href="https://www.tumblr.com/docs/en/api/v2" class="uri">https://www.tumblr.com/docs/en/api/v2</a>). Tumblr is a microblogging platform and social networking website <a href="https://www.tumblr.com/" class="uri">https://www.tumblr.com/</a>.</li>
-    <li><em>Twitter</em>: <pkg>twitteR</pkg> provides an interface to the Twitter web API. <a href="https://github.com/joyofdata/RTwitterAPI">RTwitterAPI</a> (not on CRAN) and <pkg>rtweet</pkg> (<a href="https://github.com/mkearney/rtweet">GitHub</a>) are other Twitter clients. <a href="https://github.com/gvegayon/twitterreport">twitterreport</a> (not on CRAN) focuses on report generation based on Twitter data. <pkg>streamR</pkg> provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. <pkg>tweet2r</pkg> is an alternative iplementation geared toward SQLite and postGIS databases. <pkg>graphTweets</pkg> produces a network graph from a data.frame of tweets. <a href="https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores">tweetscores</a> (not on CRAN) implements a political ideology scaling measure for specified Twitter users.</li>
+    <li><em>Twitter</em>: <pkg>twitteR</pkg> (<a href="https://github.com/geoffjentry/twitteR">GitHub</a>) provides an interface to the Twitter web API. It claims to be deprecated in favor of <pkg>rtweet</pkg> (<a href="https://github.com/mkearney/rtweet">GitHub</a>). <a href="https://github.com/joyofdata/RTwitterAPI">RTwitterAPI</a> (not on CRAN) is another Twitter client. <a href="https://github.com/gvegayon/twitterreport">twitterreport</a> (not on CRAN) focuses on report generation based on Twitter data. <pkg>streamR</pkg> provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. <pkg>tweet2r</pkg> is an alternative implementation geared toward SQLite and postGIS databases. <pkg>graphTweets</pkg> produces a network graph from a data.frame of tweets. <a href="https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores">tweetscores</a> (not on CRAN) implements a political ideology scaling measure for specified Twitter users.</li>
     </ul>
     <p><strong>Web Analytics Services</strong></p>
     <ul>
@@ -156,6 +157,7 @@
     <li><pkg>lucr</pkg> performs currency conversions using <a href="https://openexchangerates.org/">Open Exchange Rates</a>.</li>
     <li><a href="https://github.com/stephlocke/mockaRoo">mockaRoo</a> (not on CRAN) uses the <a href="https://www.mockaroo.com/api/docs">MockaRoo API</a> to generate mock or fake data based on an input schema.</li>
     <li><pkg>osi</pkg> (<a href="https://github.com/Ironholds/osi/">GitHub</a>) retrieves open source license data and metadata from <a href="https://api.opensource.org/licenses/" class="uri">https://api.opensource.org/licenses/</a>.</li>
+    <li><a href="https://github.com/nealrichardson/pivotaltrackR">pivotaltrackR</a> (not on CRAN) provides an interface to the API for <a href="https://www.pivotaltracker.com/">Pivotal Tracker</a>, an agile project management tool.</li>
     <li><pkg>randNames</pkg> (<a href="https://github.com/karthik/randNames">GitHub</a>) generates random names and personal identifying information using the <a href="https://randomapi.com/" class="uri">https://randomapi.com/</a> API.</li>
     <li><pkg>Rbitcoin</pkg> allows both public and private API calls to interact with Bitcoin. <pkg>rbitcoinchartsapi</pkg> is a package for the <a href="http://bitcoincharts.com/">BitCoinCharts.com</a> API. From their website: &quot;Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API).&quot; <a href="https://github.com/ropensci/RCryptsy">RCryptsy</a> (not on CRAN) wraps the API for the <a href="http://www.cryptsy.com">Cryptsy</a> crypto-currency trading platform.</li>
     <li><pkg>Rblpapi</pkg> (<a href="https://github.com/Rblp/Rblpapi">GitHub</a>) is a client for Bloomberg Finance L.P. <pkg>ROpenFIGI</pkg> (<a href="https://github.com/HuangRicky/ROpenFIGI">GitHub</a>) provides an interface to Bloomberg's <a href="https://openfigi.com/">OpenFIGI</a> API.</li>
@@ -180,6 +182,7 @@
     <li><pkg>tuber</pkg> (<a href="https://github.com/soodoku/tuber">GitHub</a>): A YouTube API client.</li>
     <li><a href="https://github.com/DataWookie/ubeR">ubeR</a> (not on CRAN) is an interface to the Uber API.</li>
     <li><pkg>udapi</pkg> (<a href="https://github.com/Ironholds/udapi">GitHub</a>) connects to Urban Dictionary.</li>
+    <li><a href="https://github.com/nealrichardson/useRsnap">useRsnap</a> (not on CRAN) provides an interface to the API for <a href="https://www.pivotaltracker.com/">Usersnap</a>, a tool for collecting feedback from web application users.</li>
     <li><pkg>yummlyr</pkg> (<a href="https://github.com/RomanTsegelskyi/yummlyr">GitHub</a>) provides an interface to the <a href="https://developer.yummly.com/">Yummly</a> recipe database.</li>
     <li><pkg>zendeskR</pkg>: This package provides a wrapper for the Zendesk API.</li>
     <li><p><a href="https://github.com/fascinatingfingers/ZillowR">ZillowR</a> is a client for the Zillow real estate service.</p></li>
@@ -207,7 +210,10 @@
     <pkg>captr</pkg>
     <pkg>clarifai</pkg>
     <pkg>colourlovers</pkg>
+    <pkg>crplyr</pkg>
     <pkg>crul</pkg>
+    <pkg>crunch</pkg>
+    <pkg>crunchy</pkg>
     <pkg>cymruservices</pkg>
     <pkg>d3Network</pkg>
     <pkg>datamart</pkg>
@@ -245,6 +251,7 @@
     <pkg>httpcache</pkg>
     <pkg>httping</pkg>
     <pkg>httpRequest</pkg>
+    <pkg>httptest</pkg>
     <pkg>httpuv</pkg>
     <pkg>imguR</pkg>
     <pkg>instaR</pkg>

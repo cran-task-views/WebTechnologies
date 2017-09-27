@@ -8,7 +8,7 @@ CRAN Task View: Web Technologies and Services
 |-----------------|----------------------------------------------------------------------------------|
 | **Maintainer:** | Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | thosjleeper at gmail.com                                                         |
-| **Version:**    | 2017-06-16                                                                       |
+| **Version:**    | 2017-09-26                                                                       |
 | **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The [Open Data Task View](https://github.com/ropensci/opendata) provides further discussion of online data sources that can be accessed from R.
@@ -61,6 +61,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
 -   *Javascript*: [V8](http://cran.rstudio.com/web/packages/V8/index.html) ([GitHub](https://github.com/jeroenooms/v8)) is an R interface to Google's open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The [<span class="Ohat">SpiderMonkey</span>](http://www.Omegahat.org/SpiderMonkey/) package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R.
 -   *Email:*: [mailR](http://cran.rstudio.com/web/packages/mailR/index.html) is an interface to Apache Commons Email to send emails from within R. [sendmailR](http://cran.rstudio.com/web/packages/sendmailR/index.html) provides a simple SMTP client. [gmailr](http://cran.rstudio.com/web/packages/gmailr/index.html) provides access the Google's gmail.com RESTful API.
+-   *Testing:*: [httptest](http://cran.rstudio.com/web/packages/httptest/index.html) ([GitHub](https://github.com/nealrichardson/httptest)) provides a framework for testing packages that communicate with HTTP APIs, offering tools for mocking APIs, for recording real API responses for use as mocks, and for making assertions about HTTP requests, all without requiring a live connection to the API server at runtime.
 -   *Miscellaneous*: [webutils](http://cran.rstudio.com/web/packages/webutils/index.html) ([GitHub](https://github.com/jeroenooms/webutils)) contains various functions for developing web applications, including parsers for `application/x-www-form-urlencoded` as well as `multipart/form-data`. [mime](http://cran.rstudio.com/web/packages/mime/index.html) ([GitHub](https://github.com/yihui/mime)) guesses the MIME type for a file from its extension. [rsdmx](http://cran.rstudio.com/web/packages/rsdmx/index.html) ([GitHub](https://github.com/opensdmx/rsdmx/wiki)) provides tools to read data and metadata documents exchanged through the Statistical Data and Metadata Exchange (SDMX) framework. The package currently focuses on the SDMX XML standard format (SDMX-ML). [robotstxt](https://github.com/ropenscilabs/robotstxt) (not on CRAN) provides R6 classes for parsing and checking robots.txt files. [uaparserjs](http://cran.rstudio.com/web/packages/uaparserjs/index.html) ([GitHub](http://github.com/hrbrmstr/uaparserjs)) uses the javascript ["ua-parser" library](https://github.com/ua-parser) to parse User-Agent HTTP headers.
 
 Web and Server Frameworks
@@ -94,7 +95,7 @@ Web Services
     -   [The cloudyr project](https://cloudyr.github.io/), which is currently under active development on GitHub, aims to provide a unified interface to the full Amazon Web Services suite without the need for external system dependencies.
 -   *Cloud Storage*: [googleCloudStorageR](http://cran.rstudio.com/web/packages/googleCloudStorageR/index.html) interfaces with Google Cloud Storage. [boxr](http://cran.rstudio.com/web/packages/boxr/index.html) ([GitHub](https://github.com/brendan-R/boxr)) is a lightweight, high-level interface for the [box.com API](https://docs.box.com/docs/). [rDrop2](https://github.com/karthik/rdrop2) ([GitHub](https://github.com/karthik/rdrop2); not on CRAN) is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account. [backblazer](http://cran.rstudio.com/web/packages/backblazer/index.html) ([GitHub](https://github.com/phillc73/backblazer)) provides access to the Backblaze B2 storage API.
 -   *Docker*: [analogsea](https://github.com/sckott/analogsea) is a general purpose client for the Digital Ocean v2 API. In addition, the package includes functions to install various R tools including base R, RStudio server, and more. There's an improving interface to interact with docker on your remote droplets via this package.
--   [rcrunch](https://github.com/Crunch-io/rcrunch) (not on CRAN) provides an interface to [crunch.io](http://crunch.io/) storage and analytics.
+-   [crunch](http://cran.rstudio.com/web/packages/crunch/index.html) [GitHub](https://github.com/Crunch-io/rcrunch) provides an interface to the [crunch.io](http://crunch.io/) storage and analytics platform. [crplyr](http://cran.rstudio.com/web/packages/crplyr/index.html) [GitHub](https://github.com/Crunch-io/crplyr) implements `dplyr` methods on top of Crunch, and [crunchy](http://cran.rstudio.com/web/packages/crunchy/index.html) [GitHub](https://github.com/Crunch-io/crunchy) facilitates making Shiny apps on Crunch.
 -   [rrefine](https://github.com/vpnagraj/rrefine) (not on CRAN) provides a client for the [OpenRefine](http://openrefine.org/) (formerly Google Refine) data cleaning service.
 
 **Document and Code Sharing**
@@ -131,7 +132,7 @@ Web Services
 -   [rpinterest](http://cran.rstudio.com/web/packages/rpinterest/index.html) connects to the [Pintrest](http://www.pinterest.com) API.
 -   [SocialMediaMineR](http://cran.rstudio.com/web/packages/SocialMediaMineR/index.html) is an analytic tool that returns information about the popularity of a URL on social media sites.
 -   [tumblR](http://cran.rstudio.com/web/packages/tumblR/index.html) ([GitHub](https://github.com/klapaukh/tumblR)) is a client for the Tumblr API ( <a href="https://www.tumblr.com/docs/en/api/v2" class="uri" class="uri">https://www.tumblr.com/docs/en/api/v2</a>). Tumblr is a microblogging platform and social networking website <a href="https://www.tumblr.com/" class="uri" class="uri">https://www.tumblr.com/</a>.
--   *Twitter*: [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html) provides an interface to the Twitter web API. [RTwitterAPI](https://github.com/joyofdata/RTwitterAPI) (not on CRAN) and [rtweet](http://cran.rstudio.com/web/packages/rtweet/index.html) ([GitHub](https://github.com/mkearney/rtweet)) are other Twitter clients. [twitterreport](https://github.com/gvegayon/twitterreport) (not on CRAN) focuses on report generation based on Twitter data. [streamR](http://cran.rstudio.com/web/packages/streamR/index.html) provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html) is an alternative iplementation geared toward SQLite and postGIS databases. [graphTweets](http://cran.rstudio.com/web/packages/graphTweets/index.html) produces a network graph from a data.frame of tweets. [tweetscores](https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores) (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
+-   *Twitter*: [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html) ([GitHub](https://github.com/geoffjentry/twitteR)) provides an interface to the Twitter web API. It claims to be deprecated in favor of [rtweet](http://cran.rstudio.com/web/packages/rtweet/index.html) ([GitHub](https://github.com/mkearney/rtweet)). [RTwitterAPI](https://github.com/joyofdata/RTwitterAPI) (not on CRAN) is another Twitter client. [twitterreport](https://github.com/gvegayon/twitterreport) (not on CRAN) focuses on report generation based on Twitter data. [streamR](http://cran.rstudio.com/web/packages/streamR/index.html) provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html) is an alternative implementation geared toward SQLite and postGIS databases. [graphTweets](http://cran.rstudio.com/web/packages/graphTweets/index.html) produces a network graph from a data.frame of tweets. [tweetscores](https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores) (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
 
 **Web Analytics Services**
 
@@ -169,6 +170,7 @@ Web Services
 -   [lucr](http://cran.rstudio.com/web/packages/lucr/index.html) performs currency conversions using [Open Exchange Rates](https://openexchangerates.org/).
 -   [mockaRoo](https://github.com/stephlocke/mockaRoo) (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
 -   [osi](http://cran.rstudio.com/web/packages/osi/index.html) ([GitHub](https://github.com/Ironholds/osi/)) retrieves open source license data and metadata from <a href="https://api.opensource.org/licenses/" class="uri" class="uri">https://api.opensource.org/licenses/</a>.
+-   [pivotaltrackR](https://github.com/nealrichardson/pivotaltrackR) (not on CRAN) provides an interface to the API for [Pivotal Tracker](https://www.pivotaltracker.com/), an agile project management tool.
 -   [randNames](http://cran.rstudio.com/web/packages/randNames/index.html) ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the <a href="https://randomapi.com/" class="uri" class="uri">https://randomapi.com/</a> API.
 -   [Rbitcoin](http://cran.rstudio.com/web/packages/Rbitcoin/index.html) allows both public and private API calls to interact with Bitcoin. [rbitcoinchartsapi](http://cran.rstudio.com/web/packages/rbitcoinchartsapi/index.html) is a package for the [BitCoinCharts.com](http://bitcoincharts.com/) API. From their website: "Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API)." [RCryptsy](https://github.com/ropensci/RCryptsy) (not on CRAN) wraps the API for the [Cryptsy](http://www.cryptsy.com) crypto-currency trading platform.
 -   [Rblpapi](http://cran.rstudio.com/web/packages/Rblpapi/index.html) ([GitHub](https://github.com/Rblp/Rblpapi)) is a client for Bloomberg Finance L.P. [ROpenFIGI](http://cran.rstudio.com/web/packages/ROpenFIGI/index.html) ([GitHub](https://github.com/HuangRicky/ROpenFIGI)) provides an interface to Bloomberg's [OpenFIGI](https://openfigi.com/) API.
@@ -193,6 +195,7 @@ Web Services
 -   [tuber](http://cran.rstudio.com/web/packages/tuber/index.html) ([GitHub](https://github.com/soodoku/tuber)): A YouTube API client.
 -   [ubeR](https://github.com/DataWookie/ubeR) (not on CRAN) is an interface to the Uber API.
 -   [udapi](http://cran.rstudio.com/web/packages/udapi/index.html) ([GitHub](https://github.com/Ironholds/udapi)) connects to Urban Dictionary.
+-   [useRsnap](https://github.com/nealrichardson/useRsnap) (not on CRAN) provides an interface to the API for [Usersnap](https://www.pivotaltracker.com/), a tool for collecting feedback from web application users.
 -   [yummlyr](http://cran.rstudio.com/web/packages/yummlyr/index.html) ([GitHub](https://github.com/RomanTsegelskyi/yummlyr)) provides an interface to the [Yummly](https://developer.yummly.com/) recipe database.
 -   [zendeskR](http://cran.rstudio.com/web/packages/zendeskR/index.html): This package provides a wrapper for the Zendesk API.
 -   [ZillowR](https://github.com/fascinatingfingers/ZillowR) is a client for the Zillow real estate service.
@@ -214,7 +217,10 @@ Web Services
 -   [captr](http://cran.rstudio.com/web/packages/captr/index.html)
 -   [clarifai](http://cran.rstudio.com/web/packages/clarifai/index.html)
 -   [colourlovers](http://cran.rstudio.com/web/packages/colourlovers/index.html)
+-   [crplyr](http://cran.rstudio.com/web/packages/crplyr/index.html)
 -   [crul](http://cran.rstudio.com/web/packages/crul/index.html)
+-   [crunch](http://cran.rstudio.com/web/packages/crunch/index.html)
+-   [crunchy](http://cran.rstudio.com/web/packages/crunchy/index.html)
 -   [curl](http://cran.rstudio.com/web/packages/curl/index.html) (core)
 -   [cymruservices](http://cran.rstudio.com/web/packages/cymruservices/index.html)
 -   [d3Network](http://cran.rstudio.com/web/packages/d3Network/index.html)
@@ -253,6 +259,7 @@ Web Services
 -   [httpcache](http://cran.rstudio.com/web/packages/httpcache/index.html)
 -   [httping](http://cran.rstudio.com/web/packages/httping/index.html)
 -   [httpRequest](http://cran.rstudio.com/web/packages/httpRequest/index.html)
+-   [httptest](http://cran.rstudio.com/web/packages/httptest/index.html)
 -   [httpuv](http://cran.rstudio.com/web/packages/httpuv/index.html)
 -   [httr](http://cran.rstudio.com/web/packages/httr/index.html) (core)
 -   [imguR](http://cran.rstudio.com/web/packages/imguR/index.html)
@@ -398,4 +405,3 @@ Web Services
 ### Related links:
 
 -   [Open Data TaskView](https://github.com/ropensci/opendata)
-
