@@ -1,7 +1,7 @@
 ## CRAN Task View: Web Technologies and Services
 
 |                 |                                                                                  |
-| | |n|---|---|
+| --------------- | -------------------------------------------------------------------------------- |
 | **Maintainer:** | Thomas Leeper, Scott Chamberlain, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | thosjleeper at gmail.com                                                         |
 | **Version:**    | 2018-01-08                                                                       |
