@@ -1,14 +1,14 @@
 all: README.md
 
 WebTechnologies.ctv: webtech.md buildxml.R
-	pandoc -w html -o WebTechnologies.ctv webtech.md
+	pandoc -w html --wrap=none -o WebTechnologies.ctv webtech.md
 	R -e 'source("buildxml.R")'
 
 WebTechnologies.html: WebTechnologies.ctv
 	R -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); ctv::ctv2html("WebTechnologies.ctv")'
 
 README.md: WebTechnologies.html
-	pandoc -w markdown_github -o README.md WebTechnologies.html
+	pandoc -w gfm --wrap=none -o README.md WebTechnologies.html
 	sed -i.tmp -e 's|( \[|(\[|g' README.md
 	sed -i.tmp -e 's| : |: |g' README.md
 	sed -i.tmp -e 's|../packages/|http://cran.rstudio.com/web/packages/|g' README.md
@@ -23,7 +23,7 @@ checkurls:
 	R -e 'source("checkurls.R")'
 
 README.html: README.md
-	pandoc --from=markdown_github -o README.html README.md
+	pandoc --from=gfm -o README.html README.md
 
 diff:
 	git pull
