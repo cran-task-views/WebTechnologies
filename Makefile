@@ -34,7 +34,7 @@ diff:
 	rm -r ./ctv
 
 svn:
-	svn checkout svn+ssh://thomasleeper@svn.r-forge.r-project.org/svnroot/ctv/
+	svn checkout svn+ssh://schamber789@svn.r-forge.r-project.org/svnroot/ctv/
 	cp WebTechnologies.ctv ./ctv/pkg/inst/ctv/
 	cd ./ctv
 	svn status
