@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2018-02-13" />
+  <meta name="citation_publication_date" content="2018-02-14" />
   <meta name="citation_public_url" content="https://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2018-02-13" />
+  <meta name="DC.issued" content="2018-02-14" />
   <meta name="DC.identifier" content="https://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,7 +19,7 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x73;&#x63;&#x6f;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x72;&#x6f;&#x70;&#x65;&#x6e;&#x73;&#x63;&#x69;&#x2e;&#x6f;&#x72;&#x67;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2018-02-13</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2018-02-14</td></tr>
     <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=WebTechnologies">https://CRAN.R-project.org/view=WebTechnologies</a></td></tr>
   </table>
 
@@ -439,14 +439,10 @@
           For XML documents, the
 <a href="http://www.Omegahat.net/XMLSchema/"><span class="Ohat">XMLSchema</span></a>
           package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R.
-          <a href="https://github.com/hrbrmstr/xslt">
-            xslt
-          </a>
-          is a package providing an interface to the
-          <a href="http://vslavik.github.io/xmlwrapp/">
-            xmlwrapp
-          </a>
-          an XML processing library that provides an XSLT engine for transforming XML data using a transform stylesheet. (It can be seen as a modern replacement for
+<a href="../packages/xslt/index.html">xslt</a>
+          is an extension for the
+<a href="../packages/xml2/index.html">xml2</a>
+          package to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for
 <a href="http://www.Omegahat.net/Sxslt/"><span class="Ohat">Sxslt</span></a>, which is an interface to Dan Veillard’s libxslt translator, and the
 <a href="http://www.Omegahat.net/SXalan/"><span class="Ohat">SXalan</span></a>
           package.) This may be useful for webscraping, as well as transforming XML markup into another human- or machine-readable format (e.g., HTML, JSON, plain text, etc.).
@@ -506,8 +502,26 @@
         </li>
         <li>
           <em>
+            Mocking:
+          </em>:
+<a href="../packages/webmockr/index.html">webmockr</a>
+          is a library for stubbing and setting expectations on HTTP requests. It is inspired from Rubys
+<tt>webmock</tt>. This package only helps mock HTTP requests, and returns nothing when requests match expectations. See
+          <em>
+            Testing
+          </em>
+          for mocking with returned responses.
+        </li>
+        <li>
+          <em>
             Testing:
           </em>:
+          <a href="https://github.com/ropensci/vcr">
+            vcr
+          </a>
+          provides an interface to easily cache HTTP requests in R package test suites (but can be used outside of testing use cases as well). vcr relies on
+<a href="../packages/webmockr/index.html">webmockr</a>
+          to do the HTTP request mocking.
 <a href="../packages/httptest/index.html">httptest</a>
           (
           <a href="https://github.com/nealrichardson/httptest">
@@ -547,6 +561,16 @@
             “ua-parser” library
           </a>
           to parse User-Agent HTTP headers.
+<a href="../packages/rjsonapi/index.html">rjsonapi</a>
+          consumes APIs that Follow the
+          <a href="http://jsonapi.org/">
+            JSON API Specification
+          </a>.
+<a href="../packages/rapiclient/index.html">rapiclient</a>
+          is a client for consuming APIs that follow the
+          <a href="https://www.openapis.org/">
+            Open API format
+          </a>.
         </li>
       </ul>
       <h2 id="web-and-server-frameworks">
@@ -855,6 +879,12 @@
             GitLab
           </a>
           -specific client.
+<a href="https://github.com/hrbrmstr/pastebin/"><span class="GitHub">pastebin</span></a>
+          is a client for
+          <a href="https://pastebin.com/" class="uri">
+            https://pastebin.com/
+          </a>
+          a code sharing site.
         </li>
         <li>
           <em>
@@ -1377,6 +1407,10 @@
           is a client for VK, a social networking site based in Russia.
         </li>
         <li>
+<a href="https://github.com/rladies/meetupr/"><span class="GitHub">meetupr</span></a>
+          is a client for the Meetup.com API.
+        </li>
+        <li>
           <em>
             Twitter
           </em>:
@@ -1656,6 +1690,11 @@
           </a>) provides access to Wikipedia page access statistics.
 <a href="../packages/WikiSocio/index.html">WikiSocio</a>
           can retrieve contributor lists and revision data.
+<a href="../packages/WikidataQueryServiceR/index.html">WikidataQueryServiceR</a>
+          is a client for the
+          <a href="https://query.wikidata.org/">
+            Wikidata Query Service
+          </a>.
         </li>
         <li>
 <a href="../packages/bigrquery/index.html">bigrquery</a>
@@ -1744,7 +1783,7 @@
           </a>; archived) is an R wrapper for the infochimps.com API services.
         </li>
         <li>
-<a href="../packages/ropensci/internetarchive/index.html">ropensci/internetarchive</a>: API client for internet archive metadata.
+<a href="../packages/internetarchive/index.html">internetarchive</a>: API client for internet archive metadata.
         </li>
         <li>
 <a href="https://github.com/hrbrmstr/irced/"><span class="GitHub">irced</span></a>
@@ -1889,10 +1928,12 @@
           (archived on CRAN) is a package to interface to the last.fm API. Archived on CRAN.
         </li>
         <li>
-<a href="../packages/ROpenWeatherMap/index.html">ROpenWeatherMap</a>
-          is a client for location-based weather data and forecasting from
-          <a href="http://openweathermap.org/api">
-            Open Weather Map
+          Two packages,
+<a href="../packages/owmr/index.html">owmr</a>
+          and
+<a href="../packages/ROpenWeatherMap/index.html">ROpenWeatherMap</a>, work with the
+          <a href="https://openweathermap.org/api">
+            Open Weather Map API
           </a>.
         </li>
         <li>
@@ -1923,6 +1964,13 @@
           links with the
           <a href="https://www.zabbix.com/documentation/3.0/manual/api/reference">
             Zabbix network monitoring service API
+          </a>.
+        </li>
+        <li>
+<a href="../packages/rwars/index.html">rwars</a>
+          retrieve and reformat data from the
+          <a href="https://swapi.co/">
+            Star Wars API (SWAPI)
           </a>.
         </li>
         <li>
@@ -2092,6 +2140,7 @@
     <li><a href="../packages/httr/index.html">httr</a> (core)</li>
     <li><a href="../packages/imguR/index.html">imguR</a></li>
     <li><a href="../packages/instaR/index.html">instaR</a></li>
+    <li><a href="../packages/internetarchive/index.html">internetarchive</a></li>
     <li><a href="../packages/jqr/index.html">jqr</a></li>
     <li><a href="../packages/js/index.html">js</a></li>
     <li><a href="../packages/jSonarR/index.html">jSonarR</a></li>
@@ -2122,6 +2171,7 @@
     <li><a href="../packages/osmar/index.html">osmar</a></li>
     <li><a href="../packages/osmplotr/index.html">osmplotr</a></li>
     <li><a href="../packages/osrm/index.html">osrm</a></li>
+    <li><a href="../packages/owmr/index.html">owmr</a></li>
     <li><a href="../packages/pdftables/index.html">pdftables</a></li>
     <li><a href="../packages/placement/index.html">placement</a></li>
     <li><a href="../packages/plotGoogleMaps/index.html">plotGoogleMaps</a></li>
@@ -2136,6 +2186,7 @@
     <li><a href="../packages/radiant/index.html">radiant</a></li>
     <li><a href="../packages/RAdwords/index.html">RAdwords</a></li>
     <li><a href="../packages/randNames/index.html">randNames</a></li>
+    <li><a href="../packages/rapiclient/index.html">rapiclient</a></li>
     <li><a href="../packages/rapport/index.html">rapport</a></li>
     <li><a href="../packages/Rbitcoin/index.html">Rbitcoin</a></li>
     <li><a href="../packages/rbitcoinchartsapi/index.html">rbitcoinchartsapi</a></li>
@@ -2164,13 +2215,13 @@
     <li><a href="../packages/rhub/index.html">rhub</a></li>
     <li><a href="../packages/rio/index.html">rio</a></li>
     <li><a href="../packages/rjson/index.html">rjson</a></li>
+    <li><a href="../packages/rjsonapi/index.html">rjsonapi</a></li>
     <li><a href="../packages/RJSONIO/index.html">RJSONIO</a></li>
     <li><a href="../packages/rLTP/index.html">rLTP</a></li>
     <li><a href="../packages/ROAuth/index.html">ROAuth</a></li>
     <li><a href="../packages/robotstxt/index.html">robotstxt</a></li>
     <li><a href="../packages/Rook/index.html">Rook</a></li>
     <li><a href="../packages/ROpenFIGI/index.html">ROpenFIGI</a></li>
-    <li><a href="../packages/ropensci/index.html">ropensci</a></li>
     <li><a href="../packages/ROpenWeatherMap/index.html">ROpenWeatherMap</a></li>
     <li><a href="../packages/rorcid/index.html">rorcid</a></li>
     <li><a href="../packages/rosetteApi/index.html">rosetteApi</a></li>
@@ -2189,6 +2240,7 @@
     <li><a href="../packages/RStripe/index.html">RStripe</a></li>
     <li><a href="../packages/rtweet/index.html">rtweet</a></li>
     <li><a href="../packages/rvest/index.html">rvest</a></li>
+    <li><a href="../packages/rwars/index.html">rwars</a></li>
     <li><a href="../packages/RYandexTranslate/index.html">RYandexTranslate</a></li>
     <li><a href="../packages/RZabbix/index.html">RZabbix</a></li>
     <li><a href="../packages/scholar/index.html">scholar</a></li>
@@ -2229,6 +2281,7 @@
     <li><a href="../packages/webshot/index.html">webshot</a></li>
     <li><a href="../packages/webutils/index.html">webutils</a></li>
     <li><a href="../packages/whisker/index.html">whisker</a></li>
+    <li><a href="../packages/WikidataQueryServiceR/index.html">WikidataQueryServiceR</a></li>
     <li><a href="../packages/WikidataR/index.html">WikidataR</a></li>
     <li><a href="../packages/wikipediatrend/index.html">wikipediatrend</a></li>
     <li><a href="../packages/WikipediR/index.html">WikipediR</a></li>
@@ -2237,6 +2290,7 @@
     <li><a href="../packages/XML/index.html">XML</a></li>
     <li><a href="../packages/xml2/index.html">xml2</a> (core)</li>
     <li><a href="../packages/XML2R/index.html">XML2R</a></li>
+    <li><a href="../packages/xslt/index.html">xslt</a></li>
     <li><a href="../packages/yhatr/index.html">yhatr</a></li>
     <li><a href="../packages/yummlyr/index.html">yummlyr</a></li>
     <li><a href="../packages/zendeskR/index.html">zendeskR</a></li>

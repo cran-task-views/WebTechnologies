@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------------------------------------- |
 | **Maintainer:** | Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | scott at ropensci.org                                                            |
-| **Version:**    | 2018-02-13                                                                       |
+| **Version:**    | 2018-02-14                                                                       |
 | **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 <div>
@@ -58,7 +58,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 **Tools for Working with Scraped Webpage Contents**
 
   - Several packages can be used for parsing HTML documents. [boilerpipeR](http://cran.rstudio.com/web/packages/boilerpipeR/index.html) provides generic extraction of main text content from HTML files; removal of ads, sidebars and headers using the boilerpipe Java library. [<span class="Ohat">RTidyHTML</span>](http://www.Omegahat.net/RTidyHTML/) interfaces to the libtidy library for correcting HTML documents that are not well-formed. This library corrects common errors in HTML documents. [W3CMarkupValidator](http://cran.rstudio.com/web/packages/W3CMarkupValidator/index.html) provides an R Interface to W3C Markup Validation Services for validating HTML documents.
-  - For XML documents, the [<span class="Ohat">XMLSchema</span>](http://www.Omegahat.net/XMLSchema/) package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R. [xslt](https://github.com/hrbrmstr/xslt) is a package providing an interface to the [xmlwrapp](http://vslavik.github.io/xmlwrapp/) an XML processing library that provides an XSLT engine for transforming XML data using a transform stylesheet. (It can be seen as a modern replacement for [<span class="Ohat">Sxslt</span>](http://www.Omegahat.net/Sxslt/), which is an interface to Dan Veillard’s libxslt translator, and the [<span class="Ohat">SXalan</span>](http://www.Omegahat.net/SXalan/) package.) This may be useful for webscraping, as well as transforming XML markup into another human- or machine-readable format (e.g., HTML, JSON, plain text, etc.). [<span class="Ohat">SSOAP</span>](http://www.Omegahat.net/SSOAP/) provides a client-side SOAP (Simple Object Access Protocol) mechanism. It aims to provide a high-level interface to invoke SOAP methods provided by a SOAP server. [<span class="Ohat">XMLRPC</span>](http://www.Omegahat.net/XMLRPC/) provides an implementation of XML-RPC, a relatively simple remote procedure call mechanism that uses HTTP and XML. This can be used for communicating between processes on a single machine or for accessing Web services from within R.
+  - For XML documents, the [<span class="Ohat">XMLSchema</span>](http://www.Omegahat.net/XMLSchema/) package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R. [xslt](http://cran.rstudio.com/web/packages/xslt/index.html) is an extension for the [xml2](http://cran.rstudio.com/web/packages/xml2/index.html) package to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for [<span class="Ohat">Sxslt</span>](http://www.Omegahat.net/Sxslt/), which is an interface to Dan Veillard’s libxslt translator, and the [<span class="Ohat">SXalan</span>](http://www.Omegahat.net/SXalan/) package.) This may be useful for webscraping, as well as transforming XML markup into another human- or machine-readable format (e.g., HTML, JSON, plain text, etc.). [<span class="Ohat">SSOAP</span>](http://www.Omegahat.net/SSOAP/) provides a client-side SOAP (Simple Object Access Protocol) mechanism. It aims to provide a high-level interface to invoke SOAP methods provided by a SOAP server. [<span class="Ohat">XMLRPC</span>](http://www.Omegahat.net/XMLRPC/) provides an implementation of XML-RPC, a relatively simple remote procedure call mechanism that uses HTTP and XML. This can be used for communicating between processes on a single machine or for accessing Web services from within R.
   - [<span class="Ohat">Rcompression</span>](http://www.Omegahat.net/Rcompression/) (not on CRAN): Interface to zlib and bzip2 libraries for performing in-memory compression and decompression in R. This is useful when receiving or sending contents to remote servers, e.g. Web services, HTTP requests via RCurl.
   - [tm.plugin.webmining](http://cran.rstudio.com/web/packages/tm.plugin.webmining/index.html): Extensible text retrieval framework for news feeds in XML (RSS, ATOM) and JSON formats. Currently, the following feeds are implemented: Google Blog Search, Google Finance, Google News, NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo Inplay.
   - [webshot](http://cran.rstudio.com/web/packages/webshot/index.html) uses [PhantomJS](http://phantomjs.org/) to provide screenshots of web pages without a browser. It can be useful for testing websites (such as Shiny applications).
@@ -67,8 +67,9 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
   - *Javascript*: [V8](http://cran.rstudio.com/web/packages/V8/index.html) ([GitHub](https://github.com/jeroen/V8)) is an R interface to Google’s open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The [<span class="Ohat">SpiderMonkey</span>](http://www.Omegahat.net/SpiderMonkey/) package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R. The [js](http://cran.rstudio.com/web/packages/js/index.html) package wraps [V8](http://cran.rstudio.com/web/packages/V8/index.html) and validates, reformats, optimizes and analyzes JavaScript code.
   - *Email:*: [mailR](http://cran.rstudio.com/web/packages/mailR/index.html) is an interface to Apache Commons Email to send emails from within R. [sendmailR](http://cran.rstudio.com/web/packages/sendmailR/index.html) provides a simple SMTP client. [gmailr](http://cran.rstudio.com/web/packages/gmailr/index.html) provides access the Google’s gmail.com RESTful API.
-  - *Testing:*: [httptest](http://cran.rstudio.com/web/packages/httptest/index.html) ([GitHub](https://github.com/nealrichardson/httptest)) provides a framework for testing packages that communicate with HTTP APIs, offering tools for mocking APIs, for recording real API responses for use as mocks, and for making assertions about HTTP requests, all without requiring a live connection to the API server at runtime.
-  - *Miscellaneous*: [webutils](http://cran.rstudio.com/web/packages/webutils/index.html) ([GitHub](https://github.com/jeroen/webutils)) contains various functions for developing web applications, including parsers for `application/x-www-form-urlencoded` as well as `multipart/form-data`. [mime](http://cran.rstudio.com/web/packages/mime/index.html) ([GitHub](https://github.com/yihui/mime)) guesses the MIME type for a file from its extension. [rsdmx](http://cran.rstudio.com/web/packages/rsdmx/index.html) ([GitHub](https://github.com/opensdmx/rsdmx/wiki)) provides tools to read data and metadata documents exchanged through the Statistical Data and Metadata Exchange (SDMX) framework. The package currently focuses on the SDMX XML standard format (SDMX-ML). [robotstxt](http://cran.rstudio.com/web/packages/robotstxt/index.html) provides R6 classes for parsing and checking robots.txt files. [uaparserjs](http://cran.rstudio.com/web/packages/uaparserjs/index.html) ([GitHub](https://github.com/hrbrmstr/uaparserjs)) uses the javascript [“ua-parser” library](https://github.com/ua-parser) to parse User-Agent HTTP headers.
+  - *Mocking:*: [webmockr](http://cran.rstudio.com/web/packages/webmockr/index.html) is a library for stubbing and setting expectations on HTTP requests. It is inspired from Rubys `webmock`. This package only helps mock HTTP requests, and returns nothing when requests match expectations. See *Testing* for mocking with returned responses.
+  - *Testing:*: [vcr](https://github.com/ropensci/vcr) provides an interface to easily cache HTTP requests in R package test suites (but can be used outside of testing use cases as well). vcr relies on [webmockr](http://cran.rstudio.com/web/packages/webmockr/index.html) to do the HTTP request mocking. [httptest](http://cran.rstudio.com/web/packages/httptest/index.html) ([GitHub](https://github.com/nealrichardson/httptest)) provides a framework for testing packages that communicate with HTTP APIs, offering tools for mocking APIs, for recording real API responses for use as mocks, and for making assertions about HTTP requests, all without requiring a live connection to the API server at runtime.
+  - *Miscellaneous*: [webutils](http://cran.rstudio.com/web/packages/webutils/index.html) ([GitHub](https://github.com/jeroen/webutils)) contains various functions for developing web applications, including parsers for `application/x-www-form-urlencoded` as well as `multipart/form-data`. [mime](http://cran.rstudio.com/web/packages/mime/index.html) ([GitHub](https://github.com/yihui/mime)) guesses the MIME type for a file from its extension. [rsdmx](http://cran.rstudio.com/web/packages/rsdmx/index.html) ([GitHub](https://github.com/opensdmx/rsdmx/wiki)) provides tools to read data and metadata documents exchanged through the Statistical Data and Metadata Exchange (SDMX) framework. The package currently focuses on the SDMX XML standard format (SDMX-ML). [robotstxt](http://cran.rstudio.com/web/packages/robotstxt/index.html) provides R6 classes for parsing and checking robots.txt files. [uaparserjs](http://cran.rstudio.com/web/packages/uaparserjs/index.html) ([GitHub](https://github.com/hrbrmstr/uaparserjs)) uses the javascript [“ua-parser” library](https://github.com/ua-parser) to parse User-Agent HTTP headers. [rjsonapi](http://cran.rstudio.com/web/packages/rjsonapi/index.html) consumes APIs that Follow the [JSON API Specification](http://jsonapi.org/). [rapiclient](http://cran.rstudio.com/web/packages/rapiclient/index.html) is a client for consuming APIs that follow the [Open API format](https://www.openapis.org/).
 
 ## Web and Server Frameworks
 
@@ -107,7 +108,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
 **Document and Code Sharing**
 
-  - *Code Sharing*: [gistr](http://cran.rstudio.com/web/packages/gistr/index.html) ([GitHub](https://github.com/ropensci/gistr)) works with GitHub gists ([gist.github.com](https://gist.github.com/)) from R, allowing you to create new gists, update gists with new files, rename files, delete files, get and delete gists, star and un-star gists, fork gists, open a gist in your default browser, get embed code for a gist, list gist commits, and get rate limit information when authenticated. [git2r](http://cran.rstudio.com/web/packages/git2r/index.html) provides bindings to the git version control system and two packages provide access to the GitHub API: [gh](http://cran.rstudio.com/web/packages/gh/index.html) and [<span class="GitHub">rgithub</span>](https://github.com/cscheid/rgithub/) (not on CRAN), all of which can facilitate code or data sharing via GitHub. [gitlabr](http://cran.rstudio.com/web/packages/gitlabr/index.html) is a [GitLab](https://about.gitlab.com/) -specific client.
+  - *Code Sharing*: [gistr](http://cran.rstudio.com/web/packages/gistr/index.html) ([GitHub](https://github.com/ropensci/gistr)) works with GitHub gists ([gist.github.com](https://gist.github.com/)) from R, allowing you to create new gists, update gists with new files, rename files, delete files, get and delete gists, star and un-star gists, fork gists, open a gist in your default browser, get embed code for a gist, list gist commits, and get rate limit information when authenticated. [git2r](http://cran.rstudio.com/web/packages/git2r/index.html) provides bindings to the git version control system and two packages provide access to the GitHub API: [gh](http://cran.rstudio.com/web/packages/gh/index.html) and [<span class="GitHub">rgithub</span>](https://github.com/cscheid/rgithub/) (not on CRAN), all of which can facilitate code or data sharing via GitHub. [gitlabr](http://cran.rstudio.com/web/packages/gitlabr/index.html) is a [GitLab](https://about.gitlab.com/) -specific client. [<span class="GitHub">pastebin</span>](https://github.com/hrbrmstr/pastebin/) is a client for <https://pastebin.com/> a code sharing site.
   - *Data archiving*: [dvn](http://cran.rstudio.com/web/packages/dvn/index.html) ([GitHub](https://github.com/ropensci/dvn)) provides access to The Dataverse Network API. [rfigshare](http://cran.rstudio.com/web/packages/rfigshare/index.html) ([GitHub](https://github.com/ropensci/rfigshare)) connects with [Figshare.com](https://figshare.com/). [dataone](https://cran.rstudio.com/src/contrib/Archive/dataone/) provides read/write access to data and metadata from the [DataONE network](https://www.dataone.org/) of Member Node data repositories. [dataone](http://cran.rstudio.com/web/packages/dataone/index.html) ([GitHub](https://github.com/DataONEorg/rdataone)) provides a client for [DataONE](https://www.dataone.org/) repositories.
   - *Google Drive/Google Documents*: [<span class="GitHub">driver</span>](https://github.com/noamross/driver/) (not on CRAN) is a thin client for the Google Drive API. The [<span class="Ohat">RGoogleDocs</span>](http://www.Omegahat.net/RGoogleDocs/) package is an example of using the RCurl and XML packages to quickly develop an interface to the Google Documents API. [<span class="Ohat">RGoogleStorage</span>](http://www.Omegahat.net/RGoogleStorage/) provides programmatic access to the Google Storage API. This allows R users to access and store data on Google’s storage. We can upload and download content, create, list and delete folders/buckets, and set access control permissions on objects and buckets.
   - *Google Sheets*: [googlesheets](http://cran.rstudio.com/web/packages/googlesheets/index.html) ([GitHub](https://github.com/jennybc/googlesheets)) can access private or public Google Sheets by title, key, or URL. Extract data or edit data. Create, delete, rename, copy, upload, or download spreadsheets and worksheets. [gsheet](http://cran.rstudio.com/web/packages/gsheet/index.html) ([GitHub](https://github.com/maxconway/gsheet)) can download Google Sheets using just the sharing link. Spreadsheets can be downloaded as a data frame, or as plain text to parse manually.
@@ -140,6 +141,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [SocialMediaMineR](http://cran.rstudio.com/web/packages/SocialMediaMineR/index.html) is an analytic tool that returns information about the popularity of a URL on social media sites.
   - [tumblR](http://cran.rstudio.com/web/packages/tumblR/index.html) ([GitHub](https://github.com/klapaukh/tumblR)) is a client for the Tumblr API ( <https://www.tumblr.com/docs/en/api/v2>). Tumblr is a microblogging platform and social networking website <https://www.tumblr.com/>.
   - [vkR](http://cran.rstudio.com/web/packages/vkR/index.html) is a client for VK, a social networking site based in Russia.
+  - [<span class="GitHub">meetupr</span>](https://github.com/rladies/meetupr/) is a client for the Meetup.com API.
   - *Twitter*: [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html) ([GitHub](https://github.com/geoffjentry/twitteR)) provides an interface to the Twitter web API. It claims to be deprecated in favor of [rtweet](http://cran.rstudio.com/web/packages/rtweet/index.html) ([GitHub](https://github.com/mkearney/rtweet)). [<span class="GitHub">RTwitterAPI</span>](https://github.com/joyofdata/RTwitterAPI/) (not on CRAN) is another Twitter client. [<span class="GitHub">twitterreport</span>](https://github.com/gvegayon/twitterreport/) (not on CRAN) focuses on report generation based on Twitter data. [streamR](http://cran.rstudio.com/web/packages/streamR/index.html) provides a series of functions that allow users to access Twitter’s filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html) is an alternative implementation geared toward SQLite and postGIS databases. [graphTweets](http://cran.rstudio.com/web/packages/graphTweets/index.html) produces a network graph from a data.frame of tweets. [tweetscores](https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores) (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
 
 **Web Analytics Services**
@@ -164,7 +166,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
   - *Reference/bibliography/citation management*: [RefManageR](http://cran.rstudio.com/web/packages/RefManageR/index.html) imports and manage BibTeX and BibLaTeX references with RefManager. [RMendeley](https://cran.rstudio.com/src/contrib/Archive/RMendeley/): Implementation of the Mendeley API in R. Archived on CRAN. It’s been archived on CRAN temporarily until it is updated for the new Mendeley API. [rorcid](http://cran.rstudio.com/web/packages/rorcid/index.html) ([GitHub](https://github.com/ropensci/rorcid)) is a programmatic interface the [Orcid.org](https://orcid.org/) API, which can be used for identifying scientific authors and their publications (e.g., by DOI). [rplos](http://cran.rstudio.com/web/packages/rplos/index.html) is a programmatic interface to the Web Service methods provided by the Public Library of Science journals for search. [<span class="GitHub">rpubmed</span>](https://github.com/rOpenHealth/rpubmed/) (not on CRAN) provides tools for extracting and processing Pubmed and Pubmed Central records, and [europepmc](http://cran.rstudio.com/web/packages/europepmc/index.html) ([GitHub](https://github.com/ropensci/europepmc/)) connects to the Europe PubMed Central service. [scholar](http://cran.rstudio.com/web/packages/scholar/index.html) provides functions to extract citation data from Google Scholar. Convenience functions are also provided for comparing multiple scholars and predicting future h-index values. [pubmed.mineR](http://cran.rstudio.com/web/packages/pubmed.mineR/index.html) is a package for text mining of [PubMed Abstracts](https://www.ncbi.nlm.nih.gov/pubmed) that supports fetching text and XML from PubMed. [rdatacite](http://cran.rstudio.com/web/packages/rdatacite/index.html) ([GitHub](https://github.com/ropensci/rdatacite)) connects to [DataCite](https://www.datacite.org/). [oai](http://cran.rstudio.com/web/packages/oai/index.html) ([GitHub](https://github.com/ropensci/oai)) and [OAIHarvester](http://cran.rstudio.com/web/packages/OAIHarvester/index.html) harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard. [<span class="GitHub">JSTORr</span>](https://github.com/benmarwick/JSTORr/) (Not on CRAN) provides simple text mining of journal articles from JSTOR’s Data for Research service. [aRxiv](http://cran.rstudio.com/web/packages/aRxiv/index.html) ([GitHub](https://github.com/ropensci/aRxiv)) is a client for the arXiv API, a repository of electronic preprints for computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics.
 
-  - *Wikipedia*: [WikipediR](http://cran.rstudio.com/web/packages/WikipediR/index.html) ([GitHub](https://github.com/Ironholds/WikipediR)) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia ‘production’ wikis, such as Wikipedia. [rwikidata](https://github.com/chgrl/rwikidata) and [WikidataR](http://cran.rstudio.com/web/packages/WikidataR/index.html) ([GitHub](https://github.com/Ironholds/WikidataR)) can request data from [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase. [wikipediatrend](http://cran.rstudio.com/web/packages/wikipediatrend/index.html) ([GitHub](https://github.com/petermeissner/wikipediatrend)) provides access to Wikipedia page access statistics. [WikiSocio](http://cran.rstudio.com/web/packages/WikiSocio/index.html) can retrieve contributor lists and revision data.
+  - *Wikipedia*: [WikipediR](http://cran.rstudio.com/web/packages/WikipediR/index.html) ([GitHub](https://github.com/Ironholds/WikipediR)) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia ‘production’ wikis, such as Wikipedia. [rwikidata](https://github.com/chgrl/rwikidata) and [WikidataR](http://cran.rstudio.com/web/packages/WikidataR/index.html) ([GitHub](https://github.com/Ironholds/WikidataR)) can request data from [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase. [wikipediatrend](http://cran.rstudio.com/web/packages/wikipediatrend/index.html) ([GitHub](https://github.com/petermeissner/wikipediatrend)) provides access to Wikipedia page access statistics. [WikiSocio](http://cran.rstudio.com/web/packages/WikiSocio/index.html) can retrieve contributor lists and revision data. [WikidataQueryServiceR](http://cran.rstudio.com/web/packages/WikidataQueryServiceR/index.html) is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 
   - [bigrquery](http://cran.rstudio.com/web/packages/bigrquery/index.html) ([GitHub](https://github.com/r-dbi/bigrquery)): An interface to Google’s bigquery.
 
@@ -188,7 +190,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
   - [infochimps](https://cran.rstudio.com/src/contrib/Archive/infochimps/) ([GitHub](https://github.com/drewconway/infochimps); archived) is an R wrapper for the infochimps.com API services.
 
-  - [ropensci/internetarchive](http://cran.rstudio.com/web/packages/ropensci/internetarchive/index.html): API client for internet archive metadata.
+  - [internetarchive](http://cran.rstudio.com/web/packages/internetarchive/index.html): API client for internet archive metadata.
 
   - [<span class="GitHub">irced</span>](https://github.com/hrbrmstr/irced/) (not on CRAN) is an IRC chat client.
 
@@ -226,7 +228,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
   - [RLastFM](https://cran.rstudio.com/src/contrib/Archive/RLastFM/) (archived on CRAN) is a package to interface to the last.fm API. Archived on CRAN.
 
-  - [ROpenWeatherMap](http://cran.rstudio.com/web/packages/ROpenWeatherMap/index.html) is a client for location-based weather data and forecasting from [Open Weather Map](http://openweathermap.org/api).
+  - Two packages, [owmr](http://cran.rstudio.com/web/packages/owmr/index.html) and [ROpenWeatherMap](http://cran.rstudio.com/web/packages/ROpenWeatherMap/index.html), work with the [Open Weather Map API](https://openweathermap.org/api).
 
   - [RSauceLabs](http://cran.rstudio.com/web/packages/RSauceLabs/index.html) ([GitHub](https://johndharrison.github.io/RSauceLabs/)) connects to [SauceLabs](https://saucelabs.com/).
 
@@ -235,6 +237,8 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [RStripe](http://cran.rstudio.com/web/packages/RStripe/index.html) provides an interface to [Stripe](https://stripe.com/), an online payment processor.
 
   - [RZabbix](http://cran.rstudio.com/web/packages/RZabbix/index.html) links with the [Zabbix network monitoring service API](https://www.zabbix.com/documentation/3.0/manual/api/reference).
+
+  - [rwars](http://cran.rstudio.com/web/packages/rwars/index.html) retrieve and reformat data from the [Star Wars API (SWAPI)](https://swapi.co/).
 
   - [shopifyr](http://cran.rstudio.com/web/packages/shopifyr/index.html): An interface to the API of the E-commerce service Shopify <https://help.shopify.com/api>.
 
@@ -337,6 +341,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [httr](http://cran.rstudio.com/web/packages/httr/index.html) (core)
   - [imguR](http://cran.rstudio.com/web/packages/imguR/index.html)
   - [instaR](http://cran.rstudio.com/web/packages/instaR/index.html)
+  - [internetarchive](http://cran.rstudio.com/web/packages/internetarchive/index.html)
   - [jqr](http://cran.rstudio.com/web/packages/jqr/index.html)
   - [js](http://cran.rstudio.com/web/packages/js/index.html)
   - [jSonarR](http://cran.rstudio.com/web/packages/jSonarR/index.html)
@@ -367,6 +372,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [osmar](http://cran.rstudio.com/web/packages/osmar/index.html)
   - [osmplotr](http://cran.rstudio.com/web/packages/osmplotr/index.html)
   - [osrm](http://cran.rstudio.com/web/packages/osrm/index.html)
+  - [owmr](http://cran.rstudio.com/web/packages/owmr/index.html)
   - [pdftables](http://cran.rstudio.com/web/packages/pdftables/index.html)
   - [placement](http://cran.rstudio.com/web/packages/placement/index.html)
   - [plotGoogleMaps](http://cran.rstudio.com/web/packages/plotGoogleMaps/index.html)
@@ -381,6 +387,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [radiant](http://cran.rstudio.com/web/packages/radiant/index.html)
   - [RAdwords](http://cran.rstudio.com/web/packages/RAdwords/index.html)
   - [randNames](http://cran.rstudio.com/web/packages/randNames/index.html)
+  - [rapiclient](http://cran.rstudio.com/web/packages/rapiclient/index.html)
   - [rapport](http://cran.rstudio.com/web/packages/rapport/index.html)
   - [Rbitcoin](http://cran.rstudio.com/web/packages/Rbitcoin/index.html)
   - [rbitcoinchartsapi](http://cran.rstudio.com/web/packages/rbitcoinchartsapi/index.html)
@@ -409,13 +416,13 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [rhub](http://cran.rstudio.com/web/packages/rhub/index.html)
   - [rio](http://cran.rstudio.com/web/packages/rio/index.html)
   - [rjson](http://cran.rstudio.com/web/packages/rjson/index.html)
+  - [rjsonapi](http://cran.rstudio.com/web/packages/rjsonapi/index.html)
   - [RJSONIO](http://cran.rstudio.com/web/packages/RJSONIO/index.html)
   - [rLTP](http://cran.rstudio.com/web/packages/rLTP/index.html)
   - [ROAuth](http://cran.rstudio.com/web/packages/ROAuth/index.html)
   - [robotstxt](http://cran.rstudio.com/web/packages/robotstxt/index.html)
   - [Rook](http://cran.rstudio.com/web/packages/Rook/index.html)
   - [ROpenFIGI](http://cran.rstudio.com/web/packages/ROpenFIGI/index.html)
-  - [ropensci](http://cran.rstudio.com/web/packages/ropensci/index.html)
   - [ROpenWeatherMap](http://cran.rstudio.com/web/packages/ROpenWeatherMap/index.html)
   - [rorcid](http://cran.rstudio.com/web/packages/rorcid/index.html)
   - [rosetteApi](http://cran.rstudio.com/web/packages/rosetteApi/index.html)
@@ -434,6 +441,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [RStripe](http://cran.rstudio.com/web/packages/RStripe/index.html)
   - [rtweet](http://cran.rstudio.com/web/packages/rtweet/index.html)
   - [rvest](http://cran.rstudio.com/web/packages/rvest/index.html)
+  - [rwars](http://cran.rstudio.com/web/packages/rwars/index.html)
   - [RYandexTranslate](http://cran.rstudio.com/web/packages/RYandexTranslate/index.html)
   - [RZabbix](http://cran.rstudio.com/web/packages/RZabbix/index.html)
   - [scholar](http://cran.rstudio.com/web/packages/scholar/index.html)
@@ -474,6 +482,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [webshot](http://cran.rstudio.com/web/packages/webshot/index.html)
   - [webutils](http://cran.rstudio.com/web/packages/webutils/index.html)
   - [whisker](http://cran.rstudio.com/web/packages/whisker/index.html)
+  - [WikidataQueryServiceR](http://cran.rstudio.com/web/packages/WikidataQueryServiceR/index.html)
   - [WikidataR](http://cran.rstudio.com/web/packages/WikidataR/index.html)
   - [wikipediatrend](http://cran.rstudio.com/web/packages/wikipediatrend/index.html)
   - [WikipediR](http://cran.rstudio.com/web/packages/WikipediR/index.html)
@@ -482,6 +491,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [XML](http://cran.rstudio.com/web/packages/XML/index.html)
   - [xml2](http://cran.rstudio.com/web/packages/xml2/index.html) (core)
   - [XML2R](http://cran.rstudio.com/web/packages/XML2R/index.html)
+  - [xslt](http://cran.rstudio.com/web/packages/xslt/index.html)
   - [yhatr](http://cran.rstudio.com/web/packages/yhatr/index.html)
   - [yummlyr](http://cran.rstudio.com/web/packages/yummlyr/index.html)
   - [zendeskR](http://cran.rstudio.com/web/packages/zendeskR/index.html)
