@@ -4,7 +4,7 @@ pattern <- "pkg>[[:alnum:]]+[[:alnum:].]*[[:alnum:]]+"
 out <- paste0(template, collapse = " ")
 pkgs <- stringr::str_extract_all(out, pattern)[[1]]
 pkgs <- unique(gsub("^pkg>", "", pkgs))
-priority <- c('curl','httr','jsonlite','RSelenium','shiny','xml2')
+priority <- c('curl','httr','crul','jsonlite','RSelenium','shiny','xml2')
 pkgs <- pkgs[ !pkgs %in% priority] # remove priority packages
 pkgs <- lapply(as.list(sort(pkgs)), function(x) list(package=x))
 output <- 

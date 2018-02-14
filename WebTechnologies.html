@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2018-01-08" />
+  <meta name="citation_publication_date" content="2018-02-13" />
   <meta name="citation_public_url" content="https://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2018-01-08" />
+  <meta name="DC.issued" content="2018-02-13" />
   <meta name="DC.identifier" content="https://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,7 +19,7 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x73;&#x63;&#x6f;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x72;&#x6f;&#x70;&#x65;&#x6e;&#x73;&#x63;&#x69;&#x2e;&#x6f;&#x72;&#x67;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2018-01-08</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2018-02-13</td></tr>
     <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=WebTechnologies">https://CRAN.R-project.org/view=WebTechnologies</a></td></tr>
   </table>
 
@@ -70,33 +70,39 @@
 <tt>warn_for_status()</tt>.) Note that you can pass in additional libcurl options to the
 <tt>config</tt>
         parameter in http calls.
-<a href="../packages/RCurl/index.html">RCurl</a>
+<a href="../packages/curl/index.html">curl</a>
         is a lower-level package that provides a closer interface between R and the
         <a href="https://curl.haxx.se/libcurl/">
           libcurl C library
-        </a>, but is less user-friendly. It may be useful for operations on web-based XML or to perform FTP operations. For more specific situations, the following resources may be useful:
+        </a>, but is less user-friendly. It may be useful for operations on web-based XML or to perform FTP operations.
+<tt>curl::curl()</tt>
+        is an SSL-compatible replacement for base R’s
+<tt>url()</tt>
+        and has support for http 2.0, SSL (https, ftps), gzip, deflate and more. For websites serving insecure HTTP (i.e. using the “http” not “https” prefix), most R functions can extract data directly, including
+<tt>read.table</tt>
+        and
+<tt>read.csv</tt>; this also applies to functions in add-on packages such as
+<tt>jsonlite::fromJSON()</tt>
+        and
+<tt>XML::parseXML</tt>. For more specific situations, the following resources may be useful:
       </p>
       <ul>
         <li>
-<a href="../packages/curl/index.html">curl</a>
-          is another libcurl client that provides the
-<tt>curl()</tt>
-          function as an SSL-compatible replacement for base R’s
-<tt>url()</tt>
-          and support for http 2.0, ssl (https, ftps), gzip, deflate and more. For websites serving insecure HTTP (i.e. using the “http” not “https” prefix), most R functions can extract data directly, including
-<tt>read.table</tt>
-          and
-<tt>read.csv</tt>; this also applies to functions in add-on packages such as
-<tt>jsonlite::fromJSON()</tt>
-          and
-<tt>XML::parseXML</tt>.
+<a href="../packages/RCurl/index.html">RCurl</a>
+          xxxxx.
 <a href="../packages/httpRequest/index.html">httpRequest</a>
           is another low-level package for HTTP requests that implements the GET, POST and multipart POST verbs.
+        </li>
+        <li>
 <a href="../packages/crul/index.html">crul</a>
           (
           <a href="https://github.com/ropensci/crul">
             GitHub
-          </a>) is an R6-based curl interface.
+          </a>) is an R6-based HTTP client that provides asynchronous HTTP requests, a pagination helper, HTTP mocking via
+<a href="../packages/webmockr/index.html">webmockr</a>, and request caching via
+          <a href="https://github.com/ropensci/vcr">
+            vcr
+          </a>. It targets developers of other R packages more so than end users.
         </li>
         <li>
           <a href="https://github.com/hrbrmstr/curlconverter">
@@ -718,7 +724,7 @@
                 awsConnect
               </a>
               (not on CRAN) both use the AWS command line interface to control EC2.
-<a href="http://code.google.com/p/segue/"><span class="Gcode">segue</span></a>
+<a href="https://code.google.com/p/segue/"><span class="Gcode">segue</span></a>
               (not on CRAN) is another package for managing EC2 instances and S3 storage, which includes a parallel version of
 <tt>lapply()</tt>
               for the Elastic Map Reduce (EMR) engine called
@@ -2083,7 +2089,7 @@
     <li><a href="../packages/clarifai/index.html">clarifai</a></li>
     <li><a href="../packages/colourlovers/index.html">colourlovers</a></li>
     <li><a href="../packages/crplyr/index.html">crplyr</a></li>
-    <li><a href="../packages/crul/index.html">crul</a></li>
+    <li><a href="../packages/crul/index.html">crul</a> (core)</li>
     <li><a href="../packages/crunch/index.html">crunch</a></li>
     <li><a href="../packages/crunchy/index.html">crunchy</a></li>
     <li><a href="../packages/curl/index.html">curl</a> (core)</li>
@@ -2253,6 +2259,7 @@
     <li><a href="../packages/V8/index.html">V8</a></li>
     <li><a href="../packages/validatejsonr/index.html">validatejsonr</a></li>
     <li><a href="../packages/W3CMarkupValidator/index.html">W3CMarkupValidator</a></li>
+    <li><a href="../packages/webmockr/index.html">webmockr</a></li>
     <li><a href="../packages/webreadr/index.html">webreadr</a></li>
     <li><a href="../packages/webshot/index.html">webshot</a></li>
     <li><a href="../packages/webutils/index.html">webutils</a></li>
