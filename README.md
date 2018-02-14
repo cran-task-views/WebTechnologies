@@ -32,6 +32,11 @@ There are two packages that should cover most use cases of interacting with the 
   - Tabular data sets (e.g., txt, csv, etc.) can be input using `read.table()`, `read.csv()`, and friends, again assuming that the files are not hosted via SSL. An alternative is to use `httr::GET` (or `RCurl::getURL`) to first read the file into R as a character vector before parsing with `read.table(text=...)`, or you can download the file to a local directory. [rio](http://cran.rstudio.com/web/packages/rio/index.html) ([GitHub](https://github.com/leeper/rio)) provides an `import()` function that can read a number of common data formats directly from an https:// URL. The [repmis](http://cran.rstudio.com/web/packages/repmis/index.html) function `source_data()` can load and cache plain-text data from a URL (either http or https). That package also includes `source_Dropbox()` for downloading/caching plain-text data from non-public Dropbox folders and `source_XlsxData()` for downloading/caching Excel xlsx sheets.
   - *Authentication*: Using web resources can require authentication, either via API keys, OAuth, username:password combination, or via other means. Additionally, sometimes web resources that require authentication be in the header of an http call, which requires a little bit of extra work. API keys and username:password combos can be combined within a url for a call to a web resource (api key: http://api.foo.org/?key=yourkey; user/pass: http://username:password@api.foo.org), or can be specified via commands in [RCurl](http://cran.rstudio.com/web/packages/RCurl/index.html) or [httr](http://cran.rstudio.com/web/packages/httr/index.html). OAuth is the most complicated authentication process, and can be most easily done using [httr](http://cran.rstudio.com/web/packages/httr/index.html). See the 6 demos within [httr](http://cran.rstudio.com/web/packages/httr/index.html), three for OAuth 1.0 (linkedin, twitter, vimeo) and three for OAuth 2.0 (facebook, GitHub, google). [ROAuth](http://cran.rstudio.com/web/packages/ROAuth/index.html) is a package that provides a separate R interface to OAuth. OAuth is easier to to do in [httr](http://cran.rstudio.com/web/packages/httr/index.html), so start there. [googleAuthR](https://github.com/MarkEdmondson1234/googleAuthR) provides an OAuth 2.0 setup specifically for Google web services.
 
+**Handling HTTP Errors/Codes**
+
+  - [fauxpaus](http://cran.rstudio.com/web/packages/fauxpaus/index.html) brings a set of Ruby or Python like R6 classes for each individual HTTP status code, allowing simple and verbose messages, with a choice of using messages, warnings, or stops.
+  - [httpcode](http://cran.rstudio.com/web/packages/httpcode/index.html) is a simple package to help a user/package find HTTP status codes and associated messages by name or number.
+
 **Parsing Structured Web Data**
 
 The vast majority of web-based data is structured as plain text, HTML, XML, or JSON (javascript object notation). Web service APIs increasingly rely on JSON, but XML is still prevalent in many applications. There are several packages for specifically working with these format. These functions can be used to interact directly with insecure webpages or can be used to parse locally stored or in-memory web files.
@@ -142,6 +147,10 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [RAdwords](http://cran.rstudio.com/web/packages/RAdwords/index.html) ([GitHub](https://github.com/jburkhardt/RAdwords)) is a package for loading Google Adwords data.
   - [webreadr](http://cran.rstudio.com/web/packages/webreadr/index.html) ([GitHub](https://github.com/Ironholds/webreadr)) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.
   - [ApacheLogProcessor](http://cran.rstudio.com/web/packages/ApacheLogProcessor/index.html) ([GitHub](https://github.com/diogosmendonca/ApacheLogProcessor)) can process Apache Web Server log files.
+
+**Web Services for R Package Development**
+
+  - R-Hub <http://log.r-hub.io/> is a project to enable package builds across all architectures. [rhub](http://cran.rstudio.com/web/packages/rhub/index.html) is a package that interfaces with R-Hub to allow you to check a package on the platform.
 
 **Other Web Services**
 
@@ -286,6 +295,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [europepmc](http://cran.rstudio.com/web/packages/europepmc/index.html)
   - [factualR](http://cran.rstudio.com/web/packages/factualR/index.html)
   - [FastRWeb](http://cran.rstudio.com/web/packages/FastRWeb/index.html)
+  - [fauxpaus](http://cran.rstudio.com/web/packages/fauxpaus/index.html)
   - [fbRads](http://cran.rstudio.com/web/packages/fbRads/index.html)
   - [feedeR](http://cran.rstudio.com/web/packages/feedeR/index.html)
   - [fiery](http://cran.rstudio.com/web/packages/fiery/index.html)
@@ -311,6 +321,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [htmltab](http://cran.rstudio.com/web/packages/htmltab/index.html)
   - [htmltidy](http://cran.rstudio.com/web/packages/htmltidy/index.html)
   - [httpcache](http://cran.rstudio.com/web/packages/httpcache/index.html)
+  - [httpcode](http://cran.rstudio.com/web/packages/httpcode/index.html)
   - [httping](http://cran.rstudio.com/web/packages/httping/index.html)
   - [httpRequest](http://cran.rstudio.com/web/packages/httpRequest/index.html)
   - [httptest](http://cran.rstudio.com/web/packages/httptest/index.html)
@@ -386,6 +397,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [RGoogleAnalytics](http://cran.rstudio.com/web/packages/RGoogleAnalytics/index.html)
   - [RGoogleFit](http://cran.rstudio.com/web/packages/RGoogleFit/index.html)
   - [RgoogleMaps](http://cran.rstudio.com/web/packages/RgoogleMaps/index.html)
+  - [rhub](http://cran.rstudio.com/web/packages/rhub/index.html)
   - [rio](http://cran.rstudio.com/web/packages/rio/index.html)
   - [rjson](http://cran.rstudio.com/web/packages/rjson/index.html)
   - [RJSONIO](http://cran.rstudio.com/web/packages/RJSONIO/index.html)
