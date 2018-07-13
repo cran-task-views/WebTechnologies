@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------------------------------------- |
 | **Maintainer:** | Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | scott at ropensci.org                                                            |
-| **Version:**    | 2018-02-14                                                                       |
+| **Version:**    | 2018-07-13                                                                       |
 | **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 <div>
@@ -25,7 +25,7 @@ There are two packages that should cover most use cases of interacting with the 
   - [crul](http://cran.rstudio.com/web/packages/crul/index.html) ([GitHub](https://github.com/ropensci/crul)) is an R6-based HTTP client that provides asynchronous HTTP requests, a pagination helper, HTTP mocking via [webmockr](http://cran.rstudio.com/web/packages/webmockr/index.html), and request caching via [vcr](https://github.com/ropensci/vcr). It targets developers of other R packages more so than end users.
   - [<span class="GitHub">curlconverter</span>](https://github.com/hrbrmstr/curlconverter/) (not on CRAN) is a useful package for converting curl command-line code, for example from a browser developer’s console, into R code.
   - [request](http://cran.rstudio.com/web/packages/request/index.html) ([GitHub](https://github.com/sckott/request)) provides a high-level package that is useful for developing other API client packages. [httping](http://cran.rstudio.com/web/packages/httping/index.html) ([GitHub](https://github.com/sckott/httping)) provides simplified tools to ping and time HTTP requests, around [httr](http://cran.rstudio.com/web/packages/httr/index.html) calls. [httpcache](http://cran.rstudio.com/web/packages/httpcache/index.html) ([GitHub](https://github.com/nealrichardson/httpcache)) provides a mechanism for caching HTTP requests.
-  - For dynamically generated webpages (i.e., those requiring user interaction to display results), [RSelenium](http://cran.rstudio.com/web/packages/RSelenium/index.html) ([GitHub](https://github.com/ropensci/RSelenium/)) can be used to automate those interactions and extract page contents. It provides a set of bindings for the Selenium 2.0 webdriver using the [JsonWireProtocol](https://github.com/seleniumhq/selenium-google-code-issue-archive). It can also aid in automated application testing, load testing, and web scraping. [seleniumPipes](http://cran.rstudio.com/web/packages/seleniumPipes/index.html) ([GitHub](https://github.com/johndharrison/seleniumPipes)) provides a “pipe”-oriented interface to the same. [<span class="GitHub">rdom</span>](https://github.com/cpsievert/rdom/) (not on CRAN) uses [phantomjs](http://phantomjs.org/) to access a webpage’s Document Object Model (DOM).
+  - For dynamically generated webpages (i.e., those requiring user interaction to display results), [<span class="GitHub">RSelenium</span>](https://github.com/ropensci/RSelenium/) can be used to automate those interactions and extract page contents. It provides a set of bindings for the Selenium 2.0 webdriver using the [JsonWireProtocol](https://github.com/seleniumhq/selenium-google-code-issue-archive). It can also aid in automated application testing, load testing, and web scraping. [seleniumPipes](http://cran.rstudio.com/web/packages/seleniumPipes/index.html) ([GitHub](https://github.com/johndharrison/seleniumPipes)) provides a “pipe”-oriented interface to the same. [<span class="GitHub">rdom</span>](https://github.com/cpsievert/rdom/) (not on CRAN) uses [phantomjs](http://phantomjs.org/) to access a webpage’s Document Object Model (DOM).
   - For capturing static content of web pages [postlightmercury](http://cran.rstudio.com/web/packages/postlightmercury/index.html) is a client for the web service [Mercury](https://mercury.postlight.com/) that turns web pages into structured and clean text.
   - Another, higher-level alternative package useful for webscraping is [rvest](http://cran.rstudio.com/web/packages/rvest/index.html) ([GitHub](https://github.com/hadley/rvest)), which is designed to work with [magrittr](http://cran.rstudio.com/web/packages/magrittr/index.html) to make it easy to express common web scraping tasks.
   - Many base R tools can be used to download web content, provided that the website does not use SSL (i.e., the URL does not have the “https” prefix). `download.file()` is a general purpose function that can be used to download a remote file. For SSL, the `download()` function in [downloader](http://cran.rstudio.com/web/packages/downloader/index.html) wraps `download.file()`, and takes all the same arguments.
@@ -34,7 +34,7 @@ There are two packages that should cover most use cases of interacting with the 
 
 **Handling HTTP Errors/Codes**
 
-  - [fauxpaus](http://cran.rstudio.com/web/packages/fauxpaus/index.html) brings a set of Ruby or Python like R6 classes for each individual HTTP status code, allowing simple and verbose messages, with a choice of using messages, warnings, or stops.
+  - [fauxpas](http://cran.rstudio.com/web/packages/fauxpas/index.html) brings a set of Ruby or Python like R6 classes for each individual HTTP status code, allowing simple and verbose messages, with a choice of using messages, warnings, or stops.
   - [httpcode](http://cran.rstudio.com/web/packages/httpcode/index.html) is a simple package to help a user/package find HTTP status codes and associated messages by name or number.
 
 **Parsing Structured Web Data**
@@ -52,7 +52,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - The `httr::parse_url()` function can be used to extract portions of a URL. The `RCurl::URLencode()` and `utils::URLencode()` functions can be used to encode character strings for use in URLs. `utils::URLdecode()` decodes back to the original strings. [urltools](http://cran.rstudio.com/web/packages/urltools/index.html) ([GitHub](https://github.com/Ironholds/urltools)) can also handle URL encoding, decoding, parsing, and parameter extraction.
   - The [tldextract](https://github.com/jayjacobs/tldextract) package extract top level domains and subdomains from a host name. It’s a port of [a Python library of the same name](https://github.com/john-kurkowski/tldextract).
   - [iptools](https://github.com/hrbrmstr/iptools) can facilitate working with IPv4 addresses, including for use in geolocation.
-  - [urlshorteneR](http://cran.rstudio.com/web/packages/urlshorteneR/index.html) ([GitHub](https://github.com/dmpe/urlshorteneR)) offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd. [longurl](http://cran.rstudio.com/web/packages/longurl/index.html) uses the longurl.org API to provide similar functionality (which as of Jan 2018 appears to be completely gone).
+  - [urlshorteneR](http://cran.rstudio.com/web/packages/urlshorteneR/index.html) ([GitHub](https://github.com/dmpe/urlshorteneR)) offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd. [longurl](http://cran.rstudio.com/web/packages/longurl/index.html) uses the longurl.org API to provide similar functionality.
   - [gdns](http://cran.rstudio.com/web/packages/gdns/index.html) ([GitHub](https://github.com/hrbrmstr/gdns)) provides access to Google’s secure HTTP-based DNS resolution service.
 
 **Tools for Working with Scraped Webpage Contents**
@@ -84,7 +84,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [rapporter.net](http://rapporter.net/welcome/en) provides an online environment (SaaS) to host and run [rapport](http://cran.rstudio.com/web/packages/rapport/index.html) statistical report templates in the cloud.
   - [radiant](http://cran.rstudio.com/web/packages/radiant/index.html) ([GitHub](https://github.com/radiant-rstats/radiant)) is Shiny-based GUI for R that runs in a browser from a server or local machine.
   - [<span class="GitHub">neocities</span>](https://github.com/seankross/neocities/) wraps the API for the [Neocities](https://neocities.org/) web hosting service. (not on CRAN)
-  - The [Tiki](https://r.tiki.org/tiki-index.php) Wiki CMS/Groupware framework has an R plugin ([PluginR](https://doc.tiki.org/PluginR)) to run R code from wiki pages, and use data from their own collected web databases (trackers). A demo: <https://r.tiki.org/tiki-index.php>.
+  - The [Tiki](https://tiki.org/tiki-index.php) Wiki CMS/Groupware framework has an R plugin ([PluginR](https://doc.tiki.org/PluginR)) to run R code from wiki pages, and use data from their own collected web databases (trackers). A demo: <https://r.tiki.org/tiki-index.php>.
   - The [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) has an extension ([Extension:R](https://www.mediawiki.org/wiki/Extension:R)) to run R code from wiki pages, and use uploaded data. A mailing list used to be available: R-sig-mediawiki.
   - [whisker](http://cran.rstudio.com/web/packages/whisker/index.html): Implementation of logicless templating based on [Mustache](http://mustache.github.io/) in R. Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
   - [<span class="Ohat">CGIwithR</span>](http://www.Omegahat.net/CGIwithR/) (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.
@@ -94,7 +94,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 **Cloud Computing and Storage**
 
   - Amazon Web Services is a popular, proprietary cloud service offering a suite of computing, storage, and infrastructure tools. [aws.signature](http://cran.rstudio.com/web/packages/aws.signature/index.html) provides functionality for generating AWS API request signatures.
-      - *Simple Storage Service (S3)* is a commercial server that allows one to store content and retrieve it from any machine connected to the Internet. [\<aws.s3](http://cran.rstudio.com/web/packages/%3Caws.s3/index.html) is probably the best R client for S3. [<span class="Ohat">RAmazonS3</span>](http://www.Omegahat.net/RAmazonS3/) and [<span class="GitHub">s3mpi</span>](https://github.com/robertzk/s3mpi/) (not on CRAN) provides basic infrastructure for communicating with S3. [AWS.tools](https://cran.rstudio.com/src/contrib/Archive/AWS.tools/) ([GitHub](https://github.com/armstrtw/AWS.tools)) interacts with S3 and EC2 using the AWS command line interface (an external system dependency). The CRAN version is archived. [<span class="GitHub">awsConnect</span>](https://github.com/lalas/awsConnect/) (not on CRAN) is another package using the AWS Command Line Interface to control EC2 and S3, which is only available for Linux and Mac OS.
+      - *Simple Storage Service (S3)* is a commercial server that allows one to store content and retrieve it from any machine connected to the Internet. [aws.s3](http://cran.rstudio.com/web/packages/aws.s3/index.html) is probably the best R client for S3. [<span class="Ohat">RAmazonS3</span>](http://www.Omegahat.net/RAmazonS3/) and [<span class="GitHub">s3mpi</span>](https://github.com/robertzk/s3mpi/) (not on CRAN) provides basic infrastructure for communicating with S3. [AWS.tools](https://cran.rstudio.com/src/contrib/Archive/AWS.tools/) ([GitHub](https://github.com/armstrtw/AWS.tools)) interacts with S3 and EC2 using the AWS command line interface (an external system dependency). The CRAN version is archived. [<span class="GitHub">awsConnect</span>](https://github.com/lalas/awsConnect/) (not on CRAN) is another package using the AWS Command Line Interface to control EC2 and S3, which is only available for Linux and Mac OS.
       - *Elastic Cloud Compute (EC2)* is a cloud computing service. AWS.tools and [<span class="GitHub">awsConnect</span>](https://github.com/lalas/awsConnect/) (not on CRAN) both use the AWS command line interface to control EC2. [<span class="Gcode">segue</span>](https://code.google.com/p/segue/) (not on CRAN) is another package for managing EC2 instances and S3 storage, which includes a parallel version of `lapply()` for the Elastic Map Reduce (EMR) engine called `emrlapply()`. It uses Hadoop Streaming on Amazon’s EMR in order to get simple parallel computation.
       - *Simple Notification Service (SNS)* is a service for Pub/Sub messaging and mobile notifications for microservices, distributed systems, and serverless applications. [aws.sns](http://cran.rstudio.com/web/packages/aws.sns/index.html)
       - *AWS Polly* is a Text-to-Speech (TTS) cloud service that converts text into lifelike speech. [aws.polly](http://cran.rstudio.com/web/packages/aws.polly/index.html)
@@ -109,7 +109,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 **Document and Code Sharing**
 
   - *Code Sharing*: [gistr](http://cran.rstudio.com/web/packages/gistr/index.html) ([GitHub](https://github.com/ropensci/gistr)) works with GitHub gists ([gist.github.com](https://gist.github.com/)) from R, allowing you to create new gists, update gists with new files, rename files, delete files, get and delete gists, star and un-star gists, fork gists, open a gist in your default browser, get embed code for a gist, list gist commits, and get rate limit information when authenticated. [git2r](http://cran.rstudio.com/web/packages/git2r/index.html) provides bindings to the git version control system and two packages provide access to the GitHub API: [gh](http://cran.rstudio.com/web/packages/gh/index.html) and [<span class="GitHub">rgithub</span>](https://github.com/cscheid/rgithub/) (not on CRAN), all of which can facilitate code or data sharing via GitHub. [gitlabr](http://cran.rstudio.com/web/packages/gitlabr/index.html) is a [GitLab](https://about.gitlab.com/) -specific client. [<span class="GitHub">pastebin</span>](https://github.com/hrbrmstr/pastebin/) is a client for <https://pastebin.com/> a code sharing site.
-  - *Data archiving*: [dvn](http://cran.rstudio.com/web/packages/dvn/index.html) ([GitHub](https://github.com/ropensci/dvn)) provides access to The Dataverse Network API. [rfigshare](http://cran.rstudio.com/web/packages/rfigshare/index.html) ([GitHub](https://github.com/ropensci/rfigshare)) connects with [Figshare.com](https://figshare.com/). [dataone](https://cran.rstudio.com/src/contrib/Archive/dataone/) provides read/write access to data and metadata from the [DataONE network](https://www.dataone.org/) of Member Node data repositories. [dataone](http://cran.rstudio.com/web/packages/dataone/index.html) ([GitHub](https://github.com/DataONEorg/rdataone)) provides a client for [DataONE](https://www.dataone.org/) repositories.
+  - *Data archiving*: [dataverse](http://cran.rstudio.com/web/packages/dataverse/index.html) ([GitHub](https://github.com/iqss/dataverse-client-r)) provides access to Dataverse 4 APIs. [rfigshare](http://cran.rstudio.com/web/packages/rfigshare/index.html) ([GitHub](https://github.com/ropensci/rfigshare)) connects with [Figshare.com](https://figshare.com/). [dataone](https://cran.rstudio.com/src/contrib/Archive/dataone/) provides read/write access to data and metadata from the [DataONE network](https://www.dataone.org/) of Member Node data repositories. [dataone](http://cran.rstudio.com/web/packages/dataone/index.html) ([GitHub](https://github.com/DataONEorg/rdataone)) provides a client for [DataONE](https://www.dataone.org/) repositories.
   - *Google Drive/Google Documents*: [<span class="GitHub">driver</span>](https://github.com/noamross/driver/) (not on CRAN) is a thin client for the Google Drive API. The [<span class="Ohat">RGoogleDocs</span>](http://www.Omegahat.net/RGoogleDocs/) package is an example of using the RCurl and XML packages to quickly develop an interface to the Google Documents API. [<span class="Ohat">RGoogleStorage</span>](http://www.Omegahat.net/RGoogleStorage/) provides programmatic access to the Google Storage API. This allows R users to access and store data on Google’s storage. We can upload and download content, create, list and delete folders/buckets, and set access control permissions on objects and buckets.
   - *Google Sheets*: [googlesheets](http://cran.rstudio.com/web/packages/googlesheets/index.html) ([GitHub](https://github.com/jennybc/googlesheets)) can access private or public Google Sheets by title, key, or URL. Extract data or edit data. Create, delete, rename, copy, upload, or download spreadsheets and worksheets. [gsheet](http://cran.rstudio.com/web/packages/gsheet/index.html) ([GitHub](https://github.com/maxconway/gsheet)) can download Google Sheets using just the sharing link. Spreadsheets can be downloaded as a data frame, or as plain text to parse manually.
   - [imguR](http://cran.rstudio.com/web/packages/imguR/index.html) ([GitHub](https://github.com/cloudyr/imguR)) is a package to share plots using the image hosting service [Imgur.com](https://imgur.com/). knitr also has a function `imgur_upload()` to load images from literate programming documents.
@@ -146,13 +146,12 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
 **Web Analytics Services**
 
-  - *Google Trends*: [<span class="GitHub">GTrendsR</span>](https://github.com/hubte1g/GTrendsR/) (not on CRAN) offers functions to perform and display Google Trends queries. Another GitHub package ([rGtrends](https://github.com/emhart/rGtrends)) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers. [<span class="Ohat">RGoogleTrends</span>](http://www.Omegahat.net/RGoogleTrends/) provides another alternative.
-  - *Google Analytics*: [googleAnalyticsR](http://cran.rstudio.com/web/packages/googleAnalyticsR/index.html) ([GitHub](http://code.markedmondson.me/googleAnalyticsR/)), [RGoogleAnalytics](http://cran.rstudio.com/web/packages/RGoogleAnalytics/index.html) ([GitHub](https://github.com/Tatvic/RGoogleAnalytics/issues)), [ganalytics](https://github.com/jdeboer/ganalytics) (GitHub: [<span class="GitHub">ganalytics</span>](https://github.com/jdeboer/ganalytics/); not on CRAN), [GAR](http://cran.rstudio.com/web/packages/GAR/index.html) ([GitHub](https://github.com/andrewgeisler/GAR)), and [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provide functions for accessing and retrieving data from the [Google Analytics APIs](https://developers.google.com/analytics/). The latter supports OAuth 2.0 authorization. [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provides a shiny app to explore data. [searchConsoleR](http://cran.rstudio.com/web/packages/searchConsoleR/index.html) ([GitHub](https://github.com/MarkEdmondson1234/searchConsoleR)) links to the [Google Search Console](https://developers.google.com/webmaster-tools/) (formerly Webmaster Tools).
+  - *Google Trends*: [gtrendsR](http://cran.rstudio.com/web/packages/gtrendsR/index.html) offers functions to perform and display Google Trends queries. Another GitHub package ([rGtrends](https://github.com/emhart/rGtrends)) is now deprecated, but supported a previous version of Google Trends and may still be useful for developers. [<span class="Ohat">RGoogleTrends</span>](http://www.Omegahat.net/RGoogleTrends/) provides another alternative.
+  - *Google Analytics*: [googleAnalyticsR](http://cran.rstudio.com/web/packages/googleAnalyticsR/index.html) ([GitHub](http://code.markedmondson.me/googleAnalyticsR/)), [ganalytics](https://github.com/jdeboer/ganalytics) (GitHub: [<span class="GitHub">ganalytics</span>](https://github.com/jdeboer/ganalytics/); not on CRAN), [GAR](http://cran.rstudio.com/web/packages/GAR/index.html) ([GitHub](https://github.com/andrewgeisler/GAR)), and [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provide functions for accessing and retrieving data from the [Google Analytics APIs](https://developers.google.com/analytics/). The latter supports OAuth 2.0 authorization. [RGA](http://cran.rstudio.com/web/packages/RGA/index.html) provides a shiny app to explore data. [searchConsoleR](http://cran.rstudio.com/web/packages/searchConsoleR/index.html) ([GitHub](https://github.com/MarkEdmondson1234/searchConsoleR)) links to the [Google Search Console](https://developers.google.com/webmaster-tools/) (formerly Webmaster Tools).
   - *Online Advertising*: [fbRads](http://cran.rstudio.com/web/packages/fbRads/index.html) can manage Facebook ads via the Facebook Marketing API. [<span class="GitHub">RDoubleClick</span>](https://github.com/WillemPaling/RDoubleClick/) (not on CRAN) can retrieve data from Google’s DoubleClick Campaign Manager Reporting API. [RSmartlyIO](http://cran.rstudio.com/web/packages/RSmartlyIO/index.html) ([GitHub](https://github.com/rstats-lab/RSmartlyIO)) loads Facebook and Instagram advertising data provided by [Smartly.io](https://app.smartly.io/).
   - *Other services*: [RSiteCatalyst](http://cran.rstudio.com/web/packages/RSiteCatalyst/index.html) has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.
   - [RAdwords](http://cran.rstudio.com/web/packages/RAdwords/index.html) ([GitHub](https://github.com/jburkhardt/RAdwords)) is a package for loading Google Adwords data.
   - [webreadr](http://cran.rstudio.com/web/packages/webreadr/index.html) ([GitHub](https://github.com/Ironholds/webreadr)) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.
-  - [ApacheLogProcessor](http://cran.rstudio.com/web/packages/ApacheLogProcessor/index.html) ([GitHub](https://github.com/diogosmendonca/ApacheLogProcessor)) can process Apache Web Server log files.
 
 **Web Services for R Package Development**
 
@@ -169,8 +168,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - *Wikipedia*: [WikipediR](http://cran.rstudio.com/web/packages/WikipediR/index.html) ([GitHub](https://github.com/Ironholds/WikipediR)) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia ‘production’ wikis, such as Wikipedia. [rwikidata](https://github.com/chgrl/rwikidata) and [WikidataR](http://cran.rstudio.com/web/packages/WikidataR/index.html) ([GitHub](https://github.com/Ironholds/WikidataR)) can request data from [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase. [wikipediatrend](http://cran.rstudio.com/web/packages/wikipediatrend/index.html) ([GitHub](https://github.com/petermeissner/wikipediatrend)) provides access to Wikipedia page access statistics. [WikiSocio](http://cran.rstudio.com/web/packages/WikiSocio/index.html) can retrieve contributor lists and revision data. [WikidataQueryServiceR](http://cran.rstudio.com/web/packages/WikidataQueryServiceR/index.html) is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 
   - [bigrquery](http://cran.rstudio.com/web/packages/bigrquery/index.html) ([GitHub](https://github.com/r-dbi/bigrquery)): An interface to Google’s bigquery.
-
-  - [cablecuttr](http://cran.rstudio.com/web/packages/cablecuttr/index.html) ([GitHub](https://github.com/bearloga/cablecuttr)) is a client for [the CanIStream.It API](http://www.canistream.it/).
 
   - [colourlovers](http://cran.rstudio.com/web/packages/colourlovers/index.html) ([GitHub](https://github.com/leeper/colourlovers)) extracts colors and multi-color patterns from [COLOURlovers](http://www.colourlovers.com/), for use in creating R graphics color palettes.
 
@@ -203,8 +200,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [lucr](http://cran.rstudio.com/web/packages/lucr/index.html) performs currency conversions using [Open Exchange Rates](https://openexchangerates.org/).
 
   - [<span class="GitHub">mockaRoo</span>](https://github.com/stephlocke/mockaRoo/) (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
-
-  - [osi](http://cran.rstudio.com/web/packages/osi/index.html) ([GitHub](https://github.com/Ironholds/osi/)) retrieves open source license data and metadata from <https://api.opensource.org/licenses/>.
 
   - [<span class="GitHub">pivotaltrackR</span>](https://github.com/nealrichardson/pivotaltrackR/) (not on CRAN) provides an interface to the API for [Pivotal Tracker](https://www.pivotaltracker.com/), an agile project management tool.
 
@@ -272,9 +267,9 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
   - [abbyyR](http://cran.rstudio.com/web/packages/abbyyR/index.html)
   - [analogsea](http://cran.rstudio.com/web/packages/analogsea/index.html)
-  - [ApacheLogProcessor](http://cran.rstudio.com/web/packages/ApacheLogProcessor/index.html)
   - [aRxiv](http://cran.rstudio.com/web/packages/aRxiv/index.html)
   - [aws.polly](http://cran.rstudio.com/web/packages/aws.polly/index.html)
+  - [aws.s3](http://cran.rstudio.com/web/packages/aws.s3/index.html)
   - [aws.signature](http://cran.rstudio.com/web/packages/aws.signature/index.html)
   - [aws.sns](http://cran.rstudio.com/web/packages/aws.sns/index.html)
   - [AzureML](http://cran.rstudio.com/web/packages/AzureML/index.html)
@@ -284,7 +279,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [birdnik](http://cran.rstudio.com/web/packages/birdnik/index.html)
   - [boilerpipeR](http://cran.rstudio.com/web/packages/boilerpipeR/index.html)
   - [boxr](http://cran.rstudio.com/web/packages/boxr/index.html)
-  - [cablecuttr](http://cran.rstudio.com/web/packages/cablecuttr/index.html)
   - [captr](http://cran.rstudio.com/web/packages/captr/index.html)
   - [clarifai](http://cran.rstudio.com/web/packages/clarifai/index.html)
   - [colourlovers](http://cran.rstudio.com/web/packages/colourlovers/index.html)
@@ -298,14 +292,14 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [datamart](http://cran.rstudio.com/web/packages/datamart/index.html)
   - [dataone](http://cran.rstudio.com/web/packages/dataone/index.html)
   - [datarobot](http://cran.rstudio.com/web/packages/datarobot/index.html)
+  - [dataverse](http://cran.rstudio.com/web/packages/dataverse/index.html)
   - [ddeploy](http://cran.rstudio.com/web/packages/ddeploy/index.html)
   - [discgolf](http://cran.rstudio.com/web/packages/discgolf/index.html)
   - [downloader](http://cran.rstudio.com/web/packages/downloader/index.html)
-  - [dvn](http://cran.rstudio.com/web/packages/dvn/index.html)
   - [europepmc](http://cran.rstudio.com/web/packages/europepmc/index.html)
   - [factualR](http://cran.rstudio.com/web/packages/factualR/index.html)
   - [FastRWeb](http://cran.rstudio.com/web/packages/FastRWeb/index.html)
-  - [fauxpaus](http://cran.rstudio.com/web/packages/fauxpaus/index.html)
+  - [fauxpas](http://cran.rstudio.com/web/packages/fauxpas/index.html)
   - [fbRads](http://cran.rstudio.com/web/packages/fbRads/index.html)
   - [feedeR](http://cran.rstudio.com/web/packages/feedeR/index.html)
   - [fiery](http://cran.rstudio.com/web/packages/fiery/index.html)
@@ -328,6 +322,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [googleVis](http://cran.rstudio.com/web/packages/googleVis/index.html)
   - [graphTweets](http://cran.rstudio.com/web/packages/graphTweets/index.html)
   - [gsheet](http://cran.rstudio.com/web/packages/gsheet/index.html)
+  - [gtrendsR](http://cran.rstudio.com/web/packages/gtrendsR/index.html)
   - [htm2txt](http://cran.rstudio.com/web/packages/htm2txt/index.html)
   - [htmltab](http://cran.rstudio.com/web/packages/htmltab/index.html)
   - [htmltidy](http://cran.rstudio.com/web/packages/htmltidy/index.html)
@@ -368,7 +363,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [opencage](http://cran.rstudio.com/web/packages/opencage/index.html)
   - [opencpu](http://cran.rstudio.com/web/packages/opencpu/index.html)
   - [OpenML](http://cran.rstudio.com/web/packages/OpenML/index.html)
-  - [osi](http://cran.rstudio.com/web/packages/osi/index.html)
   - [osmar](http://cran.rstudio.com/web/packages/osmar/index.html)
   - [osmplotr](http://cran.rstudio.com/web/packages/osmplotr/index.html)
   - [osrm](http://cran.rstudio.com/web/packages/osrm/index.html)
@@ -410,7 +404,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [RForcecom](http://cran.rstudio.com/web/packages/RForcecom/index.html)
   - [RGA](http://cran.rstudio.com/web/packages/RGA/index.html)
   - [rgeolocate](http://cran.rstudio.com/web/packages/rgeolocate/index.html)
-  - [RGoogleAnalytics](http://cran.rstudio.com/web/packages/RGoogleAnalytics/index.html)
   - [RGoogleFit](http://cran.rstudio.com/web/packages/RGoogleFit/index.html)
   - [RgoogleMaps](http://cran.rstudio.com/web/packages/RgoogleMaps/index.html)
   - [rhub](http://cran.rstudio.com/web/packages/rhub/index.html)
@@ -433,7 +426,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [RSauceLabs](http://cran.rstudio.com/web/packages/RSauceLabs/index.html)
   - [RSclient](http://cran.rstudio.com/web/packages/RSclient/index.html)
   - [rsdmx](http://cran.rstudio.com/web/packages/rsdmx/index.html)
-  - [RSelenium](http://cran.rstudio.com/web/packages/RSelenium/index.html) (core)
   - [Rserve](http://cran.rstudio.com/web/packages/Rserve/index.html)
   - [RSiteCatalyst](http://cran.rstudio.com/web/packages/RSiteCatalyst/index.html)
   - [RSmartlyIO](http://cran.rstudio.com/web/packages/RSmartlyIO/index.html)
