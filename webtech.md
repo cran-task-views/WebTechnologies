@@ -201,7 +201,7 @@ Web Services
 -   <github>dgrtwo/stackr</github> (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).
 -   <pkg>telegram</pkg> ([GitHub](https://github.com/lbraglia/telegram)) connects with the [Telegram Bot API](https://core.telegram.org/bots/api).
 -   <pkg>trelloR</pkg> ([GitHub](https://github.com/jchrom/trelloR)) connects to the [Trello API](https://developers.trello.com/).
--   <pkg>tuber</pkg> ([GitHub](https://github.com/soodoku/tuber)): A YouTube API client.
+-   <pkg>tuber</pkg> is a YouTube API client and <pkg>tubern</pkg> is a client for the YouTube Analytics and Reporting API
 -   <pkg>ubeR</pkg> (not on CRAN) is an interface to the Uber API.
 -   <pkg>udapi</pkg> ([GitHub](https://github.com/Ironholds/udapi)) connects to Urban Dictionary.
 -   <github>nealrichardson/useRsnap</github> (not on CRAN) provides an interface to the API for [Usersnap](https://www.pivotaltracker.com/), a tool for collecting feedback from web application users.

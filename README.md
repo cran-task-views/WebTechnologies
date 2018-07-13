@@ -247,7 +247,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
   - [trelloR](http://cran.rstudio.com/web/packages/trelloR/index.html) ([GitHub](https://github.com/jchrom/trelloR)) connects to the [Trello API](https://developers.trello.com/).
 
-  - [tuber](http://cran.rstudio.com/web/packages/tuber/index.html) ([GitHub](https://github.com/soodoku/tuber)): A YouTube API client.
+  - [tuber](http://cran.rstudio.com/web/packages/tuber/index.html) is a YouTube API client and [tubern](http://cran.rstudio.com/web/packages/tubern/index.html) is a client for the YouTube Analytics and Reporting API
 
   - [ubeR](http://cran.rstudio.com/web/packages/ubeR/index.html) (not on CRAN) is an interface to the Uber API.
 
@@ -465,6 +465,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [translateR](http://cran.rstudio.com/web/packages/translateR/index.html)
   - [trelloR](http://cran.rstudio.com/web/packages/trelloR/index.html)
   - [tuber](http://cran.rstudio.com/web/packages/tuber/index.html)
+  - [tubern](http://cran.rstudio.com/web/packages/tubern/index.html)
   - [tumblR](http://cran.rstudio.com/web/packages/tumblR/index.html)
   - [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html)
   - [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html)
