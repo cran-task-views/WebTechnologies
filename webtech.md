@@ -56,6 +56,10 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 -   <pkg>tm.plugin.webmining</pkg>: Extensible text retrieval framework for news feeds in XML (RSS, ATOM) and JSON formats. Currently, the following feeds are implemented: Google Blog Search, Google Finance, Google News, NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo Inplay.
 -   <pkg>webshot</pkg> uses [PhantomJS](http://phantomjs.org/) to provide screenshots of web pages without a browser. It can be useful for testing websites (such as Shiny applications).
 
+**Security**
+
+- <pkg>securitytxt</pkg> identifies and parses web Ssecurity policy files.
+
 **Other Useful Packages and Functions**
 
 -   *Javascript*: <pkg>V8</pkg> ([GitHub](https://github.com/jeroen/V8)) is an R interface to Google's open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The <ohat>SpiderMonkey</ohat> package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R. The <pkg>js</pkg> package wraps <pkg>V8</pkg> and validates, reformats, optimizes and analyzes JavaScript code.

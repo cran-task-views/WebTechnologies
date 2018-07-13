@@ -63,6 +63,10 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [tm.plugin.webmining](http://cran.rstudio.com/web/packages/tm.plugin.webmining/index.html): Extensible text retrieval framework for news feeds in XML (RSS, ATOM) and JSON formats. Currently, the following feeds are implemented: Google Blog Search, Google Finance, Google News, NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo Inplay.
   - [webshot](http://cran.rstudio.com/web/packages/webshot/index.html) uses [PhantomJS](http://phantomjs.org/) to provide screenshots of web pages without a browser. It can be useful for testing websites (such as Shiny applications).
 
+**Security**
+
+  - [securitytxt](http://cran.rstudio.com/web/packages/securitytxt/index.html) identifies and parses web Ssecurity policy files.
+
 **Other Useful Packages and Functions**
 
   - *Javascript*: [V8](http://cran.rstudio.com/web/packages/V8/index.html) ([GitHub](https://github.com/jeroen/V8)) is an R interface to Google’s open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The [<span class="Ohat">SpiderMonkey</span>](http://www.Omegahat.net/SpiderMonkey/) package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R. The [js](http://cran.rstudio.com/web/packages/js/index.html) package wraps [V8](http://cran.rstudio.com/web/packages/V8/index.html) and validates, reformats, optimizes and analyzes JavaScript code.
@@ -456,6 +460,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [scholar](http://cran.rstudio.com/web/packages/scholar/index.html)
   - [scrapeR](http://cran.rstudio.com/web/packages/scrapeR/index.html)
   - [searchConsoleR](http://cran.rstudio.com/web/packages/searchConsoleR/index.html)
+  - [securitytxt](http://cran.rstudio.com/web/packages/securitytxt/index.html)
   - [seleniumPipes](http://cran.rstudio.com/web/packages/seleniumPipes/index.html)
   - [sendmailR](http://cran.rstudio.com/web/packages/sendmailR/index.html)
   - [servr](http://cran.rstudio.com/web/packages/servr/index.html)
