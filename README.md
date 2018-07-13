@@ -212,6 +212,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [ZillowR](https://github.com/fascinatingfingers/ZillowR) is a client for the Zillow real estate service.
   - [docuSignr](http://cran.rstudio.com/web/packages/docuSignr/index.html) provides an interface to the DocuSign [Rest API](https://www.docusign.com/p/RESTAPIGuide/RESTAPIGuide.htm).
   - [giphyr](http://cran.rstudio.com/web/packages/giphyr/index.html) is an R interface to the [Giphy API](https://github.com/Giphy/GiphyAPI) for GIF’s
+  - [duckduckr](http://cran.rstudio.com/web/packages/duckduckr/index.html) is an R interface [DuckDuckGo’s Instant Answer API](https://duckduckgo.com/api)
 
 </div>
 
@@ -250,6 +251,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [discgolf](http://cran.rstudio.com/web/packages/discgolf/index.html)
   - [docuSignr](http://cran.rstudio.com/web/packages/docuSignr/index.html)
   - [downloader](http://cran.rstudio.com/web/packages/downloader/index.html)
+  - [duckduckr](http://cran.rstudio.com/web/packages/duckduckr/index.html)
   - [europepmc](http://cran.rstudio.com/web/packages/europepmc/index.html)
   - [facebook.S4](http://cran.rstudio.com/web/packages/facebook.S4/index.html)
   - [factualR](http://cran.rstudio.com/web/packages/factualR/index.html)

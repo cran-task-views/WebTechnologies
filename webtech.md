@@ -209,3 +209,4 @@ Web Services
 -   [ZillowR](https://github.com/fascinatingfingers/ZillowR) is a client for the Zillow real estate service.
 -   <pkg>docuSignr</pkg> provides an interface to the DocuSign [Rest API](https://www.docusign.com/p/RESTAPIGuide/RESTAPIGuide.htm).
 -   <pkg>giphyr</pkg> is an R interface to the [Giphy API](https://github.com/Giphy/GiphyAPI) for GIF's 
+-   <pkg>duckduckr</pkg> is an R interface [DuckDuckGo's Instant Answer API](https://duckduckgo.com/api)
