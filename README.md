@@ -160,58 +160,115 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 **Other Web Services**
 
   - *Fitness Apps*: [fitbitScraper](http://cran.rstudio.com/web/packages/fitbitScraper/index.html) ([GitHub](https://github.com/corynissen/fitbitScraper)) retrieves Fitbit data. [RGoogleFit](http://cran.rstudio.com/web/packages/RGoogleFit/index.html) provides similar functionality for [Google Fit](https://developers.google.com/fit/rest/v1/reference/).
+
   - *Push Notifications*: [RPushbullet](http://cran.rstudio.com/web/packages/RPushbullet/index.html) provides an easy-to-use interface for the Pushbullet service which provides fast and efficient notifications between computers, phones and tablets. [pushoverr](http://cran.rstudio.com/web/packages/pushoverr/index.html) ([GitHub](https://github.com/briandconnelly/pushoverr)) can sending push notifications to mobile devices (iOS and Android) and desktop using [Pushover](https://pushover.net/). [notifyme](http://cran.rstudio.com/web/packages/notifyme/index.html) ([GitHub](https://github.com/epijim/notifyme)) can control Phillips Hue lighting.
-  - *Reference/bibliography/citation management*: [RefManageR](http://cran.rstudio.com/web/packages/RefManageR/index.html) imports and manage BibTeX and BibLaTeX references with RefManager. [RMendeley](https://cran.rstudio.com/src/contrib/Archive/RMendeley/): Implementation of the Mendeley API in R. Archived on CRAN. It’s been archived on CRAN temporarily until it is updated for the new Mendeley API. [rorcid](http://cran.rstudio.com/web/packages/rorcid/index.html) ([GitHub](https://github.com/ropensci/rorcid)) is a programmatic interface the [Orcid.org](https://orcid.org/) API, which can be used for identifying scientific authors and their publications (e.g., by DOI). [rplos](http://cran.rstudio.com/web/packages/rplos/index.html) is a programmatic interface to the Web Service methods provided by the Public Library of Science journals for search. [<span class="GitHub">rpubmed</span>](https://github.com/rOpenHealth/rpubmed/) (not on CRAN) provides tools for extracting and processing Pubmed and Pubmed Central records, and [europepmc](http://cran.rstudio.com/web/packages/europepmc/index.html) ([GitHub](https://github.com/ropensci/europepmc/)) connects to the Europe PubMed Central service. [scholar](http://cran.rstudio.com/web/packages/scholar/index.html) provides functions to extract citation data from Google Scholar. Convenience functions are also provided for comparing multiple scholars and predicting future h-index values. [pubmed.mineR](http://cran.rstudio.com/web/packages/pubmed.mineR/index.html) is a package for text mining of [PubMed Abstracts](https://www.ncbi.nlm.nih.gov/pubmed) that supports fetching text and XML from PubMed. [rdatacite](http://cran.rstudio.com/web/packages/rdatacite/index.html) ([GitHub](https://github.com/ropensci/rdatacite)) connects to [DataCite](https://www.datacite.org/). [oai](http://cran.rstudio.com/web/packages/oai/index.html) ([GitHub](https://github.com/ropensci/oai)) and [OAIHarvester](http://cran.rstudio.com/web/packages/OAIHarvester/index.html) harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard. [<span class="GitHub">JSTORr</span>](https://github.com/benmarwick/JSTORr/) (Not on CRAN) provides simple text mining of journal articles from JSTOR’s Data for Research service. [aRxiv](http://cran.rstudio.com/web/packages/aRxiv/index.html) ([GitHub](https://github.com/ropensci/aRxiv)) is a client for the arXiv API, a repository of electronic preprints for computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics. [mathpix](http://cran.rstudio.com/web/packages/mathpix/index.html) convert an image of a formula (typeset or handwritten) via Mathpix webservice to produce the LaTeX code.
+
+  - *Reference/bibliography/citation management*: [RefManageR](http://cran.rstudio.com/web/packages/RefManageR/index.html) imports and manage BibTeX and BibLaTeX references with RefManager. [RMendeley](https://cran.rstudio.com/src/contrib/Archive/RMendeley/): Implementation of the Mendeley API in R. Archived on CRAN. It’s been archived on CRAN temporarily until it is updated for the new Mendeley API. [rorcid](http://cran.rstudio.com/web/packages/rorcid/index.html) ([GitHub](https://github.com/ropensci/rorcid)) is a programmatic interface the [Orcid.org](https://orcid.org/) API, which can be used for identifying scientific authors and their publications (e.g., by DOI). [rdatacite](http://cran.rstudio.com/web/packages/rdatacite/index.html) connects to [DataCite](https://www.datacite.org/), which manages DOIs and metadata for scholarly datasets. [scholar](http://cran.rstudio.com/web/packages/scholar/index.html) provides functions to extract citation data from Google Scholar. Convenience functions are also provided for comparing multiple scholars and predicting future h-index values. [mathpix](http://cran.rstudio.com/web/packages/mathpix/index.html) convert an image of a formula (typeset or handwritten) via Mathpix webservice to produce the LaTeX code.
+
+  - *Literature*: [rplos](http://cran.rstudio.com/web/packages/rplos/index.html) is a programmatic interface to the Web Service methods provided by the Public Library of Science journals for search. [<span class="GitHub">rpubmed</span>](https://github.com/rOpenHealth/rpubmed/) (not on CRAN) provides tools for extracting and processing Pubmed and Pubmed Central records, and [europepmc](http://cran.rstudio.com/web/packages/europepmc/index.html) connects to the Europe PubMed Central service. [pubmed.mineR](http://cran.rstudio.com/web/packages/pubmed.mineR/index.html) is a package for text mining of [PubMed Abstracts](https://www.ncbi.nlm.nih.gov/pubmed) that supports fetching text and XML from PubMed. [jstor](http://cran.rstudio.com/web/packages/jstor/index.html) provides functions and helpers to import metadata, ngrams and full-texts from Data for Research service by JSTOR; [<span class="GitHub">JSTORr</span>](https://github.com/benmarwick/JSTORr/) does a similar thing. [aRxiv](http://cran.rstudio.com/web/packages/aRxiv/index.html) is a client for the arXiv API, a repository of electronic preprints for computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics. [roadoi](http://cran.rstudio.com/web/packages/roadoi/index.html) provides an interface to the [Unpaywall API](https://unpaywall.org/products/api) for finding free full-text versions of academic papers.
+
+  - *Automated Metadata Harvesting*: [oai](http://cran.rstudio.com/web/packages/oai/index.html) and [OAIHarvester](http://cran.rstudio.com/web/packages/OAIHarvester/index.html) harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard. [<span class="GitHub">rresync</span>](https://github.com/ropenscilabs/rresync/) is a client for the [ResourceSync framework](http://www.openarchives.org/rs/1.1/resourcesync), a sort of replacement for OAI-PMH.
+
   - *Wikipedia*: [WikipediR](http://cran.rstudio.com/web/packages/WikipediR/index.html) ([GitHub](https://github.com/Ironholds/WikipediR)) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia ‘production’ wikis, such as Wikipedia. [rwikidata](https://github.com/chgrl/rwikidata) and [WikidataR](http://cran.rstudio.com/web/packages/WikidataR/index.html) ([GitHub](https://github.com/Ironholds/WikidataR)) can request data from [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase. [wikipediatrend](http://cran.rstudio.com/web/packages/wikipediatrend/index.html) ([GitHub](https://github.com/petermeissner/wikipediatrend)) provides access to Wikipedia page access statistics. [WikiSocio](http://cran.rstudio.com/web/packages/WikiSocio/index.html) can retrieve contributor lists and revision data. [WikidataQueryServiceR](http://cran.rstudio.com/web/packages/WikidataQueryServiceR/index.html) is a client for the [Wikidata Query Service](https://query.wikidata.org/).
+
   - [bigrquery](http://cran.rstudio.com/web/packages/bigrquery/index.html) ([GitHub](https://github.com/r-dbi/bigrquery)): An interface to Google’s bigquery.
+
   - [colourlovers](http://cran.rstudio.com/web/packages/colourlovers/index.html) ([GitHub](https://github.com/leeper/colourlovers)) extracts colors and multi-color patterns from [COLOURlovers](http://www.colourlovers.com/), for use in creating R graphics color palettes.
+
   - [cymruservices](http://cran.rstudio.com/web/packages/cymruservices/index.html) queries [Team Cymru](http://www.team-cymru.org/) web security services.
+
   - [datamart](http://cran.rstudio.com/web/packages/datamart/index.html): Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
+
   - [discgolf](http://cran.rstudio.com/web/packages/discgolf/index.html) ([GitHub](https://github.com/sckott/discgolf)) provides a client to interact with the API for the [Discourse](https://www.discourse.org/) web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
+
   - [rdpla](http://cran.rstudio.com/web/packages/rdpla/index.html) ((GitHub)\[https://github.com/ropensci/rdpla\]) works with the [Digital Public Library of America](https://dp.la/) API.
+
   - [factualR](http://cran.rstudio.com/web/packages/factualR/index.html): Thin wrapper for the [Factual.com](https://factual.com/) server API.
+
   - [GFusionTables](https://lopatenko.com/) (not on CRAN): An interface to Google Fusion Tables. Google Fusion Tables is a data management system in the cloud. This package provides functions to browse Fusion Tables catalog, retrieve data from Gusion Tables dtd storage to R and to upload data from R to Fusion Tables
+
   - [<span class="GitHub">HIBPwned</span>](https://github.com/stephlocke/HIBPwned/) (not on CRAN) is a client for [Have I Been Pwned](https://haveibeenpwned.com/).
+
   - [infochimps](https://cran.rstudio.com/src/contrib/Archive/infochimps/) ([GitHub](https://github.com/drewconway/infochimps); archived) is an R wrapper for the infochimps.com API services.
+
   - [internetarchive](http://cran.rstudio.com/web/packages/internetarchive/index.html): API client for internet archive metadata.
+
   - [<span class="GitHub">irced</span>](https://github.com/hrbrmstr/irced/) (not on CRAN) is an IRC chat client.
+
   - [jSonarR](http://cran.rstudio.com/web/packages/jSonarR/index.html): Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the [JSON Studio Gateway](http://www.jsonar.com/), to convert JSON to a tabular format.
+
   - [LendingClub](http://cran.rstudio.com/web/packages/LendingClub/index.html) connects with the [LendingClub API](https://www.lendingclub.com/developers/api-overview).
+
   - [livechatR](http://cran.rstudio.com/web/packages/livechatR/index.html) is a client for the [LiveChat API](https://docs.livechatinc.com/rest-api/).
+
   - [lucr](http://cran.rstudio.com/web/packages/lucr/index.html) performs currency conversions using [Open Exchange Rates](https://openexchangerates.org/).
+
   - [<span class="GitHub">mockaRoo</span>](https://github.com/stephlocke/mockaRoo/) (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
+
   - [<span class="GitHub">pivotaltrackR</span>](https://github.com/nealrichardson/pivotaltrackR/) (not on CRAN) provides an interface to the API for [Pivotal Tracker](https://www.pivotaltracker.com/), an agile project management tool.
+
   - [randNames](http://cran.rstudio.com/web/packages/randNames/index.html) ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the <https://randomapi.com/> API.
+
   - [Rbitcoin](http://cran.rstudio.com/web/packages/Rbitcoin/index.html) allows both public and private API calls to interact with Bitcoin. [rbitcoinchartsapi](http://cran.rstudio.com/web/packages/rbitcoinchartsapi/index.html) is a package for the [BitCoinCharts.com](https://bitcoincharts.com/) API. From their website: “Bitcoincharts provides financial and technical data related to the Bitcoin network and this data can be accessed via a JSON application programming interface (API).”
+
   - [Rblpapi](http://cran.rstudio.com/web/packages/Rblpapi/index.html) ([GitHub](https://github.com/Rblp/Rblpapi)) is a client for Bloomberg Finance L.P. [ROpenFIGI](http://cran.rstudio.com/web/packages/ROpenFIGI/index.html) ([GitHub](https://github.com/HuangRicky/ROpenFIGI)) provides an interface to Bloomberg’s [OpenFIGI](https://openfigi.com/) API.
+
   - [rerddap](http://cran.rstudio.com/web/packages/rerddap/index.html): A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP ( <https://en.wikipedia.org/wiki/OPeNDAP>), or *Open-source Project for a Network Data Access Protocol* . Allows user to swap out the base URL to use any ERDDAP instance.
+
   - [ripplerestr](https://github.com/hmalmedal/ripplerestr) provides an interface to the [Ripple](https://ripple.com/) protocol for making financial transactions.
+
   - [refimpact](http://cran.rstudio.com/web/packages/refimpact/index.html) connects to [the UK Research Excellence Framework 2014 Impact Case Studies Database API](http://impact.ref.ac.uk/CaseStudies/).
+
   - [restimizeapi](http://cran.rstudio.com/web/packages/restimizeapi/index.html) provides an interface to trading website [estimize.com](https://www.estimize.com/).
+
   - [RForcecom](http://cran.rstudio.com/web/packages/RForcecom/index.html): RForcecom provides a connection to Force.com and Salesforce.com.
+
   - [<span class="GitHub">Rgoodreads</span>](https://github.com/dsidavis/Rgoodreads/) (not on CRAN) interacts with [Goodreads](https://www.goodreads.com/).
+
   - [RLastFM](https://cran.rstudio.com/src/contrib/Archive/RLastFM/) (archived on CRAN) is a package to interface to the last.fm API. Archived on CRAN.
+
   - Two packages, [owmr](http://cran.rstudio.com/web/packages/owmr/index.html) and [ROpenWeatherMap](http://cran.rstudio.com/web/packages/ROpenWeatherMap/index.html), work with the [Open Weather Map API](https://openweathermap.org/api).
+
   - [RSauceLabs](http://cran.rstudio.com/web/packages/RSauceLabs/index.html) ([GitHub](https://johndharrison.github.io/RSauceLabs/)) connects to [SauceLabs](https://saucelabs.com/).
+
   - [RSocrata](http://cran.rstudio.com/web/packages/RSocrata/index.html) access data for Socrata open data portals. [soql](http://cran.rstudio.com/web/packages/soql/index.html) is a pipe-oriented set of tools for constructing Socrata queries.
+
   - [RStripe](http://cran.rstudio.com/web/packages/RStripe/index.html) provides an interface to [Stripe](https://stripe.com/), an online payment processor.
+
   - [RZabbix](http://cran.rstudio.com/web/packages/RZabbix/index.html) links with the [Zabbix network monitoring service API](https://www.zabbix.com/documentation/3.0/manual/api/reference).
+
   - [rwars](http://cran.rstudio.com/web/packages/rwars/index.html) retrieve and reformat data from the [Star Wars API (SWAPI)](https://swapi.co/).
+
   - [shopifyr](http://cran.rstudio.com/web/packages/shopifyr/index.html): An interface to the API of the E-commerce service Shopify <https://help.shopify.com/api>.
+
   - [slackr](http://cran.rstudio.com/web/packages/slackr/index.html) ([GitHub](https://github.com/hrbrmstr/slackr)) is a client for Slack.com messaging platform.
+
   - [<span class="GitHub">SlideShaRe</span>](https://github.com/dmpe/SlideShaRe/) (not on CRAN) is a client for Slideshare.
+
   - [<span class="GitHub">stackr</span>](https://github.com/dgrtwo/stackr/) (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).
+
   - [telegram](http://cran.rstudio.com/web/packages/telegram/index.html) ([GitHub](https://github.com/lbraglia/telegram)) connects with the [Telegram Bot API](https://core.telegram.org/bots/api).
+
   - [trelloR](http://cran.rstudio.com/web/packages/trelloR/index.html) ([GitHub](https://github.com/jchrom/trelloR)) connects to the [Trello API](https://developers.trello.com/).
+
   - [tuber](http://cran.rstudio.com/web/packages/tuber/index.html) is a YouTube API client and [tubern](http://cran.rstudio.com/web/packages/tubern/index.html) is a client for the YouTube Analytics and Reporting API
+
   - [ubeR](http://cran.rstudio.com/web/packages/ubeR/index.html) (not on CRAN) is an interface to the Uber API.
+
   - [udapi](http://cran.rstudio.com/web/packages/udapi/index.html) ([GitHub](https://github.com/Ironholds/udapi)) connects to Urban Dictionary.
+
   - [<span class="GitHub">useRsnap</span>](https://github.com/nealrichardson/useRsnap/) (not on CRAN) provides an interface to the API for [Usersnap](https://www.pivotaltracker.com/), a tool for collecting feedback from web application users.
+
   - [yummlyr](http://cran.rstudio.com/web/packages/yummlyr/index.html) ([GitHub](https://github.com/RomanTsegelskyi/yummlyr)) provides an interface to the [Yummly](https://developer.yummly.com/) recipe database.
+
   - [zendeskR](http://cran.rstudio.com/web/packages/zendeskR/index.html): This package provides a wrapper for the Zendesk API.
+
   - [ZillowR](https://github.com/fascinatingfingers/ZillowR) is a client for the Zillow real estate service.
+
   - [docuSignr](http://cran.rstudio.com/web/packages/docuSignr/index.html) provides an interface to the DocuSign [Rest API](https://www.docusign.com/p/RESTAPIGuide/RESTAPIGuide.htm).
+
   - [giphyr](http://cran.rstudio.com/web/packages/giphyr/index.html) is an R interface to the [Giphy API](https://github.com/Giphy/GiphyAPI) for GIF’s
+
   - [duckduckr](http://cran.rstudio.com/web/packages/duckduckr/index.html) is an R interface [DuckDuckGo’s Instant Answer API](https://duckduckgo.com/api)
 
 </div>
@@ -302,6 +359,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [jSonarR](http://cran.rstudio.com/web/packages/jSonarR/index.html)
   - [jsonlite](http://cran.rstudio.com/web/packages/jsonlite/index.html) (core)
   - [jsonvalidate](http://cran.rstudio.com/web/packages/jsonvalidate/index.html)
+  - [jstor](http://cran.rstudio.com/web/packages/jstor/index.html)
   - [jug](http://cran.rstudio.com/web/packages/jug/index.html)
   - [languagelayeR](http://cran.rstudio.com/web/packages/languagelayeR/index.html)
   - [leafletR](http://cran.rstudio.com/web/packages/leafletR/index.html)
@@ -375,6 +433,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [rjsonapi](http://cran.rstudio.com/web/packages/rjsonapi/index.html)
   - [RJSONIO](http://cran.rstudio.com/web/packages/RJSONIO/index.html)
   - [rLTP](http://cran.rstudio.com/web/packages/rLTP/index.html)
+  - [roadoi](http://cran.rstudio.com/web/packages/roadoi/index.html)
   - [ROAuth](http://cran.rstudio.com/web/packages/ROAuth/index.html)
   - [robotstxt](http://cran.rstudio.com/web/packages/robotstxt/index.html)
   - [Rook](http://cran.rstudio.com/web/packages/Rook/index.html)
