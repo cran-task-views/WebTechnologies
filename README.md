@@ -133,7 +133,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 **Social Media Clients**
 
   - [plusser](http://cran.rstudio.com/web/packages/plusser/index.html) has been designed to to facilitate the retrieval of Google+ profiles, pages and posts. It also provides search facilities. Currently a Google+ API key is required for accessing Google+ data.
-  - [Rfacebook](http://cran.rstudio.com/web/packages/Rfacebook/index.html) provides an interface to the Facebook API.
+  - [Rfacebook](http://cran.rstudio.com/web/packages/Rfacebook/index.html) and [facebook.S4](http://cran.rstudio.com/web/packages/facebook.S4/index.html) provide interfaces to the Facebook API.
   - The [<span class="Ohat">Rflickr</span>](http://www.Omegahat.net/Rflickr/) package provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
   - [instaR](http://cran.rstudio.com/web/packages/instaR/index.html) ([GitHub](https://github.com/pablobarbera/instaR)) is a client for the [Instagram API](https://www.instagram.com/developer/).
   - [<span class="GitHub">Rlinkedin</span>](https://github.com/mpiccirilli/Rlinkedin/) (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.
@@ -297,6 +297,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [discgolf](http://cran.rstudio.com/web/packages/discgolf/index.html)
   - [downloader](http://cran.rstudio.com/web/packages/downloader/index.html)
   - [europepmc](http://cran.rstudio.com/web/packages/europepmc/index.html)
+  - [facebook.S4](http://cran.rstudio.com/web/packages/facebook.S4/index.html)
   - [factualR](http://cran.rstudio.com/web/packages/factualR/index.html)
   - [FastRWeb](http://cran.rstudio.com/web/packages/FastRWeb/index.html)
   - [fauxpas](http://cran.rstudio.com/web/packages/fauxpas/index.html)
