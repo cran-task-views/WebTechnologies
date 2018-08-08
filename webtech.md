@@ -171,6 +171,7 @@ Web Services
 
 -   *Wikipedia*: <pkg>WikipediR</pkg> ([GitHub](https://github.com/Ironholds/WikipediR)) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia 'production' wikis, such as Wikipedia. <github>chgrl/rwikidata</github> and <pkg>WikidataR</pkg> ([GitHub](https://github.com/Ironholds/WikidataR)) can request data from [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase. <pkg>wikipediatrend</pkg> ([GitHub](https://github.com/petermeissner/wikipediatrend)) provides access to Wikipedia page access statistics. <pkg>WikiSocio</pkg> can retrieve contributor lists and revision data. <pkg>WikidataQueryServiceR</pkg> is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 -   <pkg>bigrquery</pkg> ([GitHub](https://github.com/r-dbi/bigrquery)): An interface to Google's bigquery.
+-   <pkg>sparkbq</pkg> ([GitHub](https://github.com/miraisolutions/sparkbq)): Google BigQuery support for sparklyr.
 -   <pkg>colourlovers</pkg> ([GitHub](https://github.com/leeper/colourlovers)) extracts colors and multi-color patterns from [COLOURlovers](http://www.colourlovers.com/), for use in creating R graphics color palettes.
 -   <pkg>cymruservices</pkg> queries [Team Cymru](http://www.team-cymru.com/) web security services.
 -   <pkg>datamart</pkg>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
