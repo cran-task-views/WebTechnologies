@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------------------------------------- |
 | **Maintainer:** | Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | scott at ropensci.org                                                            |
-| **Version:**    | 2018-07-13                                                                       |
+| **Version:**    | 2018-08-08                                                                       |
 | **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 <div>
@@ -176,6 +176,8 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - *Wikipedia*: [WikipediR](http://cran.rstudio.com/web/packages/WikipediR/index.html) ([GitHub](https://github.com/Ironholds/WikipediR)) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia ‘production’ wikis, such as Wikipedia. [<span class="GitHub">rwikidata</span>](https://github.com/chgrl/rwikidata/) and [WikidataR](http://cran.rstudio.com/web/packages/WikidataR/index.html) ([GitHub](https://github.com/Ironholds/WikidataR)) can request data from [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase. [wikipediatrend](http://cran.rstudio.com/web/packages/wikipediatrend/index.html) ([GitHub](https://github.com/petermeissner/wikipediatrend)) provides access to Wikipedia page access statistics. [WikiSocio](http://cran.rstudio.com/web/packages/WikiSocio/index.html) can retrieve contributor lists and revision data. [WikidataQueryServiceR](http://cran.rstudio.com/web/packages/WikidataQueryServiceR/index.html) is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 
   - [bigrquery](http://cran.rstudio.com/web/packages/bigrquery/index.html) ([GitHub](https://github.com/r-dbi/bigrquery)): An interface to Google’s bigquery.
+
+  - [sparkbq](http://cran.rstudio.com/web/packages/sparkbq/index.html) ([GitHub](https://github.com/miraisolutions/sparkbq)): Google BigQuery support for sparklyr.
 
   - [colourlovers](http://cran.rstudio.com/web/packages/colourlovers/index.html) ([GitHub](https://github.com/leeper/colourlovers)) extracts colors and multi-color patterns from [COLOURlovers](http://www.colourlovers.com/), for use in creating R graphics color palettes.
 
@@ -472,6 +474,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [slackr](http://cran.rstudio.com/web/packages/slackr/index.html)
   - [SocialMediaMineR](http://cran.rstudio.com/web/packages/SocialMediaMineR/index.html)
   - [soql](http://cran.rstudio.com/web/packages/soql/index.html)
+  - [sparkbq](http://cran.rstudio.com/web/packages/sparkbq/index.html)
   - [spiderbar](http://cran.rstudio.com/web/packages/spiderbar/index.html)
   - [streamR](http://cran.rstudio.com/web/packages/streamR/index.html)
   - [swagger](http://cran.rstudio.com/web/packages/swagger/index.html)
