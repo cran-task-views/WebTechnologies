@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------------------------------------- |
 | **Maintainer:** | Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | scott at ropensci.org                                                            |
-| **Version:**    | 2018-08-08                                                                       |
+| **Version:**    | 2018-08-15                                                                       |
 | **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 <div>
@@ -147,6 +147,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [vkR](http://cran.rstudio.com/web/packages/vkR/index.html) is a client for VK, a social networking site based in Russia.
   - [<span class="GitHub">meetupr</span>](https://github.com/rladies/meetupr/) is a client for the Meetup.com API.
   - *Twitter*: [twitteR](http://cran.rstudio.com/web/packages/twitteR/index.html) ([GitHub](https://github.com/geoffjentry/twitteR)) provides an interface to the Twitter web API. It claims to be deprecated in favor of [rtweet](http://cran.rstudio.com/web/packages/rtweet/index.html) ([GitHub](https://github.com/mkearney/rtweet)). [<span class="GitHub">RTwitterAPI</span>](https://github.com/joyofdata/RTwitterAPI/) (not on CRAN) is another Twitter client. [<span class="GitHub">twitterreport</span>](https://github.com/gvegayon/twitterreport/) (not on CRAN) focuses on report generation based on Twitter data. [streamR](http://cran.rstudio.com/web/packages/streamR/index.html) provides a series of functions that allow users to access Twitter’s filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. [tweet2r](http://cran.rstudio.com/web/packages/tweet2r/index.html) is an alternative implementation geared toward SQLite and postGIS databases. [graphTweets](http://cran.rstudio.com/web/packages/graphTweets/index.html) produces a network graph from a data.frame of tweets. [tweetscores](https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores) (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
+  - [brandwatchR](http://cran.rstudio.com/web/packages/brandwatchR/index.html) is a package to retrieve a data from the Brandwatch social listening API. Both raw text and aggregate statistics are available, as well as project and query management functions.
 
 **Web Analytics Services**
 
@@ -287,6 +288,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [birdnik](http://cran.rstudio.com/web/packages/birdnik/index.html)
   - [boilerpipeR](http://cran.rstudio.com/web/packages/boilerpipeR/index.html)
   - [boxr](http://cran.rstudio.com/web/packages/boxr/index.html)
+  - [brandwatchR](http://cran.rstudio.com/web/packages/brandwatchR/index.html)
   - [captr](http://cran.rstudio.com/web/packages/captr/index.html)
   - [clarifai](http://cran.rstudio.com/web/packages/clarifai/index.html)
   - [colourlovers](http://cran.rstudio.com/web/packages/colourlovers/index.html)
