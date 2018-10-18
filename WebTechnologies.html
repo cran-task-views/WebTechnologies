@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2018-10-04" />
+  <meta name="citation_publication_date" content="2018-10-18" />
   <meta name="citation_public_url" content="https://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2018-10-04" />
+  <meta name="DC.issued" content="2018-10-18" />
   <meta name="DC.identifier" content="https://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,7 +19,7 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x73;&#x63;&#x6f;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x72;&#x6f;&#x70;&#x65;&#x6e;&#x73;&#x63;&#x69;&#x2e;&#x6f;&#x72;&#x67;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2018-10-04</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2018-10-18</td></tr>
     <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=WebTechnologies">https://CRAN.R-project.org/view=WebTechnologies</a></td></tr>
   </table>
 
@@ -492,7 +492,10 @@
           </em>:
 <a href="../packages/webmockr/index.html">webmockr</a>
           is a library for stubbing and setting expectations on HTTP requests. It is inspired from Rubys
-<tt>webmock</tt>. This package only helps mock HTTP requests, and returns nothing when requests match expectations. See
+<tt>webmock</tt>. This package only helps mock HTTP requests, and returns nothing when requests match expectations. webmockr integrates with the HTTP packages
+<a href="../packages/crul/index.html">crul</a>
+          and
+<a href="../packages/httr/index.html">httr</a>. See
           <em>
             Testing
           </em>
@@ -505,7 +508,10 @@
 <a href="../packages/vcr/index.html">vcr</a>
           provides an interface to easily cache HTTP requests in R package test suites (but can be used outside of testing use cases as well). vcr relies on
 <a href="../packages/webmockr/index.html">webmockr</a>
-          to do the HTTP request mocking.
+          to do the HTTP request mocking. vcr integrates with the HTTP packages
+<a href="../packages/crul/index.html">crul</a>
+          and
+<a href="../packages/httr/index.html">httr</a>.
 <a href="../packages/httptest/index.html">httptest</a>
           provides a framework for testing packages that communicate with HTTP APIs, offering tools for mocking APIs, for recording real API responses for use as mocks, and for making assertions about HTTP requests, all without requiring a live connection to the API server at runtime.
         </li>
@@ -540,7 +546,7 @@
           to parse User-Agent HTTP headers.
 <a href="../packages/rjsonapi/index.html">rjsonapi</a>
           consumes APIs that Follow the
-          <a href="http://jsonapi.org/">
+          <a href="https://jsonapi.org/">
             JSON API Specification
           </a>.
 <a href="../packages/rapiclient/index.html">rapiclient</a>
@@ -976,7 +982,7 @@
           API.
 <a href="../packages/threewords/index.html">threewords</a>
           connects to the
-          <a href="http://what3words.com/">
+          <a href="https://what3words.com/">
             What3Words API
           </a>, which represents every 3-meter by 3-meter square on earth as a three-word phrase.
 <a href="../packages/opencage/index.html">opencage</a>
@@ -1082,11 +1088,7 @@
             Google Prediction API
           </a>, a suite of cloud machine learning tools.
 <a href="../packages/yhatr/index.html">yhatr</a>
-          lets you deploy, maintain, and invoke models via the
-          <a href="https://www.yhat.com/">
-            Yhat
-          </a>
-          REST API.
+          lets you deploy, maintain, and invoke models via the Yhat REST API.
 <a href="../packages/datarobot/index.html">datarobot</a>
           works with Data Robot’s predictive modeling platform.
 <a href="../packages/mscsweblm4r/index.html">mscsweblm4r</a>
@@ -1219,9 +1221,7 @@
         <li>
           <em>
             Online Surveys
-          </em>:
-<a href="../packages/qualtRics/index.html">qualtRics</a>
-          and
+          </em>: qualtRics (not on CRAN) and
 <a href="https://github.com/jbryer/qualtrics/"><span class="GitHub">qualtrics</span></a>
           (not on CRAN) provide functions to interact with
           <a href="https://www.qualtrics.com/">
@@ -1674,7 +1674,7 @@
           <a href="https://github.com/leeper/colourlovers">
             GitHub
           </a>) extracts colors and multi-color patterns from
-          <a href="http://www.colourlovers.com/">
+          <a href="https://www.colourlovers.com/">
             COLOURlovers
           </a>, for use in creating R graphics color palettes.
         </li>
@@ -1731,7 +1731,7 @@
         </li>
         <li>
 <a href="../packages/jSonarR/index.html">jSonarR</a>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the
-          <a href="http://www.jsonar.com/">
+          <a href="https://www.jsonar.com/">
             JSON Studio Gateway
           </a>, to convert JSON to a tabular format.
         </li>
@@ -1745,7 +1745,7 @@
         <li>
 <a href="../packages/livechatR/index.html">livechatR</a>
           is a client for the
-          <a href="https://docs.livechatinc.com/rest-api/">
+          <a href="https://developers.livechatinc.com/docs/rest-api/">
             LiveChat API
           </a>.
         </li>
@@ -1818,7 +1818,7 @@
         <li>
 <a href="../packages/refimpact/index.html">refimpact</a>
           connects to
-          <a href="http://impact.ref.ac.uk/CaseStudies/">
+          <a href="https://impact.ref.ac.uk/CaseStudies/">
             the UK Research Excellence Framework 2014 Impact Case Studies Database API
           </a>.
         </li>
@@ -2120,7 +2120,6 @@
     <li><a href="../packages/postlightmercury/index.html">postlightmercury</a></li>
     <li><a href="../packages/pubmed.mineR/index.html">pubmed.mineR</a></li>
     <li><a href="../packages/pushoverr/index.html">pushoverr</a></li>
-    <li><a href="../packages/qualtRics/index.html">qualtRics</a></li>
     <li><a href="../packages/radiant/index.html">radiant</a></li>
     <li><a href="../packages/RAdwords/index.html">RAdwords</a></li>
     <li><a href="../packages/randNames/index.html">randNames</a></li>
