@@ -71,7 +71,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 Web and Server Frameworks
 -------------------------
 
--   [DeployR](https://docs.microsoft.com/en-us/machine-learning-server/deployr/deployr-welcome) is part of Microsoft R Server that provides support for integrating R as an application and website backend.
+-   [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization) (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
 -   The <pkg>shiny</pkg> package makes it easy to build interactive web applications with R.
 -   Other web frameworks include: <pkg>fiery</pkg> that is meant to be more flexible but less easy to use than shiny (<pkg>reqres</pkg> and <pkg>routr</pkg> are utilities used by fiery that provide HTTP request and response classes, and HTTP routing, respectively); <github>nteetor/prairie</github> (not on CRAN) which is a lightweight web framework that uses magrittr-style syntax and is modeled after [expressjs](http://expressjs.com/); <github>att/rcloud</github> provides an iPython notebook-style web-based R interface; and <pkg>Rook</pkg>, which contains the specification and convenience software for building and running Rook applications.
 -   The <pkg>opencpu</pkg> framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.
