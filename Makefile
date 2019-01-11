@@ -1,26 +1,31 @@
+RSCRIPT = Rscript --no-init-file
+
 all: README.md
 
 WebTechnologies.ctv: webtech.md buildxml.R
 	pandoc -w html --wrap=none -o WebTechnologies.ctv webtech.md
-	R -e 'source("buildxml.R")'
+	${RSCRIPT} -e 'source("buildxml.R")'
 
 WebTechnologies.html: WebTechnologies.ctv
-	R -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); ctv::ctv2html("WebTechnologies.ctv")'
+	${RSCRIPT} -e 'if(!require("ctv")) install.packages("ctv", repos = "https://cran.rstudio.com/"); ctv::ctv2html("WebTechnologies.ctv")'
 
 README.md: WebTechnologies.html
 	pandoc -w gfm --wrap=none -o README.md WebTechnologies.html
 	sed -i.tmp -e 's|( \[|(\[|g' README.md
 	sed -i.tmp -e 's| : |: |g' README.md
-	sed -i.tmp -e 's|../packages/|http://cran.rstudio.com/web/packages/|g' README.md
+	sed -i.tmp -e 's|../packages/|https://cran.rstudio.com/web/packages/|g' README.md
 	# sed -i.tmp -e '4s/.*/| | |\n|---|---|/' README.md
 	# sed -i.tmp -e '4i*Do not edit this README by hand. See \[CONTRIBUTING.md\]\(CONTRIBUTING.md\).*\n' README.md
 	rm *.tmp
 
 check:
-	R -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); print(ctv::check_ctv_packages("WebTechnologies.ctv", repos = "http://cran.rstudio.com/"))'
+	${RSCRIPT} -e 'if(!require("ctv")) install.packages("ctv", repos = "http://cran.rstudio.com/"); print(ctv::check_ctv_packages("WebTechnologies.ctv", repos = "https://cran.rstudio.com/"))'
 
 checkurls:
-	R -e 'source("checkurls.R")'
+	${RSCRIPT} -e 'source("checkurls.R")'
+
+checkgithub:
+	${RSCRIPT} -e 'source("check_github_on_cran.R")'
 
 README.html: README.md
 	pandoc --from=gfm -o README.html README.md

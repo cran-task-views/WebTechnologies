@@ -36,3 +36,17 @@ If you don't want to or can't install these things, then just edit the `webtech.
 ## Submit an issue
 
 If you just want to submit an issue, then go to the [issues page](https://github.com/ropensci/webservices/issues?state=open) and do that. Please list as much of the following as possible: package name, repository, development URL, description/details.
+
+## Make commands (just for informational purproses)
+
+- all: runs the README.md task
+- WebTechnologies.ctv: make the .ctv file
+- WebTechnologies.html: make the .html file from the .ctv file
+- README.md: make the README.md from the .html file
+- check: check the .ctv file with `ctv::check_ctv_packages`
+- checkurls: check if any urls are no longer good
+- checkgithub: check if any pkgs wrapped in `<github>` are now on CRAN - if you get a 200 status in the output the pkg is likely on CRAN
+- README.html: make the README.html from README.md
+- diff: see the diff of the ctv here vs. the one in the remote ctv store
+- svn: put the .ctv in a local svn repo
+- release: release the .ctv
