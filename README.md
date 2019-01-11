@@ -4,14 +4,14 @@
 | --------------- | -------------------------------------------------------------------------------- |
 | **Maintainer:** | Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | scott at ropensci.org                                                            |
-| **Version:**    | 2018-10-24                                                                       |
+| **Version:**    | 2019-01-11                                                                       |
 | **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 <div>
 
 *Do not edit this README by hand. See [CONTRIBUTING.md](CONTRIBUTING.md) .*
 
-This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The [Open Data Task View](https://github.com/ropensci/opendata) provides further discussion of online data sources that can be accessed from R.
+This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The [rOpenSci Task View: Open Data](https://github.com/ropensci/opendata) provides further discussion of online data sources that can be accessed from R.
 
 If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and [submit an issue](https://github.com/ropensci/webservices/issues) , or make some changes and [submit a pull request](https://github.com/ropensci/webservices/pulls) . If you can’t contribute on GitHub, [send Scott an email](mailto:scott@ropensci.org) . If you have an issue with one of the packages discussed below, please contact the maintainer of that package. If you know of a web service, API, data source, or other online resource that is not yet supported by an R package, consider adding it to [the package development to do list on GitHub](https://github.com/ropensci/webservices/wiki/ToDo) .
 
@@ -142,7 +142,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [instaR](http://cran.rstudio.com/web/packages/instaR/index.html) ([GitHub](https://github.com/pablobarbera/instaR) ) is a client for the [Instagram API](https://www.instagram.com/developer/) .
   - [<span class="GitHub">Rlinkedin</span>](https://github.com/mpiccirilli/Rlinkedin/) (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.
   - [rpinterest](http://cran.rstudio.com/web/packages/rpinterest/index.html) connects to the [Pintrest](https://www.pinterest.com/) API.
-  - [SocialMediaMineR](http://cran.rstudio.com/web/packages/SocialMediaMineR/index.html) is an analytic tool that returns information about the popularity of a URL on social media sites.
   - [tumblR](http://cran.rstudio.com/web/packages/tumblR/index.html) ([GitHub](https://github.com/klapaukh/tumblR) ) is a client for the Tumblr API ( <https://www.tumblr.com/docs/en/api/v2> ). Tumblr is a microblogging platform and social networking website <https://www.tumblr.com/> .
   - [vkR](http://cran.rstudio.com/web/packages/vkR/index.html) is a client for VK, a social networking site based in Russia.
   - [<span class="GitHub">meetupr</span>](https://github.com/rladies/meetupr/) is a client for the Meetup.com API.
@@ -476,7 +475,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [servr](http://cran.rstudio.com/web/packages/servr/index.html)
   - [shiny](http://cran.rstudio.com/web/packages/shiny/index.html) (core)
   - [slackr](http://cran.rstudio.com/web/packages/slackr/index.html)
-  - [SocialMediaMineR](http://cran.rstudio.com/web/packages/SocialMediaMineR/index.html)
   - [soql](http://cran.rstudio.com/web/packages/soql/index.html)
   - [sparkbq](http://cran.rstudio.com/web/packages/sparkbq/index.html)
   - [spiderbar](http://cran.rstudio.com/web/packages/spiderbar/index.html)
@@ -527,4 +525,4 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
 ### Related links:
 
-  - [Open Data TaskView](https://github.com/ropensci/opendata)
+  - [rOpenSci Task View: Open Data](https://github.com/ropensci/opendata)
