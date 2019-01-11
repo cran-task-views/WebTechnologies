@@ -1,5 +1,5 @@
 if (!require("httr")) {
-    install.packages("httr", repos = "http://cran.rstudio.com/")
+    install.packages("httr", repos = "https://cran.rstudio.com/")
 }
 
 extract_urls <- function(file, ...) {

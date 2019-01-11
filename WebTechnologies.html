@@ -192,7 +192,9 @@
         <li>
           <em>
             Authentication
-          </em>: Using web resources can require authentication, either via API keys, OAuth, username:password combination, or via other means. Additionally, sometimes web resources that require authentication be in the header of an http call, which requires a little bit of extra work. API keys and username:password combos can be combined within a url for a call to a web resource (api key: http://api.foo.org/?key=yourkey; user/pass: http://username:password@api.foo.org), or can be specified via commands in
+          </em>: Using web resources can require authentication, either via API keys, OAuth, username:password combination, or via other means. Additionally, sometimes web resources that require authentication be in the header of an http call, which requires a little bit of extra work. API keys and username:password combos can be combined within a url for a call to a web resource (api key:
+<tt>http://api.foo.org/?key=yourkey</tt>; user/pass:
+<tt>http://username:password@api.foo.org</tt>), or can be specified via commands in
 <a href="../packages/RCurl/index.html">RCurl</a>
           or
 <a href="../packages/httr/index.html">httr</a>. OAuth is the most complicated authentication process, and can be most easily done using
