@@ -202,6 +202,7 @@ Web Services
 -   <pkg>RZabbix</pkg> links with the [Zabbix network monitoring service API](https://www.zabbix.com/documentation/3.0/manual/api/reference).
 -   <pkg>rwars</pkg> retrieve and reformat data from the [Star Wars API (SWAPI)](https://swapi.co/).
 -   <pkg>slackr</pkg> ([GitHub](https://github.com/hrbrmstr/slackr)) is a client for Slack.com messaging platform.
+-   <pkg>shutterstock</pkg> ([GitHub](https://github.com/strboul/shutterstock-r)) is to access Shutterstock library from R.
 -   <github>dmpe/SlideShaRe</github> (not on CRAN) is a client for Slideshare.
 -   <github>dgrtwo/stackr</github> (not on CRAN): An unofficial wrapper for the read-only features of the [Stack Exchange API](https://api.stackexchange.com/).
 -   <pkg>telegram</pkg> ([GitHub](https://github.com/lbraglia/telegram)) connects with the Telegram Bot API.
