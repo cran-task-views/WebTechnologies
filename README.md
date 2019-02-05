@@ -238,8 +238,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [rwars](https://cran.rstudio.com/web/packages/rwars/index.html) retrieve and reformat data from the [Star Wars API (SWAPI)](https://swapi.co/) .
 
   - [slackr](https://cran.rstudio.com/web/packages/slackr/index.html) ([GitHub](https://github.com/hrbrmstr/slackr) ) is a client for Slack.com messaging platform.
-  
-  - [shutterstock](https://cran.r-project.org/web/packages/shutterstock/index.html) ([GitHub](https://github.com/strboul/shutterstock-r)) is to access Shutterstock library from R.
 
   - [<span class="GitHub">SlideShaRe</span>](https://github.com/dmpe/SlideShaRe/) (not on CRAN) is a client for Slideshare.
 
@@ -478,7 +476,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [sendmailR](https://cran.rstudio.com/web/packages/sendmailR/index.html)
   - [servr](https://cran.rstudio.com/web/packages/servr/index.html)
   - [shiny](https://cran.rstudio.com/web/packages/shiny/index.html) (core)
-  - [shutterstock](https://cran.r-project.org/web/packages/shutterstock/index.html)
   - [slackr](https://cran.rstudio.com/web/packages/slackr/index.html)
   - [soql](https://cran.rstudio.com/web/packages/soql/index.html)
   - [sparkbq](https://cran.rstudio.com/web/packages/sparkbq/index.html)
