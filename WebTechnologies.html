@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2019-02-06" />
+  <meta name="citation_publication_date" content="2019-02-28" />
   <meta name="citation_public_url" content="https://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2019-02-06" />
+  <meta name="DC.issued" content="2019-02-28" />
   <meta name="DC.identifier" content="https://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,7 +19,7 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x73;&#x63;&#x6f;&#x74;&#x74;&#x20;&#x61;&#x74;&#x20;&#x72;&#x6f;&#x70;&#x65;&#x6e;&#x73;&#x63;&#x69;&#x2e;&#x6f;&#x72;&#x67;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2019-02-06</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2019-02-28</td></tr>
     <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=WebTechnologies">https://CRAN.R-project.org/view=WebTechnologies</a></td></tr>
   </table>
 
@@ -204,7 +204,9 @@
           is a package that provides a separate R interface to OAuth. OAuth is easier to to do in
 <a href="../packages/httr/index.html">httr</a>, so start there.
 <a href="../packages/googleAuthR/index.html">googleAuthR</a>
-          provides an OAuth 2.0 setup specifically for Google web services.
+          provides an OAuth 2.0 setup specifically for Google web services, and
+<a href="../packages/AzureAuth/index.html">AzureAuth</a>
+          provides similar functionality for Azure Active Directory.
         </li>
       </ul>
       <p>
@@ -707,6 +709,11 @@
       </p>
       <ul>
         <li>
+          <a href="https://cloudyr.github.io/">
+            The cloudyr project
+          </a>, which is currently under active development on GitHub, aims to provide interfaces to popular Amazon, Azure and Google cloud services without the need for external system dependencies.
+        </li>
+        <li>
           Amazon Web Services is a popular, proprietary cloud service offering a suite of computing, storage, and infrastructure tools.
 <a href="../packages/aws.signature/index.html">aws.signature</a>
           provides functionality for generating AWS API request signatures.
@@ -759,10 +766,66 @@
 <a href="http://www.Omegahat.net/RAmazonDBREST/"><span class="Ohat">RAmazonDBREST</span></a>
               provides an interface to Amazon’s Simple DB API.
             </li>
+          </ul>
+        </li>
+        <li>
+          Azure is Microsoft’s cloud computing service. It provides Paas, SaaS and IaaS and supports many different tools and frameworks, including both Microsoft-specific and third-party systems.
+          <ul>
             <li>
-              <a href="https://cloudyr.github.io/">
-                The cloudyr project
-              </a>, which is currently under active development on GitHub, aims to provide a unified interface to the full Amazon Web Services suite without the need for external system dependencies.
+              <em>
+                Azure Active Directory (AAD)
+              </em>
+              is a centralised directory and identity service.
+<a href="../packages/AzureAuth/index.html">AzureAuth</a>
+              is an R client for AAD; use this to obtain OAuth tokens for authenticating with other Azure services, including Resource Manager and storage (see next).
+            </li>
+            <li>
+              <em>
+                Azure Resource Manager (ARM)
+              </em>
+              is a service for deploying other Azure services.
+<a href="../packages/AzureRMR/index.html">AzureRMR</a>
+              is an R interface to ARM, and allows managing subscriptions, resource groups, resources and templates. It exposes a general R6 class framework that can extended to provide extra functionality for specific services (see next).
+            </li>
+            <li>
+              <em>
+                Azure Storage Accounts
+              </em>
+              are a general-purpose data storage facility. Different types of storage are available: file, blob, table, Data Lake, and more.
+<a href="../packages/AzureStor/index.html">AzureStor</a>
+              provides an R interface to storage. Features include clients for file, blob and Data Lake Gen2 storage, parallelized file transfers, and an interface to Microsoft’s cross-platform AzCopy commandline utility. Also supplied is an ARM interface, to allow creation and managing of storage accounts.
+            </li>
+            <li>
+              <em>
+                Data Science Virtual Machines (DSVMs)
+              </em>
+              are Azure VMs that come preloaded with a wide variety of software for statistics and machine learning, including R, Python, TensorFlow, and Spark.
+<a href="../packages/AzureVM/index.html">AzureVM</a>
+              is a package for managing DSVMs from within R. It also allows deploying arbitrary VMs by supplying a suitable deployment template.
+            </li>
+            <li>
+<a href="../packages/AzureContainers/index.html">AzureContainers</a>
+              provides a unified facility for working with containers in Azure. Specifically, it includes R interfaces to
+              <em>
+                Azure Container Instances (ACI)
+              </em>,
+              <em>
+                Azure Docker Registry (ACR)
+              </em>
+              and
+              <em>
+                Azure Kubernetes Service (AKS)
+              </em>. Create Docker images and push them to an ACR repository; spin up ACI containers; deploy Kubernetes services in AKS.
+            </li>
+            <li>
+              <em>
+                Azure Data Explorer
+              </em>, also known as
+              <em>
+                Kusto
+              </em>, is a fast, scalable data exploration and analytics service.
+<a href="https://github.com/cloudyr/AzureKusto/"><span class="GitHub">AzureKusto</span></a>
+              (not yet on CRAN) is an R interface to ADE/Kusto. It includes a dplyr client interface similar to that provided by dbplyr for SQL databases, a DBI client interface, and an ARM interface for deploying and managing Kusto clusters and databases.
             </li>
           </ul>
         </li>
@@ -1983,7 +2046,12 @@
     <li><a href="../packages/aws.s3/index.html">aws.s3</a></li>
     <li><a href="../packages/aws.signature/index.html">aws.signature</a></li>
     <li><a href="../packages/aws.sns/index.html">aws.sns</a></li>
+    <li><a href="../packages/AzureAuth/index.html">AzureAuth</a></li>
+    <li><a href="../packages/AzureContainers/index.html">AzureContainers</a></li>
     <li><a href="../packages/AzureML/index.html">AzureML</a></li>
+    <li><a href="../packages/AzureRMR/index.html">AzureRMR</a></li>
+    <li><a href="../packages/AzureStor/index.html">AzureStor</a></li>
+    <li><a href="../packages/AzureVM/index.html">AzureVM</a></li>
     <li><a href="../packages/backblazer/index.html">backblazer</a></li>
     <li><a href="../packages/banR/index.html">banR</a></li>
     <li><a href="../packages/bigml/index.html">bigml</a></li>
