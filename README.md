@@ -3,8 +3,8 @@
 |                 |                                                                                  |
 | --------------- | -------------------------------------------------------------------------------- |
 | **Maintainer:** | Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud |
-| **Contact:**    | scott at ropensci.org                                                            |
-| **Version:**    | 2019-02-28                                                                       |
+| **Contact:**    | myrmecocystus at gmail.com                                                       |
+| **Version:**    | 2019-03-08                                                                       |
 | **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 <div>
