@@ -99,6 +99,7 @@ Web Services
       -   *Simple Notification Service (SNS)* is a service for Pub/Sub messaging and mobile notifications for microservices, distributed systems, and serverless applications. <pkg>aws.sns</pkg>
       -   *AWS Polly* is a Text-to-Speech (TTS) cloud service that converts text into lifelike speech. <pkg>aws.polly</pkg>
       -   *DBREST*: <ohat>RAmazonDBREST</ohat> provides an interface to Amazon's Simple DB API.
+      -   <pkg>paws</pkg> ([GitHub](https://github.com/paws-r/paws)) is an interface to nearly all AWS APIs, including compute, storage, databases, and machine learning. It also requires no external system dependencies.
 -   Azure is Microsoft's cloud computing service. It provides Paas, SaaS and IaaS and supports many different tools and frameworks, including both Microsoft-specific and third-party systems.
       -   *Azure Active Directory (AAD)* is a centralised directory and identity service. <pkg>AzureAuth</pkg> is an R client for AAD; use this to obtain OAuth tokens for authenticating with other Azure services, including Resource Manager and storage (see next).
       -   *Azure Resource Manager (ARM)* is a service for deploying other Azure services. <pkg>AzureRMR</pkg> is an R interface to ARM, and allows managing subscriptions, resource groups, resources and templates. It exposes a general R6 class framework that can extended to provide extra functionality for specific services (see next).
