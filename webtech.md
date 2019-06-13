@@ -192,7 +192,7 @@ Web Services
 -   <github>stephlocke/mockaRoo</github> (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
 -   <pkg>pivotaltrackR</pkg> provides an interface to the API for [Pivotal Tracker](https://www.pivotaltracker.com/), an agile project management tool.
 -   <pkg>randNames</pkg> ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the <https://randomapi.com/> API.
--   <pkg>Rblpapi</pkg> ([GitHub](https://github.com/Rblp/Rblpapi)) is a client for Bloomberg Finance L.P. <pkg>ROpenFIGI</pkg> ([GitHub](https://github.com/HuangRicky/ROpenFIGI)) provides an interface to Bloomberg's [OpenFIGI](https://www.openfigi.com/) API.
+-   <pkg>Rblpapi</pkg> ([GitHub](https://github.com/Rblp/Rblpapi)) is a client for Bloomberg Finance L.P. <pkg>ROpenFIGI</pkg> ([GitHub](https://github.com/HuangRicky/ROpenFIGI)) provides an interface to Bloomberg's OpenFIGI API.
 -   <pkg>rerddap</pkg>: A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP (<https://en.wikipedia.org/wiki/OPeNDAP>), or *Open-source Project for a Network Data Access Protocol*. Allows user to swap out the base URL to use any ERDDAP instance.
 -   <github>hmalmedal/ripplerestr</github> provides an interface to the [Ripple](https://ripple.com/) protocol for making financial transactions.
 -   <pkg>refimpact</pkg> connects to [the UK Research Excellence Framework 2014 Impact Case Studies Database API](https://impact.ref.ac.uk/CaseStudies/).

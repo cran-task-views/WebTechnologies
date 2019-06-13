@@ -104,6 +104,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
       - *Simple Notification Service (SNS)* is a service for Pub/Sub messaging and mobile notifications for microservices, distributed systems, and serverless applications. [aws.sns](https://cran.rstudio.com/web/packages/aws.sns/index.html)
       - *AWS Polly* is a Text-to-Speech (TTS) cloud service that converts text into lifelike speech. [aws.polly](https://cran.rstudio.com/web/packages/aws.polly/index.html)
       - *DBREST*: [<span class="Ohat">RAmazonDBREST</span>](http://www.Omegahat.net/RAmazonDBREST/) provides an interface to Amazon’s Simple DB API.
+      - [paws](https://cran.rstudio.com/web/packages/paws/index.html) ([GitHub](https://github.com/paws-r/paws) ) is an interface to nearly all AWS APIs, including compute, storage, databases, and machine learning. It also requires no external system dependencies.
   - Azure is Microsoft’s cloud computing service. It provides Paas, SaaS and IaaS and supports many different tools and frameworks, including both Microsoft-specific and third-party systems.
       - *Azure Active Directory (AAD)* is a centralised directory and identity service. [AzureAuth](https://cran.rstudio.com/web/packages/AzureAuth/index.html) is an R client for AAD; use this to obtain OAuth tokens for authenticating with other Azure services, including Resource Manager and storage (see next).
       - *Azure Resource Manager (ARM)* is a service for deploying other Azure services. [AzureRMR](https://cran.rstudio.com/web/packages/AzureRMR/index.html) is an R interface to ARM, and allows managing subscriptions, resource groups, resources and templates. It exposes a general R6 class framework that can extended to provide extra functionality for specific services (see next).
@@ -211,7 +212,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
   - [randNames](https://cran.rstudio.com/web/packages/randNames/index.html) ([GitHub](https://github.com/karthik/randNames) ) generates random names and personal identifying information using the <https://randomapi.com/> API.
 
-  - [Rblpapi](https://cran.rstudio.com/web/packages/Rblpapi/index.html) ([GitHub](https://github.com/Rblp/Rblpapi) ) is a client for Bloomberg Finance L.P. [ROpenFIGI](https://cran.rstudio.com/web/packages/ROpenFIGI/index.html) ([GitHub](https://github.com/HuangRicky/ROpenFIGI) ) provides an interface to Bloomberg’s [OpenFIGI](https://www.openfigi.com/) API.
+  - [Rblpapi](https://cran.rstudio.com/web/packages/Rblpapi/index.html) ([GitHub](https://github.com/Rblp/Rblpapi) ) is a client for Bloomberg Finance L.P. [ROpenFIGI](https://cran.rstudio.com/web/packages/ROpenFIGI/index.html) ([GitHub](https://github.com/HuangRicky/ROpenFIGI) ) provides an interface to Bloomberg’s OpenFIGI API.
 
   - [rerddap](https://cran.rstudio.com/web/packages/rerddap/index.html): A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP ( <https://en.wikipedia.org/wiki/OPeNDAP> ), or *Open-source Project for a Network Data Access Protocol* . Allows user to swap out the base URL to use any ERDDAP instance.
 
@@ -390,6 +391,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [osrm](https://cran.rstudio.com/web/packages/osrm/index.html)
   - [owmr](https://cran.rstudio.com/web/packages/owmr/index.html)
   - [ows4R](https://cran.rstudio.com/web/packages/ows4R/index.html)
+  - [paws](https://cran.rstudio.com/web/packages/paws/index.html)
   - [pdftables](https://cran.rstudio.com/web/packages/pdftables/index.html)
   - [pivotaltrackR](https://cran.rstudio.com/web/packages/pivotaltrackR/index.html)
   - [plotGoogleMaps](https://cran.rstudio.com/web/packages/plotGoogleMaps/index.html)
