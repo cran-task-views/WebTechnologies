@@ -188,7 +188,6 @@ Web Services
 -   <pkg>jSonarR</pkg>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the [JSON Studio Gateway](https://www.jsonar.com/), to convert JSON to a tabular format.
 -   <pkg>LendingClub</pkg> connects with the [LendingClub API](https://www.lendingclub.com/developers/api-overview).
 -   <pkg>livechatR</pkg> is a client for the [LiveChat API](https://developers.livechatinc.com/docs/rest-api/).
--   <pkg>lucr</pkg> performs currency conversions using [Open Exchange Rates](https://openexchangerates.org/).
 -   <github>stephlocke/mockaRoo</github> (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
 -   <pkg>pivotaltrackR</pkg> provides an interface to the API for [Pivotal Tracker](https://www.pivotaltracker.com/), an agile project management tool.
 -   <pkg>randNames</pkg> ([GitHub](https://github.com/karthik/randNames)) generates random names and personal identifying information using the <https://randomapi.com/> API.
