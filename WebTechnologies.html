@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2019-10-02" />
+  <meta name="citation_publication_date" content="2019-11-01" />
   <meta name="citation_public_url" content="https://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2019-10-02" />
+  <meta name="DC.issued" content="2019-11-01" />
   <meta name="DC.identifier" content="https://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,2293 +19,1934 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x6d;&#x79;&#x72;&#x6d;&#x65;&#x63;&#x6f;&#x63;&#x79;&#x73;&#x74;&#x75;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2019-10-02</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2019-11-01</td></tr>
     <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=WebTechnologies">https://CRAN.R-project.org/view=WebTechnologies</a></td></tr>
   </table>
 
     <div>
-      <CRANTaskView>
-        <name>
-          WebTechnologies
-        </name>
-        <topic>
-          Web Technologies and Services
-        </topic>
-        <maintainer email="myrmecocystus@gmail.com">
-          Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud
-        </maintainer>
-        <version>
-          2019-10-02
-        </version>
-        <div>
-          <p>
-            <em>
-              Do not edit this README by hand. See
-              <a href="CONTRIBUTING.md">
-                CONTRIBUTING.md
-              </a>.
-            </em>
-          </p>
-          <p>
-            This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The
-            <a href="https://github.com/ropensci/opendata">
-              rOpenSci Task View: Open Data
-            </a>
-            provides further discussion of online data sources that can be accessed from R.
-          </p>
-          <p>
-            If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and
-            <a href="https://github.com/ropensci/webservices/issues">
-              submit an issue
-            </a>, or make some changes and
-            <a href="https://github.com/ropensci/webservices/pulls">
-              submit a pull request
-            </a>. If you can’t contribute on GitHub,
-            <a href="mailto:myrmecocystus@gmail.com">
-              send Scott an email
-            </a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package. If you know of a web service, API, data source, or other online resource that is not yet supported by an R package, consider adding it to
-            <a href="https://github.com/ropensci/webservices/wiki/ToDo">
-              the package development to do list on GitHub
-            </a>.
-          </p>
-          <h2 id="tools-for-working-with-the-web-from-r">
-            Tools for Working with the Web from R
-          </h2>
-          <p>
-            <strong>
-              Core Tools For HTTP Requests
-            </strong>
-          </p>
-          <p>
-            There are two packages that should cover most use cases of interacting with the web from R.
+      <p>
+        <em>
+          Do not edit this README by hand. See
+          <a href="CONTRIBUTING.md">
+            CONTRIBUTING.md
+          </a>.
+        </em>
+      </p>
+      <p>
+        This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The
+        <a href="https://github.com/ropensci/opendata">
+          rOpenSci Task View: Open Data
+        </a>
+        provides further discussion of online data sources that can be accessed from R.
+      </p>
+      <p>
+        If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and
+        <a href="https://github.com/ropensci/webservices/issues">
+          submit an issue
+        </a>, or make some changes and
+        <a href="https://github.com/ropensci/webservices/pulls">
+          submit a pull request
+        </a>. If you can’t contribute on GitHub,
+        <a href="mailto:myrmecocystus@gmail.com">
+          send Scott an email
+        </a>. If you have an issue with one of the packages discussed below, please contact the maintainer of that package. If you know of a web service, API, data source, or other online resource that is not yet supported by an R package, consider adding it to
+        <a href="https://github.com/ropensci/webservices/wiki/ToDo">
+          the package development to do list on GitHub
+        </a>.
+      </p>
+      <h2 id="tools-for-working-with-the-web-from-r">
+        Tools for Working with the Web from R
+      </h2>
+      <p>
+        <strong>
+          Core Tools For HTTP Requests
+        </strong>
+      </p>
+      <p>
+        There are two packages that should cover most use cases of interacting with the web from R.
 <a href="../packages/httr/index.html">httr</a>
-            provides a user-friendly interface for executing HTTP methods (GET, POST, PUT, HEAD, DELETE, etc.) and provides support for modern web authentication protocols (OAuth 1.0, OAuth 2.0). HTTP status codes are helpful for debugging HTTP calls. httr makes this easier using, for example,
+        provides a user-friendly interface for executing HTTP methods (GET, POST, PUT, HEAD, DELETE, etc.) and provides support for modern web authentication protocols (OAuth 1.0, OAuth 2.0). HTTP status codes are helpful for debugging HTTP calls. httr makes this easier using, for example,
 <tt>stop_for_status()</tt>, which gets the http status code from a response object, and stops the function if the call was not successful. (See also
 <tt>warn_for_status()</tt>.) Note that you can pass in additional libcurl options to the
 <tt>config</tt>
-            parameter in http calls.
+        parameter in http calls.
 <a href="../packages/curl/index.html">curl</a>
-            is a lower-level package that provides a closer interface between R and the
-            <a href="https://curl.haxx.se/libcurl/">
-              libcurl C library
-            </a>, but is less user-friendly. It may be useful for operations on web-based XML or to perform FTP operations.
+        is a lower-level package that provides a closer interface between R and the
+        <a href="https://curl.haxx.se/libcurl/">
+          libcurl C library
+        </a>, but is less user-friendly. It may be useful for operations on web-based XML or to perform FTP operations.
 <tt>curl::curl()</tt>
-            is an SSL-compatible replacement for base R’s
+        is an SSL-compatible replacement for base R’s
 <tt>url()</tt>
-            and has support for http 2.0, SSL (https, ftps), gzip, deflate and more. For websites serving insecure HTTP (i.e. using the “http” not “https” prefix), most R functions can extract data directly, including
+        and has support for http 2.0, SSL (https, ftps), gzip, deflate and more. For websites serving insecure HTTP (i.e. using the “http” not “https” prefix), most R functions can extract data directly, including
 <tt>read.table</tt>
-            and
+        and
 <tt>read.csv</tt>; this also applies to functions in add-on packages such as
 <tt>jsonlite::fromJSON()</tt>
-            and
+        and
 <tt>XML::parseXML</tt>. For more specific situations, the following resources may be useful:
-          </p>
-          <ul>
-            <li>
+      </p>
+      <ul>
+        <li>
 <a href="../packages/RCurl/index.html">RCurl</a>
-              is another low level client for libcurl. Of the two low-level curl clients, we recommend using
+          is another low level client for libcurl. Of the two low-level curl clients, we recommend using
 <a href="../packages/curl/index.html">curl</a>.
 <a href="../packages/httpRequest/index.html">httpRequest</a>
-              is another low-level package for HTTP requests that implements the GET, POST and multipart POST verbs, but we do not recommend its use.
-            </li>
-            <li>
+          is another low-level package for HTTP requests that implements the GET, POST and multipart POST verbs, but we do not recommend its use.
+        </li>
+        <li>
 <a href="../packages/crul/index.html">crul</a>
-              (
-              <a href="https://github.com/ropensci/crul">
-                GitHub
-              </a>) is an R6-based HTTP client that provides asynchronous HTTP requests, a pagination helper, HTTP mocking via
+          (
+          <a href="https://github.com/ropensci/crul">
+            GitHub
+          </a>) is an R6-based HTTP client that provides asynchronous HTTP requests, a pagination helper, HTTP mocking via
 <a href="../packages/webmockr/index.html">webmockr</a>, and request caching via
 <a href="../packages/vcr/index.html">vcr</a>. It targets developers of other R packages more so than end users.
-            </li>
-            <li>
+        </li>
+        <li>
 <a href="https://github.com/hrbrmstr/curlconverter/"><span class="GitHub">curlconverter</span></a>
-              (not on CRAN) is a useful package for converting curl command-line code, for example from a browser developer’s console, into R code.
-            </li>
-            <li>
+          (not on CRAN) is a useful package for converting curl command-line code, for example from a browser developer’s console, into R code.
+        </li>
+        <li>
 <a href="../packages/request/index.html">request</a>
-              provides a high-level package that is useful for developing other API client packages.
+          provides a high-level package that is useful for developing other API client packages.
 <a href="../packages/httping/index.html">httping</a>
-              provides simplified tools to ping and time HTTP requests, around
+          provides simplified tools to ping and time HTTP requests, around
 <a href="../packages/httr/index.html">httr</a>
-              calls.
+          calls.
 <a href="../packages/httpcache/index.html">httpcache</a>
-              provides a mechanism for caching HTTP requests.
-            </li>
-            <li>
-              For dynamically generated webpages (i.e., those requiring user interaction to display results),
+          provides a mechanism for caching HTTP requests.
+        </li>
+        <li>
+          For dynamically generated webpages (i.e., those requiring user interaction to display results),
 <a href="../packages/RSelenium/index.html">RSelenium</a>
-              can be used to automate those interactions and extract page contents. It provides a set of bindings for the Selenium 2.0 webdriver using the
-              <a href="https://github.com/seleniumhq/selenium-google-code-issue-archive">
-                JsonWireProtocol
-              </a>. It can also aid in automated application testing, load testing, and web scraping.
+          can be used to automate those interactions and extract page contents. It provides a set of bindings for the Selenium 2.0 webdriver using the
+          <a href="https://github.com/seleniumhq/selenium-google-code-issue-archive">
+            JsonWireProtocol
+          </a>. It can also aid in automated application testing, load testing, and web scraping.
 <a href="../packages/seleniumPipes/index.html">seleniumPipes</a>
-              (
-              <a href="https://github.com/johndharrison/seleniumPipes">
-                GitHub
-              </a>) provides a “pipe”-oriented interface to the same. An alternative to the former two packages is
+          (
+          <a href="https://github.com/johndharrison/seleniumPipes">
+            GitHub
+          </a>) provides a “pipe”-oriented interface to the same. An alternative to the former two packages is
 <a href="../packages/splashr/index.html">splashr</a>
-              that vouches to be a lightweight altnernative.
+          that vouches to be a lightweight altnernative.
 <a href="https://github.com/cpsievert/rdom/"><span class="GitHub">rdom</span></a>
-              (not on CRAN) uses
-              <a href="https://phantomjs.org/">
-                phantomjs
-              </a>
-              to access a webpage’s Document Object Model (DOM).
-            </li>
-            <li>
-              For capturing static content of web pages
+          (not on CRAN) uses
+          <a href="https://phantomjs.org/">
+            phantomjs
+          </a>
+          to access a webpage’s Document Object Model (DOM).
+        </li>
+        <li>
+          For capturing static content of web pages
 <a href="../packages/postlightmercury/index.html">postlightmercury</a>
-              is a client for the web service
-              <a href="https://mercury.postlight.com/">
-                Mercury
-              </a>
-              that turns web pages into structured and clean text.
-            </li>
-            <li>
-              Another, higher-level alternative package useful for webscraping is
+          is a client for the web service
+          <a href="https://mercury.postlight.com/">
+            Mercury
+          </a>
+          that turns web pages into structured and clean text.
+        </li>
+        <li>
+          Another, higher-level alternative package useful for webscraping is
 <a href="../packages/rvest/index.html">rvest</a>, which is designed to work with
 <a href="../packages/magrittr/index.html">magrittr</a>
-              to make it easy to express common web scraping tasks.
-            </li>
-            <li>
-              Many base R tools can be used to download web content, provided that the website does not use SSL (i.e., the URL does not have the “https” prefix).
+          to make it easy to express common web scraping tasks.
+        </li>
+        <li>
+          Many base R tools can be used to download web content, provided that the website does not use SSL (i.e., the URL does not have the “https” prefix).
 <tt>download.file()</tt>
-              is a general purpose function that can be used to download a remote file. For SSL, the
+          is a general purpose function that can be used to download a remote file. For SSL, the
 <tt>download()</tt>
-              function in
+          function in
 <a href="../packages/downloader/index.html">downloader</a>
-              wraps
+          wraps
 <tt>download.file()</tt>, and takes all the same arguments.
-            </li>
-            <li>
-              Tabular data sets (e.g., txt, csv, etc.) can be input using
+        </li>
+        <li>
+          Tabular data sets (e.g., txt, csv, etc.) can be input using
 <tt>read.table()</tt>,
 <tt>read.csv()</tt>, and friends, again assuming that the files are not hosted via SSL. An alternative is to use
 <tt>httr::GET</tt>
-              (or
+          (or
 <tt>RCurl::getURL</tt>) to first read the file into R as a character vector before parsing with
 <tt>read.table(text=...)</tt>, or you can download the file to a local directory.
 <a href="../packages/rio/index.html">rio</a>
-              (
-              <a href="https://github.com/leeper/rio">
-                GitHub
-              </a>) provides an
+          (
+          <a href="https://github.com/leeper/rio">
+            GitHub
+          </a>) provides an
 <tt>import()</tt>
-              function that can read a number of common data formats directly from an https:// URL. The
+          function that can read a number of common data formats directly from an https:// URL. The
 <a href="../packages/repmis/index.html">repmis</a>
-              function
+          function
 <tt>source_data()</tt>
-              can load and cache plain-text data from a URL (either http or https). That package also includes
+          can load and cache plain-text data from a URL (either http or https). That package also includes
 <tt>source_Dropbox()</tt>
-              for downloading/caching plain-text data from non-public Dropbox folders and
+          for downloading/caching plain-text data from non-public Dropbox folders and
 <tt>source_XlsxData()</tt>
-              for downloading/caching Excel xlsx sheets.
-            </li>
-            <li>
-              <em>
-                Authentication
-              </em>: Using web resources can require authentication, either via API keys, OAuth, username:password combination, or via other means. Additionally, sometimes web resources that require authentication be in the header of an http call, which requires a little bit of extra work. API keys and username:password combos can be combined within a url for a call to a web resource (api key:
+          for downloading/caching Excel xlsx sheets.
+        </li>
+        <li>
+          <em>
+            Authentication
+          </em>: Using web resources can require authentication, either via API keys, OAuth, username:password combination, or via other means. Additionally, sometimes web resources that require authentication be in the header of an http call, which requires a little bit of extra work. API keys and username:password combos can be combined within a url for a call to a web resource (api key:
 <tt>http://api.foo.org/?key=yourkey</tt>; user/pass:
 <tt>http://username:password@api.foo.org</tt>), or can be specified via commands in
 <a href="../packages/RCurl/index.html">RCurl</a>
-              or
+          or
 <a href="../packages/httr/index.html">httr</a>. OAuth is the most complicated authentication process, and can be most easily done using
 <a href="../packages/httr/index.html">httr</a>. See the 6 demos within
 <a href="../packages/httr/index.html">httr</a>, three for OAuth 1.0 (linkedin, twitter, vimeo) and three for OAuth 2.0 (facebook, GitHub, google).
 <a href="../packages/ROAuth/index.html">ROAuth</a>
-              is a package that provides a separate R interface to OAuth. OAuth is easier to to do in
+          is a package that provides a separate R interface to OAuth. OAuth is easier to to do in
 <a href="../packages/httr/index.html">httr</a>, so start there.
 <a href="../packages/googleAuthR/index.html">googleAuthR</a>
-              provides an OAuth 2.0 setup specifically for Google web services, and
+          provides an OAuth 2.0 setup specifically for Google web services, and
 <a href="../packages/AzureAuth/index.html">AzureAuth</a>
-              provides similar functionality for Azure Active Directory.
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Handling HTTP Errors/Codes
-            </strong>
-          </p>
-          <ul>
-            <li>
+          provides similar functionality for Azure Active Directory.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Handling HTTP Errors/Codes
+        </strong>
+      </p>
+      <ul>
+        <li>
 <a href="../packages/fauxpas/index.html">fauxpas</a>
-              brings a set of Ruby or Python like R6 classes for each individual HTTP status code, allowing simple and verbose messages, with a choice of using messages, warnings, or stops.
-            </li>
-            <li>
+          brings a set of Ruby or Python like R6 classes for each individual HTTP status code, allowing simple and verbose messages, with a choice of using messages, warnings, or stops.
+        </li>
+        <li>
 <a href="../packages/httpcode/index.html">httpcode</a>
-              is a simple package to help a user/package find HTTP status codes and associated messages by name or number.
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Parsing Structured Web Data
-            </strong>
-          </p>
-          <p>
-            The vast majority of web-based data is structured as plain text, HTML, XML, or JSON (javascript object notation). Web service APIs increasingly rely on JSON, but XML is still prevalent in many applications. There are several packages for specifically working with these format. These functions can be used to interact directly with insecure webpages or can be used to parse locally stored or in-memory web files.
-          </p>
-          <ul>
-            <li>
-              <em>
-                XML
-              </em>: There are two packages for working with XML:
+          is a simple package to help a user/package find HTTP status codes and associated messages by name or number.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Parsing Structured Web Data
+        </strong>
+      </p>
+      <p>
+        The vast majority of web-based data is structured as plain text, HTML, XML, or JSON (javascript object notation). Web service APIs increasingly rely on JSON, but XML is still prevalent in many applications. There are several packages for specifically working with these format. These functions can be used to interact directly with insecure webpages or can be used to parse locally stored or in-memory web files.
+      </p>
+      <ul>
+        <li>
+          <em>
+            XML
+          </em>: There are two packages for working with XML:
 <a href="../packages/XML/index.html">XML</a>
-              and
+          and
 <a href="../packages/xml2/index.html">xml2</a>
-              (
-              <a href="https://github.com/r-lib/xml2">
-                GitHub
-              </a>). Both support general XML (and HTML) parsing, including XPath queries. The package
+          (
+          <a href="https://github.com/r-lib/xml2">
+            GitHub
+          </a>). Both support general XML (and HTML) parsing, including XPath queries. The package
 <a href="../packages/xml2/index.html">xml2</a>
-              is less fully featured, but more user friendly with respect to memory management, classes (e.g., XML node vs. node set vs. document), and namespaces. Of the two, only the
+          is less fully featured, but more user friendly with respect to memory management, classes (e.g., XML node vs. node set vs. document), and namespaces. Of the two, only the
 <a href="../packages/XML/index.html">XML</a>
-              supports
-              <em>
-                de novo
-              </em>
-              creation of XML nodes and documents. The
+          supports
+          <em>
+            de novo
+          </em>
+          creation of XML nodes and documents. The
 <a href="../packages/XML2R/index.html">XML2R</a>
-              (
-              <a href="https://github.com/cpsievert/XML2R">
-                GitHub
-              </a>) package is a collection of convenient functions for coercing XML into data frames. An alternative to
+          (
+          <a href="https://github.com/cpsievert/XML2R">
+            GitHub
+          </a>) package is a collection of convenient functions for coercing XML into data frames. An alternative to
 <a href="../packages/XML/index.html">XML</a>
-              is
-              <a href="https://sjp.co.nz/projects/selectr/">
-                selectr
-              </a>, which parses CSS3 Selectors and translates them to XPath 1.0 expressions.
+          is
+          <a href="https://sjp.co.nz/projects/selectr/">
+            selectr
+          </a>, which parses CSS3 Selectors and translates them to XPath 1.0 expressions.
 <a href="../packages/XML/index.html">XML</a>
-              package is often used for parsing xml and html, but selectr translates CSS selectors to XPath, so can use the CSS selectors instead of XPath.
-            </li>
-            <li>
-              <em>
-                HTML
-              </em>: All of the tools that work with XML also work for HTML, though HTML is - in practice - more prone to be malformed. Some tools are designed specifically to work with HTML.
+          package is often used for parsing xml and html, but selectr translates CSS selectors to XPath, so can use the CSS selectors instead of XPath.
+        </li>
+        <li>
+          <em>
+            HTML
+          </em>: All of the tools that work with XML also work for HTML, though HTML is - in practice - more prone to be malformed. Some tools are designed specifically to work with HTML.
 <tt>xml2::read_html()</tt>
-              is a good first function to use for importing HTML.
+          is a good first function to use for importing HTML.
 <a href="../packages/htmltools/index.html">htmltools</a>
-              provides functions to create HTML elements.
+          provides functions to create HTML elements.
 <a href="../packages/htmltab/index.html">htmltab</a>
-              (
-              <a href="https://github.com/crubba/htmltab">
-                GitHub
-              </a>) extracts structured information from HTML tables, similar to
+          (
+          <a href="https://github.com/crubba/htmltab">
+            GitHub
+          </a>) extracts structured information from HTML tables, similar to
 <tt>XML::readHTMLTable</tt>
-              of the
+          of the
 <a href="../packages/XML/index.html">XML</a>
-              package, but automatically expands row and column spans in the header and body cells, and users are given more control over the identification of header and body rows which will end up in the R table. The
-              <a href="https://selectorgadget.com/">
-                selectorgadget browser extension
-              </a>
-              can be used to identify page elements.
+          package, but automatically expands row and column spans in the header and body cells, and users are given more control over the identification of header and body rows which will end up in the R table. The
+          <a href="https://selectorgadget.com/">
+            selectorgadget browser extension
+          </a>
+          can be used to identify page elements.
 <a href="http://www.Omegahat.net/RHTMLForms/"><span class="Ohat">RHTMLForms</span></a>
-              reads HTML documents and obtains a description of each of the forms it contains, along with the different elements and hidden fields.
+          reads HTML documents and obtains a description of each of the forms it contains, along with the different elements and hidden fields.
 <a href="../packages/scrapeR/index.html">scrapeR</a>
-              provides additional tools for scraping data from HTML documents.
+          provides additional tools for scraping data from HTML documents.
 <a href="../packages/htmltidy/index.html">htmltidy</a>
-              (
-              <a href="https://github.com/hrbrmstr/htmltidy">
-                GitHub
-              </a>) provides tools to “tidy” messy HTML documents.
+          (
+          <a href="https://github.com/hrbrmstr/htmltidy">
+            GitHub
+          </a>) provides tools to “tidy” messy HTML documents.
 <a href="../packages/htm2txt/index.html">htm2txt</a>
-              uses regex to converts html documents to plain text by removing all html tags.
+          uses regex to converts html documents to plain text by removing all html tags.
 <a href="../packages/Rcrawler/index.html">Rcrawler</a>
-              does crawling and scraping of web pages.
-            </li>
-            <li>
-              <em>
-                JSON
-              </em>: There are several packages for reading and writing JSON:
+          does crawling and scraping of web pages.
+        </li>
+        <li>
+          <em>
+            JSON
+          </em>: There are several packages for reading and writing JSON:
 <a href="../packages/rjson/index.html">rjson</a>,
 <a href="../packages/RJSONIO/index.html">RJSONIO</a>, and
 <a href="../packages/jsonlite/index.html">jsonlite</a>.
 <a href="../packages/jsonlite/index.html">jsonlite</a>
-              includes a different parser from
+          includes a different parser from
 <a href="../packages/RJSONIO/index.html">RJSONIO</a>
-              called
-              <a href="https://lloyd.github.io/yajl/">
-                yajl
-              </a>. We recommend using
+          called
+          <a href="https://lloyd.github.io/yajl/">
+            yajl
+          </a>. We recommend using
 <a href="../packages/jsonlite/index.html">jsonlite</a>. Check out the paper describing jsonlite by Jeroen Ooms
-              <a href="https://arxiv.org/abs/1403.2805" class="uri">
-                https://arxiv.org/abs/1403.2805
-              </a>.
+          <a href="https://arxiv.org/abs/1403.2805" class="uri">
+            https://arxiv.org/abs/1403.2805
+          </a>.
 <a href="../packages/jqr/index.html">jqr</a>
-              provides bindings for the fast JSON library,
-              <a href="http://stedolan.github.io/jq/">
-                jq
-              </a>.
+          provides bindings for the fast JSON library,
+          <a href="http://stedolan.github.io/jq/">
+            jq
+          </a>.
 <a href="../packages/jsonvalidate/index.html">jsonvalidate</a>
-              (
-              <a href="https://github.com/ropensci/jsonvalidate">
-                GitHub
-              </a>) validates JSON against a schema using the “is-my-json-valid” Javascript library;
+          (
+          <a href="https://github.com/ropensci/jsonvalidate">
+            GitHub
+          </a>) validates JSON against a schema using the “is-my-json-valid” Javascript library;
 <a href="../packages/validatejsonr/index.html">validatejsonr</a>
-              does the same using the RapidJSON C++ library;
+          does the same using the RapidJSON C++ library;
 <a href="../packages/ajv/index.html">ajv</a>
-              does the same using the ajv Javascript library.
+          does the same using the ajv Javascript library.
 <a href="../packages/ndjson/index.html">ndjson</a>
-              (
-              <a href="https://gitlab.com/hrbrmstr/ndjson">
-                GitHub
-              </a>) supports the “ndjson” format.
-            </li>
-            <li>
-              <em>
-                RSS/Atom
-              </em>:
+          (
+          <a href="https://gitlab.com/hrbrmstr/ndjson">
+            GitHub
+          </a>) supports the “ndjson” format.
+        </li>
+        <li>
+          <em>
+            RSS/Atom
+          </em>:
 <a href="../packages/feedeR/index.html">feedeR</a>
-              can be used to parse RSS or Atom feeds.
+          can be used to parse RSS or Atom feeds.
 <a href="../packages/tidyRSS/index.html">tidyRSS</a>
-              parses RSS, Atom XML/JSON and geoRSS into a tidy data.frame.
-            </li>
-            <li>
+          parses RSS, Atom XML/JSON and geoRSS into a tidy data.frame.
+        </li>
+        <li>
 <a href="../packages/swagger/index.html">swagger</a>
-              can be used to automatically generate functions for working with an web service API that provides documentation in
-              <a href="https://swagger.io/">
-                Swagger.io
-              </a>
-              format.
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Tools for Working with URLs
-            </strong>
-          </p>
-          <ul>
-            <li>
-              The
+          can be used to automatically generate functions for working with an web service API that provides documentation in
+          <a href="https://swagger.io/">
+            Swagger.io
+          </a>
+          format.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Tools for Working with URLs
+        </strong>
+      </p>
+      <ul>
+        <li>
+          The
 <tt>httr::parse_url()</tt>
-              function can be used to extract portions of a URL. The
+          function can be used to extract portions of a URL. The
 <tt>RCurl::URLencode()</tt>
-              and
+          and
 <tt>utils::URLencode()</tt>
-              functions can be used to encode character strings for use in URLs.
+          functions can be used to encode character strings for use in URLs.
 <tt>utils::URLdecode()</tt>
-              decodes back to the original strings.
+          decodes back to the original strings.
 <a href="../packages/urltools/index.html">urltools</a>
-              (
-              <a href="https://github.com/Ironholds/urltools">
-                GitHub
-              </a>) can also handle URL encoding, decoding, parsing, and parameter extraction.f
-            </li>
-            <li>
-              The
+          (
+          <a href="https://github.com/Ironholds/urltools">
+            GitHub
+          </a>) can also handle URL encoding, decoding, parsing, and parameter extraction.f
+        </li>
+        <li>
+          The
 <a href="https://github.com/jayjacobs/tldextract/"><span class="GitHub">tldextract</span></a>
-              package extracts top level domains and subdomains from a host name. It’s a port of
-              <a href="https://github.com/john-kurkowski/tldextract">
-                a Python library of the same name
-              </a>.
-            </li>
-            <li>
+          package extracts top level domains and subdomains from a host name. It’s a port of
+          <a href="https://github.com/john-kurkowski/tldextract">
+            a Python library of the same name
+          </a>.
+        </li>
+        <li>
 <a href="../packages/iptools/index.html">iptools</a>
-              can facilitate working with IPv4 addresses, including for use in geolocation.
-            </li>
-            <li>
+          can facilitate working with IPv4 addresses, including for use in geolocation.
+        </li>
+        <li>
 <a href="../packages/urlshorteneR/index.html">urlshorteneR</a>
-              offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd.
+          offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd.
 <a href="../packages/longurl/index.html">longurl</a>
-              uses the longurl.org API to provide similar functionality.
-            </li>
-            <li>
+          uses the longurl.org API to provide similar functionality.
+        </li>
+        <li>
 <a href="../packages/gdns/index.html">gdns</a>
-              provides access to Google’s secure HTTP-based DNS resolution service.
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Tools for Working with Scraped Webpage Contents
-            </strong>
-          </p>
-          <ul>
-            <li>
-              Several packages can be used for parsing HTML documents.
+          provides access to Google’s secure HTTP-based DNS resolution service.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Tools for Working with Scraped Webpage Contents
+        </strong>
+      </p>
+      <ul>
+        <li>
+          Several packages can be used for parsing HTML documents.
 <a href="../packages/boilerpipeR/index.html">boilerpipeR</a>
-              provides generic extraction of main text content from HTML files; removal of ads, sidebars and headers using the boilerpipe Java library.
+          provides generic extraction of main text content from HTML files; removal of ads, sidebars and headers using the boilerpipe Java library.
 <a href="http://www.Omegahat.net/RTidyHTML/"><span class="Ohat">RTidyHTML</span></a>
-              interfaces to the libtidy library for correcting HTML documents that are not well-formed. This library corrects common errors in HTML documents.
+          interfaces to the libtidy library for correcting HTML documents that are not well-formed. This library corrects common errors in HTML documents.
 <a href="../packages/W3CMarkupValidator/index.html">W3CMarkupValidator</a>
-              provides an R Interface to W3C Markup Validation Services for validating HTML documents.
-            </li>
-            <li>
-              For XML documents, the
+          provides an R Interface to W3C Markup Validation Services for validating HTML documents.
+        </li>
+        <li>
+          For XML documents, the
 <a href="http://www.Omegahat.net/XMLSchema/"><span class="Ohat">XMLSchema</span></a>
-              package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R.
+          package provides facilities in R for reading XML schema documents and processing them to create definitions for R classes and functions for converting XML nodes to instances of those classes. It provides the framework for meta-computing with XML schema in R.
 <a href="../packages/xslt/index.html">xslt</a>
-              is an extension for the
+          is an extension for the
 <a href="../packages/xml2/index.html">xml2</a>
-              package to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for
+          package to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for
 <a href="http://www.Omegahat.net/Sxslt/"><span class="Ohat">Sxslt</span></a>, which is an interface to Dan Veillard’s libxslt translator, and the
 <a href="http://www.Omegahat.net/SXalan/"><span class="Ohat">SXalan</span></a>
-              package.) This may be useful for webscraping, as well as transforming XML markup into another human- or machine-readable format (e.g., HTML, JSON, plain text, etc.).
+          package.) This may be useful for webscraping, as well as transforming XML markup into another human- or machine-readable format (e.g., HTML, JSON, plain text, etc.).
 <a href="http://www.Omegahat.net/SSOAP/"><span class="Ohat">SSOAP</span></a>
-              provides a client-side SOAP (Simple Object Access Protocol) mechanism. It aims to provide a high-level interface to invoke SOAP methods provided by a SOAP server.
+          provides a client-side SOAP (Simple Object Access Protocol) mechanism. Beware, SSOAP itself may not install, and/or its dependencies. The best bet is to get the web service maintainers to switch to REST.
 <a href="http://www.Omegahat.net/XMLRPC/"><span class="Ohat">XMLRPC</span></a>
-              provides an implementation of XML-RPC, a relatively simple remote procedure call mechanism that uses HTTP and XML. This can be used for communicating between processes on a single machine or for accessing Web services from within R.
-            </li>
-            <li>
+          provides an implementation of XML-RPC, a relatively simple remote procedure call mechanism that uses HTTP and XML. This can be used for communicating between processes on a single machine or for accessing Web services from within R.
+        </li>
+        <li>
 <a href="http://www.Omegahat.net/Rcompression/"><span class="Ohat">Rcompression</span></a>
-              (not on CRAN): Interface to zlib and bzip2 libraries for performing in-memory compression and decompression in R. This is useful when receiving or sending contents to remote servers, e.g. Web services, HTTP requests via RCurl.
-            </li>
-            <li>
+          (not on CRAN): Interface to zlib and bzip2 libraries for performing in-memory compression and decompression in R. This is useful when receiving or sending contents to remote servers, e.g. Web services, HTTP requests via RCurl.
+        </li>
+        <li>
 <a href="../packages/tm.plugin.webmining/index.html">tm.plugin.webmining</a>: Extensible text retrieval framework for news feeds in XML (RSS, ATOM) and JSON formats. Currently, the following feeds are implemented: Google Blog Search, Google Finance, Google News, NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo Inplay.
-            </li>
-            <li>
+        </li>
+        <li>
 <a href="../packages/webshot/index.html">webshot</a>
-              uses
-              <a href="https://phantomjs.org/">
-                PhantomJS
-              </a>
-              to provide screenshots of web pages without a browser. It can be useful for testing websites (such as Shiny applications).
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Security
-            </strong>
-          </p>
-          <ul>
-            <li>
+          uses
+          <a href="https://phantomjs.org/">
+            PhantomJS
+          </a>
+          to provide screenshots of web pages without a browser. It can be useful for testing websites (such as Shiny applications).
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Security
+        </strong>
+      </p>
+      <ul>
+        <li>
 <a href="../packages/securitytxt/index.html">securitytxt</a>
-              identifies and parses web Ssecurity policy files.
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Other Useful Packages and Functions
-            </strong>
-          </p>
-          <ul>
-            <li>
-              <em>
-                Javascript
-              </em>:
+          identifies and parses web Ssecurity policy files.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Other Useful Packages and Functions
+        </strong>
+      </p>
+      <ul>
+        <li>
+          <em>
+            Javascript
+          </em>:
 <a href="../packages/V8/index.html">V8</a>
-              (
-              <a href="https://github.com/jeroen/V8">
-                GitHub
-              </a>) is an R interface to Google’s open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The
+          (
+          <a href="https://github.com/jeroen/V8">
+            GitHub
+          </a>) is an R interface to Google’s open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The
 <a href="http://www.Omegahat.net/SpiderMonkey/"><span class="Ohat">SpiderMonkey</span></a>
-              package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R. The
+          package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R. The
 <a href="../packages/js/index.html">js</a>
-              package wraps
+          package wraps
 <a href="../packages/V8/index.html">V8</a>
-              and validates, reformats, optimizes and analyzes JavaScript code.
-            </li>
-            <li>
-              <em>
-                Email:
-              </em>:
+          and validates, reformats, optimizes and analyzes JavaScript code.
+        </li>
+        <li>
+          <em>
+            Email:
+          </em>:
 <a href="../packages/mailR/index.html">mailR</a>
-              is an interface to Apache Commons Email to send emails from within R.
+          is an interface to Apache Commons Email to send emails from within R.
 <a href="../packages/sendmailR/index.html">sendmailR</a>
-              provides a simple SMTP client.
+          provides a simple SMTP client.
 <a href="../packages/gmailr/index.html">gmailr</a>
-              provides access the Google’s gmail.com RESTful API.
-            </li>
-            <li>
-              <em>
-                Mocking:
-              </em>:
+          provides access the Google’s gmail.com RESTful API.
+        </li>
+        <li>
+          <em>
+            Mocking:
+          </em>:
 <a href="../packages/webmockr/index.html">webmockr</a>
-              is a library for stubbing and setting expectations on HTTP requests. It is inspired from Rubys
+          is a library for stubbing and setting expectations on HTTP requests. It is inspired from Rubys
 <tt>webmock</tt>. This package only helps mock HTTP requests, and returns nothing when requests match expectations. webmockr integrates with the HTTP packages
 <a href="../packages/crul/index.html">crul</a>
-              and
+          and
 <a href="../packages/httr/index.html">httr</a>. See
-              <em>
-                Testing
-              </em>
-              for mocking with returned responses.
-            </li>
-            <li>
-              <em>
-                Testing:
-              </em>:
+          <em>
+            Testing
+          </em>
+          for mocking with returned responses.
+        </li>
+        <li>
+          <em>
+            Testing:
+          </em>:
 <a href="../packages/vcr/index.html">vcr</a>
-              provides an interface to easily cache HTTP requests in R package test suites (but can be used outside of testing use cases as well). vcr relies on
+          provides an interface to easily cache HTTP requests in R package test suites (but can be used outside of testing use cases as well). vcr relies on
 <a href="../packages/webmockr/index.html">webmockr</a>
-              to do the HTTP request mocking. vcr integrates with the HTTP packages
+          to do the HTTP request mocking. vcr integrates with the HTTP packages
 <a href="../packages/crul/index.html">crul</a>
-              and
+          and
 <a href="../packages/httr/index.html">httr</a>.
 <a href="../packages/httptest/index.html">httptest</a>
-              provides a framework for testing packages that communicate with HTTP APIs, offering tools for mocking APIs, for recording real API responses for use as mocks, and for making assertions about HTTP requests, all without requiring a live connection to the API server at runtime.
-            </li>
-            <li>
-              <em>
-                Miscellaneous
-              </em>:
+          provides a framework for testing packages that communicate with HTTP APIs, offering tools for mocking APIs, for recording real API responses for use as mocks, and for making assertions about HTTP requests, all without requiring a live connection to the API server at runtime.
+        </li>
+        <li>
+          <em>
+            Miscellaneous
+          </em>:
 <a href="../packages/webutils/index.html">webutils</a>
-              contains various functions for developing web applications, including parsers for
+          contains various functions for developing web applications, including parsers for
 <tt>application/x-www-form-urlencoded</tt>
-              as well as
+          as well as
 <tt>multipart/form-data</tt>.
 <a href="../packages/mime/index.html">mime</a>
-              (
-              <a href="https://github.com/yihui/mime">
-                GitHub
-              </a>) guesses the MIME type for a file from its extension.
+          (
+          <a href="https://github.com/yihui/mime">
+            GitHub
+          </a>) guesses the MIME type for a file from its extension.
 <a href="../packages/rsdmx/index.html">rsdmx</a>
-              provides tools to read data and metadata documents exchanged through the Statistical Data and Metadata Exchange (SDMX) framework. The package currently focuses on the SDMX XML standard format (SDMX-ML).
+          provides tools to read data and metadata documents exchanged through the Statistical Data and Metadata Exchange (SDMX) framework. The package currently focuses on the SDMX XML standard format (SDMX-ML).
 <a href="../packages/robotstxt/index.html">robotstxt</a>
-              provides functions and classes for parsing robots.txt files and checking access permissions;
+          provides functions and classes for parsing robots.txt files and checking access permissions;
 <a href="../packages/spiderbar/index.html">spiderbar</a>
-              does the same.
+          does the same.
 <a href="../packages/uaparserjs/index.html">uaparserjs</a>
-              (
-              <a href="https://github.com/hrbrmstr/uaparserjs">
-                GitHub
-              </a>) uses the javascript
-              <a href="https://github.com/ua-parser">
-                “ua-parser” library
-              </a>
-              to parse User-Agent HTTP headers.
+          (
+          <a href="https://github.com/hrbrmstr/uaparserjs">
+            GitHub
+          </a>) uses the javascript
+          <a href="https://github.com/ua-parser">
+            “ua-parser” library
+          </a>
+          to parse User-Agent HTTP headers.
 <a href="../packages/rjsonapi/index.html">rjsonapi</a>
-              consumes APIs that Follow the
-              <a href="https://jsonapi.org/">
-                JSON API Specification
-              </a>.
+          consumes APIs that Follow the
+          <a href="https://jsonapi.org/">
+            JSON API Specification
+          </a>.
 <a href="../packages/rapiclient/index.html">rapiclient</a>
-              is a client for consuming APIs that follow the
-              <a href="https://www.openapis.org/">
-                Open API format
-              </a>.
+          is a client for consuming APIs that follow the
+          <a href="https://www.openapis.org/">
+            Open API format
+          </a>.
 <a href="../packages/restfulr/index.html">restfulr</a>
-              models a RESTful service as if it were a nested R list.
-            </li>
-          </ul>
-          <h2 id="web-and-server-frameworks">
-            Web and Server Frameworks
-          </h2>
-          <ul>
-            <li>
-              <a href="https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization">
-                Model Operationalization
-              </a>
-              (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
-            </li>
-            <li>
-              The
+          models a RESTful service as if it were a nested R list.
+        </li>
+      </ul>
+      <h2 id="web-and-server-frameworks">
+        Web and Server Frameworks
+      </h2>
+      <ul>
+        <li>
+          <a href="https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization">
+            Model Operationalization
+          </a>
+          (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
+        </li>
+        <li>
+          The
 <a href="../packages/shiny/index.html">shiny</a>
-              package makes it easy to build interactive web applications with R.
-            </li>
-            <li>
-              Other web frameworks include:
+          package makes it easy to build interactive web applications with R.
+        </li>
+        <li>
+          Other web frameworks include:
 <a href="../packages/fiery/index.html">fiery</a>
-              that is meant to be more flexible but less easy to use than shiny (<a href="../packages/reqres/index.html">reqres</a>
-              and
+          that is meant to be more flexible but less easy to use than shiny (<a href="../packages/reqres/index.html">reqres</a>
+          and
 <a href="../packages/routr/index.html">routr</a>
-              are utilities used by fiery that provide HTTP request and response classes, and HTTP routing, respectively);
+          are utilities used by fiery that provide HTTP request and response classes, and HTTP routing, respectively);
 <a href="https://github.com/att/rcloud/"><span class="GitHub">rcloud</span></a>
-              provides an iPython notebook-style web-based R interface; and
+          provides an iPython notebook-style web-based R interface; and
 <a href="../packages/Rook/index.html">Rook</a>, which contains the specification and convenience software for building and running Rook applications.
-            </li>
-            <li>
-              The
+        </li>
+        <li>
+          The
 <a href="../packages/opencpu/index.html">opencpu</a>
-              framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.
-            </li>
-            <li>
-              Several general purpose server/client frameworks for R exist.
+          framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.
+        </li>
+        <li>
+          Several general purpose server/client frameworks for R exist.
 <a href="../packages/Rserve/index.html">Rserve</a>
-              and
+          and
 <a href="../packages/RSclient/index.html">RSclient</a>
-              provide server and client functionality for TCP/IP or local socket interfaces.
+          provide server and client functionality for TCP/IP or local socket interfaces.
 <a href="../packages/httpuv/index.html">httpuv</a>
-              provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R. Another related package, perhaps which
+          provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R. Another related package, perhaps which
 <a href="../packages/httpuv/index.html">httpuv</a>
-              replaces, is
-              <a href="https://cran.rstudio.com/src/contrib/Archive/websockets/">
-                websockets
-              </a>.
+          replaces, is
+          <a href="https://cran.rstudio.com/src/contrib/Archive/websockets/">
+            websockets
+          </a>.
 <a href="../packages/servr/index.html">servr</a>
-              provides a simple HTTP server to serve files under a given directory based on httpuv.
-            </li>
-            <li>
-              Several packages offer functionality for turning R code into a web API.
+          provides a simple HTTP server to serve files under a given directory based on httpuv.
+        </li>
+        <li>
+          Several packages offer functionality for turning R code into a web API.
 <a href="../packages/FastRWeb/index.html">FastRWeb</a>
-              provides some basic infrastructure for this.
+          provides some basic infrastructure for this.
 <a href="../packages/plumber/index.html">plumber</a>
-              allows you to create a REST API by decorating existing R source code.
-            </li>
-            <li>
-              The
+          allows you to create a REST API by decorating existing R source code.
+        </li>
+        <li>
+          The
 <a href="http://www.Omegahat.net/WADL/"><span class="Ohat">WADL</span></a>
-              package provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
-            </li>
-            <li>
-              The
+          package provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
+        </li>
+        <li>
+          The
 <a href="http://www.Omegahat.net/RDCOMServer/"><span class="Ohat">RDCOMServer</span></a>
-              provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the
+          provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the
 <a href="http://www.Omegahat.net/RDCOMClient/"><span class="Ohat">RDCOMClient</span></a>
-              package which provides user-level access from R to other COM servers. (not on CRAN)
-            </li>
-            <li>
-              <a href="http://rapporter.net/welcome/en">
-                rapporter.net
-              </a>
-              provides an online environment (SaaS) to host and run
+          package which provides user-level access from R to other COM servers. (not on CRAN)
+        </li>
+        <li>
+          <a href="http://rapporter.net/welcome/en">
+            rapporter.net
+          </a>
+          provides an online environment (SaaS) to host and run
 <a href="../packages/rapport/index.html">rapport</a>
-              statistical report templates in the cloud.
-            </li>
-            <li>
+          statistical report templates in the cloud.
+        </li>
+        <li>
 <a href="../packages/radiant/index.html">radiant</a>
-              (
-              <a href="https://github.com/radiant-rstats/radiant">
-                GitHub
-              </a>) is Shiny-based GUI for R that runs in a browser from a server or local machine.
-            </li>
-            <li>
-              The
-              <a href="https://tiki.org/tiki-index.php">
-                Tiki
-              </a>
-              Wiki CMS/Groupware framework has an R plugin (
-              <a href="https://doc.tiki.org/PluginR">
-                PluginR
-              </a>) to run R code from wiki pages, and use data from their own collected web databases (trackers). A demo:
-              <a href="https://r.tiki.org/tiki-index.php" class="uri">
-                https://r.tiki.org/tiki-index.php
-              </a>.
-            </li>
-            <li>
-              The
-              <a href="https://www.mediawiki.org/wiki/MediaWiki">
-                MediaWiki
-              </a>
-              has an extension (
-              <a href="https://www.mediawiki.org/wiki/Extension:R">
-                Extension:R
-              </a>) to run R code from wiki pages, and use uploaded data. A mailing list used to be available: R-sig-mediawiki.
-            </li>
-            <li>
+          (
+          <a href="https://github.com/radiant-rstats/radiant">
+            GitHub
+          </a>) is Shiny-based GUI for R that runs in a browser from a server or local machine.
+        </li>
+        <li>
+          The
+          <a href="https://tiki.org/tiki-index.php">
+            Tiki
+          </a>
+          Wiki CMS/Groupware framework has an R plugin (
+          <a href="https://doc.tiki.org/PluginR">
+            PluginR
+          </a>) to run R code from wiki pages, and use data from their own collected web databases (trackers). A demo:
+          <a href="https://r.tiki.org/tiki-index.php" class="uri">
+            https://r.tiki.org/tiki-index.php
+          </a>.
+        </li>
+        <li>
+          The
+          <a href="https://www.mediawiki.org/wiki/MediaWiki">
+            MediaWiki
+          </a>
+          has an extension (
+          <a href="https://www.mediawiki.org/wiki/Extension:R">
+            Extension:R
+          </a>) to run R code from wiki pages, and use uploaded data. A mailing list used to be available: R-sig-mediawiki.
+        </li>
+        <li>
 <a href="../packages/whisker/index.html">whisker</a>: Implementation of logicless templating based on
-              <a href="http://mustache.github.io/">
-                Mustache
-              </a>
-              in R. Mustache syntax is described in
-              <a href="http://mustache.github.io/mustache.5.html" class="uri">
-                http://mustache.github.io/mustache.5.html
-              </a>
-            </li>
-            <li>
+          <a href="http://mustache.github.io/">
+            Mustache
+          </a>
+          in R. Mustache syntax is described in
+          <a href="http://mustache.github.io/mustache.5.html" class="uri">
+            http://mustache.github.io/mustache.5.html
+          </a>
+        </li>
+        <li>
 <a href="http://www.Omegahat.net/CGIwithR/"><span class="Ohat">CGIwithR</span></a>
-              (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.
-            </li>
-          </ul>
-          <h2 id="web-services">
-            Web Services
-          </h2>
-          <p>
-            <strong>
-              Cloud Computing and Storage
-            </strong>
-          </p>
+          (not on CRAN) allows one to use R scripts as CGI programs for generating dynamic Web content. HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts via the Web to create content that is determined within that R script.
+        </li>
+      </ul>
+      <h2 id="web-services">
+        Web Services
+      </h2>
+      <p>
+        <strong>
+          Cloud Computing and Storage
+        </strong>
+      </p>
+      <ul>
+        <li>
+          <a href="https://cloudyr.github.io/">
+            The cloudyr project
+          </a>, which is currently under active development on GitHub, aims to provide interfaces to popular Amazon, Azure and Google cloud services without the need for external system dependencies.
+        </li>
+        <li>
+          Amazon Web Services is a popular, proprietary cloud service offering a suite of computing, storage, and infrastructure tools.
+<a href="../packages/aws.signature/index.html">aws.signature</a>
+          provides functionality for generating AWS API request signatures.
           <ul>
             <li>
-              <a href="https://cloudyr.github.io/">
-                The cloudyr project
-              </a>, which is currently under active development on GitHub, aims to provide interfaces to popular Amazon, Azure and Google cloud services without the need for external system dependencies.
-            </li>
-            <li>
-              Amazon Web Services is a popular, proprietary cloud service offering a suite of computing, storage, and infrastructure tools.
-<a href="../packages/aws.signature/index.html">aws.signature</a>
-              provides functionality for generating AWS API request signatures.
-              <ul>
-                <li>
-                  <em>
-                    Simple Storage Service (S3)
-                  </em>
-                  is a commercial server that allows one to store content and retrieve it from any machine connected to the Internet.
+              <em>
+                Simple Storage Service (S3)
+              </em>
+              is a commercial server that allows one to store content and retrieve it from any machine connected to the Internet.
 <a href="../packages/aws.s3/index.html">aws.s3</a>
-                  is probably the best R client for S3.
+              is probably the best R client for S3.
 <a href="http://www.Omegahat.net/RAmazonS3/"><span class="Ohat">RAmazonS3</span></a>
-                  and
+              and
 <a href="https://github.com/robertzk/s3mpi/"><span class="GitHub">s3mpi</span></a>
-                  (not on CRAN) provides basic infrastructure for communicating with S3.
-                </li>
-                <li>
-                  <em>
-                    Elastic Cloud Compute (EC2)
-                  </em>
-                  is a cloud computing service.
+              (not on CRAN) provides basic infrastructure for communicating with S3.
+            </li>
+            <li>
+              <em>
+                Elastic Cloud Compute (EC2)
+              </em>
+              is a cloud computing service.
 <a href="https://code.google.com/p/segue/"><span class="Gcode">segue</span></a>
-                  (not on CRAN) is a package for managing EC2 instances and S3 storage, which includes a parallel version of
+              (not on CRAN) is a package for managing EC2 instances and S3 storage, which includes a parallel version of
 <tt>lapply()</tt>
-                  for the Elastic Map Reduce (EMR) engine called
+              for the Elastic Map Reduce (EMR) engine called
 <tt>emrlapply()</tt>. It uses Hadoop Streaming on Amazon’s EMR in order to get simple parallel computation.
-                </li>
-                <li>
-                  <em>
-                    Simple Notification Service (SNS)
-                  </em>
-                  is a service for Pub/Sub messaging and mobile notifications for microservices, distributed systems, and serverless applications.
+            </li>
+            <li>
+              <em>
+                Simple Notification Service (SNS)
+              </em>
+              is a service for Pub/Sub messaging and mobile notifications for microservices, distributed systems, and serverless applications.
 <a href="../packages/aws.sns/index.html">aws.sns</a>
-                </li>
-                <li>
-                  <em>
-                    AWS Polly
-                  </em>
-                  is a Text-to-Speech (TTS) cloud service that converts text into lifelike speech.
+            </li>
+            <li>
+              <em>
+                AWS Polly
+              </em>
+              is a Text-to-Speech (TTS) cloud service that converts text into lifelike speech.
 <a href="../packages/aws.polly/index.html">aws.polly</a>
-                </li>
-                <li>
-                  <em>
-                    DBREST
-                  </em>:
+            </li>
+            <li>
+              <em>
+                DBREST
+              </em>:
 <a href="http://www.Omegahat.net/RAmazonDBREST/"><span class="Ohat">RAmazonDBREST</span></a>
-                  provides an interface to Amazon’s Simple DB API.
-                </li>
-                <li>
+              provides an interface to Amazon’s Simple DB API.
+            </li>
+            <li>
 <a href="../packages/paws/index.html">paws</a>
-                  (
-                  <a href="https://github.com/paws-r/paws">
-                    GitHub
-                  </a>) is an interface to nearly all AWS APIs, including compute, storage, databases, and machine learning. It also requires no external system dependencies.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Azure is Microsoft’s cloud computing service. It provides Paas, SaaS and IaaS and supports many different tools and frameworks, including both Microsoft-specific and third-party systems.
-              <ul>
-                <li>
-                  <em>
-                    Azure Active Directory (AAD)
-                  </em>
-                  is a centralised directory and identity service.
-<a href="../packages/AzureAuth/index.html">AzureAuth</a>
-                  is an R client for AAD; use this to obtain OAuth tokens for authenticating with other Azure services, including Resource Manager and storage (see next).
-                </li>
-                <li>
-                  <em>
-                    Azure Resource Manager (ARM)
-                  </em>
-                  is a service for deploying other Azure services.
-<a href="../packages/AzureRMR/index.html">AzureRMR</a>
-                  is an R interface to ARM, and allows managing subscriptions, resource groups, resources and templates. It exposes a general R6 class framework that can extended to provide extra functionality for specific services (see next).
-                </li>
-                <li>
-                  <em>
-                    Azure Storage Accounts
-                  </em>
-                  are a general-purpose data storage facility. Different types of storage are available: file, blob, table, Data Lake, and more.
-<a href="../packages/AzureStor/index.html">AzureStor</a>
-                  provides an R interface to storage. Features include clients for file, blob and Data Lake Gen2 storage, parallelized file transfers, and an interface to Microsoft’s cross-platform AzCopy commandline utility. Also supplied is an ARM interface, to allow creation and managing of storage accounts.
-                </li>
-                <li>
-                  <em>
-                    Data Science Virtual Machines (DSVMs)
-                  </em>
-                  are Azure VMs that come preloaded with a wide variety of software for statistics and machine learning, including R, Python, TensorFlow, and Spark.
-<a href="../packages/AzureVM/index.html">AzureVM</a>
-                  is a package for managing DSVMs from within R. It also allows deploying arbitrary VMs by supplying a suitable deployment template.
-                </li>
-                <li>
-<a href="../packages/AzureContainers/index.html">AzureContainers</a>
-                  provides a unified facility for working with containers in Azure. Specifically, it includes R interfaces to
-                  <em>
-                    Azure Container Instances (ACI)
-                  </em>,
-                  <em>
-                    Azure Docker Registry (ACR)
-                  </em>
-                  and
-                  <em>
-                    Azure Kubernetes Service (AKS)
-                  </em>. Create Docker images and push them to an ACR repository; spin up ACI containers; deploy Kubernetes services in AKS.
-                </li>
-                <li>
-                  <em>
-                    Azure Data Explorer
-                  </em>, also known as
-                  <em>
-                    Kusto
-                  </em>, is a fast, scalable data exploration and analytics service.
-<a href="https://github.com/cloudyr/AzureKusto/"><span class="GitHub">AzureKusto</span></a>
-                  (not yet on CRAN) is an R interface to ADE/Kusto. It includes a dplyr client interface similar to that provided by dbplyr for SQL databases, a DBI client interface, and an ARM interface for deploying and managing Kusto clusters and databases.
-                </li>
-              </ul>
-            </li>
-            <li>
-<a href="../packages/googleComputeEngineR/index.html">googleComputeEngineR</a>
-              interacts with the Google Compute Engine API, and lets you create, start and stop instances in the Google Cloud.
-            </li>
-            <li>
-              <em>
-                Cloud Storage
-              </em>:
-<a href="../packages/googleCloudStorageR/index.html">googleCloudStorageR</a>
-              interfaces with Google Cloud Storage.
-<a href="../packages/boxr/index.html">boxr</a>
               (
-              <a href="https://github.com/r-box/boxr">
+              <a href="https://github.com/paws-r/paws">
                 GitHub
-              </a>) is a lightweight, high-level interface for the
-              <a href="https://developer.box.com/docs/">
-                box.com API
-              </a>.
-<a href="../packages/rdrop2/index.html">rdrop2</a>
-              is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account.
+              </a>) is an interface to nearly all AWS APIs, including compute, storage, databases, and machine learning. It also requires no external system dependencies.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Azure is Microsoft’s cloud computing service. It provides Paas, SaaS and IaaS and supports many different tools and frameworks, including both Microsoft-specific and third-party systems.
+          <ul>
+            <li>
+              <em>
+                Azure Active Directory (AAD)
+              </em>
+              is a centralised directory and identity service.
+<a href="../packages/AzureAuth/index.html">AzureAuth</a>
+              is an R client for AAD; use this to obtain OAuth tokens for authenticating with other Azure services, including Resource Manager and storage (see next).
             </li>
             <li>
               <em>
-                Docker
-              </em>:
-<a href="../packages/analogsea/index.html">analogsea</a>
-              is a general purpose client for the Digital Ocean v2 API. In addition, the package includes functions to install various R tools including base R, RStudio server, and more. There’s an improving interface to interact with docker on your remote droplets via this package.
+                Azure Resource Manager (ARM)
+              </em>
+              is a service for deploying other Azure services.
+<a href="../packages/AzureRMR/index.html">AzureRMR</a>
+              is an R interface to ARM, and allows managing subscriptions, resource groups, resources and templates. It exposes a general R6 class framework that can extended to provide extra functionality for specific services (see next).
             </li>
             <li>
-<a href="../packages/crunch/index.html">crunch</a>
-              <a href="https://github.com/Crunch-io/rcrunch">
-                GitHub
-              </a>
-              provides an interface to the
-              <a href="https://crunch.io/">
-                crunch.io
-              </a>
-              storage and analytics platform.
-<a href="../packages/crunchy/index.html">crunchy</a>
-              <a href="https://github.com/Crunch-io/crunchy">
-                GitHub
-              </a>
-              facilitates making Shiny apps on Crunch.
+              <em>
+                Azure Storage Accounts
+              </em>
+              are a general-purpose data storage facility. Different types of storage are available: file, blob, table, Data Lake, and more.
+<a href="../packages/AzureStor/index.html">AzureStor</a>
+              provides an R interface to storage. Features include clients for file, blob and Data Lake Gen2 storage, parallelized file transfers, and an interface to Microsoft’s cross-platform AzCopy commandline utility. Also supplied is an ARM interface, to allow creation and managing of storage accounts.
             </li>
+            <li>
+              <em>
+                Data Science Virtual Machines (DSVMs)
+              </em>
+              are Azure VMs that come preloaded with a wide variety of software for statistics and machine learning, including R, Python, TensorFlow, and Spark.
+<a href="../packages/AzureVM/index.html">AzureVM</a>
+              is a package for managing DSVMs from within R. It also allows deploying arbitrary VMs by supplying a suitable deployment template.
+            </li>
+            <li>
+<a href="../packages/AzureContainers/index.html">AzureContainers</a>
+              provides a unified facility for working with containers in Azure. Specifically, it includes R interfaces to
+              <em>
+                Azure Container Instances (ACI)
+              </em>,
+              <em>
+                Azure Docker Registry (ACR)
+              </em>
+              and
+              <em>
+                Azure Kubernetes Service (AKS)
+              </em>. Create Docker images and push them to an ACR repository; spin up ACI containers; deploy Kubernetes services in AKS.
+            </li>
+            <li>
+              <em>
+                Azure Data Explorer
+              </em>, also known as
+              <em>
+                Kusto
+              </em>, is a fast, scalable data exploration and analytics service.
+<a href="https://github.com/cloudyr/AzureKusto/"><span class="GitHub">AzureKusto</span></a>
+              (not yet on CRAN) is an R interface to ADE/Kusto. It includes a dplyr client interface similar to that provided by dbplyr for SQL databases, a DBI client interface, and an ARM interface for deploying and managing Kusto clusters and databases.
+            </li>
+          </ul>
+        </li>
+        <li>
+<a href="../packages/googleComputeEngineR/index.html">googleComputeEngineR</a>
+          interacts with the Google Compute Engine API, and lets you create, start and stop instances in the Google Cloud.
+        </li>
+        <li>
+          <em>
+            Cloud Storage
+          </em>:
+<a href="../packages/googleCloudStorageR/index.html">googleCloudStorageR</a>
+          interfaces with Google Cloud Storage.
+<a href="../packages/boxr/index.html">boxr</a>
+          (
+          <a href="https://github.com/r-box/boxr">
+            GitHub
+          </a>) is a lightweight, high-level interface for the
+          <a href="https://developer.box.com/docs/">
+            box.com API
+          </a>.
+<a href="../packages/rdrop2/index.html">rdrop2</a>
+          is a Dropbox interface that provides access to a full suite of file operations, including dir/copy/move/delete operations, account information (including quotas) and the ability to upload and download files from any Dropbox account.
+        </li>
+        <li>
+          <em>
+            Docker
+          </em>:
+<a href="../packages/analogsea/index.html">analogsea</a>
+          is a general purpose client for the Digital Ocean v2 API. In addition, the package includes functions to install various R tools including base R, RStudio server, and more. There’s an improving interface to interact with docker on your remote droplets via this package.
+        </li>
+        <li>
+<a href="../packages/crunch/index.html">crunch</a>
+          <a href="https://github.com/Crunch-io/rcrunch">
+            GitHub
+          </a>
+          provides an interface to the
+          <a href="https://crunch.io/">
+            crunch.io
+          </a>
+          storage and analytics platform.
+<a href="../packages/crunchy/index.html">crunchy</a>
+          <a href="https://github.com/Crunch-io/crunchy">
+            GitHub
+          </a>
+          facilitates making Shiny apps on Crunch.
+        </li>
+        <li>
+<a href="../packages/rrefine/index.html">rrefine</a>
+          provides a client for the
+          <a href="http://openrefine.org/">
+            OpenRefine
+          </a>
+          (formerly Google Refine) data cleaning service.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Document and Code Sharing
+        </strong>
+      </p>
+      <ul>
+        <li>
+          <em>
+            Code Sharing
+          </em>:
+<a href="../packages/gistr/index.html">gistr</a>
+          (
+          <a href="https://github.com/ropensci/gistr">
+            GitHub
+          </a>) works with GitHub gists (
+          <a href="https://gist.github.com/discover">
+            gist.github.com
+          </a>) from R, allowing you to create new gists, update gists with new files, rename files, delete files, get and delete gists, star and un-star gists, fork gists, open a gist in your default browser, get embed code for a gist, list gist commits, and get rate limit information when authenticated.
+<a href="../packages/git2r/index.html">git2r</a>
+          provides bindings to the git version control system and
+<a href="../packages/gh/index.html">gh</a>
+          is a client for the GitHub API.
+<a href="../packages/gitlabr/index.html">gitlabr</a>
+          is a
+          <a href="https://about.gitlab.com/">
+            GitLab
+          </a>
+          -specific client.
+<a href="https://github.com/hrbrmstr/pastebin/"><span class="GitHub">pastebin</span></a>
+          is a client for
+          <a href="https://pastebin.com/" class="uri">
+            https://pastebin.com/
+          </a>
+          a code sharing site.
+        </li>
+        <li>
+          <em>
+            Data archiving
+          </em>:
+<a href="../packages/dataverse/index.html">dataverse</a>
+          (
+          <a href="https://github.com/iqss/dataverse-client-r">
+            GitHub
+          </a>) provides access to Dataverse 4 APIs.
+<a href="../packages/rfigshare/index.html">rfigshare</a>
+          (
+          <a href="https://github.com/ropensci/rfigshare">
+            GitHub
+          </a>) connects with
+          <a href="https://figshare.com/">
+            Figshare.com
+          </a>.
+          <a href="https://cran.rstudio.com/src/contrib/Archive/dataone/">
+            dataone
+          </a>
+          provides read/write access to data and metadata from the
+          <a href="https://www.dataone.org/">
+            DataONE network
+          </a>
+          of Member Node data repositories.
+<a href="../packages/dataone/index.html">dataone</a>
+          (
+          <a href="https://github.com/DataONEorg/rdataone">
+            GitHub
+          </a>) provides a client for
+          <a href="https://www.dataone.org/">
+            DataONE
+          </a>
+          repositories.
+        </li>
+        <li>
+          <em>
+            Google Drive/Google Documents
+          </em>: The
+<a href="http://www.Omegahat.net/RGoogleDocs/"><span class="Ohat">RGoogleDocs</span></a>
+          package is an example of using the RCurl and XML packages to quickly develop an interface to the Google Documents API.
+<a href="http://www.Omegahat.net/RGoogleStorage/"><span class="Ohat">RGoogleStorage</span></a>
+          provides programmatic access to the Google Storage API. This allows R users to access and store data on Google’s storage. We can upload and download content, create, list and delete folders/buckets, and set access control permissions on objects and buckets.
+        </li>
+        <li>
+          <em>
+            Google Sheets
+          </em>:
+<a href="../packages/googlesheets/index.html">googlesheets</a>
+          (
+          <a href="https://github.com/jennybc/googlesheets">
+            GitHub
+          </a>) can access private or public Google Sheets by title, key, or URL. Extract data or edit data. Create, delete, rename, copy, upload, or download spreadsheets and worksheets.
+<a href="../packages/gsheet/index.html">gsheet</a>
+          (
+          <a href="https://github.com/maxconway/gsheet">
+            GitHub
+          </a>) can download Google Sheets using just the sharing link. Spreadsheets can be downloaded as a data frame, or as plain text to parse manually.
+        </li>
+        <li>
+<a href="../packages/imguR/index.html">imguR</a>
+          (
+          <a href="https://github.com/cloudyr/imguR">
+            GitHub
+          </a>) is a package to share plots using the image hosting service
+          <a href="https://imgur.com/">
+            Imgur.com
+          </a>. knitr also has a function
+<tt>imgur_upload()</tt>
+          to load images from literate programming documents.
+        </li>
+        <li>
+<a href="https://github.com/cloudyr/rscribd/"><span class="GitHub">rscribd</span></a>
+          (not on CRAN): API client for publishing documents to
+          <a href="https://www.scribd.com/">
+            Scribd
+          </a>.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Data Analysis and Processing Services
+        </strong>
+      </p>
+      <ul>
+        <li>
+          <em>
+            Geospatial/Geolocation/Geocoding
+          </em>: Several packages connect to geolocation/geocoding services.
+<a href="../packages/rgeolocate/index.html">rgeolocate</a>
+          (
+          <a href="https://github.com/ironholds/rgeolocate">
+            GitHub
+          </a>) offers several online and offline tools.
+<a href="https://github.com/trestletech/rydn/"><span class="GitHub">rydn</span></a>
+          (not on CRAN) is an interface to the Yahoo Developers network geolocation APIs, and
+<a href="https://github.com/hrbrmstr/ipapi/"><span class="GitHub">ipapi</span></a>
+          can be used to geolocate IPv4/6 addresses and/or domain names using the
+          <a href="http://ip-api.com/" class="uri">
+            http://ip-api.com/
+          </a>
+          API.
+<a href="../packages/threewords/index.html">threewords</a>
+          connects to the
+          <a href="https://what3words.com/">
+            What3Words API
+          </a>, which represents every 3-meter by 3-meter square on earth as a three-word phrase.
+<a href="../packages/opencage/index.html">opencage</a>
+          (
+          <a href="https://github.com/ropensci/opencage">
+            GitHub
+          </a>) provides access to to the
+          <a href="https://opencagedata.com/">
+            OpenCage
+          </a>
+          geocoding service.
+<a href="../packages/geoparser/index.html">geoparser</a>
+          (
+          <a href="https://github.com/ropensci/geoparser">
+            GitHub
+          </a>) interfaces with the
+          <a href="https://geoparser.io/">
+            Geoparser.io
+          </a>
+          web service to identify place names from plain text.
+<a href="https://github.com/hrbrmstr/nominatim/"><span class="GitHub">nominatim</span></a>
+          (not on CRAN) connects to the
+          <a href="https://github.com/hrbrmstr/nominatim">
+            OpenStreetMap Nominatim API
+          </a>
+          for reverse geocoding.
+<a href="https://github.com/ropensci/PostcodesioR/"><span class="GitHub">PostcodesioR</span></a>
+          (not on CRAN) provides post code lookup and geocoding for the United Kingdom.
+<a href="../packages/geosapi/index.html">geosapi</a>
+          is an R client for the
+          <a href="http://geoserver.org/">
+            GeoServer
+          </a>
+          REST API, an open source implementation used widely for serving spatial data.
+<a href="../packages/geonapi/index.html">geonapi</a>
+          provides an interface to the
+          <a href="https://geonetwork-opensource.org/">
+            GeoNetwork
+          </a>
+          legacy API, an opensource catalogue for managing geographic metadata.
+<a href="../packages/ows4R/index.html">ows4R</a>
+          is a new R client for the
+          <a href="http://www.opengeospatial.org/standards">
+            OGC
+          </a>
+          standard Web-Services, such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
+        </li>
+        <li>
+          <em>
+            Image Processing
+          </em>:
+<a href="https://github.com/cloudyr/RoogleVision/"><span class="GitHub">RoogleVision</span></a>
+          (not on CRAN) links to the Google Cloud Vision image recognition service.
+        </li>
+        <li>
+          <em>
+            Machine Learning as a Service
+          </em>: Several packages provide access to cloud-based machine learning services.
+<a href="../packages/bigml/index.html">bigml</a>
+          (
+          <a href="https://github.com/bigmlcom/bigml-r">
+            GitHub
+          </a>) connects to BigML.
+<a href="../packages/OpenML/index.html">OpenML</a>
+          (
+          <a href="https://github.com/openml/openml-r">
+            GitHub
+          </a>) is the official client for
+          <a href="https://www.openml.org/frontend/page/home">
+            the OpenML API
+          </a>.
+<a href="../packages/clarifai/index.html">clarifai</a>
+          (
+          <a href="https://github.com/soodoku/clarifai">
+            GitHub
+          </a>) is a
+          <a href="https://www.clarifai.com/">
+            Clarifai.com
+          </a>
+          client that enables automated image description.
+<a href="../packages/rLTP/index.html">rLTP</a>
+          (
+          <a href="https://github.com/hetong007/rLTP">
+            GitHub
+          </a>) accesses the
+          <a href="https://www.ltp-cloud.com/">
+            ltp-cloud service
+          </a>.
+<a href="../packages/languagelayeR/index.html">languagelayeR</a>
+          is a client for Languagelayer, a language detection API.
+          <a href="https://code.google.com/archive/p/google-prediction-api-r-client/">
+            googlepredictionapi
+          </a>
+          (not on CRAN): is an R client for the
+          <a href="https://cloud.google.com/prediction/">
+            Google Prediction API
+          </a>, a suite of cloud machine learning tools.
+<a href="../packages/yhatr/index.html">yhatr</a>
+          lets you deploy, maintain, and invoke models via the Yhat REST API.
+<a href="../packages/datarobot/index.html">datarobot</a>
+          works with Data Robot’s predictive modeling platform.
+<a href="../packages/mscsweblm4r/index.html">mscsweblm4r</a>
+          (
+          <a href="https://github.com/philferriere/mscsweblm4r">
+            GitHub
+          </a>) interfaces with the Microsoft Cognitive Services Web Language Model API and
+<a href="../packages/mscstexta4r/index.html">mscstexta4r</a>
+          (
+          <a href="https://github.com/philferriere/mscstexta4r">
+            GitHub
+          </a>) uses the Microsoft Cognitive Services Text Analytics REST API.
+<a href="../packages/rosetteApi/index.html">rosetteApi</a>
+          links to the
+          <a href="https://developer.rosette.com/">
+            Rosette
+          </a>
+          text analysis API.
+<a href="../packages/googleLanguageR/index.html">googleLanguageR</a>
+          provides interfaces to Google’s Cloud Translation API, Natural Language API, Cloud Speech API, and the Cloud Text-to-Speech API.
+        </li>
+        <li>
+          <em>
+            Machine Translation
+          </em>:
+<a href="../packages/translate/index.html">translate</a>
+          provides bindings for the Google Translate API v2 and
+<a href="../packages/translateR/index.html">translateR</a>
+          provides bindings for both Google and Microsoft translation APIs.
+<a href="../packages/RYandexTranslate/index.html">RYandexTranslate</a>
+          (
+          <a href="https://github.com/mukul13/RYandexTranslate">
+            GitHub
+          </a>) connects to
+          <a href="https://translate.yandex.com/">
+            Yandex Translate
+          </a>.
+<a href="../packages/transcribeR/index.html">transcribeR</a>
+          provides automated audio transcription via the HP IDOL service.
+        </li>
+        <li>
+          <em>
+            Document Processing
+          </em>:
+<a href="../packages/abbyyR/index.html">abbyyR</a>
+          <a href="https://github.com/soodoku/abbyyR">
+            GitHub
+          </a>
+          and
+<a href="../packages/captr/index.html">captr</a>
+          (
+          <a href="https://github.com/soodoku/captr">
+            GitHub
+          </a>) connect to optical character recognition (OCR) APIs.
+<a href="../packages/pdftables/index.html">pdftables</a>
+          (
+          <a href="https://github.com/expersso/pdftables">
+            GitHub
+          </a>) uses
+          <a href="https://pdftables.com/">
+            the PDFTables.com webservice
+          </a>
+          to extract tables from PDFs.
+        </li>
+        <li>
+          <em>
+            Mapping
+          </em>:
+<a href="../packages/osmar/index.html">osmar</a>
+          provides infrastructure to access OpenStreetMap data from different sources to work with the data in common R manner and to convert data into available infrastructure provided by existing R packages (e.g., into sp and igraph objects).
+<a href="../packages/osrm/index.html">osrm</a>
+          (
+          <a href="https://github.com/rCarto/osrm">
+            GitHub
+          </a>) provides shortest paths and travel times from OpenStreetMap.
+<a href="../packages/osmplotr/index.html">osmplotr</a>
+          (
+          <a href="https://github.com/ropensci/osmplotr">
+            GitHub
+          </a>) extracts customizable map images from OpenStreetMap.
+<a href="../packages/RgoogleMaps/index.html">RgoogleMaps</a>
+          serves two purposes: it provides a comfortable R interface to query the Google server for static maps, and use the map as a background image to overlay plots within R.
+<a href="http://www.Omegahat.net/R2GoogleMaps/"><span class="Ohat">R2GoogleMaps</span></a>
+          provides a mechanism to generate JavaScript code from R that displays data using Google Maps.
+<a href="http://www.Omegahat.net/RKMLDevice/"><span class="Ohat">RKMLDevice</span></a>
+          allows to create R graphics in Keyhole Markup Language (KML) format in a manner that allows them to be displayed on Google Earth (or Google Maps), and
+<a href="http://www.Omegahat.net/RKML/"><span class="Ohat">RKML</span></a>
+          provides users with high-level facilities to generate KML.
+<a href="../packages/plotKML/index.html">plotKML</a>
+          can visualization spatial and spatio-temporal objects in Google Earth.
+<a href="../packages/plotGoogleMaps/index.html">plotGoogleMaps</a>
+          pls SP or SPT (STDIF,STFDF) data as an HTML map mashup over Google Maps.
+<a href="../packages/ggmap/index.html">ggmap</a>
+          allows for the easy visualization of spatial data and models on top of Google Maps, OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
+<a href="../packages/mapsapi/index.html">mapsapi</a>
+          is an sf-compatible interface to Google Maps API.
+<a href="../packages/leafletR/index.html">leafletR</a>: Allows you to display your spatial data on interactive web-maps using the open-source JavaScript library Leaflet.
+<a href="../packages/openadds/index.html">openadds</a>
+          (
+          <a href="https://github.com/sckott/openadds">
+            GitHub
+          </a>) is an
+          <a href="https://openaddresses.io/">
+            Openaddresses
+          </a>
+          client, and
+<a href="../packages/banR/index.html">banR</a>
+          provides access to the “Base Adresses Nationale” (BAN) API for French addresses.
+        </li>
+        <li>
+          <em>
+            Online Surveys
+          </em>:
+<a href="../packages/qualtRics/index.html">qualtRics</a>
+          provide functions to interact with
+          <a href="https://www.qualtrics.com/">
+            Qualtrics
+          </a>.
+<a href="../packages/WufooR/index.html">WufooR</a>
+          (
+          <a href="https://github.com/dmpe/wufoor">
+            GitHub
+          </a>) can retrieve data from
+          <a href="https://www.wufoo.com/">
+            Wufoo.com
+          </a>
+          forms.
+<a href="../packages/redcapAPI/index.html">redcapAPI</a>
+          (
+          <a href="https://github.com/nutterb/redcapAPI">
+            GitHub
+          </a>) can provide access to data stored in a REDCap (Research Electronic Data CAPture) database, which is a web application for building and managing online surveys and databases developed at Vanderbilt University.
+<a href="https://github.com/rubenarslan/formr/"><span class="GitHub">formr</span></a>
+          facilitates use of the
+          <a href="https://formr.org/">
+            formr
+          </a>
+          survey framework, which is built on openCPU.
+<a href="../packages/Rexperigen/index.html">Rexperigen</a>
+          is a client for the
+          <a href="http://becker.phonologist.org/experigen/">
+            Experigen experimental platform
+          </a>.
+        </li>
+        <li>
+          <em>
+            Visualization
+          </em>: Plot.ly is a company that allows you to create visualizations in the web using R (and Python), which is accessible via
+<a href="../packages/plotly/index.html">plotly</a>.
+<a href="../packages/googleVis/index.html">googleVis</a>
+          provides an interface between R and the Google chart tools. The
+<a href="http://www.Omegahat.net/RUbigraph/"><span class="Ohat">RUbigraph</span></a>
+          package provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs. You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics such as shape, color, size. Interactive, Javascript-enabled graphics are an increasingly useful output format for data analysis.
+<a href="../packages/ggvis/index.html">ggvis</a>
+          makes it easy to describe interactive web graphics in R. It fuses the ideas of ggplot2 and
+<a href="../packages/shiny/index.html">shiny</a>, rendering graphics on the web with Vega.
+<a href="../packages/d3Network/index.html">d3Network</a>
+          provides tools for creating D3 JavaScript network, tree, dendrogram, and Sankey graphs from R.
+<a href="https://github.com/nachocab/clickme/"><span class="GitHub">clickme</span></a>
+          (not on CRAN) allows for interactive Javascript charts from R.
+<a href="https://github.com/tdhock/animint/"><span class="GitHub">animint</span></a>
+          (not on CRAN) allows an interactive animation to be defined using a list of ggplots with clickSelects and showSelected aesthetics, then exported to CSV/JSON/D3/JavaScript for viewing in a web browser.
+<a href="https://github.com/metagraf/rVega/"><span class="GitHub">rVega</span></a>
+          (not on CRAN) is an R wrapper for Vega.
+        </li>
+        <li>
+          <em>
+            Other
+          </em>:
+          <ul>
             <li>
 <a href="../packages/rrefine/index.html">rrefine</a>
-              provides a client for the
+              can import to and export from the
               <a href="http://openrefine.org/">
                 OpenRefine
               </a>
-              (formerly Google Refine) data cleaning service.
+              data cleaning service.
             </li>
           </ul>
-          <p>
-            <strong>
-              Document and Code Sharing
-            </strong>
-          </p>
-          <ul>
-            <li>
-              <em>
-                Code Sharing
-              </em>:
-<a href="../packages/gistr/index.html">gistr</a>
-              (
-              <a href="https://github.com/ropensci/gistr">
-                GitHub
-              </a>) works with GitHub gists (
-              <a href="https://gist.github.com/discover">
-                gist.github.com
-              </a>) from R, allowing you to create new gists, update gists with new files, rename files, delete files, get and delete gists, star and un-star gists, fork gists, open a gist in your default browser, get embed code for a gist, list gist commits, and get rate limit information when authenticated.
-<a href="../packages/git2r/index.html">git2r</a>
-              provides bindings to the git version control system and
-<a href="../packages/gh/index.html">gh</a>
-              is a client for the GitHub API.
-<a href="../packages/gitlabr/index.html">gitlabr</a>
-              is a
-              <a href="https://about.gitlab.com/">
-                GitLab
-              </a>
-              -specific client.
-<a href="https://github.com/hrbrmstr/pastebin/"><span class="GitHub">pastebin</span></a>
-              is a client for
-              <a href="https://pastebin.com/" class="uri">
-                https://pastebin.com/
-              </a>
-              a code sharing site.
-            </li>
-            <li>
-              <em>
-                Data archiving
-              </em>:
-<a href="../packages/dataverse/index.html">dataverse</a>
-              (
-              <a href="https://github.com/iqss/dataverse-client-r">
-                GitHub
-              </a>) provides access to Dataverse 4 APIs.
-<a href="../packages/rfigshare/index.html">rfigshare</a>
-              (
-              <a href="https://github.com/ropensci/rfigshare">
-                GitHub
-              </a>) connects with
-              <a href="https://figshare.com/">
-                Figshare.com
-              </a>.
-              <a href="https://cran.rstudio.com/src/contrib/Archive/dataone/">
-                dataone
-              </a>
-              provides read/write access to data and metadata from the
-              <a href="https://www.dataone.org/">
-                DataONE network
-              </a>
-              of Member Node data repositories.
-<a href="../packages/dataone/index.html">dataone</a>
-              (
-              <a href="https://github.com/DataONEorg/rdataone">
-                GitHub
-              </a>) provides a client for
-              <a href="https://www.dataone.org/">
-                DataONE
-              </a>
-              repositories.
-            </li>
-            <li>
-              <em>
-                Google Drive/Google Documents
-              </em>: The
-<a href="http://www.Omegahat.net/RGoogleDocs/"><span class="Ohat">RGoogleDocs</span></a>
-              package is an example of using the RCurl and XML packages to quickly develop an interface to the Google Documents API.
-<a href="http://www.Omegahat.net/RGoogleStorage/"><span class="Ohat">RGoogleStorage</span></a>
-              provides programmatic access to the Google Storage API. This allows R users to access and store data on Google’s storage. We can upload and download content, create, list and delete folders/buckets, and set access control permissions on objects and buckets.
-            </li>
-            <li>
-              <em>
-                Google Sheets
-              </em>:
-<a href="../packages/googlesheets/index.html">googlesheets</a>
-              (
-              <a href="https://github.com/jennybc/googlesheets">
-                GitHub
-              </a>) can access private or public Google Sheets by title, key, or URL. Extract data or edit data. Create, delete, rename, copy, upload, or download spreadsheets and worksheets.
-<a href="../packages/gsheet/index.html">gsheet</a>
-              (
-              <a href="https://github.com/maxconway/gsheet">
-                GitHub
-              </a>) can download Google Sheets using just the sharing link. Spreadsheets can be downloaded as a data frame, or as plain text to parse manually.
-            </li>
-            <li>
-<a href="../packages/imguR/index.html">imguR</a>
-              (
-              <a href="https://github.com/cloudyr/imguR">
-                GitHub
-              </a>) is a package to share plots using the image hosting service
-              <a href="https://imgur.com/">
-                Imgur.com
-              </a>. knitr also has a function
-<tt>imgur_upload()</tt>
-              to load images from literate programming documents.
-            </li>
-            <li>
-<a href="https://github.com/cloudyr/rscribd/"><span class="GitHub">rscribd</span></a>
-              (not on CRAN): API client for publishing documents to
-              <a href="https://www.scribd.com/">
-                Scribd
-              </a>.
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Data Analysis and Processing Services
-            </strong>
-          </p>
-          <ul>
-            <li>
-              <em>
-                Geospatial/Geolocation/Geocoding
-              </em>: Several packages connect to geolocation/geocoding services.
-<a href="../packages/rgeolocate/index.html">rgeolocate</a>
-              (
-              <a href="https://github.com/ironholds/rgeolocate">
-                GitHub
-              </a>) offers several online and offline tools.
-<a href="https://github.com/trestletech/rydn/"><span class="GitHub">rydn</span></a>
-              (not on CRAN) is an interface to the Yahoo Developers network geolocation APIs, and
-<a href="https://github.com/hrbrmstr/ipapi/"><span class="GitHub">ipapi</span></a>
-              can be used to geolocate IPv4/6 addresses and/or domain names using the
-              <a href="http://ip-api.com/" class="uri">
-                http://ip-api.com/
-              </a>
-              API.
-<a href="../packages/threewords/index.html">threewords</a>
-              connects to the
-              <a href="https://what3words.com/">
-                What3Words API
-              </a>, which represents every 3-meter by 3-meter square on earth as a three-word phrase.
-<a href="../packages/opencage/index.html">opencage</a>
-              (
-              <a href="https://github.com/ropensci/opencage">
-                GitHub
-              </a>) provides access to to the
-              <a href="https://opencagedata.com/">
-                OpenCage
-              </a>
-              geocoding service.
-<a href="../packages/geoparser/index.html">geoparser</a>
-              (
-              <a href="https://github.com/ropensci/geoparser">
-                GitHub
-              </a>) interfaces with the
-              <a href="https://geoparser.io/">
-                Geoparser.io
-              </a>
-              web service to identify place names from plain text.
-<a href="https://github.com/hrbrmstr/nominatim/"><span class="GitHub">nominatim</span></a>
-              (not on CRAN) connects to the
-              <a href="https://github.com/hrbrmstr/nominatim">
-                OpenStreetMap Nominatim API
-              </a>
-              for reverse geocoding.
-<a href="https://github.com/ropensci/PostcodesioR/"><span class="GitHub">PostcodesioR</span></a>
-              (not on CRAN) provides post code lookup and geocoding for the United Kingdom.
-<a href="../packages/geosapi/index.html">geosapi</a>
-              is an R client for the
-              <a href="http://geoserver.org/">
-                GeoServer
-              </a>
-              REST API, an open source implementation used widely for serving spatial data.
-<a href="../packages/geonapi/index.html">geonapi</a>
-              provides an interface to the
-              <a href="https://geonetwork-opensource.org/">
-                GeoNetwork
-              </a>
-              legacy API, an opensource catalogue for managing geographic metadata.
-<a href="../packages/ows4R/index.html">ows4R</a>
-              is a new R client for the
-              <a href="http://www.opengeospatial.org/standards">
-                OGC
-              </a>
-              standard Web-Services, such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
-            </li>
-            <li>
-              <em>
-                Image Processing
-              </em>:
-<a href="https://github.com/cloudyr/RoogleVision/"><span class="GitHub">RoogleVision</span></a>
-              (not on CRAN) links to the Google Cloud Vision image recognition service.
-            </li>
-            <li>
-              <em>
-                Machine Learning as a Service
-              </em>: Several packages provide access to cloud-based machine learning services.
-<a href="../packages/bigml/index.html">bigml</a>
-              (
-              <a href="https://github.com/bigmlcom/bigml-r">
-                GitHub
-              </a>) connects to BigML.
-<a href="../packages/OpenML/index.html">OpenML</a>
-              (
-              <a href="https://github.com/openml/openml-r">
-                GitHub
-              </a>) is the official client for
-              <a href="https://www.openml.org/frontend/page/home">
-                the OpenML API
-              </a>.
-<a href="../packages/clarifai/index.html">clarifai</a>
-              (
-              <a href="https://github.com/soodoku/clarifai">
-                GitHub
-              </a>) is a
-              <a href="https://www.clarifai.com/">
-                Clarifai.com
-              </a>
-              client that enables automated image description.
-<a href="../packages/rLTP/index.html">rLTP</a>
-              (
-              <a href="https://github.com/hetong007/rLTP">
-                GitHub
-              </a>) accesses the
-              <a href="https://www.ltp-cloud.com/">
-                ltp-cloud service
-              </a>.
-<a href="../packages/languagelayeR/index.html">languagelayeR</a>
-              is a client for Languagelayer, a language detection API.
-              <a href="https://code.google.com/archive/p/google-prediction-api-r-client/">
-                googlepredictionapi
-              </a>
-              (not on CRAN): is an R client for the
-              <a href="https://cloud.google.com/prediction/">
-                Google Prediction API
-              </a>, a suite of cloud machine learning tools.
-<a href="../packages/yhatr/index.html">yhatr</a>
-              lets you deploy, maintain, and invoke models via the Yhat REST API.
-<a href="../packages/datarobot/index.html">datarobot</a>
-              works with Data Robot’s predictive modeling platform.
-<a href="../packages/mscsweblm4r/index.html">mscsweblm4r</a>
-              (
-              <a href="https://github.com/philferriere/mscsweblm4r">
-                GitHub
-              </a>) interfaces with the Microsoft Cognitive Services Web Language Model API and
-<a href="../packages/mscstexta4r/index.html">mscstexta4r</a>
-              (
-              <a href="https://github.com/philferriere/mscstexta4r">
-                GitHub
-              </a>) uses the Microsoft Cognitive Services Text Analytics REST API.
-<a href="../packages/rosetteApi/index.html">rosetteApi</a>
-              links to the
-              <a href="https://developer.rosette.com/">
-                Rosette
-              </a>
-              text analysis API.
-<a href="../packages/googleLanguageR/index.html">googleLanguageR</a>
-              provides interfaces to Google’s Cloud Translation API, Natural Language API, Cloud Speech API, and the Cloud Text-to-Speech API.
-            </li>
-            <li>
-              <em>
-                Machine Translation
-              </em>:
-<a href="../packages/translate/index.html">translate</a>
-              provides bindings for the Google Translate API v2 and
-<a href="../packages/translateR/index.html">translateR</a>
-              provides bindings for both Google and Microsoft translation APIs.
-<a href="../packages/RYandexTranslate/index.html">RYandexTranslate</a>
-              (
-              <a href="https://github.com/mukul13/RYandexTranslate">
-                GitHub
-              </a>) connects to
-              <a href="https://translate.yandex.com/">
-                Yandex Translate
-              </a>.
-<a href="../packages/transcribeR/index.html">transcribeR</a>
-              provides automated audio transcription via the HP IDOL service.
-            </li>
-            <li>
-              <em>
-                Document Processing
-              </em>:
-<a href="../packages/abbyyR/index.html">abbyyR</a>
-              <a href="https://github.com/soodoku/abbyyR">
-                GitHub
-              </a>
-              and
-<a href="../packages/captr/index.html">captr</a>
-              (
-              <a href="https://github.com/soodoku/captr">
-                GitHub
-              </a>) connect to optical character recognition (OCR) APIs.
-<a href="../packages/pdftables/index.html">pdftables</a>
-              (
-              <a href="https://github.com/expersso/pdftables">
-                GitHub
-              </a>) uses
-              <a href="https://pdftables.com/">
-                the PDFTables.com webservice
-              </a>
-              to extract tables from PDFs.
-            </li>
-            <li>
-              <em>
-                Mapping
-              </em>:
-<a href="../packages/osmar/index.html">osmar</a>
-              provides infrastructure to access OpenStreetMap data from different sources to work with the data in common R manner and to convert data into available infrastructure provided by existing R packages (e.g., into sp and igraph objects).
-<a href="../packages/osrm/index.html">osrm</a>
-              (
-              <a href="https://github.com/rCarto/osrm">
-                GitHub
-              </a>) provides shortest paths and travel times from OpenStreetMap.
-<a href="../packages/osmplotr/index.html">osmplotr</a>
-              (
-              <a href="https://github.com/ropensci/osmplotr">
-                GitHub
-              </a>) extracts customizable map images from OpenStreetMap.
-<a href="../packages/RgoogleMaps/index.html">RgoogleMaps</a>
-              serves two purposes: it provides a comfortable R interface to query the Google server for static maps, and use the map as a background image to overlay plots within R.
-<a href="http://www.Omegahat.net/R2GoogleMaps/"><span class="Ohat">R2GoogleMaps</span></a>
-              provides a mechanism to generate JavaScript code from R that displays data using Google Maps.
-<a href="http://www.Omegahat.net/RKMLDevice/"><span class="Ohat">RKMLDevice</span></a>
-              allows to create R graphics in Keyhole Markup Language (KML) format in a manner that allows them to be displayed on Google Earth (or Google Maps), and
-<a href="http://www.Omegahat.net/RKML/"><span class="Ohat">RKML</span></a>
-              provides users with high-level facilities to generate KML.
-<a href="../packages/plotKML/index.html">plotKML</a>
-              can visualization spatial and spatio-temporal objects in Google Earth.
-<a href="../packages/plotGoogleMaps/index.html">plotGoogleMaps</a>
-              pls SP or SPT (STDIF,STFDF) data as an HTML map mashup over Google Maps.
-<a href="../packages/ggmap/index.html">ggmap</a>
-              allows for the easy visualization of spatial data and models on top of Google Maps, OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
-<a href="../packages/mapsapi/index.html">mapsapi</a>
-              is an sf-compatible interface to Google Maps API.
-<a href="../packages/leafletR/index.html">leafletR</a>: Allows you to display your spatial data on interactive web-maps using the open-source JavaScript library Leaflet.
-<a href="../packages/openadds/index.html">openadds</a>
-              (
-              <a href="https://github.com/sckott/openadds">
-                GitHub
-              </a>) is an
-              <a href="https://openaddresses.io/">
-                Openaddresses
-              </a>
-              client, and
-<a href="../packages/banR/index.html">banR</a>
-              provides access to the “Base Adresses Nationale” (BAN) API for French addresses.
-            </li>
-            <li>
-              <em>
-                Online Surveys
-              </em>:
-<a href="../packages/qualtRics/index.html">qualtRics</a>
-              provide functions to interact with
-              <a href="https://www.qualtrics.com/">
-                Qualtrics
-              </a>.
-<a href="../packages/WufooR/index.html">WufooR</a>
-              (
-              <a href="https://github.com/dmpe/wufoor">
-                GitHub
-              </a>) can retrieve data from
-              <a href="https://www.wufoo.com/">
-                Wufoo.com
-              </a>
-              forms.
-<a href="../packages/redcapAPI/index.html">redcapAPI</a>
-              (
-              <a href="https://github.com/nutterb/redcapAPI">
-                GitHub
-              </a>) can provide access to data stored in a REDCap (Research Electronic Data CAPture) database, which is a web application for building and managing online surveys and databases developed at Vanderbilt University.
-<a href="https://github.com/rubenarslan/formr/"><span class="GitHub">formr</span></a>
-              facilitates use of the
-              <a href="https://formr.org/">
-                formr
-              </a>
-              survey framework, which is built on openCPU.
-<a href="../packages/Rexperigen/index.html">Rexperigen</a>
-              is a client for the
-              <a href="http://becker.phonologist.org/experigen/">
-                Experigen experimental platform
-              </a>.
-            </li>
-            <li>
-              <em>
-                Visualization
-              </em>: Plot.ly is a company that allows you to create visualizations in the web using R (and Python), which is accessible via
-<a href="../packages/plotly/index.html">plotly</a>.
-<a href="../packages/googleVis/index.html">googleVis</a>
-              provides an interface between R and the Google chart tools. The
-<a href="http://www.Omegahat.net/RUbigraph/"><span class="Ohat">RUbigraph</span></a>
-              package provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs. You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics such as shape, color, size. Interactive, Javascript-enabled graphics are an increasingly useful output format for data analysis.
-<a href="../packages/ggvis/index.html">ggvis</a>
-              makes it easy to describe interactive web graphics in R. It fuses the ideas of ggplot2 and
-<a href="../packages/shiny/index.html">shiny</a>, rendering graphics on the web with Vega.
-<a href="../packages/d3Network/index.html">d3Network</a>
-              provides tools for creating D3 JavaScript network, tree, dendrogram, and Sankey graphs from R.
-<a href="https://github.com/nachocab/clickme/"><span class="GitHub">clickme</span></a>
-              (not on CRAN) allows for interactive Javascript charts from R.
-<a href="https://github.com/tdhock/animint/"><span class="GitHub">animint</span></a>
-              (not on CRAN) allows an interactive animation to be defined using a list of ggplots with clickSelects and showSelected aesthetics, then exported to CSV/JSON/D3/JavaScript for viewing in a web browser.
-<a href="https://github.com/metagraf/rVega/"><span class="GitHub">rVega</span></a>
-              (not on CRAN) is an R wrapper for Vega.
-            </li>
-            <li>
-              <em>
-                Other
-              </em>:
-              <ul>
-                <li>
-<a href="../packages/rrefine/index.html">rrefine</a>
-                  can import to and export from the
-                  <a href="http://openrefine.org/">
-                    OpenRefine
-                  </a>
-                  data cleaning service.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Social Media Clients
-            </strong>
-          </p>
-          <ul>
-            <li>
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Social Media Clients
+        </strong>
+      </p>
+      <ul>
+        <li>
 <a href="../packages/plusser/index.html">plusser</a>
-              has been designed to to facilitate the retrieval of Google+ profiles, pages and posts. It also provides search facilities. Currently a Google+ API key is required for accessing Google+ data.
-            </li>
-            <li>
+          has been designed to to facilitate the retrieval of Google+ profiles, pages and posts. It also provides search facilities. Currently a Google+ API key is required for accessing Google+ data.
+        </li>
+        <li>
 <a href="../packages/Rfacebook/index.html">Rfacebook</a>
-              and
+          and
 <a href="../packages/facebook.S4/index.html">facebook.S4</a>
-              provide interfaces to the Facebook API.
-            </li>
-            <li>
-              The
+          provide interfaces to the Facebook API.
+        </li>
+        <li>
+          The
 <a href="http://www.Omegahat.net/Rflickr/"><span class="Ohat">Rflickr</span></a>
-              package provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
-            </li>
-            <li>
+          package provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
+        </li>
+        <li>
 <a href="../packages/instaR/index.html">instaR</a>
-              (
-              <a href="https://github.com/pablobarbera/instaR">
-                GitHub
-              </a>) is a client for the
-              <a href="https://www.instagram.com/developer/">
-                Instagram API
-              </a>.
-            </li>
-            <li>
+          (
+          <a href="https://github.com/pablobarbera/instaR">
+            GitHub
+          </a>) is a client for the
+          <a href="https://www.instagram.com/developer/">
+            Instagram API
+          </a>.
+        </li>
+        <li>
 <a href="https://github.com/mpiccirilli/Rlinkedin/"><span class="GitHub">Rlinkedin</span></a>
-              (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.
-            </li>
-            <li>
+          (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.
+        </li>
+        <li>
 <a href="../packages/rpinterest/index.html">rpinterest</a>
-              connects to the
-              <a href="https://www.pinterest.com/">
-                Pintrest
-              </a>
-              API.
-            </li>
-            <li>
+          connects to the
+          <a href="https://www.pinterest.com/">
+            Pintrest
+          </a>
+          API.
+        </li>
+        <li>
 <a href="../packages/tumblR/index.html">tumblR</a>
-              (
-              <a href="https://github.com/klapaukh/tumblR">
-                GitHub
-              </a>) is a client for the Tumblr API (
-              <a href="https://www.tumblr.com/docs/en/api/v2" class="uri">
-                https://www.tumblr.com/docs/en/api/v2
-              </a>). Tumblr is a microblogging platform and social networking website
-              <a href="https://www.tumblr.com/" class="uri">
-                https://www.tumblr.com/
-              </a>.
-            </li>
-            <li>
+          (
+          <a href="https://github.com/klapaukh/tumblR">
+            GitHub
+          </a>) is a client for the Tumblr API (
+          <a href="https://www.tumblr.com/docs/en/api/v2" class="uri">
+            https://www.tumblr.com/docs/en/api/v2
+          </a>). Tumblr is a microblogging platform and social networking website
+          <a href="https://www.tumblr.com/" class="uri">
+            https://www.tumblr.com/
+          </a>.
+        </li>
+        <li>
 <a href="../packages/vkR/index.html">vkR</a>
-              is a client for VK, a social networking site based in Russia.
-            </li>
-            <li>
+          is a client for VK, a social networking site based in Russia.
+        </li>
+        <li>
 <a href="https://github.com/rladies/meetupr/"><span class="GitHub">meetupr</span></a>
-              is a client for the Meetup.com API.
-            </li>
-            <li>
-              <em>
-                Twitter
-              </em>:
+          is a client for the Meetup.com API.
+        </li>
+        <li>
+          <em>
+            Twitter
+          </em>:
 <a href="../packages/twitteR/index.html">twitteR</a>
-              (
-              <a href="https://github.com/geoffjentry/twitteR">
-                GitHub
-              </a>) provides an interface to the Twitter web API. It claims to be deprecated in favor of
+          (
+          <a href="https://github.com/geoffjentry/twitteR">
+            GitHub
+          </a>) provides an interface to the Twitter web API. It claims to be deprecated in favor of
 <a href="../packages/rtweet/index.html">rtweet</a>
-              (
-              <a href="https://github.com/mkearney/rtweet">
-                GitHub
-              </a>).
+          (
+          <a href="https://github.com/mkearney/rtweet">
+            GitHub
+          </a>).
 <a href="https://github.com/gvegayon/twitterreport/"><span class="GitHub">twitterreport</span></a>
-              (not on CRAN) focuses on report generation based on Twitter data.
+          (not on CRAN) focuses on report generation based on Twitter data.
 <a href="../packages/streamR/index.html">streamR</a>
-              provides a series of functions that allow users to access Twitter’s filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported.
+          provides a series of functions that allow users to access Twitter’s filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported.
 <a href="../packages/tweet2r/index.html">tweet2r</a>
-              is an alternative implementation geared toward SQLite and postGIS databases.
+          is an alternative implementation geared toward SQLite and postGIS databases.
 <a href="../packages/graphTweets/index.html">graphTweets</a>
-              produces a network graph from a data.frame of tweets.
-              <a href="https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores">
-                tweetscores
-              </a>
-              (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
-            </li>
-            <li>
+          produces a network graph from a data.frame of tweets.
+          <a href="https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores">
+            tweetscores
+          </a>
+          (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
+        </li>
+        <li>
 <a href="../packages/brandwatchR/index.html">brandwatchR</a>
-              is a package to retrieve a data from the Brandwatch social listening API. Both raw text and aggregate statistics are available, as well as project and query management functions.
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Web Analytics Services
-            </strong>
-          </p>
-          <ul>
-            <li>
-              <em>
-                Google Trends
-              </em>:
+          is a package to retrieve a data from the Brandwatch social listening API. Both raw text and aggregate statistics are available, as well as project and query management functions.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Web Analytics Services
+        </strong>
+      </p>
+      <ul>
+        <li>
+          <em>
+            Google Trends
+          </em>:
 <a href="../packages/gtrendsR/index.html">gtrendsR</a>
-              offers functions to perform and display Google Trends queries.
+          offers functions to perform and display Google Trends queries.
 <a href="http://www.Omegahat.net/RGoogleTrends/"><span class="Ohat">RGoogleTrends</span></a>
-              provides an alternative.
-            </li>
-            <li>
-              <em>
-                Google Analytics
-              </em>:
+          provides an alternative.
+        </li>
+        <li>
+          <em>
+            Google Analytics
+          </em>:
 <a href="../packages/googleAnalyticsR/index.html">googleAnalyticsR</a>,
 <a href="../packages/ganalytics/index.html">ganalytics</a>;
 <a href="../packages/GAR/index.html">GAR</a>, and
 <a href="../packages/RGA/index.html">RGA</a>
-              provide functions for accessing and retrieving data from the
-              <a href="https://developers.google.com/analytics/">
-                Google Analytics APIs
-              </a>. The latter supports OAuth 2.0 authorization.
+          provide functions for accessing and retrieving data from the
+          <a href="https://developers.google.com/analytics/">
+            Google Analytics APIs
+          </a>. The latter supports OAuth 2.0 authorization.
 <a href="../packages/RGA/index.html">RGA</a>
-              provides a shiny app to explore data.
+          provides a shiny app to explore data.
 <a href="../packages/searchConsoleR/index.html">searchConsoleR</a>
-              links to the
-              <a href="https://developers.google.com/webmaster-tools/">
-                Google Search Console
-              </a>
-              (formerly Webmaster Tools).
-            </li>
-            <li>
-              <em>
-                Online Advertising
-              </em>:
-<a href="../packages/fbRads/index.html">fbRads</a>
-              can manage Facebook ads via the Facebook Marketing API.
-<a href="https://github.com/WillemPaling/RDoubleClick/"><span class="GitHub">RDoubleClick</span></a>
-              (not on CRAN) can retrieve data from Google’s DoubleClick Campaign Manager Reporting API.
-<a href="../packages/RSmartlyIO/index.html">RSmartlyIO</a>
-              (
-              <a href="https://github.com/rstats-lab/RSmartlyIO">
-                GitHub
-              </a>) loads Facebook and Instagram advertising data provided by
-              <a href="https://app.smartly.io/">
-                Smartly.io
-              </a>.
-            </li>
-            <li>
-              <em>
-                Other services
-              </em>:
-<a href="../packages/RSiteCatalyst/index.html">RSiteCatalyst</a>
-              has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.
-            </li>
-            <li>
-<a href="../packages/RAdwords/index.html">RAdwords</a>
-              (
-              <a href="https://github.com/jburkhardt/RAdwords">
-                GitHub
-              </a>) is a package for loading Google Adwords data.
-            </li>
-            <li>
-<a href="../packages/webreadr/index.html">webreadr</a>
-              (
-              <a href="https://github.com/Ironholds/webreadr">
-                GitHub
-              </a>) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Web Services for R Package Development
-            </strong>
-          </p>
-          <ul>
-            <li>
-              R-Hub
-              <a href="http://log.r-hub.io/" class="uri">
-                http://log.r-hub.io/
-              </a>
-              is a project to enable package builds across all architectures.
-<a href="../packages/rhub/index.html">rhub</a>
-              is a package that interfaces with R-Hub to allow you to check a package on the platform.
-            </li>
-          </ul>
-          <p>
-            <strong>
-              Other Web Services
-            </strong>
-          </p>
-          <ul>
-            <li>
-              <p>
-                <em>
-                  Fitness Apps
-                </em>:
-<a href="../packages/fitbitScraper/index.html">fitbitScraper</a>
-                (
-                <a href="https://github.com/corynissen/fitbitScraper">
-                  GitHub
-                </a>) retrieves Fitbit data.
-<a href="../packages/RGoogleFit/index.html">RGoogleFit</a>
-                provides similar functionality for
-                <a href="https://developers.google.com/fit/rest/v1/reference/">
-                  Google Fit
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-                <em>
-                  Push Notifications
-                </em>:
-<a href="../packages/RPushbullet/index.html">RPushbullet</a>
-                provides an easy-to-use interface for the Pushbullet service which provides fast and efficient notifications between computers, phones and tablets.
-<a href="../packages/pushoverr/index.html">pushoverr</a>
-                (
-                <a href="https://github.com/briandconnelly/pushoverr">
-                  GitHub
-                </a>) can sending push notifications to mobile devices (iOS and Android) and desktop using
-                <a href="https://pushover.net/">
-                  Pushover
-                </a>.
-<a href="../packages/notifyme/index.html">notifyme</a>
-                (
-                <a href="https://github.com/epijim/notifyme">
-                  GitHub
-                </a>) can control Phillips Hue lighting.
-              </p>
-            </li>
-            <li>
-              <p>
-                <em>
-                  Reference/bibliography/citation management
-                </em>:
-<a href="../packages/RefManageR/index.html">RefManageR</a>
-                imports and manage BibTeX and BibLaTeX references with RefManager.
-<a href="../packages/rorcid/index.html">rorcid</a>
-                (
-                <a href="https://github.com/ropensci/rorcid">
-                  GitHub
-                </a>) is a programmatic interface the
-                <a href="https://orcid.org/">
-                  Orcid.org
-                </a>
-                API, which can be used for identifying scientific authors and their publications (e.g., by DOI).
-<a href="../packages/rdatacite/index.html">rdatacite</a>
-                connects to
-                <a href="https://datacite.org/">
-                  DataCite
-                </a>, which manages DOIs and metadata for scholarly datasets.
-<a href="../packages/scholar/index.html">scholar</a>
-                provides functions to extract citation data from Google Scholar.
-<a href="../packages/rscopus/index.html">rscopus</a>
-                provides functions to extract citation data from Elsevier Scopus APIs. Convenience functions are also provided for comparing multiple scholars and predicting future h-index values.
-<a href="../packages/mathpix/index.html">mathpix</a>
-                convert an image of a formula (typeset or handwritten) via Mathpix webservice to produce the LaTeX code.
-<a href="../packages/zen4R/index.html">zen4R</a>
-                provides an Interface to
-                <a href="https://zenodo.org/">
-                  Zenodo
-                </a>
-                REST API, including management of depositions, attribution of DOIs by ‘Zenodo’ and upload of files.
-              </p>
-            </li>
-            <li>
-              <p>
-                <em>
-                  Literature
-                </em>:
-<a href="../packages/rplos/index.html">rplos</a>
-                is a programmatic interface to the Web Service methods provided by the Public Library of Science journals for search.
-<a href="https://github.com/rOpenHealth/rpubmed/"><span class="GitHub">rpubmed</span></a>
-                (not on CRAN) provides tools for extracting and processing Pubmed and Pubmed Central records, and
-<a href="../packages/europepmc/index.html">europepmc</a>
-                connects to the Europe PubMed Central service.
-<a href="../packages/pubmed.mineR/index.html">pubmed.mineR</a>
-                is a package for text mining of
-                <a href="https://www.ncbi.nlm.nih.gov/pubmed">
-                  PubMed Abstracts
-                </a>
-                that supports fetching text and XML from PubMed.
-<a href="../packages/jstor/index.html">jstor</a>
-                provides functions and helpers to import metadata, ngrams and full-texts from Data for Research service by JSTOR;
-<a href="https://github.com/benmarwick/JSTORr/"><span class="GitHub">JSTORr</span></a>
-                does a similar thing.
-<a href="../packages/aRxiv/index.html">aRxiv</a>
-                is a client for the arXiv API, a repository of electronic preprints for computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics.
-<a href="../packages/roadoi/index.html">roadoi</a>
-                provides an interface to the
-                <a href="https://unpaywall.org/products/api">
-                  Unpaywall API
-                </a>
-                for finding free full-text versions of academic papers.
-<a href="../packages/rcoreoa/index.html">rcoreoa</a>
-                is an interface to the
-                <a href="https://core.ac.uk/docs/">
-                  CORE API
-                </a>, a search interface for open access scholarly articles.
-<a href="../packages/rcrossref/index.html">rcrossref</a>
-                is an interface to Crossref’s API,
-<a href="../packages/crminer/index.html">crminer</a>
-                extracts full text from scholarly articles retrieved via Crossref’s Text and Data Mining service;
-<a href="../packages/fulltext/index.html">fulltext</a>
-                is a general purpose package to search for, retrieve and extract full text from scholarly articles; and
-<a href="../packages/rromeo/index.html">rromeo</a>
-                (
-                <a href="https://github.com/ropensci/rromeo">
-                  GitHub
-                </a>) is an interface to the
-                <a href="http://sherpa.ac.uk/romeo/index.php">
-                  SHERPA/RoMEO API
-                </a>, a database of scientific journal archival policies regarding pre-, post-print, and accepted manuscript.
-              </p>
-            </li>
-            <li>
-              <p>
-                <em>
-                  Automated Metadata Harvesting
-                </em>:
-<a href="../packages/oai/index.html">oai</a>
-                and
-<a href="../packages/OAIHarvester/index.html">OAIHarvester</a>
-                harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard.
-<a href="https://github.com/ropenscilabs/rresync/"><span class="GitHub">rresync</span></a>
-                is a client for the
-                <a href="https://www.niso.org/standards-committees/resourcesync">
-                  ResourceSync framework
-                </a>, a sort of replacement for OAI-PMH.
-              </p>
-            </li>
-            <li>
-              <p>
-                <em>
-                  Wikipedia
-                </em>:
-<a href="../packages/WikipediR/index.html">WikipediR</a>
-                (
-                <a href="https://github.com/Ironholds/WikipediR">
-                  GitHub
-                </a>) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia ‘production’ wikis, such as Wikipedia.
-<a href="../packages/WikidataR/index.html">WikidataR</a>
-                (
-                <a href="https://github.com/Ironholds/WikidataR">
-                  GitHub
-                </a>) can request data from
-                <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">
-                  Wikidata.org
-                </a>, the free knowledgebase.
-<a href="../packages/wikipediatrend/index.html">wikipediatrend</a>
-                (
-                <a href="https://github.com/petermeissner/wikipediatrend">
-                  GitHub
-                </a>) provides access to Wikipedia page access statistics.
-<a href="../packages/WikidataQueryServiceR/index.html">WikidataQueryServiceR</a>
-                is a client for the
-                <a href="https://query.wikidata.org/">
-                  Wikidata Query Service
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/bigrquery/index.html">bigrquery</a>
-                (
-                <a href="https://github.com/r-dbi/bigrquery">
-                  GitHub
-                </a>): An interface to Google’s bigquery.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/sparkbq/index.html">sparkbq</a>
-                (
-                <a href="https://github.com/miraisolutions/sparkbq">
-                  GitHub
-                </a>): Google BigQuery support for sparklyr.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/cymruservices/index.html">cymruservices</a>
-                queries
-                <a href="https://www.team-cymru.com/">
-                  Team Cymru
-                </a>
-                web security services.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/datamart/index.html">datamart</a>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/discgolf/index.html">discgolf</a>
-                (
-                <a href="https://github.com/sckott/discgolf">
-                  GitHub
-                </a>) provides a client to interact with the API for the
-                <a href="https://www.discourse.org/">
-                  Discourse
-                </a>
-                web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/rdpla/index.html">rdpla</a>
-                ((GitHub)[https://github.com/ropensci/rdpla]) works with the
-                <a href="https://dp.la/">
-                  Digital Public Library of America
-                </a>
-                API.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/factualR/index.html">factualR</a>: Thin wrapper for the
-                <a href="https://www.factual.com/">
-                  Factual.com
-                </a>
-                server API.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/internetarchive/index.html">internetarchive</a>: API client for internet archive metadata.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="https://github.com/hrbrmstr/irced/"><span class="GitHub">irced</span></a>
-                (not on CRAN) is an IRC chat client.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/jSonarR/index.html">jSonarR</a>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the
-                <a href="https://www.jsonar.com/">
-                  JSON Studio Gateway
-                </a>, to convert JSON to a tabular format.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/LendingClub/index.html">LendingClub</a>
-                connects with the
-                <a href="https://www.lendingclub.com/developers/api-overview">
-                  LendingClub API
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/livechatR/index.html">livechatR</a>
-                is a client for the
-                <a href="https://developers.livechatinc.com/docs/rest-api/">
-                  LiveChat API
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="https://github.com/stephlocke/mockaRoo/"><span class="GitHub">mockaRoo</span></a>
-                (not on CRAN) uses the
-                <a href="https://www.mockaroo.com/api/docs">
-                  MockaRoo API
-                </a>
-                to generate mock or fake data based on an input schema.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/pivotaltrackR/index.html">pivotaltrackR</a>
-                provides an interface to the API for
-                <a href="https://www.pivotaltracker.com/">
-                  Pivotal Tracker
-                </a>, an agile project management tool.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/randNames/index.html">randNames</a>
-                (
-                <a href="https://github.com/karthik/randNames">
-                  GitHub
-                </a>) generates random names and personal identifying information using the
-                <a href="https://randomapi.com/" class="uri">
-                  https://randomapi.com/
-                </a>
-                API.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/Rblpapi/index.html">Rblpapi</a>
-                (
-                <a href="https://github.com/Rblp/Rblpapi">
-                  GitHub
-                </a>) is a client for Bloomberg Finance L.P.
-<a href="../packages/ROpenFIGI/index.html">ROpenFIGI</a>
-                (
-                <a href="https://github.com/HuangRicky/ROpenFIGI">
-                  GitHub
-                </a>) provides an interface to Bloomberg’s OpenFIGI API.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/rerddap/index.html">rerddap</a>: A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP (
-                <a href="https://en.wikipedia.org/wiki/OPeNDAP" class="uri">
-                  https://en.wikipedia.org/wiki/OPeNDAP
-                </a>), or
-                <em>
-                  Open-source Project for a Network Data Access Protocol
-                </em>. Allows user to swap out the base URL to use any ERDDAP instance.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="https://github.com/hmalmedal/ripplerestr/"><span class="GitHub">ripplerestr</span></a>
-                provides an interface to the
-                <a href="https://www.ripple.com/">
-                  Ripple
-                </a>
-                protocol for making financial transactions.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/refimpact/index.html">refimpact</a>
-                connects to
-                <a href="https://impact.ref.ac.uk/CaseStudies/">
-                  the UK Research Excellence Framework 2014 Impact Case Studies Database API
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/restimizeapi/index.html">restimizeapi</a>
-                provides an interface to trading website
-                <a href="https://www.estimize.com/">
-                  estimize.com
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/RForcecom/index.html">RForcecom</a>: RForcecom provides a connection to Force.com and Salesforce.com.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="https://github.com/dsidavis/Rgoodreads/"><span class="GitHub">Rgoodreads</span></a>
-                (not on CRAN) interacts with
-                <a href="https://www.goodreads.com/">
-                  Goodreads
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-                Two packages,
-<a href="../packages/owmr/index.html">owmr</a>
-                and
-<a href="../packages/ROpenWeatherMap/index.html">ROpenWeatherMap</a>, work with the
-                <a href="https://openweathermap.org/api">
-                  Open Weather Map API
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/RSauceLabs/index.html">RSauceLabs</a>
-                (
-                <a href="https://johndharrison.github.io/RSauceLabs/">
-                  GitHub
-                </a>) connects to
-                <a href="https://saucelabs.com/">
-                  SauceLabs
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/RSocrata/index.html">RSocrata</a>
-                access data for Socrata open data portals.
-<a href="../packages/soql/index.html">soql</a>
-                is a pipe-oriented set of tools for constructing Socrata queries.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/RStripe/index.html">RStripe</a>
-                provides an interface to
-                <a href="https://stripe.com/">
-                  Stripe
-                </a>, an online payment processor.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/RZabbix/index.html">RZabbix</a>
-                links with the
-                <a href="https://www.zabbix.com/documentation/3.0/manual/api/reference">
-                  Zabbix network monitoring service API
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/rwars/index.html">rwars</a>
-                retrieve and reformat data from the
-                <a href="https://swapi.co/">
-                  Star Wars API (SWAPI)
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/slackr/index.html">slackr</a>
-                (
-                <a href="https://github.com/hrbrmstr/slackr">
-                  GitHub
-                </a>) is a client for Slack.com messaging platform.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/shutterstock/index.html">shutterstock</a>
-                (
-                <a href="https://github.com/strboul/shutterstock-r">
-                  GitHub
-                </a>) is to access Shutterstock library from R.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="https://github.com/dgrtwo/stackr/"><span class="GitHub">stackr</span></a>
-                (not on CRAN): An unofficial wrapper for the read-only features of the
-                <a href="https://api.stackexchange.com/">
-                  Stack Exchange API
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/telegram/index.html">telegram</a>
-                (
-                <a href="https://github.com/lbraglia/telegram">
-                  GitHub
-                </a>) connects with the Telegram Bot API.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/trelloR/index.html">trelloR</a>
-                (
-                <a href="https://github.com/jchrom/trelloR">
-                  GitHub
-                </a>) connects to the
-                <a href="https://developers.trello.com/">
-                  Trello API
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/tuber/index.html">tuber</a>
-                is a YouTube API client and
-<a href="../packages/tubern/index.html">tubern</a>
-                is a client for the YouTube Analytics and Reporting API
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/udapi/index.html">udapi</a>
-                connects to Urban Dictionary.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="https://github.com/nealrichardson/useRsnap/"><span class="GitHub">useRsnap</span></a>
-                (not on CRAN) provides an interface to the API for
-                <a href="https://www.pivotaltracker.com/">
-                  Usersnap
-                </a>, a tool for collecting feedback from web application users.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/yummlyr/index.html">yummlyr</a>
-                (
-                <a href="https://github.com/RomanTsegelskyi/yummlyr">
-                  GitHub
-                </a>) provides an interface to the
-                <a href="https://developer.yummly.com/">
-                  Yummly
-                </a>
-                recipe database.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/zendeskR/index.html">zendeskR</a>: This package provides a wrapper for the Zendesk API.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/ZillowR/index.html">ZillowR</a>
-                is a client for the Zillow real estate service.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/docuSignr/index.html">docuSignr</a>
-                provides an interface to the DocuSign
-                <a href="https://developers.docusign.com/">
-                  Rest API
-                </a>.
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/giphyr/index.html">giphyr</a>
-                is an R interface to the
-                <a href="https://github.com/Giphy/GiphyAPI">
-                  Giphy API
-                </a>
-                for GIF’s
-              </p>
-            </li>
-            <li>
-              <p>
-<a href="../packages/duckduckr/index.html">duckduckr</a>
-                is an R interface
-                <a href="https://duckduckgo.com/api">
-                  DuckDuckGo’s Instant Answer API
-                </a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <packagelist>
-<a href="../packages/curl/index.html">curl</a>
-<a href="../packages/httr/index.html">httr</a>
-<a href="../packages/crul/index.html">crul</a>
-<a href="../packages/vcr/index.html">vcr</a>
-<a href="../packages/webmockr/index.html">webmockr</a>
-<a href="../packages/jsonlite/index.html">jsonlite</a>
-<a href="../packages/shiny/index.html">shiny</a>
-<a href="../packages/xml2/index.html">xml2</a>
-<a href="../packages/abbyyR/index.html">abbyyR</a>
-<a href="../packages/ajv/index.html">ajv</a>
-<a href="../packages/analogsea/index.html">analogsea</a>
-<a href="../packages/aRxiv/index.html">aRxiv</a>
-<a href="../packages/aws.polly/index.html">aws.polly</a>
-<a href="../packages/aws.s3/index.html">aws.s3</a>
-<a href="../packages/aws.signature/index.html">aws.signature</a>
-<a href="../packages/aws.sns/index.html">aws.sns</a>
-<a href="../packages/AzureAuth/index.html">AzureAuth</a>
-<a href="../packages/AzureContainers/index.html">AzureContainers</a>
-<a href="../packages/AzureRMR/index.html">AzureRMR</a>
-<a href="../packages/AzureStor/index.html">AzureStor</a>
-<a href="../packages/AzureVM/index.html">AzureVM</a>
-<a href="../packages/banR/index.html">banR</a>
-<a href="../packages/bigml/index.html">bigml</a>
-<a href="../packages/bigrquery/index.html">bigrquery</a>
-<a href="../packages/boilerpipeR/index.html">boilerpipeR</a>
-<a href="../packages/boxr/index.html">boxr</a>
-<a href="../packages/brandwatchR/index.html">brandwatchR</a>
-<a href="../packages/captr/index.html">captr</a>
-<a href="../packages/clarifai/index.html">clarifai</a>
-<a href="../packages/crminer/index.html">crminer</a>
-<a href="../packages/crunch/index.html">crunch</a>
-<a href="../packages/crunchy/index.html">crunchy</a>
-<a href="../packages/cymruservices/index.html">cymruservices</a>
-<a href="../packages/d3Network/index.html">d3Network</a>
-<a href="../packages/datamart/index.html">datamart</a>
-<a href="../packages/dataone/index.html">dataone</a>
-<a href="../packages/datarobot/index.html">datarobot</a>
-<a href="../packages/dataverse/index.html">dataverse</a>
-<a href="../packages/discgolf/index.html">discgolf</a>
-<a href="../packages/docuSignr/index.html">docuSignr</a>
-<a href="../packages/downloader/index.html">downloader</a>
-<a href="../packages/duckduckr/index.html">duckduckr</a>
-<a href="../packages/europepmc/index.html">europepmc</a>
-<a href="../packages/facebook.S4/index.html">facebook.S4</a>
-<a href="../packages/factualR/index.html">factualR</a>
-<a href="../packages/FastRWeb/index.html">FastRWeb</a>
-<a href="../packages/fauxpas/index.html">fauxpas</a>
-<a href="../packages/fbRads/index.html">fbRads</a>
-<a href="../packages/feedeR/index.html">feedeR</a>
-<a href="../packages/fiery/index.html">fiery</a>
-<a href="../packages/fitbitScraper/index.html">fitbitScraper</a>
-<a href="../packages/fulltext/index.html">fulltext</a>
-<a href="../packages/ganalytics/index.html">ganalytics</a>
-<a href="../packages/GAR/index.html">GAR</a>
-<a href="../packages/gdns/index.html">gdns</a>
-<a href="../packages/geonapi/index.html">geonapi</a>
-<a href="../packages/geoparser/index.html">geoparser</a>
-<a href="../packages/geosapi/index.html">geosapi</a>
-<a href="../packages/ggmap/index.html">ggmap</a>
-<a href="../packages/ggvis/index.html">ggvis</a>
-<a href="../packages/gh/index.html">gh</a>
-<a href="../packages/giphyr/index.html">giphyr</a>
-<a href="../packages/gistr/index.html">gistr</a>
-<a href="../packages/git2r/index.html">git2r</a>
-<a href="../packages/gitlabr/index.html">gitlabr</a>
-<a href="../packages/gmailr/index.html">gmailr</a>
-<a href="../packages/googleAnalyticsR/index.html">googleAnalyticsR</a>
-<a href="../packages/googleAuthR/index.html">googleAuthR</a>
-<a href="../packages/googleCloudStorageR/index.html">googleCloudStorageR</a>
-<a href="../packages/googleComputeEngineR/index.html">googleComputeEngineR</a>
-<a href="../packages/googleLanguageR/index.html">googleLanguageR</a>
-<a href="../packages/googlesheets/index.html">googlesheets</a>
-<a href="../packages/googleVis/index.html">googleVis</a>
-<a href="../packages/graphTweets/index.html">graphTweets</a>
-<a href="../packages/gsheet/index.html">gsheet</a>
-<a href="../packages/gtrendsR/index.html">gtrendsR</a>
-<a href="../packages/htm2txt/index.html">htm2txt</a>
-<a href="../packages/htmltab/index.html">htmltab</a>
-<a href="../packages/htmltidy/index.html">htmltidy</a>
-<a href="../packages/htmltools/index.html">htmltools</a>
-<a href="../packages/httpcache/index.html">httpcache</a>
-<a href="../packages/httpcode/index.html">httpcode</a>
-<a href="../packages/httping/index.html">httping</a>
-<a href="../packages/httpRequest/index.html">httpRequest</a>
-<a href="../packages/httptest/index.html">httptest</a>
-<a href="../packages/httpuv/index.html">httpuv</a>
-<a href="../packages/imguR/index.html">imguR</a>
-<a href="../packages/instaR/index.html">instaR</a>
-<a href="../packages/internetarchive/index.html">internetarchive</a>
-<a href="../packages/iptools/index.html">iptools</a>
-<a href="../packages/jqr/index.html">jqr</a>
-<a href="../packages/js/index.html">js</a>
-<a href="../packages/jSonarR/index.html">jSonarR</a>
-<a href="../packages/jsonvalidate/index.html">jsonvalidate</a>
-<a href="../packages/jstor/index.html">jstor</a>
-<a href="../packages/languagelayeR/index.html">languagelayeR</a>
-<a href="../packages/leafletR/index.html">leafletR</a>
-<a href="../packages/LendingClub/index.html">LendingClub</a>
-<a href="../packages/livechatR/index.html">livechatR</a>
-<a href="../packages/longurl/index.html">longurl</a>
-<a href="../packages/magrittr/index.html">magrittr</a>
-<a href="../packages/mailR/index.html">mailR</a>
-<a href="../packages/mapsapi/index.html">mapsapi</a>
-<a href="../packages/mathpix/index.html">mathpix</a>
-<a href="../packages/mime/index.html">mime</a>
-<a href="../packages/mscstexta4r/index.html">mscstexta4r</a>
-<a href="../packages/mscsweblm4r/index.html">mscsweblm4r</a>
-<a href="../packages/ndjson/index.html">ndjson</a>
-<a href="../packages/notifyme/index.html">notifyme</a>
-<a href="../packages/oai/index.html">oai</a>
-<a href="../packages/OAIHarvester/index.html">OAIHarvester</a>
-<a href="../packages/openadds/index.html">openadds</a>
-<a href="../packages/opencage/index.html">opencage</a>
-<a href="../packages/opencpu/index.html">opencpu</a>
-<a href="../packages/OpenML/index.html">OpenML</a>
-<a href="../packages/osmar/index.html">osmar</a>
-<a href="../packages/osmplotr/index.html">osmplotr</a>
-<a href="../packages/osrm/index.html">osrm</a>
-<a href="../packages/owmr/index.html">owmr</a>
-<a href="../packages/ows4R/index.html">ows4R</a>
-<a href="../packages/paws/index.html">paws</a>
-<a href="../packages/pdftables/index.html">pdftables</a>
-<a href="../packages/pivotaltrackR/index.html">pivotaltrackR</a>
-<a href="../packages/plotGoogleMaps/index.html">plotGoogleMaps</a>
-<a href="../packages/plotKML/index.html">plotKML</a>
-<a href="../packages/plotly/index.html">plotly</a>
-<a href="../packages/plumber/index.html">plumber</a>
-<a href="../packages/plusser/index.html">plusser</a>
-<a href="../packages/postlightmercury/index.html">postlightmercury</a>
-<a href="../packages/pubmed.mineR/index.html">pubmed.mineR</a>
-<a href="../packages/pushoverr/index.html">pushoverr</a>
-<a href="../packages/qualtRics/index.html">qualtRics</a>
-<a href="../packages/radiant/index.html">radiant</a>
-<a href="../packages/RAdwords/index.html">RAdwords</a>
-<a href="../packages/randNames/index.html">randNames</a>
-<a href="../packages/rapiclient/index.html">rapiclient</a>
-<a href="../packages/rapport/index.html">rapport</a>
-<a href="../packages/Rblpapi/index.html">Rblpapi</a>
-<a href="../packages/rcoreoa/index.html">rcoreoa</a>
-<a href="../packages/Rcrawler/index.html">Rcrawler</a>
-<a href="../packages/rcrossref/index.html">rcrossref</a>
-<a href="../packages/RCurl/index.html">RCurl</a>
-<a href="../packages/rdatacite/index.html">rdatacite</a>
-<a href="../packages/rdpla/index.html">rdpla</a>
-<a href="../packages/rdrop2/index.html">rdrop2</a>
-<a href="../packages/redcapAPI/index.html">redcapAPI</a>
-<a href="../packages/refimpact/index.html">refimpact</a>
-<a href="../packages/RefManageR/index.html">RefManageR</a>
-<a href="../packages/repmis/index.html">repmis</a>
-<a href="../packages/reqres/index.html">reqres</a>
-<a href="../packages/request/index.html">request</a>
-<a href="../packages/rerddap/index.html">rerddap</a>
-<a href="../packages/restfulr/index.html">restfulr</a>
-<a href="../packages/restimizeapi/index.html">restimizeapi</a>
-<a href="../packages/Rexperigen/index.html">Rexperigen</a>
-<a href="../packages/Rfacebook/index.html">Rfacebook</a>
-<a href="../packages/rfigshare/index.html">rfigshare</a>
-<a href="../packages/RForcecom/index.html">RForcecom</a>
-<a href="../packages/RGA/index.html">RGA</a>
-<a href="../packages/rgeolocate/index.html">rgeolocate</a>
-<a href="../packages/RGoogleFit/index.html">RGoogleFit</a>
-<a href="../packages/RgoogleMaps/index.html">RgoogleMaps</a>
-<a href="../packages/rhub/index.html">rhub</a>
-<a href="../packages/rio/index.html">rio</a>
-<a href="../packages/rjson/index.html">rjson</a>
-<a href="../packages/rjsonapi/index.html">rjsonapi</a>
-<a href="../packages/RJSONIO/index.html">RJSONIO</a>
-<a href="../packages/rLTP/index.html">rLTP</a>
-<a href="../packages/roadoi/index.html">roadoi</a>
-<a href="../packages/ROAuth/index.html">ROAuth</a>
-<a href="../packages/robotstxt/index.html">robotstxt</a>
-<a href="../packages/Rook/index.html">Rook</a>
-<a href="../packages/ROpenFIGI/index.html">ROpenFIGI</a>
-<a href="../packages/ROpenWeatherMap/index.html">ROpenWeatherMap</a>
-<a href="../packages/rorcid/index.html">rorcid</a>
-<a href="../packages/rosetteApi/index.html">rosetteApi</a>
-<a href="../packages/routr/index.html">routr</a>
-<a href="../packages/rpinterest/index.html">rpinterest</a>
-<a href="../packages/rplos/index.html">rplos</a>
-<a href="../packages/RPushbullet/index.html">RPushbullet</a>
-<a href="../packages/rrefine/index.html">rrefine</a>
-<a href="../packages/rromeo/index.html">rromeo</a>
-<a href="../packages/RSauceLabs/index.html">RSauceLabs</a>
-<a href="../packages/RSclient/index.html">RSclient</a>
-<a href="../packages/rscopus/index.html">rscopus</a>
-<a href="../packages/rsdmx/index.html">rsdmx</a>
-<a href="../packages/RSelenium/index.html">RSelenium</a>
-<a href="../packages/Rserve/index.html">Rserve</a>
-<a href="../packages/RSiteCatalyst/index.html">RSiteCatalyst</a>
-<a href="../packages/RSmartlyIO/index.html">RSmartlyIO</a>
-<a href="../packages/RSocrata/index.html">RSocrata</a>
-<a href="../packages/RStripe/index.html">RStripe</a>
-<a href="../packages/rtweet/index.html">rtweet</a>
-<a href="../packages/rvest/index.html">rvest</a>
-<a href="../packages/rwars/index.html">rwars</a>
-<a href="../packages/RYandexTranslate/index.html">RYandexTranslate</a>
-<a href="../packages/RZabbix/index.html">RZabbix</a>
-<a href="../packages/scholar/index.html">scholar</a>
-<a href="../packages/scrapeR/index.html">scrapeR</a>
-<a href="../packages/searchConsoleR/index.html">searchConsoleR</a>
-<a href="../packages/securitytxt/index.html">securitytxt</a>
-<a href="../packages/seleniumPipes/index.html">seleniumPipes</a>
-<a href="../packages/sendmailR/index.html">sendmailR</a>
-<a href="../packages/servr/index.html">servr</a>
-<a href="../packages/shutterstock/index.html">shutterstock</a>
-<a href="../packages/slackr/index.html">slackr</a>
-<a href="../packages/soql/index.html">soql</a>
-<a href="../packages/sparkbq/index.html">sparkbq</a>
-<a href="../packages/spiderbar/index.html">spiderbar</a>
-<a href="../packages/splashr/index.html">splashr</a>
-<a href="../packages/streamR/index.html">streamR</a>
-<a href="../packages/swagger/index.html">swagger</a>
-<a href="../packages/telegram/index.html">telegram</a>
-<a href="../packages/threewords/index.html">threewords</a>
-<a href="../packages/tidyRSS/index.html">tidyRSS</a>
-<a href="../packages/tm.plugin.webmining/index.html">tm.plugin.webmining</a>
-<a href="../packages/transcribeR/index.html">transcribeR</a>
-<a href="../packages/translate/index.html">translate</a>
-<a href="../packages/translateR/index.html">translateR</a>
-<a href="../packages/trelloR/index.html">trelloR</a>
-<a href="../packages/tuber/index.html">tuber</a>
-<a href="../packages/tubern/index.html">tubern</a>
-<a href="../packages/tumblR/index.html">tumblR</a>
-<a href="../packages/tweet2r/index.html">tweet2r</a>
-<a href="../packages/twitteR/index.html">twitteR</a>
-<a href="../packages/uaparserjs/index.html">uaparserjs</a>
-<a href="../packages/udapi/index.html">udapi</a>
-<a href="../packages/urlshorteneR/index.html">urlshorteneR</a>
-<a href="../packages/urltools/index.html">urltools</a>
-<a href="../packages/V8/index.html">V8</a>
-<a href="../packages/validatejsonr/index.html">validatejsonr</a>
-<a href="../packages/vkR/index.html">vkR</a>
-<a href="../packages/W3CMarkupValidator/index.html">W3CMarkupValidator</a>
-<a href="../packages/webreadr/index.html">webreadr</a>
-<a href="../packages/webshot/index.html">webshot</a>
-<a href="../packages/webutils/index.html">webutils</a>
-<a href="../packages/whisker/index.html">whisker</a>
-<a href="../packages/WikidataQueryServiceR/index.html">WikidataQueryServiceR</a>
-<a href="../packages/WikidataR/index.html">WikidataR</a>
-<a href="../packages/wikipediatrend/index.html">wikipediatrend</a>
-<a href="../packages/WikipediR/index.html">WikipediR</a>
-<a href="../packages/WufooR/index.html">WufooR</a>
-<a href="../packages/XML/index.html">XML</a>
-<a href="../packages/XML2R/index.html">XML2R</a>
-<a href="../packages/xslt/index.html">xslt</a>
-<a href="../packages/yhatr/index.html">yhatr</a>
-<a href="../packages/yummlyr/index.html">yummlyr</a>
-<a href="../packages/zen4R/index.html">zen4R</a>
-<a href="../packages/zendeskR/index.html">zendeskR</a>
-<a href="../packages/ZillowR/index.html">ZillowR</a>
-        </packagelist>
-        <links>
-          <a href="https://github.com/ropensci/opendata">
-            rOpenSci Task View: Open Data
+          links to the
+          <a href="https://developers.google.com/webmaster-tools/">
+            Google Search Console
           </a>
-        </links>
-      </CRANTaskView>
+          (formerly Webmaster Tools).
+        </li>
+        <li>
+          <em>
+            Online Advertising
+          </em>:
+<a href="../packages/fbRads/index.html">fbRads</a>
+          can manage Facebook ads via the Facebook Marketing API.
+<a href="https://github.com/WillemPaling/RDoubleClick/"><span class="GitHub">RDoubleClick</span></a>
+          (not on CRAN) can retrieve data from Google’s DoubleClick Campaign Manager Reporting API.
+<a href="../packages/RSmartlyIO/index.html">RSmartlyIO</a>
+          (
+          <a href="https://github.com/rstats-lab/RSmartlyIO">
+            GitHub
+          </a>) loads Facebook and Instagram advertising data provided by
+          <a href="https://app.smartly.io/">
+            Smartly.io
+          </a>.
+        </li>
+        <li>
+          <em>
+            Other services
+          </em>:
+<a href="../packages/RSiteCatalyst/index.html">RSiteCatalyst</a>
+          has functions for accessing the Adobe Analytics (Omniture SiteCatalyst) Reporting API.
+        </li>
+        <li>
+<a href="../packages/RAdwords/index.html">RAdwords</a>
+          (
+          <a href="https://github.com/jburkhardt/RAdwords">
+            GitHub
+          </a>) is a package for loading Google Adwords data.
+        </li>
+        <li>
+<a href="../packages/webreadr/index.html">webreadr</a>
+          (
+          <a href="https://github.com/Ironholds/webreadr">
+            GitHub
+          </a>) can process various common forms of request log, including the Common and Combined Web Log formats and AWS logs.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Web Services for R Package Development
+        </strong>
+      </p>
+      <ul>
+        <li>
+          R-Hub
+          <a href="http://log.r-hub.io/" class="uri">
+            http://log.r-hub.io/
+          </a>
+          is a project to enable package builds across all architectures.
+<a href="../packages/rhub/index.html">rhub</a>
+          is a package that interfaces with R-Hub to allow you to check a package on the platform.
+        </li>
+      </ul>
+      <p>
+        <strong>
+          Other Web Services
+        </strong>
+      </p>
+      <ul>
+        <li>
+          <em>
+            Fitness Apps
+          </em>:
+<a href="../packages/fitbitScraper/index.html">fitbitScraper</a>
+          (
+          <a href="https://github.com/corynissen/fitbitScraper">
+            GitHub
+          </a>) retrieves Fitbit data.
+<a href="../packages/RGoogleFit/index.html">RGoogleFit</a>
+          provides similar functionality for
+          <a href="https://developers.google.com/fit/rest/v1/reference/">
+            Google Fit
+          </a>.
+        </li>
+        <li>
+          <p>
+            <em>
+              Push Notifications
+            </em>:
+<a href="../packages/RPushbullet/index.html">RPushbullet</a>
+            provides an easy-to-use interface for the Pushbullet service which provides fast and efficient notifications between computers, phones and tablets.
+<a href="../packages/pushoverr/index.html">pushoverr</a>
+            (
+            <a href="https://github.com/briandconnelly/pushoverr">
+              GitHub
+            </a>) can sending push notifications to mobile devices (iOS and Android) and desktop using
+            <a href="https://pushover.net/">
+              Pushover
+            </a>.
+<a href="../packages/notifyme/index.html">notifyme</a>
+            (
+            <a href="https://github.com/epijim/notifyme">
+              GitHub
+            </a>) can control Phillips Hue lighting.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>
+              Reference/bibliography/citation management
+            </em>:
+<a href="../packages/RefManageR/index.html">RefManageR</a>
+            imports and manage BibTeX and BibLaTeX references with RefManager.
+<a href="../packages/rorcid/index.html">rorcid</a>
+            (
+            <a href="https://github.com/ropensci/rorcid">
+              GitHub
+            </a>) is a programmatic interface the
+            <a href="https://orcid.org/">
+              Orcid.org
+            </a>
+            API, which can be used for identifying scientific authors and their publications (e.g., by DOI).
+<a href="../packages/rdatacite/index.html">rdatacite</a>
+            connects to
+            <a href="https://datacite.org/">
+              DataCite
+            </a>, which manages DOIs and metadata for scholarly datasets.
+<a href="../packages/scholar/index.html">scholar</a>
+            provides functions to extract citation data from Google Scholar.
+<a href="../packages/rscopus/index.html">rscopus</a>
+            provides functions to extract citation data from Elsevier Scopus APIs. Convenience functions are also provided for comparing multiple scholars and predicting future h-index values.
+<a href="../packages/mathpix/index.html">mathpix</a>
+            convert an image of a formula (typeset or handwritten) via Mathpix webservice to produce the LaTeX code.
+<a href="../packages/zen4R/index.html">zen4R</a>
+            provides an Interface to
+            <a href="https://zenodo.org/">
+              Zenodo
+            </a>
+            REST API, including management of depositions, attribution of DOIs by ‘Zenodo’ and upload of files.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>
+              Literature
+            </em>:
+<a href="../packages/rplos/index.html">rplos</a>
+            is a programmatic interface to the Web Service methods provided by the Public Library of Science journals for search.
+<a href="https://github.com/rOpenHealth/rpubmed/"><span class="GitHub">rpubmed</span></a>
+            (not on CRAN) provides tools for extracting and processing Pubmed and Pubmed Central records, and
+<a href="../packages/europepmc/index.html">europepmc</a>
+            connects to the Europe PubMed Central service.
+<a href="../packages/pubmed.mineR/index.html">pubmed.mineR</a>
+            is a package for text mining of
+            <a href="https://www.ncbi.nlm.nih.gov/pubmed">
+              PubMed Abstracts
+            </a>
+            that supports fetching text and XML from PubMed.
+<a href="../packages/jstor/index.html">jstor</a>
+            provides functions and helpers to import metadata, ngrams and full-texts from Data for Research service by JSTOR;
+<a href="https://github.com/benmarwick/JSTORr/"><span class="GitHub">JSTORr</span></a>
+            does a similar thing.
+<a href="../packages/aRxiv/index.html">aRxiv</a>
+            is a client for the arXiv API, a repository of electronic preprints for computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics.
+<a href="../packages/roadoi/index.html">roadoi</a>
+            provides an interface to the
+            <a href="https://unpaywall.org/products/api">
+              Unpaywall API
+            </a>
+            for finding free full-text versions of academic papers.
+<a href="../packages/rcoreoa/index.html">rcoreoa</a>
+            is an interface to the
+            <a href="https://core.ac.uk/docs/">
+              CORE API
+            </a>, a search interface for open access scholarly articles.
+<a href="../packages/rcrossref/index.html">rcrossref</a>
+            is an interface to Crossref’s API,
+<a href="../packages/crminer/index.html">crminer</a>
+            extracts full text from scholarly articles retrieved via Crossref’s Text and Data Mining service;
+<a href="../packages/fulltext/index.html">fulltext</a>
+            is a general purpose package to search for, retrieve and extract full text from scholarly articles; and
+<a href="../packages/rromeo/index.html">rromeo</a>
+            (
+            <a href="https://github.com/ropensci/rromeo">
+              GitHub
+            </a>) is an interface to the
+            <a href="http://sherpa.ac.uk/romeo/index.php">
+              SHERPA/RoMEO API
+            </a>, a database of scientific journal archival policies regarding pre-, post-print, and accepted manuscript.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>
+              Automated Metadata Harvesting
+            </em>:
+<a href="../packages/oai/index.html">oai</a>
+            and
+<a href="../packages/OAIHarvester/index.html">OAIHarvester</a>
+            harvest metadata using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard.
+<a href="https://github.com/ropenscilabs/rresync/"><span class="GitHub">rresync</span></a>
+            is a client for the
+            <a href="https://www.niso.org/standards-committees/resourcesync">
+              ResourceSync framework
+            </a>, a sort of replacement for OAI-PMH.
+          </p>
+        </li>
+        <li>
+          <em>
+            Wikipedia
+          </em>:
+<a href="../packages/WikipediR/index.html">WikipediR</a>
+          (
+          <a href="https://github.com/Ironholds/WikipediR">
+            GitHub
+          </a>) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia ‘production’ wikis, such as Wikipedia.
+<a href="../packages/WikidataR/index.html">WikidataR</a>
+          (
+          <a href="https://github.com/Ironholds/WikidataR">
+            GitHub
+          </a>) can request data from
+          <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">
+            Wikidata.org
+          </a>, the free knowledgebase.
+<a href="../packages/wikipediatrend/index.html">wikipediatrend</a>
+          (
+          <a href="https://github.com/petermeissner/wikipediatrend">
+            GitHub
+          </a>) provides access to Wikipedia page access statistics.
+<a href="../packages/WikidataQueryServiceR/index.html">WikidataQueryServiceR</a>
+          is a client for the
+          <a href="https://query.wikidata.org/">
+            Wikidata Query Service
+          </a>.
+        </li>
+        <li>
+<a href="../packages/bigrquery/index.html">bigrquery</a>
+          (
+          <a href="https://github.com/r-dbi/bigrquery">
+            GitHub
+          </a>): An interface to Google’s bigquery.
+        </li>
+        <li>
+<a href="../packages/sparkbq/index.html">sparkbq</a>
+          (
+          <a href="https://github.com/miraisolutions/sparkbq">
+            GitHub
+          </a>): Google BigQuery support for sparklyr.
+        </li>
+        <li>
+<a href="../packages/cymruservices/index.html">cymruservices</a>
+          queries
+          <a href="https://www.team-cymru.com/">
+            Team Cymru
+          </a>
+          web security services.
+        </li>
+        <li>
+<a href="../packages/datamart/index.html">datamart</a>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
+        </li>
+        <li>
+<a href="../packages/discgolf/index.html">discgolf</a>
+          (
+          <a href="https://github.com/sckott/discgolf">
+            GitHub
+          </a>) provides a client to interact with the API for the
+          <a href="https://www.discourse.org/">
+            Discourse
+          </a>
+          web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
+        </li>
+        <li>
+<a href="../packages/rdpla/index.html">rdpla</a>
+          ((GitHub)[https://github.com/ropensci/rdpla]) works with the
+          <a href="https://dp.la/">
+            Digital Public Library of America
+          </a>
+          API.
+        </li>
+        <li>
+<a href="../packages/factualR/index.html">factualR</a>: Thin wrapper for the
+          <a href="https://www.factual.com/">
+            Factual.com
+          </a>
+          server API.
+        </li>
+        <li>
+<a href="../packages/internetarchive/index.html">internetarchive</a>: API client for internet archive metadata.
+        </li>
+        <li>
+<a href="https://github.com/hrbrmstr/irced/"><span class="GitHub">irced</span></a>
+          (not on CRAN) is an IRC chat client.
+        </li>
+        <li>
+<a href="../packages/jSonarR/index.html">jSonarR</a>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the
+          <a href="https://www.jsonar.com/">
+            JSON Studio Gateway
+          </a>, to convert JSON to a tabular format.
+        </li>
+        <li>
+<a href="../packages/LendingClub/index.html">LendingClub</a>
+          connects with the
+          <a href="https://www.lendingclub.com/developers/api-overview">
+            LendingClub API
+          </a>.
+        </li>
+        <li>
+<a href="../packages/livechatR/index.html">livechatR</a>
+          is a client for the
+          <a href="https://developers.livechatinc.com/docs/rest-api/">
+            LiveChat API
+          </a>.
+        </li>
+        <li>
+<a href="https://github.com/stephlocke/mockaRoo/"><span class="GitHub">mockaRoo</span></a>
+          (not on CRAN) uses the
+          <a href="https://www.mockaroo.com/api/docs">
+            MockaRoo API
+          </a>
+          to generate mock or fake data based on an input schema.
+        </li>
+        <li>
+<a href="../packages/pivotaltrackR/index.html">pivotaltrackR</a>
+          provides an interface to the API for
+          <a href="https://www.pivotaltracker.com/">
+            Pivotal Tracker
+          </a>, an agile project management tool.
+        </li>
+        <li>
+<a href="../packages/randNames/index.html">randNames</a>
+          (
+          <a href="https://github.com/karthik/randNames">
+            GitHub
+          </a>) generates random names and personal identifying information using the
+          <a href="https://randomapi.com/" class="uri">
+            https://randomapi.com/
+          </a>
+          API.
+        </li>
+        <li>
+<a href="../packages/Rblpapi/index.html">Rblpapi</a>
+          (
+          <a href="https://github.com/Rblp/Rblpapi">
+            GitHub
+          </a>) is a client for Bloomberg Finance L.P.
+<a href="../packages/ROpenFIGI/index.html">ROpenFIGI</a>
+          (
+          <a href="https://github.com/HuangRicky/ROpenFIGI">
+            GitHub
+          </a>) provides an interface to Bloomberg’s OpenFIGI API.
+        </li>
+        <li>
+<a href="../packages/rerddap/index.html">rerddap</a>: A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP (
+          <a href="https://en.wikipedia.org/wiki/OPeNDAP" class="uri">
+            https://en.wikipedia.org/wiki/OPeNDAP
+          </a>), or
+          <em>
+            Open-source Project for a Network Data Access Protocol
+          </em>. Allows user to swap out the base URL to use any ERDDAP instance.
+        </li>
+        <li>
+<a href="https://github.com/hmalmedal/ripplerestr/"><span class="GitHub">ripplerestr</span></a>
+          provides an interface to the
+          <a href="https://www.ripple.com/">
+            Ripple
+          </a>
+          protocol for making financial transactions.
+        </li>
+        <li>
+<a href="../packages/refimpact/index.html">refimpact</a>
+          connects to
+          <a href="https://impact.ref.ac.uk/CaseStudies/">
+            the UK Research Excellence Framework 2014 Impact Case Studies Database API
+          </a>.
+        </li>
+        <li>
+<a href="../packages/restimizeapi/index.html">restimizeapi</a>
+          provides an interface to trading website
+          <a href="https://www.estimize.com/">
+            estimize.com
+          </a>.
+        </li>
+        <li>
+<a href="../packages/RForcecom/index.html">RForcecom</a>: RForcecom provides a connection to Force.com and Salesforce.com.
+        </li>
+        <li>
+<a href="https://github.com/dsidavis/Rgoodreads/"><span class="GitHub">Rgoodreads</span></a>
+          (not on CRAN) interacts with
+          <a href="https://www.goodreads.com/">
+            Goodreads
+          </a>.
+        </li>
+        <li>
+          Two packages,
+<a href="../packages/owmr/index.html">owmr</a>
+          and
+<a href="../packages/ROpenWeatherMap/index.html">ROpenWeatherMap</a>, work with the
+          <a href="https://openweathermap.org/api">
+            Open Weather Map API
+          </a>.
+        </li>
+        <li>
+<a href="../packages/RSauceLabs/index.html">RSauceLabs</a>
+          (
+          <a href="https://johndharrison.github.io/RSauceLabs/">
+            GitHub
+          </a>) connects to
+          <a href="https://saucelabs.com/">
+            SauceLabs
+          </a>.
+        </li>
+        <li>
+<a href="../packages/RSocrata/index.html">RSocrata</a>
+          access data for Socrata open data portals.
+<a href="../packages/soql/index.html">soql</a>
+          is a pipe-oriented set of tools for constructing Socrata queries.
+        </li>
+        <li>
+<a href="../packages/RStripe/index.html">RStripe</a>
+          provides an interface to
+          <a href="https://stripe.com/">
+            Stripe
+          </a>, an online payment processor.
+        </li>
+        <li>
+<a href="../packages/RZabbix/index.html">RZabbix</a>
+          links with the
+          <a href="https://www.zabbix.com/documentation/3.0/manual/api/reference">
+            Zabbix network monitoring service API
+          </a>.
+        </li>
+        <li>
+<a href="../packages/rwars/index.html">rwars</a>
+          retrieve and reformat data from the
+          <a href="https://swapi.co/">
+            Star Wars API (SWAPI)
+          </a>.
+        </li>
+        <li>
+<a href="../packages/slackr/index.html">slackr</a>
+          (
+          <a href="https://github.com/hrbrmstr/slackr">
+            GitHub
+          </a>) is a client for Slack.com messaging platform.
+        </li>
+        <li>
+<a href="../packages/shutterstock/index.html">shutterstock</a>
+          (
+          <a href="https://github.com/strboul/shutterstock-r">
+            GitHub
+          </a>) is to access Shutterstock library from R.
+        </li>
+        <li>
+<a href="https://github.com/dgrtwo/stackr/"><span class="GitHub">stackr</span></a>
+          (not on CRAN): An unofficial wrapper for the read-only features of the
+          <a href="https://api.stackexchange.com/">
+            Stack Exchange API
+          </a>.
+        </li>
+        <li>
+<a href="../packages/telegram/index.html">telegram</a>
+          (
+          <a href="https://github.com/lbraglia/telegram">
+            GitHub
+          </a>) connects with the Telegram Bot API.
+        </li>
+        <li>
+<a href="../packages/trelloR/index.html">trelloR</a>
+          (
+          <a href="https://github.com/jchrom/trelloR">
+            GitHub
+          </a>) connects to the
+          <a href="https://developers.trello.com/">
+            Trello API
+          </a>.
+        </li>
+        <li>
+<a href="../packages/tuber/index.html">tuber</a>
+          is a YouTube API client and
+<a href="../packages/tubern/index.html">tubern</a>
+          is a client for the YouTube Analytics and Reporting API
+        </li>
+        <li>
+<a href="../packages/udapi/index.html">udapi</a>
+          connects to Urban Dictionary.
+        </li>
+        <li>
+<a href="https://github.com/nealrichardson/useRsnap/"><span class="GitHub">useRsnap</span></a>
+          (not on CRAN) provides an interface to the API for
+          <a href="https://www.pivotaltracker.com/">
+            Usersnap
+          </a>, a tool for collecting feedback from web application users.
+        </li>
+        <li>
+<a href="../packages/yummlyr/index.html">yummlyr</a>
+          (
+          <a href="https://github.com/RomanTsegelskyi/yummlyr">
+            GitHub
+          </a>) provides an interface to the
+          <a href="https://developer.yummly.com/">
+            Yummly
+          </a>
+          recipe database.
+        </li>
+        <li>
+<a href="../packages/zendeskR/index.html">zendeskR</a>: This package provides a wrapper for the Zendesk API.
+        </li>
+        <li>
+<a href="../packages/ZillowR/index.html">ZillowR</a>
+          is a client for the Zillow real estate service.
+        </li>
+        <li>
+<a href="../packages/docuSignr/index.html">docuSignr</a>
+          provides an interface to the DocuSign
+          <a href="https://developers.docusign.com/">
+            Rest API
+          </a>.
+        </li>
+        <li>
+<a href="../packages/giphyr/index.html">giphyr</a>
+          is an R interface to the
+          <a href="https://github.com/Giphy/GiphyAPI">
+            Giphy API
+          </a>
+          for GIF’s
+        </li>
+        <li>
+          <p>
+<a href="../packages/duckduckr/index.html">duckduckr</a>
+            is an R interface
+            <a href="https://duckduckgo.com/api">
+              DuckDuckGo’s Instant Answer API
+            </a>
+          </p>
+        </li>
+      </ul>
     </div>
 
   <h3>CRAN packages:</h3>
