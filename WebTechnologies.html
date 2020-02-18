@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2019-11-01" />
+  <meta name="citation_publication_date" content="2020-02-17" />
   <meta name="citation_public_url" content="https://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2019-11-01" />
+  <meta name="DC.issued" content="2020-02-17" />
   <meta name="DC.identifier" content="https://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,7 +19,7 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x6d;&#x79;&#x72;&#x6d;&#x65;&#x63;&#x6f;&#x63;&#x79;&#x73;&#x74;&#x75;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2019-11-01</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2020-02-17</td></tr>
     <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=WebTechnologies">https://CRAN.R-project.org/view=WebTechnologies</a></td></tr>
   </table>
 
@@ -63,18 +63,20 @@
         </strong>
       </p>
       <p>
-        There are two packages that should cover most use cases of interacting with the web from R.
+        There are three main packages that should cover most use cases of interacting with the web from R.
+<a href="../packages/crul/index.html">crul</a>
+        is an R6-based HTTP client that provides asynchronous HTTP requests, a pagination helper, HTTP mocking via
+<a href="../packages/webmockr/index.html">webmockr</a>, and request caching for unit tests via
+<a href="../packages/vcr/index.html">vcr</a>. crul targets R developers more so than end users.
 <a href="../packages/httr/index.html">httr</a>
-        provides a user-friendly interface for executing HTTP methods (GET, POST, PUT, HEAD, DELETE, etc.) and provides support for modern web authentication protocols (OAuth 1.0, OAuth 2.0). HTTP status codes are helpful for debugging HTTP calls. httr makes this easier using, for example,
-<tt>stop_for_status()</tt>, which gets the http status code from a response object, and stops the function if the call was not successful. (See also
-<tt>warn_for_status()</tt>.) Note that you can pass in additional libcurl options to the
+        provides more of a user facing client for HTTP requests and differentiates from the former package in that it provides support for OAuth. Note that you can pass in additional curl options when you instantiate R6 classes in crul, and the
 <tt>config</tt>
-        parameter in http calls.
+        parameter in httr.
 <a href="../packages/curl/index.html">curl</a>
         is a lower-level package that provides a closer interface between R and the
         <a href="https://curl.haxx.se/libcurl/">
           libcurl C library
-        </a>, but is less user-friendly. It may be useful for operations on web-based XML or to perform FTP operations.
+        </a>, but is less user-friendly. curl underlies both crul and httr. curl may be useful for operations on web-based XML or to perform FTP operations (as crul and httr are focused primarily on HTTP).
 <tt>curl::curl()</tt>
         is an SSL-compatible replacement for base R’s
 <tt>url()</tt>
@@ -93,19 +95,6 @@
 <a href="../packages/curl/index.html">curl</a>.
 <a href="../packages/httpRequest/index.html">httpRequest</a>
           is another low-level package for HTTP requests that implements the GET, POST and multipart POST verbs, but we do not recommend its use.
-        </li>
-        <li>
-<a href="../packages/crul/index.html">crul</a>
-          (
-          <a href="https://github.com/ropensci/crul">
-            GitHub
-          </a>) is an R6-based HTTP client that provides asynchronous HTTP requests, a pagination helper, HTTP mocking via
-<a href="../packages/webmockr/index.html">webmockr</a>, and request caching via
-<a href="../packages/vcr/index.html">vcr</a>. It targets developers of other R packages more so than end users.
-        </li>
-        <li>
-<a href="https://github.com/hrbrmstr/curlconverter/"><span class="GitHub">curlconverter</span></a>
-          (not on CRAN) is a useful package for converting curl command-line code, for example from a browser developer’s console, into R code.
         </li>
         <li>
 <a href="../packages/request/index.html">request</a>
@@ -517,7 +506,7 @@
           and
 <a href="../packages/httr/index.html">httr</a>.
 <a href="../packages/httptest/index.html">httptest</a>
-          provides a framework for testing packages that communicate with HTTP APIs, offering tools for mocking APIs, for recording real API responses for use as mocks, and for making assertions about HTTP requests, all without requiring a live connection to the API server at runtime.
+          provides a framework for testing packages that communicate with HTTP APIs, offering tools for mocking APIs, for recording real API responses for use as mocks, and for making assertions about HTTP requests, all without requiring a live connection to the API server at runtime. httptest only works with httr.
         </li>
         <li>
           <em>
@@ -702,18 +691,6 @@
           <ul>
             <li>
               <em>
-                Simple Storage Service (S3)
-              </em>
-              is a commercial server that allows one to store content and retrieve it from any machine connected to the Internet.
-<a href="../packages/aws.s3/index.html">aws.s3</a>
-              is probably the best R client for S3.
-<a href="http://www.Omegahat.net/RAmazonS3/"><span class="Ohat">RAmazonS3</span></a>
-              and
-<a href="https://github.com/robertzk/s3mpi/"><span class="GitHub">s3mpi</span></a>
-              (not on CRAN) provides basic infrastructure for communicating with S3.
-            </li>
-            <li>
-              <em>
                 Elastic Cloud Compute (EC2)
               </em>
               is a cloud computing service.
@@ -722,20 +699,6 @@
 <tt>lapply()</tt>
               for the Elastic Map Reduce (EMR) engine called
 <tt>emrlapply()</tt>. It uses Hadoop Streaming on Amazon’s EMR in order to get simple parallel computation.
-            </li>
-            <li>
-              <em>
-                Simple Notification Service (SNS)
-              </em>
-              is a service for Pub/Sub messaging and mobile notifications for microservices, distributed systems, and serverless applications.
-<a href="../packages/aws.sns/index.html">aws.sns</a>
-            </li>
-            <li>
-              <em>
-                AWS Polly
-              </em>
-              is a Text-to-Speech (TTS) cloud service that converts text into lifelike speech.
-<a href="../packages/aws.polly/index.html">aws.polly</a>
             </li>
             <li>
               <em>
@@ -919,14 +882,6 @@
           <a href="https://figshare.com/">
             Figshare.com
           </a>.
-          <a href="https://cran.rstudio.com/src/contrib/Archive/dataone/">
-            dataone
-          </a>
-          provides read/write access to data and metadata from the
-          <a href="https://www.dataone.org/">
-            DataONE network
-          </a>
-          of Member Node data repositories.
 <a href="../packages/dataone/index.html">dataone</a>
           (
           <a href="https://github.com/DataONEorg/rdataone">
@@ -1018,15 +973,6 @@
             OpenCage
           </a>
           geocoding service.
-<a href="../packages/geoparser/index.html">geoparser</a>
-          (
-          <a href="https://github.com/ropensci/geoparser">
-            GitHub
-          </a>) interfaces with the
-          <a href="https://geoparser.io/">
-            Geoparser.io
-          </a>
-          web service to identify place names from plain text.
 <a href="https://github.com/hrbrmstr/nominatim/"><span class="GitHub">nominatim</span></a>
           (not on CRAN) connects to the
           <a href="https://github.com/hrbrmstr/nominatim">
@@ -1101,7 +1047,7 @@
             googlepredictionapi
           </a>
           (not on CRAN): is an R client for the
-          <a href="https://cloud.google.com/prediction/">
+          <a href="https://cloud.google.com/ai-platform">
             Google Prediction API
           </a>, a suite of cloud machine learning tools.
 <a href="../packages/yhatr/index.html">yhatr</a>
@@ -1196,8 +1142,6 @@
           provides users with high-level facilities to generate KML.
 <a href="../packages/plotKML/index.html">plotKML</a>
           can visualization spatial and spatio-temporal objects in Google Earth.
-<a href="../packages/plotGoogleMaps/index.html">plotGoogleMaps</a>
-          pls SP or SPT (STDIF,STFDF) data as an HTML map mashup over Google Maps.
 <a href="../packages/ggmap/index.html">ggmap</a>
           allows for the easy visualization of spatial data and models on top of Google Maps, OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
 <a href="../packages/mapsapi/index.html">mapsapi</a>
@@ -1403,8 +1347,7 @@
             Google Analytics
           </em>:
 <a href="../packages/googleAnalyticsR/index.html">googleAnalyticsR</a>,
-<a href="../packages/ganalytics/index.html">ganalytics</a>;
-<a href="../packages/GAR/index.html">GAR</a>, and
+<a href="../packages/ganalytics/index.html">ganalytics</a>, and
 <a href="../packages/RGA/index.html">RGA</a>
           provide functions for accessing and retrieving data from the
           <a href="https://developers.google.com/analytics/">
@@ -1481,19 +1424,21 @@
       </p>
       <ul>
         <li>
-          <em>
-            Fitness Apps
-          </em>:
+          <p>
+            <em>
+              Fitness Apps
+            </em>:
 <a href="../packages/fitbitScraper/index.html">fitbitScraper</a>
-          (
-          <a href="https://github.com/corynissen/fitbitScraper">
-            GitHub
-          </a>) retrieves Fitbit data.
+            (
+            <a href="https://github.com/corynissen/fitbitScraper">
+              GitHub
+            </a>) retrieves Fitbit data.
 <a href="../packages/RGoogleFit/index.html">RGoogleFit</a>
-          provides similar functionality for
-          <a href="https://developers.google.com/fit/rest/v1/reference/">
-            Google Fit
-          </a>.
+            provides similar functionality for
+            <a href="https://developers.google.com/fit/rest/v1/reference/">
+              Google Fit
+            </a>.
+          </p>
         </li>
         <li>
           <p>
@@ -1615,306 +1560,378 @@
           </p>
         </li>
         <li>
-          <em>
-            Wikipedia
-          </em>:
+          <p>
+            <em>
+              Wikipedia
+            </em>:
 <a href="../packages/WikipediR/index.html">WikipediR</a>
-          (
-          <a href="https://github.com/Ironholds/WikipediR">
-            GitHub
-          </a>) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia ‘production’ wikis, such as Wikipedia.
+            (
+            <a href="https://github.com/Ironholds/WikipediR">
+              GitHub
+            </a>) is a wrapper for the MediaWiki API, aimed particularly at the Wikimedia ‘production’ wikis, such as Wikipedia.
 <a href="../packages/WikidataR/index.html">WikidataR</a>
-          (
-          <a href="https://github.com/Ironholds/WikidataR">
-            GitHub
-          </a>) can request data from
-          <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">
-            Wikidata.org
-          </a>, the free knowledgebase.
+            (
+            <a href="https://github.com/Ironholds/WikidataR">
+              GitHub
+            </a>) can request data from
+            <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">
+              Wikidata.org
+            </a>, the free knowledgebase.
 <a href="../packages/wikipediatrend/index.html">wikipediatrend</a>
-          (
-          <a href="https://github.com/petermeissner/wikipediatrend">
-            GitHub
-          </a>) provides access to Wikipedia page access statistics.
+            (
+            <a href="https://github.com/petermeissner/wikipediatrend">
+              GitHub
+            </a>) provides access to Wikipedia page access statistics.
 <a href="../packages/WikidataQueryServiceR/index.html">WikidataQueryServiceR</a>
-          is a client for the
-          <a href="https://query.wikidata.org/">
-            Wikidata Query Service
-          </a>.
+            is a client for the
+            <a href="https://query.wikidata.org/">
+              Wikidata Query Service
+            </a>.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/bigrquery/index.html">bigrquery</a>
-          (
-          <a href="https://github.com/r-dbi/bigrquery">
-            GitHub
-          </a>): An interface to Google’s bigquery.
+            (
+            <a href="https://github.com/r-dbi/bigrquery">
+              GitHub
+            </a>): An interface to Google’s bigquery.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/sparkbq/index.html">sparkbq</a>
-          (
-          <a href="https://github.com/miraisolutions/sparkbq">
-            GitHub
-          </a>): Google BigQuery support for sparklyr.
+            (
+            <a href="https://github.com/miraisolutions/sparkbq">
+              GitHub
+            </a>): Google BigQuery support for sparklyr.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/cymruservices/index.html">cymruservices</a>
-          queries
-          <a href="https://www.team-cymru.com/">
-            Team Cymru
-          </a>
-          web security services.
+            queries
+            <a href="https://www.team-cymru.com/">
+              Team Cymru
+            </a>
+            web security services.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/datamart/index.html">datamart</a>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/discgolf/index.html">discgolf</a>
-          (
-          <a href="https://github.com/sckott/discgolf">
-            GitHub
-          </a>) provides a client to interact with the API for the
-          <a href="https://www.discourse.org/">
-            Discourse
-          </a>
-          web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
+            (
+            <a href="https://github.com/sckott/discgolf">
+              GitHub
+            </a>) provides a client to interact with the API for the
+            <a href="https://www.discourse.org/">
+              Discourse
+            </a>
+            web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/rdpla/index.html">rdpla</a>
-          ((GitHub)[https://github.com/ropensci/rdpla]) works with the
-          <a href="https://dp.la/">
-            Digital Public Library of America
-          </a>
-          API.
+            ((GitHub)[https://github.com/ropensci/rdpla]) works with the
+            <a href="https://dp.la/">
+              Digital Public Library of America
+            </a>
+            API.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/factualR/index.html">factualR</a>: Thin wrapper for the
-          <a href="https://www.factual.com/">
-            Factual.com
-          </a>
-          server API.
+            <a href="https://www.factual.com/">
+              Factual.com
+            </a>
+            server API.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/internetarchive/index.html">internetarchive</a>: API client for internet archive metadata.
+          </p>
         </li>
         <li>
+          <p>
 <a href="https://github.com/hrbrmstr/irced/"><span class="GitHub">irced</span></a>
-          (not on CRAN) is an IRC chat client.
+            (not on CRAN) is an IRC chat client.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/jSonarR/index.html">jSonarR</a>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the
-          <a href="https://www.jsonar.com/">
-            JSON Studio Gateway
-          </a>, to convert JSON to a tabular format.
+            <a href="https://www.jsonar.com/">
+              JSON Studio Gateway
+            </a>, to convert JSON to a tabular format.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/LendingClub/index.html">LendingClub</a>
-          connects with the
-          <a href="https://www.lendingclub.com/developers/api-overview">
-            LendingClub API
-          </a>.
+            connects with the
+            <a href="https://www.lendingclub.com/developers/api-overview">
+              LendingClub API
+            </a>.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/livechatR/index.html">livechatR</a>
-          is a client for the
-          <a href="https://developers.livechatinc.com/docs/management/configuration-api-v2/">
-            LiveChat API
-          </a>.
+            is a client for the
+            <a href="https://developers.livechatinc.com/docs/management/configuration-api/v2.0/">
+              LiveChat API
+            </a>.
+          </p>
         </li>
         <li>
+          <p>
 <a href="https://github.com/stephlocke/mockaRoo/"><span class="GitHub">mockaRoo</span></a>
-          (not on CRAN) uses the
-          <a href="https://www.mockaroo.com/api/docs">
-            MockaRoo API
-          </a>
-          to generate mock or fake data based on an input schema.
+            (not on CRAN) uses the
+            <a href="https://www.mockaroo.com/api/docs">
+              MockaRoo API
+            </a>
+            to generate mock or fake data based on an input schema.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/pivotaltrackR/index.html">pivotaltrackR</a>
-          provides an interface to the API for
-          <a href="https://www.pivotaltracker.com/">
-            Pivotal Tracker
-          </a>, an agile project management tool.
+            provides an interface to the API for
+            <a href="https://www.pivotaltracker.com/">
+              Pivotal Tracker
+            </a>, an agile project management tool.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/randNames/index.html">randNames</a>
-          (
-          <a href="https://github.com/karthik/randNames">
-            GitHub
-          </a>) generates random names and personal identifying information using the
-          <a href="https://randomapi.com/" class="uri">
-            https://randomapi.com/
-          </a>
-          API.
+            (
+            <a href="https://github.com/karthik/randNames">
+              GitHub
+            </a>) generates random names and personal identifying information using the
+            <a href="https://randomapi.com/" class="uri">
+              https://randomapi.com/
+            </a>
+            API.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/Rblpapi/index.html">Rblpapi</a>
-          (
-          <a href="https://github.com/Rblp/Rblpapi">
-            GitHub
-          </a>) is a client for Bloomberg Finance L.P.
+            (
+            <a href="https://github.com/Rblp/Rblpapi">
+              GitHub
+            </a>) is a client for Bloomberg Finance L.P.
 <a href="../packages/ROpenFIGI/index.html">ROpenFIGI</a>
-          (
-          <a href="https://github.com/HuangRicky/ROpenFIGI">
-            GitHub
-          </a>) provides an interface to Bloomberg’s OpenFIGI API.
+            (
+            <a href="https://github.com/HuangRicky/ROpenFIGI">
+              GitHub
+            </a>) provides an interface to Bloomberg’s OpenFIGI API.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/rerddap/index.html">rerddap</a>: A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP (
-          <a href="https://en.wikipedia.org/wiki/OPeNDAP" class="uri">
-            https://en.wikipedia.org/wiki/OPeNDAP
-          </a>), or
-          <em>
-            Open-source Project for a Network Data Access Protocol
-          </em>. Allows user to swap out the base URL to use any ERDDAP instance.
+            <a href="https://en.wikipedia.org/wiki/OPeNDAP" class="uri">
+              https://en.wikipedia.org/wiki/OPeNDAP
+            </a>), or
+            <em>
+              Open-source Project for a Network Data Access Protocol
+            </em>. Allows user to swap out the base URL to use any ERDDAP instance.
+          </p>
         </li>
         <li>
+          <p>
 <a href="https://github.com/hmalmedal/ripplerestr/"><span class="GitHub">ripplerestr</span></a>
-          provides an interface to the
-          <a href="https://www.ripple.com/">
-            Ripple
-          </a>
-          protocol for making financial transactions.
+            provides an interface to the
+            <a href="https://www.ripple.com/">
+              Ripple
+            </a>
+            protocol for making financial transactions.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/restimizeapi/index.html">restimizeapi</a>
-          provides an interface to trading website
-          <a href="https://www.estimize.com/">
-            estimize.com
-          </a>.
+            provides an interface to trading website
+            <a href="https://www.estimize.com/">
+              estimize.com
+            </a>.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/RForcecom/index.html">RForcecom</a>: RForcecom provides a connection to Force.com and Salesforce.com.
+          </p>
         </li>
         <li>
-          Two packages,
+          <p>
+            Two packages,
 <a href="../packages/owmr/index.html">owmr</a>
-          and
+            and
 <a href="../packages/ROpenWeatherMap/index.html">ROpenWeatherMap</a>, work with the
-          <a href="https://openweathermap.org/api">
-            Open Weather Map API
-          </a>.
+            <a href="https://openweathermap.org/api">
+              Open Weather Map API
+            </a>.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/RSauceLabs/index.html">RSauceLabs</a>
-          (
-          <a href="https://johndharrison.github.io/RSauceLabs/">
-            GitHub
-          </a>) connects to
-          <a href="https://saucelabs.com/">
-            SauceLabs
-          </a>.
+            (
+            <a href="https://johndharrison.github.io/RSauceLabs/">
+              GitHub
+            </a>) connects to
+            <a href="https://saucelabs.com/">
+              SauceLabs
+            </a>.
+          </p>
         </li>
         <li>
-<a href="../packages/RSocrata/index.html">RSocrata</a>
-          access data for Socrata open data portals.
-<a href="../packages/soql/index.html">soql</a>
-          is a pipe-oriented set of tools for constructing Socrata queries.
-        </li>
-        <li>
+          <p>
 <a href="../packages/RStripe/index.html">RStripe</a>
-          provides an interface to
-          <a href="https://stripe.com/">
-            Stripe
-          </a>, an online payment processor.
+            provides an interface to
+            <a href="https://stripe.com/">
+              Stripe
+            </a>, an online payment processor.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/RZabbix/index.html">RZabbix</a>
-          links with the
-          <a href="https://www.zabbix.com/documentation/3.0/manual/api/reference">
-            Zabbix network monitoring service API
-          </a>.
+            links with the
+            <a href="https://www.zabbix.com/documentation/3.0/manual/api/reference">
+              Zabbix network monitoring service API
+            </a>.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/rwars/index.html">rwars</a>
-          retrieve and reformat data from the Star Wars API (SWAPI).
+            retrieve and reformat data from the Star Wars API (SWAPI).
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/slackr/index.html">slackr</a>
-          (
-          <a href="https://github.com/hrbrmstr/slackr">
-            GitHub
-          </a>) is a client for Slack.com messaging platform.
+            (
+            <a href="https://github.com/hrbrmstr/slackr">
+              GitHub
+            </a>) is a client for Slack.com messaging platform.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/shutterstock/index.html">shutterstock</a>
-          (
-          <a href="https://github.com/strboul/shutterstock-r">
-            GitHub
-          </a>) is to access Shutterstock library from R.
+            (
+            <a href="https://github.com/strboul/shutterstock-r">
+              GitHub
+            </a>) is to access Shutterstock library from R.
+          </p>
         </li>
         <li>
+          <p>
 <a href="https://github.com/dgrtwo/stackr/"><span class="GitHub">stackr</span></a>
-          (not on CRAN): An unofficial wrapper for the read-only features of the
-          <a href="https://api.stackexchange.com/">
-            Stack Exchange API
-          </a>.
+            (not on CRAN): An unofficial wrapper for the read-only features of the
+            <a href="https://api.stackexchange.com/">
+              Stack Exchange API
+            </a>.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/telegram/index.html">telegram</a>
-          (
-          <a href="https://github.com/lbraglia/telegram">
-            GitHub
-          </a>) connects with the Telegram Bot API.
+            (
+            <a href="https://github.com/lbraglia/telegram">
+              GitHub
+            </a>) connects with the Telegram Bot API.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/trelloR/index.html">trelloR</a>
-          (
-          <a href="https://github.com/jchrom/trelloR">
-            GitHub
-          </a>) connects to the
-          <a href="https://developers.trello.com/">
-            Trello API
-          </a>.
+            (
+            <a href="https://github.com/jchrom/trelloR">
+              GitHub
+            </a>) connects to the
+            <a href="https://developers.trello.com/">
+              Trello API
+            </a>.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/tuber/index.html">tuber</a>
-          is a YouTube API client and
+            is a YouTube API client and
 <a href="../packages/tubern/index.html">tubern</a>
-          is a client for the YouTube Analytics and Reporting API
+            is a client for the YouTube Analytics and Reporting API
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/udapi/index.html">udapi</a>
-          connects to Urban Dictionary.
+            connects to Urban Dictionary.
+          </p>
         </li>
         <li>
+          <p>
 <a href="https://github.com/nealrichardson/useRsnap/"><span class="GitHub">useRsnap</span></a>
-          (not on CRAN) provides an interface to the API for
-          <a href="https://www.pivotaltracker.com/">
-            Usersnap
-          </a>, a tool for collecting feedback from web application users.
+            (not on CRAN) provides an interface to the API for
+            <a href="https://www.pivotaltracker.com/">
+              Usersnap
+            </a>, a tool for collecting feedback from web application users.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/yummlyr/index.html">yummlyr</a>
-          (
-          <a href="https://github.com/RomanTsegelskyi/yummlyr">
-            GitHub
-          </a>) provides an interface to the
-          <a href="https://developer.yummly.com/">
-            Yummly
-          </a>
-          recipe database.
+            (
+            <a href="https://github.com/RomanTsegelskyi/yummlyr">
+              GitHub
+            </a>) provides an interface to the
+            <a href="https://developer.yummly.com/">
+              Yummly
+            </a>
+            recipe database.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/zendeskR/index.html">zendeskR</a>: This package provides a wrapper for the Zendesk API.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/ZillowR/index.html">ZillowR</a>
-          is a client for the Zillow real estate service.
+            is a client for the Zillow real estate service.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/docuSignr/index.html">docuSignr</a>
-          provides an interface to the DocuSign
-          <a href="https://developers.docusign.com/">
-            Rest API
-          </a>.
+            provides an interface to the DocuSign
+            <a href="https://developers.docusign.com/">
+              Rest API
+            </a>.
+          </p>
         </li>
         <li>
+          <p>
 <a href="../packages/giphyr/index.html">giphyr</a>
-          is an R interface to the
-          <a href="https://github.com/Giphy/GiphyAPI">
-            Giphy API
-          </a>
-          for GIF’s
+            is an R interface to the
+            <a href="https://github.com/Giphy/GiphyAPI">
+              Giphy API
+            </a>
+            for GIF’s
+          </p>
         </li>
         <li>
           <p>
@@ -1934,10 +1951,7 @@
     <li><a href="../packages/ajv/index.html">ajv</a></li>
     <li><a href="../packages/analogsea/index.html">analogsea</a></li>
     <li><a href="../packages/aRxiv/index.html">aRxiv</a></li>
-    <li><a href="../packages/aws.polly/index.html">aws.polly</a></li>
-    <li><a href="../packages/aws.s3/index.html">aws.s3</a></li>
     <li><a href="../packages/aws.signature/index.html">aws.signature</a></li>
-    <li><a href="../packages/aws.sns/index.html">aws.sns</a></li>
     <li><a href="../packages/AzureAuth/index.html">AzureAuth</a></li>
     <li><a href="../packages/AzureContainers/index.html">AzureContainers</a></li>
     <li><a href="../packages/AzureRMR/index.html">AzureRMR</a></li>
@@ -1977,10 +1991,8 @@
     <li><a href="../packages/fitbitScraper/index.html">fitbitScraper</a></li>
     <li><a href="../packages/fulltext/index.html">fulltext</a></li>
     <li><a href="../packages/ganalytics/index.html">ganalytics</a></li>
-    <li><a href="../packages/GAR/index.html">GAR</a></li>
     <li><a href="../packages/gdns/index.html">gdns</a></li>
     <li><a href="../packages/geonapi/index.html">geonapi</a></li>
-    <li><a href="../packages/geoparser/index.html">geoparser</a></li>
     <li><a href="../packages/geosapi/index.html">geosapi</a></li>
     <li><a href="../packages/ggmap/index.html">ggmap</a></li>
     <li><a href="../packages/ggvis/index.html">ggvis</a></li>
@@ -2049,7 +2061,6 @@
     <li><a href="../packages/paws/index.html">paws</a></li>
     <li><a href="../packages/pdftables/index.html">pdftables</a></li>
     <li><a href="../packages/pivotaltrackR/index.html">pivotaltrackR</a></li>
-    <li><a href="../packages/plotGoogleMaps/index.html">plotGoogleMaps</a></li>
     <li><a href="../packages/plotKML/index.html">plotKML</a></li>
     <li><a href="../packages/plotly/index.html">plotly</a></li>
     <li><a href="../packages/plumber/index.html">plumber</a></li>
@@ -2115,7 +2126,6 @@
     <li><a href="../packages/Rserve/index.html">Rserve</a></li>
     <li><a href="../packages/RSiteCatalyst/index.html">RSiteCatalyst</a></li>
     <li><a href="../packages/RSmartlyIO/index.html">RSmartlyIO</a></li>
-    <li><a href="../packages/RSocrata/index.html">RSocrata</a></li>
     <li><a href="../packages/RStripe/index.html">RStripe</a></li>
     <li><a href="../packages/rtweet/index.html">rtweet</a></li>
     <li><a href="../packages/rvest/index.html">rvest</a></li>
@@ -2132,7 +2142,6 @@
     <li><a href="../packages/shiny/index.html">shiny</a> (core)</li>
     <li><a href="../packages/shutterstock/index.html">shutterstock</a></li>
     <li><a href="../packages/slackr/index.html">slackr</a></li>
-    <li><a href="../packages/soql/index.html">soql</a></li>
     <li><a href="../packages/sparkbq/index.html">sparkbq</a></li>
     <li><a href="../packages/spiderbar/index.html">spiderbar</a></li>
     <li><a href="../packages/splashr/index.html">splashr</a></li>
