@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------------------------------------- |
 | **Maintainer:** | Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | myrmecocystus at gmail.com                                                       |
-| **Version:**    | 2020-02-17                                                                       |
+| **Version:**    | 2020-06-08                                                                       |
 | **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 <div>
@@ -77,6 +77,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
   - [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization) (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
   - The [shiny](https://cran.rstudio.com/web/packages/shiny/index.html) package makes it easy to build interactive web applications with R.
+  - [dash](https://cran.rstudio.com/web/packages/dash/index.html) is a web framework which is available for Python, R and Julia, with components written in React.js.
   - Other web frameworks include: [fiery](https://cran.rstudio.com/web/packages/fiery/index.html) that is meant to be more flexible but less easy to use than shiny ([reqres](https://cran.rstudio.com/web/packages/reqres/index.html) and [routr](https://cran.rstudio.com/web/packages/routr/index.html) are utilities used by fiery that provide HTTP request and response classes, and HTTP routing, respectively); [<span class="GitHub">rcloud</span>](https://github.com/att/rcloud/) provides an iPython notebook-style web-based R interface; and [Rook](https://cran.rstudio.com/web/packages/Rook/index.html), which contains the specification and convenience software for building and running Rook applications.
   - The [opencpu](https://cran.rstudio.com/web/packages/opencpu/index.html) framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.
   - Several general purpose server/client frameworks for R exist. [Rserve](https://cran.rstudio.com/web/packages/Rserve/index.html) and [RSclient](https://cran.rstudio.com/web/packages/RSclient/index.html) provide server and client functionality for TCP/IP or local socket interfaces. [httpuv](https://cran.rstudio.com/web/packages/httpuv/index.html) provides a low-level socket and protocol support for handling HTTP and WebSocket requests directly within R. Another related package, perhaps which [httpuv](https://cran.rstudio.com/web/packages/httpuv/index.html) replaces, is [websockets](https://cran.rstudio.com/src/contrib/Archive/websockets/) . [servr](https://cran.rstudio.com/web/packages/servr/index.html) provides a simple HTTP server to serve files under a given directory based on httpuv.
@@ -282,6 +283,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [curl](https://cran.rstudio.com/web/packages/curl/index.html) (core)
   - [cymruservices](https://cran.rstudio.com/web/packages/cymruservices/index.html)
   - [d3Network](https://cran.rstudio.com/web/packages/d3Network/index.html)
+  - [dash](https://cran.rstudio.com/web/packages/dash/index.html)
   - [datamart](https://cran.rstudio.com/web/packages/datamart/index.html)
   - [dataone](https://cran.rstudio.com/web/packages/dataone/index.html)
   - [datarobot](https://cran.rstudio.com/web/packages/datarobot/index.html)
