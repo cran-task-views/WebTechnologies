@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------------------------------------------- |
 | **Maintainer:** | Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud |
 | **Contact:**    | myrmecocystus at gmail.com                                                       |
-| **Version:**    | 2020-06-08                                                                       |
+| **Version:**    | 2020-11-11                                                                       |
 | **URL:**        | <https://CRAN.R-project.org/view=WebTechnologies>                                |
 
 <div>
@@ -186,8 +186,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
   - [factualR](https://cran.rstudio.com/web/packages/factualR/index.html): Thin wrapper for the [Factual.com](https://www.factual.com/) server API.
 
-  - [internetarchive](https://cran.rstudio.com/web/packages/internetarchive/index.html): API client for internet archive metadata.
-
   - [jSonarR](https://cran.rstudio.com/web/packages/jSonarR/index.html): Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the [JSON Studio Gateway](https://www.jsonar.com/) , to convert JSON to a tabular format.
 
   - [livechatR](https://cran.rstudio.com/web/packages/livechatR/index.html) is a client for the [LiveChat API](https://developers.livechat.com/docs/management/configuration-api/v2.0/) .
@@ -321,7 +319,6 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
   - [httr](https://cran.rstudio.com/web/packages/httr/index.html) (core)
   - [imguR](https://cran.rstudio.com/web/packages/imguR/index.html)
   - [instaR](https://cran.rstudio.com/web/packages/instaR/index.html)
-  - [internetarchive](https://cran.rstudio.com/web/packages/internetarchive/index.html)
   - [iptools](https://cran.rstudio.com/web/packages/iptools/index.html)
   - [jqr](https://cran.rstudio.com/web/packages/jqr/index.html)
   - [js](https://cran.rstudio.com/web/packages/js/index.html)

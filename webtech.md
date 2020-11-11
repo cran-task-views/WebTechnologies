@@ -174,7 +174,6 @@ Web Services
 -   <pkg>discgolf</pkg> ([GitHub](https://github.com/sckott/discgolf)) provides a client to interact with the API for the [Discourse](https://www.discourse.org/) web forum platform. The API is for an installed instance of Discourse, not for the Discourse site itself.
 -   <pkg>rdpla</pkg> ((GitHub)[https://github.com/ropensci/rdpla]) works with the [Digital Public Library of America](https://dp.la/) API.
 -   <pkg>factualR</pkg>: Thin wrapper for the [Factual.com](https://www.factual.com/) server API.
--   <pkg>internetarchive</pkg>: API client for internet archive metadata.
 -   <pkg>jSonarR</pkg>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the [JSON Studio Gateway](https://www.jsonar.com/), to convert JSON to a tabular format.
 -   <pkg>livechatR</pkg> is a client for the [LiveChat API](https://developers.livechat.com/docs/management/configuration-api/v2.0/).
 -   <github>stephlocke/mockaRoo</github> (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
