@@ -71,7 +71,7 @@
         parameter in httr.
 <a href="../packages/curl/index.html">curl</a>
         is a lower-level package that provides a closer interface between R and the
-        <a href="https://curl.haxx.se/libcurl/">
+        <a href="https://curl.se/libcurl/">
           libcurl C library
         </a>, but is less user-friendly. curl underlies both crul and httr. curl may be useful for operations on web-based XML or to perform FTP operations (as crul and httr are focused primarily on HTTP).
 <tt>curl::curl()</tt>
@@ -176,9 +176,7 @@
         <li>
           <em>
             Authentication
-          </em>: Using web resources can require authentication, either via API keys, OAuth, username:password combination, or via other means. Additionally, sometimes web resources that require authentication be in the header of an http call, which requires a little bit of extra work. API keys and username:password combos can be combined within a url for a call to a web resource (api key:
-<tt>http://api.foo.org/?key=yourkey</tt>; user/pass:
-<tt>http://username:password@api.foo.org</tt>), or can be specified via commands in
+          </em>: Using web resources can require authentication, either via API keys, OAuth, username:password combination, or via other means. Additionally, sometimes web resources that require authentication be in the header of an http call, which requires a little bit of extra work. API keys and username:password combos can be combined within a url for a call to a web resource, or can be specified via commands in
 <a href="../packages/RCurl/index.html">RCurl</a>
           or
 <a href="../packages/httr/index.html">httr</a>. OAuth is the most complicated authentication process, and can be most easily done using
@@ -362,7 +360,8 @@
         </li>
         <li>
 <a href="../packages/iptools/index.html">iptools</a>
-          can facilitate working with IPv4 addresses, including for use in geolocation.
+          can facilitate working with IPv4 addresses, including for use in geolocation. A similar package
+<a href="../packages/ipaddress/index.html">ipaddress</a>, handles IPv4 and IPv6 addresses and networks.
         </li>
         <li>
 <a href="../packages/urlshorteneR/index.html">urlshorteneR</a>
@@ -444,10 +443,7 @@
             Javascript
           </em>:
 <a href="../packages/V8/index.html">V8</a>
-          (
-          <a href="https://github.com/jeroen/V8">
-            GitHub
-          </a>) is an R interface to Google’s open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The
+          is an R interface to Google’s open source, high performance JavaScript engine. It can wrap Javascript libraries as well as NPM packages. The
 <a href="http://www.Omegahat.net/SpiderMonkey/"><span class="Ohat">SpiderMonkey</span></a>
           package provides another means of evaluating JavaScript code, creating JavaScript objects and calling JavaScript functions and methods from within R. This can work by embedding the JavaScript engine within an R session or by embedding R in an browser such as Firefox and being able to call R from JavaScript and call back to JavaScript from R. The
 <a href="../packages/js/index.html">js</a>
@@ -620,7 +616,7 @@
         </li>
         <li>
           The
-          <a href="https://tiki.org/tiki-index.php">
+          <a href="https://info.tiki.org/tiki-index.php">
             Tiki
           </a>
           Wiki CMS/Groupware framework has an R plugin (
@@ -932,11 +928,6 @@
             http://ip-api.com/
           </a>
           API.
-<a href="../packages/threewords/index.html">threewords</a>
-          connects to the
-          <a href="https://what3words.com/">
-            What3Words API
-          </a>, which represents every 3-meter by 3-meter square on earth as a three-word phrase.
 <a href="../packages/opencage/index.html">opencage</a>
           (
           <a href="https://github.com/ropensci/opencage">
@@ -1046,10 +1037,7 @@
           (
           <a href="https://github.com/mukul13/RYandexTranslate">
             GitHub
-          </a>) connects to
-          <a href="https://translate.yandex.com/">
-            Yandex Translate
-          </a>.
+          </a>) connects to Yandex Translate.
 <a href="../packages/transcribeR/index.html">transcribeR</a>
           provides automated audio transcription via the HP IDOL service.
         </li>
@@ -1188,10 +1176,6 @@
       </p>
       <ul>
         <li>
-<a href="../packages/plusser/index.html">plusser</a>
-          has been designed to to facilitate the retrieval of Google+ profiles, pages and posts. It also provides search facilities. Currently a Google+ API key is required for accessing Google+ data.
-        </li>
-        <li>
 <a href="../packages/Rfacebook/index.html">Rfacebook</a>
           provide an interface to the Facebook API.
         </li>
@@ -1211,8 +1195,8 @@
           </a>.
         </li>
         <li>
-<a href="https://github.com/mpiccirilli/Rlinkedin/"><span class="GitHub">Rlinkedin</span></a>
-          (not on CRAN) is a client for the LinkedIn API. Auth is via OAuth.
+<a href="../packages/Rlinkedin/index.html">Rlinkedin</a>
+          is a client for the LinkedIn API. Auth is via OAuth.
         </li>
         <li>
 <a href="../packages/rpinterest/index.html">rpinterest</a>
@@ -1361,23 +1345,6 @@
         <li>
           <p>
             <em>
-              Fitness Apps
-            </em>:
-<a href="../packages/fitbitScraper/index.html">fitbitScraper</a>
-            (
-            <a href="https://github.com/corynissen/fitbitScraper">
-              GitHub
-            </a>) retrieves Fitbit data.
-<a href="../packages/RGoogleFit/index.html">RGoogleFit</a>
-            provides similar functionality for
-            <a href="https://developers.google.com/fit/rest/v1/reference/">
-              Google Fit
-            </a>.
-          </p>
-        </li>
-        <li>
-          <p>
-            <em>
               Push Notifications
             </em>:
 <a href="../packages/RPushbullet/index.html">RPushbullet</a>
@@ -1470,10 +1437,7 @@
             (
             <a href="https://github.com/ropensci/rromeo">
               GitHub
-            </a>) is an interface to the
-            <a href="http://sherpa.ac.uk/romeo/index.php">
-              SHERPA/RoMEO API
-            </a>, a database of scientific journal archival policies regarding pre-, post-print, and accepted manuscript.
+            </a>) is an interface to the SHERPA/RoMEO API, a database of scientific journal archival policies regarding pre-, post-print, and accepted manuscript.
           </p>
         </li>
         <li>
@@ -1533,30 +1497,6 @@
         </li>
         <li>
           <p>
-<a href="../packages/sparkbq/index.html">sparkbq</a>
-            (
-            <a href="https://github.com/miraisolutions/sparkbq">
-              GitHub
-            </a>): Google BigQuery support for sparklyr.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/cymruservices/index.html">cymruservices</a>
-            queries
-            <a href="https://team-cymru.com/">
-              Team Cymru
-            </a>
-            web security services.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/datamart/index.html">datamart</a>: Provides an S4 infrastructure for unified handling of internal datasets and web based data sources. Examples include dbpedia, eurostat and sourceforge.
-          </p>
-        </li>
-        <li>
-          <p>
 <a href="../packages/discgolf/index.html">discgolf</a>
             (
             <a href="https://github.com/sckott/discgolf">
@@ -1570,47 +1510,12 @@
         </li>
         <li>
           <p>
-<a href="../packages/factualR/index.html">factualR</a>: Thin wrapper for the
-            <a href="https://www.factual.com/">
-              Factual.com
-            </a>
-            server API.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/jSonarR/index.html">jSonarR</a>: Enables users to access MongoDB by running queries and returning their results in data.frames. jSonarR uses data processing and conversion capabilities in the jSonar Analytics Platform and the
-            <a href="https://www.jsonar.com/">
-              JSON Studio Gateway
-            </a>, to convert JSON to a tabular format.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/livechatR/index.html">livechatR</a>
-            is a client for the
-            <a href="https://developers.livechat.com/docs/management/configuration-api/v2.0/">
-              LiveChat API
-            </a>.
-          </p>
-        </li>
-        <li>
-          <p>
 <a href="https://github.com/stephlocke/mockaRoo/"><span class="GitHub">mockaRoo</span></a>
             (not on CRAN) uses the
             <a href="https://www.mockaroo.com/api/docs">
               MockaRoo API
             </a>
             to generate mock or fake data based on an input schema.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/pivotaltrackR/index.html">pivotaltrackR</a>
-            provides an interface to the API for
-            <a href="https://www.pivotaltracker.com/">
-              Pivotal Tracker
-            </a>, an agile project management tool.
           </p>
         </li>
         <li>
@@ -1628,20 +1533,6 @@
         </li>
         <li>
           <p>
-<a href="../packages/Rblpapi/index.html">Rblpapi</a>
-            (
-            <a href="https://github.com/Rblp/Rblpapi">
-              GitHub
-            </a>) is a client for Bloomberg Finance L.P.
-<a href="../packages/ROpenFIGI/index.html">ROpenFIGI</a>
-            (
-            <a href="https://github.com/HuangRicky/ROpenFIGI">
-              GitHub
-            </a>) provides an interface to Bloomberg’s OpenFIGI API.
-          </p>
-        </li>
-        <li>
-          <p>
 <a href="../packages/rerddap/index.html">rerddap</a>: A generic R client to interact with any ERDDAP instance, which is a special case of OPeNDAP (
             <a href="https://en.wikipedia.org/wiki/OPeNDAP" class="uri">
               https://en.wikipedia.org/wiki/OPeNDAP
@@ -1649,43 +1540,6 @@
             <em>
               Open-source Project for a Network Data Access Protocol
             </em>. Allows user to swap out the base URL to use any ERDDAP instance.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/restimizeapi/index.html">restimizeapi</a>
-            provides an interface to trading website
-            <a href="https://www.estimize.com/">
-              estimize.com
-            </a>.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/RForcecom/index.html">RForcecom</a>: RForcecom provides a connection to Force.com and Salesforce.com.
-          </p>
-        </li>
-        <li>
-          <p>
-            Two packages,
-<a href="../packages/owmr/index.html">owmr</a>
-            and
-<a href="../packages/ROpenWeatherMap/index.html">ROpenWeatherMap</a>, work with the
-            <a href="https://openweathermap.org/api">
-              Open Weather Map API
-            </a>.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/RSauceLabs/index.html">RSauceLabs</a>
-            (
-            <a href="https://johndharrison.github.io/RSauceLabs/">
-              GitHub
-            </a>) connects to
-            <a href="https://saucelabs.com/">
-              SauceLabs
-            </a>.
           </p>
         </li>
         <li>
@@ -1699,29 +1553,11 @@
         </li>
         <li>
           <p>
-<a href="../packages/RZabbix/index.html">RZabbix</a>
-            links with the
-            <a href="https://www.zabbix.com/documentation/3.0/manual/api/reference">
-              Zabbix network monitoring service API
-            </a>.
-          </p>
-        </li>
-        <li>
-          <p>
 <a href="../packages/slackr/index.html">slackr</a>
             (
             <a href="https://github.com/hrbrmstr/slackr">
               GitHub
             </a>) is a client for Slack.com messaging platform.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/shutterstock/index.html">shutterstock</a>
-            (
-            <a href="https://github.com/strboul/shutterstock-r">
-              GitHub
-            </a>) is to access Shutterstock library from R.
           </p>
         </li>
         <li>
@@ -1735,89 +1571,11 @@
         </li>
         <li>
           <p>
-<a href="../packages/telegram/index.html">telegram</a>
-            (
-            <a href="https://github.com/lbraglia/telegram">
-              GitHub
-            </a>) connects with the Telegram Bot API.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/trelloR/index.html">trelloR</a>
-            (
-            <a href="https://github.com/jchrom/trelloR">
-              GitHub
-            </a>) connects to the
-            <a href="https://developers.trello.com/">
-              Trello API
-            </a>.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/tuber/index.html">tuber</a>
-            is a YouTube API client and
-<a href="../packages/tubern/index.html">tubern</a>
-            is a client for the YouTube Analytics and Reporting API
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/udapi/index.html">udapi</a>
-            connects to Urban Dictionary.
-          </p>
-        </li>
-        <li>
-          <p>
 <a href="https://github.com/nealrichardson/useRsnap/"><span class="GitHub">useRsnap</span></a>
             (not on CRAN) provides an interface to the API for
             <a href="https://www.pivotaltracker.com/">
               Usersnap
             </a>, a tool for collecting feedback from web application users.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/yummlyr/index.html">yummlyr</a>
-            (
-            <a href="https://github.com/RomanTsegelskyi/yummlyr">
-              GitHub
-            </a>) provides an interface to the
-            <a href="https://developer.yummly.com/">
-              Yummly
-            </a>
-            recipe database.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/zendeskR/index.html">zendeskR</a>: This package provides a wrapper for the Zendesk API.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/ZillowR/index.html">ZillowR</a>
-            is a client for the Zillow real estate service.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/docuSignr/index.html">docuSignr</a>
-            provides an interface to the DocuSign
-            <a href="https://developers.docusign.com/">
-              Rest API
-            </a>.
-          </p>
-        </li>
-        <li>
-          <p>
-<a href="../packages/giphyr/index.html">giphyr</a>
-            is an R interface to the
-            <a href="https://github.com/Giphy/GiphyAPI">
-              Giphy API
-            </a>
-            for GIF’s
           </p>
         </li>
         <li>
@@ -1856,24 +1614,19 @@
     <li><a href="../packages/crunch/index.html">crunch</a></li>
     <li><a href="../packages/crunchy/index.html">crunchy</a></li>
     <li><a href="../packages/curl/index.html">curl</a> (core)</li>
-    <li><a href="../packages/cymruservices/index.html">cymruservices</a></li>
     <li><a href="../packages/dash/index.html">dash</a></li>
-    <li><a href="../packages/datamart/index.html">datamart</a></li>
     <li><a href="../packages/dataone/index.html">dataone</a></li>
     <li><a href="../packages/datarobot/index.html">datarobot</a></li>
     <li><a href="../packages/dataverse/index.html">dataverse</a></li>
     <li><a href="../packages/discgolf/index.html">discgolf</a></li>
-    <li><a href="../packages/docuSignr/index.html">docuSignr</a></li>
     <li><a href="../packages/downloader/index.html">downloader</a></li>
     <li><a href="../packages/duckduckr/index.html">duckduckr</a></li>
     <li><a href="../packages/europepmc/index.html">europepmc</a></li>
-    <li><a href="../packages/factualR/index.html">factualR</a></li>
     <li><a href="../packages/FastRWeb/index.html">FastRWeb</a></li>
     <li><a href="../packages/fauxpas/index.html">fauxpas</a></li>
     <li><a href="../packages/fbRads/index.html">fbRads</a></li>
     <li><a href="../packages/feedeR/index.html">feedeR</a></li>
     <li><a href="../packages/fiery/index.html">fiery</a></li>
-    <li><a href="../packages/fitbitScraper/index.html">fitbitScraper</a></li>
     <li><a href="../packages/fulltext/index.html">fulltext</a></li>
     <li><a href="../packages/ganalytics/index.html">ganalytics</a></li>
     <li><a href="../packages/gdns/index.html">gdns</a></li>
@@ -1881,7 +1634,6 @@
     <li><a href="../packages/geosapi/index.html">geosapi</a></li>
     <li><a href="../packages/ggmap/index.html">ggmap</a></li>
     <li><a href="../packages/gh/index.html">gh</a></li>
-    <li><a href="../packages/giphyr/index.html">giphyr</a></li>
     <li><a href="../packages/gistr/index.html">gistr</a></li>
     <li><a href="../packages/git2r/index.html">git2r</a></li>
     <li><a href="../packages/gitlabr/index.html">gitlabr</a></li>
@@ -1909,16 +1661,15 @@
     <li><a href="../packages/httr/index.html">httr</a> (core)</li>
     <li><a href="../packages/imguR/index.html">imguR</a></li>
     <li><a href="../packages/instaR/index.html">instaR</a></li>
+    <li><a href="../packages/ipaddress/index.html">ipaddress</a></li>
     <li><a href="../packages/iptools/index.html">iptools</a></li>
     <li><a href="../packages/jqr/index.html">jqr</a></li>
     <li><a href="../packages/js/index.html">js</a></li>
-    <li><a href="../packages/jSonarR/index.html">jSonarR</a></li>
     <li><a href="../packages/jsonlite/index.html">jsonlite</a> (core)</li>
     <li><a href="../packages/jsonvalidate/index.html">jsonvalidate</a></li>
     <li><a href="../packages/jstor/index.html">jstor</a></li>
     <li><a href="../packages/languagelayeR/index.html">languagelayeR</a></li>
     <li><a href="../packages/leafletR/index.html">leafletR</a></li>
-    <li><a href="../packages/livechatR/index.html">livechatR</a></li>
     <li><a href="../packages/longurl/index.html">longurl</a></li>
     <li><a href="../packages/magrittr/index.html">magrittr</a></li>
     <li><a href="../packages/mailR/index.html">mailR</a></li>
@@ -1938,15 +1689,12 @@
     <li><a href="../packages/osmar/index.html">osmar</a></li>
     <li><a href="../packages/osmplotr/index.html">osmplotr</a></li>
     <li><a href="../packages/osrm/index.html">osrm</a></li>
-    <li><a href="../packages/owmr/index.html">owmr</a></li>
     <li><a href="../packages/ows4R/index.html">ows4R</a></li>
     <li><a href="../packages/paws/index.html">paws</a></li>
     <li><a href="../packages/pdftables/index.html">pdftables</a></li>
-    <li><a href="../packages/pivotaltrackR/index.html">pivotaltrackR</a></li>
     <li><a href="../packages/plotKML/index.html">plotKML</a></li>
     <li><a href="../packages/plotly/index.html">plotly</a></li>
     <li><a href="../packages/plumber/index.html">plumber</a></li>
-    <li><a href="../packages/plusser/index.html">plusser</a></li>
     <li><a href="../packages/postlightmercury/index.html">postlightmercury</a></li>
     <li><a href="../packages/pubmed.mineR/index.html">pubmed.mineR</a></li>
     <li><a href="../packages/pushoverr/index.html">pushoverr</a></li>
@@ -1956,7 +1704,6 @@
     <li><a href="../packages/randNames/index.html">randNames</a></li>
     <li><a href="../packages/rapiclient/index.html">rapiclient</a></li>
     <li><a href="../packages/rapport/index.html">rapport</a></li>
-    <li><a href="../packages/Rblpapi/index.html">Rblpapi</a></li>
     <li><a href="../packages/rcoreoa/index.html">rcoreoa</a></li>
     <li><a href="../packages/Rcrawler/index.html">Rcrawler</a></li>
     <li><a href="../packages/rcrossref/index.html">rcrossref</a></li>
@@ -1969,26 +1716,22 @@
     <li><a href="../packages/request/index.html">request</a></li>
     <li><a href="../packages/rerddap/index.html">rerddap</a></li>
     <li><a href="../packages/restfulr/index.html">restfulr</a></li>
-    <li><a href="../packages/restimizeapi/index.html">restimizeapi</a></li>
     <li><a href="../packages/Rexperigen/index.html">Rexperigen</a></li>
     <li><a href="../packages/Rfacebook/index.html">Rfacebook</a></li>
     <li><a href="../packages/rfigshare/index.html">rfigshare</a></li>
-    <li><a href="../packages/RForcecom/index.html">RForcecom</a></li>
     <li><a href="../packages/RGA/index.html">RGA</a></li>
     <li><a href="../packages/rgeolocate/index.html">rgeolocate</a></li>
-    <li><a href="../packages/RGoogleFit/index.html">RGoogleFit</a></li>
     <li><a href="../packages/RgoogleMaps/index.html">RgoogleMaps</a></li>
     <li><a href="../packages/rhub/index.html">rhub</a></li>
     <li><a href="../packages/rio/index.html">rio</a></li>
     <li><a href="../packages/rjson/index.html">rjson</a></li>
     <li><a href="../packages/RJSONIO/index.html">RJSONIO</a></li>
+    <li><a href="../packages/Rlinkedin/index.html">Rlinkedin</a></li>
     <li><a href="../packages/rLTP/index.html">rLTP</a></li>
     <li><a href="../packages/roadoi/index.html">roadoi</a></li>
     <li><a href="../packages/ROAuth/index.html">ROAuth</a></li>
     <li><a href="../packages/robotstxt/index.html">robotstxt</a></li>
     <li><a href="../packages/Rook/index.html">Rook</a></li>
-    <li><a href="../packages/ROpenFIGI/index.html">ROpenFIGI</a></li>
-    <li><a href="../packages/ROpenWeatherMap/index.html">ROpenWeatherMap</a></li>
     <li><a href="../packages/rorcid/index.html">rorcid</a></li>
     <li><a href="../packages/rosetteApi/index.html">rosetteApi</a></li>
     <li><a href="../packages/routr/index.html">routr</a></li>
@@ -1997,7 +1740,6 @@
     <li><a href="../packages/RPushbullet/index.html">RPushbullet</a></li>
     <li><a href="../packages/rrefine/index.html">rrefine</a></li>
     <li><a href="../packages/rromeo/index.html">rromeo</a></li>
-    <li><a href="../packages/RSauceLabs/index.html">RSauceLabs</a></li>
     <li><a href="../packages/RSclient/index.html">RSclient</a></li>
     <li><a href="../packages/rscopus/index.html">rscopus</a></li>
     <li><a href="../packages/rsdmx/index.html">rsdmx</a></li>
@@ -2009,7 +1751,6 @@
     <li><a href="../packages/rtweet/index.html">rtweet</a></li>
     <li><a href="../packages/rvest/index.html">rvest</a></li>
     <li><a href="../packages/RYandexTranslate/index.html">RYandexTranslate</a></li>
-    <li><a href="../packages/RZabbix/index.html">RZabbix</a></li>
     <li><a href="../packages/scholar/index.html">scholar</a></li>
     <li><a href="../packages/scrapeR/index.html">scrapeR</a></li>
     <li><a href="../packages/searchConsoleR/index.html">searchConsoleR</a></li>
@@ -2018,27 +1759,19 @@
     <li><a href="../packages/sendmailR/index.html">sendmailR</a></li>
     <li><a href="../packages/servr/index.html">servr</a></li>
     <li><a href="../packages/shiny/index.html">shiny</a> (core)</li>
-    <li><a href="../packages/shutterstock/index.html">shutterstock</a></li>
     <li><a href="../packages/slackr/index.html">slackr</a></li>
-    <li><a href="../packages/sparkbq/index.html">sparkbq</a></li>
     <li><a href="../packages/spiderbar/index.html">spiderbar</a></li>
     <li><a href="../packages/splashr/index.html">splashr</a></li>
     <li><a href="../packages/streamR/index.html">streamR</a></li>
     <li><a href="../packages/swagger/index.html">swagger</a></li>
-    <li><a href="../packages/telegram/index.html">telegram</a></li>
-    <li><a href="../packages/threewords/index.html">threewords</a></li>
     <li><a href="../packages/tidyRSS/index.html">tidyRSS</a></li>
     <li><a href="../packages/tm.plugin.webmining/index.html">tm.plugin.webmining</a></li>
     <li><a href="../packages/transcribeR/index.html">transcribeR</a></li>
     <li><a href="../packages/translate/index.html">translate</a></li>
     <li><a href="../packages/translateR/index.html">translateR</a></li>
-    <li><a href="../packages/trelloR/index.html">trelloR</a></li>
-    <li><a href="../packages/tuber/index.html">tuber</a></li>
-    <li><a href="../packages/tubern/index.html">tubern</a></li>
     <li><a href="../packages/tweet2r/index.html">tweet2r</a></li>
     <li><a href="../packages/twitteR/index.html">twitteR</a></li>
     <li><a href="../packages/uaparserjs/index.html">uaparserjs</a></li>
-    <li><a href="../packages/udapi/index.html">udapi</a></li>
     <li><a href="../packages/urlshorteneR/index.html">urlshorteneR</a></li>
     <li><a href="../packages/urltools/index.html">urltools</a></li>
     <li><a href="../packages/V8/index.html">V8</a></li>
@@ -2060,10 +1793,7 @@
     <li><a href="../packages/XML2R/index.html">XML2R</a></li>
     <li><a href="../packages/xslt/index.html">xslt</a></li>
     <li><a href="../packages/yhatr/index.html">yhatr</a></li>
-    <li><a href="../packages/yummlyr/index.html">yummlyr</a></li>
     <li><a href="../packages/zen4R/index.html">zen4R</a></li>
-    <li><a href="../packages/zendeskR/index.html">zendeskR</a></li>
-    <li><a href="../packages/ZillowR/index.html">ZillowR</a></li>
   </ul>
 
   <h3>Related links:</h3>
