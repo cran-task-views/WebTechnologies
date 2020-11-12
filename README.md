@@ -62,7 +62,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
 **Security**
 
-  - [securitytxt](https://cran.rstudio.com/web/packages/securitytxt/index.html) identifies and parses web Ssecurity policy files.
+  - [securitytxt](https://cran.rstudio.com/web/packages/securitytxt/index.html) identifies and parses web Security policy files.
 
 **Other Useful Packages and Functions**
 

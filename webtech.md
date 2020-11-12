@@ -55,7 +55,7 @@ The vast majority of web-based data is structured as plain text, HTML, XML, or J
 
 **Security**
 
-- <pkg>securitytxt</pkg> identifies and parses web Ssecurity policy files.
+- <pkg>securitytxt</pkg> identifies and parses web Security policy files.
 
 **Other Useful Packages and Functions**
 
