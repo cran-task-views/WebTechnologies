@@ -6,11 +6,11 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta name="citation_title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="citation_author" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="citation_publication_date" content="2020-11-12" />
+  <meta name="citation_publication_date" content="2021-02-02" />
   <meta name="citation_public_url" content="https://CRAN.R-project.org/view=WebTechnologies" />
   <meta name="DC.title" content="CRAN Task View: Web Technologies and Services" />
   <meta name="DC.creator" content="Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud" />
-  <meta name="DC.issued" content="2020-11-12" />
+  <meta name="DC.issued" content="2021-02-02" />
   <meta name="DC.identifier" content="https://CRAN.R-project.org/view=WebTechnologies" />
 </head>
 
@@ -19,7 +19,7 @@
   <table summary="WebTechnologies task view information">
     <tr><td valign="top"><b>Maintainer:</b></td><td>Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</td></tr>
     <tr><td valign="top"><b>Contact:</b></td><td>&#x6d;&#x79;&#x72;&#x6d;&#x65;&#x63;&#x6f;&#x63;&#x79;&#x73;&#x74;&#x75;&#x73;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</td></tr>
-    <tr><td valign="top"><b>Version:</b></td><td>2020-11-12</td></tr>
+    <tr><td valign="top"><b>Version:</b></td><td>2021-02-02</td></tr>
     <tr><td valign="top"><b>URL:</b></td><td><a href="https://CRAN.R-project.org/view=WebTechnologies">https://CRAN.R-project.org/view=WebTechnologies</a></td></tr>
   </table>
 
@@ -664,7 +664,8 @@
         <li>
           <a href="https://cloudyr.github.io/">
             The cloudyr project
-          </a>, which is currently under active development on GitHub, aims to provide interfaces to popular Amazon, Azure and Google cloud services without the need for external system dependencies.
+          </a>
+          aims to provide interfaces to popular Amazon, Azure and Google cloud services without the need for external system dependencies.
         </li>
         <li>
           Amazon Web Services is a popular, proprietary cloud service offering a suite of computing, storage, and infrastructure tools.
@@ -699,7 +700,11 @@
           </ul>
         </li>
         <li>
-          Azure is Microsoft’s cloud computing service. It provides Paas, SaaS and IaaS and supports many different tools and frameworks, including both Microsoft-specific and third-party systems.
+          Azure and Microsoft 365 are Microsoft’s cloud computing services. The Azure platform provides Paas, SaaS and IaaS and supports many different tools and frameworks, including both Microsoft-specific and third-party systems; while Microsoft 365 is a unified framework for accessing cloud data from Microsoft’s Office services, Windows and Dynamics. The
+          <a href="https://github.com/Azure/AzureR">
+            AzureR package family
+          </a>
+          aims to provide a suite of lightweight, powerful tools for working with Azure in R. The packages listed below are part of the family, and are also mirrored at the cloudyr project.
           <ul>
             <li>
               <em>
@@ -708,6 +713,16 @@
               is a centralized directory and identity service.
 <a href="../packages/AzureAuth/index.html">AzureAuth</a>
               is an R client for AAD; use this to obtain OAuth tokens for authenticating with other Azure services, including Resource Manager and storage (see next).
+            </li>
+            <li>
+              <em>
+                Microsoft Graph
+              </em>
+              is the API framework for the Microsoft 365 platform, including Azure Active Directory and Office.
+<a href="../packages/AzureGraph/index.html">AzureGraph</a>
+              is a low-level extensible R6-based interface to Graph.
+<a href="../packages/Microsoft365/index.html">Microsoft365</a>
+              is an interface to the Office part of Microsoft 365, including OneDrive and SharePoint Online.
             </li>
             <li>
               <em>
@@ -724,14 +739,14 @@
               are a general-purpose data storage facility. Different types of storage are available: file, blob, table, Data Lake, and more.
 <a href="../packages/AzureStor/index.html">AzureStor</a>
               provides an R interface to storage. Features include clients for file, blob and Data Lake Gen2 storage, parallelized file transfers, and an interface to Microsoft’s cross-platform AzCopy command line utility. Also supplied is an ARM interface, to allow creation and managing of storage accounts.
+<a href="../packages/AzureTableStor/index.html">AzureTableStor</a>
+              and
+<a href="../packages/AzureQstor/index.html">AzureQstor</a>
+              extend AzureStor to provide interfaces to table storage and queue storage respectively
             </li>
             <li>
-              <em>
-                Data Science Virtual Machines (DSVMs)
-              </em>
-              are Azure VMs that come preloaded with a wide variety of software for statistics and machine learning, including R, Python, TensorFlow, and Spark.
 <a href="../packages/AzureVM/index.html">AzureVM</a>
-              is a package for managing DSVMs from within R. It also allows deploying arbitrary VMs by supplying a suitable deployment template.
+              is a package for creating and managing virtual machines in Azure. It includes templates for a wide variety of common VM specifications and operating systems, including Windows, Ubuntu, Debian and RHEL.
             </li>
             <li>
 <a href="../packages/AzureContainers/index.html">AzureContainers</a>
@@ -754,8 +769,28 @@
               <em>
                 Kusto
               </em>, is a fast, scalable data exploration and analytics service.
-<a href="https://github.com/cloudyr/AzureKusto/"><span class="GitHub">AzureKusto</span></a>
-              (not yet on CRAN) is an R interface to ADE/Kusto. It includes a dplyr client interface similar to that provided by dbplyr for SQL databases, a DBI client interface, and an ARM interface for deploying and managing Kusto clusters and databases.
+<a href="../packages/AzureKusto/index.html">AzureKusto</a>
+              is an R interface to ADE/Kusto. It includes a dplyr client interface similar to that provided by dbplyr for SQL databases, a DBI client interface, and an ARM interface for deploying and managing Kusto clusters and databases.
+            </li>
+            <li>
+              <em>
+                Azure Cosmos DB
+              </em>
+              is a multi-model NoSQL database service, previously known as Document DB.
+<a href="../packages/AzureCosmos/index.html">AzureCosmos</a>
+              is an interface to the core/SQL API for Cosmos DB. It also includes simple bridges to the table storage and MongoDB APIs.
+            </li>
+            <li>
+              <em>
+                Azure Computer Vision
+              </em>
+              and
+              <em>
+                Azure Custom Vision
+              </em>
+              are AI services for image recognition and analysis. Computer Vision is a pre-trained service for handling commonly-encountered tasks, while Custom Vision allows you to train your own image recognition model on a custom dataset.
+<a href="../packages/AzureVision/index.html">AzureVision</a>
+              provides an interface to both these services.
             </li>
           </ul>
         </li>
@@ -904,6 +939,17 @@
 <tt>imgur_upload()</tt>
           to load images from literate programming documents.
         </li>
+        <li>
+          <em>
+            SharePoint
+          </em>
+          and
+          <em>
+            OneDrive
+          </em>:
+<a href="../packages/Microsoft365/index.html">Microsoft365</a>
+          provides an interface to these services, which form part of the Microsoft 365 (formerly known as Office 365) suite.
+        </li>
       </ul>
       <p>
         <strong>
@@ -1024,6 +1070,8 @@
           text analysis API.
 <a href="../packages/googleLanguageR/index.html">googleLanguageR</a>
           provides interfaces to Google’s Cloud Translation API, Natural Language API, Cloud Speech API, and the Cloud Text-to-Speech API.
+<a href="../packages/AzureVision/index.html">AzureVision</a>
+          provides interfaces to the Azure Computer Vision and Custom Vision image recognition services.
         </li>
         <li>
           <em>
@@ -1594,8 +1642,14 @@
     <li><a href="../packages/aws.signature/index.html">aws.signature</a></li>
     <li><a href="../packages/AzureAuth/index.html">AzureAuth</a></li>
     <li><a href="../packages/AzureContainers/index.html">AzureContainers</a></li>
+    <li><a href="../packages/AzureCosmos/index.html">AzureCosmos</a></li>
+    <li><a href="../packages/AzureGraph/index.html">AzureGraph</a></li>
+    <li><a href="../packages/AzureKusto/index.html">AzureKusto</a></li>
+    <li><a href="../packages/AzureQstor/index.html">AzureQstor</a></li>
     <li><a href="../packages/AzureRMR/index.html">AzureRMR</a></li>
     <li><a href="../packages/AzureStor/index.html">AzureStor</a></li>
+    <li><a href="../packages/AzureTableStor/index.html">AzureTableStor</a></li>
+    <li><a href="../packages/AzureVision/index.html">AzureVision</a></li>
     <li><a href="../packages/AzureVM/index.html">AzureVM</a></li>
     <li><a href="../packages/banR/index.html">banR</a></li>
     <li><a href="../packages/bigrquery/index.html">bigrquery</a></li>
@@ -1670,6 +1724,7 @@
     <li><a href="../packages/mailR/index.html">mailR</a></li>
     <li><a href="../packages/mapsapi/index.html">mapsapi</a></li>
     <li><a href="../packages/mathpix/index.html">mathpix</a></li>
+    <li><a href="../packages/Microsoft365/index.html">Microsoft365</a></li>
     <li><a href="../packages/mime/index.html">mime</a></li>
     <li><a href="../packages/mscstexta4r/index.html">mscstexta4r</a></li>
     <li><a href="../packages/mscsweblm4r/index.html">mscsweblm4r</a></li>
