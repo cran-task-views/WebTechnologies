@@ -142,6 +142,7 @@ Web Services
 -   <github>rladies/meetupr</github> is a client for the Meetup.com API.
 -   *Twitter*: <pkg>twitteR</pkg> ([GitHub](https://github.com/geoffjentry/twitteR)) provides an interface to the Twitter web API. It claims to be deprecated in favor of <pkg>rtweet</pkg> ([GitHub](https://github.com/ropensci/rtweet)). <github>gvegayon/twitterreport</github> (not on CRAN) focuses on report generation based on Twitter data. <pkg>streamR</pkg> provides a series of functions that allow users to access Twitter's filter, sample, and user streams, and to parse the output into data frames. OAuth authentication is supported. <pkg>tweet2r</pkg> is an alternative implementation geared toward SQLite and postGIS databases. <pkg>graphTweets</pkg> produces a network graph from a data.frame of tweets.  [tweetscores](https://github.com/pablobarbera/twitter_ideology/tree/master/pkg/tweetscores) (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
 - <pkg>brandwatchR</pkg> is a package to retrieve a data from the Brandwatch social listening API. Both raw text and aggregate statistics are available, as well as project and query management functions.
+- <pkg>hackeRnews</pkg> ([GitHub](https://github.com/szymanskir/hackeRnews)) is a client for the [Official Hacker News API](https://github.com/HackerNews/API).
 
 **Web Analytics Services**
 
