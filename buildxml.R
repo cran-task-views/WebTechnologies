@@ -7,14 +7,14 @@ pkgs <- unique(gsub("^pkg>", "", pkgs))
 priority <- c('curl','httr','crul','vcr','webmockr','jsonlite','shiny','xml2')
 pkgs <- pkgs[ !pkgs %in% priority] # remove priority packages
 pkgs <- lapply(as.list(sort(pkgs)), function(x) list(package=x))
-output <- 
+output <-
 c(paste0('<CRANTaskView>
   <name>WebTechnologies</name>
   <topic>Web Technologies and Services</topic>
-  <maintainer email="myrmecocystus@gmail.com">Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
-  <version>',Sys.Date(),'</version>'), 
+  <maintainer email="mavargas11@uc.cl"> Mauricio Vargas Sepulveda, Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud</maintainer>
+  <version>',Sys.Date(),'</version>'),
   '  <info>',
-  paste0("    ",template), 
+  paste0("    ",template),
   '  </info>',
   '  <packagelist>',
   # list priority packages explicitly
