@@ -1,10 +1,10 @@
 ## CRAN Task View: Web Technologies and Services
 
-|                 |                                                                                                             |
-| --------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Maintainer:** | Mauricio Vargas Sepulveda, Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, Christopher Gandrud |
-| **Contact:**    | mavargas11 at uc.cl                                                                                         |
-| **Version:**    | 2022-01-14                                                                                                  |
+|                 |                           |
+| --------------- | ------------------------- |
+| **Maintainer:** | Mauricio Vargas Sepulveda |
+| **Contact:**    | mavargas11 at uc.cl       |
+| **Version:**    | 2022-01-14                |
 
 <div>
 
@@ -13,6 +13,8 @@
 This Task View contains information about to use R and the world wide web together. The base version of R does not ship with many tools for interacting with the web. Thankfully, there are an increasingly large number of tools for interacting with the web. This task view focuses on packages for obtaining web-based data and information, frameworks for building web-based R applications, and online services that can be accessed from R. A list of available packages and functions is presented below, grouped by the type of activity. The [rOpenSci Task View: Open Data](https://github.com/ropensci/opendata) provides further discussion of online data sources that can be accessed from R.
 
 If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and [submit an issue](https://github.com/ropensci/webservices/issues) , or make some changes and [submit a pull request](https://github.com/ropensci/webservices/pulls) . If you can’t contribute on GitHub, [send Mauricio an email](mailto:mavargas11@uc.cl) . If you have an issue with one of the packages discussed below, please contact the maintainer of that package.
+
+Before 2022, this task view was maintained by Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram and Christopher Gandrud. Thanks to all of them for volunteering to improve CRAN\!
 
 ## Tools for Working with the Web from R
 

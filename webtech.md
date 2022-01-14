@@ -4,6 +4,8 @@ This Task View contains information about to use R and the world wide web togeth
 
 If you have any comments or suggestions for additions or improvements for this Task View, go to GitHub and [submit an issue](https://github.com/ropensci/webservices/issues) , or make some changes and [submit a pull request](https://github.com/ropensci/webservices/pulls) . If you can’t contribute on GitHub, [send Mauricio an email](mailto:mavargas11@uc.cl). If you have an issue with one of the packages discussed below, please contact the maintainer of that package.
 
+Before 2022, this task view was maintained by Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram and Christopher Gandrud. Thanks to all of them for volunteering to improve CRAN!
+
 ## Tools for Working with the Web from R
 
 **Core Tools For HTTP Requests**
