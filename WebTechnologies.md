@@ -18,9 +18,9 @@ further discussion of online data sources that can be accessed from R.
 
 If you have any comments or suggestions for additions or improvements for this
 Task View, go to GitHub and [submit an issue](https://github.com/ropensci/
-webservices/issues) , or make some changes and [submit a pull request](https://
-github.com/ropensci/webservices/pulls) . If you can’t contribute on GitHub,
-[send Mauricio an email](mailto:mavargas11@uc.cl) . If you have an issue with
+webservices/issues), or make some changes and [submit a pull request](https://
+github.com/ropensci/webservices/pulls). If you can’t contribute on GitHub,
+[send Mauricio an email](mailto:mavargas11@uc.cl). If you have an issue with
 one of the packages discussed below, please contact the maintainer of that
 package.
 
@@ -45,7 +45,7 @@ provides support for OAuth. Note that you can pass in additional curl options
 when you instantiate R6 classes in crul, and the `config` parameter in httr.
 [curl](https://cran.rstudio.com/web/packages/curl/index.html) is a lower-level
 package that provides a closer interface between R and the [libcurl C
-library](https://curl.se/libcurl/) , but is less user-friendly. curl underlies
+library](https://curl.se/libcurl/), but is less user-friendly. curl underlies
 both crul and httr. curl may be useful for operations on web-based XML or to
 perform FTP operations (as crul and httr are focused primarily on HTTP).
 `curl::curl()` is an SSL-compatible replacement for base R’s `url()` and has
@@ -75,7 +75,7 @@ following resources may be useful:
     RSelenium/index.html) can be used to automate those interactions and extract
     page contents. It provides a set of bindings for the Selenium 2.0 webdriver
     using the [JsonWireProtocol](https://github.com/seleniumhq/selenium-google-
-    code-issue-archive) . It can also aid in automated application testing, load
+    code-issue-archive). It can also aid in automated application testing, load
     testing, and web scraping. [seleniumPipes](https://cran.rstudio.com/web/
     packages/seleniumPipes/index.html) ([GitHub](https://github.com/
     johndharrison/seleniumPipes) ) provides a “pipe”-oriented interface to the
@@ -164,7 +164,7 @@ memory web files.
     index.html)([GitHub](https://github.com/cpsievert/XML2R)) package is a
     collection of convenient functions for coercing XML into data frames. An
     alternative to [XML](https://cran.rstudio.com/web/packages/XML/index.html)
-    is [selectr](https://sjp.co.nz/projects/selectr/) , which parses CSS3
+    is [selectr](https://sjp.co.nz/projects/selectr/), which parses CSS3
     Selectors and translates them to XPath 1.0 expressions. [XML](https://
     cran.rstudio.com/web/packages/XML/index.html) package is often used for
     parsing xml and html, but selectr translates CSS selectors to XPath, so can
@@ -347,7 +347,7 @@ memory web files.
     library](https://github.com/ua-parser) to parse User-Agent HTTP headers.
     [rapiclient](https://cran.rstudio.com/web/packages/rapiclient/index.html) is
     a client for consuming APIs that follow the [Open API format](https://
-    www.openapis.org/) . [restfulr](https://cran.rstudio.com/web/packages/
+    www.openapis.org/). [restfulr](https://cran.rstudio.com/web/packages/
     restfulr/index.html) models a RESTful service as if it were a nested R list.
 
 ## Web and Server Frameworks
@@ -381,7 +381,7 @@ memory web files.
     HTTP and WebSocket requests directly within R. Another related package,
     perhaps which [httpuv](https://cran.rstudio.com/web/packages/httpuv/
     index.html) replaces, is [websockets](https://cran.rstudio.com/src/contrib/
-    Archive/websockets/) . [servr](https://cran.rstudio.com/web/packages/servr/
+    Archive/websockets/). [servr](https://cran.rstudio.com/web/packages/servr/
     index.html) provides a simple HTTP server to serve files under a given
     directory based on httpuv.
   - Several packages offer functionality for turning R code into a web API.
@@ -468,10 +468,10 @@ memory web files.
       - [AzureContainers](https://cran.rstudio.com/web/packages/AzureContainers/
         index.html) provides a unified facility for working with containers in
         Azure. Specifically, it includes R interfaces to *Azure Container
-        Instances (ACI)* , *Azure Docker Registry (ACR)* and *Azure Kubernetes
-        Service (AKS)* . Create Docker images and push them to an ACR
+        Instances (ACI)*, *Azure Docker Registry (ACR)* and *Azure Kubernetes
+        Service (AKS)*. Create Docker images and push them to an ACR
         repository; spin up ACI containers; deploy Kubernetes services in AKS.
-      - *Azure Data Explorer* , also known as *Kusto* , is a fast, scalable
+      - *Azure Data Explorer*, also known as *Kusto*, is a fast, scalable
         data exploration and analytics service. [AzureKusto](https://
         cran.rstudio.com/web/packages/AzureKusto/index.html) is an R interface
         to ADE/Kusto. It includes a dplyr client interface similar to that
@@ -555,10 +555,10 @@ memory web files.
     downloaded as a data frame, or as plain text to parse manually.
   - [imguR](https://cran.rstudio.com/web/packages/imguR/index.html)   
     ([GitHub](https://github.com/cloudyr/imguR) ) is a package to share plots
-    using the image hosting service [Imgur.com](https://imgur.com/) . knitr
+    using the image hosting service [Imgur.com](https://imgur.com/). knitr
     also has a function `imgur_upload()` to load images from literate
     programming documents.
-  - *Teams* , *SharePoint* and *OneDrive*: [Microsoft365R](https://
+  - *Teams*, *SharePoint* and *OneDrive*: [Microsoft365R](https://
     cran.rstudio.com/web/packages/Microsoft365R/index.html) provides an
     interface to these services, which form part of the Microsoft 365 (formerly
     known as Office 365) suite.
@@ -595,17 +595,17 @@ memory web files.
     based machine learning services. [OpenML](https://cran.rstudio.com/web/
     packages/OpenML/index.html) ([GitHub](https://github.com/openml/openml-r) )
     is the official client for [the OpenML API](https://www.openml.org/frontend/
-    page/home) . [clarifai](https://cran.rstudio.com/web/packages/clarifai/
+    page/home). [clarifai](https://cran.rstudio.com/web/packages/clarifai/
     index.html) ([GitHub](https://github.com/soodoku/clarifai) ) is a
     [Clarifai.com](https://www.clarifai.com/) client that enables automated
     image description. [rLTP](https://cran.rstudio.com/web/packages/rLTP/
     index.html) ([GitHub](https://github.com/hetong007/rLTP) ) accesses the
-    [ltp-cloud service](https://www.ltp-cloud.com/) . [languagelayeR](https://
+    [ltp-cloud service](https://www.ltp-cloud.com/). [languagelayeR](https://
     cran.rstudio.com/web/packages/languagelayeR/index.html) is a client for
     Languagelayer, a language detection API. [googlepredictionapi](https://
     code.google.com/archive/p/google-prediction-api-r-client/) (not on CRAN):
     is an R client for the [Google Prediction API](https://cloud.google.com/ai-
-    platform) , a suite of cloud machine learning tools. [yhatr](https://
+    platform), a suite of cloud machine learning tools. [yhatr](https://
     cran.rstudio.com/web/packages/yhatr/index.html) lets you deploy, maintain,
     and invoke models via the Yhat REST API. [datarobot](https://
     cran.rstudio.com/web/packages/datarobot/index.html) works with Data Robot’s
@@ -674,7 +674,7 @@ memory web files.
     cran.rstudio.com/web/packages/banR/index.html) provides access to the “Base Adresses Nationale” (BAN) API for French addresses.
   - *Online Surveys*: [qualtRics](https://cran.rstudio.com/web/packages/
     qualtRics/index.html) provide functions to interact with [Qualtrics](https:/
-    /www.qualtrics.com/) . [WufooR](https://cran.rstudio.com/web/packages/
+    /www.qualtrics.com/). [WufooR](https://cran.rstudio.com/web/packages/
     WufooR/index.html) ([GitHub](https://github.com/dmpe/wufoor) ) can retrieve
     data from [Wufoo.com](https://www.wufoo.com/) forms. [redcapAPI](https://
     cran.rstudio.com/web/packages/redcapAPI/index.html) ([GitHub](https://
@@ -753,7 +753,7 @@ memory web files.
     cran.rstudio.com/web/packages/ganalytics/index.html), and [RGA](https://
     cran.rstudio.com/web/packages/RGA/index.html) provide functions for
     accessing and retrieving data from the [Google Analytics APIs](https://
-    developers.google.com/analytics/) . The latter supports OAuth 2.0
+    developers.google.com/analytics/). The latter supports OAuth 2.0
     authorization. [RGA](https://cran.rstudio.com/web/packages/RGA/index.html)
     provides a shiny app to explore data. [searchConsoleR](https://
     cran.rstudio.com/web/packages/searchConsoleR/index.html) links to the
@@ -804,7 +804,7 @@ memory web files.
     [Orcid.org](https://orcid.org/) API, which can be used for identifying
     scientific authors and their publications (e.g., by DOI).
     [rdatacite](https://cran.rstudio.com/web/packages/rdatacite/index.html)
-    connects to [DataCite](https://datacite.org/) , which manages DOIs and
+    connects to [DataCite](https://datacite.org/), which manages DOIs and
     metadata for scholarly datasets. [scholar](https://cran.rstudio.com/web/
     packages/scholar/index.html) provides functions to extract citation data
     from Google Scholar. [rscopus](https://cran.rstudio.com/web/packages/
@@ -835,7 +835,7 @@ memory web files.
     index.html) provides an interface to the [Unpaywall API](https://
     unpaywall.org/products/api) for finding free full-text versions of academic
     papers. [rcoreoa](https://cran.rstudio.com/web/packages/rcoreoa/index.html)
-    is an interface to the [CORE API](https://core.ac.uk/docs/) , a search
+    is an interface to the [CORE API](https://core.ac.uk/docs/), a search
     interface for open access scholarly articles. [rcrossref](https://
     cran.rstudio.com/web/packages/rcrossref/index.html) is an interface to
     Crossref’s API, [crminer](https://cran.rstudio.com/web/packages/crminer/
@@ -859,7 +859,7 @@ memory web files.
     ‘production’ wikis, such as Wikipedia. [WikidataR](https://cran.rstudio.com/
     web/packages/WikidataR/index.html) ([GitHub](https://github.com/Ironholds/
     WikidataR) ) can request data from [Wikidata.org](https://www.wikidata.org/
-    wiki/Wikidata:Main_Page) , the free knowledgebase. [wikipediatrend](https://
+    wiki/Wikidata:Main_Page), the free knowledgebase. [wikipediatrend](https://
     cran.rstudio.com/web/packages/wikipediatrend/index.html) ([GitHub](https://
     github.com/petermeissner/wikipediatrend) ) provides access to Wikipedia
     page access statistics. [WikidataQueryServiceR](https://cran.rstudio.com/
@@ -887,11 +887,11 @@ memory web files.
   - [rerddap](https://cran.rstudio.com/web/packages/rerddap/index.html): A
     generic R client to interact with any ERDDAP instance, which is a special
     case of OPeNDAP ( <https://en.wikipedia.org/wiki/OPeNDAP> ), or *Open-
-    source Project for a Network Data Access Protocol* . Allows user to swap
+    source Project for a Network Data Access Protocol*. Allows user to swap
     out the base URL to use any ERDDAP instance.
 
   - [RStripe](https://cran.rstudio.com/web/packages/RStripe/index.html)
-    provides an interface to [Stripe](https://stripe.com/) , an online payment
+    provides an interface to [Stripe](https://stripe.com/), an online payment
     processor.
 
   - [slackr](https://cran.rstudio.com/web/packages/slackr/index.html) is a
@@ -903,7 +903,7 @@ memory web files.
 
   - [<span class="GitHub">useRsnap</span>](https://github.com/nealrichardson/
     useRsnap/) (not on CRAN) provides an interface to the API for
-    [Usersnap](https://www.pivotaltracker.com/) , a tool for collecting
+    [Usersnap](https://www.pivotaltracker.com/), a tool for collecting
     feedback from web application users.
 
   - [duckduckr](https://cran.rstudio.com/web/packages/duckduckr/index.html) is
