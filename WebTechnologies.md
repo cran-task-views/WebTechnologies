@@ -387,7 +387,8 @@ memory web files.
   - Several packages offer functionality for turning R code into a web API.
     [FastRWeb](https://cran.rstudio.com/web/packages/FastRWeb/index.html)
     provides some basic infrastructure for this. [plumber](https://
-    cran.rstudio.com/web/packages/plumber/index.html) allows you to create a REST API by decorating existing R source code.
+    cran.rstudio.com/web/packages/plumber/index.html) allows you to create a REST API by decorating existing R source code. [beakr](https://cran.r-
+    project.org/web/packages/beakr/index.html) provides an R version of functionality found in python Flask and javascript Express.js.
   - The [<span class="Ohat">WADL</span>](http://www.Omegahat.net/WADL/) package
     provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
   - The [<span class="Ohat">RDCOMServer</span>](http://www.Omegahat.net/
