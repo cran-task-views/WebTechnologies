@@ -679,7 +679,8 @@ memory web files.
     WufooR/index.html) ([GitHub](https://github.com/dmpe/wufoor) ) can retrieve
     data from [Wufoo.com](https://www.wufoo.com/) forms. [redcapAPI](https://
     cran.rstudio.com/web/packages/redcapAPI/index.html) ([GitHub](https://
-    github.com/nutterb/redcapAPI) ) can provide access to data stored in a
+    github.com/nutterb/redcapAPI) ) and [REDCapR](https://CRAN.R-project.org/package=REDCapR)
+    ([GitHub](https://github.com/OuhscBbmc/REDCapR)) can provide access to data stored in a
     REDCap (Research Electronic Data CAPture) database, which is a web
     application for building and managing online surveys and databases
     developed at Vanderbilt University. [<span class="GitHub">formr</
@@ -1051,6 +1052,7 @@ memory web files.
   - [rdatacite](https://cran.rstudio.com/web/packages/rdatacite/index.html)
   - [rdrop2](https://cran.rstudio.com/web/packages/rdrop2/index.html)
   - [redcapAPI](https://cran.rstudio.com/web/packages/redcapAPI/index.html)
+  - [REDcapR](https://CRAN.R-project.org/package=REDCapR)
   - [repmis](https://cran.rstudio.com/web/packages/repmis/index.html)
   - [reqres](https://cran.rstudio.com/web/packages/reqres/index.html)
   - [request](https://cran.rstudio.com/web/packages/request/index.html)
