@@ -47,7 +47,7 @@ both crul and httr. curl may be useful for operations on web-based XML or to
 perform FTP operations (as crul and httr are focused primarily on HTTP).
 `curl::curl()` is an SSL-compatible replacement for base R’s `url()` and has
 support for http 2.0, SSL (https, ftps), gzip, deflate and more. For websites
-serving insecure HTTP (i.e. using the “http” not “https” prefix), most R
+serving insecure HTTP (i.e. using the "http" not "https" prefix), most R
 functions can extract data directly, including `read.table` and `read.csv`;
 this also applies to functions in add-on packages such as
 `jsonlite::fromJSON()` and `XML::parseXML`. For more specific situations, the
@@ -68,7 +68,7 @@ following resources may be useful:
     to display results), `r pkg("RSelenium")` can be used to automate those interactions and extract
     page contents. It provides a set of bindings for the Selenium 2.0 webdriver
     using the `r pkg("JsonWireProtocol")`. It can also aid in automated application testing, load
-    testing, and web scraping. `r pkg("seleniumPipes")` provides a “pipe”-oriented interface to the
+    testing, and web scraping. `r pkg("seleniumPipes")` provides a "pipe"-oriented interface to the
     same. An alternative to the former two packages is `r pkg("splashr")` that vouches to be a
     lightweight alternative. [<span class="GitHub">rdom</span>](https://
     github.com/cpsievert/rdom/) (not on CRAN) uses `r pkg("phantomjs")` to access a webpage’s Document Object Model (DOM).
@@ -79,7 +79,7 @@ following resources may be useful:
     `r pkg("rvest")`, which is
     designed to work with `r pkg("magrittr")` to make it easy to express common web scraping tasks.
   - Many base R tools can be used to download web content, provided that the
-    website does not use SSL (i.e., the URL does not have the “https” prefix).
+    website does not use SSL (i.e., the URL does not have the "https" prefix).
     `download.file()` is a general purpose function that can be used to download
     a remote file. For SSL, the `download()` function in `r pkg("downloader")` wraps
     `download.file()`, and takes all the same arguments.
@@ -152,7 +152,7 @@ memory web files.
     different elements and hidden fields. `r pkg("scrapeR")` provides additional tools for scraping
     data from HTML documents.
     `r pkg("htmltidy")`
-    provides tools to “tidy”
+    provides tools to "tidy"
     messy HTML documents. `r pkg("htm2txt")` uses regex to converts html documents to plain text by
     removing all html tags. `r pkg("Rcrawler")` does crawling and scraping of web pages.
   - *JSON*: There are several packages for reading and writing JSON:
@@ -164,9 +164,9 @@ memory web files.
     We recommend using `r pkg("jsonlite", priority = "core")`. Check out the paper describing jsonlite by Jeroen
     Ooms <https://arxiv.org/abs/1403.2805>. `r pkg("jqr")` provides bindings for the fast JSON library,
     `r pkg("jq")`. `r pkg("jsonvalidate")` validates JSON against a schema using
-    the “is-my-json-valid” Javascript library; `r pkg("ajv")` does the same using the ajv Javascript
+    the "is-my-json-valid" Javascript library; `r pkg("ajv")` does the same using the ajv Javascript
     library. `r pkg("ndjson")`
-    supports the “ndjson”
+    supports the "ndjson"
     format.
   - *RSS/Atom*: `r pkg("feedeR")` can be used to parse RSS or Atom feeds. `r pkg("tidyRSS")` parses RSS, Atom XML/JSON
     and geoRSS into a tidy data.frame.
@@ -288,7 +288,7 @@ memory web files.
     exchanged through the Statistical Data and Metadata Exchange (SDMX)
     framework. The package currently focuses on the SDMX XML standard format
     (SDMX-ML). `r pkg("robotstxt")` provides functions and classes for parsing robots.txt files and
-    checking access permissions; `r pkg("spiderbar")` does the same. `r pkg("uaparserjs")` uses the javascript [“ua-parser”
+    checking access permissions; `r pkg("spiderbar")` does the same. `r pkg("uaparserjs")` uses the javascript ["ua-parser"
     library](https://github.com/ua-parser) to parse User-Agent HTTP headers.
     `r pkg("rapiclient")` is
     a client for consuming APIs that follow the [Open API format](https://
@@ -556,7 +556,7 @@ memory web files.
     sf-compatible interface to Google Maps API. `r pkg("leafletR")`: Allows you to display
     your spatial data on interactive web-maps using the open-source JavaScript
     library Leaflet. `r pkg("openadds")` is an
-    `r pkg("Openaddresses")` client, and `r pkg("banR")` provides access to the “Base Adresses Nationale” (BAN) API for French addresses.
+    `r pkg("Openaddresses")` client, and `r pkg("banR")` provides access to the "Base Adresses Nationale" (BAN) API for French addresses.
   - *Online Surveys*: `r pkg("qualtRics")` provide functions to interact with `r pkg("Qualtrics")`. `r pkg("WufooR")` can retrieve
     data from [Wufoo.com](https://www.wufoo.com/) forms. `r pkg("redcapAPI")` and `r pkg("REDCapR")`
     can provide access to data stored in a
