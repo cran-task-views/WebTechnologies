@@ -70,8 +70,7 @@ following resources may be useful:
     using the `r pkg("JsonWireProtocol")`. It can also aid in automated application testing, load
     testing, and web scraping. `r pkg("seleniumPipes")` provides a "pipe"-oriented interface to the
     same. An alternative to the former two packages is `r pkg("splashr")` that vouches to be a
-    lightweight alternative. [<span class="GitHub">rdom</span>](https://
-    github.com/cpsievert/rdom/) (not on CRAN) uses `r pkg("phantomjs")` to access a webpage’s Document Object Model (DOM).
+    lightweight alternative. `r github("cpsievert/rdom")` (not on CRAN) uses `r pkg("phantomjs")` to access a webpage’s Document Object Model (DOM).
   - For capturing static content of web pages `r pkg("postlightmercury")` is a client for
     the web service `r pkg("Mercury")` that turns web
     pages into structured and clean text.
@@ -305,8 +304,7 @@ memory web files.
     written in React.js.
   - Other web frameworks include: `r pkg("fiery")` that is meant to be more flexible but less easy to use
     than shiny (`r pkg("reqres")` and `r pkg("routr")` are utilities used by fiery that provide HTTP request and
-    response classes, and HTTP routing, respectively); [<span
-    class="GitHub">rcloud</span>](https://github.com/att/rcloud/) provides an
+    response classes, and HTTP routing, respectively); `r github("att/rcloud")` provides an
     iPython notebook-style web-based R interface; and `r pkg("Rook")`, which contains the
     specification and convenience software for building and running Rook
     applications.
@@ -480,18 +478,15 @@ memory web files.
 
   - *Geospatial/Geolocation/Geocoding*: Several packages connect to geolocation/
     geocoding services. `r pkg("rgeolocate")` ( )
-    offers several online and offline tools. [<span class="GitHub">rydn</
-    span>](https://github.com/trestletech/rydn/) (not on CRAN) is an interface
-    to the Yahoo Developers network geolocation APIs, and [<span
-    class="GitHub">ipapi</span>](https://github.com/hrbrmstr/ipapi/) can be
+    offers several online and offline tools. `r github("trestletech/rydn")` (not on CRAN) is an interface
+    to the Yahoo Developers network geolocation APIs, and
+    `r github("hrbrmstr/ipapi")` can be
     used to geolocate IPv4/6 addresses and/or domain names using the <http://ip-
     api.com/> API. `r pkg("opencage")` provides
     access to to the `r pkg("OpenCage")` geocoding service.
-    [<span class="GitHub">nominatim</span>](https://github.com/hrbrmstr/
-    nominatim/) (not on CRAN) connects to the [OpenStreetMap Nominatim
-    API](https://github.com/hrbrmstr/nominatim) for reverse geocoding. [<span
-    class="GitHub">PostcodesioR</span>](https://github.com/ropensci/
-    PostcodesioR/) (not on CRAN) provides post code lookup and geocoding for
+    `r github("hrbrmstr/nominatim")`
+    (not on CRAN) connects to the [OpenStreetMap Nominatim
+    API](https://github.com/hrbrmstr/nominatim) for reverse geocoding. `r github("ropensci/PostcodesioR")` (not on CRAN) provides post code lookup and geocoding for
     the United Kingdom. `r pkg("geosapi")` is an R client for the `r pkg("GeoServer")` REST
     API, an open source implementation used widely for serving spatial data.
     `r pkg("geonapi")`
@@ -562,8 +557,7 @@ memory web files.
     can provide access to data stored in a
     REDCap (Research Electronic Data CAPture) database, which is a web
     application for building and managing online surveys and databases
-    developed at Vanderbilt University. [<span class="GitHub">formr</
-    span>](https://github.com/rubenarslan/formr/) facilitates use of the
+    developed at Vanderbilt University. `r github("rubenarslan/formr")` facilitates use of the
     `r pkg("formr")` survey framework, which is built on openCPU.
     `r pkg("Rexperigen")`
     is a client for the [Experigen experimental platform](https://
@@ -596,14 +590,10 @@ memory web files.
     connects to the `r pkg("Pintrest")` API.
   - `r pkg("vkR")` is a client for
     VK, a social networking site based in Russia.
-  - [<span class="GitHub">meetupr</span>](https://github.com/rladies/meetupr/)
-    is a client for the Meetup.com API.
+  - `r github("rladies/meetupr")` is a client for the Meetup.com API.
   - *Twitter*: `r pkg("twitteR")` provides an
     interface to the Twitter web API. It claims to be deprecated in favor of
-    `r pkg("rtweet")`
-    ( ). [<span
-    class="GitHub">twitterreport</span>](https://github.com/gvegayon/
-    twitterreport/) (not on CRAN) focuses on report generation based on Twitter
+    `r pkg("rtweet")`. `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter
     data. `r pkg("streamR")`
     provides a series of functions that allow users to access Twitter’s filter,
     sample, and user streams, and to parse the output into data frames. OAuth
@@ -631,9 +621,7 @@ memory web files.
     provides a shiny app to explore data. `r pkg("searchConsoleR")` links to the
     [Google Search Console](https://developers.google.com/webmaster-tools/)
     (formerly Webmaster Tools).
-  - *Online Advertising*: `r pkg("fbRads")` can manage Facebook ads via the Facebook Marketing API. [<span
-    class="GitHub">RDoubleClick</span>](https://github.com/WillemPaling/
-    RDoubleClick/) (not on CRAN) can retrieve data from Google’s DoubleClick
+  - *Online Advertising*: `r pkg("fbRads")` can manage Facebook ads via the Facebook Marketing API. `r github("WillemPaling/RDoubleClick")` (not on CRAN) can retrieve data from Google’s DoubleClick
     Campaign Manager Reporting API. `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data provided by
     [Smartly.io](https://app.smartly.io/) .
   - *Other services*: `r pkg("RSiteCatalyst")` has functions for accessing the Adobe Analytics
@@ -718,8 +706,7 @@ memory web files.
     forum platform. The API is for an installed instance of Discourse, not for
     the Discourse site itself.
 
-  - [<span class="GitHub">mockaRoo</span>](https://github.com/stephlocke/
-    mockaRoo/) (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/
+  - `r github("stephlocke/mockaRoo")` (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/
     api/docs) to generate mock or fake data based on an input schema.
 
   - `r pkg("randNames")`
@@ -739,12 +726,11 @@ memory web files.
   - `r pkg("slackr")` is a
     client for Slack.com messaging platform.
 
-  - [<span class="GitHub">stackr</span>](https://github.com/dgrtwo/stackr/)
+  - `r github("dgrtwo/stackr")`
     (not on CRAN): An unofficial wrapper for the read-only features of the
     [Stack Exchange API](https://api.stackexchange.com/) .
 
-  - [<span class="GitHub">useRsnap</span>](https://github.com/nealrichardson/
-    useRsnap/) (not on CRAN) provides an interface to the API for
+  - `r github("nealrichardson/useRsnap")` (not on CRAN) provides an interface to the API for
     `r pkg("Usersnap")`, a tool for collecting
     feedback from web application users.
 
