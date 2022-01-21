@@ -68,7 +68,7 @@ following resources may be useful:
     to display results), `r pkg("RSelenium")` can be used to automate those interactions and extract
     page contents. It provides a set of bindings for the Selenium 2.0 webdriver
     using the `r pkg("JsonWireProtocol")`. It can also aid in automated application testing, load
-    testing, and web scraping. `r pkg("seleniumPipes")` (`r pkg("GitHub")` ) provides a “pipe”-oriented interface to the
+    testing, and web scraping. `r pkg("seleniumPipes")` provides a “pipe”-oriented interface to the
     same. An alternative to the former two packages is `r pkg("splashr")` that vouches to be a
     lightweight altnernative. [<span class="GitHub">rdom</span>](https://
     github.com/cpsievert/rdom/) (not on CRAN) uses `r pkg("phantomjs")` to access a webpage’s Document Object Model (DOM).
@@ -89,7 +89,7 @@ following resources may be useful:
     the file into R as a character vector before parsing with
     `read.table(text=...)`, or you can download the file to a local directory.
     `r pkg("rio")`
-    (`r pkg("GitHub")` ) provides an `import()` function
+    provides an `import()` function
     that can read a number of common data formats directly from an https://
     URL. The `r pkg("repmis")`
     function `source_data()` can load and cache plain-text data from a URL
@@ -130,11 +130,11 @@ specifically working with these format. These functions can be used to interact
 directly with insecure web pages or can be used to parse locally stored or in-
 memory web files.
 
-  - *XML*: There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2")` (`r pkg("GitHub")` ). Both support general XML (and HTML) parsing, including XPath
+  - *XML*: There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2")` ( ). Both support general XML (and HTML) parsing, including XPath
     queries. The package `r pkg("xml2")` is less fully featured, but more user friendly with respect to
     memory management, classes (e.g., XML node vs. node set vs. document), and
     namespaces. Of the two, only the `r pkg("XML")` supports *de novo* creation of XML nodes and
-    documents. The `r pkg("XML2R")`(`r pkg("GitHub")`) package is a
+    documents. The `r pkg("XML2R")`package is a
     collection of convenient functions for coercing XML into data frames. An
     alternative to `r pkg("XML")`
     is `r pkg("selectr")`, which parses CSS3
@@ -152,7 +152,7 @@ memory web files.
     different elements and hidden fields. `r pkg("scrapeR")` provides additional tools for scraping
     data from HTML documents.
     `r pkg("htmltidy")`
-    (`r pkg("GitHub")` ) provides tools to “tidy”
+    provides tools to “tidy”
     messy HTML documents. `r pkg("htm2txt")` uses regex to converts html documents to plain text by
     removing all html tags. `r pkg("Rcrawler")` does crawling and scraping of web pages.
   - *JSON*: There are several packages for reading and writing JSON:
@@ -163,10 +163,10 @@ memory web files.
     includes a different parser from `r pkg("RJSONIO")` called `r pkg("yajl")` .
     We recommend using `r pkg("jsonlite")`. Check out the paper describing jsonlite by Jeroen
     Ooms <https://arxiv.org/abs/1403.2805>. `r pkg("jqr")` provides bindings for the fast JSON library,
-    `r pkg("jq")`. `r pkg("jsonvalidate")` (`r pkg("GitHub")` ) validates JSON against a schema using
+    `r pkg("jq")`. `r pkg("jsonvalidate")` validates JSON against a schema using
     the “is-my-json-valid” Javascript library; `r pkg("ajv")` does the same using the ajv Javascript
     library. `r pkg("ndjson")`
-    (`r pkg("GitHub")` ) supports the “ndjson”
+    supports the “ndjson”
     format.
   - *RSS/Atom*: `r pkg("feedeR")` can be used to parse RSS or Atom feeds. `r pkg("tidyRSS")` parses RSS, Atom XML/JSON
     and geoRSS into a tidy data.frame.
@@ -179,7 +179,7 @@ memory web files.
   - The `httr::parse_url()` function can be used to extract portions of a URL.
     The `RCurl::URLencode()` and `utils::URLencode()` functions can be used to
     encode character strings for use in URLs. `utils::URLdecode()` decodes back
-    to the original strings. `r pkg("urltools")` (`r pkg("GitHub")` ) can
+    to the original strings. `r pkg("urltools")` can
     also handle URL encoding, decoding, parsing, and parameter extraction.
   - `r pkg("iptools")` can
     facilitate working with IPv4 addresses, including for use in geolocation. A
@@ -283,12 +283,12 @@ memory web files.
     works with httr.
   - *Miscellaneous*: `r pkg("webutils")` contains various functions for developing web applications,
     including parsers for `application/x-www-form-urlencoded` as well as
-    `multipart/form-data`. `r pkg("mime")` (`r pkg("GitHub")` ) guesses the MIME type
+    `multipart/form-data`. `r pkg("mime")` guesses the MIME type
     for a file from its extension. `r pkg("rsdmx")` provides tools to read data and metadata documents
     exchanged through the Statistical Data and Metadata Exchange (SDMX)
     framework. The package currently focuses on the SDMX XML standard format
     (SDMX-ML). `r pkg("robotstxt")` provides functions and classes for parsing robots.txt files and
-    checking access permissions; `r pkg("spiderbar")` does the same. `r pkg("uaparserjs")` (`r pkg("GitHub")` ) uses the javascript [“ua-parser”
+    checking access permissions; `r pkg("spiderbar")` does the same. `r pkg("uaparserjs")` uses the javascript [“ua-parser”
     library](https://github.com/ua-parser) to parse User-Agent HTTP headers.
     `r pkg("rapiclient")` is
     a client for consuming APIs that follow the [Open API format](https://
@@ -330,7 +330,7 @@ memory web files.
   - [rapporter.net](http://rapporter.net/welcome/en) provides an online
     environment (SaaS) to host and run `r pkg("rapport")` statistical report templates in the cloud.
   - `r pkg("radiant")`
-    (`r pkg("GitHub")` ) is Shiny-based GUI for R that runs in a browser from a server or local machine.
+    is Shiny-based GUI for R that runs in a browser from a server or local machine.
   - The `r pkg("Tiki")` Wiki CMS/Groupware
     framework has an R plugin (`r pkg("PluginR")` ) to run R code from wiki pages, and use data from their own collected web databases (trackers). A demo: <https://r.tiki.org/tiki-index.php> .
   - The `r pkg("MediaWiki")` has an extension
@@ -356,7 +356,7 @@ memory web files.
       - *DBREST*: [<span class="Ohat">RAmazonDBREST</span>](http://
         www.Omegahat.net/RAmazonDBREST/) provides an interface to Amazon’s Simple DB API.
       - `r pkg("paws")`
-        (`r pkg("GitHub")` ) is an interface to nearly all AWS APIs, including compute, storage, databases, and machine learning. It also requires no external system dependencies.
+        is an interface to nearly all AWS APIs, including compute, storage, databases, and machine learning. It also requires no external system dependencies.
   - Azure and Microsoft 365 are Microsoft’s cloud computing services. The Azure
     platform provides Paas, SaaS and IaaS and supports many different tools and
     frameworks, including both Microsoft-specific and third-party systems;
@@ -415,7 +415,7 @@ memory web files.
   - `r pkg("googleComputeEngineR")` interacts with the Google Compute Engine API, and lets you create, start and stop instances in the Google Cloud.
   - *Cloud Storage*: `r pkg("googleCloudStorageR")` interfaces with Google Cloud
     Storage. `r pkg("boxr")`
-    (`r pkg("GitHub")` ) is a lightweight, high-level
+    is a lightweight, high-level
     interface for the [box.com API](https://developer.box.com/reference/) .
     `r pkg("rdrop2")` is a
     Dropbox interface that provides access to a full suite of file operations,
@@ -427,17 +427,17 @@ memory web files.
     including base R, RStudio server, and more. There’s an improving interface
     to interact with docker on your remote droplets via this package.
   - `r pkg("crunch")`
-    `r pkg("GitHub")` provides an interface to the
+     provides an interface to the
     [crunch.io](https://crunch.io/) storage and analytics platform.
     `r pkg("crunchy")`
-    `r pkg("GitHub")` facilitates making Shiny
+     facilitates making Shiny
     apps on Crunch.
   - `r pkg("rrefine")`
     provides a client for the `r pkg("OpenRefine")` (formerly Google Refine) data cleaning service.
 
 **Document and Code Sharing**
 
-  - *Code Sharing*: `r pkg("gistr")` (`r pkg("GitHub")` ) works with
+  - *Code Sharing*: `r pkg("gistr")` works with
     GitHub gists ([gist.github.com](https://gist.github.com/discover) ) from R,
     allowing you to create new gists, update gists with new files, rename
     files, delete files, get and delete gists, star and un-star gists, fork
@@ -447,10 +447,10 @@ memory web files.
     bindings to the git version control system and `r pkg("gh")` is a client for the GitHub
     API. `r pkg("gitlabr")` is
     a `r pkg("GitLab")` -specific client.
-  - *Data archiving*: `r pkg("dataverse")` (`r pkg("GitHub")`
-    ) provides access to Dataverse 4 APIs. `r pkg("rfigshare")` (`r pkg("GitHub")` ) connects with [Figshare.com](https://figshare.com/) .
+  - *Data archiving*: `r pkg("dataverse")` (
+    ) provides access to Dataverse 4 APIs. `r pkg("rfigshare")` connects with [Figshare.com](https://figshare.com/) .
     `r pkg("dataone")`
-    (`r pkg("GitHub")` ) provides a client for
+    provides a client for
     `r pkg("DataONE")` repositories.
   - *Google Drive/Google Documents*: The [<span class="Ohat">RGoogleDocs</
     span>](http://www.Omegahat.net/RGoogleDocs/) package is an example of using
@@ -461,14 +461,14 @@ memory web files.
     Google’s storage. We can upload and download content, create, list and
     delete folders/buckets, and set access control permissions on objects and
     buckets.
-  - *Google Sheets*: `r pkg("googlesheets")` (`r pkg("GitHub")`
+  - *Google Sheets*: `r pkg("googlesheets")` (
     ) can access private or public Google Sheets by title, key, or URL. Extract
     data or edit data. Create, delete, rename, copy, upload, or download
-    spreadsheets and worksheets. `r pkg("gsheet")` (`r pkg("GitHub")` ) can
+    spreadsheets and worksheets. `r pkg("gsheet")` can
     download Google Sheets using just the sharing link. Spreadsheets can be
     downloaded as a data frame, or as plain text to parse manually.
   - `r pkg("imguR")`
-    (`r pkg("GitHub")` ) is a package to share plots
+    is a package to share plots
     using the image hosting service [Imgur.com](https://imgur.com/). knitr
     also has a function `imgur_upload()` to load images from literate
     programming documents.
@@ -479,13 +479,13 @@ memory web files.
 **Data Analysis and Processing Services**
 
   - *Geospatial/Geolocation/Geocoding*: Several packages connect to geolocation/
-    geocoding services. `r pkg("rgeolocate")` (`r pkg("GitHub")` )
+    geocoding services. `r pkg("rgeolocate")` ( )
     offers several online and offline tools. [<span class="GitHub">rydn</
     span>](https://github.com/trestletech/rydn/) (not on CRAN) is an interface
     to the Yahoo Developers network geolocation APIs, and [<span
     class="GitHub">ipapi</span>](https://github.com/hrbrmstr/ipapi/) can be
     used to geolocate IPv4/6 addresses and/or domain names using the <http://ip-
-    api.com/> API. `r pkg("opencage")` (`r pkg("GitHub")` ) provides
+    api.com/> API. `r pkg("opencage")` provides
     access to to the `r pkg("OpenCage")` geocoding service.
     [<span class="GitHub">nominatim</span>](https://github.com/hrbrmstr/
     nominatim/) (not on CRAN) connects to the [OpenStreetMap Nominatim
@@ -501,18 +501,18 @@ memory web files.
     such Web Feature Service (WFS) for data and Catalogue Service (CSW) for
     metadata.
   - *Machine Learning as a Service*: Several packages provide access to cloud-
-    based machine learning services. `r pkg("OpenML")` (`r pkg("GitHub")` )
+    based machine learning services. `r pkg("OpenML")` ( )
     is the official client for [the OpenML API](https://www.openml.org/frontend/
-    page/home). `r pkg("clarifai")` (`r pkg("GitHub")` ) is a
+    page/home). `r pkg("clarifai")` is a
     [Clarifai.com](https://www.clarifai.com/) client that enables automated
-    image description. `r pkg("rLTP")` (`r pkg("GitHub")` ) accesses the
+    image description. `r pkg("rLTP")` accesses the
     [ltp-cloud service](https://www.ltp-cloud.com/). `r pkg("languagelayeR")` is a client for
     Languagelayer, a language detection API. `r pkg("googlepredictionapi")` (not on CRAN):
     is an R client for the [Google Prediction API](https://cloud.google.com/ai-
     platform), a suite of cloud machine learning tools. `r pkg("yhatr")` lets you deploy, maintain,
     and invoke models via the Yhat REST API. `r pkg("datarobot")` works with Data Robot’s
-    predictive modeling platform. `r pkg("mscsweblm4r")` (`r pkg("GitHub")` ) interfaces with the Microsoft Cognitive Services Web
-    Language Model API and `r pkg("mscstexta4r")` (`r pkg("GitHub")` ) uses the Microsoft Cognitive Services Text Analytics REST
+    predictive modeling platform. `r pkg("mscsweblm4r")` interfaces with the Microsoft Cognitive Services Web
+    Language Model API and `r pkg("mscstexta4r")` uses the Microsoft Cognitive Services Text Analytics REST
     API. `r pkg("rosetteApi")` links to the `r pkg("Rosette")` text
     analysis API. `r pkg("googleLanguageR")` provides interfaces to Google’s Cloud
     Translation API, Natural Language API, Cloud Speech API, and the Cloud Text-
@@ -521,13 +521,13 @@ memory web files.
   - *Machine Translation*: `r pkg("translate")` provides bindings for the Google Translate API v2 and
     `r pkg("translateR")`
     provides bindings for both Google and Microsoft translation APIs.
-    `r pkg("RYandexTranslate")` (`r pkg("GitHub")` )
+    `r pkg("RYandexTranslate")` ( )
     connects to Yandex Translate. `r pkg("transcribeR")` provides automated audio transcription via
     the HP IDOL service.
-  - *Document Processing*: `r pkg("abbyyR")` `r pkg("GitHub")` and
+  - *Document Processing*: `r pkg("abbyyR")`  and
     `r pkg("captr")`
-    (`r pkg("GitHub")` ) connect to optical character
-    recognition (OCR) APIs. `r pkg("pdftables")` (`r pkg("GitHub")` )
+    connect to optical character
+    recognition (OCR) APIs. `r pkg("pdftables")` ( )
     uses [the PDFTables.com webservice](https://pdftables.com/) to extract
     tables from PDFs.
   - *Mapping*: `r pkg("osmar")`
@@ -537,7 +537,7 @@ memory web files.
     objects). `r pkg("osrm")`
     provides shortest paths and travel times from OpenStreetMap.
     `r pkg("osmplotr")`
-    (`r pkg("GitHub")` ) extracts customizable map
+    extracts customizable map
     images from OpenStreetMap. `r pkg("RgoogleMaps")` serves two purposes: it provides a
     comfortable R interface to query the Google server for static maps, and use
     the map as a background image to overlay plots within R. [<span
@@ -555,11 +555,11 @@ memory web files.
     `r pkg("mapsapi")` is an
     sf-compatible interface to Google Maps API. `r pkg("leafletR")`: Allows you to display
     your spatial data on interactive web-maps using the open-source JavaScript
-    library Leaflet. `r pkg("openadds")` (`r pkg("GitHub")` ) is an
+    library Leaflet. `r pkg("openadds")` is an
     `r pkg("Openaddresses")` client, and `r pkg("banR")` provides access to the “Base Adresses Nationale” (BAN) API for French addresses.
-  - *Online Surveys*: `r pkg("qualtRics")` provide functions to interact with `r pkg("Qualtrics")`. `r pkg("WufooR")` (`r pkg("GitHub")` ) can retrieve
-    data from [Wufoo.com](https://www.wufoo.com/) forms. `r pkg("redcapAPI")` (`r pkg("GitHub")` ) and `r pkg("REDCapR")`
-    (`r pkg("GitHub")`) can provide access to data stored in a
+  - *Online Surveys*: `r pkg("qualtRics")` provide functions to interact with `r pkg("Qualtrics")`. `r pkg("WufooR")` can retrieve
+    data from [Wufoo.com](https://www.wufoo.com/) forms. `r pkg("redcapAPI")` and `r pkg("REDCapR")`
+    can provide access to data stored in a
     REDCap (Research Electronic Data CAPture) database, which is a web
     application for building and managing online surveys and databases
     developed at Vanderbilt University. [<span class="GitHub">formr</
@@ -589,7 +589,7 @@ memory web files.
     package provides an interface to the Flickr photo management and sharing
     application Web service. (not on CRAN)
   - `r pkg("instaR")`
-    (`r pkg("GitHub")` ) is a client for the [Instagram API](https://www.instagram.com/developer/) .
+    is a client for the [Instagram API](https://www.instagram.com/developer/) .
   - `r pkg("Rlinkedin")` is
     a client for the LinkedIn API. Auth is via OAuth.
   - `r pkg("rpinterest")`
@@ -598,10 +598,10 @@ memory web files.
     VK, a social networking site based in Russia.
   - [<span class="GitHub">meetupr</span>](https://github.com/rladies/meetupr/)
     is a client for the Meetup.com API.
-  - *Twitter*: `r pkg("twitteR")` (`r pkg("GitHub")` ) provides an
+  - *Twitter*: `r pkg("twitteR")` provides an
     interface to the Twitter web API. It claims to be deprecated in favor of
     `r pkg("rtweet")`
-    (`r pkg("GitHub")` ). [<span
+    ( ). [<span
     class="GitHub">twitterreport</span>](https://github.com/gvegayon/
     twitterreport/) (not on CRAN) focuses on report generation based on Twitter
     data. `r pkg("streamR")`
@@ -616,7 +616,7 @@ memory web files.
     Both raw text and aggregate statistics are available, as well as project
     and query management functions.
   - `r pkg("hackeRnews")`
-    (`r pkg("GitHub")` ) is a client for the
+    is a client for the
     [Official Hacker News API](https://github.com/HackerNews/API) .
 
 **Web Analytics Services**
@@ -634,15 +634,15 @@ memory web files.
   - *Online Advertising*: `r pkg("fbRads")` can manage Facebook ads via the Facebook Marketing API. [<span
     class="GitHub">RDoubleClick</span>](https://github.com/WillemPaling/
     RDoubleClick/) (not on CRAN) can retrieve data from Google’s DoubleClick
-    Campaign Manager Reporting API. `r pkg("RSmartlyIO")` (`r pkg("GitHub")` ) loads Facebook and Instagram advertising data provided by
+    Campaign Manager Reporting API. `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data provided by
     [Smartly.io](https://app.smartly.io/) .
   - *Other services*: `r pkg("RSiteCatalyst")` has functions for accessing the Adobe Analytics
     (Omniture SiteCatalyst) Reporting API.
   - `r pkg("RAdwords")`
-    (`r pkg("GitHub")` ) is a package for
+    is a package for
     loading Google Adwords data.
   - `r pkg("webreadr")`
-    (`r pkg("GitHub")` ) can process various
+    can process various
     common forms of request log, including the Common and Combined Web Log
     formats and AWS logs.
 
@@ -656,13 +656,13 @@ memory web files.
 
   - *Push Notifications*: `r pkg("RPushbullet")` provides an easy-to-use interface for the
     Pushbullet service which provides fast and efficient notifications between
-    computers, phones and tablets. `r pkg("pushoverr")` (`r pkg("GitHub")` ) can sending push notifications to mobile devices (iOS and
+    computers, phones and tablets. `r pkg("pushoverr")` can sending push notifications to mobile devices (iOS and
     Android) and desktop using `r pkg("Pushover")` .
     `r pkg("notifyme")`
-    (`r pkg("GitHub")` ) can control Phillips Hue
+    can control Phillips Hue
     lighting.
 
-  - *Reference/bibliography/citation management*: `r pkg("rorcid")` (`r pkg("GitHub")` ) is a programmatic interface the
+  - *Reference/bibliography/citation management*: `r pkg("rorcid")` is a programmatic interface the
     [Orcid.org](https://orcid.org/) API, which can be used for identifying
     scientific authors and their publications (e.g., by DOI).
     `r pkg("rdatacite")`
@@ -694,26 +694,26 @@ memory web files.
     Crossref’s API, `r pkg("crminer")` extracts full text from scholarly articles retrieved via
     Crossref’s Text and Data Mining service; `r pkg("fulltext")` is a general purpose
     package to search for, retrieve and extract full text from scholarly
-    articles; and `r pkg("rromeo")` (`r pkg("GitHub")` ) is an interface
+    articles; and `r pkg("rromeo")` is an interface
     to the SHERPA/RoMEO API, a database of scientific journal archival policies
     regarding pre-, post-print, and accepted manuscript.
 
   - *Automated Metadata Harvesting*: `r pkg("oai")` and `r pkg("OAIHarvester")` harvest metadata using the Open Archives
     Initiative Protocol for Metadata Harvesting (OAI-PMH) standard.
 
-  - *Wikipedia*: `r pkg("WikipediR")` (`r pkg("GitHub")` ) is a
+  - *Wikipedia*: `r pkg("WikipediR")` is a
     wrapper for the MediaWiki API, aimed particularly at the Wikimedia
-    ‘production’ wikis, such as Wikipedia. `r pkg("WikidataR")` (`r pkg("GitHub")` ) can request data from [Wikidata.org](https://www.wikidata.org/
-    wiki/Wikidata:Main_Page), the free knowledgebase. `r pkg("wikipediatrend")` (`r pkg("GitHub")` ) provides access to Wikipedia
+    ‘production’ wikis, such as Wikipedia. `r pkg("WikidataR")` can request data from [Wikidata.org](https://www.wikidata.org/
+    wiki/Wikidata:Main_Page), the free knowledgebase. `r pkg("wikipediatrend")` provides access to Wikipedia
     page access statistics. `r pkg("WikidataQueryServiceR")` is a client for the
     [Wikidata Query Service](https://query.wikidata.org/) .
 
   - `r pkg("bigrquery")`
-    (`r pkg("GitHub")` ): An interface to Google’s
+    ( ): An interface to Google’s
     bigquery.
 
   - `r pkg("discgolf")`
-    (`r pkg("GitHub")` ) provides a client to
+    provides a client to
     interact with the API for the `r pkg("Discourse")` web
     forum platform. The API is for an installed instance of Discourse, not for
     the Discourse site itself.
@@ -723,7 +723,7 @@ memory web files.
     api/docs) to generate mock or fake data based on an input schema.
 
   - `r pkg("randNames")`
-    (`r pkg("GitHub")` ) generates random names
+    generates random names
     and personal identifying information using the <https://randomapi.com/> API.
 
   - `r pkg("rerddap")`: A
