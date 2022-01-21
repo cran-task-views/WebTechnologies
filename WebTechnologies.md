@@ -737,7 +737,6 @@ memory web files.
   - `r pkg("duckduckr")` is
     an R interface [DuckDuckGo’s Instant Answer API](https://duckduckgo.com/api)
 
-
 ### Related links:
 
   - [rOpenSci Task View: Open Data](https://github.com/ropensci/opendata)
