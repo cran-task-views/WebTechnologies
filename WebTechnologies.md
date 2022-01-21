@@ -70,7 +70,7 @@ following resources may be useful:
     using the `r pkg("JsonWireProtocol")`. It can also aid in automated application testing, load
     testing, and web scraping. `r pkg("seleniumPipes")` provides a “pipe”-oriented interface to the
     same. An alternative to the former two packages is `r pkg("splashr")` that vouches to be a
-    lightweight altnernative. [<span class="GitHub">rdom</span>](https://
+    lightweight alternative. [<span class="GitHub">rdom</span>](https://
     github.com/cpsievert/rdom/) (not on CRAN) uses `r pkg("phantomjs")` to access a webpage’s Document Object Model (DOM).
   - For capturing static content of web pages `r pkg("postlightmercury")` is a client for
     the web service `r pkg("Mercury")` that turns web
