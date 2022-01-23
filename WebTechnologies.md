@@ -128,7 +128,7 @@ specifically working with these format. These functions can be used to interact
 directly with insecure web pages or can be used to parse locally stored or in-
 memory web files.
 
-  - *XML*: There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2", priority = "core")` ( ). Both support general XML (and HTML) parsing, including XPath
+  - *XML*: There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2", priority = "core")`. Both support general XML (and HTML) parsing, including XPath
     queries. The package `r pkg("xml2", priority = "core")` is less fully featured, but more user friendly with respect to
     memory management, classes (e.g., XML node vs. node set vs. document), and
     namespaces. Of the two, only the `r pkg("XML")` supports *de novo* creation of XML nodes and
@@ -336,8 +336,7 @@ memory web files.
     interfaces to popular Amazon, Azure and Google cloud services without the need for external system dependencies.
   - Amazon Web Services is a popular, proprietary cloud service offering a
     suite of computing, storage, and infrastructure tools. `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
-      - *Elastic Cloud Compute (EC2)* is a cloud computing service. [<span
-        class="Gcode">segue</span>](https://code.google.com/p/segue/) (not on CRAN) is a package for managing EC2 instances and S3 storage, which includes a parallel version of `lapply()` for the Elastic Map Reduce (EMR) engine called `emrlapply()`. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
+      - *Elastic Cloud Compute (EC2)* is a cloud computing service. `r gcode("segue")` (not on CRAN) is a package for managing EC2 instances and S3 storage, which includes a parallel version of `lapply()` for the Elastic Map Reduce (EMR) engine called `emrlapply()`. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
       - *DBREST*: `r ohat("RAmazonDBREST")` provides an interface to Amazon's Simple DB API.
       - `r pkg("paws")`
         is an interface to nearly all AWS APIs, including compute, storage, databases, and machine learning. It also requires no external system dependencies.
@@ -460,7 +459,7 @@ memory web files.
 
 **Data Analysis and Processing Services**
 
-  - *Geospatial/Geolocation/Geocoding*: Several packages connect to geolocation/geocoding services. `r pkg("rgeolocate")` ( )
+  - *Geospatial/Geolocation/Geocoding*: Several packages connect to geolocation/geocoding services. `r pkg("rgeolocate")`
     offers several online and offline tools. `r github("trestletech/rydn")` (not on CRAN) is an interface
     to the Yahoo Developers network geolocation APIs, and
     `r github("hrbrmstr/ipapi")` can be
@@ -477,7 +476,7 @@ memory web files.
     client for the `r pkg("OGC")` standard Web-Services,
     such Web Feature Service (WFS) for data and Catalogue Service (CSW) for
     metadata.
-  - *Machine Learning as a Service*: Several packages provide access to cloud-based machine learning services. `r pkg("OpenML")` ( )
+  - *Machine Learning as a Service*: Several packages provide access to cloud-based machine learning services. `r pkg("OpenML")`
     is the official client for [the OpenML API](https://www.openml.org/frontend/page/home). `r pkg("clarifai")` is a
     [Clarifai.com](https://www.clarifai.com/) client that enables automated
     image description. `r pkg("rLTP")` accesses the
@@ -494,13 +493,13 @@ memory web files.
   - *Machine Translation*: `r pkg("translate")` provides bindings for the Google Translate API v2 and
     `r pkg("translateR")`
     provides bindings for both Google and Microsoft translation APIs.
-    `r pkg("RYandexTranslate")` ( )
+    `r pkg("RYandexTranslate")`
     connects to Yandex Translate. `r pkg("transcribeR")` provides automated audio transcription via
     the HP IDOL service.
   - *Document Processing*: `r pkg("abbyyR")`  and
     `r pkg("captr")`
     connect to optical character
-    recognition (OCR) APIs. `r pkg("pdftables")` ( )
+    recognition (OCR) APIs. `r pkg("pdftables")`
     uses [the PDFTables.com webservice](https://pdftables.com/) to extract
     tables from PDFs.
   - *Mapping*: `r pkg("osmar")`
