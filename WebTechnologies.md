@@ -3,7 +3,8 @@ name: WebTechnologies
 topic: Web Technologies and Services
 maintainer: Mauricio Vargas Sepulveda
 email: mavargas11@uc.cl
-version: 2022-01-16
+version: 2022-01-23
+source: https://github.com/cran-task-views/WebTechnologies/
 ---
 
 This task view contains information about to use R and the world wide web
