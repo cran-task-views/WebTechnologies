@@ -144,7 +144,7 @@ memory web files.
     specifically to work with HTML. `xml2::read_html()` is a good first function
     to use for importing HTML. `r pkg("htmltools")` provides functions to create HTML elements.
     The [selectorgadget browser extension](https://selectorgadget.com/) can be
-    used to identify page elements. [<span class="Ohat">RHTMLForms</span>](http://www.Omegahat.net/RHTMLForms/) reads HTML documents and
+    used to identify page elements. `r ohat("RHTMLForms")` reads HTML documents and
     obtains a description of each of the forms it contains, along with the
     different elements and hidden fields. `r pkg("scrapeR")` provides additional tools for scraping
     data from HTML documents.
@@ -198,19 +198,18 @@ memory web files.
   formed. This library corrects common errors in HTML documents.
   `r pkg("W3CMarkupValidator")` provides an R Interface to W3C Markup Validation Services for
   validating HTML documents.
-  - For XML documents, the [<span class="Ohat">XMLSchema</span>](http://www.Omegahat.net/XMLSchema/) package provides facilities in R for reading
+  - For XML documents, the `r ohat("XMLSchema")` package provides facilities in R for reading
     XML schema documents and processing them to create definitions for R
     classes and functions for converting XML nodes to instances of those
     classes. It provides the framework for meta-computing with XML schema in R.
     `r pkg("xslt")` is an
-    extension for the `r pkg("xml2", priority = "core")` package to transform XML documents by applying an xslt style-
-    sheet. (It can be seen as a modern replacement for [<span
+    extension for the `r pkg("xml2", priority = "core")` package to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for [<span
     class="Ohat">Sxslt</span>](http://www.Omegahat.net/Sxslt/), which is an
     interface to Dan Veillard's libxslt translator, and the [<span
     class="Ohat">SXalan</span>](http://www.Omegahat.net/SXalan/) package.) This
     may be useful for webscraping, as well as transforming XML markup into
     another human- or machine-readable format (e.g., HTML, JSON, plain text,
-    etc.). [<span class="Ohat">SSOAP</span>](http://www.Omegahat.net/SSOAP/)
+    etc.). `r ohat("SSOAP")`
     provides a client-side SOAP (Simple Object Access Protocol) mechanism.
     Beware, SSOAP itself may not install, and/or its dependencies. The best bet
     is to get the web service maintainers to switch to REST. [<span
@@ -219,7 +218,7 @@ memory web files.
     mechanism that uses HTTP and XML. This can be used for
     communicating between processes on a single machine or for accessing Web
     services from within R.
-  - [<span class="Ohat">Rcompression</span>](http://www.Omegahat.net/Rcompression/) (not on CRAN): Interface to zlib and bzip2 libraries for
+  - `r ohat("Rcompression")` (not on CRAN): Interface to zlib and bzip2 libraries for
     performing in-memory compression and decompression in R. This is useful when
     receiving or sending contents to remote servers, e.g. Web services, HTTP
     requests via RCurl.
@@ -289,8 +288,7 @@ memory web files.
 
 ## Web and Server Frameworks
 
-  - [Model Operationalization](https://docs.microsoft.com/en-us/machine-
-    learning-server/what-is-operationalization) (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
+  - [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization) (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
   - The `r pkg("shiny", priority = "core")` package
     makes it easy to build interactive web applications with R.
   - `r pkg("dash")` is a web
@@ -315,9 +313,9 @@ memory web files.
   - Several packages offer functionality for turning R code into a web API.
     `r pkg("FastRWeb")`
     provides some basic infrastructure for this. `r pkg("plumber")` allows you to create a REST API by decorating existing R source code. `r pkg("beakr")` provides an R version of functionality found in python Flask and javascript Express.js.
-  - The [<span class="Ohat">WADL</span>](http://www.Omegahat.net/WADL/) package
+  - The `r ohat("WADL")` package
     provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
-  - The [<span class="Ohat">RDCOMServer</span>](http://www.Omegahat.net/RDCOMServer/) provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the [<span class="Ohat">RDCOMClient</span>](http://www.Omegahat.net/RDCOMClient/) package which provides user-level access from R to other COM servers. (not on CRAN)
+  - The `r ohat("RDCOMServer")` provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the `r ohat("RDCOMClient")` package which provides user-level access from R to other COM servers. (not on CRAN)
   - [rapporter.net](http://rapporter.net/welcome/en) provides an online
     environment (SaaS) to host and run `r pkg("rapport")` statistical report templates in the cloud.
   - `r pkg("radiant")`
@@ -328,7 +326,7 @@ memory web files.
     ([Extension:R](https://www.mediawiki.org/wiki/Extension:R) ) to run R code from wiki pages, and use uploaded data. A mailing list used to be available: R-sig-mediawiki.
   - `r pkg("whisker")`:
     Implementation of logicless templating based on `r pkg("Mustache")` in R. Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
-  - [<span class="Ohat">CGIwithR</span>](http://www.Omegahat.net/CGIwithR/)
+  - `r ohat("CGIwithR")`
     (not on CRAN) allows one to use R scripts as CGI programs for generating
     dynamic Web content. HTML forms and other mechanisms to submit dynamic
     requests can be used to provide input to R scripts via the Web to create
@@ -344,7 +342,7 @@ memory web files.
     suite of computing, storage, and infrastructure tools. [aws.signature](https://cran.rstudio.com/web/packages/aws.signature/index.html) provides functionality for generating AWS API request signatures.
       - *Elastic Cloud Compute (EC2)* is a cloud computing service. [<span
         class="Gcode">segue</span>](https://code.google.com/p/segue/) (not on CRAN) is a package for managing EC2 instances and S3 storage, which includes a parallel version of `lapply()` for the Elastic Map Reduce (EMR) engine called `emrlapply()`. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
-      - *DBREST*: [<span class="Ohat">RAmazonDBREST</span>](http://www.Omegahat.net/RAmazonDBREST/) provides an interface to Amazon's Simple DB API.
+      - *DBREST*: `r ohat("RAmazonDBREST")` provides an interface to Amazon's Simple DB API.
       - `r pkg("paws")`
         is an interface to nearly all AWS APIs, including compute, storage, databases, and machine learning. It also requires no external system dependencies.
   - Azure and Microsoft 365 are Microsoft's cloud computing services. The Azure
@@ -442,9 +440,9 @@ memory web files.
     `r pkg("dataone")`
     provides a client for
     `r pkg("DataONE")` repositories.
-  - *Google Drive/Google Documents*: The [<span class="Ohat">RGoogleDocs</span>](http://www.Omegahat.net/RGoogleDocs/) package is an example of using
+  - *Google Drive/Google Documents*: The `r ohat("RGoogleDocs")` package is an example of using
     the RCurl and XML packages to quickly develop an interface to the Google
-    Documents API. [<span class="Ohat">RGoogleStorage</span>](http://www.Omegahat.net/RGoogleStorage/) provides programmatic access to the
+    Documents API. `r ohat("RGoogleStorage")` provides programmatic access to the
     Google Storage API. This allows R users to access and store data on
     Google's storage. We can upload and download content, create, list and
     delete folders/buckets, and set access control permissions on objects and
@@ -470,8 +468,7 @@ memory web files.
     offers several online and offline tools. `r github("trestletech/rydn")` (not on CRAN) is an interface
     to the Yahoo Developers network geolocation APIs, and
     `r github("hrbrmstr/ipapi")` can be
-    used to geolocate IPv4/6 addresses and/or domain names using the <http://ip-
-    api.com/> API. `r pkg("opencage")` provides
+    used to geolocate IPv4/6 addresses and/or domain names using the <http://ip-api.com/> API. `r pkg("opencage")` provides
     access to to the `r pkg("OpenCage")` geocoding service.
     `r github("hrbrmstr/nominatim")`
     (not on CRAN) connects to the [OpenStreetMap Nominatim
@@ -484,22 +481,19 @@ memory web files.
     client for the `r pkg("OGC")` standard Web-Services,
     such Web Feature Service (WFS) for data and Catalogue Service (CSW) for
     metadata.
-  - *Machine Learning as a Service*: Several packages provide access to cloud-
-    based machine learning services. `r pkg("OpenML")` ( )
+  - *Machine Learning as a Service*: Several packages provide access to cloud-based machine learning services. `r pkg("OpenML")` ( )
     is the official client for [the OpenML API](https://www.openml.org/frontend/page/home). `r pkg("clarifai")` is a
     [Clarifai.com](https://www.clarifai.com/) client that enables automated
     image description. `r pkg("rLTP")` accesses the
     [ltp-cloud service](https://www.ltp-cloud.com/). `r pkg("languagelayeR")` is a client for
     Languagelayer, a language detection API. `r pkg("googlepredictionapi")` (not on CRAN):
-    is an R client for the [Google Prediction API](https://cloud.google.com/ai-
-    platform), a suite of cloud machine learning tools. `r pkg("yhatr")` lets you deploy, maintain,
+    is an R client for the [Google Prediction API](https://cloud.google.com/ai-platform), a suite of cloud machine learning tools. `r pkg("yhatr")` lets you deploy, maintain,
     and invoke models via the Yhat REST API. `r pkg("datarobot")` works with Data Robot's
     predictive modeling platform. `r pkg("mscsweblm4r")` interfaces with the Microsoft Cognitive Services Web
     Language Model API and `r pkg("mscstexta4r")` uses the Microsoft Cognitive Services Text Analytics REST
     API. `r pkg("rosetteApi")` links to the `r pkg("Rosette")` text
     analysis API. `r pkg("googleLanguageR")` provides interfaces to Google's Cloud
-    Translation API, Natural Language API, Cloud Speech API, and the Cloud Text-
-    to-Speech API. `r pkg("AzureVision")` provides interfaces to the Azure Computer Vision
+    Translation API, Natural Language API, Cloud Speech API, and the Cloud Text-to-Speech API. `r pkg("AzureVision")` provides interfaces to the Azure Computer Vision
     and Custom Vision image recognition services.
   - *Machine Translation*: `r pkg("translate")` provides bindings for the Google Translate API v2 and
     `r pkg("translateR")`
@@ -526,9 +520,9 @@ memory web files.
     the map as a background image to overlay plots within R. [<span
     class="Ohat">R2GoogleMaps</span>](http://www.Omegahat.net/R2GoogleMaps/)
     provides a mechanism to generate JavaScript code from R that displays data
-    using Google Maps. [<span class="Ohat">RKMLDevice</span>](http://www.Omegahat.net/RKMLDevice/) allows to create R graphics in Keyhole Markup
+    using Google Maps. `r ohat("RKMLDevice")` allows to create R graphics in Keyhole Markup
     Language (KML) format in a manner that allows them to be displayed on
-    Google Earth (or Google Maps), and [<span class="Ohat">RKML</span>](http://www.Omegahat.net/RKML/) provides users with high-level facilities to
+    Google Earth (or Google Maps), and `r ohat("RKML")` provides users with high-level facilities to
     generate KML. `r pkg("plotKML")` can visualization spatial and spatio-temporal objects in Google
     Earth. `r pkg("ggmap")`
     allows for the easy visualization of spatial data and models on top of
@@ -564,7 +558,7 @@ memory web files.
 
   - `r pkg("Rfacebook")`
     provide an interface to the Facebook API.
-  - The [<span class="Ohat">Rflickr</span>](http://www.Omegahat.net/Rflickr/)
+  - The `r ohat("Rflickr")`
     package provides an interface to the Flickr photo management and sharing
     application Web service. (not on CRAN)
   - `r pkg("instaR")`
@@ -597,7 +591,7 @@ memory web files.
 **Web Analytics Services**
 
   - *Google Trends*: `r pkg("gtrendsR")` offers functions to perform and display Google Trends queries.
-    [<span class="Ohat">RGoogleTrends</span>](http://www.Omegahat.net/RGoogleTrends/) provides an alternative.
+    `r ohat("RGoogleTrends")` provides an alternative.
   - *Google Analytics*: `r pkg("googleAnalyticsR")`, `r pkg("ganalytics")`, and `r pkg("RGA")` provide functions for
     accessing and retrieving data from the [Google Analytics APIs](https://developers.google.com/analytics/). The latter supports OAuth 2.0
     authorization. `r pkg("RGA")`
@@ -692,8 +686,7 @@ memory web files.
 
   - `r pkg("rerddap")`: A
     generic R client to interact with any ERDDAP instance, which is a special
-    case of OPeNDAP (<https://en.wikipedia.org/wiki/OPeNDAP>), or *Open-
-    source Project for a Network Data Access Protocol*. Allows user to swap
+    case of OPeNDAP (<https://en.wikipedia.org/wiki/OPeNDAP>), or *Open-source Project for a Network Data Access Protocol*. Allows user to swap
     out the base URL to use any ERDDAP instance.
 
   - `r pkg("RStripe")`
