@@ -192,8 +192,7 @@ memory web files.
   - Several packages can be used for parsing HTML documents.
   `r pkg("boilerpipeR")`
   provides generic extraction of main text content from HTML files; removal of
-  ads, sidebars and headers using the boilerpipe Java library. [<span
-  class="Ohat">RTidyHTML</span>](http://www.Omegahat.net/RTidyHTML/) interfaces
+  ads, sidebars and headers using the boilerpipe Java library. `r ohat("RTidyHTML")` interfaces
   to the libtidy library for correcting HTML documents that are not well-
   formed. This library corrects common errors in HTML documents.
   `r pkg("W3CMarkupValidator")` provides an R Interface to W3C Markup Validation Services for
@@ -203,17 +202,15 @@ memory web files.
     classes and functions for converting XML nodes to instances of those
     classes. It provides the framework for meta-computing with XML schema in R.
     `r pkg("xslt")` is an
-    extension for the `r pkg("xml2", priority = "core")` package to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for [<span
-    class="Ohat">Sxslt</span>](http://www.Omegahat.net/Sxslt/), which is an
-    interface to Dan Veillard's libxslt translator, and the [<span
-    class="Ohat">SXalan</span>](http://www.Omegahat.net/SXalan/) package.) This
+    extension for the `r pkg("xml2", priority = "core")` package to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for
+    `r ohat("Sxslt")`, which is an
+    interface to Dan Veillard's libxslt translator, and the `r ohat("SXalan")` package.) This
     may be useful for webscraping, as well as transforming XML markup into
     another human- or machine-readable format (e.g., HTML, JSON, plain text,
     etc.). `r ohat("SSOAP")`
     provides a client-side SOAP (Simple Object Access Protocol) mechanism.
     Beware, SSOAP itself may not install, and/or its dependencies. The best bet
-    is to get the web service maintainers to switch to REST. [<span
-    class="Ohat">XMLRPC</span>](http://www.Omegahat.net/XMLRPC/) provides an
+    is to get the web service maintainers to switch to REST. `r ohat("XMLRPC")` provides an
     implementation of XML-RPC, a relatively simple remote procedure call
     mechanism that uses HTTP and XML. This can be used for
     communicating between processes on a single machine or for accessing Web
@@ -222,7 +219,7 @@ memory web files.
     performing in-memory compression and decompression in R. This is useful when
     receiving or sending contents to remote servers, e.g. Web services, HTTP
     requests via RCurl.
-  - [tm.plugin.webmining](https://cran.rstudio.com/web/packages/tm.plugin.webmining/index.html): Extensible text retrieval framework for
+  - `r pkg("tm.plugin.webmining")`: Extensible text retrieval framework for
     news feeds in XML (RSS, ATOM) and JSON formats. Currently, the following
     feeds are implemented: Google Blog Search, Google Finance, Google News,
     NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo Inplay.
@@ -240,8 +237,7 @@ memory web files.
 
   - *Javascript*: `r pkg("V8")` is
     an R interface to Google's open source, high performance JavaScript engine.
-    It can wrap Javascript libraries as well as NPM packages. The [<span
-    class="Ohat">SpiderMonkey</span>](http://www.Omegahat.net/SpiderMonkey/)
+    It can wrap Javascript libraries as well as NPM packages. The `r ohat("SpiderMonkey")`
     package provides another means of evaluating JavaScript code, creating
     JavaScript objects and calling JavaScript functions and methods from within
     R. This can work by embedding the JavaScript engine within an R session or
@@ -339,7 +335,7 @@ memory web files.
   - [The cloudyr project](https://cloudyr.github.io/) aims to provide
     interfaces to popular Amazon, Azure and Google cloud services without the need for external system dependencies.
   - Amazon Web Services is a popular, proprietary cloud service offering a
-    suite of computing, storage, and infrastructure tools. [aws.signature](https://cran.rstudio.com/web/packages/aws.signature/index.html) provides functionality for generating AWS API request signatures.
+    suite of computing, storage, and infrastructure tools. `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
       - *Elastic Cloud Compute (EC2)* is a cloud computing service. [<span
         class="Gcode">segue</span>](https://code.google.com/p/segue/) (not on CRAN) is a package for managing EC2 instances and S3 storage, which includes a parallel version of `lapply()` for the Elastic Map Reduce (EMR) engine called `emrlapply()`. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
       - *DBREST*: `r ohat("RAmazonDBREST")` provides an interface to Amazon's Simple DB API.
@@ -517,8 +513,7 @@ memory web files.
     extracts customizable map
     images from OpenStreetMap. `r pkg("RgoogleMaps")` serves two purposes: it provides a
     comfortable R interface to query the Google server for static maps, and use
-    the map as a background image to overlay plots within R. [<span
-    class="Ohat">R2GoogleMaps</span>](http://www.Omegahat.net/R2GoogleMaps/)
+    the map as a background image to overlay plots within R. `r ohat("R2GoogleMaps")`
     provides a mechanism to generate JavaScript code from R that displays data
     using Google Maps. `r ohat("RKMLDevice")` allows to create R graphics in Keyhole Markup
     Language (KML) format in a manner that allows them to be displayed on
@@ -545,8 +540,7 @@ memory web files.
     visualizations in the web using R (and Python), which is accessible via
     `r pkg("plotly")`.
     `r pkg("googleVis")`
-    provides an interface between R and the Google chart tools. The [<span
-    class="Ohat">RUbigraph</span>](http://www.Omegahat.net/RUbigraph/) package
+    provides an interface between R and the Google chart tools. The `r ohat("RUbigraph")` package
     provides an R interface to a Ubigraph server for drawing interactive,
     dynamic graphs. You can add and remove vertices/nodes and edges in a graph
     and change their attributes/characteristics such as shape, color, size.
@@ -644,7 +638,7 @@ memory web files.
 
   - *Literature*: `r pkg("rplos")` is a programmatic interface to the Web Service methods provided
     by the Public Library of Science journals for search. `r pkg("europepmc")` connects to the Europe
-    PubMed Central service. [pubmed.mineR](https://cran.rstudio.com/web/packages/pubmed.mineR/index.html) is a package for text mining of [PubMed
+    PubMed Central service. `r pkg("pubmed.mineR")` is a package for text mining of [PubMed
     Abstracts](https://pubmed.ncbi.nlm.nih.gov/) that supports fetching text
     and XML from PubMed. `r pkg("jstor")` provides functions and helpers to import metadata, ngrams and
     full-texts from Data for Research service by JSTOR. `r pkg("aRxiv")` is a client for the arXiv
