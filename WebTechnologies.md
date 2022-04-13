@@ -592,6 +592,8 @@ memory web files.
     can process various
     common forms of request log, including the Common and Combined Web Log
     formats and AWS logs.
+  - `r pkg("WebAnalytics")`
+    provides tools for analysis of web application performance, workload and user population.  There is some overlap with      the `webreadr` package, but webreader focuses on reading log files, while WebAnalytics focuses on analysing them.
 
 **Web Services for R Package Development**
 
