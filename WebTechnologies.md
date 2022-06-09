@@ -64,6 +64,8 @@ following resources may be useful:
     `r pkg("httr", priority = "core")` calls.
     `r pkg("httpcache")`
     provides a mechanism for caching HTTP requests.
+  - An alternative low-level sockets implementation that can be used to perform HTTP and streaming Websocket requests synchronously
+    or asynchronously over its own concurrency framework is `r pkg("nanonext")`, which uses the NNG/mbedTLS libraries as backend.
   - For dynamically generated webpages (i.e., those requiring user interaction
     to display results), `r pkg("RSelenium")` can be used to automate those interactions and extract
     page contents. It provides a set of bindings for the Selenium 2.0 webdriver
