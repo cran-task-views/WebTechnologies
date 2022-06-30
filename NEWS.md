@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+# 2022-06-30
+
+## Removed
+
+* leafletR, osmar, RGA, rromeo, scraper, splashr, tm.plugin.webmining urlshorteneR (archived on CRAN)
+
+## Updated
+
+* gdns (moved to GitHub link)
+
+# 2022-04-18
+
+## Added
+
+* nanonext
+
 # 2022-03-11
 
 ## Removed

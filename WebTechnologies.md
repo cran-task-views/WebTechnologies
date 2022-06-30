@@ -71,8 +71,7 @@ following resources may be useful:
     page contents. It provides a set of bindings for the Selenium 2.0 webdriver
     using the 'JsonWireProtocol'. It can also aid in automated application testing, load
     testing, and web scraping. `r pkg("seleniumPipes")` provides a "pipe"-oriented interface to the
-    same. An alternative to the former two packages is `r pkg("splashr")` that vouches to be a
-    lightweight alternative. `r github("cpsievert/rdom")` uses 'phantomjs' to access a webpage's Document Object Model (DOM).
+    same. `r github("cpsievert/rdom")` uses 'phantomjs' to access a webpage's Document Object Model (DOM).
   - For capturing static content of web pages `r pkg("postlightmercury")` is a client for
     the web service 'Mercury' that turns web
     pages into structured and clean text.
@@ -148,8 +147,7 @@ memory web files.
     The [selectorgadget browser extension](https://selectorgadget.com/) can be
     used to identify page elements. `r ohat("RHTMLForms")` reads HTML documents and
     obtains a description of each of the forms it contains, along with the
-    different elements and hidden fields. `r pkg("scrapeR")` provides additional tools for scraping
-    data from HTML documents.
+    different elements and hidden fields.
     `r pkg("htmltidy")`
     provides tools to "tidy"
     messy HTML documents. `r pkg("htm2txt")` uses regex to converts html documents to plain text by
@@ -180,10 +178,10 @@ memory web files.
   - `r pkg("iptools")` can
     facilitate working with IPv4 addresses, including for use in geolocation. A
     similar package `r pkg("ipaddress")`, handles IPv4 and IPv6 addresses and networks.
-  - `r pkg("urlshorteneR")` offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd.
+  - `r github("dmpe/urlshorteneR")` offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd.
     `r pkg("longurl")` uses the
     longurl.org API to provide similar functionality.
-  - `r pkg("gdns")` provides
+  - `r github("hrbrmstr/gdns")` provides
     access to Google's secure HTTP-based DNS resolution service.
 
 **Tools for Working with Scraped Webpage Contents**
@@ -218,10 +216,6 @@ memory web files.
     performing in-memory compression and decompression in R. This is useful when
     receiving or sending contents to remote servers, e.g. Web services, HTTP
     requests via RCurl.
-  - `r pkg("tm.plugin.webmining")`: Extensible text retrieval framework for
-    news feeds in XML (RSS, ATOM) and JSON formats. Currently, the following
-    feeds are implemented: Google Blog Search, Google Finance, Google News,
-    NYTimes Article Search, Reuters News Feed, Yahoo Finance and Yahoo Inplay.
   - `r pkg("webshot")` uses
     'PhantomJS' to provide screenshots of web pages
     without a browser. It can be useful for testing websites (such as Shiny
@@ -494,11 +488,7 @@ memory web files.
     recognition (OCR) APIs. `r pkg("pdftables")`
     uses [the PDFTables.com webservice](https://pdftables.com/) to extract
     tables from PDFs.
-  - *Mapping*: `r pkg("osmar")`
-    provides infrastructure to access OpenStreetMap data from different sources
-    to work with the data in common R manner and to convert data into available
-    infrastructure provided by existing R packages (e.g., into sp and igraph
-    objects). `r pkg("osrm")`
+  - *Mapping*: `r pkg("osrm")`
     provides shortest paths and travel times from OpenStreetMap.
     `r pkg("osmplotr")`
     extracts customizable map
@@ -514,9 +504,7 @@ memory web files.
     allows for the easy visualization of spatial data and models on top of
     Google Maps, OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
     `r pkg("mapsapi")` is an
-    sf-compatible interface to Google Maps API. `r pkg("leafletR")`: Allows you to display
-    your spatial data on interactive web-maps using the open-source JavaScript
-    library Leaflet. `r pkg("openadds")` is an
+    sf-compatible interface to Google Maps API. `r pkg("openadds")` is an
     Openaddresses client.
   - *Online Surveys*: `r pkg("qualtRics")` provide functions to interact with 'Qualtrics'. `r pkg("WufooR")` can retrieve
     data from [Wufoo.com](https://www.wufoo.com/) forms. `r pkg("redcapAPI")` and `r pkg("REDCapR")`
@@ -576,7 +564,7 @@ memory web files.
 
   - *Google Trends*: `r pkg("gtrendsR")` offers functions to perform and display Google Trends queries.
     `r ohat("RGoogleTrends")` provides an alternative.
-  - *Google Analytics*: `r pkg("googleAnalyticsR")`, `r pkg("ganalytics")`, and `r pkg("RGA")` provide functions for
+  - *Google Analytics*: `r pkg("googleAnalyticsR")`, and `r pkg("ganalytics")` provide functions for
     accessing and retrieving data from the [Google Analytics APIs](https://developers.google.com/analytics/). The latter supports OAuth 2.0
     authorization. `r pkg("RGA")`
     provides a shiny app to explore data. `r pkg("searchConsoleR")` links to the
@@ -640,9 +628,7 @@ memory web files.
     papers. `r pkg("rcoreoa")`
     is an interface to the [CORE API](https://core.ac.uk/docs/), a search
     interface for open access scholarly articles. `r pkg("rcrossref")` is an interface to
-    Crossref's API, and `r pkg("rromeo")` is an interface
-    to the SHERPA/RoMEO API, a database of scientific journal archival policies
-    regarding pre-, post-print, and accepted manuscript.
+    Crossref's API.
 
   - *Automated Metadata Harvesting*: `r pkg("oai")` and `r pkg("OAIHarvester")` harvest metadata using the Open Archives
     Initiative Protocol for Metadata Harvesting (OAI-PMH) standard.
