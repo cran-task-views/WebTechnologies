@@ -148,9 +148,7 @@ memory web files.
     used to identify page elements. `r ohat("RHTMLForms")` reads HTML documents and
     obtains a description of each of the forms it contains, along with the
     different elements and hidden fields.
-    `r pkg("htmltidy")`
-    provides tools to "tidy"
-    messy HTML documents. `r pkg("htm2txt")` uses regex to converts html documents to plain text by
+    `r pkg("htm2txt")` uses regex to converts html documents to plain text by
     removing all html tags. `r pkg("Rcrawler")` does crawling and scraping of web pages.
   - *JSON*: There are several packages for reading and writing JSON:
     `r pkg("rjson")`,
@@ -280,7 +278,7 @@ memory web files.
   - [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization) (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
   - The `r pkg("shiny", priority = "core")` package
     makes it easy to build interactive web applications with R.
-  - `r pkg("dash")` is a web
+  - `github pkg("plotly/dashR")` is a web
     framework which is available for Python, R and Julia, with components
     written in React.js.
   - Other web frameworks include: `r pkg("fiery")` that is meant to be more flexible but less easy to use
@@ -566,8 +564,7 @@ memory web files.
     `r ohat("RGoogleTrends")` provides an alternative.
   - *Google Analytics*: `r pkg("googleAnalyticsR")`, and `r pkg("ganalytics")` provide functions for
     accessing and retrieving data from the [Google Analytics APIs](https://developers.google.com/analytics/). The latter supports OAuth 2.0
-    authorization. `r pkg("RGA")`
-    provides a shiny app to explore data. `r pkg("searchConsoleR")` links to the
+    authorization. `r pkg("searchConsoleR")` links to the
     [Google Search Console](https://developers.google.com/webmaster-tools/)
     (formerly Webmaster Tools).
   - *Online Advertising*: `r pkg("fbRads")` can manage Facebook ads via the Facebook Marketing API. `r github("WillemPaling/RDoubleClick")` (not on CRAN) can retrieve data from Google's DoubleClick
@@ -649,7 +646,7 @@ memory web files.
 
   - `r github("stephlocke/mockaRoo")` (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
 
-  - `r pkg("randNames")`
+  - `r github("karthik/randNames")`
     generates random names
     and personal identifying information using the <https://randomapi.com/> API.
 
