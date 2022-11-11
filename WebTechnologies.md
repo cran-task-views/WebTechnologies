@@ -557,6 +557,8 @@ memory web files.
   - `r pkg("hackeRnews")`
     is a client for the
     [Official Hacker News API](https://github.com/HackerNews/API) .
+  - `r pkg("rtoot")`
+    is a package to retrieve data from the official [Mastodon API](https://docs.joinmastodon.org/).
 
 **Web Analytics Services**
 
