@@ -638,7 +638,7 @@ memory web files.
 
   - `r pkg("bigrquery")`: An interface to Google's bigquery.
 
-  - `r pkg("discgolf")`
+  - `r github("sckott/discgolf")` (archived)
     provides a client to
     interact with the API for the 'Discourse' web
     forum platform. The API is for an installed instance of Discourse, not for
