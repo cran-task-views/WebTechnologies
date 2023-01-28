@@ -1,8 +1,8 @@
 ---
 name: WebTechnologies
 topic: Web Technologies and Services
-maintainer: Mauricio Vargas Sepulveda
-email: mavargas11@uc.cl
+maintainer: Mauricio Vargas Sepulveda, Will Beasley
+email: mavargas11@uc.cl, wibeasley@hotmail.com
 version: 2022-01-23
 source: https://github.com/cran-task-views/WebTechnologies/
 ---
