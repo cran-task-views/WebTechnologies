@@ -105,7 +105,7 @@ following resources may be useful:
     `r pkg("httr", priority = "core")`. See the 6
     demos within `r pkg("httr", priority = "core")`,
     three for OAuth 1.0 (linkedin, twitter, vimeo) and three for OAuth 2.0
-    (facebook, GitHub, google). `r pkg("ROAuth")` is a package that provides a separate R interface to
+    (facebook, GitHub, google). `r pkg("ROAuth")` provides a separate R interface to
     OAuth. OAuth is easier to to do in `r pkg("httr", priority = "core")`, so start there. `r pkg("googleAuthR")` provides an OAuth 2.0
     setup specifically for Google web services, and `r pkg("AzureAuth")` provides similar
     functionality for Azure Active Directory.
@@ -130,14 +130,14 @@ directly with insecure web pages or can be used to parse locally stored or in-
 memory web files.
 
   - *XML*: There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2", priority = "core")`. Both support general XML (and HTML) parsing, including XPath
-    queries. The package `r pkg("xml2", priority = "core")` is less fully featured, but more user friendly with respect to
+    queries. `r pkg("xml2", priority = "core")` is less fully featured, but more user friendly with respect to
     memory management, classes (e.g., XML node vs. node set vs. document), and
     namespaces. Of the two, only the `r pkg("XML")` supports *de novo* creation of XML nodes and
-    documents. The `r pkg("XML2R")`package is a
+    documents. `r pkg("XML2R")` is a
     collection of convenient functions for coercing XML into data frames. An
     alternative to `r pkg("XML")`
     is `r pkg("selectr")`, which parses CSS3
-    Selectors and translates them to XPath 1.0 expressions. `r pkg("XML")` package is often used for
+    Selectors and translates them to XPath 1.0 expressions. `r pkg("XML")` is often used for
     parsing xml and html, but selectr translates CSS selectors to XPath, so can
     use the CSS selectors instead of XPath.
   - *HTML*: All of the tools that work with XML also work for HTML, though HTML
@@ -192,14 +192,14 @@ memory web files.
   formed. This library corrects common errors in HTML documents.
   `r pkg("W3CMarkupValidator")` provides an R Interface to W3C Markup Validation Services for
   validating HTML documents.
-  - For XML documents, the `r ohat("XMLSchema")` package provides facilities in R for reading
+  - For XML documents, `r ohat("XMLSchema")` provides facilities in R for reading
     XML schema documents and processing them to create definitions for R
     classes and functions for converting XML nodes to instances of those
     classes. It provides the framework for meta-computing with XML schema in R.
     `r pkg("xslt")` is an
-    extension for the `r pkg("xml2", priority = "core")` package to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for
+    extension for `r pkg("xml2", priority = "core")` to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for
     `r ohat("Sxslt")`, which is an
-    interface to Dan Veillard's libxslt translator, and the `r ohat("SXalan")` package.) This
+    interface to Dan Veillard's libxslt translator, and `r ohat("SXalan")`.) This
     may be useful for webscraping, as well as transforming XML markup into
     another human- or machine-readable format (e.g., HTML, JSON, plain text,
     etc.). `r ohat("SSOAP")`
@@ -228,12 +228,12 @@ memory web files.
 
   - *Javascript*: `r pkg("V8")` is
     an R interface to Google's open source, high performance JavaScript engine.
-    It can wrap Javascript libraries as well as NPM packages. The `r ohat("SpiderMonkey")`
-    package provides another means of evaluating JavaScript code, creating
+    It can wrap Javascript libraries as well as NPM packages. `r ohat("SpiderMonkey")`
+    provides another means of evaluating JavaScript code, creating
     JavaScript objects and calling JavaScript functions and methods from within
     R. This can work by embedding the JavaScript engine within an R session or
     by embedding R in an browser such as Firefox and being able to call R from
-    JavaScript and call back to JavaScript from R. The `r pkg("js")` package wraps `r pkg("V8")` and validates, reformats,
+    JavaScript and call back to JavaScript from R. `r pkg("js")` wraps `r pkg("V8")` and validates, reformats,
     optimizes and analyzes JavaScript code.
   - *Email:*: `r pkg("mailR")`
     is an interface to Apache Commons Email to send emails from within R.
@@ -243,16 +243,16 @@ memory web files.
     `r pkg("Microsoft365R")` provides a client for Microsoft's Outlook email service, both
     personal (outlook.com) and as part of the Microsoft 365 (formerly known as
     Office 365) suite.
-  - *Mocking:*: `r pkg("webmockr", priority = "core")` is a library for stubbing and setting expectations on HTTP
-    requests. It is inspired from Rubys `webmock`. This package only helps mock
+  - *Mocking:*: `r pkg("webmockr", priority = "core")` stubs and sets expectations on HTTP
+    requests. It is inspired from Ruby's `webmock`. r pkg("webmockr", priority = "core")` only helps mock
     HTTP requests, and returns nothing when requests match expectations.
-    webmockr integrates with the HTTP packages `r pkg("crul", priority = "core")` and `r pkg("httr", priority = "core")`. See *Testing* for mocking with returned
+    It integrates with `r pkg("crul", priority = "core")` and `r pkg("httr", priority = "core")`. See *Testing* for mocking with returned
     responses.
   - *Testing:*: `r pkg("vcr", priority = "core")`
     provides an interface to easily cache HTTP requests in R package test suites
     (but can be used outside of testing use cases as well). vcr relies on
     `r pkg("webmockr", priority = "core")` to do
-    the HTTP request mocking. vcr integrates with the HTTP packages
+    the HTTP request mocking. vcr integrates with
     `r pkg("crul", priority = "core")` and
     `r pkg("httr", priority = "core")`.
     `r pkg("httptest")`
@@ -266,7 +266,7 @@ memory web files.
     `multipart/form-data`. `r pkg("mime")` guesses the MIME type
     for a file from its extension. `r pkg("rsdmx")` provides tools to read data and metadata documents
     exchanged through the Statistical Data and Metadata Exchange (SDMX)
-    framework. The package currently focuses on the SDMX XML standard format
+    framework; it focuses on the SDMX XML standard format
     (SDMX-ML). `r pkg("robotstxt")` provides functions and classes for parsing robots.txt files and
     checking access permissions; `r pkg("spiderbar")` does the same. `r pkg("uaparserjs")` uses the javascript ["ua-parser"
     library](https://github.com/ua-parser) to parse User-Agent HTTP headers.
@@ -276,7 +276,7 @@ memory web files.
 ## Web and Server Frameworks
 
   - [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization) (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
-  - The `r pkg("shiny", priority = "core")` package
+  - `r pkg("shiny", priority = "core")`
     makes it easy to build interactive web applications with R.
   - `github pkg("plotly/dashR")` is a web
     framework which is available for Python, R and Julia, with components
@@ -300,9 +300,9 @@ memory web files.
   - Several packages offer functionality for turning R code into a web API.
     `r pkg("FastRWeb")`
     provides some basic infrastructure for this. `r pkg("plumber")` allows you to create a REST API by decorating existing R source code. `r pkg("beakr")` provides an R version of functionality found in python Flask and javascript Express.js.
-  - The `r ohat("WADL")` package
+  - `r ohat("WADL")`
     provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
-  - The `r ohat("RDCOMServer")` provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with the `r ohat("RDCOMClient")` package which provides user-level access from R to other COM servers. (not on CRAN)
+  - `r ohat("RDCOMServer")` provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with `r ohat("RDCOMClient")`, which provides user-level access from R to other COM servers. (not on CRAN)
   - [rapporter.net](http://rapporter.net/welcome/en) provides an online
     environment (SaaS) to host and run `r pkg("rapport")` statistical report templates in the cloud.
   - `r pkg("radiant")`
@@ -325,7 +325,7 @@ memory web files.
     interfaces to popular Amazon, Azure and Google cloud services without the need for external system dependencies.
   - Amazon Web Services is a popular, proprietary cloud service offering a
     suite of computing, storage, and infrastructure tools. `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
-      - *Elastic Cloud Compute (EC2)* is a cloud computing service. `r gcode("segue")` (not on CRAN) is a package for managing EC2 instances and S3 storage, which includes a parallel version of `lapply()` for the Elastic Map Reduce (EMR) engine called `emrlapply()`. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
+      - *Elastic Cloud Compute (EC2)* is a cloud computing service. `r gcode("segue")` (not on CRAN) manages EC2 instances and S3 storage, which includes a parallel version of `lapply()` for the Elastic Map Reduce (EMR) engine called `emrlapply()`. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
       - *DBREST*: `r ohat("RAmazonDBREST")` provides an interface to Amazon's Simple DB API.
       - `r pkg("paws")`
         is an interface to nearly all AWS APIs, including compute, storage, databases, and machine learning. It also requires no external system dependencies.
@@ -361,8 +361,7 @@ memory web files.
         creation and managing of storage accounts. `r pkg("AzureTableStor")` and
         `r pkg("AzureQstor")` extend AzureStor to provide interfaces to table storage and
         queue storage respectively
-      - `r pkg("AzureVM")` is
-        a package for creating and managing virtual machines in Azure. It
+      - `r pkg("AzureVM")` creates and manages virtual machines in Azure. It
         includes templates for a wide variety of common VM specifications and
         operating systems, including Windows, Ubuntu, Debian and RHEL.
       - `r pkg("AzureContainers")` provides a unified facility for working with containers in
@@ -395,7 +394,7 @@ memory web files.
     quotas) and the ability to upload and download files from any Dropbox
     account.
   - *Docker*: `r pkg("analogsea")` is a general purpose client for the Digital Ocean v2 API. In
-    addition, the package includes functions to install various R tools
+    addition, it includes functions to install various R tools
     including base R, RStudio server, and more. There's an improving interface
     to interact with docker on your remote droplets via this package.
   - `r pkg("crunch")`
@@ -423,7 +422,7 @@ memory web files.
     ) provides access to Dataverse 4 APIs. `r pkg("rfigshare")` connects with [Figshare.com](https://figshare.com/) .
     `r pkg("dataone")`
     provides a client for 'DataONE' repositories.
-  - *Google Drive/Google Documents*: The `r ohat("RGoogleDocs")` package is an example of using
+  - *Google Drive/Google Documents*: `r ohat("RGoogleDocs")` is an example of using
     the RCurl and XML packages to quickly develop an interface to the Google
     Documents API. `r ohat("RGoogleStorage")` provides programmatic access to the
     Google Storage API. This allows R users to access and store data on
@@ -435,8 +434,7 @@ memory web files.
     spreadsheets and worksheets. `r pkg("gsheet")` can
     download Google Sheets using just the sharing link. Spreadsheets can be
     downloaded as a data frame, or as plain text to parse manually.
-  - `r pkg("imguR")`
-    is a package to share plots
+  - `r pkg("imguR")` shares plots
     using the image hosting service [Imgur.com](https://imgur.com/). knitr
     also has a function `imgur_upload()` to load images from literate
     programming documents.
@@ -517,7 +515,7 @@ memory web files.
     visualizations in the web using R (and Python), which is accessible via
     `r pkg("plotly")`.
     `r pkg("googleVis")`
-    provides an interface between R and the Google chart tools. The `r ohat("RUbigraph")` package
+    provides an interface between R and the Google chart tools. `r ohat("RUbigraph")`
     provides an R interface to a Ubigraph server for drawing interactive,
     dynamic graphs. You can add and remove vertices/nodes and edges in a graph
     and change their attributes/characteristics such as shape, color, size.
@@ -529,8 +527,8 @@ memory web files.
 
   - `r pkg("Rfacebook")`
     provide an interface to the Facebook API.
-  - The `r ohat("Rflickr")`
-    package provides an interface to the Flickr photo management and sharing
+  -  `r ohat("Rflickr")`
+    provides an interface to the Flickr photo management and sharing
     application Web service. (not on CRAN)
   - `r pkg("instaR")`
     is a client for the [Instagram API](https://www.instagram.com/developer/) .
@@ -551,14 +549,14 @@ memory web files.
     of tweets. `r github("pablobarbera/twitter_ideology")` implements a political ideology
     scaling measure for specified Twitter users.
   - `r pkg("brandwatchR")`
-    is a package to retrieve a data from the Brandwatch social listening API.
+    retrieves a data from the Brandwatch social listening API.
     Both raw text and aggregate statistics are available, as well as project
     and query management functions.
   - `r pkg("hackeRnews")`
     is a client for the
     [Official Hacker News API](https://github.com/HackerNews/API) .
   - `r pkg("rtoot")`
-    is a package to retrieve data from the official [Mastodon API](https://docs.joinmastodon.org/).
+    retrieves data from the official [Mastodon API](https://docs.joinmastodon.org/).
 
 **Web Analytics Services**
 
@@ -575,19 +573,18 @@ memory web files.
   - *Other services*: `r pkg("RSiteCatalyst")` has functions for accessing the Adobe Analytics
     (Omniture SiteCatalyst) Reporting API.
   - `r pkg("RAdwords")`
-    is a package for
-    loading Google Adwords data.
+    loads Google Adwords data.
   - `r pkg("webreadr")`
     can process various
     common forms of request log, including the Common and Combined Web Log
     formats and AWS logs.
   - `r pkg("WebAnalytics")`
-    provides tools for analysis of web application performance, workload and user population.  There is some overlap with      the `webreadr` package, but webreader focuses on reading log files, while WebAnalytics focuses on analysing them.
+    provides tools for analysis of web application performance, workload and user population.  There is some overlap with `webreadr`, but webreader focuses on reading log files, while WebAnalytics focuses on analysing them.
 
 **Web Services for R Package Development**
 
   - R-Hub <http://log.r-hub.io/> is a project to enable package builds across
-    all architectures. `r pkg("rhub")` is a package that interfaces with R-Hub to allow you to check a
+    all architectures. `r pkg("rhub")` interfaces with R-Hub to allow you to check a
     package on the platform.
 
 **Other Web Services**
@@ -617,7 +614,7 @@ memory web files.
 
   - *Literature*: `r pkg("rplos")` is a programmatic interface to the Web Service methods provided
     by the Public Library of Science journals for search. `r pkg("europepmc")` connects to the Europe
-    PubMed Central service. `r pkg("pubmed.mineR")` is a package for text mining of [PubMed
+    PubMed Central service. `r pkg("pubmed.mineR")` is for text mining of [PubMed
     Abstracts](https://pubmed.ncbi.nlm.nih.gov/) that supports fetching text
     and XML from PubMed. `r pkg("jstor")` provides functions and helpers to import metadata, ngrams and
     full-texts from Data for Research service by JSTOR. `r pkg("aRxiv")` is a client for the arXiv
