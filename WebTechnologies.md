@@ -235,7 +235,7 @@ memory web files.
     by embedding R in an browser such as Firefox and being able to call R from
     JavaScript and call back to JavaScript from R. `r pkg("js")` wraps `r pkg("V8")` and validates, reformats,
     optimizes and analyzes JavaScript code.
-  - *Email:*: `r pkg("mailR")`
+  - *Email*: `r pkg("mailR")`
     is an interface to Apache Commons Email to send emails from within R.
     `r pkg("sendmailR")`
     provides a simple SMTP client. `r pkg("gmailr")` provides access the Google's gmail.com RESTful
@@ -243,12 +243,12 @@ memory web files.
     `r pkg("Microsoft365R")` provides a client for Microsoft's Outlook email service, both
     personal (outlook.com) and as part of the Microsoft 365 (formerly known as
     Office 365) suite.
-  - *Mocking:*: `r pkg("webmockr", priority = "core")` stubs and sets expectations on HTTP
+  - *Mocking*: `r pkg("webmockr", priority = "core")` stubs and sets expectations on HTTP
     requests. It is inspired from Ruby's `webmock`. r pkg("webmockr", priority = "core")` only helps mock
     HTTP requests, and returns nothing when requests match expectations.
     It integrates with `r pkg("crul", priority = "core")` and `r pkg("httr", priority = "core")`. See *Testing* for mocking with returned
     responses.
-  - *Testing:*: `r pkg("vcr", priority = "core")`
+  - *Testing*: `r pkg("vcr", priority = "core")`
     provides an interface to easily cache HTTP requests in R package test suites
     (but can be used outside of testing use cases as well). vcr relies on
     `r pkg("webmockr", priority = "core")` to do
