@@ -30,7 +30,7 @@ who maintained this task view up to 2021.
 
 ## Tools for Working with the Web from R
 
-**Core Tools For HTTP Requests**
+### Core Tools For HTTP Requests
 
 There are three main packages that should cover most use cases of interacting
 with the web from R. `r pkg("crul", priority = "core")` is an R6-based HTTP client that provides asynchronous HTTP
@@ -110,7 +110,7 @@ following resources may be useful:
     setup specifically for Google web services, and `r pkg("AzureAuth")` provides similar
     functionality for Azure Active Directory.
 
-**Handling HTTP Errors/Codes**
+### Handling HTTP Errors/Codes
 
 - `r pkg("fauxpas")` brings
     a set of Ruby or Python like R6 classes for each individual HTTP status
@@ -120,7 +120,7 @@ following resources may be useful:
     simple package to help a user/package find HTTP status codes and associated
     messages by name or number.
 
-**Parsing Structured Web Data**
+### Parsing Structured Web Data
 
 The vast majority of web-based data is structured as plain text, HTML, XML, or
 JSON (javascript object notation). Web service APIs increasingly rely on JSON,
@@ -166,7 +166,7 @@ memory web files.
     used to automatically generate functions for working with an web service API
     that provides documentation in [Swagger.io](https://swagger.io/) format.
 
-**Tools for Working with URLs**
+### Tools for Working with URLs
 
 - The `httr::parse_url()` function can be used to extract portions of a URL.
     The `RCurl::URLencode()` and `utils::URLencode()` functions can be used to
@@ -182,7 +182,7 @@ memory web files.
 - `r github("hrbrmstr/gdns")` provides
     access to Google's secure HTTP-based DNS resolution service.
 
-**Tools for Working with Scraped Webpage Contents**
+### Tools for Working with Scraped Webpage Contents
 
 - Several packages can be used for parsing HTML documents.
   `r pkg("boilerpipeR")`
@@ -219,12 +219,12 @@ memory web files.
     without a browser. It can be useful for testing websites (such as Shiny
     applications).
 
-**Security**
+### Security
 
 - `r github("hrbrmstr/securitytxt")`
     identifies and parses web Security policy files.
 
-**Other Useful Packages and Functions**
+### Other Useful Packages and Functions
 
 - *Javascript*: `r pkg("V8")` is
     an R interface to Google's open source, high performance JavaScript engine.
@@ -319,7 +319,7 @@ memory web files.
 
 ## Web Services
 
-**Cloud Computing and Storage**
+### Cloud Computing and Storage
 
 - [The cloudyr project](https://cloudyr.github.io/) aims to provide
     interfaces to popular Amazon, Azure and Google cloud services without the need for external system dependencies.
@@ -407,7 +407,7 @@ memory web files.
 - `r pkg("rrefine")`
     provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
 
-**Document and Code Sharing**
+### Document and Code Sharing
 
 - *Code Sharing*: `r pkg("gistr")` works with
     GitHub gists ([gist.github.com](https://gist.github.com/discover) ) from R,
@@ -444,7 +444,7 @@ memory web files.
     interface to these services, which form part of the Microsoft 365 (formerly
     known as Office 365) suite.
 
-**Data Analysis and Processing Services**
+### Data Analysis and Processing Services
 
 - *Geospatial/Geolocation/Geocoding*: Several packages connect to geolocation/geocoding services. `r pkg("rgeolocate")`
     offers several online and offline tools. `r github("trestletech/rydn")` (not on CRAN) is an interface
@@ -525,7 +525,7 @@ memory web files.
   - `r pkg("rrefine")` can
         import to and export from the 'OpenRefine' data cleaning service.
 
-**Social Media Clients**
+### Social Media Clients
 
 - `r pkg("Rfacebook")`
     provide an interface to the Facebook API.
@@ -560,7 +560,7 @@ memory web files.
 - `r pkg("rtoot")`
     is a package to retrieve data from the official [Mastodon API](https://docs.joinmastodon.org/).
 
-**Web Analytics Services**
+### Web Analytics Services
 
 - *Google Trends*: `r pkg("gtrendsR")` offers functions to perform and display Google Trends queries.
     `r ohat("RGoogleTrends")` provides an alternative.
@@ -584,13 +584,13 @@ memory web files.
 - `r pkg("WebAnalytics")`
     provides tools for analysis of web application performance, workload and user population.  There is some overlap with      the `webreadr` package, but webreader focuses on reading log files, while WebAnalytics focuses on analysing them.
 
-**Web Services for R Package Development**
+### Web Services for R Package Development
 
 - R-Hub <http://log.r-hub.io/> is a project to enable package builds across
     all architectures. `r pkg("rhub")` is a package that interfaces with R-Hub to allow you to check a
     package on the platform.
 
-**Other Web Services**
+### Other Web Services
 
 - *Push Notifications*: `r pkg("RPushbullet")` provides an easy-to-use interface for the
     Pushbullet service which provides fast and efficient notifications between
@@ -675,6 +675,6 @@ memory web files.
 - `r pkg("duckduckr")` is
     an R interface [DuckDuckGo's Instant Answer API](https://duckduckgo.com/api)
 
-### Links
+### Related Links
 
 - [rOpenSci Task View: Open Data](https://github.com/ropensci/opendata)
