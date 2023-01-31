@@ -17,6 +17,6 @@ Some specific types of changes that you might make are:
 
 1. *Add new packages*. This is fine!
 
-1. *Remove packages retired from CRAN*. OK but this should be discussed on [the GitHub issues page](https://github.com/leeper/tabulapdf/issues) before submitting a pull request. My criteria is to always look for an alternative GitHub link and try to email the package author before retiring it.
+1. *Remove packages retired from CRAN*. OK but this should be discussed on [the GitHub issues page](https://github.com/cran-task-views/WebTechnologies/issues) before submitting a pull request. My criteria is to always look for an alternative GitHub link and try to email the package author before retiring it.
 
 Any questions you have can be opened as GitHub issues or directed to hello + r (at) pacha . dev.
