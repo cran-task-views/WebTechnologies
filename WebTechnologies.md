@@ -7,22 +7,22 @@ version: 2023-01-30
 source: https://github.com/cran-task-views/WebTechnologies/
 ---
 
-This task view contains information about to use R and the world wide web
-together. The base version of R does not ship with many tools for interacting
-with the web. Thankfully, there are an increasingly large number of tools for
-interacting with the web. This task view focuses on packages for obtaining web-
-based data and information, frameworks for building web-based R applications,
-and online services that can be accessed from R. A list of available packages
-and functions is presented below, grouped by the type of activity. The
-[rOpenSci task view: Open Data](https://github.com/ropensci/opendata) provides
-further discussion of online data sources that can be accessed from R.
+This task view contains information about to use R and the world wide web together.
+The base version of R does not ship with many tools for interacting with the web.
+Thankfully, there are an increasingly large number of tools for interacting with the web.
+This task view focuses on packages for obtaining web-based data and information,
+frameworks for building web-based R applications,
+and online services that can be accessed from R.
+A list of available packages and functions is presented below, grouped by the type of activity.
+The [rOpenSci task view: Open Data](https://github.com/ropensci/opendata)
+provides further discussion of online data sources that can be accessed from R.
 
-If you have any comments or suggestions for additions or improvements for this
-task view, please submit an issue or a pull request in the GitHub
-repository linked above. If you can't contribute on GitHub, please send an
-e-mail to the maintainer address above. If you have an issue with
-one of the packages discussed below, please contact the maintainer of that
-package.
+If you have any comments or suggestions for additions or improvements for this task view,
+please submit an issue or a pull request in the GitHub repository linked above.
+If you can't contribute on GitHub,
+please send an e-mail to the maintainer address above.
+If you have an issue with one of the packages discussed below,
+please contact the maintainer of that package.
 
 Thanks to all contributors to this task view, especially to
 Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, and Christopher Gandrud
@@ -32,93 +32,88 @@ who maintained this task view up to 2021.
 
 ### Core Tools For HTTP Requests
 
-There are three main packages that should cover most use cases of interacting
-with the web from R. `r pkg("crul", priority = "core")` is an R6-based HTTP client that provides asynchronous HTTP
-requests, a pagination helper, HTTP mocking via `r pkg("webmockr", priority = "core")`, and request caching for
-unit tests via `r pkg("vcr", priority = "core")`.
-crul targets R developers more so than end users. `r pkg("httr", priority = "core")` provides more of a user facing
-client for HTTP requests and differentiates from the former package in that it
-provides support for OAuth. Note that you can pass in additional curl options
-when you instantiate R6 classes in crul, and the `config` parameter in httr.
-`r pkg("curl", priority = "core")` is a lower-level
-package that provides a closer interface between R and the [libcurl C
-library](https://curl.se/libcurl/), but is less user-friendly. curl underlies
-both crul and httr. curl may be useful for operations on web-based XML or to
-perform FTP operations (as crul and httr are focused primarily on HTTP).
-`curl::curl()` is an SSL-compatible replacement for base R's `url()` and has
-support for http 2.0, SSL (https, ftps), gzip, deflate and more. For websites
-serving insecure HTTP (i.e. using the "http" not "https" prefix), most R
-functions can extract data directly, including `read.table` and `read.csv`;
-this also applies to functions in add-on packages such as
-`jsonlite::fromJSON()` and `XML::parseXML`. For more specific situations, the
-following resources may be useful:
+There are three main packages that should cover most use cases of interacting with the web from R.
 
-- `r pkg("RCurl")` is another
-    low level client for libcurl. Of the two low-level curl clients, we
-    recommend using `r pkg("curl", priority = "core")`. `r pkg("httpRequest")` is another low-level package for HTTP requests that
-    implements the GET, POST and multipart POST verbs, but we do not recommend
-    its use.
-- `r pkg("request")`
-    provides a high-level package that is useful for developing other API client
-    packages. `r pkg("httping")` provides simplified tools to ping and time HTTP requests, around
-    `r pkg("httr", priority = "core")` calls.
-    `r pkg("httpcache")`
-    provides a mechanism for caching HTTP requests.
-- An alternative low-level sockets implementation that can be used to perform HTTP and streaming Websocket requests synchronously
-    or asynchronously over its own concurrency framework is `r pkg("nanonext")`, which uses the NNG/mbedTLS libraries as backend.
-- For dynamically generated webpages (i.e., those requiring user interaction
-    to display results), `r pkg("RSelenium")` can be used to automate those interactions and extract
-    page contents. It provides a set of bindings for the Selenium 2.0 webdriver
-    using the 'JsonWireProtocol'. It can also aid in automated application testing, load
-    testing, and web scraping. `r pkg("seleniumPipes")` provides a "pipe"-oriented interface to the
-    same. `r github("cpsievert/rdom")` uses 'phantomjs' to access a webpage's Document Object Model (DOM).
-- For capturing static content of web pages `r pkg("postlightmercury")` is a client for
-    the web service 'Mercury' that turns web
-    pages into structured and clean text.
-- Another, higher-level alternative package useful for webscraping is
-    `r pkg("rvest")`, which is
-    designed to work with `r pkg("magrittr")` to make it easy to express common web scraping tasks.
-- Many base R tools can be used to download web content, provided that the
-    website does not use SSL (i.e., the URL does not have the "https" prefix).
-    `download.file()` is a general purpose function that can be used to download
-    a remote file. For SSL, the `download()` function in `r pkg("downloader")` wraps
-    `download.file()`, and takes all the same arguments.
+1. `r pkg("crul", priority = "core")` is an R6-based HTTP client that provides asynchronous HTTP requests,
+  a pagination helper,
+  HTTP mocking via `r pkg("webmockr", priority = "core")`,
+  and request caching for unit tests via `r pkg("vcr", priority = "core")`.
+  crul targets R developers more so than end users.
+1. `r pkg("httr", priority = "core")` provides more of a user facing client for HTTP requests and
+  differentiates from the former package in that it provides support for OAuth.
+  Note that you can pass in additional curl options
+  when you instantiate R6 classes in crul, and the `config` parameter in httr.
+1. `r pkg("curl", priority = "core")` is a lower-level
+  package that provides a closer interface between R and the
+  [libcurl C library](https://curl.se/libcurl/), but is less user-friendly.
+  curl underlies both crul and httr. curl may be useful for operations on web-based XML or
+  to perform FTP operations (as crul and httr are focused primarily on HTTP).
+  `curl::curl()` is an SSL-compatible replacement for base R's `url()` and
+  has support for http 2.0, SSL (https, ftps), gzip, deflate and more.
+  For websites serving insecure HTTP (i.e. using the "http" not "https" prefix),
+  most R functions can extract data directly, including `read.table` and `read.csv`;
+  this also applies to functions in add-on packages
+  such as `jsonlite::fromJSON()` and `XML::parseXML`.
+
+For more specific situations, the following resources may be useful:
+
+- `r pkg("RCurl")` is another low level client for libcurl.
+  Of the two low-level curl clients, we recommend using `r pkg("curl", priority = "core")`.
+  `r pkg("httpRequest")` is another low-level package for HTTP requests that implements
+  the GET, POST and multipart POST verbs,
+  but we do not recommend its use.
+- `r pkg("request")`provides a high-level package that is useful for developing other API client packages.
+  `r pkg("httping")` provides simplified tools to ping and time HTTP requests, around `r pkg("httr", priority = "core")` calls.
+  `r pkg("httpcache")` provides a mechanism for caching HTTP requests.
+- `r pkg("nanonext")` is an alternative low-level sockets implementation that can be used to perform HTTP and
+  streaming Websocket requests synchronously or asynchronously over its own concurrency framework.
+  It uses the NNG/mbedTLS libraries as a backend.
+- For dynamically generated webpages (i.e., those requiring user interaction to display results),
+  `r pkg("RSelenium")` can be used to automate those interactions and extract page contents.
+  It provides a set of bindings for the Selenium 2.0 webdriver using the 'JsonWireProtocol'.
+  It can also aid in automated application testing, load testing, and web scraping.
+  `r pkg("seleniumPipes")` provides a "pipe"-oriented interface to the same.
+  `r github("cpsievert/rdom")` uses 'phantomjs' to access a webpage's Document Object Model (DOM).
+- For capturing static content of web pages `r pkg("postlightmercury")` is a client
+  for the web service 'Mercury' that turns web pages into structured and clean text.
+- Another, higher-level alternative package useful for webscraping is `r pkg("rvest")`,
+  which is designed to work with `r pkg("magrittr")` to make it easy to express common web scraping tasks.
+- Many base R tools can be used to download web content, provided that the website does not use SSL
+  (i.e., the URL does not have the "https" prefix).
+  `download.file()` is a general purpose function that can be used to download a remote file.
+  For SSL, the `download()` function in `r pkg("downloader")`
+  wraps `download.file()`, and takes all the same arguments.
 - Tabular data sets (e.g., txt, csv, etc.) can be input using `read.table()`,
-    `read.csv()`, and friends, again assuming that the files are not hosted via
-    SSL. An alternative is to use `httr::GET` (or `RCurl::getURL`) to first read
-    the file into R as a character vector before parsing with
-    `read.table(text=...)`, or you can download the file to a local directory.
-    `r pkg("rio")`
-    provides an `import()` function
-    that can read a number of common data formats directly from an <https://URL>. The `r pkg("repmis")`
-    function `source_data()` can load and cache plain-text data from a URL
-    (either http or https). That package also includes `source_Dropbox()` for
-    downloading/caching plain-text data from non-public Dropbox folders and
-    `source_XlsxData()` for downloading/caching Excel xlsx sheets.
-- *Authentication*: Using web resources can require authentication, either
-    via API keys, OAuth, username:password combination, or via other means.
-    Additionally, sometimes web resources that require authentication be in the
-    header of an http call, which requires a little bit of extra work. API keys
-    and username:password combos can be combined within a url for a call to a
-    web resource, or can be specified via commands in `r pkg("RCurl")` or `r pkg("httr", priority = "core")`. OAuth is the most
-    complicated authentication process, and can be most easily done using
-    `r pkg("httr", priority = "core")`. See the 6
-    demos within `r pkg("httr", priority = "core")`,
-    three for OAuth 1.0 (linkedin, twitter, vimeo) and three for OAuth 2.0
-    (facebook, GitHub, google). `r pkg("ROAuth")` provides a separate R interface to
-    OAuth. OAuth is easier to to do in `r pkg("httr", priority = "core")`, so start there. `r pkg("googleAuthR")` provides an OAuth 2.0
-    setup specifically for Google web services, and `r pkg("AzureAuth")` provides similar
-    functionality for Azure Active Directory.
+  `read.csv()`, and friends, again assuming that the files are not hosted via SSL.
+  An alternative is to use `httr::GET` (or `RCurl::getURL`) to first read
+  the file into R as a character vector before parsing with `read.table(text=...)`,
+  or you can download the file to a local directory.
+  `r pkg("rio")` provides an `import()` function that can read a number of common data formats directly from an <https://URL>.
+  The `r pkg("repmis")` function `source_data()` can load and cache plain-text data from a URL (either http or https).
+  That package also includes `source_Dropbox()` for downloading/caching plain-text data from non-public Dropbox folders and
+  `source_XlsxData()` for downloading/caching Excel xlsx sheets.
+- *Authentication*: Using web resources can require authentication,
+  either via API keys, OAuth, username:password combination, or via other means.
+  Additionally, sometimes web resources that require authentication be in the header of an http call,
+  which requires a little bit of extra work. API keys and username:password combos can be combined
+  within a url for a call to a web resource, or can be specified via commands in
+  `r pkg("RCurl")` or `r pkg("httr", priority = "core")`.
+  OAuth is the most complicated authentication process,
+  and can be most easily done using `r pkg("httr", priority = "core")`.
+  See the 6 demos within `r pkg("httr", priority = "core")`,
+  three for OAuth 1.0 (linkedin, twitter, vimeo) and
+  three for OAuth 2.0 (facebook, GitHub, google).
+  `r pkg("ROAuth")` provides a separate R interface to OAuth.
+  OAuth is easier to to do in `r pkg("httr", priority = "core")`, so start there.
+  `r pkg("googleAuthR")` provides an OAuth 2.0 setup specifically for Google web services,
+  and `r pkg("AzureAuth")` provides similar functionality for Azure Active Directory.
 
 ### Handling HTTP Errors/Codes
 
-- `r pkg("fauxpas")` brings
-    a set of Ruby or Python like R6 classes for each individual HTTP status
-    code, allowing simple and verbose messages, with a choice of using messages,
-    warnings, or stops.
-- `r pkg("httpcode")` is a
-    simple package to help a user/package find HTTP status codes and associated
-    messages by name or number.
+- `r pkg("fauxpas")` brings a set of Ruby or Python like R6 classes for each individual HTTP status code,
+  allowing simple and verbose messages, with a choice of using messages, warnings, or stops.
+- `r pkg("httpcode")` is a simple package to help a user/package find HTTP status codes and
+  associated messages by name or number.
 
 ### Parsing Structured Web Data
 
