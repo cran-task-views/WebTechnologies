@@ -3,7 +3,7 @@ name: WebTechnologies
 topic: Web Technologies and Services
 maintainer: Mauricio Vargas Sepulveda, Will Beasley
 email: mavargas11@uc.cl
-version: 2023-01-30
+version: 2023-01-31
 source: https://github.com/cran-task-views/WebTechnologies/
 ---
 
@@ -527,38 +527,26 @@ can be used to parse locally stored or in-memory web files.
 
 ### Social Media Clients
 
-- `r pkg("Rfacebook")`
-    provide an interface to the Facebook API.
-- `r ohat("Rflickr")`
-    provides an interface to the Flickr photo management and sharing
-    application Web service. (not on CRAN)
-- `r pkg("instaR")`
-    is a client for the [Instagram API](https://www.instagram.com/developer/) .
-- `r pkg("Rlinkedin")` is
-    a client for the LinkedIn API. Auth is via OAuth.
-- `r pkg("rpinterest")`
-    connects to the 'Pinterest' API.
-- `r pkg("vkR")` is a client for
-    VK, a social networking site based in Russia.
+- `r pkg("Rfacebook")` provides an interface to the Facebook API.
+- `r ohat("Rflickr")` provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
+- `r pkg("instaR")` is a client for the [Instagram API](https://www.instagram.com/developer/).
+- `r pkg("Rlinkedin")` is a client for the LinkedIn API. Auth is via OAuth.
+- `r pkg("rpinterest")` connects to the 'Pinterest' API.
+- `r pkg("vkR")` is a client for VK, a social networking site based in Russia.
 - `r github("rladies/meetupr")` is a client for the Meetup.com API.
-- *Twitter*: `r pkg("twitteR")` provides an
-    interface to the Twitter web API. It claims to be deprecated in favor of
-    `r pkg("rtweet")`. `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter
-    data. `r pkg("streamR")`
-    provides a series of functions that allow users to access Twitter's filter,
-    sample, and user streams, and to parse the output into data frames. OAuth
-    authentication is supported. `r pkg("graphTweets")` produces a network graph from a data.frame
-    of tweets. `r github("pablobarbera/twitter_ideology")` implements a political ideology
-    scaling measure for specified Twitter users.
-- `r pkg("brandwatchR")`
-    retrieves a data from the Brandwatch social listening API.
-    Both raw text and aggregate statistics are available, as well as project
-    and query management functions.
-- `r pkg("hackeRnews")`
-    is a client for the
-    [Official Hacker News API](https://github.com/HackerNews/API) .
-- `r pkg("rtoot")`
-    retrieves data from the official [Mastodon API](https://docs.joinmastodon.org/).
+- *Twitter*:
+  `r pkg("twitteR")` provides an interface to the Twitter web API.
+  It claims to be deprecated in favor of `r pkg("rtweet")`.
+  `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter data.
+  `r pkg("streamR")`provides a series of functions that allow users to access Twitter's filter,
+  sample, and user streams, and to parse the output into data frames.
+  OAuth authentication is supported.
+  `r pkg("graphTweets")` produces a network graph from a data.frame of tweets.
+  `r github("pablobarbera/twitter_ideology")` implements a political ideology scaling measure for specified Twitter users.
+- `r pkg("brandwatchR")` retrieves a data from the Brandwatch social listening API.
+  Both raw text and aggregate statistics are available, as well as project and query management functions.
+- `r pkg("hackeRnews")`is a client for the [Official Hacker News API](https://github.com/HackerNews/API) .
+- `r pkg("rtoot")` retrieves data from the official [Mastodon API](https://docs.joinmastodon.org/).
 
 ### Web Analytics Services
 
