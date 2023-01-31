@@ -531,7 +531,7 @@ can be used to parse locally stored or in-memory web files.
 
 - `r pkg("Rfacebook")`
     provide an interface to the Facebook API.
--  `r ohat("Rflickr")`
+- `r ohat("Rflickr")`
     provides an interface to the Flickr photo management and sharing
     application Web service. (not on CRAN)
 - `r pkg("instaR")`
@@ -597,13 +597,13 @@ can be used to parse locally stored or in-memory web files.
 
 ### Other Web Services
 
-- *Push Notifications*: `r pkg("RPushbullet")` provides an easy-to-use interface for the
-    Pushbullet service which provides fast and efficient notifications between
-    computers, phones and tablets. `r pkg("pushoverr")` can sending push notifications to mobile devices (iOS and
-    Android) and desktop using 'Pushover'.
-    `r pkg("notifyme")`
-    can control Phillips Hue
-    lighting.
+- *Push Notifications*:
+  `r pkg("RPushbullet")` provides an easy-to-use interface for the Pushbullet service
+  which provides fast and efficient notifications between
+  computers, phones and tablets.
+  `r pkg("pushoverr")` can sending push notifications to mobile devices (iOS and Android) and desktop
+  using 'Pushover'.
+  `r pkg("notifyme")` can control Phillips Hue lighting.
 
 - *Reference/bibliography/citation management*:
   `r pkg("rorcid")` is a programmatic interface the [Orcid.org](https://orcid.org/) API,
@@ -619,65 +619,62 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("zen4R")` provides an Interface to 'Zenodo' REST API,
   including management of depositions, attribution of DOIs and upload of files.
 
-- *Literature*: `r pkg("rplos")` is a programmatic interface to the Web Service methods provided
-    by the Public Library of Science journals for search. `r pkg("europepmc")` connects to the Europe
-    PubMed Central service. `r pkg("pubmed.mineR")` is for text mining of [PubMed
-    Abstracts](https://pubmed.ncbi.nlm.nih.gov/) that supports fetching text
-    and XML from PubMed. `r pkg("jstor")` provides functions and helpers to import metadata, ngrams and
-    full-texts from Data for Research service by JSTOR. `r pkg("aRxiv")` is a client for the arXiv
-    API, a repository of electronic preprints for computer science,
-    mathematics, physics, quantitative biology, quantitative finance, and
-    statistics. `r pkg("roadoi")` provides an interface to the [Unpaywall API](https://unpaywall.org/products/api) for finding free full-text versions of academic
-    papers. `r pkg("rcoreoa")`
-    is an interface to the [CORE API](https://core.ac.uk/docs/), a search
-    interface for open access scholarly articles. `r pkg("rcrossref")` is an interface to
-    Crossref's API.
+- *Literature*:
+  `r pkg("rplos")` is a programmatic interface to the Web Service methods provided
+  by the Public Library of Science journals for search.
+  `r pkg("europepmc")` connects to the Europe PubMed Central service.
+  `r pkg("pubmed.mineR")` is for text mining of [PubMed Abstracts](https://pubmed.ncbi.nlm.nih.gov/)
+  that supports fetching text and XML from PubMed.
+  `r pkg("jstor")` provides functions and helpers to import
+  metadata, ngrams and full-texts from Data for Research service by JSTOR.
+  `r pkg("aRxiv")` is a client for the arXiv API, a repository of electronic preprints for
+  computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics.
+  `r pkg("roadoi")` provides an interface to the [Unpaywall API](https://unpaywall.org/products/api)
+  for finding free full-text versions of academic papers.
+  `r pkg("rcoreoa")`is an interface to the [CORE API](https://core.ac.uk/docs/),
+  a search interface for open access scholarly articles.
+  `r pkg("rcrossref")` is an interface to Crossref's API.
 
-- *Automated Metadata Harvesting*: `r pkg("oai")` and `r pkg("OAIHarvester")` harvest metadata using the Open Archives
-    Initiative Protocol for Metadata Harvesting (OAI-PMH) standard.
+- *Automated Metadata Harvesting*:
+  `r pkg("oai")` and `r pkg("OAIHarvester")` harvest metadata
+  using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard.
 
-- *Wikipedia*: `r pkg("WikipediR")` is a
-    wrapper for the 'MediaWiki' API, aimed particularly at the 'Wikimedia'
-    "production" wikis, such as 'Wikipedia'. `r pkg("WikidataR")` can request data from [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase. `r pkg("wikipediatrend")` provides access to Wikipedia
-    page access statistics. `r pkg("WikidataQueryServiceR")` is a client for the
-    [Wikidata Query Service](https://query.wikidata.org/) .
+- *Wikipedia*:
+  `r pkg("WikipediR")` is a wrapper for the 'MediaWiki' API,
+  aimed particularly at the 'Wikimedia' "production" wikis, such as 'Wikipedia'.
+  `r pkg("WikidataR")` can request data from
+  [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase.
+  `r pkg("wikipediatrend")` provides access to Wikipedia page access statistics.
+  `r pkg("WikidataQueryServiceR")` is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 
 - `r pkg("bigrquery")`: An interface to Google's bigquery.
 
 - `r github("sckott/discgolf")` (archived)
-    provides a client to
-    interact with the API for the 'Discourse' web
-    forum platform. The API is for an installed instance of Discourse, not for
-    the Discourse site itself.
+  provides a client to interact with the API for the 'Discourse' web forum platform.
+  The API is for an installed instance of Discourse, not for the Discourse site itself.
 
-- `r github("stephlocke/mockaRoo")` (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs) to generate mock or fake data based on an input schema.
+- `r github("stephlocke/mockaRoo")` (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs)
+  to generate mock or fake data based on an input schema.
 
-- `r github("karthik/randNames")`
-    generates random names
-    and personal identifying information using the <https://randomapi.com/> API.
+- `r github("karthik/randNames")` generates random names
+  and personal identifying information using the <https://randomapi.com/> API.
 
-- `r pkg("rerddap")`: A
-    generic R client to interact with any ERDDAP instance, which is a special
-    case of OPeNDAP (<https://en.wikipedia.org/wiki/OPeNDAP>), or *Open-source Project for a Network Data Access Protocol*. Allows user to swap
-    out the base URL to use any ERDDAP instance.
+- `r pkg("rerddap")`: A generic R client to interact with any ERDDAP instance,
+  which is a special case of OPeNDAP (<https://en.wikipedia.org/wiki/OPeNDAP>),
+  or *Open-source Project for a Network Data Access Protocol*.
+  Allows user to swap out the base URL to use any ERDDAP instance.
 
-- `r pkg("RStripe")`
-    provides an interface to 'Stripe', an online payment
-    processor.
+- `r pkg("RStripe")` provides an interface to 'Stripe', an online payment processor.
 
-- `r pkg("slackr")` is a
-    client for Slack.com messaging platform.
+- `r pkg("slackr")` is a client for Slack.com messaging platform.
 
-- `r github("dgrtwo/stackr")`
-    (not on CRAN): An unofficial wrapper for the read-only features of the
-    [Stack Exchange API](https://api.stackexchange.com/) .
+- `r github("dgrtwo/stackr")` (not on CRAN): An unofficial wrapper for the read-only features of the
+  [Stack Exchange API](https://api.stackexchange.com/).
 
-- `r github("nealrichardson/useRsnap")` provides an interface to the API for
-    'Usersnap', a tool for collecting
-    feedback from web application users.
+- `r github("nealrichardson/useRsnap")` provides an interface to the API for 'Usersnap',
+  a tool for collecting feedback from web application users.
 
-- `r pkg("duckduckr")` is
-    an R interface [DuckDuckGo's Instant Answer API](https://duckduckgo.com/api)
+- `r pkg("duckduckr")` is an R interface [DuckDuckGo's Instant Answer API](https://duckduckgo.com/api)
 
 ### Links
 
