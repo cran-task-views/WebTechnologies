@@ -597,20 +597,19 @@ memory web files.
     can control Phillips Hue
     lighting.
 
-- *Reference/bibliography/citation management*: `r pkg("rorcid")` is a programmatic interface the
-    [Orcid.org](https://orcid.org/) API, which can be used for identifying
-    scientific authors and their publications (e.g., by DOI).
-    `r pkg("rdatacite")`
-    connects to 'DataCite', which manages DOIs and
-    metadata for scholarly datasets. `r pkg("scholar")` provides functions to extract citation data
-    from Google Scholar. `r pkg("rscopus")` provides functions to extract citation data from
-    Elsevier Scopus APIs. Convenience functions are also provided for comparing
-    multiple scholars and predicting future h-index values. `r pkg("mathpix")` convert an image of a
-    formula (typeset or handwritten) via Mathpix webservice to produce the
-    'LaTeX' code. `r pkg("zen4R")`
-    provides an Interface to 'Zenodo' REST API, including
-    management of depositions, attribution of DOIs and upload of
-    files.
+- *Reference/bibliography/citation management*:
+  `r pkg("rorcid")` is a programmatic interface the [Orcid.org](https://orcid.org/) API,
+  which can be used for identifying scientific authors and their publications (e.g., by DOI).
+  `r pkg("rdatacite")` connects to 'DataCite',
+  which manages DOIs and metadata for scholarly datasets.
+  `r pkg("scholar")` provides functions to extract citation data from Google Scholar.
+  `r pkg("rscopus")` provides functions to extract citation data from Elsevier Scopus APIs.
+  Convenience functions are also provided for comparing multiple scholars and
+  predicting future h-index values.
+  `r pkg("mathpix")` convert an image of a formula (typeset or handwritten)
+  via Mathpix webservice to produce the 'LaTeX' code.
+  `r pkg("zen4R")` provides an Interface to 'Zenodo' REST API,
+  including management of depositions, attribution of DOIs and upload of files.
 
 - *Literature*: `r pkg("rplos")` is a programmatic interface to the Web Service methods provided
     by the Public Library of Science journals for search. `r pkg("europepmc")` connects to the Europe
