@@ -320,90 +320,97 @@ can be used to parse locally stored or in-memory web files.
 
 ### Cloud Computing and Storage
 
-- [The cloudyr project](https://cloudyr.github.io/) aims to provide
-    interfaces to popular Amazon, Azure and Google cloud services without the need for external system dependencies.
+- [The cloudyr project](https://cloudyr.github.io/) aims to provide interfaces to popular
+- Amazon, Azure and Google cloud services without the need for external system dependencies.
 - Amazon Web Services is a popular, proprietary cloud service offering a
-    suite of computing, storage, and infrastructure tools. `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
-- *Elastic Cloud Compute (EC2)* is a cloud computing service. `r gcode("segue")` (not on CRAN) manages EC2 instances and S3 storage, which includes a parallel version of `lapply()` for the Elastic Map Reduce (EMR) engine called `emrlapply()`. It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
+  suite of computing, storage, and infrastructure tools.
+  `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
+- *Elastic Cloud Compute (EC2)* is a cloud computing service.
+  `r gcode("segue")` (not on CRAN) manages EC2 instances and S3 storage,
+  which includes a parallel version of `lapply()`
+  for the Elastic Map Reduce (EMR) engine called `emrlapply()`.
+  It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
 - *DBREST*: `r ohat("RAmazonDBREST")` provides an interface to Amazon's Simple DB API.
-- `r pkg("paws")`
-    is an interface to nearly all AWS APIs, including compute, storage, databases, and machine learning. It also requires no external system dependencies.
-- Azure and Microsoft 365 are Microsoft's cloud computing services. The Azure
-    platform provides Paas, SaaS and IaaS and supports many different tools and
-    frameworks, including both Microsoft-specific and third-party systems;
-    while Microsoft 365 is a unified framework for accessing cloud data from
-    Microsoft's Office services, Windows and Dynamics. The [AzureR package
-    family](https://github.com/Azure/AzureR) aims to provide a suite of
-    lightweight, powerful tools for working with Azure in R. The packages
-    listed below are part of the family, and are also mirrored at the cloudyr
-    project.
-  - *Azure Active Directory (AAD)* is a centralized directory and identity
-        service. `r pkg("AzureAuth")` is an R client for AAD; use this to obtain OAuth tokens for
-        authenticating with other Azure services, including Resource Manager
-        and storage (see next).
+- `r pkg("paws")` is an interface to nearly all AWS APIs,
+  including compute, storage, databases, and machine learning.
+  It also requires no external system dependencies.
+- Azure and Microsoft 365 are Microsoft's cloud computing services.
+- The Azure platform provides Paas, SaaS and IaaS and supports many different tools and frameworks,
+  including both Microsoft-specific and third-party systems;
+  while Microsoft 365 is a unified framework for accessing cloud data from
+  Microsoft's Office services, Windows and Dynamics.
+  The [AzureR package family](https://github.com/Azure/AzureR)
+  aims to provide a suite of lightweight, powerful tools for working with Azure in R.
+  The packages listed below are part of the family, and are also mirrored at the cloudyr project.
+  - *Azure Active Directory (AAD)* is a centralized directory and identity service.
+    `r pkg("AzureAuth")` is an R client for AAD;
+    use this to obtain OAuth tokens for authenticating with other Azure services,
+    including Resource Manager and storage (see next).
   - *Microsoft Graph* is the API framework for the Microsoft 365 platform,
-        including Azure Active Directory and Office. `r pkg("AzureGraph")` is a low-level
-        extensible R6-based interface to Graph. `r pkg("Microsoft365R")` is an interface
-        to the Office part of Microsoft 365, including OneDrive and SharePoint
-        Online.
-  - *Azure Resource Manager (ARM)* is a service for deploying other Azure
-        services. `r pkg("AzureRMR")` is an R interface to ARM, and allows managing
-        subscriptions, resource groups, resources and templates. It exposes a
-        general R6 class framework that can extended to provide extra
-        functionality for specific services (see next).
+    including Azure Active Directory and Office.
+    `r pkg("AzureGraph")` is a low-level extensible R6-based interface to Graph.
+    `r pkg("Microsoft365R")` is an interface to the Office part of Microsoft 365,
+    including OneDrive and SharePoint Online.
+  - *Azure Resource Manager (ARM)* is a service for deploying other Azure services.
+    `r pkg("AzureRMR")` is an R interface to ARM, and allows managing
+    subscriptions, resource groups, resources and templates.
+    It exposes a general R6 class framework that can extended to provide extra
+    functionality for specific services (see next).
   - *Azure Storage Accounts* are a general-purpose data storage facility.
-        Different types of storage are available: file, blob, table, Data Lake,
-        and more. `r pkg("AzureStor")` provides an R interface to storage. Features include
-        clients for file, blob and Data Lake Gen2 storage, parallelized file
-        transfers, and an interface to Microsoft's cross-platform AzCopy
-        command line utility. Also supplied is an ARM interface, to allow
-        creation and managing of storage accounts. `r pkg("AzureTableStor")` and
-        `r pkg("AzureQstor")` extend AzureStor to provide interfaces to table storage and
-        queue storage respectively
-  - `r pkg("AzureVM")` creates and manages virtual machines in Azure. It
-        includes templates for a wide variety of common VM specifications and
-        operating systems, including Windows, Ubuntu, Debian and RHEL.
-  - `r pkg("AzureContainers")` provides a unified facility for working with containers in
-        Azure. Specifically, it includes R interfaces to *Azure Container
-        Instances (ACI)*, *Azure Docker Registry (ACR)* and *Azure Kubernetes
-        Service (AKS)*. Create Docker images and push them to an ACR
-        repository; spin up ACI containers; deploy Kubernetes services in AKS.
+    Different types of storage are available: file, blob, table, Data Lake, and more.
+    `r pkg("AzureStor")` provides an R interface to storage.
+    Features include clients for file, blob and Data Lake Gen2 storage,
+    parallelized file transfers,
+    and an interface to Microsoft's cross-platform AzCopy command line utility.
+    Also supplied is an ARM interface, to allow creation and managing of storage accounts.
+    `r pkg("AzureTableStor")` and `r pkg("AzureQstor")` extend AzureStor
+    to provide interfaces to table storage and queue storage respectively
+  - `r pkg("AzureVM")` creates and manages virtual machines in Azure.
+    It includes templates for a wide variety of common VM specifications and
+    operating systems, including Windows, Ubuntu, Debian and RHEL.
+  - `r pkg("AzureContainers")` provides a unified facility for working with containers in Azure.
+    Specifically, it includes R interfaces to
+    *Azure Container Instances (ACI)*,
+    *Azure Docker Registry (ACR)* and
+    *Azure Kubernetes Service (AKS)*.
+    Create Docker images and push them to an ACR repository;
+    spin up ACI containers;
+    deploy Kubernetes services in AKS.
   - *Azure Data Explorer*, also known as *Kusto*, is a fast, scalable
-        data exploration and analytics service. `r pkg("AzureKusto")` is an R interface
-        to ADE/Kusto. It includes a dplyr client interface similar to that
-        provided by dbplyr for SQL databases, a DBI client interface, and an
-        ARM interface for deploying and managing Kusto clusters and databases.
-  - *Azure Cosmos DB* is a multi-model NoSQL database service, previously
-        known as Document DB. `r pkg("AzureCosmosR")` is an interface to the core/SQL API
-        for Cosmos DB. It also includes simple bridges to the table storage and
-        MongoDB APIs.
+    data exploration and analytics service.
+    `r pkg("AzureKusto")` is an R interface to ADE/Kusto.
+    It includes a dplyr client interface similar to that provided
+    by dbplyr for SQL databases, a DBI client interface, and an
+    ARM interface for deploying and managing Kusto clusters and databases.
+  - *Azure Cosmos DB* is a multi-model NoSQL database service,
+    previously known as Document DB.
+    `r pkg("AzureCosmosR")` is an interface to the core/SQL API for Cosmos DB.
+    It also includes simple bridges to the table storage and MongoDB APIs.
   - *Azure Computer Vision* and *Azure Custom Vision* are AI services for
-        image recognition and analysis. Computer Vision is a pre-trained
-        service for handling commonly-encountered tasks, while Custom Vision
-        allows you to train your own image recognition model on a custom
-        dataset. `r pkg("AzureVision")` provides an interface to both these services.
-- `r pkg("googleComputeEngineR")` interacts with the Google Compute Engine API, and lets you create, start and stop instances in the Google Cloud.
-- *Cloud Storage*: `r pkg("googleCloudStorageR")` interfaces with Google Cloud
-    Storage. `r pkg("boxr")`
-    is a lightweight, high-level
-    interface for the [box.com API](https://developer.box.com/reference/) .
-    `r pkg("rdrop2")` is a
-    Dropbox interface that provides access to a full suite of file operations,
-    including dir/copy/move/delete operations, account information (including
-    quotas) and the ability to upload and download files from any Dropbox
-    account.
-- *Docker*: `r pkg("analogsea")` is a general purpose client for the Digital Ocean v2 API. In
-    addition, it includes functions to install various R tools
-    including base R, RStudio server, and more. There's an improving interface
-    to interact with docker on your remote droplets via this package.
-- `r pkg("crunch")`
-     provides an interface to the
-    [crunch.io](https://crunch.io/) storage and analytics platform.
-    `r pkg("crunchy")`
-     facilitates making Shiny
-    apps on Crunch.
-- `r pkg("rrefine")`
-    provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
+    image recognition and analysis.
+    Computer Vision is a pre-trained service for handling commonly-encountered tasks,
+    while Custom Vision allows you to train your own image recognition model on a custom dataset.
+    `r pkg("AzureVision")` provides an interface to both these services.
+- `r pkg("googleComputeEngineR")` interacts with the Google Compute Engine API,
+  and lets you create, start and stop instances in the Google Cloud.
+- *Cloud Storage*:
+  `r pkg("googleCloudStorageR")` interfaces with Google Cloud Storage.
+  `r pkg("boxr")` is a lightweight, high-level interface for the
+  [box.com API](https://developer.box.com/reference/).
+  `r pkg("rdrop2")` is a Dropbox interface that provides access to a full suite of file operations,
+  including dir/copy/move/delete operations,
+  account information (including quotas) and
+  the ability to upload and download files from any Dropbox account.
+- *Docker*:
+  `r pkg("analogsea")` is a general purpose client for the Digital Ocean v2 API.
+  In addition, it includes functions to install various R tools
+  including base R, RStudio server, and more.
+  There's an improving interface
+  to interact with docker on your remote droplets via this package.
+- `r pkg("crunch")` provides an interface to the [crunch.io](https://crunch.io/)
+  storage and analytics platform.
+  `r pkg("crunchy")` facilitates making Shiny apps on Crunch.
+- `r pkg("rrefine")` provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
 
 ### Document and Code Sharing
 
