@@ -564,32 +564,36 @@ can be used to parse locally stored or in-memory web files.
 
 ### Web Analytics Services
 
-- *Google Trends*: `r pkg("gtrendsR")` offers functions to perform and display Google Trends queries.
-    `r ohat("RGoogleTrends")` provides an alternative.
-- *Google Analytics*: `r pkg("googleAnalyticsR")`, and `r pkg("ganalytics")` provide functions for
-    accessing and retrieving data from the [Google Analytics APIs](https://developers.google.com/analytics/). The latter supports OAuth 2.0
-    authorization. `r pkg("searchConsoleR")` links to the
-    [Google Search Console](https://developers.google.com/webmaster-tools/)
-    (formerly Webmaster Tools).
-- *Online Advertising*: `r pkg("fbRads")` can manage Facebook ads via the Facebook Marketing API. `r github("WillemPaling/RDoubleClick")` (not on CRAN) can retrieve data from Google's DoubleClick
-    Campaign Manager Reporting API. `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data provided by
-    [Smartly.io](https://app.smartly.io/) .
-- *Other services*: `r pkg("RSiteCatalyst")` has functions for accessing the Adobe Analytics
-    (Omniture SiteCatalyst) Reporting API.
-- `r pkg("RAdwords")`
-    loads Google Adwords data.
-- `r pkg("webreadr")`
-    can process various
-    common forms of request log, including the Common and Combined Web Log
-    formats and AWS logs.
-- `r pkg("WebAnalytics")`
-    provides tools for analysis of web application performance, workload and user population.  There is some overlap with `webreadr`, but webreader focuses on reading log files, while WebAnalytics focuses on analysing them.
+- *Google Trends*:
+  `r pkg("gtrendsR")` offers functions to perform and display Google Trends queries.
+  `r ohat("RGoogleTrends")` provides an alternative.
+- *Google Analytics*:
+  `r pkg("googleAnalyticsR")`, and `r pkg("ganalytics")` provide functions for accessing and retrieving
+  data from the [Google Analytics APIs](https://developers.google.com/analytics/).
+  The latter supports OAuth 2.0 authorization.
+  `r pkg("searchConsoleR")` links to the
+  [Google Search Console](https://developers.google.com/webmaster-tools/) (formerly Webmaster Tools).
+- *Online Advertising*:
+  `r pkg("fbRads")` can manage Facebook ads via the Facebook Marketing API.
+  `r github("WillemPaling/RDoubleClick")` (not on CRAN) can retrieve data from
+  Google's DoubleClick Campaign Manager Reporting API.
+  `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data provided by
+  [Smartly.io](https://app.smartly.io/) .
+- *Other services*:
+  `r pkg("RSiteCatalyst")` has functions for accessing the Adobe Analytics
+   (Omniture SiteCatalyst) Reporting API.
+- `r pkg("RAdwords")` loads Google Adwords data.
+- `r pkg("webreadr")` can process various common forms of request log,
+  including the Common and Combined Web Log formats and AWS logs.
+- `r pkg("WebAnalytics")`provides tools for analysis of
+  web application performance, workload and user population.
+  There is some overlap with `webreadr`, but webreader focuses on reading log files,
+  while WebAnalytics focuses on analysing them.
 
 ### Web Services for R Package Development
 
-- R-Hub <http://log.r-hub.io/> is a project to enable package builds across
-    all architectures. `r pkg("rhub")` interfaces with R-Hub to allow you to check a
-    package on the platform.
+- R-Hub <http://log.r-hub.io/> is a project to enable package builds across all architectures.
+  `r pkg("rhub")` interfaces with R-Hub to allow you to check a package on the platform.
 
 ### Other Web Services
 
