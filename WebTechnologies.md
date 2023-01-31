@@ -119,102 +119,98 @@ For more specific situations, the following resources may be useful:
 
 ### Parsing Structured Web Data
 
-The vast majority of web-based data is structured as plain text, HTML, XML, or
-JSON (javascript object notation). Web service APIs increasingly rely on JSON,
-but XML is still prevalent in many applications. There are several packages for
-specifically working with these format. These functions can be used to interact
-directly with insecure web pages or can be used to parse locally stored or in-
-memory web files.
+The vast majority of web-based data is structured as
+plain text, HTML, XML, or JSON (javascript object notation).
+Web service APIs increasingly rely on JSON, but XML is still prevalent in many applications.
+There are several packages for specifically working with these format.
+These functions can be used to interact directly with insecure web pages or
+can be used to parse locally stored or in-memory web files.
 
-- *XML*: There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2")`. Both support general XML (and HTML) parsing, including XPath
-    queries. `r pkg("xml2")` is less fully featured, but more user friendly with respect to
-    memory management, classes (e.g., XML node vs. node set vs. document), and
-    namespaces. Of the two, only the `r pkg("XML")` supports *de novo* creation of XML nodes and
-    documents. `r pkg("XML2R")` is a
-    collection of convenient functions for coercing XML into data frames. An
-    alternative to `r pkg("XML")`
-    is `r pkg("selectr")`, which parses CSS3
-    Selectors and translates them to XPath 1.0 expressions. `r pkg("XML")` is often used for
-    parsing xml and html, but selectr translates CSS selectors to XPath, so can
-    use the CSS selectors instead of XPath.
-- *HTML*: All of the tools that work with XML also work for HTML, though HTML
-    is - in practice - more prone to be malformed. Some tools are designed
-    specifically to work with HTML. `xml2::read_html()` is a good first function
-    to use for importing HTML. `r pkg("htmltools")` provides functions to create HTML elements.
-    The [selectorgadget browser extension](https://selectorgadget.com/) can be
-    used to identify page elements. `r ohat("RHTMLForms")` reads HTML documents and
-    obtains a description of each of the forms it contains, along with the
-    different elements and hidden fields.
-    `r pkg("htm2txt")` uses regex to converts html documents to plain text by
-    removing all html tags. `r pkg("Rcrawler")` does crawling and scraping of web pages.
-- *JSON*: There are several packages for reading and writing JSON:
-    `r pkg("rjson")`,
-    `r pkg("RJSONIO")`, and
-    `r pkg("jsonlite")`.
-    We recommend using `r pkg("jsonlite")`. Check out the paper describing jsonlite by Jeroen
-    Ooms <https://arxiv.org/abs/1403.2805>. `r pkg("jqr")` provides bindings for the fast JSON library 'jq'. `r pkg("jsonvalidate")` validates JSON against a schema using
-    the "is-my-json-valid" Javascript library; `r pkg("ajv")` does the same using the 'ajv' Javascript
-    library. `r pkg("ndjson")`
-    supports the "ndjson"
-    format.
-- *RSS/Atom*: `r github("datawookie/feedeR")` can be used to parse RSS or Atom feeds. `r pkg("tidyRSS")` parses RSS, Atom XML/JSON
-    and geoRSS into a tidy data.frame.
-- `r pkg("swagger")` can be
-    used to automatically generate functions for working with an web service API
-    that provides documentation in [Swagger.io](https://swagger.io/) format.
+- *XML*:
+  There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2")`.
+  Both support general XML (and HTML) parsing, including XPath queries.
+  `r pkg("xml2")` is less fully featured, but more user friendly with respect to memory management,
+  classes (e.g., XML node vs. node set vs. document), and namespaces.
+  Of the two, only the `r pkg("XML")` supports *de novo* creation of XML nodes and documents.
+  `r pkg("XML2R")` is a collection of convenient functions for coercing XML into data frames.
+  An alternative to `r pkg("XML")` is `r pkg("selectr")`,
+  which parses CSS3 Selectors and translates them to XPath 1.0 expressions.
+  `r pkg("XML")` is often used for parsing xml and html,
+  but selectr translates CSS selectors to XPath,
+  so can use the CSS selectors instead of XPath.
+- *HTML*:
+  All of the tools that work with XML also work for HTML, though HTML is - in practice - more prone to be malformed.
+  Some tools are designed specifically to work with HTML.
+  `xml2::read_html()` is a good first function to use for importing HTML.
+  `r pkg("htmltools")` provides functions to create HTML elements.
+  The [selectorgadget browser extension](https://selectorgadget.com/)
+  can be used to identify page elements.
+  `r ohat("RHTMLForms")` reads HTML documents and obtains a description of each of the forms it contains,
+  along with the different elements and hidden fields.
+  `r pkg("htm2txt")` uses regex to converts html documents to plain text by removing all html tags.
+  `r pkg("Rcrawler")` does crawling and scraping of web pages.
+- *JSON*:
+  There are several packages for reading and writing JSON:
+  `r pkg("rjson")`,
+  `r pkg("RJSONIO")`, and
+  `r pkg("jsonlite")`.
+  We recommend using `r pkg("jsonlite")`.
+  Check out the paper describing jsonlite by Jeroen Ooms <https://arxiv.org/abs/1403.2805>.
+  `r pkg("jqr")` provides bindings for the fast JSON library 'jq'.
+  `r pkg("jsonvalidate")` validates JSON against a schema using the "is-my-json-valid" Javascript library;
+  `r pkg("ajv")` does the same using the 'ajv' Javascript library.
+  `r pkg("ndjson")` supports the "ndjson" format.
+- *RSS/Atom*:
+  `r github("datawookie/feedeR")` can be used to parse RSS or Atom feeds.
+  `r pkg("tidyRSS")` parses RSS, Atom XML/JSON and geoRSS into a tidy data.frame.
+- `r pkg("swagger")` can be used to automatically generate functions for working with an web service API
+  that provides documentation in [Swagger.io](https://swagger.io/) format.
 
 ### Tools for Working with URLs
 
 - The `httr::parse_url()` function can be used to extract portions of a URL.
-    The `RCurl::URLencode()` and `utils::URLencode()` functions can be used to
-    encode character strings for use in URLs. `utils::URLdecode()` decodes back
-    to the original strings. `r pkg("urltools")` can
-    also handle URL encoding, decoding, parsing, and parameter extraction.
-- `r pkg("iptools")` can
-    facilitate working with IPv4 addresses, including for use in geolocation. A
-    similar package `r pkg("ipaddress")`, handles IPv4 and IPv6 addresses and networks.
+  The `RCurl::URLencode()` and `utils::URLencode()` functions can be used to encode character strings for use in URLs.
+  `utils::URLdecode()` decodes back to the original strings.
+  `r pkg("urltools")` can also handle URL encoding, decoding, parsing, and parameter extraction.
+- `r pkg("iptools")` can facilitate working with IPv4 addresses, including for use in geolocation.
+  A similar package `r pkg("ipaddress")`, handles IPv4 and IPv6 addresses and networks.
 - `r github("dmpe/urlshorteneR")` offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd.
-    `r pkg("longurl")` uses the
-    longurl.org API to provide similar functionality.
-- `r github("hrbrmstr/gdns")` provides
-    access to Google's secure HTTP-based DNS resolution service.
+  `r pkg("longurl")` uses the longurl.org API to provide similar functionality.
+- `r github("hrbrmstr/gdns")` provides access to Google's secure HTTP-based DNS resolution service.
 
 ### Tools for Working with Scraped Webpage Contents
 
 - Several packages can be used for parsing HTML documents.
-  `r pkg("boilerpipeR")`
-  provides generic extraction of main text content from HTML files; removal of
-  ads, sidebars and headers using the boilerpipe Java library. `r ohat("RTidyHTML")` interfaces
-  to the libtidy library for correcting HTML documents that are not well-
-  formed. This library corrects common errors in HTML documents.
-  `r pkg("W3CMarkupValidator")` provides an R Interface to W3C Markup Validation Services for
-  validating HTML documents.
-- For XML documents, `r ohat("XMLSchema")` provides facilities in R for reading
-    XML schema documents and processing them to create definitions for R
-    classes and functions for converting XML nodes to instances of those
-    classes. It provides the framework for meta-computing with XML schema in R.
-    `r pkg("xslt")` is an
-    extension for `r pkg("xml2")` to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for
-    `r ohat("Sxslt")`, which is an
-    interface to Dan Veillard's libxslt translator, and `r ohat("SXalan")`.) This
-    may be useful for webscraping, as well as transforming XML markup into
-    another human- or machine-readable format (e.g., HTML, JSON, plain text,
-    etc.). `r ohat("SSOAP")`
-    provides a client-side SOAP (Simple Object Access Protocol) mechanism.
-    Beware, SSOAP itself may not install, and/or its dependencies. The best bet
-    is to get the web service maintainers to switch to REST. `r ohat("XMLRPC")` provides an
-    implementation of XML-RPC, a relatively simple remote procedure call
-    mechanism that uses HTTP and XML. This can be used for
-    communicating between processes on a single machine or for accessing Web
-    services from within R.
-- `r ohat("Rcompression")` (not on CRAN): Interface to zlib and bzip2 libraries for
-    performing in-memory compression and decompression in R. This is useful when
-    receiving or sending contents to remote servers, e.g. Web services, HTTP
-    requests via RCurl.
-- `r pkg("webshot")` uses
-    'PhantomJS' to provide screenshots of web pages
-    without a browser. It can be useful for testing websites (such as Shiny
-    applications).
+  `r pkg("boilerpipeR")` provides generic extraction of main text content from HTML files;
+  removal of ads, sidebars and headers using the boilerpipe Java library.
+  `r ohat("RTidyHTML")` interfaces to the libtidy library for correcting HTML documents that are not well-formed.
+  This library corrects common errors in HTML documents.
+  `r pkg("W3CMarkupValidator")` provides an R Interface to W3C Markup Validation Services for validating HTML documents.
+- For XML documents,
+  `r ohat("XMLSchema")` provides facilities in R for reading XML schema documents and
+  processing them to create definitions for R classes and functions for converting XML nodes
+  to instances of those classes.
+  It provides the framework for meta-computing with XML schema in R.
+  `r pkg("xslt")` is an extension for `r pkg("xml2")` to transform XML documents by applying an xslt style-sheet.
+  (It can be seen as a modern replacement for `r ohat("Sxslt")`,
+  which is an interface to Dan Veillard's libxslt translator, and
+  `r ohat("SXalan")`.)
+  This may be useful for webscraping, as well as
+  transforming XML markup into another human- or machine-readable format
+  (e.g., HTML, JSON, plain text, etc.).
+  `r ohat("SSOAP")` provides a client-side SOAP (Simple Object Access Protocol) mechanism.
+  Beware, SSOAP itself may not install, and/or its dependencies.
+  The best bet is to get the web service maintainers to switch to REST.
+  `r ohat("XMLRPC")` provides an implementation of XML-RPC,
+  a relatively simple remote procedure call mechanism that uses HTTP and XML.
+  This can be used for communicating between processes on a single machine or
+  for accessing Web services from within R.
+- `r ohat("Rcompression")` (not on CRAN): Interface to zlib and bzip2 libraries f
+  or performing in-memory compression and decompression in R.
+  This is useful when receiving or sending contents to remote servers,
+  e.g. Web services, HTTP requests via RCurl.
+- `r pkg("webshot")` uses 'PhantomJS' to provide screenshots of web pages without a browser.
+  It can be useful for testing websites (such as Shiny applications).
 
 ### Security
 
