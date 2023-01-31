@@ -14,8 +14,6 @@ This task view focuses on packages for obtaining web-based data and information,
 frameworks for building web-based R applications,
 and online services that can be accessed from R.
 A list of available packages and functions is presented below, grouped by the type of activity.
-The [rOpenSci task view: Open Data](https://github.com/ropensci/opendata)
-provides further discussion of online data sources that can be accessed from R.
 
 If you have any comments or suggestions for additions or improvements for this task view,
 please submit an issue or a pull request in the GitHub repository linked above.
