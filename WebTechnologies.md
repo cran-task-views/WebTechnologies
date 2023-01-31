@@ -447,23 +447,24 @@ can be used to parse locally stored or in-memory web files.
 
 ### Data Analysis and Processing Services
 
-- *Geospatial/Geolocation/Geocoding*: Several packages connect to geolocation/geocoding services. `r pkg("rgeolocate")`
-    offers several online and offline tools. `r github("trestletech/rydn")` (not on CRAN) is an interface
-    to the Yahoo Developers network geolocation APIs, and
-    `r github("hrbrmstr/ipapi")` can be
-    used to geolocate IPv4/6 addresses and/or domain names using the <http://ip-api.com/> API. `r pkg("opencage")` provides
-    access to to the 'OpenCage' geocoding service.
-    `r github("hrbrmstr/nominatim")`
-    (not on CRAN) connects to the [OpenStreetMap Nominatim
-    API](https://github.com/hrbrmstr/nominatim) for reverse geocoding. `r github("ropensci/PostcodesioR")` (not on CRAN) provides post code lookup and geocoding for
-    the United Kingdom. `r pkg("geosapi")` is an R client for the 'GeoServer' REST
-    API, an open source implementation used widely for serving spatial data.
-    `r pkg("geonapi")`
-    provides an interface to the 'GeoNetwork' legacy API, an opensource catalogue for managing geographic metadata.
-    `r pkg("ows4R")` is a new R
-    client for the 'OGC' standard Web-Services,
-    such Web Feature Service (WFS) for data and Catalogue Service (CSW) for
-    metadata.
+- *Geospatial/Geolocation/Geocoding*:
+  Several packages connect to geolocation/geocoding services.
+  `r pkg("rgeolocate")`offers several online and offline tools.
+  `r github("trestletech/rydn")` (not on CRAN) is an interface to the
+  Yahoo Developers network geolocation APIs, and
+  `r github("hrbrmstr/ipapi")` can be used to geolocate IPv4/6 addresses and/or domain names
+  using the <http://ip-api.com/> API.
+  `r pkg("opencage")` provides access to to the 'OpenCage' geocoding service.
+  `r github("hrbrmstr/nominatim")` (not on CRAN) connects to the
+  [OpenStreetMap Nominatim API](https://github.com/hrbrmstr/nominatim) for reverse geocoding.
+  `r github("ropensci/PostcodesioR")` (not on CRAN) provides post code lookup and
+  geocoding for the United Kingdom.
+  `r pkg("geosapi")` is an R client for the 'GeoServer' REST API,
+   an open source implementation used widely for serving spatial data.
+  `r pkg("geonapi")` provides an interface to the 'GeoNetwork' legacy API,
+  an opensource catalogue for managing geographic metadata.
+  `r pkg("ows4R")` is a new R client for the 'OGC' standard Web-Services,
+  such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
 - *Machine Learning as a Service*: Several packages provide access to cloud-based machine learning services. `r pkg("OpenML")`
     is the official client for [the OpenML API](https://www.openml.org/frontend/page/home). `r pkg("clarifai")` is a
     [Clarifai.com](https://www.clarifai.com/) client that enables automated
