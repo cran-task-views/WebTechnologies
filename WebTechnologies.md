@@ -7,6 +7,10 @@ version: 2023-01-30
 source: https://github.com/cran-task-views/WebTechnologies/
 ---
 
+## General Tools
+
+### Tools for Working with the Web from R
+
 This task view contains information about to use R and the world wide web together.
 The base version of R does not ship with many tools for interacting with the web.
 Thankfully, there are an increasingly large number of tools for interacting with the web.
@@ -25,8 +29,6 @@ please contact the maintainer of that package.
 Thanks to all contributors to this task view, especially to
 Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, and Christopher Gandrud
 who maintained this task view up to 2021.
-
-## Tools for Working with the Web from R
 
 ### Core Tools For HTTP Requests
 
@@ -52,6 +54,8 @@ There are three main packages that should cover most use cases of interacting wi
   most R functions can extract data directly, including `read.table` and `read.csv`;
   this also applies to functions in add-on packages
   such as `jsonlite::fromJSON()` and `XML::parseXML`.
+
+### Additional tools for internet communication
 
 For more specific situations, the following resources may be useful:
 
@@ -664,6 +668,6 @@ memory web files.
 - `r pkg("duckduckr")` is
     an R interface [DuckDuckGo's Instant Answer API](https://duckduckgo.com/api)
 
-### Related Links
+### Links
 
 - CRAN Task View [Reproducible Research](https://CRAN.R-project.org/view=ReproducibleResearch)
