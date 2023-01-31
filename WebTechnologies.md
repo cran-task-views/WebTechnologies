@@ -214,101 +214,107 @@ can be used to parse locally stored or in-memory web files.
 
 ### Security
 
-- `r github("hrbrmstr/securitytxt")`
-    identifies and parses web Security policy files.
+- `r github("hrbrmstr/securitytxt")` identifies and parses web Security policy files.
 
 ### Other Useful Packages and Functions
 
-- *Javascript*: `r pkg("V8")` is
-    an R interface to Google's open source, high performance JavaScript engine.
-    It can wrap Javascript libraries as well as NPM packages. `r ohat("SpiderMonkey")`
-    provides another means of evaluating JavaScript code, creating
-    JavaScript objects and calling JavaScript functions and methods from within
-    R. This can work by embedding the JavaScript engine within an R session or
-    by embedding R in an browser such as Firefox and being able to call R from
-    JavaScript and call back to JavaScript from R. `r pkg("js")` wraps `r pkg("V8")` and validates, reformats,
-    optimizes and analyzes JavaScript code.
-- *Email*: `r pkg("mailR")`
-    is an interface to Apache Commons Email to send emails from within R.
-    `r pkg("sendmailR")`
-    provides a simple SMTP client. `r pkg("gmailr")` provides access the Google's gmail.com RESTful
-    API.
-    `r pkg("Microsoft365R")` provides a client for Microsoft's Outlook email service, both
-    personal (outlook.com) and as part of the Microsoft 365 (formerly known as
-    Office 365) suite.
-- *Mocking*: `r pkg("webmockr")` stubs and sets expectations on HTTP
-    requests. It is inspired from Ruby's `webmock`. `r pkg("webmockr")` only helps mock
-    HTTP requests, and returns nothing when requests match expectations.
-    It integrates with `r pkg("crul")` and `r pkg("httr")`. See *Testing* for mocking with returned
-    responses.
-- *Testing*: `r pkg("vcr")`
-    provides an interface to easily cache HTTP requests in R package test suites
-    (but can be used outside of testing use cases as well). vcr relies on
-    `r pkg("webmockr")` to do
-    the HTTP request mocking. vcr integrates with
-    `r pkg("crul")` and
-    `r pkg("httr")`.
-    `r pkg("httptest")`
-    provides a framework for testing packages that communicate with HTTP APIs,
-    offering tools for mocking APIs, for recording real API responses for use
-    as mocks, and for making assertions about HTTP requests, all without
-    requiring a live connection to the API server at runtime. httptest only
-    works with httr.
-- *Miscellaneous*: `r pkg("webutils")` contains various functions for developing web applications,
-    including parsers for `application/x-www-form-urlencoded` as well as
-    `multipart/form-data`. `r pkg("mime")` guesses the MIME type
-    for a file from its extension. `r pkg("rsdmx")` provides tools to read data and metadata documents
-    exchanged through the Statistical Data and Metadata Exchange (SDMX)
-    framework; it focuses on the SDMX XML standard format
-    (SDMX-ML). `r pkg("robotstxt")` provides functions and classes for parsing robots.txt files and
-    checking access permissions; `r pkg("spiderbar")` does the same. `r pkg("uaparserjs")` uses the javascript ["ua-parser"
-    library](https://github.com/ua-parser) to parse User-Agent HTTP headers.
-    `r pkg("rapiclient")` is
-    a client for consuming APIs that follow the [Open API format](https://www.openapis.org/). `r pkg("restfulr")` models a RESTful service as if it were a nested R list.
+- *Javascript*:
+  `r pkg("V8")` is an R interface to Google's open source, high performance JavaScript engine.
+  It can wrap Javascript libraries as well as NPM packages.
+  `r ohat("SpiderMonkey")` provides another means of evaluating JavaScript code,
+  creating JavaScript objects and calling JavaScript functions and methods from within R.
+  This can work by embedding the JavaScript engine within an R session or
+  by embedding R in an browser such as Firefox and
+  being able to call R from JavaScript and call back to JavaScript from R.
+  `r pkg("js")` wraps `r pkg("V8")` and validates, reformats, optimizes and analyzes JavaScript code.
+- *Email*:
+  `r pkg("mailR")` is an interface to Apache Commons Email to send emails from within R.
+  `r pkg("sendmailR")`provides a simple SMTP client.
+  `r pkg("gmailr")` provides access the Google's gmail.com RESTful API.
+  `r pkg("Microsoft365R")` provides a client for Microsoft's Outlook email service,
+  both personal (outlook.com) and
+  as part of the Microsoft 365 (formerly known as Office 365) suite.
+- *Mocking*:
+  `r pkg("webmockr")` stubs and sets expectations on HTTP requests.
+  It is inspired from Ruby's `webmock`.
+  `r pkg("webmockr")` only helps mock HTTP requests, and
+  returns nothing when requests match expectations.
+  It integrates with `r pkg("crul")` and `r pkg("httr")`.
+  See *Testing* for mocking with returned responses.
+- *Testing*:
+  `r pkg("vcr")` provides an interface to easily cache HTTP requests in R package test suites
+  (but can be used outside of testing use cases as well).
+  vcr relies on `r pkg("webmockr")` to do the HTTP request mocking.
+  vcr integrates with `r pkg("crul")` and `r pkg("httr")`.
+  `r pkg("httptest")` provides a framework for testing packages that communicate with HTTP APIs,
+  offering tools for mocking APIs, for recording real API responses for use as mocks,
+  and for making assertions about HTTP requests,
+  all without requiring a live connection to the API server at runtime.
+  httptest only works with httr.
+- *Miscellaneous*:
+  `r pkg("webutils")` contains various functions for developing web applications,
+  including parsers for `application/x-www-form-urlencoded` as well as `multipart/form-data`.
+  `r pkg("mime")` guesses the MIME type for a file from its extension.
+  `r pkg("rsdmx")` provides tools to read data and metadata documents exchanged through the
+  Statistical Data and Metadata Exchange (SDMX) framework;
+  it focuses on the SDMX XML standard format(SDMX-ML).
+  `r pkg("robotstxt")` provides functions and classes for parsing robots.txt files and
+  checking access permissions;
+  `r pkg("spiderbar")` does the same.
+  `r pkg("uaparserjs")` uses the javascript ["ua-parser" library](https://github.com/ua-parser)
+  to parse User-Agent HTTP headers.
+  `r pkg("rapiclient")` is a client for consuming APIs that follow the
+  [Open API format](https://www.openapis.org/).
+  `r pkg("restfulr")` models a RESTful service as if it were a nested R list.
 
 ## Web and Server Frameworks
 
 - [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization) (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
-- `r pkg("shiny")`
-    makes it easy to build interactive web applications with R.
-- `github pkg("plotly/dashR")` is a web
-    framework which is available for Python, R and Julia, with components
-    written in React.js.
-- Other web frameworks include: `r pkg("fiery")` that is meant to be more flexible but less easy to use
-    than shiny (`r pkg("reqres")` and `r pkg("routr")` are utilities used by fiery that provide HTTP request and
-    response classes, and HTTP routing, respectively); `r github("att/rcloud")` provides an
-    iPython notebook-style web-based R interface; and `r pkg("Rook")`, which contains the
-    specification and convenience software for building and running Rook
-    applications.
-- The `r pkg("opencpu")`
-    framework for embedded statistical computation and reproducible research exposes a web API interfacing R, LaTeX and Pandoc. This API is used for example to integrate statistical functionality into systems, share and execute scripts or reports on centralized servers, and build R based apps.
+- `r pkg("shiny")` makes it easy to build interactive web applications with R.
+- `github pkg("plotly/dashR")` is a web framework which is available for
+  Python, R and Julia, with components written in React.js.
+- Other web frameworks include:
+  `r pkg("fiery")` that is meant to be more flexible but less easy to use than shiny
+  (`r pkg("reqres")` and `r pkg("routr")` are utilities used by fiery
+  that provide HTTP request and response classes, and HTTP routing, respectively);
+  `r github("att/rcloud")` provides an iPython notebook-style web-based R interface; and
+  `r pkg("Rook")`, which contains the specification and convenience software
+  for building and running Rook applications.
+- The `r pkg("opencpu")` framework for embedded statistical computation and
+  reproducible research exposes a web API interfacing R, LaTeX and Pandoc.
+  This API is used for example to integrate statistical functionality into systems,
+  share and execute scripts or reports on centralized servers,
+  and build R based apps.
 - Several general purpose server/client frameworks for R exist.
-    `r pkg("Rserve")` and
-    `r pkg("RSclient")`
-    provide server and client functionality for TCP/IP or local socket
-    interfaces. `r pkg("httpuv")` provides a low-level socket and protocol support for handling
-    HTTP and WebSocket requests directly within R. Another related package,
-    perhaps which `r pkg("httpuv")` replaces, is `websockets` (retired from CRAN). `r pkg("servr")` provides a simple HTTP server to serve files under a given
-    directory based on httpuv.
+  `r pkg("Rserve")` and
+  `r pkg("RSclient")`
+  provide server and client functionality for TCP/IP or local socket interfaces.
+  `r pkg("httpuv")` provides a low-level socket and protocol support
+  for handling HTTP and WebSocket requests directly within R.
+  Another related package, perhaps which `r pkg("httpuv")` replaces, is `websockets` (retired from CRAN).
+  `r pkg("servr")` provides a simple HTTP server to serve files under a given directory based on httpuv.
 - Several packages offer functionality for turning R code into a web API.
-    `r pkg("FastRWeb")`
-    provides some basic infrastructure for this. `r pkg("plumber")` allows you to create a REST API by decorating existing R source code. `r pkg("beakr")` provides an R version of functionality found in python Flask and javascript Express.js.
-- `r ohat("WADL")`
-    provides tools to process Web Application Description Language (WADL) documents and to programmatically generate R functions to interface to the REST methods described in those WADL documents. (not on CRAN)
-- `r ohat("RDCOMServer")` provides a mechanism to export R objects as (D)COM objects in Windows. It can be used along with `r ohat("RDCOMClient")`, which provides user-level access from R to other COM servers. (not on CRAN)
-- [rapporter.net](http://rapporter.net/welcome/en) provides an online
-    environment (SaaS) to host and run `r pkg("rapport")` statistical report templates in the cloud.
-- `r pkg("radiant")`
-    is Shiny-based GUI for R that runs in a browser from a server or local machine.
-- The 'Tiki' Wiki CMS/Groupware
-    framework has an R plugin (`PluginR`) to run R code from wiki pages, and use data from their own collected web databases (trackers). A demo: <https://r.tiki.org/tiki-index.php> .
-- `r pkg("whisker")`:
-    Implementation of logicless templating based on 'Mustache' in R. Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
-- `r ohat("CGIwithR")`
-    (not on CRAN) allows one to use R scripts as CGI programs for generating
-    dynamic Web content. HTML forms and other mechanisms to submit dynamic
-    requests can be used to provide input to R scripts via the Web to create
-    content that is determined within that R script.
+  `r pkg("FastRWeb")`provides some basic infrastructure for this.
+  `r pkg("plumber")` allows you to create a REST API by decorating existing R source code.
+  `r pkg("beakr")` provides an R version of functionality found in python Flask and javascript Express.js.
+- `r ohat("WADL")` provides tools to process Web Application Description Language (WADL) documents and
+  to programmatically generate R functions to interface to the REST methods
+  described in those WADL documents. (not on CRAN)
+- `r ohat("RDCOMServer")` provides a mechanism to export R objects as (D)COM objects in Windows.
+  It can be used along with `r ohat("RDCOMClient")`,
+  which provides user-level access from R to other COM servers. (not on CRAN)
+- [rapporter.net](http://rapporter.net/welcome/en) provides an online environment (SaaS)
+  to host and run `r pkg("rapport")` statistical report templates in the cloud.
+- `r pkg("radiant")` is Shiny-based GUI for R that runs in a browser from a server or local machine.
+- The 'Tiki' Wiki CMS/Groupware framework has an R plugin (`PluginR`) to run R code from wiki pages,
+  and use data from their own collected web databases (trackers).
+  A demo: <https://r.tiki.org/tiki-index.php> .
+- `r pkg("whisker")`: Implementation of logicless templating based on 'Mustache' in R.
+- Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
+- `r ohat("CGIwithR")` (not on CRAN) allows one to use R scripts as CGI programs
+  for generating dynamic Web content.
+  HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts
+  via the Web to create content that is determined within that R script.
 
 ## Web Services
 
