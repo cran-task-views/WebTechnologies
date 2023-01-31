@@ -414,39 +414,36 @@ can be used to parse locally stored or in-memory web files.
 
 ### Document and Code Sharing
 
-- *Code Sharing*: `r pkg("gistr")` works with
-    GitHub gists ([gist.github.com](https://gist.github.com/discover) ) from R,
-    allowing you to create new gists, update gists with new files, rename
-    files, delete files, get and delete gists, star and un-star gists, fork
-    gists, open a gist in your default browser, get embed code for a gist, list
-    gist commits, and get rate limit information when authenticated.
-    `r pkg("git2r")` provides
-    bindings to the git version control system and `r pkg("gh")` is a client for the GitHub
-    API. `r pkg("gitlabr")` is
-    a 'GitLab'-specific client.
-- *Data archiving*: `r pkg("dataverse")` (
-    ) provides access to Dataverse 4 APIs. `r pkg("rfigshare")` connects with [Figshare.com](https://figshare.com/) .
-    `r pkg("dataone")`
-    provides a client for 'DataONE' repositories.
-- *Google Drive/Google Documents*: `r ohat("RGoogleDocs")` is an example of using
-    the RCurl and XML packages to quickly develop an interface to the Google
-    Documents API. `r ohat("RGoogleStorage")` provides programmatic access to the
-    Google Storage API. This allows R users to access and store data on
-    Google's storage. We can upload and download content, create, list and
-    delete folders/buckets, and set access control permissions on objects and
-    buckets.
-- *Google Sheets*: `r pkg("googlesheets4")` (replaces `googlesheets`) can access private or public 'Google Sheets' by title, key, or URL. Extract
-    data or edit data. Create, delete, rename, copy, upload, or download
-    spreadsheets and worksheets. `r pkg("gsheet")` can
-    download Google Sheets using just the sharing link. Spreadsheets can be
-    downloaded as a data frame, or as plain text to parse manually.
-- `r pkg("imguR")` shares plots
-    using the image hosting service [Imgur.com](https://imgur.com/). knitr
-    also has a function `imgur_upload()` to load images from literate
-    programming documents.
-- *Teams*, *SharePoint* and *OneDrive*: `r pkg("Microsoft365R")` provides an
-    interface to these services, which form part of the Microsoft 365 (formerly
-    known as Office 365) suite.
+- *Code Sharing*:
+  `r pkg("gistr")` works with GitHub gists ([gist.github.com](https://gist.github.com/discover)) from R,
+  allowing you to create new gists, update gists with new files, rename files, delete files,
+  get and delete gists, star and un-star gists, fork gists, open a gist in your default browser,
+  get embed code for a gist, list gist commits, and get rate limit information when authenticated.
+  `r pkg("git2r")` provides bindings to the git version control system and
+  `r pkg("gh")` is a client for the GitHub API.
+  `r pkg("gitlabr")` is a 'GitLab'-specific client.
+- *Data archiving*:
+  `r pkg("dataverse")` provides access to Dataverse 4 APIs.
+  `r pkg("rfigshare")` connects with [Figshare.com](https://figshare.com/).
+  `r pkg("dataone")` provides a client for 'DataONE' repositories.
+- *Google Drive/Google Documents*:
+  `r ohat("RGoogleDocs")` is an example of using the RCurl and XML packages
+  to quickly develop an interface to the Google Documents API.
+  `r ohat("RGoogleStorage")` provides programmatic access to the Google Storage API.
+  This allows R users to access and store data on Google's storage.
+  We can upload and download content, create, list and delete folders/buckets, and
+  set access control permissions on objects and buckets.
+- *Google Sheets*:
+  `r pkg("googlesheets4")` (replaces `googlesheets`) can access private or public 'Google Sheets'
+  by title, key, or URL. Extract data or edit data.
+  Create, delete, rename, copy, upload, or download spreadsheets and worksheets.
+  `r pkg("gsheet")` can download Google Sheets using just the sharing link.
+  Spreadsheets can be downloaded as a data frame, or as plain text to parse manually.
+- `r pkg("imguR")` shares plots using the image hosting service [Imgur.com](https://imgur.com/).
+  knitr also has a function `imgur_upload()` to load images from literate programming documents.
+- *Teams*, *SharePoint* and *OneDrive*:
+  `r pkg("Microsoft365R")` provides an interface to these services,
+  which form part of the Microsoft 365 (formerly known as Office 365) suite.
 
 ### Data Analysis and Processing Services
 
