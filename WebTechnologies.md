@@ -237,8 +237,7 @@ can be used to parse locally stored or in-memory web files.
 - *Mocking*:
   `r pkg("webmockr")` stubs and sets expectations on HTTP requests.
   It is inspired from Ruby's `webmock`.
-  `r pkg("webmockr")` only helps mock HTTP requests, and
-  returns nothing when requests match expectations.
+  `r pkg("webmockr")` only helps mock HTTP requests, and returns nothing when requests match expectations.
   It integrates with `r pkg("crul")` and `r pkg("httr")`.
   See *Testing* for mocking with returned responses.
 - *Testing*:
@@ -269,7 +268,10 @@ can be used to parse locally stored or in-memory web files.
 
 ## Web and Server Frameworks
 
-- [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization) (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
+- [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization)
+  (previously DeployR)
+  is a Microsoft product that provides support for deploying R and Python models and
+  code to a server as a web service to later consume.
 - `r pkg("shiny")` makes it easy to build interactive web applications with R.
 - `github pkg("plotly/dashR")` is a web framework which is available for
   Python, R and Julia, with components written in React.js.
@@ -280,8 +282,8 @@ can be used to parse locally stored or in-memory web files.
   `r github("att/rcloud")` provides an iPython notebook-style web-based R interface; and
   `r pkg("Rook")`, which contains the specification and convenience software
   for building and running Rook applications.
-- The `r pkg("opencpu")` framework for embedded statistical computation and
-  reproducible research exposes a web API interfacing R, LaTeX and Pandoc.
+- The `r pkg("opencpu")` framework for embedded statistical computation and reproducible research
+  exposes a web API interfacing R, LaTeX and Pandoc.
   This API is used for example to integrate statistical functionality into systems,
   share and execute scripts or reports on centralized servers,
   and build R based apps.
@@ -321,8 +323,8 @@ can be used to parse locally stored or in-memory web files.
 ### Cloud Computing and Storage
 
 - [The cloudyr project](https://cloudyr.github.io/) aims to provide interfaces to popular
-- Amazon, Azure and Google cloud services without the need for external system dependencies.
-- Amazon Web Services is a popular, proprietary cloud service offering a
+  Amazon, Azure and Google cloud services without the need for external system dependencies.
+  Amazon Web Services is a popular, proprietary cloud service offering a
   suite of computing, storage, and infrastructure tools.
   `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
 - *Elastic Cloud Compute (EC2)* is a cloud computing service.
@@ -465,67 +467,63 @@ can be used to parse locally stored or in-memory web files.
   an opensource catalogue for managing geographic metadata.
   `r pkg("ows4R")` is a new R client for the 'OGC' standard Web-Services,
   such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
-- *Machine Learning as a Service*: Several packages provide access to cloud-based machine learning services. `r pkg("OpenML")`
-    is the official client for [the OpenML API](https://www.openml.org/frontend/page/home). `r pkg("clarifai")` is a
-    [Clarifai.com](https://www.clarifai.com/) client that enables automated
-    image description. `r pkg("rLTP")` accesses the
-    [ltp-cloud service](https://www.ltp-cloud.com/). `r pkg("languagelayeR")` is a client for
-    Languagelayer, a language detection API. `googlepredictionapi` (not on CRAN, but available from [Google](https://code.google.com/archive/p/r-google-prediction-api-v12/)):
-    is an R client for the [Google Prediction API](https://cloud.google.com/ai-platform), a suite of cloud machine learning tools. `r pkg("yhatr")` lets you deploy, maintain,
-    and invoke models via the Yhat REST API. `r pkg("datarobot")` works with Data Robot's
-    predictive modeling platform. `r pkg("mscsweblm4r")` interfaces with the Microsoft Cognitive Services Web
-    Language Model API and `r pkg("mscstexta4r")` uses the Microsoft Cognitive Services Text Analytics REST
-    API. `r pkg("rosetteApi")` links to the 'Rosette' text
-    analysis API. `r pkg("googleLanguageR")` provides interfaces to Google's Cloud
-    Translation API, Natural Language API, Cloud Speech API, and the Cloud Text-to-Speech API. `r pkg("AzureVision")` provides interfaces to the Azure Computer Vision
-    and Custom Vision image recognition services.
-- *Machine Translation*: `r pkg("RYandexTranslate")`
-    connects to Yandex Translate. `r pkg("transcribeR")` provides automated audio transcription via
-    the HP IDOL service.
-- *Document Processing*: `r pkg("abbyyR")`  and
-    `r pkg("captr")`
-    connect to optical character
-    recognition (OCR) APIs. `r pkg("pdftables")`
-    uses [the PDFTables.com webservice](https://pdftables.com/) to extract
-    tables from PDFs.
-- *Mapping*: `r pkg("osrm")`
-    provides shortest paths and travel times from OpenStreetMap.
-    `r pkg("osmplotr")`
-    extracts customizable map
-    images from OpenStreetMap. `r pkg("RgoogleMaps")` serves two purposes: it provides a
-    comfortable R interface to query the Google server for static maps, and use
-    the map as a background image to overlay plots within R. `r ohat("R2GoogleMaps")`
-    provides a mechanism to generate JavaScript code from R that displays data
-    using Google Maps. `r ohat("RKMLDevice")` allows to create R graphics in Keyhole Markup
-    Language (KML) format in a manner that allows them to be displayed on
-    Google Earth (or Google Maps), and `r ohat("RKML")` provides users with high-level facilities to
-    generate KML. `r pkg("plotKML")` can visualization spatial and spatio-temporal objects in Google
-    Earth. `r pkg("ggmap")`
-    allows for the easy visualization of spatial data and models on top of
-    Google Maps, OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
-    `r pkg("mapsapi")` is an
-    sf-compatible interface to Google Maps API. `r pkg("openadds")` is an
-    Openaddresses client.
-- *Online Surveys*: `r pkg("qualtRics")` provide functions to interact with 'Qualtrics'. `r pkg("WufooR")` can retrieve
-    data from [Wufoo.com](https://www.wufoo.com/) forms. `r pkg("redcapAPI")` and `r pkg("REDCapR")`
-    can provide access to data stored in a
-    REDCap (Research Electronic Data CAPture) database, which is a web
-    application for building and managing online surveys and databases
-    developed at Vanderbilt University. `r github("rubenarslan/formr")` facilitates use of the
-    'formr' survey framework, which is built on openCPU.
-    `r pkg("Rexperigen")`
-    is a client for the [Experigen experimental platform](https://becker.phonologist.org/experigen/) .
-- *Visualization*: Plot.ly is a company that allows you to create
-    visualizations in the web using R (and Python), which is accessible via
-    `r pkg("plotly")`.
-    `r pkg("googleVis")`
-    provides an interface between R and the Google chart tools. `r ohat("RUbigraph")`
-    provides an R interface to a Ubigraph server for drawing interactive,
-    dynamic graphs. You can add and remove vertices/nodes and edges in a graph
-    and change their attributes/characteristics such as shape, color, size.
+- *Machine Learning as a Service*:
+  Several packages provide access to cloud-based machine learning services.
+  `r pkg("OpenML")` is the official client for [the OpenML API](https://www.openml.org/frontend/page/home).
+  `r pkg("clarifai")` is a [Clarifai.com](https://www.clarifai.com/) client that enables automated image description.
+  `r pkg("rLTP")` accesses the [ltp-cloud service](https://www.ltp-cloud.com/).
+  `r pkg("languagelayeR")` is a client for Languagelayer, a language detection API.
+  `googlepredictionapi` (not on CRAN, but available from [Google](https://code.google.com/archive/p/r-google-prediction-api-v12/)):
+  is an R client for the [Google Prediction API](https://cloud.google.com/ai-platform),
+  a suite of cloud machine learning tools.
+  `r pkg("yhatr")` lets you deploy, maintain, and invoke models via the Yhat REST API.
+  `r pkg("datarobot")` works with Data Robot's predictive modeling platform.
+  `r pkg("mscsweblm4r")` interfaces with the Microsoft Cognitive Services Web Language Model API and
+  `r pkg("mscstexta4r")` uses the Microsoft Cognitive Services Text Analytics REST API.
+  `r pkg("rosetteApi")` links to the 'Rosette' text analysis API.
+  `r pkg("googleLanguageR")` provides interfaces to Google's
+  Cloud Translation API, Natural Language API, Cloud Speech API, and the Cloud Text-to-Speech API.
+  `r pkg("AzureVision")` provides interfaces to the Azure Computer Vision and Custom Vision image recognition services.
+- *Machine Translation*:
+  `r pkg("RYandexTranslate")` connects to Yandex Translate.
+  `r pkg("transcribeR")` provides automated audio transcription via the HP IDOL service.
+- *Document Processing*:
+  `r pkg("abbyyR")`  and `r pkg("captr")` connect to optical character recognition (OCR) APIs.
+  `r pkg("pdftables")` uses [the PDFTables.com webservice](https://pdftables.com/) to extract tables from PDFs.
+- *Mapping*:
+  `r pkg("osrm")` provides shortest paths and travel times from OpenStreetMap.
+  `r pkg("osmplotr")` extracts customizable map images from OpenStreetMap.
+  `r pkg("RgoogleMaps")` serves two purposes:
+  it provides a comfortable R interface to query the Google server for static maps, and
+  uses the map as a background image to overlay plots within R.
+  `r ohat("R2GoogleMaps")`provides a mechanism to generate JavaScript code from R that displays data using Google Maps.
+  `r ohat("RKMLDevice")` allows to create R graphics in Keyhole Markup Language (KML) format
+  in a manner that allows them to be displayed on Google Earth (or Google Maps), and
+  `r ohat("RKML")` provides users with high-level facilities to generate KML.
+  `r pkg("plotKML")` can visualization spatial and spatio-temporal objects in Google Earth.
+  `r pkg("ggmap")` allows for the easy visualization of spatial data and models on top of
+  Google Maps, OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
+  `r pkg("mapsapi")` is an sf-compatible interface to Google Maps API.
+  `r pkg("openadds")` is an Openaddresses client.
+- *Online Surveys*:
+  `r pkg("qualtRics")` provide functions to interact with 'Qualtrics'.
+  `r pkg("WufooR")` can retrieve data from [Wufoo.com](https://www.wufoo.com/) forms.
+  `r pkg("redcapAPI")` and `r pkg("REDCapR")` can provide access to data stored in a
+  REDCap (Research Electronic Data CAPture) database,
+  which is a web application for building and managing online surveys and databases
+  developed at Vanderbilt University.
+  `r github("rubenarslan/formr")` facilitates use of the 'formr' survey framework,
+  which is built on openCPU.
+  `r pkg("Rexperigen")` is a client for the [Experigen experimental platform](https://becker.phonologist.org/experigen/).
+- *Visualization*:
+  Plot.ly is a company that allows you to create visualizations in the web using R (and Python),
+  which is accessible via `r pkg("plotly")`.
+  `r pkg("googleVis")` provides an interface between R and the Google chart tools.
+  `r ohat("RUbigraph")` provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs.
+  You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics
+  such as shape, color, size.
 - *Other* :
-  - `r pkg("rrefine")` can
-        import to and export from the 'OpenRefine' data cleaning service.
+  `r pkg("rrefine")` can import to and export from the 'OpenRefine' data cleaning service.
 
 ### Social Media Clients
 
