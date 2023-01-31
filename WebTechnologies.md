@@ -36,8 +36,8 @@ There are three main packages that should cover most use cases of interacting wi
 
 1. `r pkg("crul", priority = "core")` is an R6-based HTTP client that provides asynchronous HTTP requests,
   a pagination helper,
-  HTTP mocking via `r pkg("webmockr", priority = "core")`,
-  and request caching for unit tests via `r pkg("vcr", priority = "core")`.
+  HTTP mocking via `r pkg("webmockr")`,
+  and request caching for unit tests via `r pkg("vcr")`.
   crul targets R developers more so than end users.
 1. `r pkg("httr", priority = "core")` provides more of a user facing client for HTTP requests and
   differentiates from the former package in that it provides support for OAuth.
@@ -58,12 +58,12 @@ There are three main packages that should cover most use cases of interacting wi
 For more specific situations, the following resources may be useful:
 
 - `r pkg("RCurl")` is another low level client for libcurl.
-  Of the two low-level curl clients, we recommend using `r pkg("curl", priority = "core")`.
+  Of the two low-level curl clients, we recommend using `r pkg("curl")`.
   `r pkg("httpRequest")` is another low-level package for HTTP requests that implements
   the GET, POST and multipart POST verbs,
   but we do not recommend its use.
-- `r pkg("request")`provides a high-level package that is useful for developing other API client packages.
-  `r pkg("httping")` provides simplified tools to ping and time HTTP requests, around `r pkg("httr", priority = "core")` calls.
+- `r pkg("request")` provides a high-level package that is useful for developing other API client packages.
+  `r pkg("httping")` provides simplified tools to ping and time HTTP requests, around `r pkg("httr")` calls.
   `r pkg("httpcache")` provides a mechanism for caching HTTP requests.
 - `r pkg("nanonext")` is an alternative low-level sockets implementation that can be used to perform HTTP and
   streaming Websocket requests synchronously or asynchronously over its own concurrency framework.
@@ -97,14 +97,14 @@ For more specific situations, the following resources may be useful:
   Additionally, sometimes web resources that require authentication be in the header of an http call,
   which requires a little bit of extra work. API keys and username:password combos can be combined
   within a url for a call to a web resource, or can be specified via commands in
-  `r pkg("RCurl")` or `r pkg("httr", priority = "core")`.
+  `r pkg("RCurl")` or `r pkg("httr")`.
   OAuth is the most complicated authentication process,
-  and can be most easily done using `r pkg("httr", priority = "core")`.
-  See the 6 demos within `r pkg("httr", priority = "core")`,
+  and can be most easily done using `r pkg("httr")`.
+  See the 6 demos within `r pkg("httr")`,
   three for OAuth 1.0 (linkedin, twitter, vimeo) and
   three for OAuth 2.0 (facebook, GitHub, google).
   `r pkg("ROAuth")` provides a separate R interface to OAuth.
-  OAuth is easier to to do in `r pkg("httr", priority = "core")`, so start there.
+  OAuth is easier to to do in `r pkg("httr")`, so start there.
   `r pkg("googleAuthR")` provides an OAuth 2.0 setup specifically for Google web services,
   and `r pkg("AzureAuth")` provides similar functionality for Azure Active Directory.
 
@@ -124,8 +124,8 @@ specifically working with these format. These functions can be used to interact
 directly with insecure web pages or can be used to parse locally stored or in-
 memory web files.
 
-- *XML*: There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2", priority = "core")`. Both support general XML (and HTML) parsing, including XPath
-    queries. `r pkg("xml2", priority = "core")` is less fully featured, but more user friendly with respect to
+- *XML*: There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2")`. Both support general XML (and HTML) parsing, including XPath
+    queries. `r pkg("xml2")` is less fully featured, but more user friendly with respect to
     memory management, classes (e.g., XML node vs. node set vs. document), and
     namespaces. Of the two, only the `r pkg("XML")` supports *de novo* creation of XML nodes and
     documents. `r pkg("XML2R")` is a
@@ -192,7 +192,7 @@ memory web files.
     classes and functions for converting XML nodes to instances of those
     classes. It provides the framework for meta-computing with XML schema in R.
     `r pkg("xslt")` is an
-    extension for `r pkg("xml2", priority = "core")` to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for
+    extension for `r pkg("xml2")` to transform XML documents by applying an xslt style-sheet. (It can be seen as a modern replacement for
     `r ohat("Sxslt")`, which is an
     interface to Dan Veillard's libxslt translator, and `r ohat("SXalan")`.) This
     may be useful for webscraping, as well as transforming XML markup into
@@ -238,18 +238,18 @@ memory web files.
     `r pkg("Microsoft365R")` provides a client for Microsoft's Outlook email service, both
     personal (outlook.com) and as part of the Microsoft 365 (formerly known as
     Office 365) suite.
-- *Mocking*: `r pkg("webmockr", priority = "core")` stubs and sets expectations on HTTP
-    requests. It is inspired from Ruby's `webmock`. r pkg("webmockr", priority = "core")` only helps mock
+- *Mocking*: `r pkg("webmockr")` stubs and sets expectations on HTTP
+    requests. It is inspired from Ruby's `webmock`. `r pkg("webmockr")` only helps mock
     HTTP requests, and returns nothing when requests match expectations.
-    It integrates with `r pkg("crul", priority = "core")` and `r pkg("httr", priority = "core")`. See *Testing* for mocking with returned
+    It integrates with `r pkg("crul")` and `r pkg("httr")`. See *Testing* for mocking with returned
     responses.
-- *Testing*: `r pkg("vcr", priority = "core")`
+- *Testing*: `r pkg("vcr")`
     provides an interface to easily cache HTTP requests in R package test suites
     (but can be used outside of testing use cases as well). vcr relies on
-    `r pkg("webmockr", priority = "core")` to do
+    `r pkg("webmockr")` to do
     the HTTP request mocking. vcr integrates with
-    `r pkg("crul", priority = "core")` and
-    `r pkg("httr", priority = "core")`.
+    `r pkg("crul")` and
+    `r pkg("httr")`.
     `r pkg("httptest")`
     provides a framework for testing packages that communicate with HTTP APIs,
     offering tools for mocking APIs, for recording real API responses for use
@@ -271,7 +271,7 @@ memory web files.
 ## Web and Server Frameworks
 
 - [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization) (previously DeployR) is a Microsoft product that provides support for deploying R and Python models and code to a server as a web service to later consume.
-- `r pkg("shiny", priority = "core")`
+- `r pkg("shiny")`
     makes it easy to build interactive web applications with R.
 - `github pkg("plotly/dashR")` is a web
     framework which is available for Python, R and Julia, with components
