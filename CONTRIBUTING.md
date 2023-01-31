@@ -6,14 +6,17 @@ Contributions to the Web Technologies task view are welcome from anyone and are 
 
 1. Pull requests should involve only one commit per substantive change. This means if you change multiple files (e.g., code and documentation), these changes should be committed together. If you don't know how to do this (e.g., you are making changes in the GitHub web interface) just submit anyway and the maintainer will clean things up.
 
-1. Please run `ctv::check_ctv_packages("WebTechnologies.md")` before submitting the pull request to ensure consistency in all the links you added.
+1. Before submitting the pull request, please
+
+    * run `ctv::ctv2html("WebTechnologies.md")` and open "WebTechnologies.html" (in the root directory) to inspect the rendered html
+    * run `ctv::check_ctv_packages("WebTechnologies.md")`  to ensure consistency in all the links you added.
 
 Some specific types of changes that you might make are:
 
-1. Fix broken links. Great!
+1. *Fix broken links*. Great!
 
-1. New packages. This is fine!
+1. *Add new packages*. This is fine!
 
-1. Removing packages retired from CRAN, OK but this should be discussed on [the GitHub issues page](https://github.com/leeper/tabulapdf/issues) before submitting a pull request. My criteria is to always look for an alternative GitHub link and try to email the package author before retiring it.
+1. *Remove packages retired from CRAN*. OK but this should be discussed on [the GitHub issues page](https://github.com/leeper/tabulapdf/issues) before submitting a pull request. My criteria is to always look for an alternative GitHub link and try to email the package author before retiring it.
 
 Any questions you have can be opened as GitHub issues or directed to hello + r (at) pacha . dev.
