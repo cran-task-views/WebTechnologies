@@ -273,7 +273,7 @@ can be used to parse locally stored or in-memory web files.
   is a Microsoft product that provides support for deploying R and Python models and
   code to a server as a web service to later consume.
 - `r pkg("shiny")` makes it easy to build interactive web applications with R.
-- `github pkg("plotly/dashR")` is a web framework which is available for
+- `r github("plotly/dashR")` is a web framework which is available for
   Python, R and Julia, with components written in React.js.
 - Other web frameworks include:
   `r pkg("fiery")` that is meant to be more flexible but less easy to use than shiny
