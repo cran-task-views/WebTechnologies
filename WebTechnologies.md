@@ -508,13 +508,16 @@ can be used to parse locally stored or in-memory web files.
 - *Online Surveys*:
   `r pkg("qualtRics")` provide functions to interact with 'Qualtrics'.
   `r pkg("WufooR")` can retrieve data from [Wufoo.com](https://www.wufoo.com/) forms.
-  `r pkg("redcapAPI")` and `r pkg("REDCapR")` can provide access to data stored in a
-  REDCap (Research Electronic Data CAPture) database,
-  which is a web application for building and managing online surveys and databases
-  developed at Vanderbilt University.
   `r github("rubenarslan/formr")` facilitates use of the 'formr' survey framework,
   which is built on openCPU.
   `r pkg("Rexperigen")` is a client for the [Experigen experimental platform](https://becker.phonologist.org/experigen/).
+- *REDCap*:
+  `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap project.
+  [REDCap](https://projectredcap.org/) (Research Electronic Data CAPture)
+  is a web application for building and managing online surveys and research databases.
+  `r pkg("REDCapTideR")` and `r pkg("tidyREDCap")`
+  follow [tidy](https://www.tidyverse.org/) principles to extend `r pkg("REDCapR")`.
+
 - *Visualization*:
   Plot.ly is a company that allows you to create visualizations in the web using R (and Python),
   which is accessible via `r pkg("plotly")`.
