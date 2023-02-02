@@ -413,6 +413,7 @@ can be used to parse locally stored or in-memory web files.
   storage and analytics platform.
   `r pkg("crunchy")` facilitates making Shiny apps on Crunch.
 - `r pkg("rrefine")` provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
+- `r pkg("bigrquery")`: An interface to Google's bigquery.
 
 ### Document and Code Sharing
 
@@ -478,6 +479,8 @@ can be used to parse locally stored or in-memory web files.
   `r github("rubenarslan/formr")` facilitates use of the 'formr' survey framework,
   which is built on openCPU.
   `r pkg("Rexperigen")` is a client for the [Experigen experimental platform](https://becker.phonologist.org/experigen/).
+  `r github("nealrichardson/useRsnap")` connects to [Usersnap](https://usersnap.com/),
+  a tool for collecting feedback from web application users.
 - *REDCap*:
   `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap project.
   [REDCap](https://projectredcap.org/) (Research Electronic Data CAPture)
@@ -533,6 +536,8 @@ This list describes online services.  For more tools, please see the [Analysis o
 - `r ohat("Rflickr")` provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
 - `r pkg("instaR")` is a client for the [Instagram API](https://www.instagram.com/developer/).
 - `r pkg("Rlinkedin")` is a client for the LinkedIn API. Auth is via OAuth.
+- `r github("dgrtwo/stackr")` (not on CRAN): retrieves data using the
+  [Stack Exchange API](https://api.stackexchange.com/).
 - `r pkg("rpinterest")` connects to the 'Pinterest' API.
 - `r pkg("vkR")` is a client for VK, a social networking site based in Russia.
 - `r github("rladies/meetupr")` is a client for the Meetup.com API.
@@ -635,8 +640,6 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("wikipediatrend")` provides access to Wikipedia page access statistics.
   `r pkg("WikidataQueryServiceR")` is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 
-- `r pkg("bigrquery")`: An interface to Google's bigquery.
-
 - `r github("sckott/discgolf")` (archived)
   provides a client to interact with the API for the 'Discourse' web forum platform.
   The API is for an installed instance of Discourse, not for the Discourse site itself.
@@ -655,12 +658,6 @@ This list describes online services.  For more tools, please see the [Analysis o
 - `r pkg("RStripe")` provides an interface to 'Stripe', an online payment processor.
 
 - `r pkg("slackr")` is a client for Slack.com messaging platform.
-
-- `r github("dgrtwo/stackr")` (not on CRAN): An unofficial wrapper for the read-only features of the
-  [Stack Exchange API](https://api.stackexchange.com/).
-
-- `r github("nealrichardson/useRsnap")` provides an interface to the API for 'Usersnap',
-  a tool for collecting feedback from web application users.
 
 - `r pkg("duckduckr")` is an R interface [DuckDuckGo's Instant Answer API](https://duckduckgo.com/api)
 
