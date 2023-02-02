@@ -501,9 +501,9 @@ can be used to parse locally stored or in-memory web files.
 
 This list describes online services.  For more tools, please see the [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) task view.
 
-- *Geospatial/Geolocation/Geocoding*:
-  Several packages connect to geolocation/geocoding services.
-  `r pkg("rgeolocate")`offers several online and offline tools.
+- *Geolocation/Geocoding*:
+  Services that translate between addresses and longlats.
+  `r pkg("rgeolocate")` offers several online and offline tools.
   `r github("trestletech/rydn")` (not on CRAN) is an interface to the
   Yahoo Developers network geolocation APIs, and
   `r github("hrbrmstr/ipapi")` can be used to geolocate IPv4/6 addresses and/or domain names
@@ -519,16 +519,23 @@ This list describes online services.  For more tools, please see the [Analysis o
   an opensource catalogue for managing geographic metadata.
   `r pkg("ows4R")` is a new R client for the 'OGC' standard Web-Services,
   such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
+  `r pkg("openadds")` is an Openaddresses client.
 
 - *Mapping*:
-  `r pkg("osrm")` provides shortest paths and travel times from OpenStreetMap.
-  `r pkg("osmplotr")` extracts customizable map images from OpenStreetMap.
+  Services that help create visual maps.
+  - [*OpenStreetMap*](https://www.openstreetmap.org/about):
+  `r pkg("osmplotr")` extracts customizable map images.
+  - [*Google Maps*](https://www.google.com/maps/about):
   `r pkg("RgoogleMaps")` serves two purposes:
   it provides a comfortable R interface to query the Google server for static maps, and
   uses the map as a background image to overlay plots within R.
-  `r ohat("R2GoogleMaps")`provides a mechanism to generate JavaScript code from R that displays data using Google Maps.
+  `r ohat("R2GoogleMaps")` provides a mechanism to generate JavaScript code from R that displays data using Google Maps.
   `r pkg("mapsapi")` is an sf-compatible interface to Google Maps API.
-  `r pkg("openadds")` is an Openaddresses client.
+
+- *Routing*:
+  Services that calculate and optimize distances and routes.
+  - [*OpenStreetMap*](https://www.openstreetmap.org/about):
+  `r pkg("osrm")` assists with the computation of routes, trips, isochrones and travel distances matrices.
 
 ### Social Media Clients
 
