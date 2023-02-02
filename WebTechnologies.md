@@ -561,6 +561,10 @@ This list describes online services.  For more tools, please see the [Analysis o
   Both raw text and aggregate statistics are available, as well as project and query management functions.
 - `r pkg("hackeRnews")` is a client for the [Official Hacker News API](https://github.com/HackerNews/API) .
 - `r pkg("rtoot")` retrieves data from the official [Mastodon API](https://docs.joinmastodon.org/).
+- `r pkg("slackr")` is a client for Slack.com messaging platform.
+- `r github("sckott/discgolf")` (archived)
+  connect to the 'Discourse' web forum platform.
+  The API is for an installed instance of Discourse, not for the Discourse site itself.
 
 ### Web Analytics Services
 
@@ -646,10 +650,6 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("wikipediatrend")` provides access to Wikipedia page access statistics.
   `r pkg("WikidataQueryServiceR")` is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 
-- `r github("sckott/discgolf")` (archived)
-  connect to the 'Discourse' web forum platform.
-  The API is for an installed instance of Discourse, not for the Discourse site itself.
-
 - `r github("stephlocke/mockaRoo")` (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs)
   to generate mock or fake data based on an input schema.
 
@@ -663,7 +663,6 @@ This list describes online services.  For more tools, please see the [Analysis o
 
 - `r pkg("RStripe")` provides an interface to 'Stripe', an online payment processor.
 
-- `r pkg("slackr")` is a client for Slack.com messaging platform.
 
 - `r pkg("duckduckr")` is an R interface [DuckDuckGo's Instant Answer API](https://duckduckgo.com/api)
 
