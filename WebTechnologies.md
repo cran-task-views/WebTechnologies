@@ -229,7 +229,7 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("js")` wraps `r pkg("V8")` and validates, reformats, optimizes and analyzes JavaScript code.
 - *Email*:
   `r pkg("mailR")` is an interface to Apache Commons Email to send emails from within R.
-  `r pkg("sendmailR")`provides a simple SMTP client.
+  `r pkg("sendmailR")` provides a simple SMTP client.
   `r pkg("gmailr")` provides access the Google's gmail.com RESTful API.
   `r pkg("Microsoft365R")` provides a client for Microsoft's Outlook email service,
   both personal (outlook.com) and
@@ -296,7 +296,7 @@ can be used to parse locally stored or in-memory web files.
   Another related package, perhaps which `r pkg("httpuv")` replaces, is `websockets` (retired from CRAN).
   `r pkg("servr")` provides a simple HTTP server to serve files under a given directory based on httpuv.
 - Several packages offer functionality for turning R code into a web API.
-  `r pkg("FastRWeb")`provides some basic infrastructure for this.
+  `r pkg("FastRWeb")` provides some basic infrastructure for this.
   `r pkg("plumber")` allows you to create a REST API by decorating existing R source code.
   `r pkg("beakr")` provides an R version of functionality found in python Flask and javascript Express.js.
 - `r ohat("WADL")` provides tools to process Web Application Description Language (WADL) documents and
@@ -552,14 +552,14 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("twitteR")` provides an interface to the Twitter web API.
   It claims to be deprecated in favor of `r pkg("rtweet")`.
   `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter data.
-  `r pkg("streamR")`allows users to access Twitter's filter,
+  `r pkg("streamR")` allows users to access Twitter's filter,
   sample, and user streams, and to parse the output into data frames.
   OAuth authentication is supported.
   `r pkg("graphTweets")` produces a network graph from a data.frame of tweets.
   `r github("pablobarbera/twitter_ideology")` implements a political ideology scaling measure for specified Twitter users.
 - `r pkg("brandwatchR")` retrieves a data from the Brandwatch social listening API.
   Both raw text and aggregate statistics are available, as well as project and query management functions.
-- `r pkg("hackeRnews")`is a client for the [Official Hacker News API](https://github.com/HackerNews/API) .
+- `r pkg("hackeRnews")` is a client for the [Official Hacker News API](https://github.com/HackerNews/API) .
 - `r pkg("rtoot")` retrieves data from the official [Mastodon API](https://docs.joinmastodon.org/).
 
 ### Web Analytics Services
@@ -630,7 +630,7 @@ This list describes online services.  For more tools, please see the [Analysis o
   computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics.
   `r pkg("roadoi")` connects to the [Unpaywall API](https://unpaywall.org/products/api)
   for finding free full-text versions of academic papers.
-  `r pkg("rcoreoa")`is an interface to the [CORE API](https://core.ac.uk/docs/),
+  `r pkg("rcoreoa")` is an interface to the [CORE API](https://core.ac.uk/docs/),
   a search interface for open access scholarly articles.
   `r pkg("rcrossref")` is an interface to Crossref's API.
 
