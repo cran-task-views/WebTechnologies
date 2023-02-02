@@ -525,17 +525,8 @@ This list describes online services.  For more tools, please see the [Analysis o
 
 ### Social Media Clients
 
-- `r pkg("Rfacebook")` provides an interface to the Facebook API.
-- `r ohat("Rflickr")` provides an interface to the Flickr photo management and sharing application Web service. (not on CRAN)
-- `r pkg("instaR")` is a client for the [Instagram API](https://www.instagram.com/developer/).
-- `r pkg("Rlinkedin")` is a client for the LinkedIn API. Auth is via OAuth.
-- `r github("dgrtwo/stackr")` (not on CRAN): retrieves data using the
-  [Stack Exchange API](https://api.stackexchange.com/).
-- `r pkg("rpinterest")` connects to the 'Pinterest' API.
-- `r pkg("vkR")` is a client for VK, a social networking site based in Russia.
-- `r github("rladies/meetupr")` is a client for the Meetup.com API.
 - *Twitter*:
-  `r pkg("twitteR")` provides an interface to the Twitter web API.
+  `r pkg("twitteR")` provides an interface to its API.
   It claims to be deprecated in favor of `r pkg("rtweet")`.
   `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter data.
   `r pkg("streamR")` allows users to access Twitter's filter,
@@ -543,6 +534,22 @@ This list describes online services.  For more tools, please see the [Analysis o
   OAuth authentication is supported.
   `r pkg("graphTweets")` produces a network graph from a data.frame of tweets.
   `r github("pablobarbera/twitter_ideology")` implements a political ideology scaling measure for specified Twitter users.
+- *Facebook*:
+  `r pkg("Rfacebook")` provides an interface to its API.
+- [*Instagram*](https://www.instagram.com/developer/):
+  `r pkg("instaR")` provides an interface to its API.
+- *LinkedIn*:
+  `r pkg("Rlinkedin")` provides an interface to its API.
+- *Flickr*:
+  `r ohat("Rflickr")` (not on CRAN) provides an interface to the photo management and sharing application service.
+- [Stack Exchange](https://api.stackexchange.com/):
+  `r github("dgrtwo/stackr")` (not on CRAN): provides an interface to its API.
+- [*Pinterest*](Pinterest):
+  `r pkg("rpinterest")` provides an interface to its API.
+- *VK*:
+  `r pkg("vkR")` provdes an interface to the social networking site based in Russia.
+- *Meetup*:
+  `r github("rladies/meetupr")` provides an interface to its API.
 - `r pkg("brandwatchR")` retrieves a data from the Brandwatch social listening API.
   Both raw text and aggregate statistics are available, as well as project and query management functions.
 - `r pkg("hackeRnews")` is a client for the [Official Hacker News API](https://github.com/HackerNews/API) .
