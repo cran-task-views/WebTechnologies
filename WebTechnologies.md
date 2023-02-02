@@ -524,12 +524,6 @@ This list describes online services.  For more tools, please see the [Analysis o
   it provides a comfortable R interface to query the Google server for static maps, and
   uses the map as a background image to overlay plots within R.
   `r ohat("R2GoogleMaps")`provides a mechanism to generate JavaScript code from R that displays data using Google Maps.
-  `r ohat("RKMLDevice")` allows to create R graphics in Keyhole Markup Language (KML) format
-  in a manner that allows them to be displayed on Google Earth (or Google Maps), and
-  `r ohat("RKML")` provides users with high-level facilities to generate KML.
-  `r pkg("plotKML")` can visualization spatial and spatio-temporal objects in Google Earth.
-  `r pkg("ggmap")` allows for the easy visualization of spatial data and models on top of
-  Google Maps, OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
   `r pkg("mapsapi")` is an sf-compatible interface to Google Maps API.
   `r pkg("openadds")` is an Openaddresses client.
 
