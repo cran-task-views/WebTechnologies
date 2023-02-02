@@ -157,8 +157,8 @@ can be used to parse locally stored or in-memory web files.
   We recommend using `r pkg("jsonlite")`.
   Check out the paper describing jsonlite by Jeroen Ooms <https://arxiv.org/abs/1403.2805>.
   `r pkg("jqr")` provides bindings for the fast JSON library 'jq'.
-  `r pkg("jsonvalidate")` validates JSON against a schema using the "is-my-json-valid" Javascript library;
-  `r pkg("ajv")` does the same using the 'ajv' Javascript library.
+  `r pkg("jsonvalidate")` validates JSON against a schema using the "is-my-json-valid" JavaScript library;
+  `r pkg("ajv")` does the same using the 'ajv' JavaScript library.
   `r pkg("ndjson")` supports the "ndjson" format.
 - *RSS/Atom*:
   `r github("datawookie/feedeR")` can be used to parse RSS or Atom feeds.
@@ -205,8 +205,8 @@ can be used to parse locally stored or in-memory web files.
   a relatively simple remote procedure call mechanism that uses HTTP and XML.
   This can be used for communicating between processes on a single machine or
   for accessing Web services from within R.
-- `r ohat("Rcompression")` (not on CRAN): Interface to zlib and bzip2 libraries f
-  or performing in-memory compression and decompression in R.
+- `r ohat("Rcompression")` (not on CRAN): Interface to zlib and bzip2 libraries
+  for performing in-memory compression and decompression in R.
   This is useful when receiving or sending contents to remote servers,
   e.g. Web services, HTTP requests via RCurl.
 - `r pkg("webshot")` uses 'PhantomJS' to provide screenshots of web pages without a browser.
@@ -218,9 +218,9 @@ can be used to parse locally stored or in-memory web files.
 
 ### Other Useful Packages and Functions
 
-- *Javascript*:
+- *JavaScript*:
   `r pkg("V8")` is an R interface to Google's open source, high performance JavaScript engine.
-  It can wrap Javascript libraries as well as NPM packages.
+  It can wrap JavaScript libraries as well as NPM packages.
   `r ohat("SpiderMonkey")` provides another means of evaluating JavaScript code,
   creating JavaScript objects and calling JavaScript functions and methods from within R.
   This can work by embedding the JavaScript engine within an R session or
