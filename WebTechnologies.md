@@ -485,7 +485,7 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap project.
   [REDCap](https://projectredcap.org/) (Research Electronic Data CAPture)
   is a web application for building and managing online surveys and research databases.
-  `r pkg("REDCapTideR")` and `r pkg("tidyREDCap")`
+  `r pkg("REDCapTidieR")` and `r pkg("tidyREDCap")`
   follow [tidy](https://www.tidyverse.org/) principles to extend `r pkg("REDCapR")`.
 - *Visualization*:
   Plot.ly is a company that allows you to create visualizations in the web using R (and Python),
