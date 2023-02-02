@@ -545,7 +545,7 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("twitteR")` provides an interface to the Twitter web API.
   It claims to be deprecated in favor of `r pkg("rtweet")`.
   `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter data.
-  `r pkg("streamR")`provides a series of functions that allow users to access Twitter's filter,
+  `r pkg("streamR")`allows users to access Twitter's filter,
   sample, and user streams, and to parse the output into data frames.
   OAuth authentication is supported.
   `r pkg("graphTweets")` produces a network graph from a data.frame of tweets.
@@ -599,30 +599,29 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("notifyme")` can control Phillips Hue lighting.
 
 - *Reference/bibliography/citation management*:
-  `r pkg("rorcid")` is a programmatic interface the [Orcid.org](https://orcid.org/) API,
-  which can be used for identifying scientific authors and their publications (e.g., by DOI).
-  `r pkg("rdatacite")` connects to 'DataCite',
+  `r pkg("rorcid")` connects to the [Orcid.org](https://orcid.org/) API,
+  which can identify scientific authors and their publications (e.g., by DOI).
+  `r pkg("rdatacite")` connects to [DataCite](https://datacite.org/),
   which manages DOIs and metadata for scholarly datasets.
-  `r pkg("scholar")` provides functions to extract citation data from Google Scholar.
-  `r pkg("rscopus")` provides functions to extract citation data from Elsevier Scopus APIs.
+  `r pkg("scholar")` extracts citation data from [Google Scholar](https://scholar.google.com/).
+  `r pkg("rscopus")` extracts citation data from [Elsevier Scopus](https://www.elsevier.com/solutions/scopus).
   Convenience functions are also provided for comparing multiple scholars and
   predicting future h-index values.
-  `r pkg("mathpix")` convert an image of a formula (typeset or handwritten)
+  `r pkg("mathpix")` converts an image of a formula (typeset or handwritten)
   via Mathpix webservice to produce the 'LaTeX' code.
-  `r pkg("zen4R")` provides an Interface to 'Zenodo' REST API,
+  `r pkg("zen4R")` connects to [Zenodo](https://zenodo.org/) API,
   including management of depositions, attribution of DOIs and upload of files.
 
 - *Literature*:
-  `r pkg("rplos")` is a programmatic interface to the Web Service methods provided
-  by the Public Library of Science journals for search.
+  `r pkg("rplos")` connects to the Public Library of Science journals.
   `r pkg("europepmc")` connects to the Europe PubMed Central service.
   `r pkg("pubmed.mineR")` is for text mining of [PubMed Abstracts](https://pubmed.ncbi.nlm.nih.gov/)
   that supports fetching text and XML from PubMed.
-  `r pkg("jstor")` provides functions and helpers to import
+  `r pkg("jstor")` retrieves
   metadata, ngrams and full-texts from Data for Research service by JSTOR.
-  `r pkg("aRxiv")` is a client for the arXiv API, a repository of electronic preprints for
+  `r pkg("aRxiv")` connects to arXiv, a repository of electronic preprints for
   computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics.
-  `r pkg("roadoi")` provides an interface to the [Unpaywall API](https://unpaywall.org/products/api)
+  `r pkg("roadoi")` connects to the [Unpaywall API](https://unpaywall.org/products/api)
   for finding free full-text versions of academic papers.
   `r pkg("rcoreoa")`is an interface to the [CORE API](https://core.ac.uk/docs/),
   a search interface for open access scholarly articles.
@@ -641,7 +640,7 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("WikidataQueryServiceR")` is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 
 - `r github("sckott/discgolf")` (archived)
-  provides a client to interact with the API for the 'Discourse' web forum platform.
+  connect to the 'Discourse' web forum platform.
   The API is for an installed instance of Discourse, not for the Discourse site itself.
 
 - `r github("stephlocke/mockaRoo")` (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs)
