@@ -599,6 +599,13 @@ This list describes online services.  For more tools, please see the [Analysis o
 - *R-Hub*: <http://log.r-hub.io/> is a project to enable package builds across all architectures.
   `r pkg("rhub")` interfaces with R-Hub to allow you to check a package on the platform.
 
+### Web Services for Generating Synthetic Data
+
+- [*MockaRoo API*](https://www.mockaroo.com/api/docs):
+  `r github("stephlocke/mockaRoo")` (not on CRAN) generates mock or fake data based on an input schema.
+- [*RandomAPI*](https://randomapi.com):
+  `r github("karthik/randNames")` generates random names and personal identifying information.
+
 ### Other Web Services
 
 - *Push Notifications*:
@@ -650,19 +657,12 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("wikipediatrend")` provides access to Wikipedia page access statistics.
   `r pkg("WikidataQueryServiceR")` is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 
-- `r github("stephlocke/mockaRoo")` (not on CRAN) uses the [MockaRoo API](https://www.mockaroo.com/api/docs)
-  to generate mock or fake data based on an input schema.
-
-- `r github("karthik/randNames")` generates random names
-  and personal identifying information using the <https://randomapi.com/> API.
-
 - `r pkg("rerddap")`: A generic R client to interact with any ERDDAP instance,
   which is a special case of OPeNDAP (<https://en.wikipedia.org/wiki/OPeNDAP>),
   or *Open-source Project for a Network Data Access Protocol*.
   Allows user to swap out the base URL to use any ERDDAP instance.
 
 - `r pkg("RStripe")` provides an interface to 'Stripe', an online payment processor.
-
 
 - `r pkg("duckduckr")` is an R interface [DuckDuckGo's Instant Answer API](https://duckduckgo.com/api)
 
