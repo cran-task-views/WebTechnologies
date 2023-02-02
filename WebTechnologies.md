@@ -449,24 +449,6 @@ can be used to parse locally stored or in-memory web files.
 
 ### Data Analysis and Processing Services
 
-- *Geospatial/Geolocation/Geocoding*:
-  Several packages connect to geolocation/geocoding services.
-  `r pkg("rgeolocate")`offers several online and offline tools.
-  `r github("trestletech/rydn")` (not on CRAN) is an interface to the
-  Yahoo Developers network geolocation APIs, and
-  `r github("hrbrmstr/ipapi")` can be used to geolocate IPv4/6 addresses and/or domain names
-  using the <http://ip-api.com/> API.
-  `r pkg("opencage")` provides access to to the 'OpenCage' geocoding service.
-  `r github("hrbrmstr/nominatim")` (not on CRAN) connects to the
-  [OpenStreetMap Nominatim API](https://github.com/hrbrmstr/nominatim) for reverse geocoding.
-  `r github("ropensci/PostcodesioR")` (not on CRAN) provides post code lookup and
-  geocoding for the United Kingdom.
-  `r pkg("geosapi")` is an R client for the 'GeoServer' REST API,
-   an open source implementation used widely for serving spatial data.
-  `r pkg("geonapi")` provides an interface to the 'GeoNetwork' legacy API,
-  an opensource catalogue for managing geographic metadata.
-  `r pkg("ows4R")` is a new R client for the 'OGC' standard Web-Services,
-  such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
 - *Machine Learning as a Service*:
   Several packages provide access to cloud-based machine learning services.
   `r pkg("OpenML")` is the official client for [the OpenML API](https://www.openml.org/frontend/page/home).
@@ -490,6 +472,51 @@ can be used to parse locally stored or in-memory web files.
 - *Document Processing*:
   `r pkg("abbyyR")`  and `r pkg("captr")` connect to optical character recognition (OCR) APIs.
   `r pkg("pdftables")` uses [the PDFTables.com webservice](https://pdftables.com/) to extract tables from PDFs.
+- *Online Surveys*:
+  `r pkg("qualtRics")` provide functions to interact with 'Qualtrics'.
+  `r pkg("WufooR")` can retrieve data from [Wufoo.com](https://www.wufoo.com/) forms.
+  `r github("rubenarslan/formr")` facilitates use of the 'formr' survey framework,
+  which is built on openCPU.
+  `r pkg("Rexperigen")` is a client for the [Experigen experimental platform](https://becker.phonologist.org/experigen/).
+- *REDCap*:
+  `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap project.
+  [REDCap](https://projectredcap.org/) (Research Electronic Data CAPture)
+  is a web application for building and managing online surveys and research databases.
+  `r pkg("REDCapTideR")` and `r pkg("tidyREDCap")`
+  follow [tidy](https://www.tidyverse.org/) principles to extend `r pkg("REDCapR")`.
+- *Visualization*:
+  Plot.ly is a company that allows you to create visualizations in the web using R (and Python),
+  which is accessible via `r pkg("plotly")`.
+  `r pkg("googleVis")` provides an interface between R and the Google chart tools.
+  `r ohat("RUbigraph")` provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs.
+  You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics
+  such as shape, color, size.
+- *Other* :
+  `r pkg("rrefine")` can import to and export from the 'OpenRefine' data cleaning service.
+
+### Services for Spatial Analysis
+
+This list describes online services.  For more tools, please see the [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) task view.
+
+- *Geospatial/Geolocation/Geocoding*:
+  Several packages connect to geolocation/geocoding services.
+  `r pkg("rgeolocate")`offers several online and offline tools.
+  `r github("trestletech/rydn")` (not on CRAN) is an interface to the
+  Yahoo Developers network geolocation APIs, and
+  `r github("hrbrmstr/ipapi")` can be used to geolocate IPv4/6 addresses and/or domain names
+  using the <http://ip-api.com/> API.
+  `r pkg("opencage")` provides access to to the 'OpenCage' geocoding service.
+  `r github("hrbrmstr/nominatim")` (not on CRAN) connects to the
+  [OpenStreetMap Nominatim API](https://github.com/hrbrmstr/nominatim) for reverse geocoding.
+  `r github("ropensci/PostcodesioR")` (not on CRAN) provides post code lookup and
+  geocoding for the United Kingdom.
+  `r pkg("geosapi")` is an R client for the 'GeoServer' REST API,
+   an open source implementation used widely for serving spatial data.
+  `r pkg("geonapi")` provides an interface to the 'GeoNetwork' legacy API,
+  an opensource catalogue for managing geographic metadata.
+  `r pkg("ows4R")` is a new R client for the 'OGC' standard Web-Services,
+  such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
+
 - *Mapping*:
   `r pkg("osrm")` provides shortest paths and travel times from OpenStreetMap.
   `r pkg("osmplotr")` extracts customizable map images from OpenStreetMap.
@@ -505,28 +532,6 @@ can be used to parse locally stored or in-memory web files.
   Google Maps, OpenStreetMaps, Stamen Maps, or CloudMade Maps using ggplot2.
   `r pkg("mapsapi")` is an sf-compatible interface to Google Maps API.
   `r pkg("openadds")` is an Openaddresses client.
-- *Online Surveys*:
-  `r pkg("qualtRics")` provide functions to interact with 'Qualtrics'.
-  `r pkg("WufooR")` can retrieve data from [Wufoo.com](https://www.wufoo.com/) forms.
-  `r github("rubenarslan/formr")` facilitates use of the 'formr' survey framework,
-  which is built on openCPU.
-  `r pkg("Rexperigen")` is a client for the [Experigen experimental platform](https://becker.phonologist.org/experigen/).
-- *REDCap*:
-  `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap project.
-  [REDCap](https://projectredcap.org/) (Research Electronic Data CAPture)
-  is a web application for building and managing online surveys and research databases.
-  `r pkg("REDCapTideR")` and `r pkg("tidyREDCap")`
-  follow [tidy](https://www.tidyverse.org/) principles to extend `r pkg("REDCapR")`.
-
-- *Visualization*:
-  Plot.ly is a company that allows you to create visualizations in the web using R (and Python),
-  which is accessible via `r pkg("plotly")`.
-  `r pkg("googleVis")` provides an interface between R and the Google chart tools.
-  `r ohat("RUbigraph")` provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs.
-  You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics
-  such as shape, color, size.
-- *Other* :
-  `r pkg("rrefine")` can import to and export from the 'OpenRefine' data cleaning service.
 
 ### Social Media Clients
 
@@ -668,3 +673,5 @@ can be used to parse locally stored or in-memory web files.
 ### Links
 
 - CRAN Task View [Reproducible Research](https://CRAN.R-project.org/view=ReproducibleResearch)
+
+- CRAN Task View [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial)
