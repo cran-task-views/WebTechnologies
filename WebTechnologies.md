@@ -473,20 +473,6 @@ can be used to parse locally stored or in-memory web files.
 - *Document Processing*:
   `r pkg("abbyyR")`  and `r pkg("captr")` connect to optical character recognition (OCR) APIs.
   `r pkg("pdftables")` uses [the PDFTables.com webservice](https://pdftables.com/) to extract tables from PDFs.
-- *Online Surveys*:
-  `r pkg("qualtRics")` provide functions to interact with 'Qualtrics'.
-  `r pkg("WufooR")` can retrieve data from [Wufoo.com](https://www.wufoo.com/) forms.
-  `r github("rubenarslan/formr")` facilitates use of the 'formr' survey framework,
-  which is built on openCPU.
-  `r pkg("Rexperigen")` is a client for the [Experigen experimental platform](https://becker.phonologist.org/experigen/).
-  `r github("nealrichardson/useRsnap")` connects to [Usersnap](https://usersnap.com/),
-  a tool for collecting feedback from web application users.
-- *REDCap*:
-  `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap project.
-  [REDCap](https://projectredcap.org/) (Research Electronic Data CAPture)
-  is a web application for building and managing online surveys and research databases.
-  `r pkg("REDCapTidieR")` and `r pkg("tidyREDCap")`
-  follow [tidy](https://www.tidyverse.org/) principles to extend `r pkg("REDCapR")`.
 - *Visualization*:
   Plot.ly is a company that allows you to create visualizations in the web using R (and Python),
   which is accessible via `r pkg("plotly")`.
@@ -565,6 +551,30 @@ This list describes online services.  For more tools, please see the [Analysis o
 - `r github("sckott/discgolf")` (archived)
   connect to the 'Discourse' web forum platform.
   The API is for an installed instance of Discourse, not for the Discourse site itself.
+
+### Survey, Questionaire, and Data Capture Tools
+
+- [*REDCap*](https://projectredcap.org/):
+  `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap,
+  a web application for building and managing online surveys and research databases.
+  `r pkg("REDCapTidieR")` and `r pkg("tidyREDCap")`
+  follow [tidy](https://www.tidyverse.org/) principles to extend `r pkg("REDCapR")`.
+- [*Qualtrics*](https://www.qualtrics.com/):
+  `r pkg("qualtRics")` provide functions to interact with Qualtrics,
+  an online survey and data collection software platform.
+- [*WuFoo*](https://www.wufoo.com/):
+  `r pkg("WufooR")` retrieves data from Wufoo,
+  which is another data collection tool from the SurveyMonkey company.
+- [*formr*](https://formr.org/):
+ `r github("rubenarslan/formr")` facilitates use of the formr online survey framework,
+  which relies on R via openCPU.
+- [*Experigen*](https://becker.phonologist.org/experigen/):
+  `r pkg("Rexperigen")` is a client for Experigen,
+  which is a platform for creating phonology experiments.
+- [*Usersnap*](https://usersnap.com/):
+  `r github("nealrichardson/useRsnap")` connects to Usersnap,
+  a tool for collecting feedback from web application users.
+
 
 ### Web Analytics Services
 
