@@ -525,8 +525,8 @@ This list describes online services.  For more tools, please see the [Analysis o
 
 ### Social Media Clients
 
-- *Twitter*:
-  `r pkg("twitteR")` provides an interface to its API.
+- [**Twitter**](https://twitter.com/):
+  `r pkg("twitteR")` provides an interface through its API.
   It claims to be deprecated in favor of `r pkg("rtweet")`.
   `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter data.
   `r pkg("streamR")` allows users to access Twitter's filter,
@@ -534,30 +534,34 @@ This list describes online services.  For more tools, please see the [Analysis o
   OAuth authentication is supported.
   `r pkg("graphTweets")` produces a network graph from a data.frame of tweets.
   `r github("pablobarbera/twitter_ideology")` implements a political ideology scaling measure for specified Twitter users.
-- *Facebook*:
-  `r pkg("Rfacebook")` provides an interface to its API.
-- [*Instagram*](https://www.instagram.com/developer/):
-  `r pkg("instaR")` provides an interface to its API.
-- *LinkedIn*:
-  `r pkg("Rlinkedin")` provides an interface to its API.
-- *Flickr*:
+- [**Facebook**](https://www.facebook.com/):
+  `r pkg("Rfacebook")` provides an interface through its API.
+- [**Instagram**](https://www.instagram.com/developer/):
+  `r pkg("instaR")` provides an interface through its API.
+- [**LinkedIn**](https://www.linkedin.com/):
+  `r pkg("Rlinkedin")` provides an interface through its API.
+- [**Flickr**](https://www.flickr.com/):
   `r ohat("Rflickr")` (not on CRAN) provides an interface to the photo management and sharing application service.
-- [Stack Exchange](https://api.stackexchange.com/):
-  `r github("dgrtwo/stackr")` (not on CRAN): provides an interface to its API.
-- [*Pinterest*](Pinterest):
-  `r pkg("rpinterest")` provides an interface to its API.
-- *VK*:
+- [**Stack Exchange**](https://api.stackexchange.com/):
+  `r github("dgrtwo/stackr")` (not on CRAN): provides an interface through its API.
+- [**Pinterest**](Pinterest):
+  `r pkg("rpinterest")` provides an interface through its API.
+- [**VK**](https://en.wikipedia.org/wiki/VK_(service)):
   `r pkg("vkR")` provdes an interface to the social networking site based in Russia.
-- *Meetup*:
-  `r github("rladies/meetupr")` provides an interface to its API.
-- `r pkg("brandwatchR")` retrieves a data from the Brandwatch social listening API.
+- [**Meetup**](https://www.meetup.com/):
+  `r github("rladies/meetupr")` provides an interface through its API.
+- [**Brandwatch**](https://www.brandwatch.com/):
+  `r pkg("brandwatchR")` provides an interface to the social listening service.
   Both raw text and aggregate statistics are available, as well as project and query management functions.
-- `r pkg("hackeRnews")` is a client for the [Official Hacker News API](https://github.com/HackerNews/API) .
-- `r pkg("rtoot")` retrieves data from the official [Mastodon API](https://docs.joinmastodon.org/).
-- `r pkg("slackr")` is a client for Slack.com messaging platform.
-- `r github("sckott/discgolf")` (archived)
-  connect to the 'Discourse' web forum platform.
-  The API is for an installed instance of Discourse, not for the Discourse site itself.
+- [**Hacker News**](https://news.ycombinator.com/):
+  `r pkg("hackeRnews")` provides an interface through its API.
+- [**Mastodon**](https://docs.joinmastodon.org/):
+  `r pkg("rtoot")` provides an interface through its API.
+- [**Slack**](https://slack.com/):
+  `r pkg("slackr")` is a client for  messaging platform.
+- [**Discourse**](https://www.discourse.org/):
+  `r github("sckott/discgolf")` (archived)
+  provides an interface to an instance of Discourse, not tothe Discourse site itself.
 
 ### Survey, Questionaire, and Data Capture Tools
 
