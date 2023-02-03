@@ -424,9 +424,9 @@ can be used to parse locally stored or in-memory web files.
   get embed code for a gist, list gist commits, and get rate limit information when authenticated.
   `r pkg("git2r")` provides bindings to the git version control system and
   `r pkg("gh")` is a client for the GitHub API.
-  `r pkg("gitlabr")` is a 'GitLab'-specific client.
+  `r pkg("gitlabr")` is a GitLab-specific client.
 - *Data archiving*:
-  `r pkg("dataverse")` provides access to Dataverse 4 APIs.
+  `r pkg("dataverse")` provides access to [Dataverse](https://dataverse.org/), the open source research data repository software.
   `r pkg("rfigshare")` connects with [Figshare.com](https://figshare.com/).
   `r pkg("dataone")` provides a client for 'DataONE' repositories.
 - *Google Drive/Google Documents*:
@@ -585,7 +585,6 @@ This list describes online services.  For more tools, please see the [Analysis o
 - [*Usersnap*](https://usersnap.com/):
   `r github("nealrichardson/useRsnap")` connects to Usersnap,
   a tool for collecting feedback from web application users.
-
 
 ### Web Analytics Services
 
