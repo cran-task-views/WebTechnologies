@@ -691,3 +691,5 @@ This list describes online services.  For more tools, please see the [Analysis o
 - CRAN Task View [Reproducible Research](https://CRAN.R-project.org/view=ReproducibleResearch)
 
 - CRAN Task View [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial)
+
+- CRAN Task View [Sports Analytics](https://CRAN.R-project.org/view=SportsAnalytics): some packages help download sports data
