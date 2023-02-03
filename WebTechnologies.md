@@ -414,6 +414,7 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("crunchy")` facilitates making Shiny apps on Crunch.
 - `r pkg("rrefine")` provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
 - `r pkg("bigrquery")`: An interface to Google's bigquery.
+- `r pkg("gargle")`: An interface to [Google APIs](https://developers.google.com/apis-explorer).
 
 ### Document and Code Sharing
 
