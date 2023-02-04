@@ -510,7 +510,7 @@ This list describes online services.  For more tools, please see the [Analysis o
   Services that help create visual maps.
   - [*OpenStreetMap*](https://www.openstreetmap.org/about):
   `r pkg("osmplotr")` extracts customizable map images.
-  - [*Google Maps*](https://www.google.com/maps/about):
+  - [*Google Maps*](https://www.google.com/maps/about/):
   `r pkg("RgoogleMaps")` serves two purposes:
   it provides a comfortable R interface to query the Google server for static maps, and
   uses the map as a background image to overlay plots within R.
@@ -535,7 +535,7 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r github("pablobarbera/twitter_ideology")` implements a political ideology scaling measure for specified Twitter users.
 - [**Facebook**](https://www.facebook.com/):
   `r pkg("Rfacebook")` provides an interface through its API.
-- [**Instagram**](https://www.instagram.com/developer/):
+- [**Instagram**](https://developers.facebook.com/docs/instagram):
   `r pkg("instaR")` provides an interface through its API.
 - [**LinkedIn**](https://www.linkedin.com/):
   `r pkg("Rlinkedin")` provides an interface through its API.
@@ -620,7 +620,7 @@ This list describes online services.  For more tools, please see the [Analysis o
 
 ### Web Services for Generating Synthetic Data
 
-- [*MockaRoo API*](https://www.mockaroo.com/api/docs):
+- [*MockaRoo API*](https://www.mockaroo.com/docs):
   `r github("stephlocke/mockaRoo")` (not on CRAN) generates mock or fake data based on an input schema.
 - [*RandomAPI*](https://randomapi.com):
   `r github("karthik/randNames")` generates random names and personal identifying information.
@@ -683,7 +683,7 @@ This list describes online services.  For more tools, please see the [Analysis o
 
 - `r pkg("RStripe")` provides an interface to 'Stripe', an online payment processor.
 
-- `r pkg("duckduckr")` is an R interface [DuckDuckGo's Instant Answer API](https://duckduckgo.com/api)
+- `r pkg("duckduckr")` is an R interface to [DuckDuckGo](https://duckduckgo.com/)
 
 ### Links
 
