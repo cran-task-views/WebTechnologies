@@ -453,7 +453,22 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("Microsoft365R")` provides an interface to these services,
   which form part of the Microsoft 365 (formerly known as Office 365) suite.
 
-### Data Analysis and Processing
+### Data Processing and Visualization
+
+- *Document Processing*:
+  `r pkg("abbyyR")`  and `r pkg("captr")` connect to optical character recognition (OCR) APIs.
+  `r pkg("pdftables")` uses [the PDFTables.com webservice](https://pdftables.com/) to extract tables from PDFs.
+- *Visualization*:
+  Plot.ly is a company that allows you to create visualizations in the web using R (and Python),
+  which is accessible via `r pkg("plotly")`.
+  `r pkg("googleVis")` provides an interface between R and the Google chart tools.
+  `r ohat("RUbigraph")` provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs.
+  You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics
+  such as shape, color, size.
+- *Other* :
+  `r pkg("rrefine")` can import to and export from the 'OpenRefine' data cleaning service.
+
+### Machine Learning and Translation
 
 - *Machine Learning as a Service*:
   Several packages provide access to cloud-based machine learning services.
@@ -475,18 +490,6 @@ can be used to parse locally stored or in-memory web files.
 - *Machine Translation*:
   `r pkg("RYandexTranslate")` connects to Yandex Translate.
   `r pkg("transcribeR")` provides automated audio transcription via the HP IDOL service.
-- *Document Processing*:
-  `r pkg("abbyyR")`  and `r pkg("captr")` connect to optical character recognition (OCR) APIs.
-  `r pkg("pdftables")` uses [the PDFTables.com webservice](https://pdftables.com/) to extract tables from PDFs.
-- *Visualization*:
-  Plot.ly is a company that allows you to create visualizations in the web using R (and Python),
-  which is accessible via `r pkg("plotly")`.
-  `r pkg("googleVis")` provides an interface between R and the Google chart tools.
-  `r ohat("RUbigraph")` provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs.
-  You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics
-  such as shape, color, size.
-- *Other* :
-  `r pkg("rrefine")` can import to and export from the 'OpenRefine' data cleaning service.
 
 ### Spatial Analysis
 
