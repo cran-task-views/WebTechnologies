@@ -425,7 +425,7 @@ can be used to parse locally stored or in-memory web files.
   get embed code for a gist, list gist commits, and get rate limit information when authenticated.
   `r pkg("git2r")` provides bindings to the git version control system and
   `r pkg("gh")` is a client for the GitHub API.
-- [*GitLab*](https://gitlab.com/):
+- [*GitLab*](https://about.gitlab.com/):
   `r pkg("gitlabr")` is a GitLab-specific client.
 
 ### Document and Images
@@ -470,6 +470,8 @@ can be used to parse locally stored or in-memory web files.
 
 ### Machine Learning and Translation
 
+This list describes online services.  For a more complete treatment of the topic, please see the [Machine Learning](https://CRAN.R-project.org/view=MachineLearning) task view.
+
 - *Machine Learning as a Service*:
   Several packages provide access to cloud-based machine learning services.
   `r pkg("OpenML")` is the official client for [the OpenML API](https://www.openml.org/frontend/page/home).
@@ -493,7 +495,7 @@ can be used to parse locally stored or in-memory web files.
 
 ### Spatial Analysis
 
-This list describes online services.  For more tools, please see the [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) task view.
+This list describes online services.  For a more complete treatment of the topic, please see the [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) task view.
 
 - *Geolocation/Geocoding*:
   Services that translate between addresses and longlats.
@@ -660,6 +662,10 @@ This list describes online services.  For more tools, please see the [Analysis o
 - [*RandomAPI*](https://randomapi.com):
   `r github("karthik/randNames")` generates random names and personal identifying information.
 
+### Sports Analytics
+
+Many CRAN packages interact with services facilitating sports analysis.  For a more complete treatment of the topic, please see the [Sports Analytics](https://CRAN.R-project.org/view=SportsAnalytics) task view.
+
 ### Other Web Services
 
 - *Push Notifications*:
@@ -693,8 +699,10 @@ This list describes online services.  For more tools, please see the [Analysis o
 
 ### Links
 
-- CRAN Task View [Reproducible Research](https://CRAN.R-project.org/view=ReproducibleResearch)
-
 - CRAN Task View [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial)
 
-- CRAN Task View [Sports Analytics](https://CRAN.R-project.org/view=SportsAnalytics): some packages help download sports data
+- CRAN Task View [Machine Learning](https://CRAN.R-project.org/view=MachineLearning)
+
+- CRAN Task View [Reproducible Research](https://CRAN.R-project.org/view=ReproducibleResearch)
+
+- CRAN Task View [Sports Analytics](https://CRAN.R-project.org/view=SportsAnalytics)
