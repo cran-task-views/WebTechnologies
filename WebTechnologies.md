@@ -613,27 +613,7 @@ This list describes online services.  For more tools, please see the [Analysis o
   There is some overlap with `webreadr`, but webreader focuses on reading log files,
   while WebAnalytics focuses on analysing them.
 
-### Web Services for R Package Development
-
-- *R-Hub*: <http://log.r-hub.io/> is a project to enable package builds across all architectures.
-  `r pkg("rhub")` interfaces with R-Hub to allow you to check a package on the platform.
-
-### Web Services for Generating Synthetic Data
-
-- [*MockaRoo API*](https://www.mockaroo.com/docs):
-  `r github("stephlocke/mockaRoo")` (not on CRAN) generates mock or fake data based on an input schema.
-- [*RandomAPI*](https://randomapi.com):
-  `r github("karthik/randNames")` generates random names and personal identifying information.
-
-### Other Web Services
-
-- *Push Notifications*:
-  `r pkg("RPushbullet")` provides an easy-to-use interface for the Pushbullet service
-  which provides fast and efficient notifications between
-  computers, phones and tablets.
-  `r pkg("pushoverr")` can sending push notifications to mobile devices (iOS and Android) and desktop
-  using 'Pushover'.
-  `r pkg("notifyme")` can control Phillips Hue lighting.
+### Publications
 
 - *Reference/bibliography/citation management*:
   `r pkg("rorcid")` connects to the [Orcid.org](https://orcid.org/) API,
@@ -663,6 +643,28 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("rcoreoa")` is an interface to the [CORE API](https://core.ac.uk/docs/),
   a search interface for open access scholarly articles.
   `r pkg("rcrossref")` is an interface to Crossref's API.
+
+### R Package Development
+
+- *R-Hub*: <http://log.r-hub.io/> is a project to enable package builds across all architectures.
+  `r pkg("rhub")` interfaces with R-Hub to allow you to check a package on the platform.
+
+### Generating Synthetic Data
+
+- [*MockaRoo API*](https://www.mockaroo.com/docs):
+  `r github("stephlocke/mockaRoo")` (not on CRAN) generates mock or fake data based on an input schema.
+- [*RandomAPI*](https://randomapi.com):
+  `r github("karthik/randNames")` generates random names and personal identifying information.
+
+### Other Web Services
+
+- *Push Notifications*:
+  `r pkg("RPushbullet")` provides an easy-to-use interface for the Pushbullet service
+  which provides fast and efficient notifications between
+  computers, phones and tablets.
+  `r pkg("pushoverr")` can sending push notifications to mobile devices (iOS and Android) and desktop
+  using 'Pushover'.
+  `r pkg("notifyme")` can control Phillips Hue lighting.
 
 - *Automated Metadata Harvesting*:
   `r pkg("oai")` and `r pkg("OAIHarvester")` harvest metadata
