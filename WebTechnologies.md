@@ -305,8 +305,6 @@ can be used to parse locally stored or in-memory web files.
 - `r ohat("RDCOMServer")` provides a mechanism to export R objects as (D)COM objects in Windows.
   It can be used along with `r ohat("RDCOMClient")`,
   which provides user-level access from R to other COM servers. (not on CRAN)
-- [rapporter.net](http://rapporter.net/welcome/en) provides an online environment (SaaS)
-  to host and run `r pkg("rapport")` statistical report templates in the cloud.
 - `r pkg("radiant")` is Shiny-based GUI for R that runs in a browser from a server or local machine.
 - The 'Tiki' Wiki CMS/Groupware framework has an R plugin (`PluginR`) to run R code from wiki pages,
   and use data from their own collected web databases (trackers).
