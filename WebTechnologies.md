@@ -68,14 +68,14 @@ For more specific situations, the following resources may be useful:
   `r pkg("httping")` provides simplified tools to ping and time HTTP requests, around `r pkg("httr")` calls.
   `r pkg("httpcache")` provides a mechanism for caching HTTP requests.
 - `r pkg("nanonext")` is an alternative low-level sockets implementation that can be used to perform HTTP and
-  streaming Websocket requests synchronously or asynchronously over its own concurrency framework.
+  streaming WebSocket requests synchronously or asynchronously over its own concurrency framework.
   It uses the NNG/mbedTLS libraries as a backend.
 - For dynamically generated webpages (i.e., those requiring user interaction to display results),
   `r pkg("RSelenium")` can be used to automate those interactions and extract page contents.
   It provides a set of bindings for the Selenium 2.0 webdriver using the 'JsonWireProtocol'.
   It can also aid in automated application testing, load testing, and web scraping.
   `r pkg("seleniumPipes")` provides a "pipe"-oriented interface to the same.
-  `r github("cpsievert/rdom")` uses 'phantomjs' to access a webpage's Document Object Model (DOM).
+  `r github("cpsievert/rdom")` uses PhantomJS to access a webpage's Document Object Model (DOM).
 - For capturing static content of web pages `r pkg("postlightmercury")` is a client
   for the web service 'Mercury' that turns web pages into structured and clean text.
 - Another, higher-level alternative package useful for webscraping is `r pkg("rvest")`,
@@ -103,8 +103,8 @@ For more specific situations, the following resources may be useful:
   OAuth is the most complicated authentication process,
   and can be most easily done using `r pkg("httr")`.
   See the 6 demos within `r pkg("httr")`,
-  three for OAuth 1.0 (linkedin, twitter, vimeo) and
-  three for OAuth 2.0 (facebook, GitHub, google).
+  three for OAuth 1.0 (LinkedIn, Twitter, Vimeo) and
+  three for OAuth 2.0 (Facebook, GitHub, Google).
   `r pkg("ROAuth")` provides a separate R interface to OAuth.
   OAuth is easier to to do in `r pkg("httr")`, so start there.
   `r pkg("googleAuthR")` provides an OAuth 2.0 setup specifically for Google web services,
@@ -120,7 +120,7 @@ For more specific situations, the following resources may be useful:
 ### Parsing Structured Web Data
 
 The vast majority of web-based data is structured as
-plain text, HTML, XML, or JSON (javascript object notation).
+plain text, HTML, XML, or JSON.
 Web service APIs increasingly rely on JSON, but XML is still prevalent in many applications.
 There are several packages for specifically working with these format.
 These functions can be used to interact directly with insecure web pages or
@@ -209,7 +209,7 @@ can be used to parse locally stored or in-memory web files.
   for performing in-memory compression and decompression in R.
   This is useful when receiving or sending contents to remote servers,
   e.g. Web services, HTTP requests via RCurl.
-- `r pkg("webshot")` uses 'PhantomJS' to provide screenshots of web pages without a browser.
+- `r pkg("webshot")` uses PhantomJS to provide screenshots of web pages without a browser.
   It can be useful for testing websites (such as Shiny applications).
 
 ### Security
@@ -260,7 +260,7 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("robotstxt")` provides functions and classes for parsing robots.txt files and
   checking access permissions;
   `r pkg("spiderbar")` does the same.
-  `r pkg("uaparserjs")` uses the javascript ["ua-parser" library](https://github.com/ua-parser)
+  `r pkg("uaparserjs")` uses the JavaScript ["ua-parser" library](https://github.com/ua-parser)
   to parse User-Agent HTTP headers.
   `r pkg("rapiclient")` is a client for consuming APIs that follow the
   [Open API format](https://www.openapis.org/).
@@ -298,7 +298,7 @@ can be used to parse locally stored or in-memory web files.
 - Several packages offer functionality for turning R code into a web API.
   `r pkg("FastRWeb")` provides some basic infrastructure for this.
   `r pkg("plumber")` allows you to create a REST API by decorating existing R source code.
-  `r pkg("beakr")` provides an R version of functionality found in python Flask and javascript Express.js.
+  `r pkg("beakr")` provides an R version of functionality found in python Flask and JavaScript Express.js.
 - `r ohat("WADL")` provides tools to process Web Application Description Language (WADL) documents and
   to programmatically generate R functions to interface to the REST methods
   described in those WADL documents. (not on CRAN)
@@ -411,7 +411,7 @@ can be used to parse locally stored or in-memory web files.
   storage and analytics platform.
   `r pkg("crunchy")` facilitates making Shiny apps on Crunch.
 - `r pkg("rrefine")` provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
-- `r pkg("bigrquery")`: An interface to Google's bigquery.
+- `r pkg("bigrquery")`: An interface to Google's BigQuery.
 - `r pkg("gargle")`: An interface to [Google APIs](https://developers.google.com/apis-explorer).
 
 ### Document and Code Sharing
@@ -501,7 +501,7 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("geosapi")` is an R client for the 'GeoServer' REST API,
    an open source implementation used widely for serving spatial data.
   `r pkg("geonapi")` provides an interface to the 'GeoNetwork' legacy API,
-  an opensource catalogue for managing geographic metadata.
+  an open source catalogue for managing geographic metadata.
   `r pkg("ows4R")` is a new R client for the 'OGC' standard Web-Services,
   such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
   `r pkg("openadds")` is an Openaddresses client.
@@ -546,7 +546,7 @@ This list describes online services.  For more tools, please see the [Analysis o
 - [**Pinterest**](Pinterest):
   `r pkg("rpinterest")` provides an interface through its API.
 - [**VK**](https://en.wikipedia.org/wiki/VK_(service)):
-  `r pkg("vkR")` provdes an interface to the social networking site based in Russia.
+  `r pkg("vkR")` provides an interface to the social networking site based in Russia.
 - [**Meetup**](https://www.meetup.com/):
   `r github("rladies/meetupr")` provides an interface through its API.
 - [**Brandwatch**](https://www.brandwatch.com/):
@@ -560,9 +560,9 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("slackr")` is a client for  messaging platform.
 - [**Discourse**](https://www.discourse.org/):
   `r github("sckott/discgolf")` (archived)
-  provides an interface to an instance of Discourse, not tothe Discourse site itself.
+  provides an interface to an instance of Discourse, not to the Discourse site itself.
 
-### Survey, Questionaire, and Data Capture Tools
+### Survey, Questionnaire, and Data Capture Tools
 
 - [*REDCap*](https://projectredcap.org/):
   `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap,
@@ -572,12 +572,12 @@ This list describes online services.  For more tools, please see the [Analysis o
 - [*Qualtrics*](https://www.qualtrics.com/):
   `r pkg("qualtRics")` provide functions to interact with Qualtrics,
   an online survey and data collection software platform.
-- [*WuFoo*](https://www.wufoo.com/):
+- [*Wufoo*](https://www.wufoo.com/):
   `r pkg("WufooR")` retrieves data from Wufoo,
   which is another data collection tool from the SurveyMonkey company.
 - [*formr*](https://formr.org/):
  `r github("rubenarslan/formr")` facilitates use of the formr online survey framework,
-  which relies on R via openCPU.
+  which relies on R via OpenCPU.
 - [*Experigen*](https://becker.phonologist.org/experigen/):
   `r pkg("Rexperigen")` is a client for Experigen,
   which is a platform for creating phonology experiments.
@@ -672,7 +672,7 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("WikipediR")` is a wrapper for the 'MediaWiki' API,
   aimed particularly at the 'Wikimedia' "production" wikis, such as 'Wikipedia'.
   `r pkg("WikidataR")` can request data from
-  [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledgebase.
+  [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledge base.
   `r pkg("wikipediatrend")` provides access to Wikipedia page access statistics.
   `r pkg("WikidataQueryServiceR")` is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 
