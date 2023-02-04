@@ -414,16 +414,22 @@ can be used to parse locally stored or in-memory web files.
 - `r pkg("bigrquery")`: An interface to Google's BigQuery.
 - `r pkg("gargle")`: An interface to [Google APIs](https://developers.google.com/apis-explorer).
 
-### Document and Code Sharing
+### Software Development
 
-- *Code Sharing*:
+- [*R-hub*](https://builder.r-hub.io/) is a collection of free services to help R package development across all architectures.
+  `r pkg("rhub")` interfaces with R-Hub to allow you to check a package on the platform.
+- [*GitHub*](https://github.com/):
   `r pkg("gistr")` works with GitHub gists ([gist.github.com](https://gist.github.com/discover)) from R,
   allowing you to create new gists, update gists with new files, rename files, delete files,
   get and delete gists, star and un-star gists, fork gists, open a gist in your default browser,
   get embed code for a gist, list gist commits, and get rate limit information when authenticated.
   `r pkg("git2r")` provides bindings to the git version control system and
   `r pkg("gh")` is a client for the GitHub API.
+- [*GitLab*](https://gitlab.com/):
   `r pkg("gitlabr")` is a GitLab-specific client.
+
+### Document and Images
+
 - *Data archiving*:
   `r pkg("dataverse")` provides access to [Dataverse](https://dataverse.org/), the open source research data repository software.
   `r pkg("rfigshare")` connects with [Figshare.com](https://figshare.com/).
@@ -447,7 +453,7 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("Microsoft365R")` provides an interface to these services,
   which form part of the Microsoft 365 (formerly known as Office 365) suite.
 
-### Data Analysis and Processing Services
+### Data Analysis and Processing
 
 - *Machine Learning as a Service*:
   Several packages provide access to cloud-based machine learning services.
@@ -482,7 +488,7 @@ can be used to parse locally stored or in-memory web files.
 - *Other* :
   `r pkg("rrefine")` can import to and export from the 'OpenRefine' data cleaning service.
 
-### Services for Spatial Analysis
+### Spatial Analysis
 
 This list describes online services.  For more tools, please see the [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) task view.
 
@@ -643,11 +649,6 @@ This list describes online services.  For more tools, please see the [Analysis o
   `r pkg("rcoreoa")` is an interface to the [CORE API](https://core.ac.uk/docs/),
   a search interface for open access scholarly articles.
   `r pkg("rcrossref")` is an interface to Crossref's API.
-
-### R Package Development
-
-- *R-Hub*: <http://log.r-hub.io/> is a project to enable package builds across all architectures.
-  `r pkg("rhub")` interfaces with R-Hub to allow you to check a package on the platform.
 
 ### Generating Synthetic Data
 
