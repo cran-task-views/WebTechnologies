@@ -535,7 +535,7 @@ This list describes online services.  For a more complete treatment of the topic
 
 ### Social Media Clients
 
-- [**Twitter**](https://twitter.com/):
+- **Twitter**:
   `r pkg("twitteR")` provides an interface through its API.
   It claims to be deprecated in favor of `r pkg("rtweet")`.
   `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter data.
@@ -544,55 +544,55 @@ This list describes online services.  For a more complete treatment of the topic
   OAuth authentication is supported.
   `r pkg("graphTweets")` produces a network graph from a data.frame of tweets.
   `r github("pablobarbera/twitter_ideology")` implements a political ideology scaling measure for specified Twitter users.
-- [**Facebook**](https://www.facebook.com/):
+- **Facebook**:
   `r pkg("Rfacebook")` provides an interface through its API.
-- [**Instagram**](https://developers.facebook.com/docs/instagram):
+- **Instagram**:
   `r pkg("instaR")` provides an interface through its API.
-- [**LinkedIn**](https://www.linkedin.com/):
+- **LinkedIn**:
   `r pkg("Rlinkedin")` provides an interface through its API.
-- [**Flickr**](https://www.flickr.com/):
+- **Flickr**:
   `r ohat("Rflickr")` (not on CRAN) provides an interface to the photo management and sharing application service.
-- [**Stack Exchange**](https://api.stackexchange.com/):
+- **Stack Exchange**:
   `r github("dgrtwo/stackr")` (not on CRAN): provides an interface through its API.
-- [**Pinterest**](Pinterest):
+- **Pinterest**:
   `r pkg("rpinterest")` provides an interface through its API.
-- [**VK**](https://en.wikipedia.org/wiki/VK_(service)):
+- **VK**:
   `r pkg("vkR")` provides an interface to the social networking site based in Russia.
-- [**Meetup**](https://www.meetup.com/):
+- **Meetup**:
   `r github("rladies/meetupr")` provides an interface through its API.
-- [**Brandwatch**](https://www.brandwatch.com/):
+- **Brandwatch**:
   `r pkg("brandwatchR")` provides an interface to the social listening service.
   Both raw text and aggregate statistics are available, as well as project and query management functions.
-- [**Hacker News**](https://news.ycombinator.com/):
+- **Hacker News**:
   `r pkg("hackeRnews")` provides an interface through its API.
-- [**Mastodon**](https://docs.joinmastodon.org/):
+- **Mastodon**:
   `r pkg("rtoot")` provides an interface through its API.
-- [**Slack**](https://slack.com/):
+- **Slack**:
   `r pkg("slackr")` is a client for  messaging platform.
-- [**Discourse**](https://www.discourse.org/):
+- **Discourse**:
   `r github("sckott/discgolf")` (archived)
   provides an interface to an instance of Discourse, not to the Discourse site itself.
 
 ### Survey, Questionnaire, and Data Capture Tools
 
-- [*REDCap*](https://projectredcap.org/):
+- *REDCap*:
   `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap,
   a web application for building and managing online surveys and research databases.
   `r pkg("REDCapTidieR")` and `r pkg("tidyREDCap")`
   follow [tidy](https://www.tidyverse.org/) principles to extend `r pkg("REDCapR")`.
-- [*Qualtrics*](https://www.qualtrics.com/):
+- *Qualtrics*:
   `r pkg("qualtRics")` provide functions to interact with Qualtrics,
   an online survey and data collection software platform.
-- [*Wufoo*](https://www.wufoo.com/):
+- *Wufoo*:
   `r pkg("WufooR")` retrieves data from Wufoo,
   which is another data collection tool from the SurveyMonkey company.
-- [*formr*](https://formr.org/):
+- *formr*:
  `r github("rubenarslan/formr")` facilitates use of the formr online survey framework,
   which relies on R via OpenCPU.
-- [*Experigen*](https://becker.phonologist.org/experigen/):
+- *Experigen*:
   `r pkg("Rexperigen")` is a client for Experigen,
   which is a platform for creating phonology experiments.
-- [*Usersnap*](https://usersnap.com/):
+- *Usersnap*:
   `r github("nealrichardson/useRsnap")` connects to Usersnap,
   a tool for collecting feedback from web application users.
 
