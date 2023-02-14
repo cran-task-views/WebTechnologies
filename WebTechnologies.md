@@ -320,28 +320,25 @@ can be used to parse locally stored or in-memory web files.
 
 ### Cloud Computing and Storage
 
-- [The cloudyr project](https://cloudyr.github.io/) aims to provide interfaces to popular
-  Amazon, Azure and Google cloud services without the need for external system dependencies.
-  Amazon Web Services is a popular, proprietary cloud service offering a
-  suite of computing, storage, and infrastructure tools.
-  `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
-- *Elastic Cloud Compute (EC2)* is a cloud computing service.
-  `r gcode("segue")` (not on CRAN) manages EC2 instances and S3 storage,
-  which includes a parallel version of `lapply()`
-  for the Elastic Map Reduce (EMR) engine called `emrlapply()`.
-  It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
-- *DBREST*: `r ohat("RAmazonDBREST")` provides an interface to Amazon's Simple DB API.
-- `r pkg("paws")` is an interface to nearly all AWS APIs,
-  including compute, storage, databases, and machine learning.
-  It also requires no external system dependencies.
-- Azure and Microsoft 365 are Microsoft's cloud computing services.
-- The Azure platform provides Paas, SaaS and IaaS and supports many different tools and frameworks,
-  including both Microsoft-specific and third-party systems;
-  while Microsoft 365 is a unified framework for accessing cloud data from
-  Microsoft's Office services, Windows and Dynamics.
-  The [AzureR package family](https://github.com/Azure/AzureR)
-  aims to provide a suite of lightweight, powerful tools for working with Azure in R.
-  The packages listed below are part of the family, and are also mirrored at the cloudyr project.
+- **Amazon Web Services (AWS)**:
+  - `r pkg("paws")` is an interface to nearly all AWS APIs,
+    including compute, storage, databases, and machine learning.
+    It also requires no external system dependencies.
+  - `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
+  - *Elastic Cloud Compute (EC2)* is a cloud computing service.
+    `r gcode("segue")` (not on CRAN) manages EC2 instances and S3 storage,
+    which includes a parallel version of `lapply()`
+    for the Elastic Map Reduce (EMR) engine called `emrlapply()`.
+    It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
+  - **Simple DB**: `r ohat("RAmazonDBREST")` provides an interface to Amazon's Simple DB API.
+- **Microsoft Azure**: Azure and Microsoft 365 are Microsoft's cloud computing services.
+  - The Azure platform provides Paas, SaaS and IaaS and supports many different tools and frameworks,
+    including both Microsoft-specific and third-party systems;
+    while Microsoft 365 is a unified framework for accessing cloud data from
+    Microsoft's Office services, Windows and Dynamics.
+    The [AzureR package family](https://github.com/Azure/AzureR)
+    aims to provide a suite of lightweight, powerful tools for working with Azure in R.
+    The packages listed below are part of the family, and are also mirrored at the cloudyr project.
   - *Azure Active Directory (AAD)* is a centralized directory and identity service.
     `r pkg("AzureAuth")` is an R client for AAD;
     use this to obtain OAuth tokens for authenticating with other Azure services,
@@ -391,10 +388,15 @@ can be used to parse locally stored or in-memory web files.
     Computer Vision is a pre-trained service for handling commonly-encountered tasks,
     while Custom Vision allows you to train your own image recognition model on a custom dataset.
     `r pkg("AzureVision")` provides an interface to both these services.
-- `r pkg("googleComputeEngineR")` interacts with the Google Compute Engine API,
-  and lets you create, start and stop instances in the Google Cloud.
+- **Google Cloud**:
+  - `r pkg("googleComputeEngineR")` interacts with the Google Compute Engine API,
+    and lets you create, start and stop instances in the Google Cloud.
+  - `r pkg("googleCloudStorageR")` interfaces with Google Cloud Storage.
+  - `r pkg("bigrquery")`: An interface to Google's BigQuery.
+  - `r pkg("rrefine")` provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
+  - `r pkg("gargle")`: An interface to [Google APIs](https://developers.google.com/apis-explorer).
+  - Look in other sections of the Web Technologies task view for packages interfacing other Google products.
 - *Cloud Storage*:
-  `r pkg("googleCloudStorageR")` interfaces with Google Cloud Storage.
   `r pkg("boxr")` is a lightweight, high-level interface for the
   [box.com API](https://developer.box.com/reference/).
   `r pkg("rdrop2")` is a Dropbox interface that provides access to a full suite of file operations,
@@ -410,9 +412,10 @@ can be used to parse locally stored or in-memory web files.
 - `r pkg("crunch")` provides an interface to the [crunch.io](https://crunch.io/)
   storage and analytics platform.
   `r pkg("crunchy")` facilitates making Shiny apps on Crunch.
-- `r pkg("rrefine")` provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
-- `r pkg("bigrquery")`: An interface to Google's BigQuery.
-- `r pkg("gargle")`: An interface to [Google APIs](https://developers.google.com/apis-explorer).
+- [The cloudyr project](https://cloudyr.github.io/) aims to provide interfaces to popular
+  Amazon, Azure and Google cloud services without the need for external system dependencies.
+  Amazon Web Services is a popular, proprietary cloud service offering a
+  suite of computing, storage, and infrastructure tools.
 
 ### Software Development
 
