@@ -9,7 +9,7 @@ url_db_from_ctv_md <- function(path_md, verbose = TRUE, verbose_row_count = 10L)
   # Capture each url, even those with parentheses.  See https://stackoverflow.com/a/67942420/1082435
   pattern <- "\\[(?<page_name>.[^][]+)\\](\\((?<page_url>(?:[^()]+|(?2))+)\\))"
   # pattern <- "\\[(?<page_name>.+?)\\]\\((?<page_url>.+?)\\)"
-  lines <- readr::read_file(path)
+  lines <- readr::read_file(path_md)
 
   matches <-
     rematch2::re_match_all(lines, pattern, perl = TRUE)
@@ -35,7 +35,7 @@ url_db_from_ctv_md <- function(path_md, verbose = TRUE, verbose_row_count = 10L)
     print(db, n = verbose_row_count)
   }
 
-  db$Parent <- path
+  db$Parent <- path_md
   class(db) <- "url_db"
 
   output <- tools:::check_url_db(db, verbose = verbose, parallel = TRUE)
