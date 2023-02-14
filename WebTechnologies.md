@@ -126,7 +126,7 @@ There are several packages for specifically working with these format.
 These functions can be used to interact directly with insecure web pages or
 can be used to parse locally stored or in-memory web files.
 
-- *XML*:
+- **XML**:
   There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2")`.
   Both support general XML (and HTML) parsing, including XPath queries.
   `r pkg("xml2")` is less fully featured, but more user friendly with respect to memory management,
@@ -138,7 +138,7 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("XML")` is often used for parsing xml and html,
   but selectr translates CSS selectors to XPath,
   so can use the CSS selectors instead of XPath.
-- *HTML*:
+- **HTML**:
   All of the tools that work with XML also work for HTML, though HTML is - in practice - more prone to be malformed.
   Some tools are designed specifically to work with HTML.
   `xml2::read_html()` is a good first function to use for importing HTML.
@@ -149,7 +149,7 @@ can be used to parse locally stored or in-memory web files.
   along with the different elements and hidden fields.
   `r pkg("htm2txt")` uses regex to converts html documents to plain text by removing all html tags.
   `r pkg("Rcrawler")` does crawling and scraping of web pages.
-- *JSON*:
+- **JSON**:
   There are several packages for reading and writing JSON:
   `r pkg("rjson")`,
   `r pkg("RJSONIO")`, and
@@ -160,7 +160,7 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("jsonvalidate")` validates JSON against a schema using the "is-my-json-valid" JavaScript library;
   `r pkg("ajv")` does the same using the 'ajv' JavaScript library.
   `r pkg("ndjson")` supports the "ndjson" format.
-- *RSS/Atom*:
+- **RSS/Atom**:
   `r github("datawookie/feedeR")` can be used to parse RSS or Atom feeds.
   `r pkg("tidyRSS")` parses RSS, Atom XML/JSON and geoRSS into a tidy data.frame.
 - `r pkg("swagger")` can be used to automatically generate functions for working with an web service API
@@ -218,7 +218,7 @@ can be used to parse locally stored or in-memory web files.
 
 ### Other Useful Packages and Functions
 
-- *JavaScript*:
+- **JavaScript**:
   `r pkg("V8")` is an R interface to Google's open source, high performance JavaScript engine.
   It can wrap JavaScript libraries as well as NPM packages.
   `r ohat("SpiderMonkey")` provides another means of evaluating JavaScript code,
@@ -227,20 +227,20 @@ can be used to parse locally stored or in-memory web files.
   by embedding R in an browser such as Firefox and
   being able to call R from JavaScript and call back to JavaScript from R.
   `r pkg("js")` wraps `r pkg("V8")` and validates, reformats, optimizes and analyzes JavaScript code.
-- *Email*:
+- **Email**:
   `r pkg("mailR")` is an interface to Apache Commons Email to send emails from within R.
   `r pkg("sendmailR")` provides a simple SMTP client.
   `r pkg("gmailr")` provides access the Google's gmail.com RESTful API.
   `r pkg("Microsoft365R")` provides a client for Microsoft's Outlook email service,
   both personal (outlook.com) and
   as part of the Microsoft 365 (formerly known as Office 365) suite.
-- *Mocking*:
+- **Mocking**:
   `r pkg("webmockr")` stubs and sets expectations on HTTP requests.
   It is inspired from Ruby's `webmock`.
   `r pkg("webmockr")` only helps mock HTTP requests, and returns nothing when requests match expectations.
   It integrates with `r pkg("crul")` and `r pkg("httr")`.
   See *Testing* for mocking with returned responses.
-- *Testing*:
+- **Testing**:
   `r pkg("vcr")` provides an interface to easily cache HTTP requests in R package test suites
   (but can be used outside of testing use cases as well).
   vcr relies on `r pkg("webmockr")` to do the HTTP request mocking.
@@ -250,7 +250,7 @@ can be used to parse locally stored or in-memory web files.
   and for making assertions about HTTP requests,
   all without requiring a live connection to the API server at runtime.
   httptest only works with httr.
-- *Miscellaneous*:
+- **Miscellaneous**:
   `r pkg("webutils")` contains various functions for developing web applications,
   including parsers for `application/x-www-form-urlencoded` as well as `multipart/form-data`.
   `r pkg("mime")` guesses the MIME type for a file from its extension.
@@ -497,7 +497,7 @@ This list describes online services.  For a more complete treatment of the topic
 
 This list describes online services.  For a more complete treatment of the topic, please see the [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) task view.
 
-- *Geolocation/Geocoding*:
+- **Geolocation/Geocoding**:
   Services that translate between addresses and longlats.
   `r pkg("rgeolocate")` offers several online and offline tools.
   `r github("trestletech/rydn")` (not on CRAN) is an interface to the
@@ -517,20 +517,20 @@ This list describes online services.  For a more complete treatment of the topic
   such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
   `r pkg("openadds")` is an Openaddresses client.
 
-- *Mapping*:
+- **Mapping**:
   Services that help create visual maps.
-  - [*OpenStreetMap*](https://www.openstreetmap.org/about):
+  - **OpenStreetMap**:
   `r pkg("osmplotr")` extracts customizable map images.
-  - [*Google Maps*](https://www.google.com/maps/about/):
+  - **Google Maps**:
   `r pkg("RgoogleMaps")` serves two purposes:
   it provides a comfortable R interface to query the Google server for static maps, and
   uses the map as a background image to overlay plots within R.
   `r ohat("R2GoogleMaps")` provides a mechanism to generate JavaScript code from R that displays data using Google Maps.
   `r pkg("mapsapi")` is an sf-compatible interface to Google Maps API.
 
-- *Routing*:
+- **Routing**:
   Services that calculate and optimize distances and routes.
-  - [*OpenStreetMap*](https://www.openstreetmap.org/about):
+  - **OpenStreetMap**:
   `r pkg("osrm")` assists with the computation of routes, trips, isochrones and travel distances matrices.
 
 ### Social Media Clients
@@ -575,45 +575,45 @@ This list describes online services.  For a more complete treatment of the topic
 
 ### Survey, Questionnaire, and Data Capture Tools
 
-- *REDCap*:
+- **REDCap**:
   `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap,
   a web application for building and managing online surveys and research databases.
   `r pkg("REDCapTidieR")` and `r pkg("tidyREDCap")`
   follow [tidy](https://www.tidyverse.org/) principles to extend `r pkg("REDCapR")`.
-- *Qualtrics*:
+- **Qualtrics**:
   `r pkg("qualtRics")` provide functions to interact with Qualtrics,
   an online survey and data collection software platform.
 - *Wufoo*:
   `r pkg("WufooR")` retrieves data from Wufoo,
   which is another data collection tool from the SurveyMonkey company.
-- *formr*:
+- **formr**:
  `r github("rubenarslan/formr")` facilitates use of the formr online survey framework,
   which relies on R via OpenCPU.
-- *Experigen*:
+- **Experigen**:
   `r pkg("Rexperigen")` is a client for Experigen,
   which is a platform for creating phonology experiments.
-- *Usersnap*:
+- **Usersnap**:
   `r github("nealrichardson/useRsnap")` connects to Usersnap,
   a tool for collecting feedback from web application users.
 
 ### Web Analytics Services
 
-- *Google Trends*:
+- **Google Trends**:
   `r pkg("gtrendsR")` offers functions to perform and display Google Trends queries.
   `r ohat("RGoogleTrends")` provides an alternative.
-- *Google Analytics*:
+- **Google Analytics**:
   `r pkg("googleAnalyticsR")`, and `r pkg("ganalytics")` provide functions for accessing and retrieving
   data from the [Google Analytics APIs](https://developers.google.com/analytics/).
   The latter supports OAuth 2.0 authorization.
   `r pkg("searchConsoleR")` links to the
   [Google Search Console](https://developers.google.com/webmaster-tools/) (formerly Webmaster Tools).
-- *Online Advertising*:
+- **Online Advertising**:
   `r pkg("fbRads")` can manage Facebook ads via the Facebook Marketing API.
   `r github("WillemPaling/RDoubleClick")` (not on CRAN) can retrieve data from
   Google's DoubleClick Campaign Manager Reporting API.
   `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data provided by
   [Smartly.io](https://app.smartly.io/).
-- *Other services*:
+- **Other services**:
   `r pkg("RSiteCatalyst")` has functions for accessing the Adobe Analytics
    (Omniture SiteCatalyst) Reporting API.
 - `r pkg("RAdwords")` loads Google Adwords data.
@@ -626,7 +626,7 @@ This list describes online services.  For a more complete treatment of the topic
 
 ### Publications
 
-- *Reference/bibliography/citation management*:
+- **Reference/bibliography/citation management**:
   `r pkg("rorcid")` connects to the [Orcid.org](https://orcid.org/) API,
   which can identify scientific authors and their publications (e.g., by DOI).
   `r pkg("rdatacite")` connects to [DataCite](https://datacite.org/),
@@ -640,7 +640,7 @@ This list describes online services.  For a more complete treatment of the topic
   `r pkg("zen4R")` connects to [Zenodo](https://zenodo.org/) API,
   including management of depositions, attribution of DOIs and upload of files.
 
-- *Literature*:
+- **Literature**:
   `r pkg("rplos")` connects to the Public Library of Science journals.
   `r pkg("europepmc")` connects to the Europe PubMed Central service.
   `r pkg("pubmed.mineR")` is for text mining of [PubMed Abstracts](https://pubmed.ncbi.nlm.nih.gov/)
@@ -657,9 +657,9 @@ This list describes online services.  For a more complete treatment of the topic
 
 ### Generating Synthetic Data
 
-- [*MockaRoo API*](https://www.mockaroo.com/docs):
+- **MockaRoo API**:
   `r github("stephlocke/mockaRoo")` (not on CRAN) generates mock or fake data based on an input schema.
-- [*RandomAPI*](https://randomapi.com):
+- **RandomAPI**:
   `r github("karthik/randNames")` generates random names and personal identifying information.
 
 ### Sports Analytics
@@ -668,7 +668,7 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
 
 ### Other Web Services
 
-- *Push Notifications*:
+- **Push Notifications**:
   `r pkg("RPushbullet")` provides an easy-to-use interface for the Pushbullet service
   which provides fast and efficient notifications between
   computers, phones and tablets.
@@ -676,11 +676,11 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
   using 'Pushover'.
   `r pkg("notifyme")` can control Phillips Hue lighting.
 
-- *Automated Metadata Harvesting*:
+- **Automated Metadata Harvesting**:
   `r pkg("oai")` and `r pkg("OAIHarvester")` harvest metadata
   using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard.
 
-- *Wikipedia*:
+- **Wikipedia**:
   `r pkg("WikipediR")` is a wrapper for the 'MediaWiki' API,
   aimed particularly at the 'Wikimedia' "production" wikis, such as 'Wikipedia'.
   `r pkg("WikidataR")` can request data from
