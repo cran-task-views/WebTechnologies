@@ -3,7 +3,7 @@ name: WebTechnologies
 topic: Web Technologies and Services
 maintainer: Mauricio Vargas Sepulveda, Will Beasley
 email: mavargas11@uc.cl
-version: 2023-01-31
+version: 2023-02-16
 source: https://github.com/cran-task-views/WebTechnologies/
 ---
 
@@ -11,9 +11,10 @@ source: https://github.com/cran-task-views/WebTechnologies/
 
 ### Tools for Working with the Web from R
 
-This task view recommends packages and strategies for efficiently interacting with the internet.
+This task view recommends packages and strategies for efficiently interacting
+with resources over the internet.
 Base R includes a few helpful functions,
-and thankfully many CRAN packages improve how R connects to servers and services.
+and many CRAN packages improve how R connects to servers and services.
 
 This task view focuses on:
 
@@ -24,9 +25,9 @@ This task view focuses on:
 If you have comments or suggestions for improving or growing this task view,
 please submit an issue or a pull request in the GitHub repository linked above.
 If you can't contribute on GitHub,
-please send an e-mail to the maintainer address above.
-If you have an issue with one of the packages discussed below,
-please contact the maintainer of that package.
+please e-mail the task view maintainer.
+If you have an issue with a package discussed below,
+please contact the package's maintainer.
 
 Thanks to all contributors to this task view, especially to
 Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, and Christopher Gandrud
@@ -36,25 +37,31 @@ who maintained this task view up to 2021.
 
 Three packages provide the foundation for most modern approaches.
 
-1. `r pkg("crul", priority = "core")` is an R6-based HTTP client that provides asynchronous HTTP requests,
+1. `r pkg("httr", priority = "core")` is a user-facing client for HTTP requests.
+  It leverages the curl package for most operations.
+  Additional options may be passed to curl through httr's `config` parameter.
+1. `r pkg("crul", priority = "core")` is another package that leverages the curl.
+  It is an [R6](https://r6.r-lib.org/)-based client that supports
+  asynchronous HTTP requests,
   a pagination helper,
   HTTP mocking via `r pkg("webmockr")`,
   and request caching for unit tests via `r pkg("vcr")`.
-  crul is intended to be called by other packages than by typical R users.
-1. `r pkg("httr", priority = "core")` provides more of a user-facing client for HTTP requests and
-  supports OAuth (unlike the current version of crul).
-  You can pass additional curl options
-  when you instantiate R6 classes in crul, and the `config` parameter in httr.
-1. `r pkg("curl", priority = "core")` is a lower-level
-  package that provides a closer interface between R and the
+  crul is intended to be called by other packages, instead of R users.
+  Unlike httr,
+  crul's [current version](https://docs.ropensci.org/crul/reference/auth.html#details)
+  does not support OAuth.
+  Additional options may be passed to curl when instantiating crul's R6 classes.
+1. `r pkg("curl", priority = "core")` is the lower-level
+  package that provides a close interface between R and the
   [libcurl C library](https://curl.se/libcurl/).
-  curl underlies both crul and httr, but is less user-friendly.
-  curl may be useful for operations on web-based XML or
-  to perform FTP operations (as crul and httr are focused primarily on HTTP).
-  `curl::curl()` is an SSL-compatible replacement for base R's `url()` and
-  has support for http 2.0, SSL (https, ftps), gzip, deflate and more.
+  It is not intended to be called directly by typical R users.
+  curl may be useful for operations on web-based XML or with FTP
+  (as crul and httr are focused primarily on HTTP).
+  `curl::curl()` is an SSL-compatible replacement for `base::url()` and
+  supports http 2.0, SSL (https, ftps), gzip, deflate, and more.
   For websites serving insecure HTTP (i.e. using the "http" not "https" prefix),
-  most R functions can extract data directly, including `read.table` and `read.csv`;
+  most R functions can extract data directly,
+  including `utils::read.table()` and `utils::read.csv()`;
   this also applies to functions in add-on packages
   such as `jsonlite::fromJSON()` and `XML::parseXML`.
 
@@ -62,7 +69,7 @@ Three packages provide the foundation for most modern approaches.
 
 For more specific situations, the following resources may be useful:
 
-- `r pkg("RCurl")` is another low level client for libcurl.
+- `r pkg("RCurl")` is another low-level client for libcurl.
   Of the two low-level curl clients, we recommend using `r pkg("curl")`.
   `r pkg("httpRequest")` is another low-level package for HTTP requests that implements
   the GET, POST and multipart POST verbs,
