@@ -11,15 +11,17 @@ source: https://github.com/cran-task-views/WebTechnologies/
 
 ### Tools for Working with the Web from R
 
-This task view contains information about to use R and the world wide web together.
-The base version of R does not ship with many tools for interacting with the web.
-Thankfully, there are an increasingly large number of tools for interacting with the web.
-This task view focuses on packages for obtaining web-based data and information,
-frameworks for building web-based R applications,
-and online services that can be accessed from R.
-A list of available packages and functions is presented below, grouped by the type of activity.
+This task view recommends packages and strategies for efficiently interacting with the internet.
+Base R includes a few helpful functions,
+and thankfully many CRAN packages improve how R connects to servers and services.
 
-If you have any comments or suggestions for additions or improvements for this task view,
+This task view focuses on:
+
+1. obtaining web-based data and information,
+1. frameworks for building web-based R applications, and
+1. online services that can be accessed from R.
+
+If you have comments or suggestions for improving or growing this task view,
 please submit an issue or a pull request in the GitHub repository linked above.
 If you can't contribute on GitHub,
 please send an e-mail to the maintainer address above.
@@ -32,21 +34,22 @@ who maintained this task view up to 2021.
 
 ### Core Tools For HTTP Requests
 
-There are three main packages that should cover most use cases of interacting with the web from R.
+Three packages provide the foundation for most modern approaches.
 
 1. `r pkg("crul", priority = "core")` is an R6-based HTTP client that provides asynchronous HTTP requests,
   a pagination helper,
   HTTP mocking via `r pkg("webmockr")`,
   and request caching for unit tests via `r pkg("vcr")`.
-  crul targets R developers more so than end users.
-1. `r pkg("httr", priority = "core")` provides more of a user facing client for HTTP requests and
-  differentiates from the former package in that it provides support for OAuth.
-  Note that you can pass in additional curl options
+  crul is intended to be called by other packages than by typical R users.
+1. `r pkg("httr", priority = "core")` provides more of a user-facing client for HTTP requests and
+  supports OAuth (unlike the current version of crul).
+  You can pass additional curl options
   when you instantiate R6 classes in crul, and the `config` parameter in httr.
 1. `r pkg("curl", priority = "core")` is a lower-level
   package that provides a closer interface between R and the
-  [libcurl C library](https://curl.se/libcurl/), but is less user-friendly.
-  curl underlies both crul and httr. curl may be useful for operations on web-based XML or
+  [libcurl C library](https://curl.se/libcurl/).
+  curl underlies both crul and httr, but is less user-friendly.
+  curl may be useful for operations on web-based XML or
   to perform FTP operations (as crul and httr are focused primarily on HTTP).
   `curl::curl()` is an SSL-compatible replacement for base R's `url()` and
   has support for http 2.0, SSL (https, ftps), gzip, deflate and more.
