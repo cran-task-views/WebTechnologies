@@ -3,7 +3,7 @@ name: WebTechnologies
 topic: Web Technologies and Services
 maintainer: Mauricio Vargas Sepulveda, Will Beasley
 email: mavargas11@uc.cl
-version: 2023-01-31
+version: 2023-02-16
 source: https://github.com/cran-task-views/WebTechnologies/
 ---
 
@@ -11,20 +11,23 @@ source: https://github.com/cran-task-views/WebTechnologies/
 
 ### Tools for Working with the Web from R
 
-This task view contains information about to use R and the world wide web together.
-The base version of R does not ship with many tools for interacting with the web.
-Thankfully, there are an increasingly large number of tools for interacting with the web.
-This task view focuses on packages for obtaining web-based data and information,
-frameworks for building web-based R applications,
-and online services that can be accessed from R.
-A list of available packages and functions is presented below, grouped by the type of activity.
+This task view recommends packages and strategies for efficiently interacting
+with resources over the internet.
+Base R includes a few helpful functions,
+and many CRAN packages improve how R connects to servers and services.
 
-If you have any comments or suggestions for additions or improvements for this task view,
+This task view focuses on:
+
+1. obtaining web-based data and information,
+1. frameworks for building web-based R applications, and
+1. online services that can be accessed from R.
+
+If you have comments or suggestions for improving or growing this task view,
 please submit an issue or a pull request in the GitHub repository linked above.
 If you can't contribute on GitHub,
-please send an e-mail to the maintainer address above.
-If you have an issue with one of the packages discussed below,
-please contact the maintainer of that package.
+please e-mail the task view maintainer.
+If you have an issue with a package discussed below,
+please contact the package's maintainer.
 
 Thanks to all contributors to this task view, especially to
 Scott Chamberlain, Thomas Leeper, Patrick Mair, Karthik Ram, and Christopher Gandrud
@@ -32,26 +35,33 @@ who maintained this task view up to 2021.
 
 ### Core Tools For HTTP Requests
 
-There are three main packages that should cover most use cases of interacting with the web from R.
+Three packages provide the foundation for most modern approaches.
 
-1. `r pkg("crul", priority = "core")` is an R6-based HTTP client that provides asynchronous HTTP requests,
+1. `r pkg("httr", priority = "core")` is a user-facing client for HTTP requests.
+  It leverages the curl package for most operations.
+  Additional options may be passed to curl through httr's `config` parameter.
+1. `r pkg("crul", priority = "core")` is another package that leverages the curl.
+  It is an [R6](https://r6.r-lib.org/)-based client that supports
+  asynchronous HTTP requests,
   a pagination helper,
   HTTP mocking via `r pkg("webmockr")`,
   and request caching for unit tests via `r pkg("vcr")`.
-  crul targets R developers more so than end users.
-1. `r pkg("httr", priority = "core")` provides more of a user facing client for HTTP requests and
-  differentiates from the former package in that it provides support for OAuth.
-  Note that you can pass in additional curl options
-  when you instantiate R6 classes in crul, and the `config` parameter in httr.
-1. `r pkg("curl", priority = "core")` is a lower-level
-  package that provides a closer interface between R and the
-  [libcurl C library](https://curl.se/libcurl/), but is less user-friendly.
-  curl underlies both crul and httr. curl may be useful for operations on web-based XML or
-  to perform FTP operations (as crul and httr are focused primarily on HTTP).
-  `curl::curl()` is an SSL-compatible replacement for base R's `url()` and
-  has support for http 2.0, SSL (https, ftps), gzip, deflate and more.
+  crul is intended to be called by other packages, instead of R users.
+  Unlike httr,
+  crul's [current version](https://docs.ropensci.org/crul/reference/auth.html#details)
+  does not support OAuth.
+  Additional options may be passed to curl when instantiating crul's R6 classes.
+1. `r pkg("curl", priority = "core")` is the lower-level
+  package that provides a close interface between R and the
+  [libcurl C library](https://curl.se/libcurl/).
+  It is not intended to be called directly by typical R users.
+  curl may be useful for operations on web-based XML or with FTP
+  (as crul and httr are focused primarily on HTTP).
+  `curl::curl()` is an SSL-compatible replacement for `base::url()` and
+  supports http 2.0, SSL (https, ftps), gzip, deflate, and more.
   For websites serving insecure HTTP (i.e. using the "http" not "https" prefix),
-  most R functions can extract data directly, including `read.table` and `read.csv`;
+  most R functions can extract data directly,
+  including `utils::read.table()` and `utils::read.csv()`;
   this also applies to functions in add-on packages
   such as `jsonlite::fromJSON()` and `XML::parseXML`.
 
@@ -59,7 +69,7 @@ There are three main packages that should cover most use cases of interacting wi
 
 For more specific situations, the following resources may be useful:
 
-- `r pkg("RCurl")` is another low level client for libcurl.
+- `r pkg("RCurl")` is another low-level client for libcurl.
   Of the two low-level curl clients, we recommend using `r pkg("curl")`.
   `r pkg("httpRequest")` is another low-level package for HTTP requests that implements
   the GET, POST and multipart POST verbs,
@@ -126,7 +136,7 @@ There are several packages for specifically working with these format.
 These functions can be used to interact directly with insecure web pages or
 can be used to parse locally stored or in-memory web files.
 
-- *XML*:
+- **XML**:
   There are two packages for working with XML: `r pkg("XML")` and `r pkg("xml2")`.
   Both support general XML (and HTML) parsing, including XPath queries.
   `r pkg("xml2")` is less fully featured, but more user friendly with respect to memory management,
@@ -138,7 +148,7 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("XML")` is often used for parsing xml and html,
   but selectr translates CSS selectors to XPath,
   so can use the CSS selectors instead of XPath.
-- *HTML*:
+- **HTML**:
   All of the tools that work with XML also work for HTML, though HTML is - in practice - more prone to be malformed.
   Some tools are designed specifically to work with HTML.
   `xml2::read_html()` is a good first function to use for importing HTML.
@@ -149,7 +159,7 @@ can be used to parse locally stored or in-memory web files.
   along with the different elements and hidden fields.
   `r pkg("htm2txt")` uses regex to converts html documents to plain text by removing all html tags.
   `r pkg("Rcrawler")` does crawling and scraping of web pages.
-- *JSON*:
+- **JSON**:
   There are several packages for reading and writing JSON:
   `r pkg("rjson")`,
   `r pkg("RJSONIO")`, and
@@ -160,7 +170,7 @@ can be used to parse locally stored or in-memory web files.
   `r pkg("jsonvalidate")` validates JSON against a schema using the "is-my-json-valid" JavaScript library;
   `r pkg("ajv")` does the same using the 'ajv' JavaScript library.
   `r pkg("ndjson")` supports the "ndjson" format.
-- *RSS/Atom*:
+- **RSS/Atom**:
   `r github("datawookie/feedeR")` can be used to parse RSS or Atom feeds.
   `r pkg("tidyRSS")` parses RSS, Atom XML/JSON and geoRSS into a tidy data.frame.
 - `r pkg("swagger")` can be used to automatically generate functions for working with an web service API
@@ -218,7 +228,7 @@ can be used to parse locally stored or in-memory web files.
 
 ### Other Useful Packages and Functions
 
-- *JavaScript*:
+- **JavaScript**:
   `r pkg("V8")` is an R interface to Google's open source, high performance JavaScript engine.
   It can wrap JavaScript libraries as well as NPM packages.
   `r ohat("SpiderMonkey")` provides another means of evaluating JavaScript code,
@@ -227,20 +237,20 @@ can be used to parse locally stored or in-memory web files.
   by embedding R in an browser such as Firefox and
   being able to call R from JavaScript and call back to JavaScript from R.
   `r pkg("js")` wraps `r pkg("V8")` and validates, reformats, optimizes and analyzes JavaScript code.
-- *Email*:
+- **Email**:
   `r pkg("mailR")` is an interface to Apache Commons Email to send emails from within R.
   `r pkg("sendmailR")` provides a simple SMTP client.
   `r pkg("gmailr")` provides access the Google's gmail.com RESTful API.
   `r pkg("Microsoft365R")` provides a client for Microsoft's Outlook email service,
   both personal (outlook.com) and
   as part of the Microsoft 365 (formerly known as Office 365) suite.
-- *Mocking*:
+- **Mocking**:
   `r pkg("webmockr")` stubs and sets expectations on HTTP requests.
   It is inspired from Ruby's `webmock`.
   `r pkg("webmockr")` only helps mock HTTP requests, and returns nothing when requests match expectations.
   It integrates with `r pkg("crul")` and `r pkg("httr")`.
   See *Testing* for mocking with returned responses.
-- *Testing*:
+- **Testing**:
   `r pkg("vcr")` provides an interface to easily cache HTTP requests in R package test suites
   (but can be used outside of testing use cases as well).
   vcr relies on `r pkg("webmockr")` to do the HTTP request mocking.
@@ -250,7 +260,7 @@ can be used to parse locally stored or in-memory web files.
   and for making assertions about HTTP requests,
   all without requiring a live connection to the API server at runtime.
   httptest only works with httr.
-- *Miscellaneous*:
+- **Miscellaneous**:
   `r pkg("webutils")` contains various functions for developing web applications,
   including parsers for `application/x-www-form-urlencoded` as well as `multipart/form-data`.
   `r pkg("mime")` guesses the MIME type for a file from its extension.
@@ -320,28 +330,25 @@ can be used to parse locally stored or in-memory web files.
 
 ### Cloud Computing and Storage
 
-- [The cloudyr project](https://cloudyr.github.io/) aims to provide interfaces to popular
-  Amazon, Azure and Google cloud services without the need for external system dependencies.
-  Amazon Web Services is a popular, proprietary cloud service offering a
-  suite of computing, storage, and infrastructure tools.
-  `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
-- *Elastic Cloud Compute (EC2)* is a cloud computing service.
-  `r gcode("segue")` (not on CRAN) manages EC2 instances and S3 storage,
-  which includes a parallel version of `lapply()`
-  for the Elastic Map Reduce (EMR) engine called `emrlapply()`.
-  It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
-- *DBREST*: `r ohat("RAmazonDBREST")` provides an interface to Amazon's Simple DB API.
-- `r pkg("paws")` is an interface to nearly all AWS APIs,
-  including compute, storage, databases, and machine learning.
-  It also requires no external system dependencies.
-- Azure and Microsoft 365 are Microsoft's cloud computing services.
-- The Azure platform provides Paas, SaaS and IaaS and supports many different tools and frameworks,
-  including both Microsoft-specific and third-party systems;
-  while Microsoft 365 is a unified framework for accessing cloud data from
-  Microsoft's Office services, Windows and Dynamics.
-  The [AzureR package family](https://github.com/Azure/AzureR)
-  aims to provide a suite of lightweight, powerful tools for working with Azure in R.
-  The packages listed below are part of the family, and are also mirrored at the cloudyr project.
+- **Amazon Web Services (AWS)**:
+  - `r pkg("paws")` is an interface to nearly all AWS APIs,
+    including compute, storage, databases, and machine learning.
+    It also requires no external system dependencies.
+  - `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
+  - *Elastic Cloud Compute (EC2)* is a cloud computing service.
+    `r gcode("segue")` (not on CRAN) manages EC2 instances and S3 storage,
+    which includes a parallel version of `lapply()`
+    for the Elastic Map Reduce (EMR) engine called `emrlapply()`.
+    It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
+  - **Simple DB**: `r ohat("RAmazonDBREST")` provides an interface to Amazon's Simple DB API.
+- **Microsoft Azure**: Azure and Microsoft 365 are Microsoft's cloud computing services.
+  - The Azure platform provides Paas, SaaS and IaaS and supports many different tools and frameworks,
+    including both Microsoft-specific and third-party systems;
+    while Microsoft 365 is a unified framework for accessing cloud data from
+    Microsoft's Office services, Windows and Dynamics.
+    The [AzureR package family](https://github.com/Azure/AzureR)
+    aims to provide a suite of lightweight, powerful tools for working with Azure in R.
+    The packages listed below are part of the family, and are also mirrored at the cloudyr project.
   - *Azure Active Directory (AAD)* is a centralized directory and identity service.
     `r pkg("AzureAuth")` is an R client for AAD;
     use this to obtain OAuth tokens for authenticating with other Azure services,
@@ -391,10 +398,15 @@ can be used to parse locally stored or in-memory web files.
     Computer Vision is a pre-trained service for handling commonly-encountered tasks,
     while Custom Vision allows you to train your own image recognition model on a custom dataset.
     `r pkg("AzureVision")` provides an interface to both these services.
-- `r pkg("googleComputeEngineR")` interacts with the Google Compute Engine API,
-  and lets you create, start and stop instances in the Google Cloud.
+- **Google Cloud**:
+  - `r pkg("googleComputeEngineR")` interacts with the Google Compute Engine API,
+    and lets you create, start and stop instances in the Google Cloud.
+  - `r pkg("googleCloudStorageR")` interfaces with Google Cloud Storage.
+  - `r pkg("bigrquery")`: An interface to Google's BigQuery.
+  - `r pkg("rrefine")` provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
+  - `r pkg("gargle")`: An interface to [Google APIs](https://developers.google.com/apis-explorer).
+  - Look in other sections of the Web Technologies task view for packages interfacing other Google products.
 - *Cloud Storage*:
-  `r pkg("googleCloudStorageR")` interfaces with Google Cloud Storage.
   `r pkg("boxr")` is a lightweight, high-level interface for the
   [box.com API](https://developer.box.com/reference/).
   `r pkg("rdrop2")` is a Dropbox interface that provides access to a full suite of file operations,
@@ -410,9 +422,10 @@ can be used to parse locally stored or in-memory web files.
 - `r pkg("crunch")` provides an interface to the [crunch.io](https://crunch.io/)
   storage and analytics platform.
   `r pkg("crunchy")` facilitates making Shiny apps on Crunch.
-- `r pkg("rrefine")` provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
-- `r pkg("bigrquery")`: An interface to Google's BigQuery.
-- `r pkg("gargle")`: An interface to [Google APIs](https://developers.google.com/apis-explorer).
+- [The cloudyr project](https://cloudyr.github.io/) aims to provide interfaces to popular
+  Amazon, Azure and Google cloud services without the need for external system dependencies.
+  Amazon Web Services is a popular, proprietary cloud service offering a
+  suite of computing, storage, and infrastructure tools.
 
 ### Software Development
 
@@ -497,7 +510,7 @@ This list describes online services.  For a more complete treatment of the topic
 
 This list describes online services.  For a more complete treatment of the topic, please see the [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) task view.
 
-- *Geolocation/Geocoding*:
+- **Geolocation/Geocoding**:
   Services that translate between addresses and longlats.
   `r pkg("rgeolocate")` offers several online and offline tools.
   `r github("trestletech/rydn")` (not on CRAN) is an interface to the
@@ -517,25 +530,25 @@ This list describes online services.  For a more complete treatment of the topic
   such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
   `r pkg("openadds")` is an Openaddresses client.
 
-- *Mapping*:
+- **Mapping**:
   Services that help create visual maps.
-  - [*OpenStreetMap*](https://www.openstreetmap.org/about):
+  - **OpenStreetMap**:
   `r pkg("osmplotr")` extracts customizable map images.
-  - [*Google Maps*](https://www.google.com/maps/about/):
+  - **Google Maps**:
   `r pkg("RgoogleMaps")` serves two purposes:
   it provides a comfortable R interface to query the Google server for static maps, and
   uses the map as a background image to overlay plots within R.
   `r ohat("R2GoogleMaps")` provides a mechanism to generate JavaScript code from R that displays data using Google Maps.
   `r pkg("mapsapi")` is an sf-compatible interface to Google Maps API.
 
-- *Routing*:
+- **Routing**:
   Services that calculate and optimize distances and routes.
-  - [*OpenStreetMap*](https://www.openstreetmap.org/about):
+  - **OpenStreetMap**:
   `r pkg("osrm")` assists with the computation of routes, trips, isochrones and travel distances matrices.
 
 ### Social Media Clients
 
-- [**Twitter**](https://twitter.com/):
+- **Twitter**:
   `r pkg("twitteR")` provides an interface through its API.
   It claims to be deprecated in favor of `r pkg("rtweet")`.
   `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter data.
@@ -544,76 +557,76 @@ This list describes online services.  For a more complete treatment of the topic
   OAuth authentication is supported.
   `r pkg("graphTweets")` produces a network graph from a data.frame of tweets.
   `r github("pablobarbera/twitter_ideology")` implements a political ideology scaling measure for specified Twitter users.
-- [**Facebook**](https://www.facebook.com/):
+- **Facebook**:
   `r pkg("Rfacebook")` provides an interface through its API.
-- [**Instagram**](https://developers.facebook.com/docs/instagram):
+- **Instagram**:
   `r pkg("instaR")` provides an interface through its API.
-- [**LinkedIn**](https://www.linkedin.com/):
+- **LinkedIn**:
   `r pkg("Rlinkedin")` provides an interface through its API.
-- [**Flickr**](https://www.flickr.com/):
+- **Flickr**:
   `r ohat("Rflickr")` (not on CRAN) provides an interface to the photo management and sharing application service.
-- [**Stack Exchange**](https://api.stackexchange.com/):
+- **Stack Exchange**:
   `r github("dgrtwo/stackr")` (not on CRAN): provides an interface through its API.
-- [**Pinterest**](Pinterest):
+- **Pinterest**:
   `r pkg("rpinterest")` provides an interface through its API.
-- [**VK**](https://en.wikipedia.org/wiki/VK_(service)):
+- **VK**:
   `r pkg("vkR")` provides an interface to the social networking site based in Russia.
-- [**Meetup**](https://www.meetup.com/):
+- **Meetup**:
   `r github("rladies/meetupr")` provides an interface through its API.
-- [**Brandwatch**](https://www.brandwatch.com/):
+- **Brandwatch**:
   `r pkg("brandwatchR")` provides an interface to the social listening service.
   Both raw text and aggregate statistics are available, as well as project and query management functions.
-- [**Hacker News**](https://news.ycombinator.com/):
+- **Hacker News**:
   `r pkg("hackeRnews")` provides an interface through its API.
-- [**Mastodon**](https://docs.joinmastodon.org/):
+- **Mastodon**:
   `r pkg("rtoot")` provides an interface through its API.
-- [**Slack**](https://slack.com/):
+- **Slack**:
   `r pkg("slackr")` is a client for  messaging platform.
-- [**Discourse**](https://www.discourse.org/):
+- **Discourse**:
   `r github("sckott/discgolf")` (archived)
   provides an interface to an instance of Discourse, not to the Discourse site itself.
 
 ### Survey, Questionnaire, and Data Capture Tools
 
-- [*REDCap*](https://projectredcap.org/):
+- **REDCap**:
   `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap,
   a web application for building and managing online surveys and research databases.
   `r pkg("REDCapTidieR")` and `r pkg("tidyREDCap")`
   follow [tidy](https://www.tidyverse.org/) principles to extend `r pkg("REDCapR")`.
-- [*Qualtrics*](https://www.qualtrics.com/):
+- **Qualtrics**:
   `r pkg("qualtRics")` provide functions to interact with Qualtrics,
   an online survey and data collection software platform.
-- [*Wufoo*](https://www.wufoo.com/):
+- *Wufoo*:
   `r pkg("WufooR")` retrieves data from Wufoo,
   which is another data collection tool from the SurveyMonkey company.
-- [*formr*](https://formr.org/):
+- **formr**:
  `r github("rubenarslan/formr")` facilitates use of the formr online survey framework,
   which relies on R via OpenCPU.
-- [*Experigen*](https://becker.phonologist.org/experigen/):
+- **Experigen**:
   `r pkg("Rexperigen")` is a client for Experigen,
   which is a platform for creating phonology experiments.
-- [*Usersnap*](https://usersnap.com/):
+- **Usersnap**:
   `r github("nealrichardson/useRsnap")` connects to Usersnap,
   a tool for collecting feedback from web application users.
 
 ### Web Analytics Services
 
-- *Google Trends*:
+- **Google Trends**:
   `r pkg("gtrendsR")` offers functions to perform and display Google Trends queries.
   `r ohat("RGoogleTrends")` provides an alternative.
-- *Google Analytics*:
+- **Google Analytics**:
   `r pkg("googleAnalyticsR")`, and `r pkg("ganalytics")` provide functions for accessing and retrieving
   data from the [Google Analytics APIs](https://developers.google.com/analytics/).
   The latter supports OAuth 2.0 authorization.
   `r pkg("searchConsoleR")` links to the
   [Google Search Console](https://developers.google.com/webmaster-tools/) (formerly Webmaster Tools).
-- *Online Advertising*:
+- **Online Advertising**:
   `r pkg("fbRads")` can manage Facebook ads via the Facebook Marketing API.
   `r github("WillemPaling/RDoubleClick")` (not on CRAN) can retrieve data from
   Google's DoubleClick Campaign Manager Reporting API.
   `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data provided by
   [Smartly.io](https://app.smartly.io/).
-- *Other services*:
+- **Other services**:
   `r pkg("RSiteCatalyst")` has functions for accessing the Adobe Analytics
    (Omniture SiteCatalyst) Reporting API.
 - `r pkg("RAdwords")` loads Google Adwords data.
@@ -626,7 +639,7 @@ This list describes online services.  For a more complete treatment of the topic
 
 ### Publications
 
-- *Reference/bibliography/citation management*:
+- **Reference/bibliography/citation management**:
   `r pkg("rorcid")` connects to the [Orcid.org](https://orcid.org/) API,
   which can identify scientific authors and their publications (e.g., by DOI).
   `r pkg("rdatacite")` connects to [DataCite](https://datacite.org/),
@@ -640,7 +653,7 @@ This list describes online services.  For a more complete treatment of the topic
   `r pkg("zen4R")` connects to [Zenodo](https://zenodo.org/) API,
   including management of depositions, attribution of DOIs and upload of files.
 
-- *Literature*:
+- **Literature**:
   `r pkg("rplos")` connects to the Public Library of Science journals.
   `r pkg("europepmc")` connects to the Europe PubMed Central service.
   `r pkg("pubmed.mineR")` is for text mining of [PubMed Abstracts](https://pubmed.ncbi.nlm.nih.gov/)
@@ -657,9 +670,9 @@ This list describes online services.  For a more complete treatment of the topic
 
 ### Generating Synthetic Data
 
-- [*MockaRoo API*](https://www.mockaroo.com/docs):
+- **MockaRoo API**:
   `r github("stephlocke/mockaRoo")` (not on CRAN) generates mock or fake data based on an input schema.
-- [*RandomAPI*](https://randomapi.com):
+- **RandomAPI**:
   `r github("karthik/randNames")` generates random names and personal identifying information.
 
 ### Sports Analytics
@@ -668,7 +681,7 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
 
 ### Other Web Services
 
-- *Push Notifications*:
+- **Push Notifications**:
   `r pkg("RPushbullet")` provides an easy-to-use interface for the Pushbullet service
   which provides fast and efficient notifications between
   computers, phones and tablets.
@@ -676,11 +689,11 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
   using 'Pushover'.
   `r pkg("notifyme")` can control Phillips Hue lighting.
 
-- *Automated Metadata Harvesting*:
+- **Automated Metadata Harvesting**:
   `r pkg("oai")` and `r pkg("OAIHarvester")` harvest metadata
   using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard.
 
-- *Wikipedia*:
+- **Wikipedia**:
   `r pkg("WikipediR")` is a wrapper for the 'MediaWiki' API,
   aimed particularly at the 'Wikimedia' "production" wikis, such as 'Wikipedia'.
   `r pkg("WikidataR")` can request data from

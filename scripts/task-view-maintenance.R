@@ -24,4 +24,12 @@ ctv::check_ctv_packages(path_md)
 url_db_from_ctv_md(path_md)
 
 # Check spelling
-spelling::spell_check_files(path_md)
+path_spelling <- "scripts/spelling.csv"
+words_ignore <- readr::read_lines(path_spelling)
+spelling::spell_check_files(path_md, words_ignore)
+
+# Uncomment to update list.
+# path_md |> 
+#   spelling::spell_check_files() |> 
+#   dplyr::pull("word") |> 
+#   readr::write_lines(path_spelling)
