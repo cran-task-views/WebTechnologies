@@ -106,13 +106,13 @@ For more specific situations, the following resources may be useful:
   which is designed to work with `r pkg("magrittr")` to make it easy to express common web scraping tasks.
 - Many base R tools can be used to download web content, provided that the website does not use SSL
   (i.e., the URL does not have the "https" prefix).
-  `download.file()` is a general purpose function that can be used to download a remote file.
+  `utils::download.file()` is a general purpose function that can be used to download a remote file.
   For SSL, the `download()` function in `r pkg("downloader")`
   wraps `download.file()`, and takes all the same arguments.
-- Tabular data sets (e.g., txt, csv, etc.) can be input using `read.table()`,
-  `read.csv()`, and friends, again assuming that the files are not hosted via SSL.
+- Tabular data sets (e.g., txt, csv, etc.) can be ingested using `utils::read.table()`,
+  `utils::read.csv()`, and friends, again assuming that the files are not hosted via SSL.
   An alternative is to use `httr::GET` (or `RCurl::getURL`) to first read
-  the file into R as a character vector before parsing with `read.table(text=...)`,
+  the file into R as a character vector before parsing with `utils::read.table(text=...)`,
   or you can download the file to a local directory.
   `r pkg("rio")` provides an `import()` function that can read a number of common data formats directly from an <https://URL>.
   The `r pkg("repmis")` function `source_data()` can load and cache plain-text data from a URL (either http or https).
@@ -126,7 +126,6 @@ For more specific situations, the following resources may be useful:
   `r pkg("RCurl")` or `r pkg("httr")`.
   OAuth is the most complicated authentication process,
   and can be most easily done using `r pkg("httr")`.
-
 
   See the 6 demos within `r pkg("httr")`,
   three for OAuth 1.0 (LinkedIn, Twitter, Vimeo) and
