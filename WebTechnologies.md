@@ -19,7 +19,7 @@ This task view focuses on:
 1. frameworks for building web-based R applications, and
 1. online services that can be accessed from R.
 
-If you have comments or suggestions for improving or growing this task view,
+If you have suggestions for improving or growing this task view,
 please submit an issue or a pull request in the GitHub repository linked above.
 If you can't contribute on GitHub,
 please e-mail the task view maintainer.
@@ -37,10 +37,10 @@ that are layered on top of [libcurl](https://curl.se/libcurl/).
 Three packages provide the foundation for most modern approaches.
 
 1. `r pkg("httr", priority = "core")` is a user-facing client for HTTP requests.
-  It leverages the curl package for most operations.
-  Additional options may be passed to curl through httr's `config` parameter.
-  If you are developing a package that calls a web service,
-  we recommend reading httr's vignettes.
+    It leverages the curl package for most operations.
+    Additional options may be passed to curl through httr's `config` parameter.
+    If you are developing a package that calls a web service,
+    we recommend reading httr's vignettes.
 
     httr's team is developing its successor, `r pkg("httr2")`.
     You might wait for httr2 v1.0 to be released
@@ -49,33 +49,35 @@ Three packages provide the foundation for most modern approaches.
     it may be beneficial to use httr2's new approach.
 
 1. `r pkg("crul", priority = "core")` is another package that leverages curl.
-  It is an [R6](https://r6.r-lib.org/)-based client that supports
-  asynchronous HTTP requests,
-  a pagination helper,
-  HTTP mocking via `r pkg("webmockr")`,
-  and request caching for unit tests via `r pkg("vcr")`.
-  crul is intended to be called by other packages, instead of R users.
-  Unlike httr,
-  crul's [current version](https://docs.ropensci.org/crul/reference/auth.html#details)
-  does not support OAuth.
-  Additional options may be passed to curl when instantiating crul's R6 classes.
+    It is an [R6](https://r6.r-lib.org/)-based client that supports
+    asynchronous HTTP requests,
+    a pagination helper,
+    HTTP mocking via `r pkg("webmockr")`,
+    and request caching for unit tests via `r pkg("vcr")`.
+    crul is intended to be called by other packages, instead of R users.
+    Unlike httr,
+    crul's [current version](https://docs.ropensci.org/crul/reference/auth.html#details)
+    does not support OAuth.
+    Additional options may be passed to curl when instantiating crul's R6 classes.
+
 1. `r pkg("curl", priority = "core")` is the lower-level
-  package that provides a close interface between R and the
-  [libcurl C library](https://curl.se/libcurl/).
-  It is not intended to be called directly by typical R users.
-  curl may be useful for operations on web-based XML or with FTP
-  (as crul and httr are focused primarily on HTTP).
-  `curl::curl()` is an TLS/SSL-compatible replacement for `base::url()` and
-  supports http 2.0,
-  [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) &
-  [SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0,_2.0,_and_3.0)
-  (https, ftps),
-  gzip, deflate, and more.
-  For websites serving insecure HTTP (i.e. using the "http" not "https" prefix),
-  most R functions can extract data directly,
-  including `utils::read.table()` and `utils::read.csv()`;
-  this also applies to functions in add-on packages
-  such as `jsonlite::fromJSON()` and `XML::parseXML`.
+    package that provides a close interface between R and the
+    [libcurl C library](https://curl.se/libcurl/).
+    It is not intended to be called directly by typical R users.
+    curl may be useful for operations on web-based XML or with FTP
+    (as crul and httr are focused primarily on HTTP).
+    `curl::curl()` is an TLS/SSL-compatible replacement for `base::url()` and
+    supports http 2.0,
+    [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) &
+    [SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0,_2.0,_and_3.0)
+    (https, ftps),
+    gzip, deflate, and more.
+
+    For websites serving insecure HTTP (i.e. using the "http" not "https" prefix),
+    most R functions can extract data directly,
+    including `utils::read.table()` and `utils::read.csv()`;
+    this also applies to functions in add-on packages
+    such as `jsonlite::fromJSON()` and `XML::parseXML`.
 
 ### Additional tools for internet communication
 
