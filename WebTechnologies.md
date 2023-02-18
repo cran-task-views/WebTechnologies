@@ -102,8 +102,9 @@ For more specific situations, the following resources may be useful:
   `r github("cpsievert/rdom")` uses PhantomJS to access a webpage's Document Object Model (DOM).
 - For capturing static content of web pages `r pkg("postlightmercury")` is a client
   for the web service 'Mercury' that turns web pages into structured and clean text.
-- Another, higher-level alternative package useful for webscraping is `r pkg("rvest")`,
-  which is designed to work with `r pkg("magrittr")` to make it easy to express common web scraping tasks.
+- `r pkg("rvest")` is another higher-level alternative which expresses common web scraping tasks
+  with [pipes](https://r4ds.hadley.nz/workflow-pipes.html)
+  (like Base R's `|>` and magrittr's `%>%`).
 - Many base R tools can be used to download web content, provided that the website does not use SSL
   (i.e., the URL does not have the "https" prefix).
   `utils::download.file()` is a general purpose function that can be used to download a remote file.
