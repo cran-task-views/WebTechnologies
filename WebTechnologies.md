@@ -89,9 +89,14 @@ Consequently you can usually download a file's if its url starts with "http" or 
       return a `tibble::tibble`, which derives from `base::data.frame`
     - `r pkg("data.table")`'s `fread()`
       returns a `data.table::data.table`, which derives from `base::data.frame`.
+    - `r pkg("arrow")`'s `read_csv_arrow()`
+      returns a `tibble::tibble()` or other [Arrow](https://arrow.apache.org/) structures.
   - For hierarchical plain-text structures:
     - `r pkg("jsonlite")`: `fromJSON()` converts JSON into a `list`.
     - `r pkg("XML")`: `parseXML()` converts XML into a `list`.
+  - For structures in the Spark ecosystem:
+    - `r pkg("arrow")`: interacts with a variety of file types used with big data
+      including parquet, feather, and arrow IPC streams.
   - For other file structures:
     - `r pkg("rio")` and `r pkg("repmis")`: accommodate many plain-text and proprietary formats.
 
