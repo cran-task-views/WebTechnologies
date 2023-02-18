@@ -13,9 +13,6 @@ source: https://github.com/cran-task-views/WebTechnologies/
 
 This task view recommends packages and strategies for efficiently interacting
 with resources over the internet.
-Base R includes a few helpful functions,
-and many CRAN packages improve how R connects to servers and services.
-
 This task view focuses on:
 
 1. obtaining web-based data and information,
@@ -35,12 +32,14 @@ who maintained this task view up to 2021.
 
 ### Core Tools For HTTP Requests
 
+The bulk of R's capabilities are supplied by CRAN packages
+that are layered on top of [libcurl](https://curl.se/libcurl/).
 Three packages provide the foundation for most modern approaches.
 
 1. `r pkg("httr", priority = "core")` is a user-facing client for HTTP requests.
   It leverages the curl package for most operations.
   Additional options may be passed to curl through httr's `config` parameter.
-1. `r pkg("crul", priority = "core")` is another package that leverages the curl.
+1. `r pkg("crul", priority = "core")` is another package that leverages curl.
   It is an [R6](https://r6.r-lib.org/)-based client that supports
   asynchronous HTTP requests,
   a pagination helper,
