@@ -39,6 +39,15 @@ Three packages provide the foundation for most modern approaches.
 1. `r pkg("httr", priority = "core")` is a user-facing client for HTTP requests.
   It leverages the curl package for most operations.
   Additional options may be passed to curl through httr's `config` parameter.
+  If you are developing a package that calls a web service,
+  we recommend reading httr's vignettes.
+
+    httr's team is developing its successor, `r pkg("httr2")`.
+    You might wait for httr2 v1.0 to be released
+    if your package needs a stable foundation.
+    However if you can adapt to breaking changes
+    it may be beneficial to use httr2's new approach.
+
 1. `r pkg("crul", priority = "core")` is another package that leverages curl.
   It is an [R6](https://r6.r-lib.org/)-based client that supports
   asynchronous HTTP requests,
