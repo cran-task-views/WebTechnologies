@@ -84,9 +84,9 @@ Consequently you can usually download a file's if its url starts with "http" or 
   return a `data.frame` or `list`.
   - For tabular/rectangular plain-text structures:
     - `r pkg("utils")`'s `read.csv()`, `read.table()`, and friends
-      return a `base::data.frame`,
+      return a `base::data.frame`.
     - `r pkg("readr")`'s `read_csv()`, `read_delim()` and friends
-      return a `tibble::tibble`, which derives from `base::data.frame`
+      return a `tibble::tibble`, which derives from `base::data.frame`.
     - `r pkg("data.table")`'s `fread()`
       returns a `data.table::data.table`, which derives from `base::data.frame`.
     - `r pkg("arrow")`'s `read_csv_arrow()`
@@ -103,19 +103,19 @@ Consequently you can usually download a file's if its url starts with "http" or 
 - *Download a file, then ingest it*:
   If you need to process a different type of file,
   you can accomplish this in two steps.
-  First download the file from a server to your local computer,
-  then pass the path of the new local file to a function in a
+  First download the file from a server to your local computer;
+  second pass the path of the new local file to a function in a
   package like
   [haven](https://CRAN.R-project.org/package=haven)
   or
   [foreign](https://cran.r-project.org/package=foreign).
   Many base and CRAN packages provide functions that download files:
-  - `r pkg("utils")`'s `download.file()`
+  - `r pkg("utils")`'s `download.file()`.
   - `r pkg("curl")`'s `curl_download()`, and `curl_fetch_multi()`, and friends.
   - `r pkg("downloader")` wraps `utils::download.file()`, and takes all the same arguments.
   [I think this entry can be removed.  It was important before utils handled ssl.  It hasn't been updated since 2015]
   - An alternative is to use `httr::GET()` (or `RCurl::getURL()`) to first read
-  the file into R as a character vector before parsing with a function like `utils::read.table(text = ...)`,
+  the file into R as a character vector before parsing with a function like `utils::read.table(text = ...)`.
 
 ### Additional tools for internet communication
 
