@@ -65,8 +65,12 @@ Three packages provide the foundation for most modern approaches.
   It is not intended to be called directly by typical R users.
   curl may be useful for operations on web-based XML or with FTP
   (as crul and httr are focused primarily on HTTP).
-  `curl::curl()` is an SSL-compatible replacement for `base::url()` and
-  supports http 2.0, SSL (https, ftps), gzip, deflate, and more.
+  `curl::curl()` is an TLS/SSL-compatible replacement for `base::url()` and
+  supports http 2.0,
+  [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) &
+  [SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0,_2.0,_and_3.0)
+  (https, ftps),
+  gzip, deflate, and more.
   For websites serving insecure HTTP (i.e. using the "http" not "https" prefix),
   most R functions can extract data directly,
   including `utils::read.table()` and `utils::read.csv()`;
