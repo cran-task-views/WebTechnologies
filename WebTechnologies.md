@@ -117,8 +117,7 @@ For more specific situations, the following resources may be useful:
   or you can download the file to a local directory.
   `r pkg("rio")` provides an `import()` function that can read a number of common data formats directly from an <https://URL>.
   The `r pkg("repmis")` function `source_data()` can load and cache plain-text data from a URL (either http or https).
-  That package also includes `source_Dropbox()` for downloading/caching plain-text data from non-public Dropbox folders and
-  `source_XlsxData()` for downloading/caching Excel xlsx sheets.
+    `source_XlsxData()` for downloading/caching Excel xlsx sheets.
 - *Authentication*: Using web resources can require authentication,
   either via API keys, OAuth, username:password combination, or via other means.
   Additionally, sometimes web resources that require authentication be in the header of an http call,
@@ -422,13 +421,17 @@ can be used to parse locally stored or in-memory web files.
   - `r pkg("rrefine")` provides a client for the 'Open Refine' (formerly 'Google Refine') data cleaning service.
   - `r pkg("gargle")`: An interface to [Google APIs](https://developers.google.com/apis-explorer).
   - Look in other sections of the Web Technologies task view for packages interfacing other Google products.
-- *Cloud Storage*:
+- *Dropbox*:
+  `r pkg("rdrop2")` facilitates
+  uploads & downloads,
+  copy/move/delete file and directory operations, and
+  account & quotas queries.
+  `r pkg("repmis")`'s `source_Dropbox()` function
+  for downloading/caching plain-text data from non-public folders.
+- *Other Cloud Storage*:
   `r pkg("boxr")` is a lightweight, high-level interface for the
   [box.com API](https://developer.box.com/reference/).
-  `r pkg("rdrop2")` is a Dropbox interface that provides access to a full suite of file operations,
-  including dir/copy/move/delete operations,
-  account information (including quotas) and
-  the ability to upload and download files from any Dropbox account.
+
 - *Docker*:
   `r pkg("analogsea")` is a general purpose client for the Digital Ocean v2 API.
   In addition, it includes functions to install various R tools
