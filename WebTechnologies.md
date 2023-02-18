@@ -73,11 +73,44 @@ Three packages provide the foundation for most modern approaches.
     (https, ftps),
     gzip, deflate, and more.
 
-    For websites serving insecure HTTP (i.e. using the "http" not "https" prefix),
-    most R functions can extract data directly,
-    including `utils::read.table()` and `utils::read.csv()`;
-    this also applies to functions in add-on packages
-    such as `jsonlite::fromJSON()` and `XML::parseXML`.
+### Direct Data Download and Ingestion
+
+In recent years,
+many functions have been updated to accommodate web pages that are protected with TLS/SSL
+Consequently you can usually download a file's if its url starts with "http" or "https".
+
+- *Ingest a file directly*:
+  many base and CRAN packages provide functions that accept a [url](https://en.wikipedia.org/wiki/URL) and
+  return a `data.frame` or `list`.
+  - For tabular/rectangular plain-text structures:
+    - `r pkg("utils")`'s `read.csv()`, `read.table()`, and friends
+      return a `base::data.frame`,
+    - `r pkg("readr")`'s `read_csv()`, `read_delim()` and friends
+      return a `tibble::tibble`, which derives from `base::data.frame`
+    - `r pkg("data.table")`'s `fread()`
+      returns a `data.table::data.table`, which derives from `base::data.frame`.
+  - For hierarchical plain-text structures:
+    - `r pkg("jsonlite")`: `fromJSON()` converts JSON into a `list`.
+    - `r pkg("XML")`: `parseXML()` converts XML into a `list`.
+  - For other file structures:
+    - `r pkg("rio")` and `r pkg("repmis")`: accommodate many plain-text and proprietary formats.
+
+- *Download a file, then ingest it*:
+  If you need to process a different type of file,
+  you can accomplish this in two steps.
+  First download the file from a server to your local computer,
+  then pass the path of the new local file to a function in a
+  package like
+  [haven](https://CRAN.R-project.org/package=haven)
+  or
+  [foreign](https://cran.r-project.org/package=foreign).
+  Many base and CRAN packages provide functions that download files:
+  - `r pkg("utils")`'s `download.file()`
+  - `r pkg("curl")`'s `curl_download()`, and `curl_fetch_multi()`, and friends.
+  - `r pkg("downloader")` wraps `utils::download.file()`, and takes all the same arguments.
+  [I think this entry can be removed.  It was important before utils handled ssl.  It hasn't been updated since 2015]
+  - An alternative is to use `httr::GET()` (or `RCurl::getURL()`) to first read
+  the file into R as a character vector before parsing with a function like `utils::read.table(text = ...)`,
 
 ### Additional tools for internet communication
 
@@ -105,19 +138,6 @@ For more specific situations, the following resources may be useful:
 - `r pkg("rvest")` is another higher-level alternative which expresses common web scraping tasks
   with [pipes](https://r4ds.hadley.nz/workflow-pipes.html)
   (like Base R's `|>` and magrittr's `%>%`).
-- Many base R tools can be used to download web content, provided that the website does not use SSL
-  (i.e., the URL does not have the "https" prefix).
-  `utils::download.file()` is a general purpose function that can be used to download a remote file.
-  For SSL, the `download()` function in `r pkg("downloader")`
-  wraps `download.file()`, and takes all the same arguments.
-- Tabular data sets (e.g., txt, csv, etc.) can be ingested using `utils::read.table()`,
-  `utils::read.csv()`, and friends, again assuming that the files are not hosted via SSL.
-  An alternative is to use `httr::GET` (or `RCurl::getURL`) to first read
-  the file into R as a character vector before parsing with `utils::read.table(text=...)`,
-  or you can download the file to a local directory.
-  `r pkg("rio")` provides an `import()` function that can read a number of common data formats directly from an <https://URL>.
-  The `r pkg("repmis")` function `source_data()` can load and cache plain-text data from a URL (either http or https).
-    `source_XlsxData()` for downloading/caching Excel xlsx sheets.
 - *Authentication*: Using web resources can require authentication,
   either via API keys, OAuth, username:password combination, or via other means.
   Additionally, sometimes web resources that require authentication be in the header of an http call,
