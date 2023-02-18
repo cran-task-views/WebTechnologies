@@ -43,10 +43,10 @@ Three packages provide the foundation for most modern approaches.
     we recommend reading httr's vignettes.
 
     httr's team is developing its successor, `r pkg("httr2")`.
-    You might wait for httr2 v1.0 to be released
-    if your package needs a stable foundation.
-    However if you can adapt to breaking changes
-    it may be beneficial to use httr2's new approach.
+    If you're creating a package needs a stable foundation,
+    you might use httr now and wait for httr2 v1.0 to be released.
+    However if you can adapt to breaking changes as httr2 evolves,
+    it may be beneficial to invest in httr2's approach now.
 
 1. `r pkg("crul", priority = "core")` is another package that leverages curl.
     It is an [R6](https://r6.r-lib.org/)-based client that supports
@@ -126,6 +126,8 @@ For more specific situations, the following resources may be useful:
   `r pkg("RCurl")` or `r pkg("httr")`.
   OAuth is the most complicated authentication process,
   and can be most easily done using `r pkg("httr")`.
+
+
   See the 6 demos within `r pkg("httr")`,
   three for OAuth 1.0 (LinkedIn, Twitter, Vimeo) and
   three for OAuth 2.0 (Facebook, GitHub, Google).
