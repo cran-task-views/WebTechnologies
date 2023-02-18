@@ -94,6 +94,7 @@ Consequently you can usually download a file's if its url starts with "http" or 
   - For hierarchical plain-text structures:
     - `r pkg("jsonlite")`: `fromJSON()` converts JSON into a `list`.
     - `r pkg("XML")`: `parseXML()` converts XML into a `list`.
+  - For HTML, see the "Parsing Structured Web Data" section below.
   - For structures in the Spark ecosystem:
     - `r pkg("arrow")`: interacts with a variety of file types used with big data
       including parquet, feather, and arrow IPC streams.
@@ -137,12 +138,6 @@ For more specific situations, the following resources may be useful:
   It provides a set of bindings for the Selenium 2.0 webdriver using the 'JsonWireProtocol'.
   It can also aid in automated application testing, load testing, and web scraping.
   `r pkg("seleniumPipes")` provides a "pipe"-oriented interface to the same.
-  `r github("cpsievert/rdom")` uses PhantomJS to access a webpage's Document Object Model (DOM).
-- For capturing static content of web pages `r pkg("postlightmercury")` is a client
-  for the web service 'Mercury' that turns web pages into structured and clean text.
-- `r pkg("rvest")` is another higher-level alternative which expresses common web scraping tasks
-  with [pipes](https://r4ds.hadley.nz/workflow-pipes.html)
-  (like Base R's `|>` and magrittr's `%>%`).
 - *Authentication*: Using web resources can require authentication,
   either via API keys, OAuth, username:password combination, or via other means.
   Additionally, sometimes web resources that require authentication be in the header of an http call,
@@ -189,9 +184,16 @@ can be used to parse locally stored or in-memory web files.
   but selectr translates CSS selectors to XPath,
   so can use the CSS selectors instead of XPath.
 - **HTML**:
-  All of the tools that work with XML also work for HTML, though HTML is - in practice - more prone to be malformed.
+  All of the tools that work with XML also work for HTML, though HTML tends to be more prone to be malformed.
+  - `xml2::read_html()` is a good first function to use for importing HTML.
+
   Some tools are designed specifically to work with HTML.
-  `xml2::read_html()` is a good first function to use for importing HTML.
+  - For capturing static content of web pages `r pkg("postlightmercury")` is a client
+    for the web service 'Mercury' that turns web pages into structured and clean text.
+  - `r pkg("rvest")` is another higher-level alternative which expresses common web scraping tasks
+    with [pipes](https://r4ds.hadley.nz/workflow-pipes.html)
+    (like Base R's `|>` and magrittr's `%>%`).
+  - `r github("cpsievert/rdom")` uses PhantomJS to access a webpage's Document Object Model (DOM).
   `r pkg("htmltools")` provides functions to create HTML elements.
   The [selectorgadget browser extension](https://selectorgadget.com/)
   can be used to identify page elements.
