@@ -165,10 +165,7 @@ Colloquially, these activities are called
   for accessing Web services from within R.
 
 - **HTML**:
-  All of the tools that work with XML also work for HTML, though HTML tends to be more prone to be malformed.
-  - `xml2::read_html()` is a good first function to use for importing HTML.
-
-  Some tools are designed specifically to work with HTML.
+  All of the tools that work with XML also work for HTML, though HTML tends to be more prone to be malformed.  So `xml2::read_html()` is a good first function to use for importing HTML.  Other tools are designed specifically to work with HTML.
   - For capturing static content of web pages `r pkg("postlightmercury")` is a client
     for the web service 'Mercury' that turns web pages into structured and clean text.
   - `r pkg("rvest")` is another higher-level alternative which expresses common web scraping tasks
@@ -176,17 +173,17 @@ Colloquially, these activities are called
     (like Base R's `|>` and magrittr's `%>%`).
   - `r pkg("boilerpipeR")` provides generic extraction of main text content from HTML files;
   removal of ads, sidebars and headers using the boilerpipe Java library.
-  - [PhantomJS](https://github.com/ariya/phantomjs/issues/15344): `r pkg("webshot")` uses PhantomJS to provide screenshots of web pages without a browser.
+  - PhantomJS (which was [archived in 2018](https://github.com/ariya/phantomjs/issues/15344)): `r pkg("webshot")` uses PhantomJS to provide screenshots of web pages without a browser.
     It can be useful for testing websites (such as Shiny applications).
   `  r github("cpsievert/rdom")` uses PhantomJS to access a webpage's Document Object Model (DOM).
   - `r pkg("htmltools")` provides functions to create HTML elements.
 
-  `r ohat("RHTMLForms")` reads HTML documents and obtains a description of each of the forms it contains,
+  - `r ohat("RHTMLForms")` reads HTML documents and obtains a description of each of the forms it contains,
   along with the different elements and hidden fields.
   `r pkg("htm2txt")` uses regex to converts html documents to plain text by removing all html tags.
   `r pkg("Rcrawler")` does crawling and scraping of web pages.
   - *HTML Utilities*:
-    These tools don't extract content, but they can help your develop and debug
+    These tools don't extract content, but they can help your develop and debug.
     - `r pkg("W3CMarkupValidator")` provides an R Interface to W3C Markup Validation Services for validating HTML documents.
     - The [selectorgadget browser extension](https://selectorgadget.com/) can be used to identify page elements.
     - `r ohat("RTidyHTML")` interfaces to the libtidy library for correcting HTML documents that are not well-formed.
