@@ -81,6 +81,8 @@ In recent years,
 many functions have been updated to accommodate web pages that are protected with TLS/SSL
 Consequently you can usually download a file's if its url starts with "http" or "https".
 
+If the data file is not accessible via a simple url, you probably want to skip to the "Online Services" section.  It describes how to work with specific web services such as AWS, Google Documents, Twitter, REDCap, PubMed, and Wikipedia.
+
 ### Ingest a file directly
 
 Many base and CRAN packages provide functions that accept a [url](https://en.wikipedia.org/wiki/URL) and
