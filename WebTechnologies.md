@@ -129,8 +129,6 @@ Many base and CRAN packages provide functions that download files:
 
 - [utils](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/00Index.html)'s `download.file()`.
 - `r pkg("curl")`'s `curl_download()`, and `curl_fetch_multi()`, and friends.
-- `r pkg("downloader")` wraps `utils::download.file()`, and takes all the same arguments.
-[I think this entry can be removed.  It was important before utils handled ssl.  It hasn't been updated since 2015]
 - An alternative is to use `httr::GET()` (or `RCurl::getURL()`) to first read
 the file into R as a character vector before parsing with a function like `utils::read.table(text = ...)`.
 
