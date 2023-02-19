@@ -107,6 +107,7 @@ return a `data.frame` or `list`.
 - For hierarchical plain-text structures:
   - `r pkg("jsonlite")`'s `fromJSON()` converts JSON into a `list`.
   - `r pkg("XML")`'s `parseXML()` converts XML into a `list`.
+  - `r pkg("yaml")`'s `yaml.load_file()` converts YAML into a `list`.
 - For HTML, see the "Parsing Structured Web Data" section below.
 - For structures in the Spark ecosystem:
   - `r pkg("arrow")`: interacts with a variety of file types used with big data
