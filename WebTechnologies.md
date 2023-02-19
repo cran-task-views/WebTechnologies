@@ -3,7 +3,7 @@ name: WebTechnologies
 topic: Web Technologies and Services
 maintainer: Mauricio Vargas Sepulveda, Will Beasley
 email: mavargas11@uc.cl
-version: 2023-02-16
+version: 2023-02-18
 source: https://github.com/cran-task-views/WebTechnologies/
 ---
 
@@ -15,11 +15,11 @@ This task view recommends packages and strategies for efficiently interacting
 with resources over the internet with R.
 This task view focuses on:
 
-1. Direct Data Download and Ingestion,
-1. Online services,
-1. Frameworks for Building web-based R Applications,
-1. Low-level Operations, and
-1. Resources
+1. [Direct data download and ingestion](#direct),
+1. [Online services](#online),
+1. [Frameworks for building web-based R applications](#frameworks),
+1. [Low-level operations](#low), and
+1. [Resources](#resources)
 
 If you have suggestions for improving or growing this task view,
 please submit an issue or a pull request in the GitHub repository linked above.
@@ -81,7 +81,7 @@ Four packages provide the foundation for most modern approaches.
       https://cran.r-project.org/doc/manuals/r-release/NEWS.html
     -->
 
-## 1. Direct Data Download and Ingestion
+## 1. [Direct data download and ingestion]{#direct}
 
 In recent years,
 many functions have been updated to accommodate web pages that are protected with TLS/SSL.
@@ -226,7 +226,7 @@ Colloquially, these activities are called
   This is useful when receiving or sending contents to remote servers,
   e.g. Web services, HTTP requests via RCurl.
 
-## 2. Online Services
+## 2. [Online services]{#online}
 
 ### Cloud Computing and Storage
 
@@ -614,7 +614,7 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
 
 - `r pkg("duckduckr")` is an R interface to [DuckDuckGo](https://duckduckgo.com/)
 
-## 3. Frameworks for Building web-based R Applications
+## 3. [Frameworks for building web-based R applications]{#frameworks}
 
 - [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization)
   (previously DeployR)
@@ -714,8 +714,7 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
   [Open API format](https://www.openapis.org/).
   `r pkg("restfulr")` models a RESTful service as if it were a nested R list.
 
-
-## 4. Low-level Operations
+## 4. [Low-level operations]{#low}
 
 ### Tools for Working with URLs
 
@@ -777,7 +776,7 @@ For specialized situations, the following resources may be useful:
 
 - `r github("hrbrmstr/securitytxt")` identifies and parses web Security policy files.
 
-## 5. Resources
+## 5. [Resources]{#resources}
 
 ### Links
 
