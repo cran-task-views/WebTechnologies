@@ -37,7 +37,6 @@ DNS
 DOI
 DOIs
 DOM
-DoubleClick
 dplyr
 DuckDuckGo
 Elsevier
@@ -114,7 +113,6 @@ NPM
 OAI
 OAuth
 OGC
-Omniture
 OneDrive
 Ooms
 Openaddresses
@@ -154,7 +152,6 @@ Scopus
 SDMX
 selectorgadget
 selectr
-SiteCatalyst
 SMTP
 SSL
 SSOAP
@@ -186,6 +183,7 @@ wikipedia
 Wufoo
 XPath
 xslt
+YAML
 Yandex
 Yhat
 Zenodo

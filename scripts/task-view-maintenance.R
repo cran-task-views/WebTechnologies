@@ -29,7 +29,9 @@ words_ignore <- readr::read_lines(path_spelling)
 spelling::spell_check_files(path_md, words_ignore)
 
 # Uncomment to update list.
-# path_md |>
-#   spelling::spell_check_files() |>
-#   dplyr::pull("word") |>
-#   readr::write_lines(path_spelling)
+if (FALSE) {
+  path_md |>
+    spelling::spell_check_files() |>
+    dplyr::pull("word") |>
+    readr::write_lines(path_spelling)
+}
