@@ -457,6 +457,8 @@ This list describes online services.  For a more complete treatment of the topic
 
 ### Social Media Clients
 
+The following packages provide an interface to its associated service, unless noted otherwise.
+
 - *Twitter*:
   `r pkg("rtweet")` provides an interface through its API.
   `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter data.
@@ -464,34 +466,33 @@ This list describes online services.  For a more complete treatment of the topic
   sample, and user streams, and to parse the output into data frames.
   OAuth authentication is supported.
   `r pkg("graphTweets")` produces a network graph from a data.frame of tweets.
-  `r github("pablobarbera/twitter_ideology")` implements a political ideology scaling measure for specified Twitter users.
+  `r github("pablobarbera/twitter_ideology")` (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
 - *Facebook*:
-  `r pkg("Rfacebook")` provides an interface through its API.
+  `r pkg("Rfacebook")`
 - *Instagram*:
-  `r pkg("instaR")` provides an interface through its API.
+  `r pkg("instaR")`
 - *LinkedIn*:
-  `r pkg("Rlinkedin")` provides an interface through its API.
+  `r pkg("Rlinkedin")`
 - *Flickr*:
   `r ohat("Rflickr")` (not on CRAN) provides an interface to the photo management and sharing application service.
 - *Stack Exchange*:
-  `r github("dgrtwo/stackr")` (not on CRAN): provides an interface through its API.
+  `r github("dgrtwo/stackr")` (not on CRAN)
 - *Pinterest*:
-  `r pkg("rpinterest")` provides an interface through its API.
+  `r pkg("rpinterest")`
 - *VK*:
-  `r pkg("vkR")` provides an interface to the social networking site based in Russia.
+  `r pkg("vkR")` the social networking site based in Russia.
 - *Meetup*:
-  `r github("rladies/meetupr")` provides an interface through its API.
+  `r github("rladies/meetupr")` (not on CRAN)
 - *Brandwatch*:
-  `r pkg("brandwatchR")` provides an interface to the social listening service.
-  Both raw text and aggregate statistics are available, as well as project and query management functions.
+  `r pkg("brandwatchR")`
 - *Hacker News*:
-  `r pkg("hackeRnews")` provides an interface through its API.
+  `r pkg("hackeRnews")`
 - *Mastodon*:
-  `r pkg("rtoot")` provides an interface through its API.
+  `r pkg("rtoot")`
 - *Slack*:
-  `r pkg("slackr")` is a client for  messaging platform.
+  `r pkg("slackr")`
 - *Discourse*:
-  `r github("sckott/discgolf")` (archived)
+  `r github("sckott/discgolf")` (archived; not on CRAN)
   provides an interface to an instance of Discourse, not to the Discourse site itself.
 
 ### Survey, Questionnaire, and Data Capture Tools
