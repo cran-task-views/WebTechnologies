@@ -429,7 +429,7 @@ This list describes online services.  For a more complete treatment of the topic
   `r pkg("opencage")` provides access to to the 'OpenCage' geocoding service.
   `r github("hrbrmstr/nominatim")` (not on CRAN) connects to the
   [OpenStreetMap Nominatim API](https://github.com/hrbrmstr/nominatim) for reverse geocoding.
-  `r github("ropensci/PostcodesioR")` (not on CRAN) provides post code lookup and
+  `r pkg("PostcodesioR")` provides post code lookup and
   geocoding for the United Kingdom.
   `r pkg("geosapi")` is an R client for the 'GeoServer' REST API,
    an open source implementation used widely for serving spatial data.
@@ -734,7 +734,7 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
   `r pkg("urltools")` can also handle URL encoding, decoding, parsing, and parameter extraction.
 - `r pkg("iptools")` can facilitate working with IPv4 addresses, including for use in geolocation.
   A similar package `r pkg("ipaddress")`, handles IPv4 and IPv6 addresses and networks.
-- `r github("dmpe/urlshorteneR")` offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd.
+- `r pkg("urlshorteneR")` offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd.
   `r pkg("longurl")` uses the longurl.org API to provide similar functionality.
 - `r github("hrbrmstr/gdns")` provides access to Google's secure HTTP-based DNS resolution service.
 
