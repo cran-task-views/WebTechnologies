@@ -87,7 +87,11 @@ In recent years,
 many functions have been updated to accommodate web pages that are protected with TLS/SSL.
 Consequently you can usually download a file's if its url starts with "http" or "https".
 
-If the data file is not accessible via a simple url, you probably want to skip to the "Online Services" section.  It describes how to work with specific web services such as AWS, Google Documents, Twitter, REDCap, PubMed, and Wikipedia.
+If the data file is not accessible via a simple url, you probably want to skip to the [Online services](#online) section.  It describes how to work with specific web services such as AWS, Google Documents, Twitter, REDCap, PubMed, and Wikipedia.
+
+If the information is served by a database engine,
+please review the cloud services in the [Online services](#online) section below,
+as well as the [Databases with R](https://CRAN.R-project.org/view=Databases) CRAN Task View.
 
 ### Ingest a file directly
 
@@ -787,6 +791,8 @@ For specialized situations, the following resources may be useful:
 ### Links
 
 - CRAN Task View [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial)
+
+- CRAN Task View [Databases with R](https://CRAN.R-project.org/view=Databases)
 
 - CRAN Task View [Machine Learning](https://CRAN.R-project.org/view=MachineLearning)
 
