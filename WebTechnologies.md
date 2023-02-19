@@ -458,8 +458,7 @@ This list describes online services.  For a more complete treatment of the topic
 ### Social Media Clients
 
 - *Twitter*:
-  `r pkg("twitteR")` provides an interface through its API.
-  It claims to be deprecated in favor of `r pkg("rtweet")`.
+  `r pkg("rtweet")` provides an interface through its API.
   `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter data.
   `r pkg("streamR")` allows users to access Twitter's filter,
   sample, and user streams, and to parse the output into data frames.
