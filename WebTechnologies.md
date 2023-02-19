@@ -396,7 +396,7 @@ This list describes online services.  For a more complete treatment of the topic
 
 - *Machine Learning as a Service*:
   Several packages provide access to cloud-based machine learning services.
-  `r pkg("OpenML")` is the official client for [the OpenML API](https://www.openml.org/frontend/page/home).
+  `r pkg("OpenML")` is the official client for [the OpenML API](https://www.openml.org/apis).
   `r pkg("clarifai")` is a [Clarifai.com](https://www.clarifai.com/) client that enables automated image description.
   `r pkg("rLTP")` accesses the [ltp-cloud service](https://www.ltp-cloud.com/).
   `r pkg("languagelayeR")` is a client for Languagelayer, a language detection API.
