@@ -36,7 +36,7 @@ who maintained this task view up to 2021.
 
 The bulk of R's capabilities are supplied by CRAN packages
 that are layered on top of [libcurl](https://curl.se/libcurl/).
-Three packages provide the foundation for most modern approaches.
+Four packages provide the foundation for most modern approaches.
 
 1. `r pkg("httr", priority = "core")` is a user-facing client for HTTP requests.
     It leverages the curl package for most operations.
@@ -68,17 +68,23 @@ Three packages provide the foundation for most modern approaches.
     It is not intended to be called directly by typical R users.
     curl may be useful for operations on web-based XML or with FTP
     (as crul and httr are focused primarily on HTTP).
-    `curl::curl()` is an TLS/SSL-compatible replacement for `base::url()` and
-    supports http 2.0,
-    [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) &
-    [SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0,_2.0,_and_3.0)
-    (https, ftps),
-    gzip, deflate, and more.
+
+1. [utils](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/00Index.html) and
+    [base](https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html)
+    are the base R packages
+    that provide `download.file()`, `url()`, and related functions.
+    These functions also use libcurl.
+
+    <!--
+      They started supporting TLS/SSL with v3.3.0 and have had small increments through v4.2.2+.
+      See https://cran.r-project.org/doc/manuals/r-release/NEWS.3.html and
+      https://cran.r-project.org/doc/manuals/r-release/NEWS.html
+    -->
 
 ## 1. Direct Data Download and Ingestion
 
 In recent years,
-many functions have been updated to accommodate web pages that are protected with TLS/SSL
+many functions have been updated to accommodate web pages that are protected with TLS/SSL.
 Consequently you can usually download a file's if its url starts with "http" or "https".
 
 If the data file is not accessible via a simple url, you probably want to skip to the "Online Services" section.  It describes how to work with specific web services such as AWS, Google Documents, Twitter, REDCap, PubMed, and Wikipedia.
@@ -89,7 +95,8 @@ Many base and CRAN packages provide functions that accept a [url](https://en.wik
 return a `data.frame` or `list`.
 
 - For tabular/rectangular plain-text structures:
-  - `r pkg("utils")`'s `read.csv()`, `read.table()`, and friends
+  - [utils](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/00Index.html)'s
+    `read.csv()`, `read.table()`, and friends
     return a `base::data.frame`.
   - `r pkg("readr")`'s `read_csv()`, `read_delim()` and friends
     return a `tibble::tibble`, which derives from `base::data.frame`.
@@ -120,7 +127,7 @@ or
 
 Many base and CRAN packages provide functions that download files:
 
-- `r pkg("utils")`'s `download.file()`.
+- [utils](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/00Index.html)'s `download.file()`.
 - `r pkg("curl")`'s `curl_download()`, and `curl_fetch_multi()`, and friends.
 - `r pkg("downloader")` wraps `utils::download.file()`, and takes all the same arguments.
 [I think this entry can be removed.  It was important before utils handled ssl.  It hasn't been updated since 2015]
