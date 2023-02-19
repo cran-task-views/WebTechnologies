@@ -7,17 +7,19 @@ version: 2023-02-16
 source: https://github.com/cran-task-views/WebTechnologies/
 ---
 
-## General Tools
+## 0. Introduction
 
-### Tools for Working with the Web from R
+### Tools for Working with the Web
 
 This task view recommends packages and strategies for efficiently interacting
-with resources over the internet.
+with resources over the internet with R.
 This task view focuses on:
 
-1. obtaining web-based data and information,
-1. frameworks for building web-based R applications, and
-1. online services that can be accessed from R.
+1. Direct Data Download and Ingestion,
+1. Online services,
+1. Frameworks for Building web-based R Applications,
+1. Low-level Operations, and
+1. Resources
 
 If you have suggestions for improving or growing this task view,
 please submit an issue or a pull request in the GitHub repository linked above.
@@ -73,94 +75,55 @@ Three packages provide the foundation for most modern approaches.
     (https, ftps),
     gzip, deflate, and more.
 
-### Direct Data Download and Ingestion
+## 1. Direct Data Download and Ingestion
 
 In recent years,
 many functions have been updated to accommodate web pages that are protected with TLS/SSL
 Consequently you can usually download a file's if its url starts with "http" or "https".
 
-- *Ingest a file directly*:
-  many base and CRAN packages provide functions that accept a [url](https://en.wikipedia.org/wiki/URL) and
-  return a `data.frame` or `list`.
-  - For tabular/rectangular plain-text structures:
-    - `r pkg("utils")`'s `read.csv()`, `read.table()`, and friends
-      return a `base::data.frame`.
-    - `r pkg("readr")`'s `read_csv()`, `read_delim()` and friends
-      return a `tibble::tibble`, which derives from `base::data.frame`.
-    - `r pkg("data.table")`'s `fread()`
-      returns a `data.table::data.table`, which derives from `base::data.frame`.
-    - `r pkg("arrow")`'s `read_csv_arrow()`
-      returns a `tibble::tibble()` or other [Arrow](https://arrow.apache.org/) structures.
-  - For hierarchical plain-text structures:
-    - `r pkg("jsonlite")`: `fromJSON()` converts JSON into a `list`.
-    - `r pkg("XML")`: `parseXML()` converts XML into a `list`.
-  - For HTML, see the "Parsing Structured Web Data" section below.
-  - For structures in the Spark ecosystem:
-    - `r pkg("arrow")`: interacts with a variety of file types used with big data
-      including parquet, feather, and arrow IPC streams.
-  - For other file structures:
-    - `r pkg("rio")` and `r pkg("repmis")`: accommodate many plain-text and proprietary formats.
+### Ingest a file directly
 
-- *Download a file, then ingest it*:
-  If you need to process a different type of file,
-  you can accomplish this in two steps.
-  First download the file from a server to your local computer;
-  second pass the path of the new local file to a function in a
-  package like
-  [haven](https://CRAN.R-project.org/package=haven)
-  or
-  [foreign](https://cran.r-project.org/package=foreign).
-  Many base and CRAN packages provide functions that download files:
-  - `r pkg("utils")`'s `download.file()`.
-  - `r pkg("curl")`'s `curl_download()`, and `curl_fetch_multi()`, and friends.
-  - `r pkg("downloader")` wraps `utils::download.file()`, and takes all the same arguments.
-  [I think this entry can be removed.  It was important before utils handled ssl.  It hasn't been updated since 2015]
-  - An alternative is to use `httr::GET()` (or `RCurl::getURL()`) to first read
-  the file into R as a character vector before parsing with a function like `utils::read.table(text = ...)`.
+Many base and CRAN packages provide functions that accept a [url](https://en.wikipedia.org/wiki/URL) and
+return a `data.frame` or `list`.
 
-### Additional tools for internet communication
+- For tabular/rectangular plain-text structures:
+  - `r pkg("utils")`'s `read.csv()`, `read.table()`, and friends
+    return a `base::data.frame`.
+  - `r pkg("readr")`'s `read_csv()`, `read_delim()` and friends
+    return a `tibble::tibble`, which derives from `base::data.frame`.
+  - `r pkg("data.table")`'s `fread()`
+    returns a `data.table::data.table`, which derives from `base::data.frame`.
+  - `r pkg("arrow")`'s `read_csv_arrow()`
+    returns a `tibble::tibble()` or other [Arrow](https://arrow.apache.org/) structures.
+- For hierarchical plain-text structures:
+  - `r pkg("jsonlite")`: `fromJSON()` converts JSON into a `list`.
+  - `r pkg("XML")`: `parseXML()` converts XML into a `list`.
+- For HTML, see the "Parsing Structured Web Data" section below.
+- For structures in the Spark ecosystem:
+  - `r pkg("arrow")`: interacts with a variety of file types used with big data
+    including parquet, feather, and arrow IPC streams.
+- For other file structures:
+  - `r pkg("rio")` and `r pkg("repmis")`: accommodate many plain-text and proprietary formats.
 
-For more specific situations, the following resources may be useful:
+### Download a file, then ingest it
 
-- `r pkg("RCurl")` is another low-level client for libcurl.
-  Of the two low-level curl clients, we recommend using `r pkg("curl")`.
-  `r pkg("httpRequest")` is another low-level package for HTTP requests that implements
-  the GET, POST and multipart POST verbs,
-  but we do not recommend its use.
-- `r pkg("request")` provides a high-level package that is useful for developing other API client packages.
-  `r pkg("httping")` provides simplified tools to ping and time HTTP requests, around `r pkg("httr")` calls.
-  `r pkg("httpcache")` provides a mechanism for caching HTTP requests.
-- `r pkg("nanonext")` is an alternative low-level sockets implementation that can be used to perform HTTP and
-  streaming WebSocket requests synchronously or asynchronously over its own concurrency framework.
-  It uses the NNG/mbedTLS libraries as a backend.
-- For dynamically generated webpages (i.e., those requiring user interaction to display results),
-  `r pkg("RSelenium")` can be used to automate those interactions and extract page contents.
-  It provides a set of bindings for the Selenium 2.0 webdriver using the 'JsonWireProtocol'.
-  It can also aid in automated application testing, load testing, and web scraping.
-  `r pkg("seleniumPipes")` provides a "pipe"-oriented interface to the same.
-- *Authentication*: Using web resources can require authentication,
-  either via API keys, OAuth, username:password combination, or via other means.
-  Additionally, sometimes web resources that require authentication be in the header of an http call,
-  which requires a little bit of extra work. API keys and username:password combos can be combined
-  within a url for a call to a web resource, or can be specified via commands in
-  `r pkg("RCurl")` or `r pkg("httr")`.
-  OAuth is the most complicated authentication process,
-  and can be most easily done using `r pkg("httr")`.
+If you need to process a different type of file,
+you can accomplish this in two steps.
+First download the file from a server to your local computer;
+second pass the path of the new local file to a function in a
+package like
+[haven](https://CRAN.R-project.org/package=haven)
+or
+[foreign](https://cran.r-project.org/package=foreign).
 
-  See the 6 demos within `r pkg("httr")`,
-  three for OAuth 1.0 (LinkedIn, Twitter, Vimeo) and
-  three for OAuth 2.0 (Facebook, GitHub, Google).
-  `r pkg("ROAuth")` provides a separate R interface to OAuth.
-  OAuth is easier to to do in `r pkg("httr")`, so start there.
-  `r pkg("googleAuthR")` provides an OAuth 2.0 setup specifically for Google web services,
-  and `r pkg("AzureAuth")` provides similar functionality for Azure Active Directory.
+Many base and CRAN packages provide functions that download files:
 
-### Handling HTTP Errors/Codes
-
-- `r pkg("fauxpas")` brings a set of Ruby or Python like R6 classes for each individual HTTP status code,
-  allowing simple and verbose messages, with a choice of using messages, warnings, or stops.
-- `r pkg("httpcode")` is a simple package to help a user/package find HTTP status codes and
-  associated messages by name or number.
+- `r pkg("utils")`'s `download.file()`.
+- `r pkg("curl")`'s `curl_download()`, and `curl_fetch_multi()`, and friends.
+- `r pkg("downloader")` wraps `utils::download.file()`, and takes all the same arguments.
+[I think this entry can be removed.  It was important before utils handled ssl.  It hasn't been updated since 2015]
+- An alternative is to use `httr::GET()` (or `RCurl::getURL()`) to first read
+the file into R as a character vector before parsing with a function like `utils::read.table(text = ...)`.
 
 ### Parsing Structured Web Data
 
@@ -218,19 +181,9 @@ can be used to parse locally stored or in-memory web files.
 - `r pkg("swagger")` can be used to automatically generate functions for working with an web service API
   that provides documentation in [Swagger.io](https://swagger.io/) format.
 
-### Tools for Working with URLs
-
-- The `httr::parse_url()` function can be used to extract portions of a URL.
-  The `RCurl::URLencode()` and `utils::URLencode()` functions can be used to encode character strings for use in URLs.
-  `utils::URLdecode()` decodes back to the original strings.
-  `r pkg("urltools")` can also handle URL encoding, decoding, parsing, and parameter extraction.
-- `r pkg("iptools")` can facilitate working with IPv4 addresses, including for use in geolocation.
-  A similar package `r pkg("ipaddress")`, handles IPv4 and IPv6 addresses and networks.
-- `r github("dmpe/urlshorteneR")` offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd.
-  `r pkg("longurl")` uses the longurl.org API to provide similar functionality.
-- `r github("hrbrmstr/gdns")` provides access to Google's secure HTTP-based DNS resolution service.
-
 ### Tools for Working with Scraped Webpage Contents
+
+<!-- This should be merged with the previous section. -->
 
 - Several packages can be used for parsing HTML documents.
   `r pkg("boilerpipeR")` provides generic extraction of main text content from HTML files;
@@ -264,111 +217,7 @@ can be used to parse locally stored or in-memory web files.
 - `r pkg("webshot")` uses PhantomJS to provide screenshots of web pages without a browser.
   It can be useful for testing websites (such as Shiny applications).
 
-### Security
-
-- `r github("hrbrmstr/securitytxt")` identifies and parses web Security policy files.
-
-### Other Useful Packages and Functions
-
-- **JavaScript**:
-  `r pkg("V8")` is an R interface to Google's open source, high performance JavaScript engine.
-  It can wrap JavaScript libraries as well as NPM packages.
-  `r ohat("SpiderMonkey")` provides another means of evaluating JavaScript code,
-  creating JavaScript objects and calling JavaScript functions and methods from within R.
-  This can work by embedding the JavaScript engine within an R session or
-  by embedding R in an browser such as Firefox and
-  being able to call R from JavaScript and call back to JavaScript from R.
-  `r pkg("js")` wraps `r pkg("V8")` and validates, reformats, optimizes and analyzes JavaScript code.
-- **Email**:
-  `r pkg("mailR")` is an interface to Apache Commons Email to send emails from within R.
-  `r pkg("sendmailR")` provides a simple SMTP client.
-  `r pkg("gmailr")` provides access the Google's gmail.com RESTful API.
-  `r pkg("Microsoft365R")` provides a client for Microsoft's Outlook email service,
-  both personal (outlook.com) and
-  as part of the Microsoft 365 (formerly known as Office 365) suite.
-- **Mocking**:
-  `r pkg("webmockr")` stubs and sets expectations on HTTP requests.
-  It is inspired from Ruby's `webmock`.
-  `r pkg("webmockr")` only helps mock HTTP requests, and returns nothing when requests match expectations.
-  It integrates with `r pkg("crul")` and `r pkg("httr")`.
-  See *Testing* for mocking with returned responses.
-- **Testing**:
-  `r pkg("vcr")` provides an interface to easily cache HTTP requests in R package test suites
-  (but can be used outside of testing use cases as well).
-  vcr relies on `r pkg("webmockr")` to do the HTTP request mocking.
-  vcr integrates with `r pkg("crul")` and `r pkg("httr")`.
-  `r pkg("httptest")` provides a framework for testing packages that communicate with HTTP APIs,
-  offering tools for mocking APIs, for recording real API responses for use as mocks,
-  and for making assertions about HTTP requests,
-  all without requiring a live connection to the API server at runtime.
-  httptest only works with httr.
-- **Miscellaneous**:
-  `r pkg("webutils")` contains various functions for developing web applications,
-  including parsers for `application/x-www-form-urlencoded` as well as `multipart/form-data`.
-  `r pkg("mime")` guesses the MIME type for a file from its extension.
-  `r pkg("rsdmx")` provides tools to read data and metadata documents exchanged through the
-  Statistical Data and Metadata Exchange (SDMX) framework;
-  it focuses on the SDMX XML standard format(SDMX-ML).
-  `r pkg("robotstxt")` provides functions and classes for parsing robots.txt files and
-  checking access permissions;
-  `r pkg("spiderbar")` does the same.
-  `r pkg("uaparserjs")` uses the JavaScript ["ua-parser" library](https://github.com/ua-parser)
-  to parse User-Agent HTTP headers.
-  `r pkg("rapiclient")` is a client for consuming APIs that follow the
-  [Open API format](https://www.openapis.org/).
-  `r pkg("restfulr")` models a RESTful service as if it were a nested R list.
-
-## Web and Server Frameworks
-
-- [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization)
-  (previously DeployR)
-  is a Microsoft product that provides support for deploying R and Python models and
-  code to a server as a web service to later consume.
-- `r pkg("shiny")` makes it easy to build interactive web applications with R.
-- `r github("plotly/dashR")` is a web framework which is available for
-  Python, R and Julia, with components written in React.js.
-- Other web frameworks include:
-  `r pkg("fiery")` that is meant to be more flexible but less easy to use than shiny
-  (`r pkg("reqres")` and `r pkg("routr")` are utilities used by fiery
-  that provide HTTP request and response classes, and HTTP routing, respectively);
-  `r github("att/rcloud")` provides an iPython notebook-style web-based R interface; and
-  `r pkg("Rook")`, which contains the specification and convenience software
-  for building and running Rook applications.
-- The `r pkg("opencpu")` framework for embedded statistical computation and reproducible research
-  exposes a web API interfacing R, LaTeX and Pandoc.
-  This API is used for example to integrate statistical functionality into systems,
-  share and execute scripts or reports on centralized servers,
-  and build R based apps.
-- Several general purpose server/client frameworks for R exist.
-  `r pkg("Rserve")` and
-  `r pkg("RSclient")`
-  provide server and client functionality for TCP/IP or local socket interfaces.
-  `r pkg("httpuv")` provides a low-level socket and protocol support
-  for handling HTTP and WebSocket requests directly within R.
-  Another related package, perhaps which `r pkg("httpuv")` replaces, is `websockets` (retired from CRAN).
-  `r pkg("servr")` provides a simple HTTP server to serve files under a given directory based on httpuv.
-- Several packages offer functionality for turning R code into a web API.
-  `r pkg("FastRWeb")` provides some basic infrastructure for this.
-  `r pkg("plumber")` allows you to create a REST API by decorating existing R source code.
-  `r pkg("beakr")` provides an R version of functionality found in python Flask and JavaScript Express.js.
-- `r ohat("WADL")` provides tools to process Web Application Description Language (WADL) documents and
-  to programmatically generate R functions to interface to the REST methods
-  described in those WADL documents. (not on CRAN)
-- `r ohat("RDCOMServer")` provides a mechanism to export R objects as (D)COM objects in Windows.
-  It can be used along with `r ohat("RDCOMClient")`,
-  which provides user-level access from R to other COM servers. (not on CRAN)
-- `r pkg("radiant")` is Shiny-based GUI for R that runs in a browser from a server or local machine.
-- The 'Tiki' Wiki CMS/Groupware framework has an R plugin (`PluginR`) to run R code from wiki pages,
-  and use data from their own collected web databases (trackers).
-  A demo: <https://r.tiki.org/tiki-index.php> .
-- `r pkg("whisker")`: Implementation of logicless templating based on 'Mustache' in R.
-- Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
-- `r ohat("CGIwithR")` (not on CRAN) allows one to use R scripts as CGI programs
-  for generating dynamic Web content.
-  HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts
-  via the Web to create content that is determined within that R script.
-
-## Web Services
+## 2. Online Services
 
 ### Cloud Computing and Storage
 
@@ -755,6 +604,171 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
 - `r pkg("RStripe")` provides an interface to 'Stripe', an online payment processor.
 
 - `r pkg("duckduckr")` is an R interface to [DuckDuckGo](https://duckduckgo.com/)
+
+## 3. Frameworks for Building web-based R Applications
+
+- [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization)
+  (previously DeployR)
+  is a Microsoft product that provides support for deploying R and Python models and
+  code to a server as a web service to later consume.
+- `r pkg("shiny")` makes it easy to build interactive web applications with R.
+- `r github("plotly/dashR")` is a web framework which is available for
+  Python, R and Julia, with components written in React.js.
+- Other web frameworks include:
+  `r pkg("fiery")` that is meant to be more flexible but less easy to use than shiny
+  (`r pkg("reqres")` and `r pkg("routr")` are utilities used by fiery
+  that provide HTTP request and response classes, and HTTP routing, respectively);
+  `r github("att/rcloud")` provides an iPython notebook-style web-based R interface; and
+  `r pkg("Rook")`, which contains the specification and convenience software
+  for building and running Rook applications.
+- The `r pkg("opencpu")` framework for embedded statistical computation and reproducible research
+  exposes a web API interfacing R, LaTeX and Pandoc.
+  This API is used for example to integrate statistical functionality into systems,
+  share and execute scripts or reports on centralized servers,
+  and build R based apps.
+- Several general purpose server/client frameworks for R exist.
+  `r pkg("Rserve")` and
+  `r pkg("RSclient")`
+  provide server and client functionality for TCP/IP or local socket interfaces.
+  `r pkg("httpuv")` provides a low-level socket and protocol support
+  for handling HTTP and WebSocket requests directly within R.
+  Another related package, perhaps which `r pkg("httpuv")` replaces, is `websockets` (retired from CRAN).
+  `r pkg("servr")` provides a simple HTTP server to serve files under a given directory based on httpuv.
+- Several packages offer functionality for turning R code into a web API.
+  `r pkg("FastRWeb")` provides some basic infrastructure for this.
+  `r pkg("plumber")` allows you to create a REST API by decorating existing R source code.
+  `r pkg("beakr")` provides an R version of functionality found in python Flask and JavaScript Express.js.
+- `r ohat("WADL")` provides tools to process Web Application Description Language (WADL) documents and
+  to programmatically generate R functions to interface to the REST methods
+  described in those WADL documents. (not on CRAN)
+- `r ohat("RDCOMServer")` provides a mechanism to export R objects as (D)COM objects in Windows.
+  It can be used along with `r ohat("RDCOMClient")`,
+  which provides user-level access from R to other COM servers. (not on CRAN)
+- `r pkg("radiant")` is Shiny-based GUI for R that runs in a browser from a server or local machine.
+- The 'Tiki' Wiki CMS/Groupware framework has an R plugin (`PluginR`) to run R code from wiki pages,
+  and use data from their own collected web databases (trackers).
+  A demo: <https://r.tiki.org/tiki-index.php> .
+- `r pkg("whisker")`: Implementation of logicless templating based on 'Mustache' in R.
+- Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
+- `r ohat("CGIwithR")` (not on CRAN) allows one to use R scripts as CGI programs
+  for generating dynamic Web content.
+  HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts
+  via the Web to create content that is determined within that R script.
+
+### Other Useful Packages and Functions
+
+- **JavaScript**:
+  `r pkg("V8")` is an R interface to Google's open source, high performance JavaScript engine.
+  It can wrap JavaScript libraries as well as NPM packages.
+  `r ohat("SpiderMonkey")` provides another means of evaluating JavaScript code,
+  creating JavaScript objects and calling JavaScript functions and methods from within R.
+  This can work by embedding the JavaScript engine within an R session or
+  by embedding R in an browser such as Firefox and
+  being able to call R from JavaScript and call back to JavaScript from R.
+  `r pkg("js")` wraps `r pkg("V8")` and validates, reformats, optimizes and analyzes JavaScript code.
+- **Email**:
+  `r pkg("mailR")` is an interface to Apache Commons Email to send emails from within R.
+  `r pkg("sendmailR")` provides a simple SMTP client.
+  `r pkg("gmailr")` provides access the Google's gmail.com RESTful API.
+  `r pkg("Microsoft365R")` provides a client for Microsoft's Outlook email service,
+  both personal (outlook.com) and
+  as part of the Microsoft 365 (formerly known as Office 365) suite.
+- **Mocking**:
+  `r pkg("webmockr")` stubs and sets expectations on HTTP requests.
+  It is inspired from Ruby's `webmock`.
+  `r pkg("webmockr")` only helps mock HTTP requests, and returns nothing when requests match expectations.
+  It integrates with `r pkg("crul")` and `r pkg("httr")`.
+  See *Testing* for mocking with returned responses.
+- **Testing**:
+  `r pkg("vcr")` provides an interface to easily cache HTTP requests in R package test suites
+  (but can be used outside of testing use cases as well).
+  vcr relies on `r pkg("webmockr")` to do the HTTP request mocking.
+  vcr integrates with `r pkg("crul")` and `r pkg("httr")`.
+  `r pkg("httptest")` provides a framework for testing packages that communicate with HTTP APIs,
+  offering tools for mocking APIs, for recording real API responses for use as mocks,
+  and for making assertions about HTTP requests,
+  all without requiring a live connection to the API server at runtime.
+  httptest only works with httr.
+- **Miscellaneous**:
+  `r pkg("webutils")` contains various functions for developing web applications,
+  including parsers for `application/x-www-form-urlencoded` as well as `multipart/form-data`.
+  `r pkg("mime")` guesses the MIME type for a file from its extension.
+  `r pkg("rsdmx")` provides tools to read data and metadata documents exchanged through the
+  Statistical Data and Metadata Exchange (SDMX) framework;
+  it focuses on the SDMX XML standard format(SDMX-ML).
+  `r pkg("robotstxt")` provides functions and classes for parsing robots.txt files and
+  checking access permissions;
+  `r pkg("spiderbar")` does the same.
+  `r pkg("uaparserjs")` uses the JavaScript ["ua-parser" library](https://github.com/ua-parser)
+  to parse User-Agent HTTP headers.
+  `r pkg("rapiclient")` is a client for consuming APIs that follow the
+  [Open API format](https://www.openapis.org/).
+  `r pkg("restfulr")` models a RESTful service as if it were a nested R list.
+
+
+## 4. Low-level Operations
+
+### Tools for Working with URLs
+
+- The `httr::parse_url()` function can be used to extract portions of a URL.
+  The `RCurl::URLencode()` and `utils::URLencode()` functions can be used to encode character strings for use in URLs.
+  `utils::URLdecode()` decodes back to the original strings.
+  `r pkg("urltools")` can also handle URL encoding, decoding, parsing, and parameter extraction.
+- `r pkg("iptools")` can facilitate working with IPv4 addresses, including for use in geolocation.
+  A similar package `r pkg("ipaddress")`, handles IPv4 and IPv6 addresses and networks.
+- `r github("dmpe/urlshorteneR")` offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd.
+  `r pkg("longurl")` uses the longurl.org API to provide similar functionality.
+- `r github("hrbrmstr/gdns")` provides access to Google's secure HTTP-based DNS resolution service.
+
+### Additional tools for internet communication
+
+For specialized situations, the following resources may be useful:
+
+- `r pkg("RCurl")` is another low-level client for libcurl.
+  Of the two low-level curl clients, we recommend using `r pkg("curl")`.
+  `r pkg("httpRequest")` is another low-level package for HTTP requests that implements
+  the GET, POST and multipart POST verbs,
+  but we do not recommend its use.
+- `r pkg("request")` provides a high-level package that is useful for developing other API client packages.
+  `r pkg("httping")` provides simplified tools to ping and time HTTP requests, around `r pkg("httr")` calls.
+  `r pkg("httpcache")` provides a mechanism for caching HTTP requests.
+- `r pkg("nanonext")` is an alternative low-level sockets implementation that can be used to perform HTTP and
+  streaming WebSocket requests synchronously or asynchronously over its own concurrency framework.
+  It uses the NNG/mbedTLS libraries as a backend.
+- For dynamically generated webpages (i.e., those requiring user interaction to display results),
+  `r pkg("RSelenium")` can be used to automate those interactions and extract page contents.
+  It provides a set of bindings for the Selenium 2.0 webdriver using the 'JsonWireProtocol'.
+  It can also aid in automated application testing, load testing, and web scraping.
+  `r pkg("seleniumPipes")` provides a "pipe"-oriented interface to the same.
+- *Authentication*: Using web resources can require authentication,
+  either via API keys, OAuth, username:password combination, or via other means.
+  Additionally, sometimes web resources that require authentication be in the header of an http call,
+  which requires a little bit of extra work. API keys and username:password combos can be combined
+  within a url for a call to a web resource, or can be specified via commands in
+  `r pkg("RCurl")` or `r pkg("httr")`.
+  OAuth is the most complicated authentication process,
+  and can be most easily done using `r pkg("httr")`.
+
+  See the 6 demos within `r pkg("httr")`,
+  three for OAuth 1.0 (LinkedIn, Twitter, Vimeo) and
+  three for OAuth 2.0 (Facebook, GitHub, Google).
+  `r pkg("ROAuth")` provides a separate R interface to OAuth.
+  OAuth is easier to to do in `r pkg("httr")`, so start there.
+  `r pkg("googleAuthR")` provides an OAuth 2.0 setup specifically for Google web services,
+  and `r pkg("AzureAuth")` provides similar functionality for Azure Active Directory.
+
+### Handling HTTP Errors/Codes
+
+- `r pkg("fauxpas")` brings a set of Ruby or Python like R6 classes for each individual HTTP status code,
+  allowing simple and verbose messages, with a choice of using messages, warnings, or stops.
+- `r pkg("httpcode")` is a simple package to help a user/package find HTTP status codes and
+  associated messages by name or number.
+
+### Security
+
+- `r github("hrbrmstr/securitytxt")` identifies and parses web Security policy files.
+
+## 5. Resources
 
 ### Links
 
