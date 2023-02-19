@@ -25,7 +25,6 @@ CMS
 Crossref's
 crul
 crul's
-csv
 CSW
 customizable
 DataCite
@@ -34,7 +33,6 @@ Dataverse
 dbplyr
 de
 DeployR
-dir
 DNS
 DOI
 DOIs
@@ -64,7 +62,6 @@ github
 GitLab
 gl
 gmail
-gzip
 http
 https
 httptest
@@ -75,6 +72,7 @@ IaaS
 Imgur
 io
 ip
+IPC
 IPv
 iPython
 isochrones
@@ -94,13 +92,13 @@ Languagelayer
 Leeper
 libcurl
 libtidy
-libxslt
 LinkedIn
 logicless
 longlats
 longurl
 ltp
 ly
+magrittr's
 Mair
 Mathpix
 mbedTLS
@@ -164,13 +162,13 @@ SurveyMonkey
 templating
 tiki
 Tiki
+TLS
 ua
 Ubigraph
 un
 Unpaywall
 Usersnap
 vcr
-Veillard's
 Vimeo
 VK
 VM
@@ -179,7 +177,6 @@ WebAnalytics
 webdriver
 webpage's
 webreader
-webscraping
 webservice
 WebSocket
 WFS
@@ -187,7 +184,6 @@ Wikidata
 Wikimedia
 wikipedia
 Wufoo
-xlsx
 XPath
 xslt
 Yandex
