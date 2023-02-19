@@ -104,11 +104,11 @@ return a `data.frame` or `list`.
     returns a `data.table::data.table`, which derives from `base::data.frame`.
   - `r pkg("arrow")`'s `read_csv_arrow()`
     returns a `tibble::tibble()` or other [Arrow](https://arrow.apache.org/) structures.
-- For hierarchical plain-text structures:
+- For hierarchical/nested plain-text structures:
   - `r pkg("jsonlite")`'s `fromJSON()` converts JSON into a `list`.
-  - `r pkg("XML")`'s `parseXML()` converts XML into a `list`.
   - `r pkg("yaml")`'s `yaml.load_file()` converts YAML into a `list`.
-- For HTML, see the "Parsing Structured Web Data" section below.
+  - `r pkg("XML")`'s `parseXML()` converts XML into a `list`.
+  - For HTML, see the "Parsing Structured Web Data" section below.
 - For structures in the Spark ecosystem:
   - `r pkg("arrow")`: interacts with a variety of file types used with big data
     including parquet, feather, and arrow IPC streams.
