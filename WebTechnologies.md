@@ -47,7 +47,7 @@ Three packages provide the foundation for most modern approaches.
     httr's team is developing its successor, `r pkg("httr2")`.
     If you're creating a package needs a stable foundation,
     you might use httr now and wait for httr2 v1.0 to be released.
-    However if you can adapt to breaking changes as httr2 evolves,
+    However if you can adapt to breaking changes as httr2 matures,
     it may be beneficial to invest in httr2's approach now.
 
 1. `r pkg("crul", priority = "core")` is another package that leverages curl.
@@ -197,9 +197,6 @@ can be used to parse locally stored or in-memory web files.
   to instances of those classes.
   It provides the framework for meta-computing with XML schema in R.
   `r pkg("xslt")` is an extension for `r pkg("xml2")` to transform XML documents by applying an xslt style-sheet.
-  (It can be seen as a modern replacement for `r ohat("Sxslt")`,
-  which is an interface to Dan Veillard's libxslt translator, and
-  `r ohat("SXalan")`.)
   This may be useful for webscraping, as well as
   transforming XML markup into another human- or machine-readable format
   (e.g., HTML, JSON, plain text, etc.).
