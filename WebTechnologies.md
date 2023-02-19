@@ -513,27 +513,32 @@ This list describes online services.  For a more complete treatment of the topic
   `r github("nealrichardson/useRsnap")` connects to Usersnap,
   a tool for collecting feedback from web application users.
 
-### Web Analytics Services
+### Web Analytics
 
-- *Google Trends*:
-  `r pkg("gtrendsR")` offers functions to perform and display Google Trends queries.
-  `r ohat("RGoogleTrends")` provides an alternative.
-- *Google Analytics*:
-  `r pkg("googleAnalyticsR")`, and `r pkg("ganalytics")` provide functions for accessing and retrieving
-  data from the [Google Analytics APIs](https://developers.google.com/analytics/).
-  The latter supports OAuth 2.0 authorization.
-  `r pkg("searchConsoleR")` links to the
-  [Google Search Console](https://developers.google.com/webmaster-tools/) (formerly Webmaster Tools).
-- *Online Advertising*:
-  `r pkg("fbRads")` can manage Facebook ads via the Facebook Marketing API.
-  `r github("WillemPaling/RDoubleClick")` (not on CRAN) can retrieve data from
-  Google's DoubleClick Campaign Manager Reporting API.
-  `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data provided by
-  [Smartly.io](https://app.smartly.io/).
-- *Other services*:
-  `r pkg("RSiteCatalyst")` has functions for accessing the Adobe Analytics
-   (Omniture SiteCatalyst) Reporting API.
-- `r pkg("RAdwords")` loads Google Adwords data.
+The following packages interface with *online services* that facilitate web analytics.
+
+- *Google*
+  - *Google Adwords*:
+    `r pkg("RAdwords")`
+  - *Google Analytics*:
+    `r pkg("googleAnalyticsR")` and
+    `r pkg("ganalytics")`;
+    the latter supports OAuth 2.0 authorization.
+  - *Google Marketing Platform*: `r github("WillemPaling/RDoubleClick")` (not on CRAN)
+  - *Google Search Console* (formerly Webmaster Tools):
+    `r pkg("searchConsoleR")`
+  - *Google Trends*:
+    `r pkg("gtrendsR")` and
+    `r ohat("RGoogleTrends")`
+- *Facebook Marketing*:
+  `r pkg("fbRads")`
+- *Smartly.io*:
+  `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data via the advertising service.
+- *Adobe Analytics*:
+  `r pkg("RSiteCatalyst")`
+
+The following packages interface with *tools* that facilitate web analytics.
+
 - `r pkg("webreadr")` can process various common forms of request log,
   including the Common and Combined Web Log formats and AWS logs.
 - `r pkg("WebAnalytics")` provides tools for analysis of
