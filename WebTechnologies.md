@@ -790,12 +790,9 @@ For specialized situations, the following resources may be useful:
 
 ### Links
 
-- CRAN Task View [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial)
-
-- CRAN Task View [Databases with R](https://CRAN.R-project.org/view=Databases)
-
-- CRAN Task View [Machine Learning](https://CRAN.R-project.org/view=MachineLearning)
-
-- CRAN Task View [Reproducible Research](https://CRAN.R-project.org/view=ReproducibleResearch)
-
-- CRAN Task View [Sports Analytics](https://CRAN.R-project.org/view=SportsAnalytics)
+- Related CRAN [Task Views](https://cran.r-project.org/web/views/):
+[Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) /
+[Databases with R](https://CRAN.R-project.org/view=Databases) /
+[Machine Learning](https://CRAN.R-project.org/view=MachineLearning) /
+[Reproducible Research](https://CRAN.R-project.org/view=ReproducibleResearch) /
+[Sports Analytics](https://CRAN.R-project.org/view=SportsAnalytics) /
