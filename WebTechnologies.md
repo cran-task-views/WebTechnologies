@@ -346,11 +346,6 @@ Colloquially, these activities are called
   `r pkg("dataverse")` provides access to [Dataverse](https://dataverse.org/), the open source research data repository software.
   `r pkg("rfigshare")` connects with [Figshare.com](https://figshare.com/).
   `r pkg("dataone")` provides a client for 'DataONE' repositories.
-- *Google Drive/Google Documents*:
-  `r ohat("RGoogleStorage")` provides programmatic access to the Google Storage API.
-  This allows R users to access and store data on Google's storage.
-  We can upload and download content, create, list and delete folders/buckets, and
-  set access control permissions on objects and buckets.
 - *Google Sheets*:
   `r pkg("googlesheets4")` (replaces `googlesheets`) can access private or public 'Google Sheets'
   by title, key, or URL. Extract data or edit data.
