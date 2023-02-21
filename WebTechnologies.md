@@ -637,11 +637,6 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
 - *JavaScript*:
   `r pkg("V8")` is an R interface to Google's open source, high performance JavaScript engine.
   It can wrap JavaScript libraries as well as NPM packages.
-  `r ohat("SpiderMonkey")` provides another means of evaluating JavaScript code,
-  creating JavaScript objects and calling JavaScript functions and methods from within R.
-  This can work by embedding the JavaScript engine within an R session or
-  by embedding R in an browser such as Firefox and
-  being able to call R from JavaScript and call back to JavaScript from R.
   `r pkg("js")` wraps `r pkg("V8")` and validates, reformats, optimizes and analyzes JavaScript code.
 - *Email*:
   `r pkg("mailR")` is an interface to Apache Commons Email to send emails from within R.
