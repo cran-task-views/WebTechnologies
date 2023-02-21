@@ -685,8 +685,7 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
   The `RCurl::URLencode()` and `utils::URLencode()` functions can be used to encode character strings for use in URLs.
   `utils::URLdecode()` decodes back to the original strings.
   `r pkg("urltools")` can also handle URL encoding, decoding, parsing, and parameter extraction.
-- `r pkg("iptools")` can facilitate working with IPv4 addresses, including for use in geolocation.
-  A similar package `r pkg("ipaddress")`, handles IPv4 and IPv6 addresses and networks.
+- `r pkg("ipaddress")` facilitates for working with IP addresses and networks.
 - `r pkg("urlshorteneR")` offers URL expansion and analysis for Bit.ly, Goo.gl, and is.gd.
   `r pkg("longurl")` uses the longurl.org API to provide similar functionality.
 - `r github("hrbrmstr/gdns")` provides access to Google's secure HTTP-based DNS resolution service.
