@@ -347,8 +347,6 @@ Colloquially, these activities are called
   `r pkg("rfigshare")` connects with [Figshare.com](https://figshare.com/).
   `r pkg("dataone")` provides a client for 'DataONE' repositories.
 - *Google Drive/Google Documents*:
-  `r ohat("RGoogleDocs")` is an example of using the RCurl and XML packages
-  to quickly develop an interface to the Google Documents API.
   `r ohat("RGoogleStorage")` provides programmatic access to the Google Storage API.
   This allows R users to access and store data on Google's storage.
   We can upload and download content, create, list and delete folders/buckets, and
