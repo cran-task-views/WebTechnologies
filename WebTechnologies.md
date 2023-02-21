@@ -217,9 +217,6 @@ Colloquially, these activities are called
 
 <!-- This should be merged with the previous section. -->
 
-- `r ohat("SSOAP")` provides a client-side SOAP (Simple Object Access Protocol) mechanism.
-  Beware, SSOAP itself may not install, and/or its dependencies.
-  The best bet is to get the web service maintainers to switch to REST.
 - `r ohat("Rcompression")` (not on CRAN): Interface to zlib and bzip2 libraries
   for performing in-memory compression and decompression in R.
   This is useful when receiving or sending contents to remote servers,
