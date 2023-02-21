@@ -213,15 +213,6 @@ Colloquially, these activities are called
 - `r pkg("swagger")` can be used to automatically generate functions for working with an web service API
   that provides documentation in [Swagger.io](https://swagger.io/) format.
 
-### Tools for Working with Scraped Webpage Contents
-
-<!-- This should be merged with the previous section. -->
-
-- `r ohat("Rcompression")` (not on CRAN): Interface to zlib and bzip2 libraries
-  for performing in-memory compression and decompression in R.
-  This is useful when receiving or sending contents to remote servers,
-  e.g. Web services, HTTP requests via RCurl.
-
 ## 2. [Online services]{#online}
 
 ### Cloud Computing and Storage
