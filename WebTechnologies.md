@@ -236,7 +236,6 @@ Colloquially, these activities are called
     which includes a parallel version of `lapply()`
     for the Elastic Map Reduce (EMR) engine called `emrlapply()`.
     It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
-  - *Simple DB*: `r ohat("RAmazonDBREST")` provides an interface to Amazon's Simple DB API.
 - *Microsoft Azure*: Azure and Microsoft 365 are Microsoft's cloud computing services.
   - The Azure platform provides Paas, SaaS and IaaS and supports many different tools and frameworks,
     including both Microsoft-specific and third-party systems;
