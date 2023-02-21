@@ -645,10 +645,6 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
   A demo: <https://r.tiki.org/tiki-index.php> .
 - `r pkg("whisker")`: Implementation of logicless templating based on 'Mustache' in R.
 - Mustache syntax is described in <http://mustache.github.io/mustache.5.html>
-- `r ohat("CGIwithR")` (not on CRAN) allows one to use R scripts as CGI programs
-  for generating dynamic Web content.
-  HTML forms and other mechanisms to submit dynamic requests can be used to provide input to R scripts
-  via the Web to create content that is determined within that R script.
 
 ### Other Useful Packages and Functions
 
