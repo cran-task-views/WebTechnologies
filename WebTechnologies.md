@@ -190,7 +190,7 @@ Colloquially, these activities are called
   `  r github("cpsievert/rdom")` uses PhantomJS to access a webpage's Document Object Model (DOM).
   - `r pkg("htmltools")` provides functions to create HTML elements.
 
-  - `r ohat("RHTMLForms")` reads HTML documents and obtains a description of each of the forms it contains,
+  - `r github("omegahat/RHTMLForms")` reads HTML documents and obtains a description of each of the forms it contains,
   along with the different elements and hidden fields.
   `r pkg("htm2txt")` uses regex to converts html documents to plain text by removing all html tags.
   `r pkg("Rcrawler")` does crawling and scraping of web pages.
