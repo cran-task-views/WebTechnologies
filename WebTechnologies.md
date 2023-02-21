@@ -194,8 +194,6 @@ Colloquially, these activities are called
     These tools don't extract content, but they can help your develop and debug.
     - `r pkg("W3CMarkupValidator")` provides an R Interface to W3C Markup Validation Services for validating HTML documents.
     - The [selectorgadget browser extension](https://selectorgadget.com/) can be used to identify page elements.
-    - `r ohat("RTidyHTML")` interfaces to the libtidy library for correcting HTML documents that are not well-formed.
-      This library corrects common errors in HTML documents.
 
 - *JSON*:
   There are several packages for reading and writing JSON:
