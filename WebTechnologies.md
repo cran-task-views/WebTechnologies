@@ -533,8 +533,7 @@ The following packages interface with *online services* that facilitate web anal
   - *Google Search Console* (formerly Webmaster Tools):
     `r pkg("searchConsoleR")`
   - *Google Trends*:
-    `r pkg("gtrendsR")` and
-    `r ohat("RGoogleTrends")`
+    `r pkg("gtrendsR")`
 - *Facebook Marketing*:
   `r pkg("fbRads")`
 - *Smartly.io*:
