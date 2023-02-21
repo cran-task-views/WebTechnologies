@@ -455,8 +455,6 @@ The following packages provide an interface to its associated service, unless no
   `r pkg("instaR")`
 - *LinkedIn*:
   `r pkg("Rlinkedin")`
-- *Flickr*:
-  `r ohat("Rflickr")` (not on CRAN) provides an interface to the photo management and sharing application service.
 - *Stack Exchange*:
   `r github("dgrtwo/stackr")` (not on CRAN)
 - *Pinterest*:
