@@ -171,10 +171,6 @@ Colloquially, these activities are called
   This may be useful for web scraping, as well as
   transforming XML markup into another human- or machine-readable format
   (e.g., HTML, JSON, plain text, etc.).
-  - `r ohat("XMLRPC")` provides an implementation of XML-RPC,
-  a relatively simple remote procedure call mechanism that uses HTTP and XML.
-  This can be used for communicating between processes on a single machine or
-  for accessing Web services from within R.
 
 - *HTML*:
   All of the tools that work with XML also work for HTML, though HTML tends to be more prone to be malformed.  So `xml2::read_html()` is a good first function to use for importing HTML.  Other tools are designed specifically to work with HTML.
