@@ -791,8 +791,13 @@ For specialized situations, the following resources may be useful:
 ### Links
 
 - Related CRAN [Task Views](https://cran.r-project.org/web/views/):
-[Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) /
-[Databases with R](https://CRAN.R-project.org/view=Databases) /
-[Machine Learning](https://CRAN.R-project.org/view=MachineLearning) /
-[Reproducible Research](https://CRAN.R-project.org/view=ReproducibleResearch) /
-[Sports Analytics](https://CRAN.R-project.org/view=SportsAnalytics) /
+  |
+  [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) |
+  [Databases with R](https://CRAN.R-project.org/view=Databases) |
+  [Machine Learning](https://CRAN.R-project.org/view=MachineLearning) |
+  [Reproducible Research](https://CRAN.R-project.org/view=ReproducibleResearch) |
+  [Sports Analytics](https://CRAN.R-project.org/view=SportsAnalytics) |
+
+- [Omega Project for Statistical Computing](https://OmegaHat.net/):
+Open-source packages from authors in (or close to) the R Core Team,
+especially for web-based technologies, actively developed 1998-2013.
