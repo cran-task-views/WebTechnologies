@@ -358,9 +358,6 @@ Colloquially, these activities are called
   Plot.ly is a company that allows you to create visualizations in the web using R (and Python),
   which is accessible via `r pkg("plotly")`.
   `r pkg("googleVis")` provides an interface between R and the Google chart tools.
-  `r ohat("RUbigraph")` provides an R interface to a Ubigraph server for drawing interactive, dynamic graphs.
-  You can add and remove vertices/nodes and edges in a graph and change their attributes/characteristics
-  such as shape, color, size.
 - *Other* :
   `r pkg("rrefine")` can import to and export from the 'OpenRefine' data cleaning service.
 
