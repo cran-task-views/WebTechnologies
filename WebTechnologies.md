@@ -661,7 +661,7 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
   to programmatically generate R functions to interface to the REST methods
   described in those WADL documents. (not on CRAN)
 - `r ohat("RDCOMServer")` provides a mechanism to export R objects as (D)COM objects in Windows.
-  It can be used along with `r ohat("RDCOMClient")`,
+  It can be used along with `r github("omegahat/RDCOMClient")`,
   which provides user-level access from R to other COM servers. (not on CRAN)
 - `r pkg("radiant")` is Shiny-based GUI for R that runs in a browser from a server or local machine.
 - The 'Tiki' Wiki CMS/Groupware framework has an R plugin (`PluginR`) to run R code from wiki pages,
