@@ -163,7 +163,7 @@ Colloquially, these activities are called
   but selectr translates CSS selectors to XPath,
   so can use the CSS selectors instead of XPath.
 
-  - `r ohat("XMLSchema")` provides facilities in R for reading XML schema documents and
+  - `r github("omegahat/XMLSchema")` provides facilities in R for reading XML schema documents and
   processing them to create definitions for R classes and functions for converting XML nodes
   to instances of those classes.
   It provides the framework for meta-computing with XML schema in R.
