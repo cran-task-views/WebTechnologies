@@ -93,7 +93,7 @@ If the information is served by a database engine,
 please review the cloud services in the [Online services](#online) section below,
 as well as the [Databases with R](https://CRAN.R-project.org/view=Databases) CRAN Task View.
 
-### Ingest a file directly
+### Ingest a remote file directly
 
 Many base and CRAN packages provide functions that accept a [url](https://en.wikipedia.org/wiki/URL) and
 return a `data.frame` or `list`.
@@ -119,7 +119,7 @@ return a `data.frame` or `list`.
 - For other file structures:
   - `r pkg("rio")` and `r pkg("repmis")`: accommodate many plain-text and proprietary formats.
 
-### Download a file, then ingest it
+### Download a remote file, then ingest it
 
 If you need to process a different type of file,
 you can accomplish this in two steps.
