@@ -430,7 +430,6 @@ This list describes online services.  For a more complete treatment of the topic
   `r pkg("RgoogleMaps")` serves two purposes:
   it provides a comfortable R interface to query the Google server for static maps, and
   uses the map as a background image to overlay plots within R.
-  `r ohat("R2GoogleMaps")` provides a mechanism to generate JavaScript code from R that displays data using Google Maps.
   `r pkg("mapsapi")` is an sf-compatible interface to Google Maps API.
 
 - *Routing*:
