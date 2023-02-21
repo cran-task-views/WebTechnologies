@@ -636,9 +636,6 @@ Many CRAN packages interact with services facilitating sports analysis.  For a m
   `r pkg("FastRWeb")` provides some basic infrastructure for this.
   `r pkg("plumber")` allows you to create a REST API by decorating existing R source code.
   `r pkg("beakr")` provides an R version of functionality found in python Flask and JavaScript Express.js.
-- `r ohat("WADL")` provides tools to process Web Application Description Language (WADL) documents and
-  to programmatically generate R functions to interface to the REST methods
-  described in those WADL documents. (not on CRAN)
 - `r ohat("RDCOMServer")` provides a mechanism to export R objects as (D)COM objects in Windows.
   It can be used along with `r github("omegahat/RDCOMClient")`,
   which provides user-level access from R to other COM servers. (not on CRAN)
