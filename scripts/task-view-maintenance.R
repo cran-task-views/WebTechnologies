@@ -24,15 +24,4 @@ ctv::check_ctv_packages(path_md)
 url_db_from_ctv_md(path_md)
 
 # Check spelling
-path_spelling <- "scripts/spelling.csv"
-
-# Run block to update list.
-if (FALSE) {
-  path_md |>
-    spelling::spell_check_files() |>
-    dplyr::pull("word") |>
-    readr::write_lines(path_spelling)
-}
-
-words_ignore <- readr::read_lines(path_spelling)
-spelling::spell_check_files(path_md, words_ignore)
+spelling::spell_check_files(path_md)
