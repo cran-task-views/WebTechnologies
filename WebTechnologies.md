@@ -738,7 +738,7 @@ For specialized situations, the following resources may be useful:
 
 - `r github("hrbrmstr/securitytxt")` identifies and parses web Security policy files.
 
-## 5. [Resources]{#resources}
+## 5. Resources
 
 ### Links
 
