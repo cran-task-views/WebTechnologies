@@ -316,6 +316,8 @@ Colloquially, these activities are called
   Amazon, Azure and Google cloud services without the need for external system dependencies.
   Amazon Web Services is a popular, proprietary cloud service offering a
   suite of computing, storage, and infrastructure tools.
+- `r pkg("pins")` can be used to publish data, models, and other R objects across a range of 
+  backends, including AWS, Azure, Google Cloud Storage, and Posit Connect.
 
 ### Software Development
 
