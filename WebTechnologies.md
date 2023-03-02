@@ -91,7 +91,7 @@ If the data file is not accessible via a simple url, you probably want to skip t
 
 If the information is served by a database engine,
 please review the cloud services in the [Online services](#online) section below,
-as well as the [Databases with R](https://CRAN.R-project.org/view=Databases) CRAN Task View.
+as well as the *`r view("Databases")` with R* CRAN Task View.
 
 ### Ingest a remote file directly
 
@@ -365,7 +365,7 @@ Colloquially, these activities are called
 
 ### Machine Learning and Translation
 
-This list describes online services.  For a more complete treatment of the topic, please see the [Machine Learning](https://CRAN.R-project.org/view=MachineLearning) task view.
+This list describes online services.  For a more complete treatment of the topic, please see the *`r view("MachineLearning")`* CRAN Task View.
 
 - *Machine Learning as a Service*:
   Several packages provide access to cloud-based machine learning services.
@@ -390,7 +390,7 @@ This list describes online services.  For a more complete treatment of the topic
 
 ### Spatial Analysis
 
-This list describes online services.  For a more complete treatment of the topic, please see the [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) task view.
+This list describes online services.  For a more complete treatment of the topic, please see the *Analysis `r view("Spatial")` Data* CRAN Task View.
 
 - *Geolocation/Geocoding*:
   Services that translate between addresses and longlats.
@@ -560,7 +560,14 @@ The following packages interface with *tools* that facilitate web analytics.
 
 ### Sports Analytics
 
-Many CRAN packages interact with services facilitating sports analysis.  For a more complete treatment of the topic, please see the [Sports Analytics](https://CRAN.R-project.org/view=SportsAnalytics) task view.
+Many CRAN packages interact with services facilitating sports analysis.  For a more complete treatment of the topic, please see the *`r view("SportsAnalytics")`* CRAN Task View.
+
+### Reproducible Research
+
+Using packages in this Web Technologies task view can help you acquire data programmatically, which can facilitate Reproducible Research.
+Please see the *`r view("ReproducibleResearch")`* CRAN Task View for more tools and information:
+
+> "The goal of reproducible research is to tie specific instructions to data analysis and experimental data so that scholarship can be recreated, understood, and verified."
 
 ### Other Web Services
 
@@ -743,14 +750,6 @@ For specialized situations, the following resources may be useful:
 ## 5. Resources
 
 ### Links
-
-- Related CRAN [Task Views](https://cran.r-project.org/web/views/):
-  |
-  [Analysis of Spatial Data](https://CRAN.R-project.org/view=Spatial) |
-  [Databases with R](https://CRAN.R-project.org/view=Databases) |
-  [Machine Learning](https://CRAN.R-project.org/view=MachineLearning) |
-  [Reproducible Research](https://CRAN.R-project.org/view=ReproducibleResearch) |
-  [Sports Analytics](https://CRAN.R-project.org/view=SportsAnalytics) |
 
 - [Omega Project for Statistical Computing](https://OmegaHat.net/):
 Open-source packages from authors in (or close to) the R Core Team,

@@ -1,4 +1,4 @@
-# Keep current with the advice in 
+# Keep current with the advice in
 #  https://github.com/cran-task-views/ctv/blob/main/Contributing.md
 
 task_view_name  <- "WebTechnologies"
@@ -15,7 +15,7 @@ if (base::basename(getwd()) != "WebTechnologies") {
 ctv::ctv2html(path_md)
 utils::browseURL(path_html)
 
-# Check that the information text and the package list 
+# Check that the information text and the package list
 #  are consistent and that all packages are available from CRAN:
 ctv::check_ctv_packages(path_md)
 
