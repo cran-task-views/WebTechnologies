@@ -487,6 +487,8 @@ The following packages provide an interface to its associated service, unless no
 - *Usersnap*:
   `r github("nealrichardson/useRsnap")` connects to Usersnap,
   a tool for collecting feedback from web application users.
+- *KoboToolbox*:
+  `r pkg("robotoolbox")` is a suite of utilities for accessing and manipulating data from the [KoboToolbox](https://www.kobotoolbox.org/) API.
 
 ### Web Analytics
 
