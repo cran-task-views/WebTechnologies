@@ -538,7 +538,6 @@ The following packages interface with *tools* that facilitate web analytics.
   including management of depositions, attribution of DOIs and upload of files.
 
 - *Literature*:
-  `r pkg("rplos")` connects to the Public Library of Science journals.
   `r pkg("europepmc")` connects to the Europe PubMed Central service.
   `r pkg("pubmed.mineR")` is for text mining of [PubMed Abstracts](https://pubmed.ncbi.nlm.nih.gov/)
   that supports fetching text and XML from PubMed.
