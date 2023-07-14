@@ -410,7 +410,6 @@ This list describes online services.  For a more complete treatment of the topic
   an open source catalogue for managing geographic metadata.
   `r pkg("ows4R")` is a new R client for the 'OGC' standard Web-Services,
   such Web Feature Service (WFS) for data and Catalogue Service (CSW) for metadata.
-  `r pkg("openadds")` is an Openaddresses client.
 
 - *Mapping*:
   Services that help create visual maps.
