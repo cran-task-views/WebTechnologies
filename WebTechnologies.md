@@ -414,7 +414,7 @@ This list describes online services.  For a more complete treatment of the topic
 - *Mapping*:
   Services that help create visual maps.
   - *OpenStreetMap*:
-  `r pkg("osmplotr")` extracts customizable map images.
+  `r github("ropensci/osmplotr")` extracts customizable map images.
   - *Google Maps*:
   `r pkg("RgoogleMaps")` serves two purposes:
   it provides a comfortable R interface to query the Google server for static maps, and
