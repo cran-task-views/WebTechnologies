@@ -547,8 +547,6 @@ The following packages interface with *tools* that facilitate web analytics.
   computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics.
   `r pkg("roadoi")` connects to the [Unpaywall API](https://unpaywall.org/products/api)
   for finding free full-text versions of academic papers.
-  `r pkg("rcoreoa")` is an interface to the [CORE API](https://core.ac.uk/docs/),
-  a search interface for open access scholarly articles.
   `r pkg("rcrossref")` is an interface to Crossref's API.
 
 ### Generating Synthetic Data
