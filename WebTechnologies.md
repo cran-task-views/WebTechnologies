@@ -284,7 +284,8 @@ Colloquially, these activities are called
     Computer Vision is a pre-trained service for handling commonly-encountered tasks,
     while Custom Vision allows you to train your own image recognition model on a custom dataset.
     `r pkg("AzureVision")` provides an interface to both these services.
-- *Google Cloud*:
+- *Google Cloud and Google Drive*:
+  - `r pkg("googledrive")` interfaces with Google Drive.
   - `r pkg("googleComputeEngineR")` interacts with the Google Compute Engine API,
     and lets you create, start and stop instances in the Google Cloud.
   - `r pkg("googleCloudStorageR")` interfaces with Google Cloud Storage.
