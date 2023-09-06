@@ -497,9 +497,7 @@ The following packages interface with *online services* that facilitate web anal
   - *Google Adwords*:
     `r pkg("RAdwords")`
   - *Google Analytics*:
-    `r pkg("googleAnalyticsR")` and
-    `r pkg("ganalytics")`;
-    the latter supports OAuth 2.0 authorization.
+    `r pkg("googleAnalyticsR")`
   - *Google Marketing Platform*: `r github("WillemPaling/RDoubleClick")` (not on CRAN)
   - *Google Search Console* (formerly Webmaster Tools):
     `r pkg("searchConsoleR")`
