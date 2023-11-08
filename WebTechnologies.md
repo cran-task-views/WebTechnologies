@@ -508,14 +508,15 @@ The following packages interface with *online services* that facilitate web anal
     `r pkg("searchConsoleR")`
   - *Google Trends*:
     `r pkg("gtrendsR")`
+-  *Azure*
+  - *Application Insights*:
+    `r pkg("AzureAppInsights")`
 - *Facebook Marketing*:
   `r pkg("fbRads")`
 - *Smartly.io*:
   `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data via the advertising service.
 - *Adobe Analytics*:
   `r pkg("RSiteCatalyst")`
-- *Application Insights*
-  `r pkg("AzureAppInsights")`
 
 The following packages interface with *tools* that facilitate web analytics.
 
