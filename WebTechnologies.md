@@ -284,6 +284,10 @@ Colloquially, these activities are called
     Computer Vision is a pre-trained service for handling commonly-encountered tasks,
     while Custom Vision allows you to train your own image recognition model on a custom dataset.
     `r pkg("AzureVision")` provides an interface to both these services.
+  - *Application Insights* provides application performance monitoring and and usage tracking
+    of live web applications.
+    `r pkg("AzureAppInsights")` allows developers of Shiny apps to include the Application Insights JS SDK
+    in their apps for tracking performance. Not part of the cloudyr project or AzureR package family.
 - *Google Cloud and Google Drive*:
   - `r pkg("googledrive")` interfaces with Google Drive.
   - `r pkg("googleComputeEngineR")` interacts with the Google Compute Engine API,
@@ -510,6 +514,8 @@ The following packages interface with *online services* that facilitate web anal
   `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data via the advertising service.
 - *Adobe Analytics*:
   `r pkg("RSiteCatalyst")`
+- *Application Insights*
+  `r pkg("AzureAppInsights")`
 
 The following packages interface with *tools* that facilitate web analytics.
 
