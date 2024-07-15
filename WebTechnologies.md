@@ -391,7 +391,6 @@ This list describes online services.  For a more complete treatment of the topic
   `r pkg("AzureVision")` provides interfaces to the Azure Computer Vision and Custom Vision image recognition services.
 - *Machine Translation*:
   `r pkg("RYandexTranslate")` connects to Yandex Translate.
-  `r pkg("transcribeR")` provides automated audio transcription via the HP IDOL service.
 
 ### Spatial Analysis
 
