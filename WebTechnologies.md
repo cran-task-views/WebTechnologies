@@ -514,8 +514,6 @@ The following packages interface with *online services* that facilitate web anal
   `r pkg("fbRads")`
 - *Smartly.io*:
   `r pkg("RSmartlyIO")` loads Facebook and Instagram advertising data via the advertising service.
-- *Adobe Analytics*:
-  `r pkg("RSiteCatalyst")`
 
 The following packages interface with *tools* that facilitate web analytics.
 
