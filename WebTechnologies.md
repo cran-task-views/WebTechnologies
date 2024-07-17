@@ -504,8 +504,6 @@ The following packages interface with *online services* that facilitate web anal
     `r pkg("googleAnalyticsR")`
   - *Google Trends*:
     `r pkg("gtrendsR")`
-  <!-- - *Google Search Console* (formerly Webmaster Tools):
-    `r pkg("searchConsoleR")` -->
   <!-- - *Google Marketing Platform*: `r github("WillemPaling/RDoubleClick")`  -->
 -  *Azure*
   - *Application Insights*:
