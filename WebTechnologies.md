@@ -223,7 +223,7 @@ Colloquially, these activities are called
     It also requires no external system dependencies.
   - `r pkg("aws.signature")` provides functionality for generating AWS API request signatures.
   - *Elastic Cloud Compute (EC2)* is a cloud computing service.
-    `r gcode("segue")` (not on CRAN) manages EC2 instances and S3 storage,
+    `r gcode("segue")` manages EC2 instances and S3 storage,
     which includes a parallel version of `lapply()`
     for the Elastic Map Reduce (EMR) engine called `emrlapply()`.
     It uses Hadoop Streaming on Amazon's EMR in order to get simple parallel computation.
@@ -394,7 +394,7 @@ This list describes online services.  For a more complete treatment of the topic
 - *Geolocation/Geocoding*:
   Services that translate between addresses and longlats.
   `r pgk("rgeolocate")` offers several online and offline tools.
-  `r github("trestletech/rydn")` (not on CRAN) is an interface to the
+  `r github("trestletech/rydn")` is an interface to the
   Yahoo Developers network geolocation APIs, and
   `r github("hrbrmstr/ipapi")` can be used to geolocate IPv4/6 addresses and/or domain names
   using the <http://ip-api.com/> API.
@@ -432,12 +432,12 @@ The following packages provide an interface to its associated service, unless no
 
 - *Twitter*:
   `r pkg("rtweet")` provides an interface through its API.
-  `r github("gvegayon/twitterreport")` (not on CRAN) focuses on report generation based on Twitter data.
+  `r github("gvegayon/twitterreport")` focuses on report generation based on Twitter data.
   `r pkg("streamR")` allows users to access Twitter's filter,
   sample, and user streams, and to parse the output into data frames.
   OAuth authentication is supported.
   `r pkg("graphTweets")` produces a network graph from a data.frame of tweets.
-  `r github("pablobarbera/twitter_ideology")` (not on CRAN) implements a political ideology scaling measure for specified Twitter users.
+  `r github("pablobarbera/twitter_ideology")` implements a political ideology scaling measure for specified Twitter users.
 - *Facebook*:
   `r pkg("Rfacebook")`
 - *Instagram*:
@@ -445,13 +445,13 @@ The following packages provide an interface to its associated service, unless no
 - *LinkedIn*:
   `r pkg("Rlinkedin")`
 - *Stack Exchange*:
-  `r github("dgrtwo/stackr")` (not on CRAN)
+  `r github("dgrtwo/stackr")`
 - *Pinterest*:
   `r pkg("rpinterest")`
 - *VK*:
   `r pkg("vkR")` the social networking site based in Russia.
 - *Meetup*:
-  `r github("rladies/meetupr")` (not on CRAN)
+  `r github("rladies/meetupr")`
 - *Brandwatch*:
   `r pkg("brandwatchR")`
 - *Hacker News*:
@@ -461,7 +461,7 @@ The following packages provide an interface to its associated service, unless no
 - *Slack*:
   `r pkg("slackr")`
 - *Discourse*:
-  `r github("sckott/discgolf")` (archived; not on CRAN)
+  `r github("sckott/discgolf")`
   provides an interface to an instance of Discourse, not to the Discourse site itself.
 
 ### Survey, Questionnaire, and Data Capture Tools
@@ -549,7 +549,7 @@ The following packages interface with *tools* that facilitate web analytics.
 ### Generating Synthetic Data
 
 - *MockaRoo API*:
-  `r github("stephlocke/mockaRoo")` (not on CRAN) generates mock or fake data based on an input schema.
+  `r github("stephlocke/mockaRoo")` generates mock or fake data based on an input schema.
 - *RandomAPI*:
   `r github("karthik/randNames")` generates random names and personal identifying information.
 
@@ -625,7 +625,7 @@ Please see the *`r view("ReproducibleResearch")`* CRAN Task View for more tools 
   `r pkg("FastRWeb")` provides some basic infrastructure for this.
   `r pkg("plumber")` allows you to create a REST API by decorating existing R source code.
   `r pkg("beakr")` provides an R version of functionality found in python Flask and JavaScript Express.js.
-- `r github("omegahat/RDCOMClient")` (not on CRAN) which provides user-level access from R to other COM servers.
+- `r github("omegahat/RDCOMClient")` which provides user-level access from R to other COM servers.
 - `r pkg("radiant")` is Shiny-based GUI for R that runs in a browser from a server or local machine.
 - The 'Tiki' Wiki CMS/Groupware framework has an R plugin (`PluginR`) to run R code from wiki pages,
   and use data from their own collected web databases (trackers).
