@@ -373,9 +373,6 @@ This list describes online services.  For a more complete treatment of the topic
   `r pkg("clarifai")` is a [Clarifai.com](https://www.clarifai.com/) client that enables automated image description.
   `r pkg("rLTP")` accesses the [ltp-cloud service](https://www.ltp-cloud.com/).
   `r pkg("languagelayeR")` is a client for Languagelayer, a language detection API.
-  `googlepredictionapi` (not on CRAN, but available from [Google](https://code.google.com/archive/p/r-google-prediction-api-v12/)):
-  is an R client for the [Google Prediction API](https://cloud.google.com/ai-platform),
-  a suite of cloud machine learning tools.
   `r pkg("yhatr")` lets you deploy, maintain, and invoke models via the Yhat REST API.
   `r pkg("datarobot")` works with Data Robot's predictive modeling platform.
   `r pkg("mscsweblm4r")` interfaces with the Microsoft Cognitive Services Web Language Model API and
