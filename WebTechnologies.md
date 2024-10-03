@@ -399,8 +399,9 @@ This list describes online services.  For a more complete treatment of the topic
   `r github("hrbrmstr/ipapi")` can be used to geolocate IPv4/6 addresses and/or domain names
   using the <http://ip-api.com/> API.
   `r pkg("opencage")` provides access to to the 'OpenCage' geocoding service.
-  `r github("hrbrmstr/nominatim")` (not on CRAN) connects to the
-  [OpenStreetMap Nominatim API](https://github.com/hrbrmstr/nominatim) for reverse geocoding.
+  `r pkg("nominatimlite")` and
+  `r github("hrbrmstr/nominatim")` connect to the
+  OpenStreetMap Nominatim API for reverse geocoding.
   `r pkg("PostcodesioR")` provides post code lookup and
   geocoding for the United Kingdom.
   `r pkg("geosapi")` is an R client for the 'GeoServer' REST API,
