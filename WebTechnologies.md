@@ -36,19 +36,14 @@ who maintained this task view up to 2021.
 
 The bulk of R's capabilities are supplied by CRAN packages
 that are layered on top of [libcurl](https://curl.se/libcurl/).
-Four packages provide the foundation for most modern approaches.
+A handful of packages provide the foundation for most modern approaches.
 
-1. `r pkg("httr", priority = "core")` is a user-facing client for HTTP requests.
-    It leverages the curl package for most operations.
-    Additional options may be passed to curl through httr's `config` parameter.
+1. `r pkg("httr2", priority = "core")`
+    and its predecessor `r pkg("httr", priority = "core")`
+    are user-facing clients for HTTP requests.
+    They leverage the curl package for most operations.
     If you are developing a package that calls a web service,
-    we recommend reading httr's vignettes.
-
-    httr's team is developing its successor, `r pkg("httr2")`.
-    If you're creating a package needs a stable foundation,
-    you might use httr now and wait for httr2 v1.0 to be released.
-    However if you can adapt to breaking changes as httr2 matures,
-    it may be beneficial to invest in httr2's approach now.
+    we recommend reading their vignettes.
 
 1. `r pkg("crul", priority = "core")` is another package that leverages curl.
     It is an [R6](https://r6.r-lib.org/)-based client that supports
@@ -57,7 +52,7 @@ Four packages provide the foundation for most modern approaches.
     HTTP mocking via `r pkg("webmockr")`,
     and request caching for unit tests via `r pkg("vcr")`.
     crul is intended to be called by other packages, instead of R users.
-    Unlike httr,
+    Unlike httr2,
     crul's [current version](https://docs.ropensci.org/crul/reference/auth.html#details)
     does not support OAuth.
     Additional options may be passed to curl when instantiating crul's R6 classes.
@@ -67,7 +62,7 @@ Four packages provide the foundation for most modern approaches.
     [libcurl C library](https://curl.se/libcurl/).
     It is not intended to be called directly by typical R users.
     curl may be useful for operations on web-based XML or with FTP
-    (as crul and httr are focused primarily on HTTP).
+    (as crul and httr2 are focused primarily on HTTP).
 
 1. [utils](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/00Index.html) and
     [base](https://stat.ethz.ch/R-manual/R-devel/library/base/html/00Index.html)
@@ -713,9 +708,9 @@ For specialized situations, the following resources may be useful:
   Additionally, sometimes web resources that require authentication be in the header of an http call,
   which requires a little bit of extra work. API keys and username:password combos can be combined
   within a url for a call to a web resource, or can be specified via commands in
-  `r pkg("RCurl")` or `r pkg("httr")`.
+  `r pkg("RCurl")` or `r pkg("httr2")`.
   OAuth is the most complicated authentication process,
-  and can be most easily done using `r pkg("httr")`.
+  and can be most easily done using `r pkg("httr2")`.
 
   See the 6 demos within `r pkg("httr")`,
   three for OAuth 1.0 (LinkedIn, Twitter, Vimeo) and
