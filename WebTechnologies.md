@@ -513,7 +513,7 @@ The following packages interface with *tools* that facilitate web analytics.
 ### Publications
 
 - *Reference/bibliography/citation management*:
-  `r pkg("rorcid")` connects to the [Orcid.org](https://orcid.org/) API,
+  `r pkg("rorcid")` connects to the [ORCID.org](https://orcid.org/) API,
   which can identify scientific authors and their publications (e.g., by DOI).
   `r pkg("rdatacite")` connects to [DataCite](https://datacite.org/),
   which manages DOIs and metadata for scholarly datasets.
