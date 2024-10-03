@@ -359,7 +359,6 @@ Colloquially, these activities are called
 ### Data Processing and Visualization
 
 - *Document Processing*:
-  `r pkg("abbyyR")`  and `r pkg("captr")` connect to optical character recognition (OCR) APIs.
   `r pkg("pdftables")` uses [the PDFTables.com webservice](https://pdftables.com/) to extract tables from PDFs.
 - *Visualization*:
   Plot.ly is a company that allows you to create visualizations in the web using R (and Python),
