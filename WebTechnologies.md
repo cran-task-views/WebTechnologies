@@ -298,10 +298,6 @@ Colloquially, these activities are called
   - `r pkg("gargle")`: An interface to [Google APIs](https://developers.google.com/apis-explorer).
   - Look in other sections of the Web Technologies task view for packages interfacing other Google products.
 - *Dropbox*:
-  `r pkg("rdrop2")` facilitates
-  uploads & downloads,
-  copy/move/delete file and directory operations, and
-  account & quotas queries.
   `r pkg("repmis")`'s `source_Dropbox()` function
   for downloading/caching plain-text data from non-public folders.
 - *Other Cloud Storage*:
