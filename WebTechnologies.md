@@ -460,10 +460,11 @@ The following packages provide an interface to its associated service, unless no
 ### Survey, Questionnaire, and Data Capture Tools
 
 - *REDCap*:
-  `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap,
-  a web application for building and managing online surveys and research databases.
-  `r pkg("REDCapTidieR")` and `r pkg("tidyREDCap")`
-  follow [tidy](https://www.tidyverse.org/) principles to extend `r pkg("REDCapR")`.
+  - `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap,
+    a web application for building and managing online surveys and research databases.
+  - `r pkg("REDCapTidieR")` and 
+    `r pkg("tidyREDCap")`
+    extend `r pkg("REDCapR")` to streamline many common operations.
 - *Qualtrics*:
   `r pkg("qualtRics")` provide functions to interact with Qualtrics,
   an online survey and data collection software platform.
