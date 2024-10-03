@@ -462,9 +462,10 @@ The following packages provide an interface to its associated service, unless no
 - *REDCap*:
   - `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap,
     a web application for building and managing online surveys and research databases.
-  - `r pkg("REDCapTidieR")` and 
-    `r pkg("tidyREDCap")`
-    extend `r pkg("REDCapR")` to streamline many common operations.
+  - `r pkg("REDCapTidieR")`, 
+    `r pkg("tidyREDCap")`, and
+    `r pkg("REDCapDM")`
+    extend `r pkg("REDCapR")` and `r pkg("redcapAPI")` to streamline many common operations.
 - *Qualtrics*:
   `r pkg("qualtRics")` provide functions to interact with Qualtrics,
   an online survey and data collection software platform.
