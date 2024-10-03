@@ -594,8 +594,6 @@ Please see the *`r view("ReproducibleResearch")`* CRAN Task View for more tools 
   or *Open-source Project for a Network Data Access Protocol*.
   Allows user to swap out the base URL to use any ERDDAP instance.
 
-- `r pkg("RStripe")` provides an interface to 'Stripe', an online payment processor.
-
 - `r pkg("duckduckr")` is an R interface to [DuckDuckGo](https://duckduckgo.com/)
 
 ## 3. [Frameworks for building web-based R applications]{#frameworks}
