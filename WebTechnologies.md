@@ -76,6 +76,16 @@ A handful of packages provide the foundation for most modern approaches.
       https://cran.r-project.org/doc/manuals/r-release/NEWS.html
     -->
 
+### Before you Start Using Web Scraping Tools
+
+You may have a code to perform web scraping, and it can be very efficient by time metrics or resources usage, but first we need to talk about whether it's legal and ethical for you to do so.
+
+You can use the ['polite'](https://cran.r-project.org/package=polite) package, which builds upoen the principles of seeking permission, taking slowly and never asking twice. The package builds on awesome toolkits for defining and managing http sessions (['httr'](https://cran.r-project.org/package=httr) and ['rvest'](https://cran.r-project.org/package=rvest), declaring the user agent string and investigating site policies ('robots.txt'), and utilizing rate-limiting and response caching (['ratelimitr'](https://cran.r-project.org/package=ratelimitr) and ['memoise'](https://cran.r-project.org/package=memoise)).
+
+The problem is not technical, but ethical and also legal. You can technically log into an art auction site and scrape the prices of all the paintings, but if you need an account and to use 'rSelenium' to extract the information by automating clicks in the browser, you are subject to the Terms of Service (ToS).
+
+Another problem is that some websites require specific connections. You can connect to a site from a university or government building and access content for free, but if you connect from home, you may find that you require a paid subscription to access the same content. If you scrape a site from a university, you might be breaking some laws if you are not carefull about the goal and scope of the scraping.
+
 ## 1. [Direct data download and ingestion]{#direct}
 
 In recent years,
