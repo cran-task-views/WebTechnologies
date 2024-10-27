@@ -1,62 +1,57 @@
 # See https://github.com/cran-task-views/WebTechnologies/issues/505
 
-# Copy from the bottom of https://cran.r-project.org/web/views/WebTechnologies.html:
-packages <- c(
-  "dashR",
-  "discgolf",
-  "feedeR",
-  "formr",
-  "gdns",
-  "ipapi",
-  "meetupr",
-  "mockaRoo",
-  "nominatim",
-  "PostcodesioR",
-  "randNames",
-  "rcloud",
-  "RDoubleClick",
-  "rydn",
-  "securitytxt",
-  "stackr",
-  "twitter_ideology",
-  "twitterreport",
-  "urlshorteneR",
-  "useRsnap"
-)
+library(stringr)
+library(available)
+library(purrr)
+library(rvest)
 
-packages |> 
-  rlang::set_names() |> 
-  purrr::map_lgl(available::available_on_cran) |> 
+file_content <- readLines("WebTechnologies.md")
+
+github_packages <- unlist(str_extract_all(file_content, "r github\\(\"([^\"]+)\"\\)"))
+github_packages <- str_match(github_packages, "r github\\(\"([^\"]+)\"\\)")[, 2]
+github_packages <- str_replace(github_packages, ".*/", "")
+
+packages <- list()
+
+# Check each package and print results
+for (pkg in github_packages) {
+  packages[[pkg]] <- available_on_cran(pkg)
+}
+
+on_cran <- map_lgl(packages, function(x) isFALSE(as.logical(x)))
+on_cran <- github_packages[on_cran]
+
+on_cran %>% 
+  rlang::set_names() %>% 
+  purrr::map_lgl(available::available_on_cran) %>% 
   tibble::enframe(
     value = "available_on_cran"
   )
 
-# # A tibble: 20 × 2
-# name             available_on_cran 
-# dashR            TRUE             
-# discgolf         FALSE # Archived on 2022-11-06 at the maintainer's request.
-# feedeR           FALSE # Archived on 2021-10-05 as check problems were not corrected in time.
-# formr            TRUE             
-# gdns             FALSE # Archived on 2022-05-07 as calls defunct default.stringsAsFactors()
-# ipapi            TRUE             
-# meetupr          TRUE             
-# mockaRoo         TRUE             
-# nominatim        TRUE             
-# PostcodesioR     FALSE # now on cran         
-# randNames        FALSE # Archived on 2022-08-22 at the maintainer's request.            
-# rcloud           TRUE             
-# RDoubleClick     TRUE             
-# rydn             TRUE             
-# securitytxt      FALSE # Archived on 2021-05-14 as check problems were not corrected in time.           
-# stackr           TRUE             
-# twitter_ideology TRUE             
-# twitterreport    TRUE             
-# urlshorteneR     FALSE # now on cran            
-# useRsnap         TRUE    
+urls <- sprintf("https://CRAN.R-project.org/package=%s", on_cran)
 
-# p <- packages[1]
-# p <- "analogsea"
-# address <- sprintf("https://CRAN.R-project.org/package=%s", p)
-# 
-# url(address)
-# available::available_on_cran(p)
+# read the urls
+
+cran_status <- map(urls, ~{
+  tryCatch({
+    url <- .x
+    read_html(url)
+  }, error = function(e) {
+    e
+  })
+})
+
+cran_status <- map(cran_status, ~{
+  if (inherits(.x, "error")) {
+    NA
+  } else {
+    y <- .x %>% 
+      html_nodes("p") %>%
+        html_text() %>%
+        str_detect("removed") %>%
+        any()
+    y <- ifelse(y, "removed", "available")
+  }
+})
+
+on_cran[!grep("removed", unlist(cran_status))]
