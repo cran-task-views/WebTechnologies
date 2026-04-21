@@ -395,7 +395,7 @@ This list describes online services.  For a more complete treatment of the topic
 
 - *Geolocation/Geocoding*:
   Services that translate between addresses and longlats.
-  `r pkg("rgeolocate")` offers several online and offline tools.
+  `r pkg("tidygeocoder")` offers several online and offline tools.
   `r github("trestletech/rydn")` is an interface to the
   Yahoo Developers network geolocation APIs, and
   `r github("hrbrmstr/ipapi")` can be used to geolocate IPv4/6 addresses and/or domain names
