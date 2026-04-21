@@ -195,7 +195,7 @@ Colloquially, these activities are called
   - For capturing static content of web pages `r pkg("postlightmercury")` is a client
     for the web service 'Mercury' that turns web pages into structured and clean text.
   - `r pkg("rvest")` is another higher-level alternative which expresses common web scraping tasks
-    with [pipes](https://r4ds.hadley.nz/workflow-pipes.html)
+    with [pipes](https://r4ds.hadley.nz/workflow-style.html#sec-pipes)
     (like Base R's `|>` and magrittr's `%>%`).
   - `r pkg("boilerpipeR")` provides generic extraction of main text content from HTML files;
   removal of ads, sidebars and headers using the boilerpipe Java library.
