@@ -544,7 +544,7 @@ The following packages interface with *tools* that facilitate web analytics.
   `r pkg("rdatacite")` connects to [DataCite](https://datacite.org/),
   which manages DOIs and metadata for scholarly datasets.
   `r pkg("scholar")` extracts citation data from [Google Scholar](https://scholar.google.com/).
-  `r pkg("rscopus")` extracts citation data from [Elsevier Scopus](https://www.elsevier.com/solutions/scopus).
+  `r pkg("rscopus")` extracts citation data from [Elsevier Scopus](https://www.elsevier.com/products/scopus).
   Convenience functions are also provided for comparing multiple scholars and
   predicting future h-index values.
   `r pkg("mathpix")` converts an image of a formula (typeset or handwritten)
