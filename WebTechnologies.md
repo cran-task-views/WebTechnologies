@@ -84,7 +84,7 @@ You can use the ['polite'](https://cran.r-project.org/package=polite) package,
 which builds upon the principles of seeking permission, taking slowly and never asking twice.
 The package builds on awesome tool kits for defining and managing http sessions
 (['httr'](https://cran.r-project.org/package=httr) and
-['rvest'](https://cran.r-project.org/package=rvest),
+['rvest'](https://cran.r-project.org/package=rvest)),
 declaring the user agent string and investigating site policies ('robots.txt'),
 and utilizing rate-limiting and response caching
 (['ratelimitr'](https://cran.r-project.org/package=ratelimitr) and
