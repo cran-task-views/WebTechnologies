@@ -207,7 +207,7 @@ Colloquially, these activities are called
   - `r github("omegahat/RHTMLForms")` reads HTML documents and obtains a description of each of the forms it contains,
   along with the different elements and hidden fields.
   `r pkg("htm2txt")` uses regex to converts html documents to plain text by removing all html tags.
-  `r pkg("Rcrawler")` does crawling and scraping of web pages.
+  `r pkg("rvest")` scrapes (or harvests) data from web pages.
   - *HTML Utilities*:
     These tools don't extract content, but they can help your develop and debug.
     - `r pkg("W3CMarkupValidator")` provides an R Interface to W3C Markup Validation Services for validating HTML documents.
@@ -340,7 +340,7 @@ Colloquially, these activities are called
 
 ### Software Development
 
-- [*rhub v2*](https://r-hub.github.io/rhub/) is a collection of free services 
+- [*rhub v2*](https://r-hub.github.io/rhub/) is a collection of free services
   to help R package development across all architectures.
   It runs on GitHub Actions.
   `r pkg("rhub")` interfaces with R-Hub to allow you to check a package on the platform.
