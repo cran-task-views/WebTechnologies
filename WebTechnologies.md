@@ -323,7 +323,7 @@ Colloquially, these activities are called
   Amazon, Azure and Google cloud services without the need for external system dependencies.
   Amazon Web Services is a popular, proprietary cloud service offering a
   suite of computing, storage, and infrastructure tools.
-- `r pkg("pins")` can be used to publish data, models, and other R objects across a range of 
+- `r pkg("pins")` can be used to publish data, models, and other R objects across a range of
   backends, including AWS, Azure, Google Cloud Storage, and Posit Connect.
 
 ### Software Development
@@ -472,7 +472,7 @@ The following packages provide an interface to its associated service, unless no
   - `r pkg("REDCapR")` and `r pkg("redcapAPI")` export and import data from a REDCap,
     a web application for building and managing online surveys and research databases.
   - Another layer of packages provide additional extensions that to streamline many common operations, including
-    `r pkg("REDCapTidieR")`, 
+    `r pkg("REDCapTidieR")`,
     `r pkg("tidyREDCap")`,
     `r pkg("ReviewR")`,
     `r pkg("REDCapCAST")`, and
@@ -749,6 +749,9 @@ For specialized situations, the following resources may be useful:
 
 ### Links
 
-- [Omega Project for Statistical Computing](https://OmegaHat.net/):
-Open-source packages from authors in (or close to) the R Core Team,
-especially for web-based technologies, actively developed 1998-2013.
+- The "Omega Project for Statistical Computing"
+  was a collection of open-source packages from authors in (or close to) the R Core Team,
+  especially for web-based technologies, actively developed 1998-2013.
+  Some are still referenced on this task view.
+  The (mostly dormant) packages are available at
+  <https://github.com/omegahat>.
