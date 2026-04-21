@@ -612,7 +612,7 @@ Please see the *`r view("ReproducibleResearch")`* CRAN Task View for more tools 
 
 ## 3. [Frameworks for building web-based R applications]{#frameworks}
 
-- [Model Operationalization](https://docs.microsoft.com/en-us/machine-learning-server/what-is-operationalization)
+- [Model Operationalization](https://learn.microsoft.com/en-us/machine-learning-server/what-is-operationalization)
   (previously DeployR)
   is a Microsoft product that provides support for deploying R and Python models and
   code to a server as a web service to later consume.
