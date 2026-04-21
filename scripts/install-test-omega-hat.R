@@ -8,7 +8,7 @@
 #   "RCurl",
 #   "RJSONIO"
 # )
-# 
+#
 # install.packages(cran_dependencies)#, lib = library_temp)
 
 package_omegahat <- c(
@@ -40,7 +40,7 @@ outcome <- list()
 for(p in package_github) {
   message("Installing ", p)
   # install.packages(
-  #   p, 
+  #   p,
   #   repos = "http://www.omegahat.net/R",
   #   type  = "source"
   #   #, lib = library_temp
@@ -48,19 +48,19 @@ for(p in package_github) {
   remotes::install_github(
     repo = paste0("omegahat/", p)
   )
-  
+
   success <- requireNamespace(p, quietly = T)
   outcome[[p]] <- success
-  
+
   message("success: ", success)
   if (success) remove.packages(p)#, lib = library_temp)
 }
 
-outcome |> 
+outcome |>
   tibble::enframe(
     name = "package",
     value = "install_success"
-  ) |> 
+  ) |>
   dplyr::mutate(
     install_success = as.logical(install_success)
   )
@@ -80,39 +80,39 @@ outcome |>
 # === From GitHub =======
 # # A tibble: 10 × 2
 #    package       install_success
-#    <chr>         <lgl>          
+#    <chr>         <lgl>
 #  1 Rcompression  FALSE          # Please define LIB_BZIP2
-#  2 RDCOMClient   TRUE           
+#  2 RDCOMClient   TRUE
 #  3 RDCOMServer   FALSE          # ERROR: dependencies 'SWinRegistry', 'Ruuid' are not available for package 'RDCOMServer'
-#  4 RGoogleTrends TRUE           
-#  5 RHTMLForms    TRUE           
+#  4 RGoogleTrends TRUE
+#  5 RHTMLForms    TRUE
 #  6 RTidyHTML     FALSE          # make: cc: No such file or directory; make: *** [<builtin>: access.o] Error 127
 #  7 RUbigraph     FALSE          # undefined exports: runUbigraph
 #  8 Sxslt         FALSE          # Please define LIB_XSLT
 #  9 SpiderMonkey  FALSE          # ERROR: dependencies 'RAutoGenRunTime', 'Rffi' are not available for package 'SpiderMonkey'
-# 10 XMLSchema     TRUE    
+# 10 XMLSchema     TRUE
 
 # === From omegahat site =======
 # # A tibble: 20 × 2
 #    package        install_success
-#    <chr>          <lgl>          
-#  1 CGIwithR       TRUE           
-#  2 R2GoogleMaps   TRUE           
-#  3 RAmazonDBREST  TRUE           
-#  4 Rcompression   FALSE      # Please define LIB_ZLIB    
-#  5 RDCOMClient    TRUE           
-#  6 RDCOMServer    FALSE      # package ‘RDCOMServer’ is not available for this version of R    
-#  7 Rflickr        TRUE           
-#  8 RGoogleDocs    TRUE           
-#  9 RGoogleStorage TRUE           
-# 10 RGoogleTrends  TRUE           
-# 11 RHTMLForms     TRUE           
-# 12 RTidyHTML      FALSE      # make: cc: No such file or directory; make: *** [<builtin>: access.o] Error 127    
-# 13 RUbigraph      FALSE      # undefined exports: runUbigraph    
-# 14 SpiderMonkey   FALSE      # ERROR: dependencies 'RAutoGenRunTime', 'Rffi' are not available for package 'SpiderMonkey    
-# 15 SSOAP          TRUE           
-# 16 SXalan         FALSE          
-# 17 Sxslt          FALSE      # Please define LIB_XSLT       
-# 18 WADL           TRUE           
-# 19 XMLRPC         TRUE           
-# 20 XMLSchema      TRUE 
+#    <chr>          <lgl>
+#  1 CGIwithR       TRUE
+#  2 R2GoogleMaps   TRUE
+#  3 RAmazonDBREST  TRUE
+#  4 Rcompression   FALSE      # Please define LIB_ZLIB
+#  5 RDCOMClient    TRUE
+#  6 RDCOMServer    FALSE      # package ‘RDCOMServer’ is not available for this version of R
+#  7 Rflickr        TRUE
+#  8 RGoogleDocs    TRUE
+#  9 RGoogleStorage TRUE
+# 10 RGoogleTrends  TRUE
+# 11 RHTMLForms     TRUE
+# 12 RTidyHTML      FALSE      # make: cc: No such file or directory; make: *** [<builtin>: access.o] Error 127
+# 13 RUbigraph      FALSE      # undefined exports: runUbigraph
+# 14 SpiderMonkey   FALSE      # ERROR: dependencies 'RAutoGenRunTime', 'Rffi' are not available for package 'SpiderMonkey
+# 15 SSOAP          TRUE
+# 16 SXalan         FALSE
+# 17 Sxslt          FALSE      # Please define LIB_XSLT
+# 18 WADL           TRUE
+# 19 XMLRPC         TRUE
+# 20 XMLSchema      TRUE

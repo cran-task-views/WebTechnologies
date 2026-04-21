@@ -21,9 +21,9 @@ for (pkg in github_packages) {
 on_cran <- map_lgl(packages, function(x) isFALSE(as.logical(x)))
 on_cran <- github_packages[on_cran]
 
-on_cran %>% 
-  rlang::set_names() %>% 
-  purrr::map_lgl(available::available_on_cran) %>% 
+on_cran %>%
+  rlang::set_names() %>%
+  purrr::map_lgl(available::available_on_cran) %>%
   tibble::enframe(
     value = "available_on_cran"
   )
@@ -45,7 +45,7 @@ cran_status <- map(cran_status, ~{
   if (inherits(.x, "error")) {
     NA
   } else {
-    y <- .x %>% 
+    y <- .x %>%
       html_nodes("p") %>%
         html_text() %>%
         str_detect("removed") %>%

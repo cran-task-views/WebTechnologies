@@ -39,13 +39,13 @@ url_db_from_ctv_md <- function(path_md, verbose = TRUE, verbose_row_count = 10L)
   class(db) <- "url_db"
 
   output <- tools:::check_url_db(db, verbose = verbose, parallel = TRUE)
-  
+
   if (nrow(output) == 0L) {
     message("All links in the task view resolved successfully.")
   } else {
     warning("At least one link in the task view needs attention.")
   }
-  
+
   output
 }
 
