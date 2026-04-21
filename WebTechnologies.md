@@ -340,7 +340,9 @@ Colloquially, these activities are called
 
 ### Software Development
 
-- [*R-hub*](https://builder.r-hub.io/) is a collection of free services to help R package development across all architectures.
+- [*rhub v2*](https://r-hub.github.io/rhub/) is a collection of free services 
+  to help R package development across all architectures.
+  It runs on GitHub Actions.
   `r pkg("rhub")` interfaces with R-Hub to allow you to check a package on the platform.
 - [*GitHub*](https://github.com/):
   `r pkg("gistr")` works with GitHub gists ([gist.github.com](https://gist.github.com/discover)) from R,
