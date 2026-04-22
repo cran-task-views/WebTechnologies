@@ -763,9 +763,7 @@ For specialized situations, the following resources may be useful:
 
 ### Links
 
-- The "Omega Project for Statistical Computing"
-  was a collection of open-source packages from authors in (or close to) the R Core Team,
-  especially for web-based technologies, actively developed 1998-2013.
-  Some are still referenced on this task view.
-  The (mostly dormant) packages are available at
-  <https://github.com/omegahat>.
+- [Omega Project for Statistical Computing](https://github.com/omegahat):
+  Collection of open-source packages from authors in (or close to) the R Core Team,
+  especially for web-based technologies, that was actively developed 1998-2013.
+  Some of the (mostly dormant) packages are still referenced on this task view.
