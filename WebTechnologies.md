@@ -454,6 +454,8 @@ The following packages provide an interface to its associated service, unless no
   OAuth authentication is supported.
   `r pkg("graphTweets")` produces a network graph from a data.frame of tweets.
   `r github("pablobarbera/twitter_ideology")` implements a political ideology scaling measure for specified Twitter users.
+- *Bluesky*: 
+  `r pkg("bskyr")` and `r pkg("atrrr")`
 - *Facebook*:
   `r pkg("Rfacebook")`
 - *Instagram*:
