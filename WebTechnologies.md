@@ -602,7 +602,6 @@ Please see the *`r view("ReproducibleResearch")`* CRAN Task View for more tools 
   aimed particularly at the 'Wikimedia' "production" wikis, such as 'Wikipedia'.
   `r pkg("WikidataR")` can request data from
   [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledge base.
-  `r pkg("WikidataQueryServiceR")` is a client for the [Wikidata Query Service](https://query.wikidata.org/).
 
 - `r pkg("rerddap")`: A generic R client to interact with any ERDDAP instance,
   which is a special case of OPeNDAP (<https://en.wikipedia.org/wiki/OPeNDAP>),
