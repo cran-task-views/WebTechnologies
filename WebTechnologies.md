@@ -396,7 +396,6 @@ This list describes online services.  For a more complete treatment of the topic
   `r pkg("datarobot")` works with Data Robot's predictive modeling platform.
   `r pkg("mscsweblm4r")` interfaces with the Microsoft Cognitive Services Web Language Model API and
   `r pkg("mscstexta4r")` uses the Microsoft Cognitive Services Text Analytics REST API.
-  `r pkg("rosetteApi")` links to the 'Rosette' text analysis API.
   `r pkg("googleLanguageR")` provides interfaces to Google's
   Cloud Translation API, Natural Language API, Cloud Speech API, and the Cloud Text-to-Speech API.
   `r pkg("AzureVision")` provides interfaces to the Azure Computer Vision and Custom Vision image recognition services.
