@@ -560,8 +560,6 @@ The following packages interface with *tools* that facilitate web analytics.
   `r pkg("europepmc")` connects to the Europe PubMed Central service.
   `r pkg("pubmed.mineR")` is for text mining of [PubMed Abstracts](https://pubmed.ncbi.nlm.nih.gov/)
   that supports fetching text and XML from PubMed.
-  `r pkg("jstor")` retrieves
-  metadata, ngrams and full-texts from Data for Research service by JSTOR.
   `r pkg("aRxiv")` connects to arXiv, a repository of electronic preprints for
   computer science, mathematics, physics, quantitative biology, quantitative finance, and statistics.
   `r pkg("roadoi")` connects to the [Unpaywall API](https://unpaywall.org/products/api)
