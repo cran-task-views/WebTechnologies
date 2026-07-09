@@ -358,7 +358,6 @@ Colloquially, these activities are called
 
 - *Data archiving*:
   `r pkg("dataverse")` provides access to [Dataverse](https://dataverse.org/), the open source research data repository software.
-  `r pkg("rfigshare")` connects with [Figshare.com](https://figshare.com/).
   `r pkg("dataone")` provides a client for 'DataONE' repositories.
 - *Google Sheets*:
   `r pkg("googlesheets4")` (replaces `googlesheets`) can access private or public 'Google Sheets'
