@@ -445,7 +445,6 @@ This list describes online services.  For a more complete treatment of the topic
 The following packages provide an interface to its associated service, unless noted otherwise.
 
 - *Twitter*:
-  `r pkg("rtweet")` provides an interface through its API.
   `r github("gvegayon/twitterreport")` focuses on report generation based on Twitter data.
   `r pkg("streamR")` allows users to access Twitter's filter,
   sample, and user streams, and to parse the output into data frames.
