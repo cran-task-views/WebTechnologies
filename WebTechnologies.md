@@ -600,9 +600,7 @@ Please see the *`r view("ReproducibleResearch")`* CRAN Task View for more tools 
 - *Wikipedia*:
   `r pkg("WikipediR")` is a wrapper for the 'MediaWiki' API,
   aimed particularly at the 'Wikimedia' "production" wikis, such as 'Wikipedia'.
-  `r pkg("WikidataR")` can request data from
-  [Wikidata.org](https://www.wikidata.org/wiki/Wikidata:Main_Page), the free knowledge base.
-
+  
 - `r pkg("rerddap")`: A generic R client to interact with any ERDDAP instance,
   which is a special case of OPeNDAP (<https://en.wikipedia.org/wiki/OPeNDAP>),
   or *Open-source Project for a Network Data Access Protocol*.
