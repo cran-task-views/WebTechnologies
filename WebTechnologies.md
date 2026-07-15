@@ -359,6 +359,8 @@ Colloquially, these activities are called
 - *Data archiving*:
   - `r pkg("dataverse")` provides access to [Dataverse](https://dataverse.org/), the open source research data repository software.
   - `r pkg("dataone")` provides a client for 'DataONE' repositories.
+  - `r pkg("deposits")` is a universal client for online deposition services,
+    currently [Zenodo](https://zenodo.org/) and [figshare](https://figshare.com/).
 - *Google Sheets*:
   `r pkg("googlesheets4")` (replaces `googlesheets`) can access private or public 'Google Sheets'
   by title, key, or URL. Extract data or edit data.
