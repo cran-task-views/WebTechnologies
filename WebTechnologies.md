@@ -357,8 +357,8 @@ Colloquially, these activities are called
 ### Document and Images
 
 - *Data archiving*:
-  `r pkg("dataverse")` provides access to [Dataverse](https://dataverse.org/), the open source research data repository software.
-  `r pkg("dataone")` provides a client for 'DataONE' repositories.
+  - `r pkg("dataverse")` provides access to [Dataverse](https://dataverse.org/), the open source research data repository software.
+  - `r pkg("dataone")` provides a client for 'DataONE' repositories.
 - *Google Sheets*:
   `r pkg("googlesheets4")` (replaces `googlesheets`) can access private or public 'Google Sheets'
   by title, key, or URL. Extract data or edit data.
