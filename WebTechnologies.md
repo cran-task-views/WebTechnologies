@@ -602,7 +602,7 @@ Please see the *`r view("ReproducibleResearch")`* CRAN Task View for more tools 
   aimed particularly at the 'Wikimedia' "production" wikis, such as 'Wikipedia'.
   
 - `r pkg("rerddap")`: A generic R client to interact with any ERDDAP instance,
-  which is a special case of OPeNDAP (<https://en.wikipedia.org/wiki/OPeNDAP>),
+  which is a special case of [OPeNDAP](https://en.wikipedia.org/wiki/OPeNDAP),
   or *Open-source Project for a Network Data Access Protocol*.
   Allows user to swap out the base URL to use any ERDDAP instance.
 
