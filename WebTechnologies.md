@@ -713,9 +713,6 @@ For specialized situations, the following resources may be useful:
 
 - `r pkg("RCurl")` is another low-level client for libcurl.
   Of the two low-level curl clients, we recommend using `r pkg("curl")`.
-  `r pkg("httpRequest")` is another low-level package for HTTP requests that implements
-  the GET, POST and multipart POST verbs,
-  but we do not recommend its use.
 - `r pkg("request")` provides a high-level package that is useful for developing other API client packages.
   `r pkg("httping")` provides simplified tools to ping and time HTTP requests, around `r pkg("httr")` calls.
   `r pkg("httpcache")` provides a mechanism for caching HTTP requests.
